@@ -497,6 +497,6 @@ The theoretical reference is Shuo Tan and Syed A. Jafar, “The Upload–Broadca
 
 ### Ownership and public distribution
 
-The supplied project did not establish a license or copyright holder. This handover does not change ownership or grant redistribution rights. See LICENSING.md. Theoretical attribution above does not assert package authorship. No third-party runtime dependency is introduced.
+The algorithm code and its accompanying software documentation are available under the MIT License, copyright (c) 2026 Shuo Tan. See LICENSE and LICENSING.md. This license does not apply to research papers, the sibling Lean formalization, or other repository materials; their existing rights and licenses are unchanged. Existing attribution is preserved. No third-party runtime dependency is introduced.
 
 > The manual authoring source, API reference, current tests and validation evidence form the maintenance handover. A new change is ready when its contract is stated, its acceptance invariant is checked and its evidence can be reproduced.

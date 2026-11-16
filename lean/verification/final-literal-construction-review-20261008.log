@@ -1,0 +1,1556 @@
+UploadBroadcast.LiteralPrimitiveTables.T1_2.relay_columns : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_2.relayBasis =
+    UploadBroadcast.LiteralPrimitiveTables.T1_2.relay
+UploadBroadcast.LiteralPrimitiveTables.T1_2.side_spanning : ∀ {K : Type u_1} [inst : Field K],
+  ⨆ i, UploadBroadcast.LiteralPrimitiveTables.T1_2.side i = ⊤
+UploadBroadcast.LiteralPrimitiveTables.T1_2.signal0_from_demands : UploadBroadcast.LiteralPrimitiveTables.T1_2.signal0Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.T1_2.side0Columns
+    UploadBroadcast.LiteralPrimitiveTables.T1_2.demand0Columns
+UploadBroadcast.LiteralPrimitiveTables.T1_2.signal1_from_demands : UploadBroadcast.LiteralPrimitiveTables.T1_2.signal1Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.T1_2.side1Columns
+    UploadBroadcast.LiteralPrimitiveTables.T1_2.demand1Columns
+UploadBroadcast.LiteralPrimitiveTables.T1_2.signal2_from_demands : UploadBroadcast.LiteralPrimitiveTables.T1_2.signal2Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.T1_2.side2Columns
+    UploadBroadcast.LiteralPrimitiveTables.T1_2.demand2Columns
+UploadBroadcast.LiteralPrimitiveTables.T1_2.dim_relay : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K ↥UploadBroadcast.LiteralPrimitiveTables.T1_2.relay = 4
+UploadBroadcast.LiteralPrimitiveTables.T1_2.side0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_2.side0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T1_2.side0Constraints
+UploadBroadcast.LiteralPrimitiveTables.T1_2.side1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_2.side1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T1_2.side1Constraints
+UploadBroadcast.LiteralPrimitiveTables.T1_2.side2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_2.side2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T1_2.side2Constraints
+UploadBroadcast.LiteralPrimitiveTables.T1_2.signal0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_2.signal0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T1_2.signal0Constraints
+UploadBroadcast.LiteralPrimitiveTables.T1_2.signal1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_2.signal1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T1_2.signal1Constraints
+UploadBroadcast.LiteralPrimitiveTables.T1_2.signal2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_2.signal2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T1_2.signal2Constraints
+UploadBroadcast.LiteralPrimitiveTables.T1_2.locally_generated : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.T1_2.task.LocallyGenerated UploadBroadcast.LiteralPrimitiveTables.T1_2.relay
+UploadBroadcast.LiteralPrimitiveTables.T1_2.relay_feasible : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.T1_2.task.RelayFeasible UploadBroadcast.LiteralPrimitiveTables.T1_2.relay
+UploadBroadcast.LiteralPrimitiveTables.T1_2.full_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.T1_2.task ⊤ ![2, 2, 2]
+    ![4, 3, 3]
+UploadBroadcast.LiteralPrimitiveTables.T1_2.full_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.T1_2.task (Sum.inl r) = ![2, 2, 1, 1, 1, 1] r
+UploadBroadcast.LiteralPrimitiveTables.T1_2.full_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.T1_2.task (Sum.inr (i, ell)) = 4
+UploadBroadcast.LiteralPrimitiveTables.T1_2.induced_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.T1_2.inducedTask
+    UploadBroadcast.LiteralPrimitiveTables.T1_2.relay ![1, 2, 1] ![3, 3, 2]
+UploadBroadcast.LiteralPrimitiveTables.T1_2.induced_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.T1_2.inducedTask (Sum.inl r) =
+    ![2, 2, 1, 1, 2, 1] r
+UploadBroadcast.LiteralPrimitiveTables.T1_2.induced_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.T1_2.inducedTask (Sum.inr (i, ell)) = 4
+UploadBroadcast.LiteralPrimitiveTables.T1_2.relation_space : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_2.relationBasis =
+    UploadBroadcast.LiteralMatrixCertificates.kernel
+      (UploadBroadcast.LiteralMatrixCertificates.joinColumns
+        (UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.T1_2.side0Columns
+          UploadBroadcast.LiteralPrimitiveTables.T1_2.side1Columns)
+        UploadBroadcast.LiteralPrimitiveTables.T1_2.side2Columns)
+UploadBroadcast.LiteralPrimitiveTables.T1_2.relation_slices_partition : UploadBroadcast.LiteralMatrixCertificates.stack
+    (UploadBroadcast.LiteralMatrixCertificates.stack UploadBroadcast.LiteralPrimitiveTables.T1_2.relationSlice0
+      UploadBroadcast.LiteralPrimitiveTables.T1_2.relationSlice1)
+    UploadBroadcast.LiteralPrimitiveTables.T1_2.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.T1_2.relationBasis
+UploadBroadcast.LiteralPrimitiveTables.T1_2.relation_sum : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.T1_2.relationComponent0 +
+        UploadBroadcast.LiteralMatrixCertificates.castMatrix
+          UploadBroadcast.LiteralPrimitiveTables.T1_2.relationComponent1 +
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.T1_2.relationComponent2 =
+    0
+UploadBroadcast.LiteralPrimitiveTables.T1_2.side_pairwise_disjoint : ∀ {K : Type u_1} [inst : Field K]
+  (i j : UploadBroadcast.Three),
+  i ≠ j →
+    Disjoint (UploadBroadcast.LiteralPrimitiveTables.T1_2.side i) (UploadBroadcast.LiteralPrimitiveTables.T1_2.side j)
+UploadBroadcast.LiteralPrimitiveTables.T1_2.relationComponent0_from_side : UploadBroadcast.LiteralPrimitiveTables.T1_2.side0Columns *
+    UploadBroadcast.LiteralPrimitiveTables.T1_2.relationSlice0 =
+  UploadBroadcast.LiteralPrimitiveTables.T1_2.relationComponent0
+UploadBroadcast.LiteralPrimitiveTables.T1_2.relationComponent0_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_2.relationComponent0 ≤
+    UploadBroadcast.LiteralPrimitiveTables.T1_2.side 0
+UploadBroadcast.LiteralPrimitiveTables.T1_2.relation_value0 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.T1_2.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.T1_2.relationComponent0 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![1]]
+UploadBroadcast.LiteralPrimitiveTables.T1_2.induced_side0_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.T1_2.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.T1_2.side0Constraints) =
+    1
+UploadBroadcast.LiteralPrimitiveTables.T1_2.relationComponent1_from_side : UploadBroadcast.LiteralPrimitiveTables.T1_2.side1Columns *
+    UploadBroadcast.LiteralPrimitiveTables.T1_2.relationSlice1 =
+  UploadBroadcast.LiteralPrimitiveTables.T1_2.relationComponent1
+UploadBroadcast.LiteralPrimitiveTables.T1_2.relationComponent1_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_2.relationComponent1 ≤
+    UploadBroadcast.LiteralPrimitiveTables.T1_2.side 1
+UploadBroadcast.LiteralPrimitiveTables.T1_2.relation_value1 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.T1_2.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.T1_2.relationComponent1 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![0]]
+UploadBroadcast.LiteralPrimitiveTables.T1_2.induced_side1_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.T1_2.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.T1_2.side1Constraints) =
+    2
+UploadBroadcast.LiteralPrimitiveTables.T1_2.relationComponent2_from_side : UploadBroadcast.LiteralPrimitiveTables.T1_2.side2Columns *
+    UploadBroadcast.LiteralPrimitiveTables.T1_2.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.T1_2.relationComponent2
+UploadBroadcast.LiteralPrimitiveTables.T1_2.relationComponent2_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_2.relationComponent2 ≤
+    UploadBroadcast.LiteralPrimitiveTables.T1_2.side 2
+UploadBroadcast.LiteralPrimitiveTables.T1_2.relation_value2 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.T1_2.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.T1_2.relationComponent2 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![-1]]
+UploadBroadcast.LiteralPrimitiveTables.T1_2.induced_side2_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.T1_2.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.T1_2.side2Constraints) =
+    1
+UploadBroadcast.LiteralPrimitiveTables.T1_2.relay_form_vanishes : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.T1_2.signal 1 ≤ UploadBroadcast.LiteralPrimitiveTables.T1_2.relay
+UploadBroadcast.LiteralPrimitiveTables.T1_3.relay_columns : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_3.relayBasis =
+    UploadBroadcast.LiteralPrimitiveTables.T1_3.relay
+UploadBroadcast.LiteralPrimitiveTables.T1_3.side_spanning : ∀ {K : Type u_1} [inst : Field K],
+  ⨆ i, UploadBroadcast.LiteralPrimitiveTables.T1_3.side i = ⊤
+UploadBroadcast.LiteralPrimitiveTables.T1_3.signal0_from_demands : UploadBroadcast.LiteralPrimitiveTables.T1_3.signal0Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.T1_3.side0Columns
+    UploadBroadcast.LiteralPrimitiveTables.T1_3.demand0Columns
+UploadBroadcast.LiteralPrimitiveTables.T1_3.signal1_from_demands : UploadBroadcast.LiteralPrimitiveTables.T1_3.signal1Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.T1_3.side1Columns
+    UploadBroadcast.LiteralPrimitiveTables.T1_3.demand1Columns
+UploadBroadcast.LiteralPrimitiveTables.T1_3.signal2_from_demands : UploadBroadcast.LiteralPrimitiveTables.T1_3.signal2Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.T1_3.side2Columns
+    UploadBroadcast.LiteralPrimitiveTables.T1_3.demand2Columns
+UploadBroadcast.LiteralPrimitiveTables.T1_3.dim_relay : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K ↥UploadBroadcast.LiteralPrimitiveTables.T1_3.relay = 4
+UploadBroadcast.LiteralPrimitiveTables.T1_3.side0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_3.side0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T1_3.side0Constraints
+UploadBroadcast.LiteralPrimitiveTables.T1_3.side1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_3.side1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T1_3.side1Constraints
+UploadBroadcast.LiteralPrimitiveTables.T1_3.side2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_3.side2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T1_3.side2Constraints
+UploadBroadcast.LiteralPrimitiveTables.T1_3.signal0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_3.signal0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T1_3.signal0Constraints
+UploadBroadcast.LiteralPrimitiveTables.T1_3.signal1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_3.signal1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T1_3.signal1Constraints
+UploadBroadcast.LiteralPrimitiveTables.T1_3.signal2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_3.signal2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T1_3.signal2Constraints
+UploadBroadcast.LiteralPrimitiveTables.T1_3.locally_generated : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.T1_3.task.LocallyGenerated UploadBroadcast.LiteralPrimitiveTables.T1_3.relay
+UploadBroadcast.LiteralPrimitiveTables.T1_3.relay_feasible : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.T1_3.task.RelayFeasible UploadBroadcast.LiteralPrimitiveTables.T1_3.relay
+UploadBroadcast.LiteralPrimitiveTables.T1_3.full_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.T1_3.task ⊤ ![2, 2, 2]
+    ![4, 3, 3]
+UploadBroadcast.LiteralPrimitiveTables.T1_3.full_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.T1_3.task (Sum.inl r) = ![2, 2, 1, 1, 1, 1] r
+UploadBroadcast.LiteralPrimitiveTables.T1_3.full_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.T1_3.task (Sum.inr (i, ell)) = 4
+UploadBroadcast.LiteralPrimitiveTables.T1_3.induced_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.T1_3.inducedTask
+    UploadBroadcast.LiteralPrimitiveTables.T1_3.relay ![1, 1, 2] ![3, 2, 3]
+UploadBroadcast.LiteralPrimitiveTables.T1_3.induced_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.T1_3.inducedTask (Sum.inl r) =
+    ![2, 2, 2, 1, 1, 1] r
+UploadBroadcast.LiteralPrimitiveTables.T1_3.induced_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.T1_3.inducedTask (Sum.inr (i, ell)) = 4
+UploadBroadcast.LiteralPrimitiveTables.T1_3.relation_space : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_3.relationBasis =
+    UploadBroadcast.LiteralMatrixCertificates.kernel
+      (UploadBroadcast.LiteralMatrixCertificates.joinColumns
+        (UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.T1_3.side0Columns
+          UploadBroadcast.LiteralPrimitiveTables.T1_3.side1Columns)
+        UploadBroadcast.LiteralPrimitiveTables.T1_3.side2Columns)
+UploadBroadcast.LiteralPrimitiveTables.T1_3.relation_slices_partition : UploadBroadcast.LiteralMatrixCertificates.stack
+    (UploadBroadcast.LiteralMatrixCertificates.stack UploadBroadcast.LiteralPrimitiveTables.T1_3.relationSlice0
+      UploadBroadcast.LiteralPrimitiveTables.T1_3.relationSlice1)
+    UploadBroadcast.LiteralPrimitiveTables.T1_3.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.T1_3.relationBasis
+UploadBroadcast.LiteralPrimitiveTables.T1_3.relation_sum : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.T1_3.relationComponent0 +
+        UploadBroadcast.LiteralMatrixCertificates.castMatrix
+          UploadBroadcast.LiteralPrimitiveTables.T1_3.relationComponent1 +
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.T1_3.relationComponent2 =
+    0
+UploadBroadcast.LiteralPrimitiveTables.T1_3.side_pairwise_disjoint : ∀ {K : Type u_1} [inst : Field K]
+  (i j : UploadBroadcast.Three),
+  i ≠ j →
+    Disjoint (UploadBroadcast.LiteralPrimitiveTables.T1_3.side i) (UploadBroadcast.LiteralPrimitiveTables.T1_3.side j)
+UploadBroadcast.LiteralPrimitiveTables.T1_3.relationComponent0_from_side : UploadBroadcast.LiteralPrimitiveTables.T1_3.side0Columns *
+    UploadBroadcast.LiteralPrimitiveTables.T1_3.relationSlice0 =
+  UploadBroadcast.LiteralPrimitiveTables.T1_3.relationComponent0
+UploadBroadcast.LiteralPrimitiveTables.T1_3.relationComponent0_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_3.relationComponent0 ≤
+    UploadBroadcast.LiteralPrimitiveTables.T1_3.side 0
+UploadBroadcast.LiteralPrimitiveTables.T1_3.relation_value0 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.T1_3.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.T1_3.relationComponent0 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![-1]]
+UploadBroadcast.LiteralPrimitiveTables.T1_3.induced_side0_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.T1_3.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.T1_3.side0Constraints) =
+    1
+UploadBroadcast.LiteralPrimitiveTables.T1_3.relationComponent1_from_side : UploadBroadcast.LiteralPrimitiveTables.T1_3.side1Columns *
+    UploadBroadcast.LiteralPrimitiveTables.T1_3.relationSlice1 =
+  UploadBroadcast.LiteralPrimitiveTables.T1_3.relationComponent1
+UploadBroadcast.LiteralPrimitiveTables.T1_3.relationComponent1_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_3.relationComponent1 ≤
+    UploadBroadcast.LiteralPrimitiveTables.T1_3.side 1
+UploadBroadcast.LiteralPrimitiveTables.T1_3.relation_value1 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.T1_3.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.T1_3.relationComponent1 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![1]]
+UploadBroadcast.LiteralPrimitiveTables.T1_3.induced_side1_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.T1_3.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.T1_3.side1Constraints) =
+    1
+UploadBroadcast.LiteralPrimitiveTables.T1_3.relationComponent2_from_side : UploadBroadcast.LiteralPrimitiveTables.T1_3.side2Columns *
+    UploadBroadcast.LiteralPrimitiveTables.T1_3.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.T1_3.relationComponent2
+UploadBroadcast.LiteralPrimitiveTables.T1_3.relationComponent2_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T1_3.relationComponent2 ≤
+    UploadBroadcast.LiteralPrimitiveTables.T1_3.side 2
+UploadBroadcast.LiteralPrimitiveTables.T1_3.relation_value2 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.T1_3.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.T1_3.relationComponent2 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![0]]
+UploadBroadcast.LiteralPrimitiveTables.T1_3.induced_side2_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.T1_3.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.T1_3.side2Constraints) =
+    2
+UploadBroadcast.LiteralPrimitiveTables.T1_3.relay_form_vanishes : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.T1_3.signal 2 ≤ UploadBroadcast.LiteralPrimitiveTables.T1_3.relay
+UploadBroadcast.LiteralPrimitiveTables.T2_3.relay_columns : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T2_3.relayBasis =
+    UploadBroadcast.LiteralPrimitiveTables.T2_3.relay
+UploadBroadcast.LiteralPrimitiveTables.T2_3.side_spanning : ∀ {K : Type u_1} [inst : Field K],
+  ⨆ i, UploadBroadcast.LiteralPrimitiveTables.T2_3.side i = ⊤
+UploadBroadcast.LiteralPrimitiveTables.T2_3.signal0_from_demands : UploadBroadcast.LiteralPrimitiveTables.T2_3.signal0Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.T2_3.side0Columns
+    UploadBroadcast.LiteralPrimitiveTables.T2_3.demand0Columns
+UploadBroadcast.LiteralPrimitiveTables.T2_3.signal1_from_demands : UploadBroadcast.LiteralPrimitiveTables.T2_3.signal1Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.T2_3.side1Columns
+    UploadBroadcast.LiteralPrimitiveTables.T2_3.demand1Columns
+UploadBroadcast.LiteralPrimitiveTables.T2_3.signal2_from_demands : UploadBroadcast.LiteralPrimitiveTables.T2_3.signal2Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.T2_3.side2Columns
+    UploadBroadcast.LiteralPrimitiveTables.T2_3.demand2Columns
+UploadBroadcast.LiteralPrimitiveTables.T2_3.dim_relay : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K ↥UploadBroadcast.LiteralPrimitiveTables.T2_3.relay = 4
+UploadBroadcast.LiteralPrimitiveTables.T2_3.side0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T2_3.side0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T2_3.side0Constraints
+UploadBroadcast.LiteralPrimitiveTables.T2_3.side1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T2_3.side1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T2_3.side1Constraints
+UploadBroadcast.LiteralPrimitiveTables.T2_3.side2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T2_3.side2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T2_3.side2Constraints
+UploadBroadcast.LiteralPrimitiveTables.T2_3.signal0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T2_3.signal0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T2_3.signal0Constraints
+UploadBroadcast.LiteralPrimitiveTables.T2_3.signal1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T2_3.signal1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T2_3.signal1Constraints
+UploadBroadcast.LiteralPrimitiveTables.T2_3.signal2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T2_3.signal2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T2_3.signal2Constraints
+UploadBroadcast.LiteralPrimitiveTables.T2_3.locally_generated : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.T2_3.task.LocallyGenerated UploadBroadcast.LiteralPrimitiveTables.T2_3.relay
+UploadBroadcast.LiteralPrimitiveTables.T2_3.relay_feasible : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.T2_3.task.RelayFeasible UploadBroadcast.LiteralPrimitiveTables.T2_3.relay
+UploadBroadcast.LiteralPrimitiveTables.T2_3.full_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.T2_3.task ⊤ ![2, 2, 2]
+    ![4, 4, 3]
+UploadBroadcast.LiteralPrimitiveTables.T2_3.full_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.T2_3.task (Sum.inl r) = ![2, 2, 2, 2, 1, 1] r
+UploadBroadcast.LiteralPrimitiveTables.T2_3.full_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.T2_3.task (Sum.inr (i, ell)) = 4
+UploadBroadcast.LiteralPrimitiveTables.T2_3.induced_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.T2_3.inducedTask
+    UploadBroadcast.LiteralPrimitiveTables.T2_3.relay ![1, 1, 2] ![3, 3, 3]
+UploadBroadcast.LiteralPrimitiveTables.T2_3.induced_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.T2_3.inducedTask (Sum.inl r) =
+    ![2, 2, 2, 2, 1, 1] r
+UploadBroadcast.LiteralPrimitiveTables.T2_3.induced_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.T2_3.inducedTask (Sum.inr (i, ell)) = 4
+UploadBroadcast.LiteralPrimitiveTables.T2_3.relation_space : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T2_3.relationBasis =
+    UploadBroadcast.LiteralMatrixCertificates.kernel
+      (UploadBroadcast.LiteralMatrixCertificates.joinColumns
+        (UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.T2_3.side0Columns
+          UploadBroadcast.LiteralPrimitiveTables.T2_3.side1Columns)
+        UploadBroadcast.LiteralPrimitiveTables.T2_3.side2Columns)
+UploadBroadcast.LiteralPrimitiveTables.T2_3.relation_slices_partition : UploadBroadcast.LiteralMatrixCertificates.stack
+    (UploadBroadcast.LiteralMatrixCertificates.stack UploadBroadcast.LiteralPrimitiveTables.T2_3.relationSlice0
+      UploadBroadcast.LiteralPrimitiveTables.T2_3.relationSlice1)
+    UploadBroadcast.LiteralPrimitiveTables.T2_3.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.T2_3.relationBasis
+UploadBroadcast.LiteralPrimitiveTables.T2_3.relation_sum : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.T2_3.relationComponent0 +
+        UploadBroadcast.LiteralMatrixCertificates.castMatrix
+          UploadBroadcast.LiteralPrimitiveTables.T2_3.relationComponent1 +
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.T2_3.relationComponent2 =
+    0
+UploadBroadcast.LiteralPrimitiveTables.T2_3.side_pairwise_disjoint : ∀ {K : Type u_1} [inst : Field K]
+  (i j : UploadBroadcast.Three),
+  i ≠ j →
+    Disjoint (UploadBroadcast.LiteralPrimitiveTables.T2_3.side i) (UploadBroadcast.LiteralPrimitiveTables.T2_3.side j)
+UploadBroadcast.LiteralPrimitiveTables.T2_3.relationComponent0_from_side : UploadBroadcast.LiteralPrimitiveTables.T2_3.side0Columns *
+    UploadBroadcast.LiteralPrimitiveTables.T2_3.relationSlice0 =
+  UploadBroadcast.LiteralPrimitiveTables.T2_3.relationComponent0
+UploadBroadcast.LiteralPrimitiveTables.T2_3.relationComponent0_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T2_3.relationComponent0 ≤
+    UploadBroadcast.LiteralPrimitiveTables.T2_3.side 0
+UploadBroadcast.LiteralPrimitiveTables.T2_3.relation_value0 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.T2_3.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.T2_3.relationComponent0 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![1]]
+UploadBroadcast.LiteralPrimitiveTables.T2_3.induced_side0_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.T2_3.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.T2_3.side0Constraints) =
+    1
+UploadBroadcast.LiteralPrimitiveTables.T2_3.relationComponent1_from_side : UploadBroadcast.LiteralPrimitiveTables.T2_3.side1Columns *
+    UploadBroadcast.LiteralPrimitiveTables.T2_3.relationSlice1 =
+  UploadBroadcast.LiteralPrimitiveTables.T2_3.relationComponent1
+UploadBroadcast.LiteralPrimitiveTables.T2_3.relationComponent1_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T2_3.relationComponent1 ≤
+    UploadBroadcast.LiteralPrimitiveTables.T2_3.side 1
+UploadBroadcast.LiteralPrimitiveTables.T2_3.relation_value1 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.T2_3.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.T2_3.relationComponent1 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![-1]]
+UploadBroadcast.LiteralPrimitiveTables.T2_3.induced_side1_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.T2_3.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.T2_3.side1Constraints) =
+    1
+UploadBroadcast.LiteralPrimitiveTables.T2_3.relationComponent2_from_side : UploadBroadcast.LiteralPrimitiveTables.T2_3.side2Columns *
+    UploadBroadcast.LiteralPrimitiveTables.T2_3.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.T2_3.relationComponent2
+UploadBroadcast.LiteralPrimitiveTables.T2_3.relationComponent2_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T2_3.relationComponent2 ≤
+    UploadBroadcast.LiteralPrimitiveTables.T2_3.side 2
+UploadBroadcast.LiteralPrimitiveTables.T2_3.relation_value2 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.T2_3.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.T2_3.relationComponent2 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![0]]
+UploadBroadcast.LiteralPrimitiveTables.T2_3.induced_side2_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.T2_3.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.T2_3.side2Constraints) =
+    2
+UploadBroadcast.LiteralPrimitiveTables.T2_3.relay_form_vanishes : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.T2_3.signal 2 ≤ UploadBroadcast.LiteralPrimitiveTables.T2_3.relay
+UploadBroadcast.LiteralPrimitiveTables.T3_2.relay_columns : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T3_2.relayBasis =
+    UploadBroadcast.LiteralPrimitiveTables.T3_2.relay
+UploadBroadcast.LiteralPrimitiveTables.T3_2.side_spanning : ∀ {K : Type u_1} [inst : Field K],
+  ⨆ i, UploadBroadcast.LiteralPrimitiveTables.T3_2.side i = ⊤
+UploadBroadcast.LiteralPrimitiveTables.T3_2.signal0_from_demands : UploadBroadcast.LiteralPrimitiveTables.T3_2.signal0Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.T3_2.side0Columns
+    UploadBroadcast.LiteralPrimitiveTables.T3_2.demand0Columns
+UploadBroadcast.LiteralPrimitiveTables.T3_2.signal1_from_demands : UploadBroadcast.LiteralPrimitiveTables.T3_2.signal1Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.T3_2.side1Columns
+    UploadBroadcast.LiteralPrimitiveTables.T3_2.demand1Columns
+UploadBroadcast.LiteralPrimitiveTables.T3_2.signal2_from_demands : UploadBroadcast.LiteralPrimitiveTables.T3_2.signal2Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.T3_2.side2Columns
+    UploadBroadcast.LiteralPrimitiveTables.T3_2.demand2Columns
+UploadBroadcast.LiteralPrimitiveTables.T3_2.dim_relay : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K ↥UploadBroadcast.LiteralPrimitiveTables.T3_2.relay = 4
+UploadBroadcast.LiteralPrimitiveTables.T3_2.side0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T3_2.side0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T3_2.side0Constraints
+UploadBroadcast.LiteralPrimitiveTables.T3_2.side1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T3_2.side1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T3_2.side1Constraints
+UploadBroadcast.LiteralPrimitiveTables.T3_2.side2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T3_2.side2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T3_2.side2Constraints
+UploadBroadcast.LiteralPrimitiveTables.T3_2.signal0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T3_2.signal0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T3_2.signal0Constraints
+UploadBroadcast.LiteralPrimitiveTables.T3_2.signal1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T3_2.signal1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T3_2.signal1Constraints
+UploadBroadcast.LiteralPrimitiveTables.T3_2.signal2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T3_2.signal2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.T3_2.signal2Constraints
+UploadBroadcast.LiteralPrimitiveTables.T3_2.locally_generated : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.T3_2.task.LocallyGenerated UploadBroadcast.LiteralPrimitiveTables.T3_2.relay
+UploadBroadcast.LiteralPrimitiveTables.T3_2.relay_feasible : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.T3_2.task.RelayFeasible UploadBroadcast.LiteralPrimitiveTables.T3_2.relay
+UploadBroadcast.LiteralPrimitiveTables.T3_2.full_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.T3_2.task ⊤ ![2, 2, 2]
+    ![4, 4, 4]
+UploadBroadcast.LiteralPrimitiveTables.T3_2.full_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.T3_2.task (Sum.inl r) = ![2, 2, 2, 2, 2, 2] r
+UploadBroadcast.LiteralPrimitiveTables.T3_2.full_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.T3_2.task (Sum.inr (i, ell)) = 4
+UploadBroadcast.LiteralPrimitiveTables.T3_2.induced_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.T3_2.inducedTask
+    UploadBroadcast.LiteralPrimitiveTables.T3_2.relay ![1, 2, 1] ![3, 4, 3]
+UploadBroadcast.LiteralPrimitiveTables.T3_2.induced_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.T3_2.inducedTask (Sum.inl r) =
+    ![2, 2, 2, 2, 2, 2] r
+UploadBroadcast.LiteralPrimitiveTables.T3_2.induced_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.T3_2.inducedTask (Sum.inr (i, ell)) = 4
+UploadBroadcast.LiteralPrimitiveTables.T3_2.relation_space : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T3_2.relationBasis =
+    UploadBroadcast.LiteralMatrixCertificates.kernel
+      (UploadBroadcast.LiteralMatrixCertificates.joinColumns
+        (UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.T3_2.side0Columns
+          UploadBroadcast.LiteralPrimitiveTables.T3_2.side1Columns)
+        UploadBroadcast.LiteralPrimitiveTables.T3_2.side2Columns)
+UploadBroadcast.LiteralPrimitiveTables.T3_2.relation_slices_partition : UploadBroadcast.LiteralMatrixCertificates.stack
+    (UploadBroadcast.LiteralMatrixCertificates.stack UploadBroadcast.LiteralPrimitiveTables.T3_2.relationSlice0
+      UploadBroadcast.LiteralPrimitiveTables.T3_2.relationSlice1)
+    UploadBroadcast.LiteralPrimitiveTables.T3_2.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.T3_2.relationBasis
+UploadBroadcast.LiteralPrimitiveTables.T3_2.relation_sum : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.T3_2.relationComponent0 +
+        UploadBroadcast.LiteralMatrixCertificates.castMatrix
+          UploadBroadcast.LiteralPrimitiveTables.T3_2.relationComponent1 +
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.T3_2.relationComponent2 =
+    0
+UploadBroadcast.LiteralPrimitiveTables.T3_2.side_pairwise_disjoint : ∀ {K : Type u_1} [inst : Field K]
+  (i j : UploadBroadcast.Three),
+  i ≠ j →
+    Disjoint (UploadBroadcast.LiteralPrimitiveTables.T3_2.side i) (UploadBroadcast.LiteralPrimitiveTables.T3_2.side j)
+UploadBroadcast.LiteralPrimitiveTables.T3_2.relationComponent0_from_side : UploadBroadcast.LiteralPrimitiveTables.T3_2.side0Columns *
+    UploadBroadcast.LiteralPrimitiveTables.T3_2.relationSlice0 =
+  UploadBroadcast.LiteralPrimitiveTables.T3_2.relationComponent0
+UploadBroadcast.LiteralPrimitiveTables.T3_2.relationComponent0_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T3_2.relationComponent0 ≤
+    UploadBroadcast.LiteralPrimitiveTables.T3_2.side 0
+UploadBroadcast.LiteralPrimitiveTables.T3_2.relation_value0 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.T3_2.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.T3_2.relationComponent0 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![1]]
+UploadBroadcast.LiteralPrimitiveTables.T3_2.induced_side0_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.T3_2.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.T3_2.side0Constraints) =
+    1
+UploadBroadcast.LiteralPrimitiveTables.T3_2.relationComponent1_from_side : UploadBroadcast.LiteralPrimitiveTables.T3_2.side1Columns *
+    UploadBroadcast.LiteralPrimitiveTables.T3_2.relationSlice1 =
+  UploadBroadcast.LiteralPrimitiveTables.T3_2.relationComponent1
+UploadBroadcast.LiteralPrimitiveTables.T3_2.relationComponent1_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T3_2.relationComponent1 ≤
+    UploadBroadcast.LiteralPrimitiveTables.T3_2.side 1
+UploadBroadcast.LiteralPrimitiveTables.T3_2.relation_value1 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.T3_2.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.T3_2.relationComponent1 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![0]]
+UploadBroadcast.LiteralPrimitiveTables.T3_2.induced_side1_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.T3_2.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.T3_2.side1Constraints) =
+    2
+UploadBroadcast.LiteralPrimitiveTables.T3_2.relationComponent2_from_side : UploadBroadcast.LiteralPrimitiveTables.T3_2.side2Columns *
+    UploadBroadcast.LiteralPrimitiveTables.T3_2.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.T3_2.relationComponent2
+UploadBroadcast.LiteralPrimitiveTables.T3_2.relationComponent2_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.T3_2.relationComponent2 ≤
+    UploadBroadcast.LiteralPrimitiveTables.T3_2.side 2
+UploadBroadcast.LiteralPrimitiveTables.T3_2.relation_value2 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.T3_2.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.T3_2.relationComponent2 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![-1]]
+UploadBroadcast.LiteralPrimitiveTables.T3_2.induced_side2_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.T3_2.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.T3_2.side2Constraints) =
+    1
+UploadBroadcast.LiteralPrimitiveTables.T3_2.relay_form_vanishes : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.T3_2.signal 1 ≤ UploadBroadcast.LiteralPrimitiveTables.T3_2.relay
+UploadBroadcast.LiteralPrimitiveTables.R1_1.relay_columns : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R1_1.relayBasis =
+    UploadBroadcast.LiteralPrimitiveTables.R1_1.relay
+UploadBroadcast.LiteralPrimitiveTables.R1_1.side_spanning : ∀ {K : Type u_1} [inst : Field K],
+  ⨆ i, UploadBroadcast.LiteralPrimitiveTables.R1_1.side i = ⊤
+UploadBroadcast.LiteralPrimitiveTables.R1_1.signal0_from_demands : UploadBroadcast.LiteralPrimitiveTables.R1_1.signal0Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.R1_1.side0Columns
+    UploadBroadcast.LiteralPrimitiveTables.R1_1.demand0Columns
+UploadBroadcast.LiteralPrimitiveTables.R1_1.signal1_from_demands : UploadBroadcast.LiteralPrimitiveTables.R1_1.signal1Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.R1_1.side1Columns
+    UploadBroadcast.LiteralPrimitiveTables.R1_1.demand1Columns
+UploadBroadcast.LiteralPrimitiveTables.R1_1.signal2_from_demands : UploadBroadcast.LiteralPrimitiveTables.R1_1.signal2Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.R1_1.side2Columns
+    UploadBroadcast.LiteralPrimitiveTables.R1_1.demand2Columns
+UploadBroadcast.LiteralPrimitiveTables.R1_1.dim_relay : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K ↥UploadBroadcast.LiteralPrimitiveTables.R1_1.relay = 3
+UploadBroadcast.LiteralPrimitiveTables.R1_1.side0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R1_1.side0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.R1_1.side0Constraints
+UploadBroadcast.LiteralPrimitiveTables.R1_1.side1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R1_1.side1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.R1_1.side1Constraints
+UploadBroadcast.LiteralPrimitiveTables.R1_1.side2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R1_1.side2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.R1_1.side2Constraints
+UploadBroadcast.LiteralPrimitiveTables.R1_1.signal0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R1_1.signal0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.R1_1.signal0Constraints
+UploadBroadcast.LiteralPrimitiveTables.R1_1.signal1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R1_1.signal1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.R1_1.signal1Constraints
+UploadBroadcast.LiteralPrimitiveTables.R1_1.signal2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R1_1.signal2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.R1_1.signal2Constraints
+UploadBroadcast.LiteralPrimitiveTables.R1_1.locally_generated : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.R1_1.task.LocallyGenerated UploadBroadcast.LiteralPrimitiveTables.R1_1.relay
+UploadBroadcast.LiteralPrimitiveTables.R1_1.relay_feasible : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.R1_1.task.RelayFeasible UploadBroadcast.LiteralPrimitiveTables.R1_1.relay
+UploadBroadcast.LiteralPrimitiveTables.R1_1.full_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.R1_1.task ⊤ ![1, 2, 2]
+    ![3, 3, 3]
+UploadBroadcast.LiteralPrimitiveTables.R1_1.full_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.R1_1.task (Sum.inl r) = ![2, 2, 1, 1, 1, 1] r
+UploadBroadcast.LiteralPrimitiveTables.R1_1.full_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.R1_1.task (Sum.inr (i, ell)) = 3
+UploadBroadcast.LiteralPrimitiveTables.R1_1.induced_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.R1_1.inducedTask
+    UploadBroadcast.LiteralPrimitiveTables.R1_1.relay ![1, 1, 1] ![3, 2, 2]
+UploadBroadcast.LiteralPrimitiveTables.R1_1.induced_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.R1_1.inducedTask (Sum.inl r) =
+    ![2, 2, 1, 1, 1, 1] r
+UploadBroadcast.LiteralPrimitiveTables.R1_1.induced_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.R1_1.inducedTask (Sum.inr (i, ell)) = 3
+UploadBroadcast.LiteralPrimitiveTables.R1_1.relation_space : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R1_1.relationBasis =
+    UploadBroadcast.LiteralMatrixCertificates.kernel
+      (UploadBroadcast.LiteralMatrixCertificates.joinColumns
+        (UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.R1_1.side0Columns
+          UploadBroadcast.LiteralPrimitiveTables.R1_1.side1Columns)
+        UploadBroadcast.LiteralPrimitiveTables.R1_1.side2Columns)
+UploadBroadcast.LiteralPrimitiveTables.R1_1.relation_slices_partition : UploadBroadcast.LiteralMatrixCertificates.stack
+    (UploadBroadcast.LiteralMatrixCertificates.stack UploadBroadcast.LiteralPrimitiveTables.R1_1.relationSlice0
+      UploadBroadcast.LiteralPrimitiveTables.R1_1.relationSlice1)
+    UploadBroadcast.LiteralPrimitiveTables.R1_1.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.R1_1.relationBasis
+UploadBroadcast.LiteralPrimitiveTables.R1_1.relation_sum : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.R1_1.relationComponent0 +
+        UploadBroadcast.LiteralMatrixCertificates.castMatrix
+          UploadBroadcast.LiteralPrimitiveTables.R1_1.relationComponent1 +
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.R1_1.relationComponent2 =
+    0
+UploadBroadcast.LiteralPrimitiveTables.R1_1.side_pairwise_disjoint : ∀ {K : Type u_1} [inst : Field K]
+  (i j : UploadBroadcast.Three),
+  i ≠ j →
+    Disjoint (UploadBroadcast.LiteralPrimitiveTables.R1_1.side i) (UploadBroadcast.LiteralPrimitiveTables.R1_1.side j)
+UploadBroadcast.LiteralPrimitiveTables.R1_1.relationComponent0_from_side : UploadBroadcast.LiteralPrimitiveTables.R1_1.side0Columns *
+    UploadBroadcast.LiteralPrimitiveTables.R1_1.relationSlice0 =
+  UploadBroadcast.LiteralPrimitiveTables.R1_1.relationComponent0
+UploadBroadcast.LiteralPrimitiveTables.R1_1.relationComponent0_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R1_1.relationComponent0 ≤
+    UploadBroadcast.LiteralPrimitiveTables.R1_1.side 0
+UploadBroadcast.LiteralPrimitiveTables.R1_1.relation_value0 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.R1_1.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.R1_1.relationComponent0 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![0]]
+UploadBroadcast.LiteralPrimitiveTables.R1_1.induced_side0_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.R1_1.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.R1_1.side0Constraints) =
+    1
+UploadBroadcast.LiteralPrimitiveTables.R1_1.relationComponent1_from_side : UploadBroadcast.LiteralPrimitiveTables.R1_1.side1Columns *
+    UploadBroadcast.LiteralPrimitiveTables.R1_1.relationSlice1 =
+  UploadBroadcast.LiteralPrimitiveTables.R1_1.relationComponent1
+UploadBroadcast.LiteralPrimitiveTables.R1_1.relationComponent1_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R1_1.relationComponent1 ≤
+    UploadBroadcast.LiteralPrimitiveTables.R1_1.side 1
+UploadBroadcast.LiteralPrimitiveTables.R1_1.relation_value1 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.R1_1.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.R1_1.relationComponent1 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![-1]]
+UploadBroadcast.LiteralPrimitiveTables.R1_1.induced_side1_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.R1_1.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.R1_1.side1Constraints) =
+    1
+UploadBroadcast.LiteralPrimitiveTables.R1_1.relationComponent2_from_side : UploadBroadcast.LiteralPrimitiveTables.R1_1.side2Columns *
+    UploadBroadcast.LiteralPrimitiveTables.R1_1.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.R1_1.relationComponent2
+UploadBroadcast.LiteralPrimitiveTables.R1_1.relationComponent2_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R1_1.relationComponent2 ≤
+    UploadBroadcast.LiteralPrimitiveTables.R1_1.side 2
+UploadBroadcast.LiteralPrimitiveTables.R1_1.relation_value2 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.R1_1.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.R1_1.relationComponent2 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![1]]
+UploadBroadcast.LiteralPrimitiveTables.R1_1.induced_side2_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.R1_1.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.R1_1.side2Constraints) =
+    1
+UploadBroadcast.LiteralPrimitiveTables.R1_1.relay_form_vanishes : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.R1_1.signal 0 ≤ UploadBroadcast.LiteralPrimitiveTables.R1_1.relay
+UploadBroadcast.LiteralPrimitiveTables.R2.relay_columns : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R2.relayBasis =
+    UploadBroadcast.LiteralPrimitiveTables.R2.relay
+UploadBroadcast.LiteralPrimitiveTables.R2.side_spanning : ∀ {K : Type u_1} [inst : Field K],
+  ⨆ i, UploadBroadcast.LiteralPrimitiveTables.R2.side i = ⊤
+UploadBroadcast.LiteralPrimitiveTables.R2.signal0_from_demands : UploadBroadcast.LiteralPrimitiveTables.R2.signal0Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.R2.side0Columns
+    UploadBroadcast.LiteralPrimitiveTables.R2.demand0Columns
+UploadBroadcast.LiteralPrimitiveTables.R2.signal1_from_demands : UploadBroadcast.LiteralPrimitiveTables.R2.signal1Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.R2.side1Columns
+    UploadBroadcast.LiteralPrimitiveTables.R2.demand1Columns
+UploadBroadcast.LiteralPrimitiveTables.R2.signal2_from_demands : UploadBroadcast.LiteralPrimitiveTables.R2.signal2Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.R2.side2Columns
+    UploadBroadcast.LiteralPrimitiveTables.R2.demand2Columns
+UploadBroadcast.LiteralPrimitiveTables.R2.dim_relay : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K ↥UploadBroadcast.LiteralPrimitiveTables.R2.relay = 2
+UploadBroadcast.LiteralPrimitiveTables.R2.side0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R2.side0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.R2.side0Constraints
+UploadBroadcast.LiteralPrimitiveTables.R2.side1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R2.side1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.R2.side1Constraints
+UploadBroadcast.LiteralPrimitiveTables.R2.side2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R2.side2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.R2.side2Constraints
+UploadBroadcast.LiteralPrimitiveTables.R2.signal0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R2.signal0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.R2.signal0Constraints
+UploadBroadcast.LiteralPrimitiveTables.R2.signal1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R2.signal1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.R2.signal1Constraints
+UploadBroadcast.LiteralPrimitiveTables.R2.signal2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R2.signal2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.R2.signal2Constraints
+UploadBroadcast.LiteralPrimitiveTables.R2.locally_generated : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.R2.task.LocallyGenerated UploadBroadcast.LiteralPrimitiveTables.R2.relay
+UploadBroadcast.LiteralPrimitiveTables.R2.relay_feasible : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.R2.task.RelayFeasible UploadBroadcast.LiteralPrimitiveTables.R2.relay
+UploadBroadcast.LiteralPrimitiveTables.R2.full_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.R2.task ⊤ ![2, 2, 2]
+    ![3, 3, 3]
+UploadBroadcast.LiteralPrimitiveTables.R2.full_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.R2.task (Sum.inl r) = ![1, 1, 1, 1, 1, 1] r
+UploadBroadcast.LiteralPrimitiveTables.R2.full_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.R2.task (Sum.inr (i, ell)) = 2
+UploadBroadcast.LiteralPrimitiveTables.R2.induced_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.R2.inducedTask
+    UploadBroadcast.LiteralPrimitiveTables.R2.relay ![1, 1, 0] ![2, 2, 1]
+UploadBroadcast.LiteralPrimitiveTables.R2.induced_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.R2.inducedTask (Sum.inl r) =
+    ![1, 1, 1, 1, 1, 1] r
+UploadBroadcast.LiteralPrimitiveTables.R2.induced_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.R2.inducedTask (Sum.inr (i, ell)) = 2
+UploadBroadcast.LiteralPrimitiveTables.R2.relation_space : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R2.relationBasis =
+    UploadBroadcast.LiteralMatrixCertificates.kernel
+      (UploadBroadcast.LiteralMatrixCertificates.joinColumns
+        (UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.R2.side0Columns
+          UploadBroadcast.LiteralPrimitiveTables.R2.side1Columns)
+        UploadBroadcast.LiteralPrimitiveTables.R2.side2Columns)
+UploadBroadcast.LiteralPrimitiveTables.R2.relation_slices_partition : UploadBroadcast.LiteralMatrixCertificates.stack
+    (UploadBroadcast.LiteralMatrixCertificates.stack UploadBroadcast.LiteralPrimitiveTables.R2.relationSlice0
+      UploadBroadcast.LiteralPrimitiveTables.R2.relationSlice1)
+    UploadBroadcast.LiteralPrimitiveTables.R2.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.R2.relationBasis
+UploadBroadcast.LiteralPrimitiveTables.R2.relation_sum : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent0 +
+        UploadBroadcast.LiteralMatrixCertificates.castMatrix
+          UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent1 +
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent2 =
+    0
+UploadBroadcast.LiteralPrimitiveTables.R2.side_pairwise_disjoint : ∀ {K : Type u_1} [inst : Field K]
+  (i j : UploadBroadcast.Three),
+  i ≠ j → Disjoint (UploadBroadcast.LiteralPrimitiveTables.R2.side i) (UploadBroadcast.LiteralPrimitiveTables.R2.side j)
+UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent0_from_side : UploadBroadcast.LiteralPrimitiveTables.R2.side0Columns *
+    UploadBroadcast.LiteralPrimitiveTables.R2.relationSlice0 =
+  UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent0
+UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent0_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent0 ≤
+    UploadBroadcast.LiteralPrimitiveTables.R2.side 0
+UploadBroadcast.LiteralPrimitiveTables.R2.relation_value0 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.R2.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent0 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![0, 0], ![-1, 0]]
+UploadBroadcast.LiteralPrimitiveTables.R2.induced_side0_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.R2.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.R2.side0Constraints) =
+    1
+UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent1_from_side : UploadBroadcast.LiteralPrimitiveTables.R2.side1Columns *
+    UploadBroadcast.LiteralPrimitiveTables.R2.relationSlice1 =
+  UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent1
+UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent1_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent1 ≤
+    UploadBroadcast.LiteralPrimitiveTables.R2.side 1
+UploadBroadcast.LiteralPrimitiveTables.R2.relation_value1 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.R2.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent1 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![-1, 1], ![0, 0]]
+UploadBroadcast.LiteralPrimitiveTables.R2.induced_side1_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.R2.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.R2.side1Constraints) =
+    1
+UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent2_from_side : UploadBroadcast.LiteralPrimitiveTables.R2.side2Columns *
+    UploadBroadcast.LiteralPrimitiveTables.R2.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent2
+UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent2_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent2 ≤
+    UploadBroadcast.LiteralPrimitiveTables.R2.side 2
+UploadBroadcast.LiteralPrimitiveTables.R2.relation_value2 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.R2.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent2 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![1, -1], ![1, 0]]
+UploadBroadcast.LiteralPrimitiveTables.R2.induced_side2_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.R2.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.R2.side2Constraints) =
+    0
+UploadBroadcast.LiteralPrimitiveTables.R2.first_form_signal_zero : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.R2.firstRelayForm *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.R2.signal0Columns =
+    0
+UploadBroadcast.LiteralPrimitiveTables.R2.second_form_signal_zero : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.R2.secondRelayForm *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.R2.signal1Columns =
+    0
+UploadBroadcast.LiteralPrimitiveTables.R2.first_form_vanishes : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.R2.signal 0 ≤
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.R2.firstRelayForm
+UploadBroadcast.LiteralPrimitiveTables.R2.second_form_vanishes : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.R2.signal 1 ≤
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.R2.secondRelayForm
+UploadBroadcast.LiteralPrimitiveTables.R2.wedge_from_relation_components : UploadBroadcast.LiteralPrimitiveTables.R2.wedgeMatrix =
+  ![(UploadBroadcast.LiteralPrimitiveTables.R2.relayForms *
+        UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent1)
+      0,
+    (UploadBroadcast.LiteralPrimitiveTables.R2.relayForms *
+        UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent0)
+      1]
+UploadBroadcast.LiteralPrimitiveTables.R2.actual_wedge_determinant : ∀ {K : Type u_1} [inst : Field K],
+  Matrix.det
+      ![(UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.R2.relayForms *
+            UploadBroadcast.LiteralMatrixCertificates.castMatrix
+              UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent1)
+          0,
+        (UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.R2.relayForms *
+            UploadBroadcast.LiteralMatrixCertificates.castMatrix
+              UploadBroadcast.LiteralPrimitiveTables.R2.relationComponent0)
+          1] =
+    1
+UploadBroadcast.LiteralPrimitiveTables.O_1.relay_columns : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_1.relayBasis =
+    UploadBroadcast.LiteralPrimitiveTables.O_1.relay
+UploadBroadcast.LiteralPrimitiveTables.O_1.side_spanning : ∀ {K : Type u_1} [inst : Field K],
+  ⨆ i, UploadBroadcast.LiteralPrimitiveTables.O_1.side i = ⊤
+UploadBroadcast.LiteralPrimitiveTables.O_1.signal0_from_demands : UploadBroadcast.LiteralPrimitiveTables.O_1.signal0Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.O_1.side0Columns
+    UploadBroadcast.LiteralPrimitiveTables.O_1.demand0Columns
+UploadBroadcast.LiteralPrimitiveTables.O_1.signal1_from_demands : UploadBroadcast.LiteralPrimitiveTables.O_1.signal1Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.O_1.side1Columns
+    UploadBroadcast.LiteralPrimitiveTables.O_1.demand1Columns
+UploadBroadcast.LiteralPrimitiveTables.O_1.signal2_from_demands : UploadBroadcast.LiteralPrimitiveTables.O_1.signal2Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.O_1.side2Columns
+    UploadBroadcast.LiteralPrimitiveTables.O_1.demand2Columns
+UploadBroadcast.LiteralPrimitiveTables.O_1.dim_relay : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K ↥UploadBroadcast.LiteralPrimitiveTables.O_1.relay = 2
+UploadBroadcast.LiteralPrimitiveTables.O_1.side0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_1.side0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.O_1.side0Constraints
+UploadBroadcast.LiteralPrimitiveTables.O_1.side1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_1.side1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.O_1.side1Constraints
+UploadBroadcast.LiteralPrimitiveTables.O_1.side2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_1.side2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.O_1.side2Constraints
+UploadBroadcast.LiteralPrimitiveTables.O_1.signal0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_1.signal0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.O_1.signal0Constraints
+UploadBroadcast.LiteralPrimitiveTables.O_1.signal1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_1.signal1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.O_1.signal1Constraints
+UploadBroadcast.LiteralPrimitiveTables.O_1.signal2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_1.signal2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.O_1.signal2Constraints
+UploadBroadcast.LiteralPrimitiveTables.O_1.locally_generated : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.O_1.task.LocallyGenerated UploadBroadcast.LiteralPrimitiveTables.O_1.relay
+UploadBroadcast.LiteralPrimitiveTables.O_1.relay_feasible : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.O_1.task.RelayFeasible UploadBroadcast.LiteralPrimitiveTables.O_1.relay
+UploadBroadcast.LiteralPrimitiveTables.O_1.full_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.O_1.task ⊤ ![1, 1, 2]
+    ![2, 2, 2]
+UploadBroadcast.LiteralPrimitiveTables.O_1.full_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.O_1.task (Sum.inl r) = ![1, 1, 1, 1, 0, 0] r
+UploadBroadcast.LiteralPrimitiveTables.O_1.full_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.O_1.task (Sum.inr (i, ell)) = 2
+UploadBroadcast.LiteralPrimitiveTables.O_1.induced_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.O_1.inducedTask
+    UploadBroadcast.LiteralPrimitiveTables.O_1.relay ![1, 0, 1] ![2, 1, 1]
+UploadBroadcast.LiteralPrimitiveTables.O_1.induced_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.O_1.inducedTask (Sum.inl r) =
+    ![1, 1, 1, 1, 0, 1] r
+UploadBroadcast.LiteralPrimitiveTables.O_1.induced_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.O_1.inducedTask (Sum.inr (i, ell)) = 2
+UploadBroadcast.LiteralPrimitiveTables.O_1.relation_space : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_1.relationBasis =
+    UploadBroadcast.LiteralMatrixCertificates.kernel
+      (UploadBroadcast.LiteralMatrixCertificates.joinColumns
+        (UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.O_1.side0Columns
+          UploadBroadcast.LiteralPrimitiveTables.O_1.side1Columns)
+        UploadBroadcast.LiteralPrimitiveTables.O_1.side2Columns)
+UploadBroadcast.LiteralPrimitiveTables.O_1.relation_slices_partition : UploadBroadcast.LiteralMatrixCertificates.stack
+    (UploadBroadcast.LiteralMatrixCertificates.stack UploadBroadcast.LiteralPrimitiveTables.O_1.relationSlice0
+      UploadBroadcast.LiteralPrimitiveTables.O_1.relationSlice1)
+    UploadBroadcast.LiteralPrimitiveTables.O_1.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.O_1.relationBasis
+UploadBroadcast.LiteralPrimitiveTables.O_1.relation_sum : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.O_1.relationComponent0 +
+        UploadBroadcast.LiteralMatrixCertificates.castMatrix
+          UploadBroadcast.LiteralPrimitiveTables.O_1.relationComponent1 +
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.O_1.relationComponent2 =
+    0
+UploadBroadcast.LiteralPrimitiveTables.O_1.side_pairwise_disjoint : ∀ {K : Type u_1} [inst : Field K]
+  (i j : UploadBroadcast.Three),
+  i ≠ j →
+    Disjoint (UploadBroadcast.LiteralPrimitiveTables.O_1.side i) (UploadBroadcast.LiteralPrimitiveTables.O_1.side j)
+UploadBroadcast.LiteralPrimitiveTables.O_1.relationComponent0_from_side : UploadBroadcast.LiteralPrimitiveTables.O_1.side0Columns *
+    UploadBroadcast.LiteralPrimitiveTables.O_1.relationSlice0 =
+  UploadBroadcast.LiteralPrimitiveTables.O_1.relationComponent0
+UploadBroadcast.LiteralPrimitiveTables.O_1.relationComponent0_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_1.relationComponent0 ≤
+    UploadBroadcast.LiteralPrimitiveTables.O_1.side 0
+UploadBroadcast.LiteralPrimitiveTables.O_1.relation_value0 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.O_1.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.O_1.relationComponent0 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![0]]
+UploadBroadcast.LiteralPrimitiveTables.O_1.induced_side0_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.O_1.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.O_1.side0Constraints) =
+    1
+UploadBroadcast.LiteralPrimitiveTables.O_1.relationComponent1_from_side : UploadBroadcast.LiteralPrimitiveTables.O_1.side1Columns *
+    UploadBroadcast.LiteralPrimitiveTables.O_1.relationSlice1 =
+  UploadBroadcast.LiteralPrimitiveTables.O_1.relationComponent1
+UploadBroadcast.LiteralPrimitiveTables.O_1.relationComponent1_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_1.relationComponent1 ≤
+    UploadBroadcast.LiteralPrimitiveTables.O_1.side 1
+UploadBroadcast.LiteralPrimitiveTables.O_1.relation_value1 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.O_1.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.O_1.relationComponent1 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![-1]]
+UploadBroadcast.LiteralPrimitiveTables.O_1.induced_side1_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.O_1.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.O_1.side1Constraints) =
+    0
+UploadBroadcast.LiteralPrimitiveTables.O_1.relationComponent2_from_side : UploadBroadcast.LiteralPrimitiveTables.O_1.side2Columns *
+    UploadBroadcast.LiteralPrimitiveTables.O_1.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.O_1.relationComponent2
+UploadBroadcast.LiteralPrimitiveTables.O_1.relationComponent2_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_1.relationComponent2 ≤
+    UploadBroadcast.LiteralPrimitiveTables.O_1.side 2
+UploadBroadcast.LiteralPrimitiveTables.O_1.relation_value2 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.O_1.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.O_1.relationComponent2 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![1]]
+UploadBroadcast.LiteralPrimitiveTables.O_1.induced_side2_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.O_1.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.O_1.side2Constraints) =
+    1
+UploadBroadcast.LiteralPrimitiveTables.O_1.relay_form_vanishes : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.O_1.signal 0 ≤ UploadBroadcast.LiteralPrimitiveTables.O_1.relay
+UploadBroadcast.LiteralPrimitiveTables.O_2.relay_columns : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_2.relayBasis =
+    UploadBroadcast.LiteralPrimitiveTables.O_2.relay
+UploadBroadcast.LiteralPrimitiveTables.O_2.side_spanning : ∀ {K : Type u_1} [inst : Field K],
+  ⨆ i, UploadBroadcast.LiteralPrimitiveTables.O_2.side i = ⊤
+UploadBroadcast.LiteralPrimitiveTables.O_2.signal0_from_demands : UploadBroadcast.LiteralPrimitiveTables.O_2.signal0Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.O_2.side0Columns
+    UploadBroadcast.LiteralPrimitiveTables.O_2.demand0Columns
+UploadBroadcast.LiteralPrimitiveTables.O_2.signal1_from_demands : UploadBroadcast.LiteralPrimitiveTables.O_2.signal1Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.O_2.side1Columns
+    UploadBroadcast.LiteralPrimitiveTables.O_2.demand1Columns
+UploadBroadcast.LiteralPrimitiveTables.O_2.signal2_from_demands : UploadBroadcast.LiteralPrimitiveTables.O_2.signal2Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.O_2.side2Columns
+    UploadBroadcast.LiteralPrimitiveTables.O_2.demand2Columns
+UploadBroadcast.LiteralPrimitiveTables.O_2.dim_relay : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K ↥UploadBroadcast.LiteralPrimitiveTables.O_2.relay = 2
+UploadBroadcast.LiteralPrimitiveTables.O_2.side0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_2.side0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.O_2.side0Constraints
+UploadBroadcast.LiteralPrimitiveTables.O_2.side1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_2.side1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.O_2.side1Constraints
+UploadBroadcast.LiteralPrimitiveTables.O_2.side2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_2.side2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.O_2.side2Constraints
+UploadBroadcast.LiteralPrimitiveTables.O_2.signal0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_2.signal0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.O_2.signal0Constraints
+UploadBroadcast.LiteralPrimitiveTables.O_2.signal1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_2.signal1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.O_2.signal1Constraints
+UploadBroadcast.LiteralPrimitiveTables.O_2.signal2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_2.signal2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.O_2.signal2Constraints
+UploadBroadcast.LiteralPrimitiveTables.O_2.locally_generated : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.O_2.task.LocallyGenerated UploadBroadcast.LiteralPrimitiveTables.O_2.relay
+UploadBroadcast.LiteralPrimitiveTables.O_2.relay_feasible : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.O_2.task.RelayFeasible UploadBroadcast.LiteralPrimitiveTables.O_2.relay
+UploadBroadcast.LiteralPrimitiveTables.O_2.full_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.O_2.task ⊤ ![1, 1, 2]
+    ![2, 2, 2]
+UploadBroadcast.LiteralPrimitiveTables.O_2.full_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.O_2.task (Sum.inl r) = ![1, 1, 1, 1, 0, 0] r
+UploadBroadcast.LiteralPrimitiveTables.O_2.full_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.O_2.task (Sum.inr (i, ell)) = 2
+UploadBroadcast.LiteralPrimitiveTables.O_2.induced_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.O_2.inducedTask
+    UploadBroadcast.LiteralPrimitiveTables.O_2.relay ![0, 1, 1] ![1, 2, 1]
+UploadBroadcast.LiteralPrimitiveTables.O_2.induced_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.O_2.inducedTask (Sum.inl r) =
+    ![1, 1, 1, 1, 1, 0] r
+UploadBroadcast.LiteralPrimitiveTables.O_2.induced_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.O_2.inducedTask (Sum.inr (i, ell)) = 2
+UploadBroadcast.LiteralPrimitiveTables.O_2.relation_space : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_2.relationBasis =
+    UploadBroadcast.LiteralMatrixCertificates.kernel
+      (UploadBroadcast.LiteralMatrixCertificates.joinColumns
+        (UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.O_2.side0Columns
+          UploadBroadcast.LiteralPrimitiveTables.O_2.side1Columns)
+        UploadBroadcast.LiteralPrimitiveTables.O_2.side2Columns)
+UploadBroadcast.LiteralPrimitiveTables.O_2.relation_slices_partition : UploadBroadcast.LiteralMatrixCertificates.stack
+    (UploadBroadcast.LiteralMatrixCertificates.stack UploadBroadcast.LiteralPrimitiveTables.O_2.relationSlice0
+      UploadBroadcast.LiteralPrimitiveTables.O_2.relationSlice1)
+    UploadBroadcast.LiteralPrimitiveTables.O_2.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.O_2.relationBasis
+UploadBroadcast.LiteralPrimitiveTables.O_2.relation_sum : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.O_2.relationComponent0 +
+        UploadBroadcast.LiteralMatrixCertificates.castMatrix
+          UploadBroadcast.LiteralPrimitiveTables.O_2.relationComponent1 +
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.O_2.relationComponent2 =
+    0
+UploadBroadcast.LiteralPrimitiveTables.O_2.side_pairwise_disjoint : ∀ {K : Type u_1} [inst : Field K]
+  (i j : UploadBroadcast.Three),
+  i ≠ j →
+    Disjoint (UploadBroadcast.LiteralPrimitiveTables.O_2.side i) (UploadBroadcast.LiteralPrimitiveTables.O_2.side j)
+UploadBroadcast.LiteralPrimitiveTables.O_2.relationComponent0_from_side : UploadBroadcast.LiteralPrimitiveTables.O_2.side0Columns *
+    UploadBroadcast.LiteralPrimitiveTables.O_2.relationSlice0 =
+  UploadBroadcast.LiteralPrimitiveTables.O_2.relationComponent0
+UploadBroadcast.LiteralPrimitiveTables.O_2.relationComponent0_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_2.relationComponent0 ≤
+    UploadBroadcast.LiteralPrimitiveTables.O_2.side 0
+UploadBroadcast.LiteralPrimitiveTables.O_2.relation_value0 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.O_2.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.O_2.relationComponent0 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![1]]
+UploadBroadcast.LiteralPrimitiveTables.O_2.induced_side0_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.O_2.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.O_2.side0Constraints) =
+    0
+UploadBroadcast.LiteralPrimitiveTables.O_2.relationComponent1_from_side : UploadBroadcast.LiteralPrimitiveTables.O_2.side1Columns *
+    UploadBroadcast.LiteralPrimitiveTables.O_2.relationSlice1 =
+  UploadBroadcast.LiteralPrimitiveTables.O_2.relationComponent1
+UploadBroadcast.LiteralPrimitiveTables.O_2.relationComponent1_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_2.relationComponent1 ≤
+    UploadBroadcast.LiteralPrimitiveTables.O_2.side 1
+UploadBroadcast.LiteralPrimitiveTables.O_2.relation_value1 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.O_2.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.O_2.relationComponent1 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![0]]
+UploadBroadcast.LiteralPrimitiveTables.O_2.induced_side1_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.O_2.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.O_2.side1Constraints) =
+    1
+UploadBroadcast.LiteralPrimitiveTables.O_2.relationComponent2_from_side : UploadBroadcast.LiteralPrimitiveTables.O_2.side2Columns *
+    UploadBroadcast.LiteralPrimitiveTables.O_2.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.O_2.relationComponent2
+UploadBroadcast.LiteralPrimitiveTables.O_2.relationComponent2_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_2.relationComponent2 ≤
+    UploadBroadcast.LiteralPrimitiveTables.O_2.side 2
+UploadBroadcast.LiteralPrimitiveTables.O_2.relation_value2 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.O_2.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.O_2.relationComponent2 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![-1]]
+UploadBroadcast.LiteralPrimitiveTables.O_2.induced_side2_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.O_2.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.O_2.side2Constraints) =
+    1
+UploadBroadcast.LiteralPrimitiveTables.O_2.relay_form_vanishes : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.O_2.signal 1 ≤ UploadBroadcast.LiteralPrimitiveTables.O_2.relay
+UploadBroadcast.LiteralPrimitiveTables.O_3.relay_columns : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_3.relayBasis =
+    UploadBroadcast.LiteralPrimitiveTables.O_3.relay
+UploadBroadcast.LiteralPrimitiveTables.O_3.side_spanning : ∀ {K : Type u_1} [inst : Field K],
+  ⨆ i, UploadBroadcast.LiteralPrimitiveTables.O_3.side i = ⊤
+UploadBroadcast.LiteralPrimitiveTables.O_3.signal0_from_demands : UploadBroadcast.LiteralPrimitiveTables.O_3.signal0Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.O_3.side0Columns
+    UploadBroadcast.LiteralPrimitiveTables.O_3.demand0Columns
+UploadBroadcast.LiteralPrimitiveTables.O_3.signal1_from_demands : UploadBroadcast.LiteralPrimitiveTables.O_3.signal1Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.O_3.side1Columns
+    UploadBroadcast.LiteralPrimitiveTables.O_3.demand1Columns
+UploadBroadcast.LiteralPrimitiveTables.O_3.signal2_from_demands : UploadBroadcast.LiteralPrimitiveTables.O_3.signal2Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.O_3.side2Columns
+    UploadBroadcast.LiteralPrimitiveTables.O_3.demand2Columns
+UploadBroadcast.LiteralPrimitiveTables.O_3.dim_relay : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K ↥UploadBroadcast.LiteralPrimitiveTables.O_3.relay = 2
+UploadBroadcast.LiteralPrimitiveTables.O_3.side0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_3.side0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.O_3.side0Constraints
+UploadBroadcast.LiteralPrimitiveTables.O_3.side1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_3.side1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.O_3.side1Constraints
+UploadBroadcast.LiteralPrimitiveTables.O_3.side2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_3.side2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.O_3.side2Constraints
+UploadBroadcast.LiteralPrimitiveTables.O_3.signal0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_3.signal0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.O_3.signal0Constraints
+UploadBroadcast.LiteralPrimitiveTables.O_3.signal1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_3.signal1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.O_3.signal1Constraints
+UploadBroadcast.LiteralPrimitiveTables.O_3.signal2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_3.signal2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.O_3.signal2Constraints
+UploadBroadcast.LiteralPrimitiveTables.O_3.locally_generated : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.O_3.task.LocallyGenerated UploadBroadcast.LiteralPrimitiveTables.O_3.relay
+UploadBroadcast.LiteralPrimitiveTables.O_3.relay_feasible : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.O_3.task.RelayFeasible UploadBroadcast.LiteralPrimitiveTables.O_3.relay
+UploadBroadcast.LiteralPrimitiveTables.O_3.full_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.O_3.task ⊤ ![1, 1, 2]
+    ![2, 2, 2]
+UploadBroadcast.LiteralPrimitiveTables.O_3.full_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.O_3.task (Sum.inl r) = ![1, 1, 1, 1, 0, 0] r
+UploadBroadcast.LiteralPrimitiveTables.O_3.full_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.O_3.task (Sum.inr (i, ell)) = 2
+UploadBroadcast.LiteralPrimitiveTables.O_3.induced_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.O_3.inducedTask
+    UploadBroadcast.LiteralPrimitiveTables.O_3.relay ![0, 0, 2] ![1, 1, 2]
+UploadBroadcast.LiteralPrimitiveTables.O_3.induced_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.O_3.inducedTask (Sum.inl r) =
+    ![2, 1, 2, 1, 0, 0] r
+UploadBroadcast.LiteralPrimitiveTables.O_3.induced_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.O_3.inducedTask (Sum.inr (i, ell)) = 2
+UploadBroadcast.LiteralPrimitiveTables.O_3.relation_space : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_3.relationBasis =
+    UploadBroadcast.LiteralMatrixCertificates.kernel
+      (UploadBroadcast.LiteralMatrixCertificates.joinColumns
+        (UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.O_3.side0Columns
+          UploadBroadcast.LiteralPrimitiveTables.O_3.side1Columns)
+        UploadBroadcast.LiteralPrimitiveTables.O_3.side2Columns)
+UploadBroadcast.LiteralPrimitiveTables.O_3.relation_slices_partition : UploadBroadcast.LiteralMatrixCertificates.stack
+    (UploadBroadcast.LiteralMatrixCertificates.stack UploadBroadcast.LiteralPrimitiveTables.O_3.relationSlice0
+      UploadBroadcast.LiteralPrimitiveTables.O_3.relationSlice1)
+    UploadBroadcast.LiteralPrimitiveTables.O_3.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.O_3.relationBasis
+UploadBroadcast.LiteralPrimitiveTables.O_3.relation_sum : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.O_3.relationComponent0 +
+        UploadBroadcast.LiteralMatrixCertificates.castMatrix
+          UploadBroadcast.LiteralPrimitiveTables.O_3.relationComponent1 +
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.O_3.relationComponent2 =
+    0
+UploadBroadcast.LiteralPrimitiveTables.O_3.side_pairwise_disjoint : ∀ {K : Type u_1} [inst : Field K]
+  (i j : UploadBroadcast.Three),
+  i ≠ j →
+    Disjoint (UploadBroadcast.LiteralPrimitiveTables.O_3.side i) (UploadBroadcast.LiteralPrimitiveTables.O_3.side j)
+UploadBroadcast.LiteralPrimitiveTables.O_3.relationComponent0_from_side : UploadBroadcast.LiteralPrimitiveTables.O_3.side0Columns *
+    UploadBroadcast.LiteralPrimitiveTables.O_3.relationSlice0 =
+  UploadBroadcast.LiteralPrimitiveTables.O_3.relationComponent0
+UploadBroadcast.LiteralPrimitiveTables.O_3.relationComponent0_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_3.relationComponent0 ≤
+    UploadBroadcast.LiteralPrimitiveTables.O_3.side 0
+UploadBroadcast.LiteralPrimitiveTables.O_3.relation_value0 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.O_3.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.O_3.relationComponent0 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![1]]
+UploadBroadcast.LiteralPrimitiveTables.O_3.induced_side0_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.O_3.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.O_3.side0Constraints) =
+    0
+UploadBroadcast.LiteralPrimitiveTables.O_3.relationComponent1_from_side : UploadBroadcast.LiteralPrimitiveTables.O_3.side1Columns *
+    UploadBroadcast.LiteralPrimitiveTables.O_3.relationSlice1 =
+  UploadBroadcast.LiteralPrimitiveTables.O_3.relationComponent1
+UploadBroadcast.LiteralPrimitiveTables.O_3.relationComponent1_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_3.relationComponent1 ≤
+    UploadBroadcast.LiteralPrimitiveTables.O_3.side 1
+UploadBroadcast.LiteralPrimitiveTables.O_3.relation_value1 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.O_3.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.O_3.relationComponent1 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![-1]]
+UploadBroadcast.LiteralPrimitiveTables.O_3.induced_side1_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.O_3.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.O_3.side1Constraints) =
+    0
+UploadBroadcast.LiteralPrimitiveTables.O_3.relationComponent2_from_side : UploadBroadcast.LiteralPrimitiveTables.O_3.side2Columns *
+    UploadBroadcast.LiteralPrimitiveTables.O_3.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.O_3.relationComponent2
+UploadBroadcast.LiteralPrimitiveTables.O_3.relationComponent2_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.O_3.relationComponent2 ≤
+    UploadBroadcast.LiteralPrimitiveTables.O_3.side 2
+UploadBroadcast.LiteralPrimitiveTables.O_3.relation_value2 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.O_3.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.O_3.relationComponent2 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![0]]
+UploadBroadcast.LiteralPrimitiveTables.O_3.induced_side2_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.O_3.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.O_3.side2Constraints) =
+    2
+UploadBroadcast.LiteralPrimitiveTables.O_3.relay_form_vanishes : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.O_3.signal 2 ≤ UploadBroadcast.LiteralPrimitiveTables.O_3.relay
+UploadBroadcast.LiteralPrimitiveTables.H_1.relay_columns : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.H_1.relayBasis =
+    UploadBroadcast.LiteralPrimitiveTables.H_1.relay
+UploadBroadcast.LiteralPrimitiveTables.H_1.side_spanning : ∀ {K : Type u_1} [inst : Field K],
+  ⨆ i, UploadBroadcast.LiteralPrimitiveTables.H_1.side i = ⊤
+UploadBroadcast.LiteralPrimitiveTables.H_1.signal0_from_demands : UploadBroadcast.LiteralPrimitiveTables.H_1.signal0Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.H_1.side0Columns
+    UploadBroadcast.LiteralPrimitiveTables.H_1.demand0Columns
+UploadBroadcast.LiteralPrimitiveTables.H_1.signal1_from_demands : UploadBroadcast.LiteralPrimitiveTables.H_1.signal1Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.H_1.side1Columns
+    UploadBroadcast.LiteralPrimitiveTables.H_1.demand1Columns
+UploadBroadcast.LiteralPrimitiveTables.H_1.signal2_from_demands : UploadBroadcast.LiteralPrimitiveTables.H_1.signal2Columns =
+  UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.H_1.side2Columns
+    UploadBroadcast.LiteralPrimitiveTables.H_1.demand2Columns
+UploadBroadcast.LiteralPrimitiveTables.H_1.dim_relay : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K ↥UploadBroadcast.LiteralPrimitiveTables.H_1.relay = 2
+UploadBroadcast.LiteralPrimitiveTables.H_1.side0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.H_1.side0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.H_1.side0Constraints
+UploadBroadcast.LiteralPrimitiveTables.H_1.side1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.H_1.side1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.H_1.side1Constraints
+UploadBroadcast.LiteralPrimitiveTables.H_1.side2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.H_1.side2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.H_1.side2Constraints
+UploadBroadcast.LiteralPrimitiveTables.H_1.signal0_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.H_1.signal0Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.H_1.signal0Constraints
+UploadBroadcast.LiteralPrimitiveTables.H_1.signal1_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.H_1.signal1Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.H_1.signal1Constraints
+UploadBroadcast.LiteralPrimitiveTables.H_1.signal2_literal : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.H_1.signal2Columns =
+    UploadBroadcast.LiteralMatrixCertificates.kernel UploadBroadcast.LiteralPrimitiveTables.H_1.signal2Constraints
+UploadBroadcast.LiteralPrimitiveTables.H_1.locally_generated : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.H_1.task.LocallyGenerated UploadBroadcast.LiteralPrimitiveTables.H_1.relay
+UploadBroadcast.LiteralPrimitiveTables.H_1.relay_feasible : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.H_1.task.RelayFeasible UploadBroadcast.LiteralPrimitiveTables.H_1.relay
+UploadBroadcast.LiteralPrimitiveTables.H_1.full_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.H_1.task ⊤ ![1, 1, 2]
+    ![2, 2, 3]
+UploadBroadcast.LiteralPrimitiveTables.H_1.full_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.H_1.task (Sum.inl r) = ![1, 1, 1, 1, 1, 1] r
+UploadBroadcast.LiteralPrimitiveTables.H_1.full_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.H_1.task (Sum.inr (i, ell)) = 2
+UploadBroadcast.LiteralPrimitiveTables.H_1.induced_rankConditions : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.NonzeroDefectProfile.RankConditions UploadBroadcast.LiteralPrimitiveTables.H_1.inducedTask
+    UploadBroadcast.LiteralPrimitiveTables.H_1.relay ![1, 0, 1] ![2, 1, 2]
+UploadBroadcast.LiteralPrimitiveTables.H_1.induced_first_profile : ∀ {K : Type u_1} [inst : Field K] (r : Fin 6),
+  UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.H_1.inducedTask (Sum.inl r) =
+    ![1, 1, 1, 1, 1, 1] r
+UploadBroadcast.LiteralPrimitiveTables.H_1.induced_second_profile : ∀ {K : Type u_1} [inst : Field K]
+  (i ell : UploadBroadcast.Three),
+  2 * UploadBroadcast.Profile.entry UploadBroadcast.LiteralPrimitiveTables.H_1.inducedTask (Sum.inr (i, ell)) = 2
+UploadBroadcast.LiteralPrimitiveTables.H_1.relation_space : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.H_1.relationBasis =
+    UploadBroadcast.LiteralMatrixCertificates.kernel
+      (UploadBroadcast.LiteralMatrixCertificates.joinColumns
+        (UploadBroadcast.LiteralMatrixCertificates.joinColumns UploadBroadcast.LiteralPrimitiveTables.H_1.side0Columns
+          UploadBroadcast.LiteralPrimitiveTables.H_1.side1Columns)
+        UploadBroadcast.LiteralPrimitiveTables.H_1.side2Columns)
+UploadBroadcast.LiteralPrimitiveTables.H_1.relation_slices_partition : UploadBroadcast.LiteralMatrixCertificates.stack
+    (UploadBroadcast.LiteralMatrixCertificates.stack UploadBroadcast.LiteralPrimitiveTables.H_1.relationSlice0
+      UploadBroadcast.LiteralPrimitiveTables.H_1.relationSlice1)
+    UploadBroadcast.LiteralPrimitiveTables.H_1.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.H_1.relationBasis
+UploadBroadcast.LiteralPrimitiveTables.H_1.relation_sum : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.H_1.relationComponent0 +
+        UploadBroadcast.LiteralMatrixCertificates.castMatrix
+          UploadBroadcast.LiteralPrimitiveTables.H_1.relationComponent1 +
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.H_1.relationComponent2 =
+    0
+UploadBroadcast.LiteralPrimitiveTables.H_1.side_pairwise_disjoint : ∀ {K : Type u_1} [inst : Field K]
+  (i j : UploadBroadcast.Three),
+  i ≠ j →
+    Disjoint (UploadBroadcast.LiteralPrimitiveTables.H_1.side i) (UploadBroadcast.LiteralPrimitiveTables.H_1.side j)
+UploadBroadcast.LiteralPrimitiveTables.H_1.relationComponent0_from_side : UploadBroadcast.LiteralPrimitiveTables.H_1.side0Columns *
+    UploadBroadcast.LiteralPrimitiveTables.H_1.relationSlice0 =
+  UploadBroadcast.LiteralPrimitiveTables.H_1.relationComponent0
+UploadBroadcast.LiteralPrimitiveTables.H_1.relationComponent0_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.H_1.relationComponent0 ≤
+    UploadBroadcast.LiteralPrimitiveTables.H_1.side 0
+UploadBroadcast.LiteralPrimitiveTables.H_1.relation_value0 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.H_1.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.H_1.relationComponent0 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![0]]
+UploadBroadcast.LiteralPrimitiveTables.H_1.induced_side0_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.H_1.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.H_1.side0Constraints) =
+    1
+UploadBroadcast.LiteralPrimitiveTables.H_1.relationComponent1_from_side : UploadBroadcast.LiteralPrimitiveTables.H_1.side1Columns *
+    UploadBroadcast.LiteralPrimitiveTables.H_1.relationSlice1 =
+  UploadBroadcast.LiteralPrimitiveTables.H_1.relationComponent1
+UploadBroadcast.LiteralPrimitiveTables.H_1.relationComponent1_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.H_1.relationComponent1 ≤
+    UploadBroadcast.LiteralPrimitiveTables.H_1.side 1
+UploadBroadcast.LiteralPrimitiveTables.H_1.relation_value1 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.H_1.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.H_1.relationComponent1 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![-1]]
+UploadBroadcast.LiteralPrimitiveTables.H_1.induced_side1_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.H_1.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.H_1.side1Constraints) =
+    0
+UploadBroadcast.LiteralPrimitiveTables.H_1.relationComponent2_from_side : UploadBroadcast.LiteralPrimitiveTables.H_1.side2Columns *
+    UploadBroadcast.LiteralPrimitiveTables.H_1.relationSlice2 =
+  UploadBroadcast.LiteralPrimitiveTables.H_1.relationComponent2
+UploadBroadcast.LiteralPrimitiveTables.H_1.relationComponent2_in_side : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.columns UploadBroadcast.LiteralPrimitiveTables.H_1.relationComponent2 ≤
+    UploadBroadcast.LiteralPrimitiveTables.H_1.side 2
+UploadBroadcast.LiteralPrimitiveTables.H_1.relation_value2 : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralMatrixCertificates.castMatrix UploadBroadcast.LiteralPrimitiveTables.H_1.relayForms *
+      UploadBroadcast.LiteralMatrixCertificates.castMatrix
+        UploadBroadcast.LiteralPrimitiveTables.H_1.relationComponent2 =
+    UploadBroadcast.LiteralMatrixCertificates.castMatrix ![![1]]
+UploadBroadcast.LiteralPrimitiveTables.H_1.induced_side2_dim : ∀ {K : Type u_1} [inst : Field K],
+  Module.finrank K
+      ↥(UploadBroadcast.LiteralPrimitiveTables.H_1.relay ⊓
+          UploadBroadcast.LiteralMatrixCertificates.kernel
+            UploadBroadcast.LiteralPrimitiveTables.H_1.side2Constraints) =
+    1
+UploadBroadcast.LiteralPrimitiveTables.H_1.relay_form_vanishes : ∀ {K : Type u_1} [inst : Field K],
+  UploadBroadcast.LiteralPrimitiveTables.H_1.signal 0 ≤ UploadBroadcast.LiteralPrimitiveTables.H_1.relay
+UploadBroadcast.LiteralThetaBlocks.R0.rank_conditions : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      UploadBroadcast.NonzeroDefectProfile.RankConditions (UploadBroadcast.LiteralThetaBlocks.R0.task θ) ⊤ ![1, 2, 2]
+        ![2, 3, 3]
+UploadBroadcast.LiteralThetaBlocks.R0.full_profile : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      (∀ (r : Fin 6), UploadBroadcast.Profile.entry (UploadBroadcast.LiteralThetaBlocks.R0.task θ) (Sum.inl r) = 1) ∧
+        ∀ (i ell : UploadBroadcast.Three),
+          2 * UploadBroadcast.Profile.entry (UploadBroadcast.LiteralThetaBlocks.R0.task θ) (Sum.inr (i, ell)) = 3
+UploadBroadcast.LiteralThetaBlocks.R0.relation_certificate : ∀ {K : Type} [inst : Field K],
+  ![1, 0, 0, 0] ∈ UploadBroadcast.LiteralThetaBlocks.R0.A 0 ∧
+    ![0, 0, 0, 1] ∈ UploadBroadcast.LiteralThetaBlocks.R0.A 1 ∧
+      ![-1, 0, 0, -1] ∈ UploadBroadcast.LiteralThetaBlocks.R0.A 2 ∧
+        ![1, 0, 0, 0] + ![0, 0, 0, 1] + ![-1, 0, 0, -1] = 0 ∧
+          UploadBroadcast.LiteralThetaBlocks.R0.wform ![1, 0, 0, 0] = 0 ∧
+            UploadBroadcast.LiteralThetaBlocks.R0.wform ![0, 0, 0, 1] = 1 ∧
+              UploadBroadcast.LiteralThetaBlocks.R0.wform ![-1, 0, 0, -1] = -1
+UploadBroadcast.LiteralThetaBlocks.R0.relay : ∀ {K : Type} [inst : Field K] (θ : K),
+  (UploadBroadcast.LiteralThetaBlocks.R0.task θ).LocallyGenerated UploadBroadcast.LiteralThetaBlocks.R0.P ∧
+    (UploadBroadcast.LiteralThetaBlocks.R0.task θ).RelayFeasible UploadBroadcast.LiteralThetaBlocks.R0.P
+UploadBroadcast.LiteralThetaBlocks.R0.P_eq_kernel : ∀ {K : Type} [inst : Field K],
+  UploadBroadcast.LiteralThetaBlocks.R0.P = LinearMap.ker UploadBroadcast.LiteralThetaBlocks.R0.wform
+UploadBroadcast.LiteralThetaBlocks.R0.pair01 : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.LiteralThetaBlocks.R0.U θ 0 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.U θ 1 =
+    UploadBroadcast.LiteralThetaBlocks.vspan ![![1, 1, 1, 0]]
+UploadBroadcast.LiteralThetaBlocks.R0.pair02 : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.LiteralThetaBlocks.R0.U θ 0 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.U θ 2 =
+    UploadBroadcast.LiteralThetaBlocks.vspan ![![1, θ, θ, 0]]
+UploadBroadcast.LiteralThetaBlocks.R0.pair12 : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.LiteralThetaBlocks.R0.U θ 1 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.U θ 2 =
+    UploadBroadcast.LiteralThetaBlocks.vspan ![![1, θ, 1, 0], ![0, -θ, 0, 1]]
+UploadBroadcast.LiteralThetaBlocks.R0.pair_dimension : ∀ {K : Type} [inst : Field K] (θ : K)
+  (i j : UploadBroadcast.Three),
+  i ≠ j →
+    Module.finrank K ↥(UploadBroadcast.LiteralThetaBlocks.R0.U θ i ⊓ UploadBroadcast.LiteralThetaBlocks.R0.U θ j) + 4 =
+      ![2, 3, 3] i + ![2, 3, 3] j
+UploadBroadcast.LiteralThetaBlocks.R0.triple_zero : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 1 →
+    UploadBroadcast.LiteralThetaBlocks.R0.U θ 0 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.U θ 1 ⊓
+        UploadBroadcast.LiteralThetaBlocks.R0.U θ 2 =
+      ⊥
+UploadBroadcast.LiteralThetaBlocks.R0.pair_conditional_rank : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      ∀ (i j : UploadBroadcast.Three),
+        i ≠ j →
+          UploadBroadcast.condRank
+              (UploadBroadcast.LiteralThetaBlocks.R0.U θ i ⊓ UploadBroadcast.LiteralThetaBlocks.R0.U θ j)
+              (UploadBroadcast.LiteralThetaBlocks.R0.A j) =
+            1
+UploadBroadcast.LiteralThetaBlocks.R0.pairs_span : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      ∀ (i j : UploadBroadcast.Three),
+        i ≠ j → UploadBroadcast.LiteralThetaBlocks.R0.U θ i ⊔ UploadBroadcast.LiteralThetaBlocks.R0.U θ j = ⊤
+UploadBroadcast.LiteralThetaBlocks.R0.relay_side_dimension : ∀ {K : Type} [inst : Field K] (i : UploadBroadcast.Three),
+  Module.finrank K ↥(UploadBroadcast.LiteralThetaBlocks.R0.P ⊓ UploadBroadcast.LiteralThetaBlocks.R0.A i) = 1
+UploadBroadcast.LiteralThetaBlocks.R0.relay_signal_dimension : ∀ {K : Type} [inst : Field K] (θ : K)
+  (i : UploadBroadcast.Three),
+  Module.finrank K ↥(UploadBroadcast.LiteralThetaBlocks.R0.P ⊓ UploadBroadcast.LiteralThetaBlocks.R0.U θ i) = 2
+UploadBroadcast.LiteralThetaBlocks.R0.relay_local_upload_dimension : ∀ {K : Type} [inst : Field K],
+  ∑ i, Module.finrank K ↥(UploadBroadcast.LiteralThetaBlocks.R0.P ⊓ UploadBroadcast.LiteralThetaBlocks.R0.A i) =
+    Module.finrank K ↥UploadBroadcast.LiteralThetaBlocks.R0.P
+UploadBroadcast.LiteralThetaBlocks.R0.relay_pair_dimension : ∀ {K : Type} [inst : Field K] (θ : K)
+  (i j : UploadBroadcast.Three),
+  i ≠ j →
+    Module.finrank K
+        ↥(UploadBroadcast.LiteralThetaBlocks.R0.U θ i ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P ⊓
+            (UploadBroadcast.LiteralThetaBlocks.R0.U θ j ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P)) =
+      1
+UploadBroadcast.LiteralThetaBlocks.R0.relay_pair_conditional_rank : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      ∀ (i j : UploadBroadcast.Three),
+        i ≠ j →
+          UploadBroadcast.condRank
+              (UploadBroadcast.LiteralThetaBlocks.R0.U θ i ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P ⊓
+                (UploadBroadcast.LiteralThetaBlocks.R0.U θ j ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P))
+              (UploadBroadcast.LiteralThetaBlocks.R0.A j ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P) =
+            1
+UploadBroadcast.LiteralThetaBlocks.R0.relay_triple_zero : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 1 →
+    UploadBroadcast.LiteralThetaBlocks.R0.U θ 0 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P ⊓
+          (UploadBroadcast.LiteralThetaBlocks.R0.U θ 1 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P) ⊓
+        (UploadBroadcast.LiteralThetaBlocks.R0.U θ 2 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P) =
+      ⊥
+UploadBroadcast.LiteralThetaBlocks.R0.relay_pair01 : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.LiteralThetaBlocks.R0.U θ 0 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P ⊓
+      (UploadBroadcast.LiteralThetaBlocks.R0.U θ 1 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P) =
+    UploadBroadcast.LiteralThetaBlocks.vspan ![![1, 1, 1, 0]]
+UploadBroadcast.LiteralThetaBlocks.R0.relay_pair02 : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.LiteralThetaBlocks.R0.U θ 0 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P ⊓
+      (UploadBroadcast.LiteralThetaBlocks.R0.U θ 2 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P) =
+    UploadBroadcast.LiteralThetaBlocks.vspan ![![1, θ, θ, 0]]
+UploadBroadcast.LiteralThetaBlocks.R0.relay_pair12 : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.LiteralThetaBlocks.R0.U θ 1 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P ⊓
+      (UploadBroadcast.LiteralThetaBlocks.R0.U θ 2 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P) =
+    UploadBroadcast.LiteralThetaBlocks.vspan ![![1, θ, 1, 0]]
+UploadBroadcast.LiteralThetaBlocks.D.rank_conditions : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      UploadBroadcast.NonzeroDefectProfile.RankConditions (UploadBroadcast.LiteralThetaBlocks.D.task θ) ⊤ (fun x => 1)
+        fun x => 2
+UploadBroadcast.LiteralThetaBlocks.D.profile : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      (∀ (r : Fin 6), UploadBroadcast.Profile.entry (UploadBroadcast.LiteralThetaBlocks.D.task θ) (Sum.inl r) = 1) ∧
+        ∀ (i ell : UploadBroadcast.Three),
+          2 * UploadBroadcast.Profile.entry (UploadBroadcast.LiteralThetaBlocks.D.task θ) (Sum.inr (i, ell)) = 3
+UploadBroadcast.LiteralThetaBlocks.D.pair01 : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.LiteralThetaBlocks.D.U θ 0 ⊓ UploadBroadcast.LiteralThetaBlocks.D.U θ 1 =
+    UploadBroadcast.LiteralThetaBlocks.vspan ![![1, 1, 1]]
+UploadBroadcast.LiteralThetaBlocks.D.pair02 : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.LiteralThetaBlocks.D.U θ 0 ⊓ UploadBroadcast.LiteralThetaBlocks.D.U θ 2 =
+    UploadBroadcast.LiteralThetaBlocks.vspan ![![1, θ, θ]]
+UploadBroadcast.LiteralThetaBlocks.D.pair12 : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.LiteralThetaBlocks.D.U θ 1 ⊓ UploadBroadcast.LiteralThetaBlocks.D.U θ 2 =
+    UploadBroadcast.LiteralThetaBlocks.vspan ![![1, θ, 1]]
+UploadBroadcast.LiteralThetaBlocks.D.triple_zero : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 1 →
+    UploadBroadcast.LiteralThetaBlocks.D.U θ 0 ⊓ UploadBroadcast.LiteralThetaBlocks.D.U θ 1 ⊓
+        UploadBroadcast.LiteralThetaBlocks.D.U θ 2 =
+      ⊥
+UploadBroadcast.LiteralThetaBlocks.D.pair_conditional_rank : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      ∀ (i j : UploadBroadcast.Three),
+        i ≠ j →
+          UploadBroadcast.condRank
+              (UploadBroadcast.LiteralThetaBlocks.D.U θ i ⊓ UploadBroadcast.LiteralThetaBlocks.D.U θ j)
+              (UploadBroadcast.LiteralThetaBlocks.D.A j) =
+            1
+UploadBroadcast.LiteralThetaBlocks.D.pairs_span : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      ∀ (i j : UploadBroadcast.Three),
+        i ≠ j → UploadBroadcast.LiteralThetaBlocks.D.U θ i ⊔ UploadBroadcast.LiteralThetaBlocks.D.U θ j = ⊤
+UploadBroadcast.LiteralThetaBlocks.D.relay : ∀ {K : Type} [inst : Field K] (θ : K),
+  (UploadBroadcast.LiteralThetaBlocks.D.task θ).LocallyGenerated ⊤ ∧
+    (UploadBroadcast.LiteralThetaBlocks.D.task θ).RelayFeasible ⊤
+UploadBroadcast.LiteralThetaBlocks.D.append_profile : ∀ {K : Type} [inst : Field K] {F : Type} [inst_1 : AddCommGroup F]
+  [inst_2 : _root_.Module K F] [inst_3 : FiniteDimensional K F] (T : UploadBroadcast.Task K F) (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      (∀ (r : Fin 6),
+          UploadBroadcast.Profile.entry
+              (UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)) (Sum.inl r) =
+            UploadBroadcast.Profile.entry T (Sum.inl r) + 1) ∧
+        ∀ (i ell : UploadBroadcast.Three),
+          2 *
+              UploadBroadcast.Profile.entry
+                (UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)) (Sum.inr (i, ell)) =
+            2 * UploadBroadcast.Profile.entry T (Sum.inr (i, ell)) + 3
+UploadBroadcast.LiteralThetaBlocks.D.append_dimensions : ∀ {K : Type} [inst : Field K] {F : Type}
+  [inst_1 : AddCommGroup F] [inst_2 : _root_.Module K F] [inst_3 : FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (θ : K),
+  θ ≠ 1 →
+    Module.finrank K (F × UploadBroadcast.LiteralThetaBlocks.D.V K) = Module.finrank K F + 3 ∧
+      (∀ (i : UploadBroadcast.Three),
+          Module.finrank K ↥((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).A i) =
+            Module.finrank K ↥(T.A i) + 1) ∧
+        (∀ (i : UploadBroadcast.Three),
+            Module.finrank K
+                ↥((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U i) =
+              Module.finrank K ↥(T.U i) + 2) ∧
+          (∀ (i j : UploadBroadcast.Three),
+              i ≠ j →
+                Module.finrank K
+                    ↥((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U i ⊓
+                        (UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U j) =
+                  Module.finrank K ↥(T.U i ⊓ T.U j) + 1) ∧
+            Module.finrank K
+                  ↥((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U 0 ⊓
+                        (UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U 1 ⊓
+                      (UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U 2) =
+                Module.finrank K ↥(T.U 0 ⊓ T.U 1 ⊓ T.U 2) ∧
+              ∀ (i : UploadBroadcast.Three),
+                UploadBroadcast.condRank
+                    ((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U i)
+                    ((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).A i) =
+                  UploadBroadcast.condRank (T.U i) (T.A i) + 1
+UploadBroadcast.LiteralThetaBlocks.D.append_conditional_ranks : ∀ {K : Type} [inst : Field K] {F : Type}
+  [inst_1 : AddCommGroup F] [inst_2 : _root_.Module K F] [inst_3 : FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      (∀ (i j : UploadBroadcast.Three),
+          i ≠ j →
+            UploadBroadcast.condRank
+                ((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U i ⊓
+                  (UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U j)
+                ((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).A j) =
+              UploadBroadcast.condRank (T.U i ⊓ T.U j) (T.A j) + 1) ∧
+        ∀ (ell : UploadBroadcast.Three),
+          UploadBroadcast.condRank
+              ((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U 0 ⊓
+                  (UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U 1 ⊓
+                (UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U 2)
+              ((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).A ell) =
+            UploadBroadcast.condRank (T.U 0 ⊓ T.U 1 ⊓ T.U 2) (T.A ell)
+UploadBroadcast.LiteralThetaBlocks.embed_injective : ∀ {K : Type} [inst : Field K],
+  Function.Injective ⇑UploadBroadcast.LiteralThetaBlocks.embed
+UploadBroadcast.LiteralThetaBlocks.induced_eq_image_D : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.NonzeroDefectRelays.inducedTask (UploadBroadcast.LiteralThetaBlocks.R0.task θ)
+      UploadBroadcast.LiteralThetaBlocks.R0.P ⋯ =
+    (UploadBroadcast.LiteralThetaBlocks.D.task θ).imageTask UploadBroadcast.LiteralThetaBlocks.embed
+UploadBroadcast.LiteralThetaBlocks.R0_same_chart_profile : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      let S :=
+        UploadBroadcast.NonzeroDefectRelays.inducedTask (UploadBroadcast.LiteralThetaBlocks.R0.task θ)
+          UploadBroadcast.LiteralThetaBlocks.R0.P ⋯;
+      (∀ (r : Fin 6), UploadBroadcast.Profile.entry S (Sum.inl r) = 1) ∧
+        (∀ (i ell : UploadBroadcast.Three), 2 * UploadBroadcast.Profile.entry S (Sum.inr (i, ell)) = 3) ∧
+          ∀ (r : UploadBroadcast.Profile.Index),
+            UploadBroadcast.Profile.entry S r =
+              UploadBroadcast.Profile.entry (UploadBroadcast.LiteralThetaBlocks.R0.task θ) r
+Independent literal-construction audit passed for 411 roots; axioms [propext, Quot.sound, Classical.choice]

@@ -1,0 +1,5 @@
+import UploadBroadcast.BroadcastShannon
+#print axioms UploadBroadcast.BroadcastShannon.entropyInstance
+#print axioms UploadBroadcast.BroadcastShannon.decoder_eq
+#print axioms UploadBroadcast.BroadcastShannon.functional_submod
+#print axioms UploadBroadcast.BroadcastShannon.increment

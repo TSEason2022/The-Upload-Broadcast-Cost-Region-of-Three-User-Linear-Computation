@@ -1,0 +1,16 @@
+import UploadBroadcast.FullResidualAssembly
+import UploadBroadcast.ResidualTaskRanks
+import UploadBroadcast.ResidualPureTransport
+
+#print axioms UploadBroadcast.Task.pairReduction_pairKnown_le
+#print axioms UploadBroadcast.Task.ActivePairSelection.pairResidual_mapTask
+#print axioms UploadBroadcast.Task.pair_canonical_factorization_achievableAt_eq
+#print axioms UploadBroadcast.ResidualTaskAssembly.canonicalReduction_achievableAt_eq
+#print axioms UploadBroadcast.ResidualTaskAssembly.canonicalReduction_fully_used
+#print axioms UploadBroadcast.ResidualTaskAssembly.DemandData.signalBridge
+#print axioms UploadBroadcast.ResidualTaskAssembly.DemandData.activeRowReduction_tripod_bridge
+#print axioms UploadBroadcast.ResidualTaskAssembly.DemandData.activeRows_finrank
+#print axioms UploadBroadcast.ResidualTaskAssembly.DemandData.noncommon_activeRows_finrank
+
+#print axioms UploadBroadcast.ResidualTaskAssembly.DemandData.mixedRows_stacked_rank
+#print axioms UploadBroadcast.ResidualTaskAssembly.canonicalReduction_common_pure_eq_bot

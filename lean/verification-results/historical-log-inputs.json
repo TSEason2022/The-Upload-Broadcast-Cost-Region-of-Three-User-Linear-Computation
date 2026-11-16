@@ -1,0 +1,656 @@
+[
+  {
+    "available": true,
+    "path": "logs/active-reduction-endpoint-axioms.log",
+    "sha256": "6b40d79eab9e6808c335bf8ff04082d521a95eb74e1b0c3f6eaf1f54f0fccf6e",
+    "size": 5276
+  },
+  {
+    "available": true,
+    "path": "logs/active-reduction-endpoint-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/active-task-assembly-axioms.log",
+    "sha256": "8a859757e42b940a33ead586d678f8042e6f750fec8fb2cd3090560105b09f63",
+    "size": 2521
+  },
+  {
+    "available": true,
+    "path": "logs/actual-reflection-axioms.log",
+    "sha256": "35ef6474e47b8fabb23f3308c13533df92e9784780b1af57d8bcdfdc7138d07a",
+    "size": 64787
+  },
+  {
+    "available": true,
+    "path": "logs/actual-reflection-build.log",
+    "sha256": "a30d6eefe7ccec7803482bd446c3d48f7cc46ed86ba99cb839fca134dd7a5a3d",
+    "size": 30
+  },
+  {
+    "available": true,
+    "path": "logs/actual-reflection-source-audit.log",
+    "sha256": "3c514d219f2cf1f11f78fe46d312da4c5318576d9b597da85e82aeccb6adf939",
+    "size": 89
+  },
+  {
+    "available": true,
+    "path": "logs/base-field-components-axioms.log",
+    "sha256": "595aff5e4e82de7b32eb0dbe67c1fe64ac1bf391635b2e64c5293741cba4b6c5",
+    "size": 601
+  },
+  {
+    "available": true,
+    "path": "logs/base-field-components-lake.log",
+    "sha256": "a68f46e31ab715c3264adbaf7ec95c56a2bfc1334a34afb38e9e8c083aa2571e",
+    "size": 2619
+  },
+  {
+    "available": true,
+    "path": "logs/cited-binary-field-necessity-axioms.log",
+    "sha256": "3cbb200ece1941bfab1126b8cc13eb2466c9b337d3d1896a1444c3b4cfaabd85",
+    "size": 765
+  },
+  {
+    "available": true,
+    "path": "logs/cited-entropy-clean-lake-build.log",
+    "sha256": "563583b5d9426928a8c961333eb5c2e4a8c59e4668a17067a6b57cbf1ccfae09",
+    "size": 517
+  },
+  {
+    "available": true,
+    "path": "logs/cited-entropy-final-axioms.log",
+    "sha256": "a8804a65ec6c7b52c53d50088e5b4fdd33cfe35c54c06fc49238326b3a2b0e20",
+    "size": 2515
+  },
+  {
+    "available": true,
+    "path": "logs/conditioned-residual-bridges-axioms.log",
+    "sha256": "929c839cde8c3dda5334c9de274ceeea16bc341d8972a0b9575c6bdab47dc10e",
+    "size": 422
+  },
+  {
+    "available": true,
+    "path": "logs/conditioned-residual-bridges-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/cycle-source-endpoint-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/cycle-upload-geometry-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/cycle-upload-optimality-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/full-residual-assembly-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/graded-separation-axioms.log",
+    "sha256": "ba54243f2a56db5ec987d9b07da1059d7d009623ae767981cdb336445c84cb11",
+    "size": 116
+  },
+  {
+    "available": true,
+    "path": "logs/intrinsic-upload-invariance-axioms.log",
+    "sha256": "2991c5e8e64f621145be9d0b72c5ce51f1e3d3b7a8b851ad16dbb1e7fd3cad3e",
+    "size": 6742
+  },
+  {
+    "available": true,
+    "path": "logs/intrinsic-upload-invariance-lake-build.log",
+    "sha256": "1acad655dd428bca65a26699bfab2b8053306d6456e4196744681342145168d0",
+    "size": 344
+  },
+  {
+    "available": true,
+    "path": "logs/intrinsic-upload-invariance-source-audit.log",
+    "sha256": "046133b8832eab9ec57857f67cdc7663dfa4cd96ce33f3b8af1c7f1d6b77d16c",
+    "size": 89
+  },
+  {
+    "available": true,
+    "path": "logs/literal-construction-source-hashes.log",
+    "sha256": "e8217f83e3789c9f8228a50dbbfd533f5504ba3e981ad6c0d2922115c3831850",
+    "size": 1403
+  },
+  {
+    "available": true,
+    "path": "logs/literal-primitive-axioms.log",
+    "sha256": "f25c0187c806166ac3d02b8cb4c4d9d445c82d775a992ca70676317f6cfabfce",
+    "size": 118
+  },
+  {
+    "available": true,
+    "path": "logs/literal-primitive-regeneration.log",
+    "sha256": "66924966bca0f5e434a2059a9d610062c9572f3b8cdf58a465ea839db2cc15b1",
+    "size": 62
+  },
+  {
+    "available": true,
+    "path": "logs/literal-primitive-symbolic.log",
+    "sha256": "a5c4678068ffdac7a54e37a57a582a41caf6d3d2e4d3cbcb72005e642911fe01",
+    "size": 3817
+  },
+  {
+    "available": true,
+    "path": "logs/literal-primitive-tables-build.log",
+    "sha256": "f709b6548c92026e461671d81192785935fa7cce85a0c36f7daf2e4b342f1a85",
+    "size": 1126
+  },
+  {
+    "available": true,
+    "path": "logs/new-source-endpoint-coverage-status-20261008.log",
+    "sha256": "2b545787bf342876190ad142647a2578f18df136db689d705a822dc108552748",
+    "size": 711
+  },
+  {
+    "available": true,
+    "path": "logs/new-source-endpoint-semantic-audit-build-20261008.log",
+    "sha256": "a30d6eefe7ccec7803482bd446c3d48f7cc46ed86ba99cb839fca134dd7a5a3d",
+    "size": 30
+  },
+  {
+    "available": true,
+    "path": "logs/new-source-endpoint-semantic-audit-signatures-20261008.log",
+    "sha256": "f9ef3dbe33892da44e801854305c379c0c6cb0167f0b79d5836083bcfa0cc5fd",
+    "size": 27659
+  },
+  {
+    "available": true,
+    "path": "logs/new-source-endpoint-semantic-audit-source-20261008.log",
+    "sha256": "5db7c68bffe15cf2803bde81567b0ace0298aa626d4f025df68ed1808f38bcd6",
+    "size": 89
+  },
+  {
+    "available": true,
+    "path": "logs/nonzero-same-chart-endpoint-axioms.log",
+    "sha256": "a8d7a0155726b06ac5cd5fe532b7e7f0e8cf289d834cc9168987c9fb6fbd52cd",
+    "size": 8716
+  },
+  {
+    "available": true,
+    "path": "logs/nonzero-same-chart-endpoint-build.log",
+    "sha256": "0a75922d418ae938c61d6b427af2fdd52944b7419698bca6060ce5b22fd70ddc",
+    "size": 2011
+  },
+  {
+    "available": true,
+    "path": "logs/nonzero-same-chart-endpoint-recheck.log",
+    "sha256": "82b468b1bbd9abfd5c03b3257fd4c92e74a27df6700b64ccac186ade3c6b15bf",
+    "size": 1884
+  },
+  {
+    "available": true,
+    "path": "logs/nonzero-same-chart-endpoint-source-audit.log",
+    "sha256": "98a2d379ae33eee5ec3b63c6d93355090a8bde8cda673be355d8d56951ded038",
+    "size": 89
+  },
+  {
+    "available": true,
+    "path": "logs/nonzero-same-chart-relay-dependency-recheck.log",
+    "sha256": "fd8c04d3dbb58714c9c39ad8f26e305a2bb2fd798e8624ccbf1c433d1fea1e81",
+    "size": 234
+  },
+  {
+    "available": true,
+    "path": "logs/opposite-demand-target.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/original-upload-axioms.log",
+    "sha256": "ecaae8d3b928d3ab8826c0c8a2fa5317ca7cdd04dbcfe657013347477f3cd75b",
+    "size": 2374
+  },
+  {
+    "available": true,
+    "path": "logs/original-upload-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/original-upload-canonical-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/original-upload-chart-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/original-upload-core-axioms.log",
+    "sha256": "a11a709fe2f2934c3eb389f0367d4d55708e285e99a96fcfc8a8a459fa07b67f",
+    "size": 1315
+  },
+  {
+    "available": true,
+    "path": "logs/original-upload-formula-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/original-upload-lake-build.log",
+    "sha256": "5511c59efa8ce447ac6cb5da3c1544cdee5df75e1158d113bbe60a48c921b895",
+    "size": 563
+  },
+  {
+    "available": true,
+    "path": "logs/original-upload-model-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/original-upload-ranks-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/original-upload-source-audit.log",
+    "sha256": "fbd3f65de3a711c248e9717a219633cb6f71a97598ce89f22a4649552f1427ca",
+    "size": 89
+  },
+  {
+    "available": true,
+    "path": "logs/original-upload-theorem-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/pair-residual-assembly-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/reflection-equivalence-axioms.log",
+    "sha256": "270425c83c702c165c3dcba104627a5070b6904d5fc75cd6172900dafa69d1ab",
+    "size": 19940
+  },
+  {
+    "available": true,
+    "path": "logs/reflection-equivalence-build.log",
+    "sha256": "eb1b14b732f20bf17228c75f87f861bc2a8d33d6c218597e139422cf34474e1e",
+    "size": 149
+  },
+  {
+    "available": true,
+    "path": "logs/reflection-equivalence-source-audit.log",
+    "sha256": "c9e6601b1a9c0e1a626354a28120ff2989504d9269c23466f2107bd532b3e785",
+    "size": 89
+  },
+  {
+    "available": true,
+    "path": "logs/reflection-reduction-axioms.log",
+    "sha256": "26d4dfdc862ef170fd64b515a37bbf8fb66ed3082806d9e3c7dc5a7dc8cac201",
+    "size": 2246
+  },
+  {
+    "available": true,
+    "path": "logs/reflection-reduction-build.log",
+    "sha256": "bca1e212efd8db7b773d02828e2d33cbedab2c80ec4c1a2ccbbde7015852d69a",
+    "size": 86
+  },
+  {
+    "available": true,
+    "path": "logs/reflection-reduction-source-audit.log",
+    "sha256": "dc1ad9fd0238e9ca5f9330b4e69ac01e5ed8ef0b698bbe20420418caac81baec",
+    "size": 88
+  },
+  {
+    "available": true,
+    "path": "logs/regular-exact-menus-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/residual-assembly-all-axioms.log",
+    "sha256": "09bb4f31125d3fdea8e16ed1db4865ce898d174bc555617a1f879cb1f5e0ddd9",
+    "size": 116
+  },
+  {
+    "available": true,
+    "path": "logs/residual-assembly-axioms.log",
+    "sha256": "e123f0044e59fb136237b7eb92e623401d209bed8ec8a672a2ff8d3494cd2641",
+    "size": 1438
+  },
+  {
+    "available": true,
+    "path": "logs/residual-assembly-signatures.log",
+    "sha256": "5a04a8eef6d2027d625811c15d1151f12b1060742df0de0a755279bc1e531699",
+    "size": 3620
+  },
+  {
+    "available": true,
+    "path": "logs/residual-assembly-source-audit.log",
+    "sha256": "c55e13a7bc88117407745ebc72632bb3547a4d847f376b9b6cd9431ddf16188e",
+    "size": 89
+  },
+  {
+    "available": true,
+    "path": "logs/residual-component-axioms.log",
+    "sha256": "6694e49420d8836ad3d265c8d667ee36cb6bfbddd6d145a2ec5e063824a05c91",
+    "size": 12089
+  },
+  {
+    "available": true,
+    "path": "logs/residual-component-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/residual-component-factors-axioms.log",
+    "sha256": "c94adc3fe1bcaf4e84c0892fbe1c4b03f0dcf3164fad6c746a206c16f2746f23",
+    "size": 935
+  },
+  {
+    "available": true,
+    "path": "logs/residual-component-factors-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/residual-pure-transport-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/residual-row-paper-axioms.log",
+    "sha256": "bc8525b967d223abcb1f87224d32221b1f3000961b4b5fdfbcc2a5724bd238cf",
+    "size": 490
+  },
+  {
+    "available": true,
+    "path": "logs/residual-row-paper-build.log",
+    "sha256": "e0e7b0c00ff0e632f637fcd0375a88ee2f6428fbd23cb9fada5d4c7e673a1399",
+    "size": 275
+  },
+  {
+    "available": true,
+    "path": "logs/residual-task-assembly-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/residual-task-ranks-build.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/resonant-upload-specializations-axioms.log",
+    "sha256": "e498c85a1f3fdc95c9fe5ae8c5aa85acc38b7e35033ac90d8d5c81064ceccb4a",
+    "size": 2391
+  },
+  {
+    "available": true,
+    "path": "logs/resonant-upload-specializations.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "logs/semantic-audit-20261008-build.log",
+    "sha256": "a5ded41c70804467324b44e1486526dd6195cc23df24613b341f71e201738244",
+    "size": 1475
+  },
+  {
+    "available": true,
+    "path": "logs/semantic-audit-20261008-signatures.log",
+    "sha256": "9b1d127ce3811bc6c688f5b792185c125329613cb63cdc92ea0bc55e2de7f360",
+    "size": 41683
+  },
+  {
+    "available": true,
+    "path": "logs/upload-direct-sum-axioms-20261008.log",
+    "sha256": "ecda51a0969eb9d3c2e8bb45183965d4763071e7ff7365a2d91e4d9bc7c2b2d1",
+    "size": 13393
+  },
+  {
+    "available": true,
+    "path": "logs/upload-direct-sum-build-20261008.log",
+    "sha256": "a30d6eefe7ccec7803482bd446c3d48f7cc46ed86ba99cb839fca134dd7a5a3d",
+    "size": 30
+  },
+  {
+    "available": true,
+    "path": "verification/actual-component-capacities-axioms.log",
+    "sha256": "4b355452e36132db0a84a565e6d0b35462347c5c584e62adba5907908bebaa59",
+    "size": 4309
+  },
+  {
+    "available": true,
+    "path": "verification/boundary-component-menus-axioms.log",
+    "sha256": "64f358161a876e8ab9f0b0a8e9838e77998205fc0d4efe4c03a2e410fd40d486",
+    "size": 729
+  },
+  {
+    "available": true,
+    "path": "verification/classified-partition-current-source-recheck-20261008.log",
+    "sha256": "e56370f177866aaec0636d47158138230c21265b26e9128c6018d68e4de0f7ab",
+    "size": 863
+  },
+  {
+    "available": true,
+    "path": "verification/classified-partition-final-source-recheck-20261008.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  {
+    "available": true,
+    "path": "verification/cycle-source-endpoint-axioms.log",
+    "sha256": "f58e5d758ecd2cfd2c0402e5c3a5b6217d1515dd2c77afef188ea99f431d3818",
+    "size": 979
+  },
+  {
+    "available": true,
+    "path": "verification/final-all-coverage-review-20261008.log",
+    "sha256": "2d831beea0814147c7f09653099f8bead376ab631f619ada51d397c1f7bf5ff1",
+    "size": 289036
+  },
+  {
+    "available": true,
+    "path": "verification/final-all-coverage-review-recovery-20261008.log",
+    "sha256": "2d831beea0814147c7f09653099f8bead376ab631f619ada51d397c1f7bf5ff1",
+    "size": 289036
+  },
+  {
+    "available": true,
+    "path": "verification/final-binary-necessity-review-20261008.log",
+    "sha256": "9917f6fe62662a8c841e9fb7fff9b80740271ae7cc6228f7f160a764a45d78a0",
+    "size": 1979
+  },
+  {
+    "available": true,
+    "path": "verification/final-coverage-manifest-gate-20261008.log",
+    "sha256": "e88952f577d48840ebdd66144e9ec7451f41e20f5de633a14834cf001922052a",
+    "size": 92
+  },
+  {
+    "available": true,
+    "path": "verification/final-cycle-review-20261008.log",
+    "sha256": "4465b31d43fdd7e205e4c7fde24c44a24b39ac177f713882c0e6dd8a5d8e937f",
+    "size": 3510
+  },
+  {
+    "available": true,
+    "path": "verification/final-direct-sum-review-20261008.log",
+    "sha256": "b3f40431b4548f1e6185c31bba0e04751f5780fee961244989bb196651efb68d",
+    "size": 13561
+  },
+  {
+    "available": true,
+    "path": "verification/final-entropy-witness-review-20261008.log",
+    "sha256": "33e91a7db3cedc989e6b43cd1ec768cc7cd0c693f4e1bf422d43c9534ae0ab75",
+    "size": 5358
+  },
+  {
+    "available": true,
+    "path": "verification/final-entropy-witness-review-after-rebuild-20261008.log",
+    "sha256": "33e91a7db3cedc989e6b43cd1ec768cc7cd0c693f4e1bf422d43c9534ae0ab75",
+    "size": 5358
+  },
+  {
+    "available": true,
+    "path": "verification/final-global-review-20261008.log",
+    "sha256": "e7ad53093e840a5fa8267cbf4339fca69ad1a9edabbe156816ca2700a9b056ef",
+    "size": 5245
+  },
+  {
+    "available": true,
+    "path": "verification/final-lexical-gate-20261008.log",
+    "sha256": "52a14e3078ecef528149d4ffc623314b018fdcfe480d9024172d69dd7dc9f37f",
+    "size": 89
+  },
+  {
+    "available": true,
+    "path": "verification/final-literal-construction-review-20261008.log",
+    "sha256": "cb732d6962a691bc308d60c03ed0627812d29197fef6be2831630b9e7db6f427",
+    "size": 128588
+  },
+  {
+    "available": true,
+    "path": "verification/final-matrix-frontend-review-20261008.log",
+    "sha256": "fd3e5eb0567dd9de02f2b06e058fcdb2e7f17239c196477a3fc9332dd5c8caf5",
+    "size": 6048
+  },
+  {
+    "available": true,
+    "path": "verification/final-resonant-specialization-review-20261008.log",
+    "sha256": "62eee2e1d455fa36f589971e288947687026af833ef403645be16e3406d9c6d0",
+    "size": 1549
+  },
+  {
+    "available": true,
+    "path": "verification/final-semantic-review-signatures-20261008.log",
+    "sha256": "1025b123682f862bd3bf611bf8400040ccd728aed912ef18ae5386d891194faa",
+    "size": 99262
+  },
+  {
+    "available": true,
+    "path": "verification/final-standalone-review-20261008.log",
+    "sha256": "1e5331a66600310a57574e8a5fa05ab0c5fa261323c41c4cdf979020fdb8c46b",
+    "size": 14784
+  },
+  {
+    "available": true,
+    "path": "verification/final-theta-construction-review-20261008.log",
+    "sha256": "4d1d73c48375bf95da3bbaf297d0d4fd22765a8120fa3d2eafc063eec648dc0f",
+    "size": 15103
+  },
+  {
+    "available": true,
+    "path": "verification/final-unnumbered-review-direct-signatures-20261008.log",
+    "sha256": "414a580d0c01e382473a58523d6da0d84e344c9b681d1623b4a77762e48f1a83",
+    "size": 22113
+  },
+  {
+    "available": true,
+    "path": "verification/final-unnumbered-review-signatures-20261008.log",
+    "sha256": "414a580d0c01e382473a58523d6da0d84e344c9b681d1623b4a77762e48f1a83",
+    "size": 22113
+  },
+  {
+    "available": true,
+    "path": "verification/finite-set-matrix-field-omission-review-20261008.log",
+    "sha256": "13dd797d190631e3e4fdaca14e4d42da392f594ef9fc4584762b096389b02686",
+    "size": 302
+  },
+  {
+    "available": true,
+    "path": "verification/kernel-trust-axiom-audit-20261008.log",
+    "sha256": "002894d779333c87d8017224fba9fe65b2be5df862437736082975fffc0f9d84",
+    "size": 371
+  },
+  {
+    "available": true,
+    "path": "verification/local-binary-source-axioms.log",
+    "sha256": "6d60c695ef396ff402c9c63a7d2248b967d8d8d17193003626aef0b9cde48322",
+    "size": 1538
+  },
+  {
+    "available": true,
+    "path": "verification/nonzero-same-chart-axioms.log",
+    "sha256": "e23f5f38b2bc5ce0d77e56d010b72d6104dbe7bbab7d2dbb756f0ad7b2768549",
+    "size": 515
+  },
+  {
+    "available": true,
+    "path": "verification/opposite-demand-axioms.log",
+    "sha256": "04b937adab60f75721e07140f66be31fbf3f2fefaf00bc6c25137d491fd871db",
+    "size": 3562
+  },
+  {
+    "available": true,
+    "path": "verification/recovery-all-module-declaration-axioms-20261008.log",
+    "sha256": "f02a2cef805f4db8fa08182ae6328d90e30e623e572d7ee39dd02c7b16fe67dc",
+    "size": 372
+  },
+  {
+    "available": true,
+    "path": "verification/recovery-all-module-theorem-axioms-20261008.log",
+    "sha256": "fb6c8b82804f934d99facccf58fbf4874deceea4359d68dc7bc7eb4f20cf87be",
+    "size": 116
+  },
+  {
+    "available": true,
+    "path": "verification/recovery-coverage-20261008.log",
+    "sha256": "e88952f577d48840ebdd66144e9ec7451f41e20f5de633a14834cf001922052a",
+    "size": 92
+  },
+  {
+    "available": true,
+    "path": "verification/recovery-lexical-gate-20261008.log",
+    "sha256": "4e65024654842dcd5ed4d2a5d8bfa73d1c509269fa50d54fb7f89bd29e5f6ab0",
+    "size": 89
+  },
+  {
+    "available": true,
+    "path": "verification/recovery-matrix-frontend-build-20261008.log",
+    "sha256": "ca4d2abe87c5e3c1fa16a9270be292556d2c6a43594cee8cc6369ea96707bb9b",
+    "size": 87
+  },
+  {
+    "available": true,
+    "path": "verification/residual-background-selection-axioms.log",
+    "sha256": "5a3cf1c3610f1bc33dd6238dcdb0e2460b5d2e7700d10f2f96f32f82de9ae311",
+    "size": 279
+  },
+  {
+    "available": true,
+    "path": "verification/residual-profiles-axioms.log",
+    "sha256": "84fddf7aa110976b993a127cfcde60a087be0a421ffbc670c2937f0bb7896df9",
+    "size": 432
+  }
+]

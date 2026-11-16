@@ -1,0 +1,13 @@
+OPEN thm:intro-main: compiled_conditional_final_assembly
+OPEN prop:active-pair: compiled_pair_reduction_private_deletion_partial
+OPEN prop:exhaustion: in_progress_not_verified
+OPEN thm:profiles: in_progress_not_verified
+OPEN thm:endpoint: compiled_construction_rank_profiles
+OPEN prop:stable: in_progress_not_verified
+OPEN cor:scalar-budget: in_progress_not_verified
+OPEN lem:base-field-components: compiled_descent_reflection_partial
+OPEN lem:same-chart: in_progress_not_verified
+OPEN lem:binary-menu: in_progress_not_verified
+OPEN lem:binary-additional-menus: in_progress_not_verified
+OPEN lem:binary-integer-relay: in_progress_not_verified
+Full-paper coverage NOT complete: 12/28 claims require work/review.

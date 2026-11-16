@@ -1,0 +1,18 @@
+ℹ [1896/1974] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1898/1974] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [2679/2680] Built UploadBroadcast.OrientationRepairAllocation
+✔ [2680/2680] Built UploadBroadcast.PhysicalCycleCoordinates
+Build completed successfully.

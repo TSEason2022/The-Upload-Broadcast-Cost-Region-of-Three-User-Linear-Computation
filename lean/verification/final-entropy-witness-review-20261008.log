@@ -1,0 +1,71 @@
+UploadBroadcast.CitedEntropyCounterexample.joint_original_coefficients : ∀
+  (t : UploadBroadcast.CitedEntropyCounterexample.K) (s : Fin 6 → Bool)
+  (x : UploadBroadcast.CitedEntropyCounterexample.V) (i : Fin 6),
+  (UploadBroadcast.CitedEntropyCounterexample.joint t s) x i =
+    if s i = true then
+      (UploadBroadcast.CitedEntropyCounterexample.scalarSource x)
+        (UploadBroadcast.CitedEntropyCounterexample.vectors t i) 0
+    else 0
+UploadBroadcast.CitedEntropyCounterexample.task_signal_eq : ∀ (t : UploadBroadcast.CitedEntropyCounterexample.K)
+  (i : UploadBroadcast.Three),
+  (UploadBroadcast.CitedEntropyCounterexample.task t).U i =
+    (UploadBroadcast.CitedEntropyCounterexample.side i).submodule ⊔
+      (UploadBroadcast.CitedEntropyCounterexample.demand t i).submodule
+UploadBroadcast.CitedEntropyCounterexample.original_side : ∀ (t : UploadBroadcast.CitedEntropyCounterexample.K)
+  (x : UploadBroadcast.CitedEntropyCounterexample.V) (i : UploadBroadcast.Three),
+  (UploadBroadcast.observe UploadBroadcast.CitedEntropyCounterexample.K UploadBroadcast.CitedEntropyCounterexample.V
+        ((UploadBroadcast.CitedEntropyCounterexample.task t).A i)
+        (UploadBroadcast.CitedEntropyCounterexample.scalarSource x))
+      (UploadBroadcast.CitedEntropyCounterexample.sideCoefficient i) 0 =
+    ![x.1, x.2.1, x.2.2] i
+UploadBroadcast.CitedEntropyCounterexample.original_demand : ∀ (t : UploadBroadcast.CitedEntropyCounterexample.K)
+  (x : UploadBroadcast.CitedEntropyCounterexample.V) (i : UploadBroadcast.Three),
+  (UploadBroadcast.observe UploadBroadcast.CitedEntropyCounterexample.K UploadBroadcast.CitedEntropyCounterexample.V
+        ((UploadBroadcast.CitedEntropyCounterexample.task t).U i)
+        (UploadBroadcast.CitedEntropyCounterexample.scalarSource x))
+      (UploadBroadcast.CitedEntropyCounterexample.demandCoefficient t i) 0 =
+    ![x.2.1 + x.2.2, x.1 + x.2.2, x.1 + t * x.2.1] i
+UploadBroadcast.CitedEntropyCounterexample.scalarSource_injective : Function.Injective
+  UploadBroadcast.CitedEntropyCounterexample.scalarSource
+UploadBroadcast.CitedEntropyCounterexample.scalarSource_surjective : Function.Surjective
+  UploadBroadcast.CitedEntropyCounterexample.scalarSource
+UploadBroadcast.CitedEntropyCounterexample.scalarSource_uniform : ProbabilityTheory.IsUniform Set.univ
+  UploadBroadcast.CitedEntropyCounterexample.scalarSource (ProbabilityTheory.uniformOn Set.univ)
+UploadBroadcast.CitedEntropyCounterexample.all_subset_ranks : ∀ (s : Fin 6 → Bool),
+  Module.finrank UploadBroadcast.CitedEntropyCounterexample.K
+      ↥(LinearMap.range (UploadBroadcast.CitedEntropyCounterexample.joint 1 s)) =
+    Module.finrank UploadBroadcast.CitedEntropyCounterexample.K
+      ↥(LinearMap.range (UploadBroadcast.CitedEntropyCounterexample.joint 2 s))
+UploadBroadcast.CitedEntropyCounterexample.all_subset_entropies : ∀ (s : Fin 6 → Bool),
+  H[⇑(UploadBroadcast.CitedEntropyCounterexample.joint 1 s) ; ProbabilityTheory.uniformOn Set.univ] =
+    H[⇑(UploadBroadcast.CitedEntropyCounterexample.joint 2 s) ; ProbabilityTheory.uniformOn Set.univ]
+UploadBroadcast.CitedEntropyCounterexample.all_block_subset_entropies : ∀ (s : Fin 6 → Bool) (L : ℕ),
+  H[⇑(UploadBroadcast.blockLinear (UploadBroadcast.CitedEntropyCounterexample.joint 1 s) L) ;
+      ProbabilityTheory.uniformOn Set.univ] =
+    H[⇑(UploadBroadcast.blockLinear (UploadBroadcast.CitedEntropyCounterexample.joint 2 s) L) ;
+      ProbabilityTheory.uniformOn Set.univ]
+UploadBroadcast.CitedEntropyCounterexample.broadcastOptima : UploadBroadcast.broadcastOptimum
+      (UploadBroadcast.CitedEntropyCounterexample.task 1).A (UploadBroadcast.CitedEntropyCounterexample.task 1).U =
+    1 ∧
+  UploadBroadcast.broadcastOptimum (UploadBroadcast.CitedEntropyCounterexample.task 2).A
+      (UploadBroadcast.CitedEntropyCounterexample.task 2).U =
+    3 / 2
+UploadBroadcast.CitedEntropyCounterexample.corrected_entropy_counterexample : (∀ (L : ℕ) (s : Fin 6 → Bool),
+    H[⇑(UploadBroadcast.blockLinear (UploadBroadcast.CitedEntropyCounterexample.joint 1 s) L) ;
+        ProbabilityTheory.uniformOn Set.univ] =
+      H[⇑(UploadBroadcast.blockLinear (UploadBroadcast.CitedEntropyCounterexample.joint 2 s) L) ;
+        ProbabilityTheory.uniformOn Set.univ]) ∧
+  UploadBroadcast.broadcastOptimum (UploadBroadcast.CitedEntropyCounterexample.task 1).A
+        (UploadBroadcast.CitedEntropyCounterexample.task 1).U =
+      1 ∧
+    UploadBroadcast.broadcastOptimum (UploadBroadcast.CitedEntropyCounterexample.task 2).A
+        (UploadBroadcast.CitedEntropyCounterexample.task 2).U =
+      3 / 2
+UploadBroadcast.CitedEntropyCounterexample.equal_subset_entropies_distinct_operational_optima : (∀ (s : Fin 6 → Bool),
+    H[⇑(UploadBroadcast.CitedEntropyCounterexample.joint 1 s) ; ProbabilityTheory.uniformOn Set.univ] =
+      H[⇑(UploadBroadcast.CitedEntropyCounterexample.joint 2 s) ; ProbabilityTheory.uniformOn Set.univ]) ∧
+  UploadBroadcast.broadcastOptimum (UploadBroadcast.CitedEntropyCounterexample.task 1).A
+      (UploadBroadcast.CitedEntropyCounterexample.task 1).U ≠
+    UploadBroadcast.broadcastOptimum (UploadBroadcast.CitedEntropyCounterexample.task 2).A
+      (UploadBroadcast.CitedEntropyCounterexample.task 2).U
+Independent entropy witness audit passed for 13 roots; axioms [propext, Quot.sound, Classical.choice]

@@ -1,0 +1,6 @@
+import UploadBroadcast.TripodQuotient
+#print axioms UploadBroadcast.TripodSubobjectExclusion.regular_sides_disjoint
+#print axioms UploadBroadcast.TripodSubobjectExclusion.regular_tripod_intersection
+#print axioms UploadBroadcast.TripodQuotient.quotient_sides_independent
+#print axioms UploadBroadcast.TripodQuotient.quotient_sides_span
+#print axioms UploadBroadcast.TripodQuotient.quotient_preserves_demand_dimensions

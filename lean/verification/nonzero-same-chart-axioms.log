@@ -1,0 +1,8 @@
+'UploadBroadcast.NonzeroHyperplaneProfiles.exists_full_hyperplane_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.NonzeroHyperplaneUpload.exists_full_hyperplane_upload_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.NonzeroSameChart.exists_same_chart_relay' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.NonzeroSameChart.same_chart_full_and_relay' depends on axioms: [propext, Classical.choice, Quot.sound]

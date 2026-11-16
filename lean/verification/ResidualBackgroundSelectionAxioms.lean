@@ -1,0 +1,3 @@
+import UploadBroadcast.ResidualBackgroundSelectionTheorem
+#print axioms UploadBroadcast.ResidualBackgroundSelectionTheorem.exists_optimal_relay
+#print axioms UploadBroadcast.ResidualBackgroundSelectionTheorem.residual_background_selection

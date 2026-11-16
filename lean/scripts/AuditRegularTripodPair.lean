@@ -1,0 +1,9 @@
+import UploadBroadcast.RegularTripodPair
+#print axioms UploadBroadcast.RegularTripodPair.T₀_regularSimple
+#print axioms UploadBroadcast.RegularTripodPair.T₁_regularSimple
+#print axioms UploadBroadcast.RegularTripodPair.T₀_hom_finrank
+#print axioms UploadBroadcast.RegularTripodPair.hom_T₀_finrank
+#print axioms UploadBroadcast.RegularTripodPair.T₁_hom_finrank
+#print axioms UploadBroadcast.RegularTripodPair.hom_T₁_finrank
+#print axioms UploadBroadcast.RegularTripodPair.regular_simple_outside_pair_orthogonal
+#print axioms UploadBroadcast.RegularTripodPair.positive_excess_T₀_hom_pos

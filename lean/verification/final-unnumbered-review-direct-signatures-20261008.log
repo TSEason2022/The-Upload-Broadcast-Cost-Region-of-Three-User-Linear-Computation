@@ -1,0 +1,278 @@
+UploadBroadcast.Task.Code.exists_upload_only_decoder : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K]
+  [inst_1 : AddCommGroup F] [inst_2 : _root_.Module K F] {T : UploadBroadcast.Task K F} {L : ℕ}
+  {M : UploadBroadcast.Three → Type u_3} {S : Type u_4} (c : T.Code L M S),
+  ∃ d,
+    ∀ (x : UploadBroadcast.Source K F L) (i : UploadBroadcast.Three),
+      (d i (UploadBroadcast.observe K F (T.A i) x) fun j x_1 => c.encode j (UploadBroadcast.observe K F (T.A j) x)) =
+        UploadBroadcast.observe K F (T.U i) x
+UploadBroadcast.LinearObservation.model_entropy_rank : ∀ {K : Type u_1} [inst : Field K] [inst_1 : Finite K]
+  {F : Type u_6} [inst_2 : AddCommGroup F] [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F]
+  (B : Submodule K F) (L : ℕ),
+  H[UploadBroadcast.observe K F B ; ProbabilityTheory.uniformOn Set.univ] / Real.log ↑(Nat.card K) =
+    ↑L * ↑(Module.finrank K ↥B)
+UploadBroadcast.LinearObservation.model_condEntropy_rank : ∀ {K : Type u_1} [inst : Field K] [inst_1 : Finite K]
+  {F : Type u_6} [inst_2 : AddCommGroup F] [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F]
+  (B C : Submodule K F) (L : ℕ),
+  H[UploadBroadcast.observe K F C | UploadBroadcast.observe K F B ; ProbabilityTheory.uniformOn Set.univ] /
+      Real.log ↑(Nat.card K) =
+    ↑L * ↑(UploadBroadcast.condRank C B)
+UploadBroadcast.LinearObservation.model_mutualInfo_rank : ∀ {K : Type u_1} [inst : Field K] [inst_1 : Finite K]
+  {F : Type u_6} [inst_2 : AddCommGroup F] [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F]
+  (B C : Submodule K F) (L : ℕ),
+  I[UploadBroadcast.observe K F B : UploadBroadcast.observe K F C ; ProbabilityTheory.uniformOn Set.univ] /
+      Real.log ↑(Nat.card K) =
+    ↑L * ↑(Module.finrank K ↥(B ⊓ C))
+UploadBroadcast.general_broadcastOptimum_eq_rankBound : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K]
+  [inst_1 : Finite K] [inst_2 : AddCommGroup F] [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F]
+  (A U : UploadBroadcast.Three → Submodule K F),
+  (∀ (i : UploadBroadcast.Three), A i ≤ U i) →
+    UploadBroadcast.broadcastOptimum A U = UploadBroadcast.Allocation.rawRankBound A U
+UploadBroadcast.general_block_profile_attained : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K] [inst_1 : Finite K]
+  [inst_2 : AddCommGroup F] [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F]
+  (A U : UploadBroadcast.Three → Submodule K F),
+  (∀ (i : UploadBroadcast.Three), A i ≤ U i) →
+    ∃ L n c, 0 < L ∧ L ≤ 4 ∧ c.cost = UploadBroadcast.Allocation.rawRankBound A U
+UploadBroadcast.Task.intrinsic_upload_parameters : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K]
+  [inst_1 : AddCommGroup F] [inst_2 : _root_.Module K F] [inst_3 : Finite K] [inst_4 : FiniteDimensional K F]
+  (T : UploadBroadcast.Task K F) (s u : (T.quotientTask T.commonKnown).ActivePairSelection)
+  (t : s.pairReducedTask.ActivePairSelection) (v : u.pairReducedTask.ActivePairSelection)
+  (c : t.pairResidualTask.PrivateTripodChart) (d : v.pairResidualTask.PrivateTripodChart),
+  (∀ (i : UploadBroadcast.Three),
+      Module.finrank K ↥(s.pairReducedTask.pairKnown i) = T.intrinsicActivePairRank i ∧
+        Module.finrank K ↥(u.pairReducedTask.pairKnown i) = T.intrinsicActivePairRank i) ∧
+    c.privateDimension = d.privateDimension ∧
+      c.commonDimension = d.commonDimension ∧
+        c.pureDimension = d.pureDimension ∧
+          c.mixedDimension = d.mixedDimension ∧
+            c.tripodDimension = d.tripodDimension ∧
+              c.uploadFormula (T.intrinsicActivePairRank 0) (T.intrinsicActivePairRank 1)
+                  (T.intrinsicActivePairRank 2) =
+                T.minimumUploadFormula
+UploadBroadcast.Task.minimum_upload_all_choices : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K]
+  [inst_1 : AddCommGroup F] [inst_2 : _root_.Module K F] [inst_3 : Finite K] [inst_4 : FiniteDimensional K F]
+  (T : UploadBroadcast.Task K F) (s : (T.quotientTask T.commonKnown).ActivePairSelection)
+  (t : s.pairReducedTask.ActivePairSelection) (c : t.pairResidualTask.PrivateTripodChart),
+  T.uploadOptimum =
+    c.uploadFormula (T.intrinsicActivePairRank 0) (T.intrinsicActivePairRank 1) (T.intrinsicActivePairRank 2)
+UploadBroadcast.Task.PrivateTripodChart.mixedDimension_eq_any_lifts : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K]
+  [inst_1 : AddCommGroup F] [inst_2 : _root_.Module K F] {T : UploadBroadcast.Task K F} (c : T.PrivateTripodChart)
+  (g : UploadBroadcast.ResidualTaskAssembly.DemandData (UploadBroadcast.ResidualTaskAssembly.privateTrim c.toTask)),
+  c.mixedDimension =
+    let S :=
+      UploadBroadcast.ResidualTaskAssembly.pureRows₁ (UploadBroadcast.ResidualTaskAssembly.privateTrim c.toTask) ⊔
+          UploadBroadcast.ResidualTaskAssembly.pureRows₂ (UploadBroadcast.ResidualTaskAssembly.privateTrim c.toTask) ⊔
+        UploadBroadcast.ResidualTaskAssembly.pureRows₃ (UploadBroadcast.ResidualTaskAssembly.privateTrim c.toTask);
+    Module.finrank K
+      ↥(Submodule.map (S.mkQ ∘ₗ g.relationRows)
+          (LinearMap.ker UploadBroadcast.ResidualTaskAssembly.DemandData.incidence))
+UploadBroadcast.PassiveRetraction.broadcastOptimum_eq : ∀ {K : Type u_1} {F : Type u_2} {V : Type u_3} [inst : Field K]
+  [inst_1 : AddCommGroup F] [inst_2 : _root_.Module K F] [inst_3 : AddCommGroup V] [inst_4 : _root_.Module K V]
+  {T : UploadBroadcast.Task K F} {R : UploadBroadcast.Task K V},
+  UploadBroadcast.PassiveRetraction T R →
+    ∀ [inst_5 : Finite K] [inst_6 : FiniteDimensional K F] [inst_7 : FiniteDimensional K V],
+      UploadBroadcast.broadcastOptimum T.A T.U = UploadBroadcast.broadcastOptimum R.A R.U
+UploadBroadcast.PassiveRetraction.inducedRelay_map : ∀ {K : Type u_1} {F : Type u_2} {V : Type u_3} [inst : Field K]
+  [inst_1 : AddCommGroup F] [inst_2 : _root_.Module K F] [inst_3 : AddCommGroup V] [inst_4 : _root_.Module K V]
+  {T : UploadBroadcast.Task K F} {R : UploadBroadcast.Task K V} (r : UploadBroadcast.PassiveRetraction T R)
+  (P : Submodule K V) (hg : R.LocallyGenerated P),
+  UploadBroadcast.Profile.mapTask (r.relayEquiv P) (R.inducedRelay P hg) = T.inducedRelay (Submodule.map r.embed P) ⋯
+UploadBroadcast.PassiveRetraction.scalarRelaySelection_of_reduced : ∀ {K : Type u_1} {F : Type u_2} {V : Type u_3}
+  [inst : Field K] [inst_1 : AddCommGroup F] [inst_2 : _root_.Module K F] [inst_3 : AddCommGroup V]
+  [inst_4 : _root_.Module K V] {T : UploadBroadcast.Task K F} {R : UploadBroadcast.Task K V},
+  UploadBroadcast.PassiveRetraction T R →
+    ∀ [inst_5 : Finite K] [inst_6 : FiniteDimensional K F] [inst_7 : FiniteDimensional K V],
+      R.ScalarRelaySelection → T.ScalarRelaySelection
+UploadBroadcast.Task.scalarRelaySelection_of_canonical : ∀ {K F : Type} [inst : Field K] [inst_1 : Finite K]
+  [inst_2 : AddCommGroup F] [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F],
+  UploadBroadcast.CanonicalScalarSelection K → ∀ (T : UploadBroadcast.Task K F), T.ScalarRelaySelection
+UploadBroadcast.Profile.entry_directSum : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K] [inst_1 : AddCommGroup F]
+  [inst_2 : _root_.Module K F] [inst_3 : FiniteDimensional K F] {G : Type u_3} [inst_4 : AddCommGroup G]
+  [inst_5 : _root_.Module K G] [inst_6 : FiniteDimensional K G] (T : UploadBroadcast.Task K F)
+  (S : UploadBroadcast.Task K G) (r : UploadBroadcast.Profile.Index),
+  UploadBroadcast.Profile.entry (UploadBroadcast.Profile.directSum T S) r =
+    UploadBroadcast.Profile.entry T r + UploadBroadcast.Profile.entry S r
+UploadBroadcast.Profile.rankBound_directSum_le : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K]
+  [inst_1 : AddCommGroup F] [inst_2 : _root_.Module K F] [inst_3 : FiniteDimensional K F] {G : Type u_3}
+  [inst_4 : AddCommGroup G] [inst_5 : _root_.Module K G] [inst_6 : FiniteDimensional K G] (T : UploadBroadcast.Task K F)
+  (S : UploadBroadcast.Task K G),
+  UploadBroadcast.Profile.rankBound (UploadBroadcast.Profile.directSum T S) ≤
+    UploadBroadcast.Profile.rankBound T + UploadBroadcast.Profile.rankBound S
+UploadBroadcast.FiniteRelayAssembly.entry_task : ∀ {K : Type u_1} {I : Type u_2} {F : I → Type u_3} [inst : Field K]
+  [inst_1 : (t : I) → AddCommGroup (F t)] [inst_2 : (t : I) → _root_.Module K (F t)] [inst_3 : Fintype I]
+  [inst_4 : ∀ (t : I), FiniteDimensional K (F t)] (T : (t : I) → UploadBroadcast.Task K (F t))
+  (r : UploadBroadcast.Profile.Index),
+  UploadBroadcast.Profile.entry (UploadBroadcast.FiniteRelayAssembly.task T) r =
+    ∑ t, UploadBroadcast.Profile.entry (T t) r
+UploadBroadcast.FiniteRelayAssembly.inducedRelay_entry : ∀ {K : Type u_1} {I : Type u_2} {F : I → Type u_3}
+  [inst : Field K] [inst_1 : (t : I) → AddCommGroup (F t)] [inst_2 : (t : I) → _root_.Module K (F t)]
+  [inst_3 : Fintype I] [inst_4 : ∀ (t : I), FiniteDimensional K (F t)] (T : (t : I) → UploadBroadcast.Task K (F t))
+  (P : (t : I) → Submodule K (F t)) (hP : ∀ (t : I), (T t).LocallyGenerated (P t)) (r : UploadBroadcast.Profile.Index),
+  UploadBroadcast.Profile.entry
+      ((UploadBroadcast.FiniteRelayAssembly.task T).inducedRelay (UploadBroadcast.FiniteRelayAssembly.space P) ⋯) r =
+    ∑ t, UploadBroadcast.Profile.entry ((T t).inducedRelay (P t) ⋯) r
+UploadBroadcast.ActualPairCapacities.margin_nonneg : ∀ {K : Type u_1} {V : Type u_2} [inst : Field K]
+  [inst_1 : AddCommGroup V] [inst_2 : _root_.Module K V] [inst_3 : FiniteDimensional K V] (T : UploadBroadcast.Task K V)
+  (p : Fin 3), 0 ≤ UploadBroadcast.ActualPairCapacities.margin T p
+UploadBroadcast.ActualPairCapacities.omniscience_margin : ∀ {K : Type u_1} {V : Type u_2} [inst : Field K]
+  [inst_1 : AddCommGroup V] [inst_2 : _root_.Module K V] [inst_3 : FiniteDimensional K V]
+  (T : UploadBroadcast.Task K V),
+  (∀ (i : UploadBroadcast.Three), T.U i = ⊤) → ∀ (p : Fin 3), UploadBroadcast.ActualPairCapacities.margin T p = 0
+UploadBroadcast.OmniscienceProfile.first_entry : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K]
+  [inst_1 : AddCommGroup F] [inst_2 : _root_.Module K F] [inst_3 : FiniteDimensional K F]
+  (T : UploadBroadcast.Task K F),
+  (∀ (i : UploadBroadcast.Three), T.U i = ⊤) →
+    ∀ (p : Equiv.Perm UploadBroadcast.Three),
+      UploadBroadcast.Profile.firstEntry T (p 0) (p 1) (p 2) = ↑(UploadBroadcast.condRank ⊤ (T.A (p 0)))
+UploadBroadcast.OmniscienceProfile.second_entry : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K]
+  [inst_1 : AddCommGroup F] [inst_2 : _root_.Module K F] [inst_3 : FiniteDimensional K F]
+  (T : UploadBroadcast.Task K F),
+  (∀ (i : UploadBroadcast.Three), T.U i = ⊤) →
+    ∀ (p : Equiv.Perm UploadBroadcast.Three) (ell : UploadBroadcast.Three),
+      2 * UploadBroadcast.Profile.secondEntry T (p 0) (p 1) (p 2) ell =
+        ∑ i, ↑(UploadBroadcast.condRank ⊤ (T.A i)) - ↑(UploadBroadcast.condRank ⊤ (T.A ell))
+UploadBroadcast.OmniscienceProfile.relay_deficits : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K]
+  [inst_1 : AddCommGroup F] [inst_2 : _root_.Module K F] [inst_3 : FiniteDimensional K F]
+  (T : UploadBroadcast.Task K F),
+  (∀ (i : UploadBroadcast.Three), T.U i = ⊤) →
+    ∀ (P : Submodule K F),
+      T.RelayFeasible P →
+        ∀ (i : UploadBroadcast.Three), UploadBroadcast.condRank P (T.A i ⊓ P) = UploadBroadcast.condRank ⊤ (T.A i)
+UploadBroadcast.OmniscienceRelayProfile.entry_preserved : ∀ {K : Type u_1} {V : Type u_2} [inst : Field K]
+  [inst_1 : AddCommGroup V] [inst_2 : _root_.Module K V] [inst_3 : FiniteDimensional K V]
+  (T : UploadBroadcast.Task K V),
+  (∀ (i : UploadBroadcast.Three), T.U i = ⊤) →
+    ∀ (P : Submodule K V) (hg : T.LocallyGenerated P),
+      T.RelayFeasible P →
+        ∀ (r : UploadBroadcast.Profile.Index),
+          UploadBroadcast.Profile.entry (T.inducedRelay P hg) r = UploadBroadcast.Profile.entry T r
+UploadBroadcast.Structural.tits_squares : ∀ (f u₁ u₂ u₃ a₁ a₂ a₃ : ℤ),
+  4 * UploadBroadcast.Structural.tits f u₁ u₂ u₃ a₁ a₂ a₃ =
+    (2 * u₁ - f - a₁) ^ 2 + (2 * u₂ - f - a₂) ^ 2 + (2 * u₃ - f - a₃) ^ 2 + (a₁ - a₂) ^ 2 + (a₁ - a₃) ^ 2 +
+        (a₂ - a₃) ^ 2 +
+      UploadBroadcast.Structural.excess f a₁ a₂ a₃ ^ 2
+UploadBroadcast.RootClassification.classification_iff : ∀ (f u₁ u₂ u₃ a₁ a₂ a₃ : ℤ),
+  UploadBroadcast.RootClassification.UpToArmPermutation f u₁ u₂ u₃ a₁ a₂ a₃ ↔
+    UploadBroadcast.RootClassification.Legal f u₁ u₂ u₃ a₁ a₂ a₃ ∧
+      UploadBroadcast.Structural.tits f u₁ u₂ u₃ a₁ a₂ a₃ = 1 ∧ 0 < UploadBroadcast.Structural.excess f a₁ a₂ a₃
+UploadBroadcast.RootClassification.table_legal_thresholds : ∀ (n : ℤ),
+  (UploadBroadcast.RootClassification.Legal (3 * n) (2 * n) (2 * n) (2 * n) n n (n + 1) ↔ 1 ≤ n) ∧
+    (UploadBroadcast.RootClassification.Legal (3 * n) (2 * n) (2 * n) (2 * n + 1) n n (n + 1) ↔ 1 ≤ n) ∧
+      (UploadBroadcast.RootClassification.Legal (3 * n + 1) (2 * n) (2 * n + 1) (2 * n + 1) n (n + 1) (n + 1) ↔ 0 ≤ n) ∧
+        (UploadBroadcast.RootClassification.Legal (3 * n + 1) (2 * n + 1) (2 * n + 1) (2 * n + 1) n (n + 1) (n + 1) ↔
+            0 ≤ n) ∧
+          (UploadBroadcast.RootClassification.Legal (3 * n + 1) (2 * n + 1) (2 * n + 1) (2 * n + 1) (n + 1) (n + 1)
+                (n + 1) ↔
+              0 ≤ n) ∧
+            (UploadBroadcast.RootClassification.Legal (3 * n + 2) (2 * n + 1) (2 * n + 1) (2 * n + 1) (n + 1) (n + 1)
+                  (n + 1) ↔
+                0 ≤ n) ∧
+              (UploadBroadcast.RootClassification.Legal (3 * n + 2) (2 * n + 1) (2 * n + 1) (2 * n + 2) (n + 1) (n + 1)
+                    (n + 1) ↔
+                  0 ≤ n) ∧
+                (UploadBroadcast.RootClassification.Legal (3 * n + 2) (2 * n + 1) (2 * n + 2) (2 * n + 2) (n + 1)
+                      (n + 1) (n + 1) ↔
+                    0 ≤ n) ∧
+                  (UploadBroadcast.RootClassification.Legal (3 * n + 2) (2 * n + 2) (2 * n + 2) (2 * n + 2) (n + 1)
+                      (n + 1) (n + 1) ↔
+                    0 ≤ n)
+UploadBroadcast.BoundaryComponentMenus.T2_permuted_preserving : ∀ {K F : Type} [inst : Field K]
+  [inst_1 : AddCommGroup F] [inst_2 : _root_.Module K F] [inst_3 : FiniteDimensional K F] [inst_4 : Finite K]
+  (T : UploadBroadcast.Task K F),
+  UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤ →
+    ∀ (k : Fin 6),
+      UploadBroadcast.NonzeroFamilyRanks.Dimensions
+          (UploadBroadcast.Profile.reindexTask (UploadBroadcast.R2PermutedMenus.pathPerm k) T)
+          UploadBroadcast.NonzeroDefectProfile.Family.T2 0 →
+        ∃ P,
+          ∃ (hl : T.LocallyGenerated P),
+            T.RelayFeasible P ∧
+              Module.finrank K ↥P = 1 ∧
+                ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+                  ∀ (r : UploadBroadcast.Profile.Index),
+                    UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl) r =
+                      UploadBroadcast.Profile.entry T r
+UploadBroadcast.RegularRelayOptimality.from_actual_chart : ∀ {K : Type u_1} [inst : Field K] {V : Type u_2}
+  [inst_1 : Finite K] [inst_2 : AddCommGroup V] [inst_3 : _root_.Module K V] [inst_4 : FiniteDimensional K V]
+  (T : UploadBroadcast.Task K V),
+  UploadBroadcast.ResidualComponentAdditivity.ActiveResidual T →
+    ∀ (n : ℕ) (e : V ≃ₗ[K] UploadBroadcast.ResonantEndomorphisms.Ambient K (UploadBroadcast.JordanResonance.V K n)),
+      UploadBroadcast.Profile.mapTask e T = UploadBroadcast.ResonantRelay.jordanTask K n →
+        ↑(3 * (n + 1) + 1) = T.uploadOptimum ∧
+          UploadBroadcast.GlobalMenuAssembly.RealizesMenu T (3 * (n + 1) + 1)
+            UploadBroadcast.ResonantFiniteAssembly.increment
+UploadBroadcast.ScalarIncidence.projection_lift : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K]
+  [inst_1 : AddCommGroup F] [inst_2 : _root_.Module K F] (U : Fin 3 → Submodule K F) (i : Fin 3) {r x y z l : ℕ}
+  (g : UploadBroadcast.ScalarIncidence.Groups r x y z l),
+  ∀ v ∈ UploadBroadcast.ScalarIncidence.allowed U i g, ∃ t, (UploadBroadcast.ScalarIncidence.projection U i g) t = v
+UploadBroadcast.ScalarIncidence.projection_mem : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K]
+  [inst_1 : AddCommGroup F] [inst_2 : _root_.Module K F] (U : Fin 3 → Submodule K F) (i : Fin 3) {r x y z l : ℕ}
+  (g : UploadBroadcast.ScalarIncidence.Groups r x y z l) (t : UploadBroadcast.ScalarIncidence.Space U g),
+  (UploadBroadcast.ScalarIncidence.projection U i g) t ∈ UploadBroadcast.ScalarIncidence.allowed U i g
+UploadBroadcast.Examples.two_instance_achievability : (∀
+    (s : UploadBroadcast.Examples.BitSource × UploadBroadcast.Examples.BitSource),
+    UploadBroadcast.Examples.decode1 (UploadBroadcast.Examples.broadcast2 s)
+          (UploadBroadcast.Examples.side1 s.1, UploadBroadcast.Examples.side1 s.2) =
+        (UploadBroadcast.Examples.demand1 s.1, UploadBroadcast.Examples.demand1 s.2) ∧
+      UploadBroadcast.Examples.decode2 (UploadBroadcast.Examples.broadcast2 s)
+            (UploadBroadcast.Examples.side2 s.1, UploadBroadcast.Examples.side2 s.2) =
+          (UploadBroadcast.Examples.demand2 s.1, UploadBroadcast.Examples.demand2 s.2) ∧
+        UploadBroadcast.Examples.decode3 (UploadBroadcast.Examples.broadcast2 s)
+            (UploadBroadcast.Examples.side3 s.1, UploadBroadcast.Examples.side3 s.2) =
+          (UploadBroadcast.Examples.demand3 s.1, UploadBroadcast.Examples.demand3 s.2)) ∧
+  UploadBroadcast.Examples.twoInstanceUploadCost = 4 ∧ UploadBroadcast.Examples.twoInstanceBroadcastCost = 3 / 2
+UploadBroadcast.Examples.fixed_relay_broadcast_cost_lower : ∀ {L : ℕ},
+  0 < L →
+    ∀ {S : Type u_1} [inst : Fintype S] [inst : DecidableEq S] (b : UploadBroadcast.Examples.RelayInput L → S)
+      (d2 d3 :
+        S →
+          UploadBroadcast.Examples.BitBlock L →
+            UploadBroadcast.Examples.BitBlock L → UploadBroadcast.Examples.BitBlock L),
+      (∀ (a u x c v : UploadBroadcast.Examples.BitBlock L),
+          d2 (b (a, u, x, c)) x v = UploadBroadcast.Examples.xorBlock a c) →
+        (∀ (a u x c v : UploadBroadcast.Examples.BitBlock L),
+            d3 (b (a, u, x, c)) c (UploadBroadcast.Examples.xorBlock u v) =
+              UploadBroadcast.Examples.xorBlock (UploadBroadcast.Examples.xorBlock a x) u) →
+          2 ≤ Real.logb 2 ↑(Fintype.card ↑(Set.range b)) / ↑L
+UploadBroadcast.Examples.fixed_broadcast_cost : ∀ (L : ℕ),
+  0 < L → Real.logb 2 ↑(Fintype.card ↑(Set.range UploadBroadcast.Examples.fixedBroadcast)) / ↑L = 2
+UploadBroadcast.BinaryOperationalTightness.broadcastOptimum_eq : UploadBroadcast.broadcastOptimum
+    UploadBroadcast.BinaryOperationalTightness.task.A UploadBroadcast.BinaryOperationalTightness.task.U =
+  3 / 2
+UploadBroadcast.BinaryOperationalTightness.scalar_broadcast_cost_strict : ∀ {M : UploadBroadcast.Three → Type u_1}
+  {S : Type u_2} [inst : Finite S] (c : UploadBroadcast.BinaryOperationalTightness.task.Code 1 M S),
+  UploadBroadcast.broadcastOptimum UploadBroadcast.BinaryOperationalTightness.task.A
+      UploadBroadcast.BinaryOperationalTightness.task.U <
+    c.broadcastCost
+UploadBroadcast.Task.uploadOptimum_halfInteger : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K] [inst_1 : Finite K]
+  [inst_2 : AddCommGroup F] [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F]
+  (T : UploadBroadcast.Task K F), UploadBroadcast.Profile.HalfInteger T.uploadOptimum
+UploadBroadcast.Task.broadcastOptimum_halfInteger : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K] [inst_1 : Finite K]
+  [inst_2 : AddCommGroup F] [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F]
+  (T : UploadBroadcast.Task K F), UploadBroadcast.Profile.HalfInteger (UploadBroadcast.broadcastOptimum T.A T.U)
+UploadBroadcast.Task.uploadOptimum_double : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K] [inst_1 : AddCommGroup F]
+  [inst_2 : _root_.Module K F] [inst_3 : Finite K] [inst_4 : FiniteDimensional K F] (T : UploadBroadcast.Task K F),
+  (UploadBroadcast.Profile.directSum T T).uploadOptimum = 2 * T.uploadOptimum
+UploadBroadcast.Task.broadcastOptimum_double : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K] [inst_1 : Finite K]
+  [inst_2 : AddCommGroup F] [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F]
+  (T : UploadBroadcast.Task K F),
+  UploadBroadcast.broadcastOptimum (UploadBroadcast.Profile.directSum T T).A (UploadBroadcast.Profile.directSum T T).U =
+    2 * UploadBroadcast.broadcastOptimum T.A T.U
+UploadBroadcast.Task.doubled_optima_integral : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K] [inst_1 : Finite K]
+  [inst_2 : AddCommGroup F] [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F]
+  (T : UploadBroadcast.Task K F),
+  (∃ z, (UploadBroadcast.Profile.directSum T T).uploadOptimum = ↑z) ∧
+    ∃ z,
+      UploadBroadcast.broadcastOptimum (UploadBroadcast.Profile.directSum T T).A
+          (UploadBroadcast.Profile.directSum T T).U =
+        ↑z
+UploadBroadcast.Task.costRegion_subset_optimal_rectangle : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K]
+  [inst_1 : Finite K] [inst_2 : AddCommGroup F] [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F]
+  (T : UploadBroadcast.Task K F),
+  T.costRegion ⊆ UploadBroadcast.Task.budgetRectangle T.uploadOptimum (UploadBroadcast.broadcastOptimum T.A T.U)
+UploadBroadcast.Task.scalar_joint_requires_integral : ∀ {K : Type u_1} {F : Type u_2} [inst : Field K]
+  [inst_1 : Finite K] [inst_2 : AddCommGroup F] [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F]
+  (T : UploadBroadcast.Task K F) {r : UploadBroadcast.Three → ℕ} {b : ℕ} (c : T.LinearCode 1 r b),
+  c.toCode.uploadCost = T.uploadOptimum →
+    c.toCode.broadcastCost = UploadBroadcast.broadcastOptimum T.A T.U →
+      (∃ z, T.uploadOptimum = ↑z) ∧ ∃ z, UploadBroadcast.broadcastOptimum T.A T.U = ↑z
+Supplemental audit passed for 42 roots; axioms [propext, Quot.sound, Classical.choice]

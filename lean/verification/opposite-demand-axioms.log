@@ -1,0 +1,47 @@
+UploadBroadcast.OppositeDemandExample.first.{u_1} (K : Type u_1) [Field K] : UploadBroadcast.Task K K
+UploadBroadcast.OppositeDemandExample.second.{u_1} (K : Type u_1) [Field K] : UploadBroadcast.Task K K
+UploadBroadcast.OppositeDemandExample.combined.{u_1} (K : Type u_1) [Field K] : UploadBroadcast.Task K (K × K)
+UploadBroadcast.OppositeDemandExample.singleton_encoders.{u_1} (K : Type u_1) [Field K] :
+  (∃ c, ∀ (x : K →ₗ[K] K), c.encode x 0 = x 1) ∧ ∃ c, ∀ (x : K →ₗ[K] K), c.encode x 0 = x 1
+UploadBroadcast.OppositeDemandExample.sum_encoder.{u_1} (K : Type u_1) [Field K] :
+  ∃ c, ∀ (x : K × K →ₗ[K] K), c.encode x 0 = x (1, 0) + x (0, 1)
+UploadBroadcast.OppositeDemandExample.optima.{u_1} (K : Type u_1) [Field K] [Finite K] :
+  UploadBroadcast.broadcastOptimum (UploadBroadcast.OppositeDemandExample.first K).A
+        (UploadBroadcast.OppositeDemandExample.first K).U =
+      1 ∧
+    UploadBroadcast.broadcastOptimum (UploadBroadcast.OppositeDemandExample.second K).A
+          (UploadBroadcast.OppositeDemandExample.second K).U =
+        1 ∧
+      UploadBroadcast.broadcastOptimum (UploadBroadcast.OppositeDemandExample.combined K).A
+          (UploadBroadcast.OppositeDemandExample.combined K).U =
+        1
+UploadBroadcast.OppositeDemandExample.all_block_lower.{u_1, u_2, u_3} (K : Type u_1) [Field K] [Finite K] {V : Type u_2}
+  [AddCommGroup V] [Module K V] [FiniteDimensional K V] (T : UploadBroadcast.Task K V)
+  (hT : UploadBroadcast.Profile.rankBound T = 1) {L : ℕ} {S : Type u_3} [Finite S]
+  (c : UploadBroadcast.BlockBroadcastCode T.A T.U L S) (hL : 0 < L) : 1 ≤ c.cost
+UploadBroadcast.OppositeDemandExample.strict_subadditivity_example.{u_1} (K : Type u_1) [Field K] [Finite K] :
+  UploadBroadcast.broadcastOptimum (UploadBroadcast.OppositeDemandExample.first K).A
+        (UploadBroadcast.OppositeDemandExample.first K).U =
+      1 ∧
+    UploadBroadcast.broadcastOptimum (UploadBroadcast.OppositeDemandExample.second K).A
+          (UploadBroadcast.OppositeDemandExample.second K).U =
+        1 ∧
+      UploadBroadcast.broadcastOptimum (UploadBroadcast.OppositeDemandExample.combined K).A
+            (UploadBroadcast.OppositeDemandExample.combined K).U =
+          1 ∧
+        UploadBroadcast.broadcastOptimum (UploadBroadcast.OppositeDemandExample.combined K).A
+              (UploadBroadcast.OppositeDemandExample.combined K).U <
+            UploadBroadcast.broadcastOptimum (UploadBroadcast.OppositeDemandExample.first K).A
+                (UploadBroadcast.OppositeDemandExample.first K).U +
+              UploadBroadcast.broadcastOptimum (UploadBroadcast.OppositeDemandExample.second K).A
+                (UploadBroadcast.OppositeDemandExample.second K).U ∧
+          ∃ c, (∀ (x : K × K →ₗ[K] K), c.encode x 0 = x (1, 0) + x (0, 1)) ∧ c.toBlockOne.cost = 1
+'UploadBroadcast.OppositeDemandExample.singleton_encoders' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.OppositeDemandExample.sum_encoder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.OppositeDemandExample.optima' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.OppositeDemandExample.all_block_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.OppositeDemandExample.strict_subadditivity_example' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Opposite-demand source audit passed for 835 imported project theorems.
+Complete reachable axiom set: [propext, Quot.sound, Classical.choice]

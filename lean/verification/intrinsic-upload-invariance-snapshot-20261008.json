@@ -1,0 +1,18 @@
+{
+  "source_sha256": "b1c77e1cf7f7245fc8781b362d69ca06ba9b42448bc6d90ad65ddf628d4b2682",
+  "files": {
+    "UploadBroadcast/IntrinsicUploadRanks.lean": "7321ee4a80e9627823b5a3ff36443e3c6abfb364da36b931d5998c9354360df9",
+    "UploadBroadcast/IntrinsicUploadSelections.lean": "d6b32e5e11dd66a7493d23abcc5f550d735ed627b38d3627bb03b7bd93991958",
+    "UploadBroadcast/IntrinsicUploadReduction.lean": "886aa996cb24ca6b179b02ac26f3db1a55c835c4429320dc6502580789850afd",
+    "UploadBroadcast/IntrinsicUploadInvariance.lean": "50813e993fcb539d444498b13d5b4e9c6de3d5efbd926251142af2070f211085",
+    "verification/IntrinsicUploadInvarianceAudit.lean": "97fa01f23aa4456c14c15031d269472d07e4f7aef24c5f12e415cd09510f0a8b"
+  },
+  "focused_build": "passed_without_warnings",
+  "audited_imported_project_theorem_roots": 2273,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "global_unnumbered_review_complete": false
+}

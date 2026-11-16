@@ -1,0 +1,4 @@
+import UploadBroadcast.CommonTripodRanks
+#print axioms UploadBroadcast.CommonTripodRanks.activeRows_choice_independent
+#print axioms UploadBroadcast.CommonTripodRanks.residual_activeRows
+#print axioms UploadBroadcast.CommonTripodRanks.residual_activeRows_finrank

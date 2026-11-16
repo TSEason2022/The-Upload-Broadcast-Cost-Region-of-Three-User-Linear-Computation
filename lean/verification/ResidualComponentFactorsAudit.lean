@@ -1,0 +1,8 @@
+import UploadBroadcast.ResidualComponentFactors
+#print axioms UploadBroadcast.ResidualComponentAdditivity.ActiveResidual.directSum_left
+#print axioms UploadBroadcast.ResidualComponentAdditivity.ActiveResidual.directSum_right
+#print axioms UploadBroadcast.ResidualComponentAdditivity.zero_excess_directSum_factors
+#print axioms UploadBroadcast.ResidualComponentAdditivity.ActiveResidual.product
+#print axioms UploadBroadcast.ResidualComponentAdditivity.zero_excess_product
+#print axioms UploadBroadcast.ResidualComponentAdditivity.spanning_side_dimension_le
+#print axioms UploadBroadcast.ResidualComponentAdditivity.spanning_zero_excess_iff

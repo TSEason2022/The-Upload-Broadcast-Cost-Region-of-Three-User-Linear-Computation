@@ -1,0 +1,16 @@
+name = "paper-verification"
+version = "0.1.0"
+defaultTargets = ["UploadBroadcast"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+
+[[lean_lib]]
+name = "UploadBroadcast"
+
+[[require]]
+name = "PFR"
+git = "https://github.com/teorth/pfr.git"
+rev = "859f6b23d5532de385cff18fc25381e715dba199"

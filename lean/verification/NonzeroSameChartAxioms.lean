@@ -1,0 +1,5 @@
+import UploadBroadcast.NonzeroSameChart
+#print axioms UploadBroadcast.NonzeroHyperplaneProfiles.exists_full_hyperplane_profile
+#print axioms UploadBroadcast.NonzeroHyperplaneUpload.exists_full_hyperplane_upload_profile
+#print axioms UploadBroadcast.NonzeroSameChart.exists_same_chart_relay
+#print axioms UploadBroadcast.NonzeroSameChart.same_chart_full_and_relay

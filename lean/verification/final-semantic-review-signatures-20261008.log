@@ -1,0 +1,1334 @@
+UploadBroadcast.Task.active_pair_source_geometry.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  let Q := T.quotientTask T.commonKnown;
+  let s := T.selectedPairs;
+  (∀ (i : UploadBroadcast.Three), IsCompl (s.passive i) (s.activeFactor i)) ∧
+    (∀ (i : UploadBroadcast.Three), Module.finrank K ↥(s.activeFactor i) = T.intrinsicActivePairRank i) ∧
+      (∀ (i : UploadBroadcast.Three), Submodule.map (↑s.simultaneous) (Q.A i) = Q.A i) ∧
+        ∀ (i : UploadBroadcast.Three),
+          Submodule.map (↑(s.chart i).symm) (Submodule.map (↑s.simultaneous) (Q.U i)) =
+            (s.activeFactor i).prod
+              (Submodule.map (LinearMap.snd K ↥(Q.pairKnown i) ↥(s.residual i))
+                (Submodule.map (↑(s.chart i).symm) (Q.U i)))
+'UploadBroadcast.Task.active_pair_source_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Task.active_reduction_source.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] [Finite K] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  (∀ (i : UploadBroadcast.Three), Module.finrank K ↥(T.preResidual.pairKnown i) = T.intrinsicActivePairRank i) ∧
+    (∀ (i : UploadBroadcast.Three), T.pairOmniscienceFactor.U i = ⊤) ∧
+      (UploadBroadcast.ResidualTaskAssembly.used₁ T.pairFreeChart.activeResidual = ⊤ ∧
+          UploadBroadcast.ResidualTaskAssembly.used₂ T.pairFreeChart.activeResidual = ⊤ ∧
+            UploadBroadcast.ResidualTaskAssembly.used₃ T.pairFreeChart.activeResidual = ⊤) ∧
+        (∀ (L : ℕ), T.achievableAt L = (T.pairFreeChart.withActivePairs T.pairOmniscienceFactor).achievableAt L) ∧
+          T.costRegion = (T.pairFreeChart.withActivePairs T.pairOmniscienceFactor).costRegion
+'UploadBroadcast.Task.active_reduction_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Task.activeReduction_achievableAt_eq.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] [Finite K] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) (L : ℕ) :
+  T.achievableAt L = (T.pairFreeChart.withActivePairs T.pairOmniscienceFactor).achievableAt L
+'UploadBroadcast.Task.activeReduction_achievableAt_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Task.activeReduction_costRegion_eq.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] [Finite K] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  T.costRegion = (T.pairFreeChart.withActivePairs T.pairOmniscienceFactor).costRegion
+'UploadBroadcast.Task.activeReduction_costRegion_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Task.PrivateTripodChart.activeResidual_signal_quotients.{u_1, u_2} {K : Type u_1} {F : Type u_2}
+  [Field K] [AddCommGroup F] [Module K F] {S : UploadBroadcast.Task K F} (c : S.PrivateTripodChart) :
+  c.activeResidual.U 0 =
+      c.activeResidual.A 0 ⊔
+        Submodule.map UploadBroadcast.ResidualTaskAssembly.demandLift₁
+          (Submodule.map UploadBroadcast.ResidualTaskAssembly.demandQuotient₁ (c.activeResidual.U 0)) ∧
+    c.activeResidual.U 1 =
+        c.activeResidual.A 1 ⊔
+          Submodule.map UploadBroadcast.ResidualTaskAssembly.demandLift₂
+            (Submodule.map UploadBroadcast.ResidualTaskAssembly.demandQuotient₂ (c.activeResidual.U 1)) ∧
+      c.activeResidual.U 2 =
+        c.activeResidual.A 2 ⊔
+          Submodule.map UploadBroadcast.ResidualTaskAssembly.demandLift₃
+            (Submodule.map UploadBroadcast.ResidualTaskAssembly.demandQuotient₃ (c.activeResidual.U 2))
+'UploadBroadcast.Task.PrivateTripodChart.activeResidual_signal_quotients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.Task.PrivateTripodChart.activeResidual_rows_finrank.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K]
+  [AddCommGroup F] [Module K F] {S : UploadBroadcast.Task K F} (c : S.PrivateTripodChart) [FiniteDimensional K F] :
+  let t := UploadBroadcast.ResidualTaskAssembly.privateTrim c.toTask;
+  let g := UploadBroadcast.ResidualTaskAssembly.selectedTrimData c.toTask ⋯ ⋯ ⋯;
+  let P :=
+    UploadBroadcast.ResidualTaskAssembly.pureRows₁ t ⊔ UploadBroadcast.ResidualTaskAssembly.pureRows₂ t ⊔
+      UploadBroadcast.ResidualTaskAssembly.pureRows₃ t;
+  Module.finrank K ↥g.activeRows =
+    Module.finrank K ↥P +
+      Module.finrank K
+        ↥(Submodule.map (P.mkQ ∘ₗ g.relationRows)
+            (LinearMap.ker UploadBroadcast.ResidualTaskAssembly.DemandData.incidence))
+'UploadBroadcast.Task.PrivateTripodChart.activeResidual_rows_finrank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.Task.preResidual_pairKnown_finrank.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) (i : UploadBroadcast.Three) :
+  Module.finrank K ↥(T.preResidual.pairKnown i) = T.intrinsicActivePairRank i
+'UploadBroadcast.Task.preResidual_pairKnown_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Task.minimum_upload_source_formula.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [Finite K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  let d₀ := ↑T.pairFreeChart.commonDimension + ↑(T.intrinsicActivePairRank 0);
+  let d₁ := ↑T.pairFreeChart.commonDimension + ↑(T.intrinsicActivePairRank 1);
+  let d₂ := ↑T.pairFreeChart.commonDimension + ↑(T.intrinsicActivePairRank 2);
+  T.uploadOptimum =
+    ↑T.pairFreeChart.privateDimension + ↑T.pairFreeChart.tripodDimension + max (max d₀ (max d₁ d₂)) ((d₀ + d₁ + d₂) / 2)
+'UploadBroadcast.Task.minimum_upload_source_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Task.minimum_upload_attainment.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [Finite K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  ∃ L r b c,
+    (L = 1 ∨ L = 2) ∧
+      ((∃ n, ↑n = T.uploadOmniscienceValue) ↔ L = 1) ∧
+        ↑(∑ i, r i) / ↑L = T.minimumUploadFormula ∧ c.toCode.uploadCost = T.minimumUploadFormula
+'UploadBroadcast.Task.minimum_upload_attainment' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Task.minimum_upload_scalar_of_integral.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [Finite K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (h : ∃ z, ↑z = T.uploadOmniscienceValue) :
+  ∃ r b c, ↑(∑ i, r i) = T.minimumUploadFormula ∧ c.toCode.uploadCost = T.minimumUploadFormula
+'UploadBroadcast.Task.minimum_upload_scalar_of_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Task.minimum_upload_two_instance.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [Finite K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  ∃ r b c, ↑(∑ i, r i) / 2 = T.minimumUploadFormula ∧ c.toCode.uploadCost = T.minimumUploadFormula
+'UploadBroadcast.Task.minimum_upload_two_instance' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Task.minimum_upload_closed_lower.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [Finite K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) {b : ℝ × ℝ}
+  (hb : b ∈ T.costRegion) : T.minimumUploadFormula ≤ b.1
+'UploadBroadcast.Task.minimum_upload_closed_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Task.preResidual_pairKnown_finrank.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) (i : UploadBroadcast.Three) :
+  Module.finrank K ↥(T.preResidual.pairKnown i) = T.intrinsicActivePairRank i
+'UploadBroadcast.Task.preResidual_pairKnown_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.ResidualTaskAssembly.tripodDimension_eq_pure_mixed.{u_1, u_2, u_3, u_4, u_5} {K : Type u_1}
+  {P₁ : Type u_2} {P₂ : Type u_3} {P₃ : Type u_4} {D : Type u_5} [Field K] [AddCommGroup P₁] [Module K P₁]
+  [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D] [FiniteDimensional K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D) :
+  let t := UploadBroadcast.ResidualTaskAssembly.privateTrim task;
+  let g := UploadBroadcast.ResidualTaskAssembly.selectedTrimData task h₀ h₁ h₂;
+  let S :=
+    UploadBroadcast.ResidualTaskAssembly.pureRows₁ t ⊔ UploadBroadcast.ResidualTaskAssembly.pureRows₂ t ⊔
+      UploadBroadcast.ResidualTaskAssembly.pureRows₃ t;
+  UploadBroadcast.ResidualTaskAssembly.tripodDimension task h₀ h₁ h₂ =
+    Module.finrank K ↥S - UploadBroadcast.ResidualTaskAssembly.commonDimension task +
+      Module.finrank K
+        ↥(Submodule.map (S.mkQ ∘ₗ g.relationRows)
+            (LinearMap.ker UploadBroadcast.ResidualTaskAssembly.DemandData.incidence))
+'UploadBroadcast.ResidualTaskAssembly.tripodDimension_eq_pure_mixed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualTaskAssembly.tripodDimension_eq_stacked_rank.{u_1, u_2, u_3, u_4, u_5} {K : Type u_1}
+  {P₁ : Type u_2} {P₂ : Type u_3} {P₃ : Type u_4} {D : Type u_5} [Field K] [AddCommGroup P₁] [Module K P₁]
+  [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D] [FiniteDimensional K P₁]
+  [FiniteDimensional K P₂] [FiniteDimensional K P₃] [FiniteDimensional K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D) :
+  let t := UploadBroadcast.ResidualTaskAssembly.privateTrim task;
+  let g := UploadBroadcast.ResidualTaskAssembly.selectedTrimData task h₀ h₁ h₂;
+  let S :=
+    UploadBroadcast.ResidualTaskAssembly.pureRows₁ t ⊔ UploadBroadcast.ResidualTaskAssembly.pureRows₂ t ⊔
+      UploadBroadcast.ResidualTaskAssembly.pureRows₃ t;
+  UploadBroadcast.ResidualTaskAssembly.tripodDimension task h₀ h₁ h₂ =
+    Module.finrank K ↥S - UploadBroadcast.ResidualTaskAssembly.commonDimension task +
+      (Module.finrank K
+          ↥(LinearMap.range
+              (UploadBroadcast.ResidualTaskAssembly.DemandData.incidence.prod (S.mkQ ∘ₗ g.relationRows))) -
+        Module.finrank K ↥(LinearMap.range UploadBroadcast.ResidualTaskAssembly.DemandData.incidence))
+'UploadBroadcast.ResidualTaskAssembly.tripodDimension_eq_stacked_rank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.FiniteAlphabet.commonFunction.{u_1, u_2, u_3} {Ω : Type u_1} {ι : Type u_2} [MeasurableSpace Ω]
+  [Fintype ι] [DecidableEq ι] {α : ι → Type u_3} [(i : ι) → Fintype (α i)] [(i : ι) → MeasurableSpace (α i)]
+  [∀ (i : ι), MeasurableSingletonClass (α i)] (μ : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure μ]
+  (X : Ω → (i : ι) → α i) (hX : Measurable X) (Y₁ Y₂ Y₃ T₁ T₂ T₃ M₁ M₂ M₃ Θ O : Finset ι)
+  (ind₁₂ :
+    ProbabilityTheory.CondIndepFun (UploadBroadcast.FiniteAlphabet.project (Y₁ ∪ T₁) ∘ X)
+      (UploadBroadcast.FiniteAlphabet.project (Y₂ ∪ T₂) ∘ X) (UploadBroadcast.FiniteAlphabet.project O ∘ X) μ)
+  (ind₁₃ :
+    ProbabilityTheory.CondIndepFun (UploadBroadcast.FiniteAlphabet.project (Y₁ ∪ T₁) ∘ X)
+      (UploadBroadcast.FiniteAlphabet.project (Y₃ ∪ T₃) ∘ X) (UploadBroadcast.FiniteAlphabet.project O ∘ X) μ)
+  (ind₂₃ :
+    ProbabilityTheory.CondIndepFun (UploadBroadcast.FiniteAlphabet.project (Y₂ ∪ T₂) ∘ X)
+      (UploadBroadcast.FiniteAlphabet.project (Y₃ ∪ T₃) ∘ X) (UploadBroadcast.FiniteAlphabet.project O ∘ X) μ)
+  (enc₁ : UploadBroadcast.FiniteAlphabet.conditionalEntropy μ X M₁ (Y₁ ∪ T₁ ∪ O) = 0)
+  (enc₂ : UploadBroadcast.FiniteAlphabet.conditionalEntropy μ X M₂ (Y₂ ∪ T₂ ∪ O) = 0)
+  (enc₃ : UploadBroadcast.FiniteAlphabet.conditionalEntropy μ X M₃ (Y₃ ∪ T₃ ∪ O) = 0)
+  (dec₁ : UploadBroadcast.FiniteAlphabet.conditionalEntropy μ X Y₁ (M₁ ∪ T₁ ∪ O) = 0)
+  (dec₂ : UploadBroadcast.FiniteAlphabet.conditionalEntropy μ X Y₂ (M₂ ∪ T₂ ∪ O) = 0)
+  (dec₃ : UploadBroadcast.FiniteAlphabet.conditionalEntropy μ X Y₃ (M₃ ∪ T₃ ∪ O) = 0)
+  (tri₃ : UploadBroadcast.FiniteAlphabet.conditionalEntropy μ X T₃ (T₁ ∪ T₂ ∪ O) = 0)
+  (tri₂ : UploadBroadcast.FiniteAlphabet.conditionalEntropy μ X T₂ (T₁ ∪ T₃ ∪ O) = 0)
+  (common₁ : UploadBroadcast.FiniteAlphabet.conditionalEntropy μ X Θ (M₁ ∪ M₂ ∪ M₃ ∪ T₁ ∪ O) = 0)
+  (common₂ : UploadBroadcast.FiniteAlphabet.conditionalEntropy μ X Θ (M₁ ∪ M₂ ∪ M₃ ∪ T₂ ∪ O) = 0)
+  (bridge : UploadBroadcast.FiniteAlphabet.conditionalEntropy μ X T₁ (M₁ ∪ M₂ ∪ M₃ ∪ Θ ∪ T₃ ∪ O) = 0) :
+  2 * UploadBroadcast.FiniteAlphabet.conditionalEntropy μ X (Y₁ ∪ T₁ ∪ (Y₂ ∪ T₂) ∪ (Y₃ ∪ T₃)) O -
+          (UploadBroadcast.FiniteAlphabet.conditionalEntropy μ X (Y₁ ∪ T₁) O +
+              UploadBroadcast.FiniteAlphabet.conditionalEntropy μ X (Y₂ ∪ T₂) O +
+            UploadBroadcast.FiniteAlphabet.conditionalEntropy μ X (Y₃ ∪ T₃) O) +
+        UploadBroadcast.FiniteAlphabet.conditionalMutualInformation μ X M₂ M₃ (M₁ ∪ T₁ ∪ O) +
+      UploadBroadcast.FiniteAlphabet.conditionalMutualInformation μ X M₁ M₃ (M₂ ∪ T₂ ∪ O) ≤
+    UploadBroadcast.FiniteAlphabet.conditionalEntropy μ X M₁ O +
+        UploadBroadcast.FiniteAlphabet.conditionalEntropy μ X M₂ O +
+      UploadBroadcast.FiniteAlphabet.conditionalEntropy μ X M₃ O
+'UploadBroadcast.FiniteAlphabet.commonFunction' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.FiniteAlphabet.omniscience_lift.{u_1, u_2, u_3} {Ω : Type u_1} {ι : Type u_2} [MeasurableSpace Ω]
+  [Fintype ι] [DecidableEq ι] {α : ι → Type u_3} [(i : ι) → Fintype (α i)] [(i : ι) → MeasurableSpace (α i)]
+  [∀ (i : ι), MeasurableSingletonClass (α i)] (μ : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure μ]
+  (X : Ω → (i : ι) → α i) (hX : Measurable X) (O S₁ S₂ S₃ R₁ R₂ R₃ M₁ M₂ M₃ : Finset ι) (Γ : ℝ)
+  (joint :
+    ProbabilityTheory.IndepFun (UploadBroadcast.FiniteAlphabet.project O ∘ X)
+      (UploadBroadcast.FiniteAlphabet.project (R₁ ∪ R₂ ∪ R₃) ∘ X) μ)
+  (pair₁₂ :
+    ProbabilityTheory.IndepFun (UploadBroadcast.FiniteAlphabet.project R₁ ∘ X)
+      (UploadBroadcast.FiniteAlphabet.project R₂ ∘ X) μ)
+  (pair₁₃ :
+    ProbabilityTheory.IndepFun (UploadBroadcast.FiniteAlphabet.project R₁ ∘ X)
+      (UploadBroadcast.FiniteAlphabet.project R₃ ∘ X) μ)
+  (pair₂₃ :
+    ProbabilityTheory.IndepFun (UploadBroadcast.FiniteAlphabet.project R₂ ∘ X)
+      (UploadBroadcast.FiniteAlphabet.project R₃ ∘ X) μ)
+  (side₁ : H[UploadBroadcast.FiniteAlphabet.project S₁ ∘ X | UploadBroadcast.FiniteAlphabet.project O ∘ X ; μ] = 0)
+  (side₂ : H[UploadBroadcast.FiniteAlphabet.project S₂ ∘ X | UploadBroadcast.FiniteAlphabet.project O ∘ X ; μ] = 0)
+  (side₃ : H[UploadBroadcast.FiniteAlphabet.project S₃ ∘ X | UploadBroadcast.FiniteAlphabet.project O ∘ X ; μ] = 0)
+  (enc₁ :
+    H[UploadBroadcast.FiniteAlphabet.project M₁ ∘ X | UploadBroadcast.FiniteAlphabet.project (S₁ ∪ R₁) ∘ X ; μ] = 0)
+  (enc₂ :
+    H[UploadBroadcast.FiniteAlphabet.project M₂ ∘ X | UploadBroadcast.FiniteAlphabet.project (S₂ ∪ R₂) ∘ X ; μ] = 0)
+  (enc₃ :
+    H[UploadBroadcast.FiniteAlphabet.project M₃ ∘ X | UploadBroadcast.FiniteAlphabet.project (S₃ ∪ R₃) ∘ X ; μ] = 0)
+  (rec₁ :
+    H[UploadBroadcast.FiniteAlphabet.project O ∘ X | UploadBroadcast.FiniteAlphabet.project (R₁ ∪ S₁ ∪ M₂ ∪ M₃) ∘ X ;
+        μ] =
+      0)
+  (rec₂ :
+    H[UploadBroadcast.FiniteAlphabet.project O ∘ X | UploadBroadcast.FiniteAlphabet.project (R₂ ∪ S₂ ∪ M₁ ∪ M₃) ∘ X ;
+        μ] =
+      0)
+  (rec₃ :
+    H[UploadBroadcast.FiniteAlphabet.project O ∘ X | UploadBroadcast.FiniteAlphabet.project (R₃ ∪ S₃ ∪ M₁ ∪ M₂) ∘ X ;
+        μ] =
+      0)
+  (bound₁₂ :
+    Γ +
+          I[UploadBroadcast.FiniteAlphabet.project M₂ ∘ X :
+            UploadBroadcast.FiniteAlphabet.project M₃ ∘ X|UploadBroadcast.FiniteAlphabet.project (R₁ ∪ O) ∘ X;μ] +
+        I[UploadBroadcast.FiniteAlphabet.project M₁ ∘ X :
+          UploadBroadcast.FiniteAlphabet.project M₃ ∘ X|UploadBroadcast.FiniteAlphabet.project (R₂ ∪ O) ∘ X;μ] ≤
+      H[UploadBroadcast.FiniteAlphabet.project M₁ ∘ X | UploadBroadcast.FiniteAlphabet.project O ∘ X ; μ] +
+          H[UploadBroadcast.FiniteAlphabet.project M₂ ∘ X | UploadBroadcast.FiniteAlphabet.project O ∘ X ; μ] +
+        H[UploadBroadcast.FiniteAlphabet.project M₃ ∘ X | UploadBroadcast.FiniteAlphabet.project O ∘ X ; μ])
+  (bound₁₃ :
+    Γ +
+          I[UploadBroadcast.FiniteAlphabet.project M₂ ∘ X :
+            UploadBroadcast.FiniteAlphabet.project M₃ ∘ X|UploadBroadcast.FiniteAlphabet.project (R₁ ∪ O) ∘ X;μ] +
+        I[UploadBroadcast.FiniteAlphabet.project M₁ ∘ X :
+          UploadBroadcast.FiniteAlphabet.project M₂ ∘ X|UploadBroadcast.FiniteAlphabet.project (R₃ ∪ O) ∘ X;μ] ≤
+      H[UploadBroadcast.FiniteAlphabet.project M₁ ∘ X | UploadBroadcast.FiniteAlphabet.project O ∘ X ; μ] +
+          H[UploadBroadcast.FiniteAlphabet.project M₂ ∘ X | UploadBroadcast.FiniteAlphabet.project O ∘ X ; μ] +
+        H[UploadBroadcast.FiniteAlphabet.project M₃ ∘ X | UploadBroadcast.FiniteAlphabet.project O ∘ X ; μ])
+  (bound₂₃ :
+    Γ +
+          I[UploadBroadcast.FiniteAlphabet.project M₁ ∘ X :
+            UploadBroadcast.FiniteAlphabet.project M₃ ∘ X|UploadBroadcast.FiniteAlphabet.project (R₂ ∪ O) ∘ X;μ] +
+        I[UploadBroadcast.FiniteAlphabet.project M₁ ∘ X :
+          UploadBroadcast.FiniteAlphabet.project M₂ ∘ X|UploadBroadcast.FiniteAlphabet.project (R₃ ∪ O) ∘ X;μ] ≤
+      H[UploadBroadcast.FiniteAlphabet.project M₁ ∘ X | UploadBroadcast.FiniteAlphabet.project O ∘ X ; μ] +
+          H[UploadBroadcast.FiniteAlphabet.project M₂ ∘ X | UploadBroadcast.FiniteAlphabet.project O ∘ X ; μ] +
+        H[UploadBroadcast.FiniteAlphabet.project M₃ ∘ X | UploadBroadcast.FiniteAlphabet.project O ∘ X ; μ]) :
+  Γ +
+      max
+        (max H[UploadBroadcast.FiniteAlphabet.project O ∘ X | UploadBroadcast.FiniteAlphabet.project S₁ ∘ X ; μ]
+          (max H[UploadBroadcast.FiniteAlphabet.project O ∘ X | UploadBroadcast.FiniteAlphabet.project S₂ ∘ X ; μ]
+            H[UploadBroadcast.FiniteAlphabet.project O ∘ X | UploadBroadcast.FiniteAlphabet.project S₃ ∘ X ; μ]))
+        ((H[UploadBroadcast.FiniteAlphabet.project O ∘ X | UploadBroadcast.FiniteAlphabet.project S₁ ∘ X ; μ] +
+              H[UploadBroadcast.FiniteAlphabet.project O ∘ X | UploadBroadcast.FiniteAlphabet.project S₂ ∘ X ; μ] +
+            H[UploadBroadcast.FiniteAlphabet.project O ∘ X | UploadBroadcast.FiniteAlphabet.project S₃ ∘ X ; μ]) /
+          2) ≤
+    H[UploadBroadcast.FiniteAlphabet.project M₁ ∘ X ; μ] + H[UploadBroadcast.FiniteAlphabet.project M₂ ∘ X ; μ] +
+      H[UploadBroadcast.FiniteAlphabet.project M₃ ∘ X ; μ]
+'UploadBroadcast.FiniteAlphabet.omniscience_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.ConditionedResidualBridges.canonicalReduction_all_tripod_bridges.{u_1, u_4, u_5, u_6, u_7}
+  {K : Type u_1} {P₁ : Type u_4} {P₂ : Type u_5} {P₃ : Type u_6} {D : Type u_7} [Field K] [AddCommGroup P₁]
+  [Module K P₁] [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D) :
+  let res := UploadBroadcast.ResidualTaskAssembly.canonicalReduction task h₀ h₁ h₂;
+  let a := UploadBroadcast.ResidualTaskAssembly.canonicalReductionBridge task h₀ h₁ h₂;
+  LinearMap.range a.v ⊔ LinearMap.range a.r ≤ res.U 2 ⊔ res.U 0 ⊓ res.U 1 ∧
+    LinearMap.range a.v ⊔ LinearMap.range a.r ≤ res.U 1 ⊔ res.U 2 ⊓ res.U 0 ∧
+      LinearMap.range a.v ⊔ LinearMap.range a.r ≤ res.U 0 ⊔ res.U 1 ⊓ res.U 2
+'UploadBroadcast.ConditionedResidualBridges.canonicalReduction_all_tripod_bridges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ConditionedResidualBridges.canonicalReduction_conditioned_retained_bounds.{u_1, u_2, u_4, u_5, u_6, u_7,
+    u_8, u_9}
+  {K : Type u_1} {E : Type u_2} {P₁ : Type u_4} {P₂ : Type u_5} {P₃ : Type u_6} {D : Type u_7} [Field K]
+  [AddCommGroup E] [Module K E] [AddCommGroup P₁] [Module K P₁] [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃]
+  [Module K P₃] [AddCommGroup D] [Module K D] [Finite K] [FiniteDimensional K E] [FiniteDimensional K P₁]
+  [FiniteDimensional K P₂] [FiniteDimensional K P₃] [FiniteDimensional K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D) {n : ℕ} {M : UploadBroadcast.Three → Type u_8}
+  {B : Type u_9} [(i : UploadBroadcast.Three) → Fintype (M i)] [(i : UploadBroadcast.Three) → MeasurableSpace (M i)]
+  [∀ (i : UploadBroadcast.Three), DiscreteMeasurableSpace (M i)] (om : UploadBroadcast.Task K E)
+  (hom : ∀ (i : UploadBroadcast.Three), om.U i = ⊤)
+  (code :
+    (UploadBroadcast.Profile.directSum om (UploadBroadcast.ResidualTaskAssembly.canonicalReduction task h₀ h₁ h₂)).Code
+      n M B) :
+  let res := UploadBroadcast.ResidualTaskAssembly.canonicalReduction task h₀ h₁ h₂;
+  let μ := ProbabilityTheory.uniformOn Set.univ;
+  let obs := fun A =>
+    UploadBroadcast.observe K (E × UploadBroadcast.ConditionedResidualBridges.CanonicalAmbient task h₀ h₁ h₂) A;
+  let Ω := obs (⊤.prod ⊥);
+  let W := fun i => obs (⊥.prod (res.A i));
+  let msg := fun i x => code.encode i (obs ((om.A i).prod (res.A i)) x);
+  let q := Real.log ↑(Nat.card K);
+  let Γ :=
+    ↑n *
+      (↑(Module.finrank K ↥(UploadBroadcast.ResidualTaskAssembly.used₁ task)) +
+            ↑(Module.finrank K ↥(UploadBroadcast.ResidualTaskAssembly.used₂ task)) +
+          ↑(Module.finrank K ↥(UploadBroadcast.ResidualTaskAssembly.used₃ task)) +
+        ↑(Module.finrank K ↥(UploadBroadcast.ResidualTaskAssembly.selectedTrimData task h₀ h₁ h₂).activeRows));
+  let J :=
+    ![I[msg 1 : msg 2|fun x => (W 0 x, Ω x);μ] / q, I[msg 0 : msg 2|fun x => (W 1 x, Ω x);μ] / q,
+      I[msg 0 : msg 1|fun x => (W 2 x, Ω x);μ] / q];
+  ∀ (i j : UploadBroadcast.Three),
+    i ≠ j → Γ + J i + J j ≤ H[msg 0 | Ω ; μ] / q + H[msg 1 | Ω ; μ] / q + H[msg 2 | Ω ; μ] / q
+'UploadBroadcast.ConditionedResidualBridges.canonicalReduction_conditioned_retained_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.Omniscience.exists_code.{u_1, u_2, u_5, u_6, u_7} {K : Type u_1} {V : Type u_2} [Field K]
+  [AddCommGroup V] [Module K V] {X₁ : Type u_5} {X₂ : Type u_6} {X₃ : Type u_7} [AddCommGroup X₁] [Module K X₁]
+  [AddCommGroup X₂] [Module K X₂] [AddCommGroup X₃] [Module K X₃] [FiniteDimensional K V] [FiniteDimensional K X₁]
+  [FiniteDimensional K X₂] [FiniteDimensional K X₃] (r₁ r₂ r₃ : ℕ)
+  (h₁ : Module.finrank K V + Module.finrank K X₁ ≤ r₂ + r₃) (h₂ : Module.finrank K V + Module.finrank K X₂ ≤ r₁ + r₃)
+  (h₃ : Module.finrank K V + Module.finrank K X₃ ≤ r₁ + r₂) :
+  Nonempty (UploadBroadcast.Omniscience.Code K V X₁ X₂ X₃ r₁ r₂ r₃)
+'UploadBroadcast.Omniscience.exists_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Omniscience.nonempty_code_iff.{u_1, u_2, u_5, u_6, u_7} {K : Type u_1} {V : Type u_2} [Field K]
+  [AddCommGroup V] [Module K V] {X₁ : Type u_5} {X₂ : Type u_6} {X₃ : Type u_7} [AddCommGroup X₁] [Module K X₁]
+  [AddCommGroup X₂] [Module K X₂] [AddCommGroup X₃] [Module K X₃] [FiniteDimensional K V] [FiniteDimensional K X₁]
+  [FiniteDimensional K X₂] [FiniteDimensional K X₃] (r₁ r₂ r₃ : ℕ) :
+  Nonempty (UploadBroadcast.Omniscience.Code K V X₁ X₂ X₃ r₁ r₂ r₃) ↔
+    Module.finrank K V + Module.finrank K X₁ ≤ r₂ + r₃ ∧
+      Module.finrank K V + Module.finrank K X₂ ≤ r₁ + r₃ ∧ Module.finrank K V + Module.finrank K X₃ ≤ r₁ + r₂
+'UploadBroadcast.Omniscience.nonempty_code_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Omniscience.exists_scalar_optimal.{u_1, u_2, u_3, u_4, u_5} {K : Type u_1} {V : Type u_2}
+  {X₁ : Type u_3} {X₂ : Type u_4} {X₃ : Type u_5} [Field K] [AddCommGroup V] [Module K V] [AddCommGroup X₁]
+  [Module K X₁] [AddCommGroup X₂] [Module K X₂] [AddCommGroup X₃] [Module K X₃] [FiniteDimensional K V]
+  [FiniteDimensional K X₁] [FiniteDimensional K X₂] [FiniteDimensional K X₃] [Finite K] (n : ℕ)
+  (hn : ↑n = UploadBroadcast.Omniscience.optimum) : ∃ r₁ r₂ r₃ c, c.alphabetCost = UploadBroadcast.Omniscience.optimum
+'UploadBroadcast.Omniscience.exists_scalar_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Omniscience.exists_two_instance_optimal.{u_1, u_2, u_3, u_4, u_5} {K : Type u_1} {V : Type u_2}
+  {X₁ : Type u_3} {X₂ : Type u_4} {X₃ : Type u_5} [Field K] [AddCommGroup V] [Module K V] [AddCommGroup X₁]
+  [Module K X₁] [AddCommGroup X₂] [Module K X₂] [AddCommGroup X₃] [Module K X₃] [FiniteDimensional K V]
+  [FiniteDimensional K X₁] [FiniteDimensional K X₂] [FiniteDimensional K X₃] [Finite K] :
+  ∃ r₁ r₂ r₃ c, c.alphabetCost / 2 = UploadBroadcast.Omniscience.optimum
+'UploadBroadcast.Omniscience.exists_two_instance_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Omniscience.block_cost_lower.{u_1, u_2, u_3, u_4, u_5} {K : Type u_1} {V : Type u_2} {X₁ : Type u_3}
+  {X₂ : Type u_4} {X₃ : Type u_5} [Field K] [AddCommGroup V] [Module K V] [AddCommGroup X₁] [Module K X₁]
+  [AddCommGroup X₂] [Module K X₂] [AddCommGroup X₃] [Module K X₃] [FiniteDimensional K V] [FiniteDimensional K X₁]
+  [FiniteDimensional K X₂] [FiniteDimensional K X₃] [Finite K] (L : ℕ) (hL : 0 < L) {r₁ r₂ r₃ : ℕ}
+  (c : UploadBroadcast.Omniscience.Code K (Fin L → V) (Fin L → X₁) (Fin L → X₂) (Fin L → X₃) r₁ r₂ r₃) :
+  UploadBroadcast.Omniscience.optimum ≤ c.alphabetCost / ↑L
+'UploadBroadcast.Omniscience.block_cost_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.relay_decoder_equivalence.{u_1, u_2, u_4, u_5} {K : Type u_1} {F : Type u_2} {W : Type u_4} [Field K]
+  [AddCommGroup F] [Module K F] [AddCommGroup W] [Module K W] {S : Type u_5} (A U P : Submodule K F) (hAU : A ≤ U)
+  (hUP : U ≤ A ⊔ P) (g : (↥P →ₗ[K] W) → S) :
+  (∃ d, ∀ (x : F →ₗ[K] W), d (g (x ∘ₗ P.subtype)) (x ∘ₗ A.subtype) = x ∘ₗ U.subtype) ↔
+    ∃ d, ∀ (p : ↥P →ₗ[K] W), d (g p) (p ∘ₗ Submodule.inclusion ⋯) = p ∘ₗ Submodule.inclusion ⋯
+'UploadBroadcast.relay_decoder_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.relay_attainable_range.{u_1, u_2, u_4, u_5} {K : Type u_1} {F : Type u_2} {W : Type u_4} [Field K]
+  [AddCommGroup F] [Module K F] [AddCommGroup W] [Module K W] {S : Type u_5} (P : Submodule K F)
+  (g : (↥P →ₗ[K] W) → S) : (Set.range fun x => g (x ∘ₗ P.subtype)) = Set.range g
+'UploadBroadcast.relay_attainable_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.ResidualComponentAdditivity.source_residual_decomposition.{u_1, u_2} {K : Type u_1} {F : Type u_2}
+  [Field K] [AddCommGroup F] [Module K F] [Finite K] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  ∃ n P e,
+    UploadBroadcast.Profile.mapTask e
+          (UploadBroadcast.FiniteRelayAssembly.task
+            (UploadBroadcast.FiniteComponentCoordinates.componentTask T.pairFreeChart.componentResidual P e)) =
+        T.pairFreeChart.componentResidual ∧
+      (∀ (i : Fin n),
+          UploadBroadcast.TaskDecomposition.Indecomposable
+            (UploadBroadcast.EdgeExtraction.configuration
+                (UploadBroadcast.FiniteComponentCoordinates.componentTask T.pairFreeChart.componentResidual P e
+                  i)).spaces
+            ⊤) ∧
+        (∀ (i : Fin n) (j : UploadBroadcast.Three),
+            (UploadBroadcast.FiniteComponentCoordinates.componentTask T.pairFreeChart.componentResidual P e i).A j =
+              Submodule.comap (P i).subtype (T.pairFreeChart.componentResidual.A j)) ∧
+          (∀ (i : Fin n) (j : UploadBroadcast.Three),
+              (UploadBroadcast.FiniteComponentCoordinates.componentTask T.pairFreeChart.componentResidual P e i).U j =
+                Submodule.comap (P i).subtype (T.pairFreeChart.componentResidual.U j)) ∧
+            (∀ (i : Fin n),
+                UploadBroadcast.ResidualComponentAdditivity.ActiveResidual
+                  (UploadBroadcast.FiniteComponentCoordinates.componentTask T.pairFreeChart.componentResidual P e i)) ∧
+              T.pairFreeChart.componentResidual.uploadOptimum =
+                  UploadBroadcast.ResidualComponentAdditivity.uploadValue T.pairFreeChart.componentResidual ∧
+                (∀ (i : Fin n),
+                    (UploadBroadcast.FiniteComponentCoordinates.componentTask T.pairFreeChart.componentResidual P e
+                          i).uploadOptimum =
+                      UploadBroadcast.ResidualComponentAdditivity.uploadValue
+                        (UploadBroadcast.FiniteComponentCoordinates.componentTask T.pairFreeChart.componentResidual P e
+                          i)) ∧
+                  T.pairFreeChart.componentResidual.uploadOptimum =
+                      ∑ i,
+                        (UploadBroadcast.FiniteComponentCoordinates.componentTask T.pairFreeChart.componentResidual P e
+                            i).uploadOptimum ∧
+                    ∑ i, Module.finrank K ↥(P i) =
+                      Module.finrank K
+                        (UploadBroadcast.ResidualUpload.Ambient
+                          ↥(UploadBroadcast.ResidualTaskAssembly.used₁ T.pairFreeChart.toTask)
+                          ↥(UploadBroadcast.ResidualTaskAssembly.used₂ T.pairFreeChart.toTask)
+                          ↥(UploadBroadcast.ResidualTaskAssembly.used₃ T.pairFreeChart.toTask)
+                          ↥(UploadBroadcast.ResidualTaskAssembly.finalDemandData T.pairFreeChart.toTask ⋯ ⋯
+                                ⋯).activeRows)
+'UploadBroadcast.ResidualComponentAdditivity.source_residual_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualComponentAdditivity.source_residual_upload_formula.{u_1, u_2} {K : Type u_1} {F : Type u_2}
+  [Field K] [AddCommGroup F] [Module K F] [Finite K] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  T.pairFreeChart.componentResidual.uploadOptimum =
+    ↑(UploadBroadcast.ResidualTaskAssembly.privateDimension T.pairFreeChart.toTask) +
+      ↑(UploadBroadcast.ResidualTaskAssembly.tripodDimension T.pairFreeChart.toTask ⋯ ⋯ ⋯)
+'UploadBroadcast.ResidualComponentAdditivity.source_residual_upload_formula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualComponentAdditivity.residual_decomposition.{u_1, u_2, u_4, u_5} {K : Type u_1} {F : Type u_2}
+  {I : Type u_4} [Field K] [AddCommGroup F] [Module K F] [Finite K] [FiniteDimensional K F] {G : I → Type u_5}
+  [Fintype I] [(i : I) → AddCommGroup (G i)] [(i : I) → Module K (G i)] [∀ (i : I), FiniteDimensional K (G i)]
+  (T : UploadBroadcast.Task K F) (S : (i : I) → UploadBroadcast.Task K (G i)) (e : ((i : I) → G i) ≃ₗ[K] F)
+  (he : UploadBroadcast.Profile.mapTask e (UploadBroadcast.FiniteRelayAssembly.task S) = T)
+  (h : UploadBroadcast.ResidualComponentAdditivity.ActiveResidual T) :
+  (∀ (i : I), UploadBroadcast.ResidualComponentAdditivity.ActiveResidual (S i)) ∧
+    T.uploadOptimum = UploadBroadcast.ResidualComponentAdditivity.uploadValue T ∧
+      (∀ (i : I), (S i).uploadOptimum = UploadBroadcast.ResidualComponentAdditivity.uploadValue (S i)) ∧
+        T.uploadOptimum = ∑ i, (S i).uploadOptimum
+'UploadBroadcast.ResidualComponentAdditivity.residual_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualComponentAdditivity.exists_indecomposable_residual_decomposition.{u_1, u_2} {K : Type u_1}
+  {F : Type u_2} [Field K] [AddCommGroup F] [Module K F] [Finite K] [FiniteDimensional K F]
+  (T : UploadBroadcast.Task K F) (h : UploadBroadcast.ResidualComponentAdditivity.ActiveResidual T) :
+  ∃ n P e,
+    UploadBroadcast.Profile.mapTask e
+          (UploadBroadcast.FiniteRelayAssembly.task (UploadBroadcast.FiniteComponentCoordinates.componentTask T P e)) =
+        T ∧
+      (∀ (i : Fin n),
+          UploadBroadcast.TaskDecomposition.Indecomposable
+            (UploadBroadcast.EdgeExtraction.configuration
+                (UploadBroadcast.FiniteComponentCoordinates.componentTask T P e i)).spaces
+            ⊤) ∧
+        (∀ (i : Fin n) (j : UploadBroadcast.Three),
+            (UploadBroadcast.FiniteComponentCoordinates.componentTask T P e i).A j =
+              Submodule.comap (P i).subtype (T.A j)) ∧
+          (∀ (i : Fin n) (j : UploadBroadcast.Three),
+              (UploadBroadcast.FiniteComponentCoordinates.componentTask T P e i).U j =
+                Submodule.comap (P i).subtype (T.U j)) ∧
+            (∀ (i : Fin n),
+                UploadBroadcast.ResidualComponentAdditivity.ActiveResidual
+                  (UploadBroadcast.FiniteComponentCoordinates.componentTask T P e i)) ∧
+              T.uploadOptimum = UploadBroadcast.ResidualComponentAdditivity.uploadValue T ∧
+                (∀ (i : Fin n),
+                    (UploadBroadcast.FiniteComponentCoordinates.componentTask T P e i).uploadOptimum =
+                      UploadBroadcast.ResidualComponentAdditivity.uploadValue
+                        (UploadBroadcast.FiniteComponentCoordinates.componentTask T P e i)) ∧
+                  T.uploadOptimum =
+                      ∑ i, (UploadBroadcast.FiniteComponentCoordinates.componentTask T P e i).uploadOptimum ∧
+                    ∑ i, Module.finrank K ↥(P i) = Module.finrank K F
+'UploadBroadcast.ResidualComponentAdditivity.exists_indecomposable_residual_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualComponentAdditivity.finalResidual_active.{u_1, u_5, u_6, u_7, u_8} {K : Type u_1} [Field K]
+  {P₁ : Type u_5} {P₂ : Type u_6} {P₃ : Type u_7} {D : Type u_8} [AddCommGroup P₁] [Module K P₁] [AddCommGroup P₂]
+  [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D]
+  (T : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : T.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : T.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : T.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D) :
+  UploadBroadcast.ResidualComponentAdditivity.ActiveResidual
+    (UploadBroadcast.ResidualTaskAssembly.finalResidual T h₀ h₁ h₂)
+'UploadBroadcast.ResidualComponentAdditivity.finalResidual_active' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualComponentAdditivity.canonical_rows_fully_active.{u_1, u_5, u_6, u_7, u_8} {K : Type u_1}
+  [Field K] {P₁ : Type u_5} {P₂ : Type u_6} {P₃ : Type u_7} {D : Type u_8} [AddCommGroup P₁] [Module K P₁]
+  [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D]
+  (T : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : T.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : T.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : T.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D)
+  (h : UploadBroadcast.ResidualComponentAdditivity.ActiveResidual T)
+  (g : UploadBroadcast.ResidualTaskAssembly.DemandData T) : g.activeRows = ⊤
+'UploadBroadcast.ResidualComponentAdditivity.canonical_rows_fully_active' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualComponentAdditivity.minimum_upload.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K]
+  [AddCommGroup F] [Module K F] [Finite K] [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (h : UploadBroadcast.ResidualComponentAdditivity.ActiveResidual T) :
+  T.uploadOptimum = UploadBroadcast.ResidualComponentAdditivity.uploadValue T
+'UploadBroadcast.ResidualComponentAdditivity.minimum_upload' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.ResidualComponentAdditivity.minimum_upload_additive.{u_1, u_2, u_4, u_5} {K : Type u_1} {F : Type u_2}
+  {I : Type u_4} [Field K] [AddCommGroup F] [Module K F] {G : I → Type u_5} [Fintype I] [(i : I) → AddCommGroup (G i)]
+  [(i : I) → Module K (G i)] [∀ (i : I), FiniteDimensional K (G i)] [Finite K] [FiniteDimensional K F]
+  (T : UploadBroadcast.Task K F) (S : (i : I) → UploadBroadcast.Task K (G i)) (e : ((i : I) → G i) ≃ₗ[K] F)
+  (he : UploadBroadcast.Profile.mapTask e (UploadBroadcast.FiniteRelayAssembly.task S) = T)
+  (h : UploadBroadcast.ResidualComponentAdditivity.ActiveResidual T) : T.uploadOptimum = ∑ i, (S i).uploadOptimum
+'UploadBroadcast.ResidualComponentAdditivity.minimum_upload_additive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualComponentAdditivity.scalar_upload_exact.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K]
+  [AddCommGroup F] [Module K F] [Finite K] [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (h : UploadBroadcast.ResidualComponentAdditivity.ActiveResidual T) :
+  ∃ d r c,
+    ∑ i, r i = d ∧
+      ↑d = UploadBroadcast.ResidualComponentAdditivity.uploadValue T ∧
+        c.toCode.uploadCost = UploadBroadcast.ResidualComponentAdditivity.uploadValue T ∧
+          c.toCode.broadcastCost ≤ UploadBroadcast.ResidualComponentAdditivity.uploadValue T
+'UploadBroadcast.ResidualComponentAdditivity.scalar_upload_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualComponentAdditivity.zero_excess_full_relay.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] [Finite K] (T : UploadBroadcast.Task K F)
+  (h : UploadBroadcast.ResidualComponentAdditivity.ActiveResidual T)
+  (hz : Module.finrank K ↥(T.A 0) + Module.finrank K ↥(T.A 1) + Module.finrank K ↥(T.A 2) = Module.finrank K F) :
+  T.uploadOptimum = ↑(Module.finrank K F) ∧
+    T.LocallyGenerated ⊤ ∧
+      T.RelayFeasible ⊤ ∧
+        ∀ (r : UploadBroadcast.Profile.Index),
+          UploadBroadcast.Profile.entry (T.inducedRelay ⊤ ⋯) r = UploadBroadcast.Profile.entry T r
+'UploadBroadcast.ResidualComponentAdditivity.zero_excess_full_relay' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualComponentAdditivity.zero_excess_side_complement.{u_1, u_2} {K : Type u_1} {F : Type u_2}
+  [Field K] [AddCommGroup F] [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (h : UploadBroadcast.ResidualComponentAdditivity.ActiveResidual T)
+  (hz : Module.finrank K ↥(T.A 0) + Module.finrank K ↥(T.A 1) + Module.finrank K ↥(T.A 2) = Module.finrank K F) :
+  IsCompl (T.A 0) (T.A 1 ⊔ T.A 2) ∧ Disjoint (T.A 1) (T.A 2)
+'UploadBroadcast.ResidualComponentAdditivity.zero_excess_side_complement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualComponentAdditivity.pair_ranks_zero.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (h : UploadBroadcast.ResidualComponentAdditivity.ActiveResidual T) :
+  (∀ (i : UploadBroadcast.Three), T.pairKnown i = ⊥) ∧ ∀ (i : UploadBroadcast.Three), T.intrinsicActivePairRank i = 0
+'UploadBroadcast.ResidualComponentAdditivity.pair_ranks_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.ResidualProfiles.profiles {K F : Type} [Field K] [AddCommGroup F] [Module K F] [FiniteDimensional K F]
+  [Fintype K] (hq : 3 ≤ Fintype.card K) (T : UploadBroadcast.Task K F)
+  (ha : UploadBroadcast.ResidualComponentAdditivity.ActiveResidual T)
+  (hi : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤) :
+  (¬UploadBroadcast.ResidualProfileCompleteness.ListedExceptional T →
+      ∃ P,
+        ∃ (hl : T.LocallyGenerated P),
+          T.RelayFeasible P ∧
+            ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+              ∀ (r : UploadBroadcast.Profile.Index),
+                UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl) r =
+                  UploadBroadcast.Profile.entry T r) ∧
+    (∀ (k : Fin 6) (n : ℕ),
+        UploadBroadcast.NonzeroFamilyRanks.Dimensions
+            (UploadBroadcast.Profile.reindexTask (UploadBroadcast.R2PermutedMenus.pathPerm k) T)
+            UploadBroadcast.NonzeroDefectProfile.Family.T1 n →
+          UploadBroadcast.ResidualProfiles.OptimalExactMenu T
+            (UploadBroadcast.ResidualProfiles.permutedIncrement UploadBroadcast.NonzeroDefectProfile.Family.T1 k)) ∧
+      (∀ (k : Fin 6) (n : ℕ),
+          1 ≤ n →
+            UploadBroadcast.NonzeroFamilyRanks.Dimensions
+                (UploadBroadcast.Profile.reindexTask (UploadBroadcast.R2PermutedMenus.pathPerm k) T)
+                UploadBroadcast.NonzeroDefectProfile.Family.O n →
+              UploadBroadcast.ResidualProfiles.OptimalExactMenu T
+                (UploadBroadcast.ResidualProfiles.permutedIncrement UploadBroadcast.NonzeroDefectProfile.Family.O k)) ∧
+        ∀ (n : ℕ) (e : F ≃ₗ[K] UploadBroadcast.ResonantEndomorphisms.Ambient K (UploadBroadcast.JordanResonance.V K n)),
+          UploadBroadcast.Profile.mapTask e T = UploadBroadcast.ResonantRelay.jordanTask K n →
+            UploadBroadcast.ResidualProfiles.OptimalExactMenu T UploadBroadcast.ResonantFiniteAssembly.increment
+'UploadBroadcast.ResidualProfiles.profiles' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.ResidualProfileCompleteness.outside_table_profile_preserving {K F : Type} [Field K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] [Fintype K] (hq : 3 ≤ Fintype.card K) (T : UploadBroadcast.Task K F)
+  (h : UploadBroadcast.ResidualComponentAdditivity.ActiveResidual T)
+  (hi : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (hout : ¬UploadBroadcast.ResidualProfileCompleteness.ListedExceptional T) :
+  ∃ P,
+    ∃ (hl : T.LocallyGenerated P),
+      T.RelayFeasible P ∧
+        ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+          ∀ (r : UploadBroadcast.Profile.Index),
+            UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl) r =
+              UploadBroadcast.Profile.entry T r
+'UploadBroadcast.ResidualProfileCompleteness.outside_table_profile_preserving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.RegularExactMenus.from_actual_regular {K F : Type} [Field K] [Finite K] [AddCommGroup F] [Module K F]
+  [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (ha : UploadBroadcast.ResidualComponentAdditivity.ActiveResidual T)
+  (hi : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (hz : UploadBroadcast.ReflectionReduction.defect (UploadBroadcast.EdgeExtraction.configuration T).dimensionVector = 0)
+  (hpos : Module.finrank K F < Module.finrank K ↥(T.A 0) + Module.finrank K ↥(T.A 1) + Module.finrank K ↥(T.A 2)) :
+  ∃ n,
+    ∀ (m : UploadBroadcast.Three),
+      ∃ P,
+        ∃ (hl : T.LocallyGenerated P),
+          T.RelayFeasible P ∧
+            Module.finrank K ↥P = 3 * (n + 1) + 1 ∧
+              ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+                (∀ (r : Fin 6),
+                    UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl) (Sum.inl r) =
+                      UploadBroadcast.Profile.entry T (Sum.inl r) + UploadBroadcast.ResonantRelay.increment m r) ∧
+                  ∀ (i l : UploadBroadcast.Three),
+                    UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl)
+                        (Sum.inr (i, l)) =
+                      UploadBroadcast.Profile.entry T (Sum.inr (i, l))
+'UploadBroadcast.RegularExactMenus.from_actual_regular' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Allocation.aggregate_selection_paper_coordinates.{u_1} {R : Type u_1} [CommRing R] [LinearOrder R]
+  [IsStrictOrderedRing R] (μ : Fin 10 → R) (s : Fin 6 → R) (hμ : ∀ (t : Fin 10), 0 ≤ μ t) (hs : ∀ (j : Fin 6), 0 ≤ s j)
+  (h16 : μ 0 + 2 * μ 1 + μ 2 + μ 3 + μ 5 + μ 6 + μ 7 ≤ s 0 + s 5)
+  (h24 : μ 0 + μ 1 + 2 * μ 2 + μ 3 + μ 4 + μ 6 + μ 8 ≤ s 1 + s 3)
+  (h35 : 2 * μ 0 + μ 1 + μ 2 + μ 4 + μ 5 + μ 6 + μ 9 ≤ s 2 + s 4) :
+  UploadBroadcast.Allocation.AggregateFeasible (UploadBroadcast.Allocation.paperOrdinaryMultiplicities μ) (μ 6)
+      (UploadBroadcast.Allocation.paperCapacities s) ↔
+    μ 6 ≤ s 0 + s 3 + s 4 ∧ μ 6 ≤ s 1 + s 2 + s 5
+'UploadBroadcast.Allocation.aggregate_selection_paper_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.EdgeExtraction.simultaneous_maximal_extraction.{u_1, u_2} {K : Type u_1} {V : Type u_2} [Field K]
+  [AddCommGroup V] [Module K V] [FiniteDimensional K V] (T : UploadBroadcast.Task K V) :
+  ∃ Q W,
+    iSupIndep W ∧
+      UploadBroadcast.TaskDecomposition.Split (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤ Q (⨆ e, W e) ∧
+        (∀ (e : UploadBroadcast.EdgeExtraction.Edge),
+            UploadBroadcast.EdgeExtraction.EdgeBlock T (↑e).1 (↑e).2.1 (↑e).2.2 (W e) ∧
+              Module.finrank K ↥(W e) = UploadBroadcast.EdgeExtraction.multiplicity T (↑e).1 (↑e).2.1 (↑e).2.2) ∧
+          ∀ (l : Fin 3 × Bool),
+            (UploadBroadcast.EdgeExtraction.configuration T).spaces l =
+              (UploadBroadcast.EdgeExtraction.configuration T).spaces l ⊓ Q ⊔
+                ⨆ e, (UploadBroadcast.EdgeExtraction.configuration T).spaces l ⊓ W e
+'UploadBroadcast.EdgeExtraction.simultaneous_maximal_extraction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.EdgeProfile.edge_price_identity.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) (i j k : UploadBroadcast.Three)
+  (ht : T.U 0 ⊓ T.U 1 ⊓ T.U 2 = T.U i ⊓ T.U j ⊓ T.U k) :
+  UploadBroadcast.Profile.firstEntry T i j k + UploadBroadcast.Profile.firstEntry T j k i -
+      2 * UploadBroadcast.Profile.secondEntry T j i k k =
+    ↑(UploadBroadcast.condRank (T.A k ⊓ T.U j) (T.A j ⊔ T.U i ⊓ T.U j)) -
+      ↑(UploadBroadcast.condRank (T.U j ⊓ T.U k ⊓ (T.A j ⊔ T.U i ⊓ T.U j))
+          (T.U i ⊓ T.U j ⊓ T.U k ⊔ T.A k ⊓ (T.A j ⊔ T.U i ⊓ T.U j)))
+'UploadBroadcast.EdgeProfile.edge_price_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.EdgeProfile.edge_price_le_extractable.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (p : Equiv.Perm UploadBroadcast.Three) :
+  UploadBroadcast.Profile.firstEntry T (p 0) (p 1) (p 2) + UploadBroadcast.Profile.firstEntry T (p 1) (p 2) (p 0) -
+      2 * UploadBroadcast.Profile.secondEntry T (p 1) (p 0) (p 2) (p 2) ≤
+    ↑(UploadBroadcast.EdgeExtraction.multiplicity T (p 0) (p 1) (p 2))
+'UploadBroadcast.EdgeProfile.edge_price_le_extractable' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.EdgeDeficits.demand_cycles_from_decomposition.{u_1, u_2, u_3} {K : Type u_1} {V : Type u_2} [Field K]
+  [AddCommGroup V] [Module K V] [FiniteDimensional K V] {G : Type u_3} [AddCommGroup G] [Module K G]
+  [FiniteDimensional K G] (T : UploadBroadcast.Task K V) (L : List ℕ) (M : UploadBroadcast.Task K G)
+  (e : (UploadBroadcast.EdgeDeficits.ResonantAmbient K L × V) ≃ₗ[K] G)
+  (hM :
+    UploadBroadcast.Profile.mapTask e
+        (UploadBroadcast.Profile.directSum (UploadBroadcast.EdgeDeficits.resonantTask K L) T) =
+      M)
+  (p : Equiv.Perm UploadBroadcast.Three) (D : ℝ) (hD : UploadBroadcast.Profile.rankBound M ≤ D) :
+  ∃ r v Q,
+    max 0 (↑L.length - UploadBroadcast.EdgeDeficits.orientationSlack M p D) ≤ ↑r ∧
+      (LinearIndependent K fun x => v x.fst x.snd) ∧
+        (∀ (a : UploadBroadcast.Three),
+            UploadBroadcast.EdgeExtraction.EdgeBlock T ((UploadBroadcast.EdgeDeficits.cyclicPerm p a) 0)
+                ((UploadBroadcast.EdgeDeficits.cyclicPerm p a) 1) ((UploadBroadcast.EdgeDeficits.cyclicPerm p a) 2)
+                (Submodule.span K (Set.range (v a))) ∧
+              Module.finrank K ↥(Submodule.span K (Set.range (v a))) = r) ∧
+          UploadBroadcast.TaskDecomposition.Split (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤ Q
+            (⨆ a, Submodule.span K (Set.range (v a)))
+'UploadBroadcast.EdgeDeficits.demand_cycles_from_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.scalar_at_operational_ceiling.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] [Finite K] [FiniteDimensional K F] (A U : UploadBroadcast.Three → Submodule K F)
+  (hAU : ∀ (i : UploadBroadcast.Three), A i ≤ U i) (hq : 3 ≤ Nat.card K) :
+  ∃ n c, ↑n = ⌈UploadBroadcast.broadcastOptimum A U⌉ ∧ Real.logb ↑(Nat.card K) ↑(Nat.card ↑(Set.range ⇑c.encode)) = ↑n
+'UploadBroadcast.scalar_at_operational_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.binary_at_operational_ceiling_permuted.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K]
+  [AddCommGroup F] [Module K F] [Fintype K] [FiniteDimensional K F] (hK : Fintype.card K = 2)
+  (A U : UploadBroadcast.Three → Submodule K F) (hAU : ∀ (i : UploadBroadcast.Three), A i ≤ U i) (hspan : ⨆ i, A i = ⊤)
+  (p : Equiv.Perm UploadBroadcast.Three) (hsep : A (p 0) ⊓ (A (p 1) ⊔ A (p 2)) = ⊥) :
+  ∃ n c, ↑n = ⌈UploadBroadcast.broadcastOptimum A U⌉ ∧ Real.logb ↑(Nat.card K) ↑(Nat.card ↑(Set.range ⇑c.encode)) = ↑n
+'UploadBroadcast.binary_at_operational_ceiling_permuted' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.ResidualTaskAssembly.DemandData.activeRowReduction_achievableAt_eq.{u_1, u_2, u_3, u_4, u_5}
+  {K : Type u_1} {P₁ : Type u_2} {P₂ : Type u_3} {P₃ : Type u_4} {D : Type u_5} [Field K] [AddCommGroup P₁]
+  [Module K P₁] [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D]
+  {task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D)}
+  (h₁ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₂ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₃ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D)
+  (g : UploadBroadcast.ResidualTaskAssembly.DemandData task) [Finite K] [FiniteDimensional K P₁]
+  [FiniteDimensional K P₂] [FiniteDimensional K P₃] [FiniteDimensional K D] (n : ℕ) :
+  task.achievableAt n = g.activeRowReduction.achievableAt n
+'UploadBroadcast.ResidualTaskAssembly.DemandData.activeRowReduction_achievableAt_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualTaskAssembly.DemandData.exists_empty_cancellation.{u_1, u_2, u_3, u_4, u_5} {K : Type u_1}
+  {P₁ : Type u_2} {P₂ : Type u_3} {P₃ : Type u_4} {D : Type u_5} [Field K] [AddCommGroup P₁] [Module K P₁]
+  [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D]
+  {task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D)}
+  (g : UploadBroadcast.ResidualTaskAssembly.DemandData task) :
+  ∃ f,
+    (∀ (x : ↥(UploadBroadcast.ResidualTaskAssembly.privateDomain₁ task)),
+        g.φ₁ ↑x - f ((0, (↑x).1), (↑x).2) ∈ g.activeRows) ∧
+      (∀ (x : ↥(UploadBroadcast.ResidualTaskAssembly.privateDomain₂ task)),
+          g.φ₂ ↑x - f (((↑x).1, 0), -(↑x).2) ∈ g.activeRows) ∧
+        ∀ (x : ↥(UploadBroadcast.ResidualTaskAssembly.privateDomain₃ task)),
+          g.φ₃ ↑x - f (((↑x).1, (↑x).2), 0) ∈ g.activeRows
+'UploadBroadcast.ResidualTaskAssembly.DemandData.exists_empty_cancellation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualTaskAssembly.DemandData.correctedTask_rows.{u_1, u_2, u_3, u_4, u_5} {K : Type u_1}
+  {P₁ : Type u_2} {P₂ : Type u_3} {P₃ : Type u_4} {D : Type u_5} [Field K] [AddCommGroup P₁] [Module K P₁]
+  [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D]
+  {task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D)}
+  (g : UploadBroadcast.ResidualTaskAssembly.DemandData task) :
+  (∀ x ∈ g.correctedTask.U 0, x.2.2 ∈ g.activeRows) ∧
+    (∀ x ∈ g.correctedTask.U 1, x.2.1 ∈ g.activeRows) ∧ ∀ x ∈ g.correctedTask.U 2, x.2.1 + x.2.2 ∈ g.activeRows
+'UploadBroadcast.ResidualTaskAssembly.DemandData.correctedTask_rows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualTaskAssembly.DemandData.activeRows_finrank.{u_1, u_2, u_3, u_4, u_5} {K : Type u_1}
+  {P₁ : Type u_2} {P₂ : Type u_3} {P₃ : Type u_4} {D : Type u_5} [Field K] [AddCommGroup P₁] [Module K P₁]
+  [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D] [FiniteDimensional K D]
+  {task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D)}
+  (g : UploadBroadcast.ResidualTaskAssembly.DemandData task) :
+  let S :=
+    UploadBroadcast.ResidualTaskAssembly.pureRows₁ task ⊔ UploadBroadcast.ResidualTaskAssembly.pureRows₂ task ⊔
+      UploadBroadcast.ResidualTaskAssembly.pureRows₃ task;
+  Module.finrank K ↥g.activeRows =
+    Module.finrank K ↥S +
+      Module.finrank K
+        ↥(Submodule.map (S.mkQ ∘ₗ g.relationRows)
+            (LinearMap.ker UploadBroadcast.ResidualTaskAssembly.DemandData.incidence))
+'UploadBroadcast.ResidualTaskAssembly.DemandData.activeRows_finrank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualTaskAssembly.privateGaugeShear_sides.{u_1, u_2, u_3, u_4, u_5} {K : Type u_1} {P₁ : Type u_2}
+  {P₂ : Type u_3} {P₃ : Type u_4} {D : Type u_5} [Field K] [AddCommGroup P₁] [Module K P₁] [AddCommGroup P₂]
+  [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D] (f : (P₁ × P₂) × P₃ →ₗ[K] D) :
+  Submodule.map (↑(UploadBroadcast.ResidualTaskAssembly.privateGaugeShear f))
+        (UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D) =
+      UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D ∧
+    Submodule.map (↑(UploadBroadcast.ResidualTaskAssembly.privateGaugeShear f))
+          (UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D) =
+        UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D ∧
+      Submodule.map (↑(UploadBroadcast.ResidualTaskAssembly.privateGaugeShear f))
+          (UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D) =
+        UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D
+'UploadBroadcast.ResidualTaskAssembly.privateGaugeShear_sides' depends on axioms: [propext, Quot.sound]
+UploadBroadcast.ResidualRowShape.exists_exact_row_completion.{u_1, u_2, u_3, u_4, u_9} {K : Type u_1} {P₁ : Type u_2}
+  {P₂ : Type u_3} {P₃ : Type u_4} [Field K] [AddCommGroup P₁] [Module K P₁] [AddCommGroup P₂] [Module K P₂]
+  [AddCommGroup P₃] [Module K P₃] {D : Type u_9} [AddCommGroup D] [Module K D] [FiniteDimensional K P₁]
+  [FiniteDimensional K P₂] [FiniteDimensional K P₃] [FiniteDimensional K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D)
+  (hz :
+    UploadBroadcast.ResidualTaskAssembly.pureRows₁ task ⊓ UploadBroadcast.ResidualTaskAssembly.pureRows₂ task ⊓
+        UploadBroadcast.ResidualTaskAssembly.pureRows₃ task =
+      ⊥)
+  (W : Submodule K D)
+  (hSW :
+    IsCompl
+      (UploadBroadcast.ResidualTaskAssembly.pureRows₁ task ⊔ UploadBroadcast.ResidualTaskAssembly.pureRows₂ task ⊔
+        UploadBroadcast.ResidualTaskAssembly.pureRows₃ task)
+      W) :
+  let S :=
+    UploadBroadcast.ResidualTaskAssembly.pureRows₁ task ⊔ UploadBroadcast.ResidualTaskAssembly.pureRows₂ task ⊔
+      UploadBroadcast.ResidualTaskAssembly.pureRows₃ task;
+  ∃ f Prow,
+    let Q :=
+      UploadBroadcast.ResidualRowShape.privateSpace ⊔ Prow ⊔
+        Submodule.map UploadBroadcast.ResidualTaskAssembly.embedV W;
+    (∀ (i : UploadBroadcast.Three), Submodule.map (↑f) (task.A i) = task.A i) ∧
+      (∀ (t : D × D), f (0, t) = (0, t)) ∧
+        (∀ (i : UploadBroadcast.Three), Submodule.map (↑f) (task.U i) ≤ task.A i ⊔ Q) ∧
+          task.LocallyGenerated Q ∧
+            Prow ≤ ⊥.prod (S.prod S) ∧
+              task.LocallyGenerated Prow ∧
+                Module.finrank K ↥Prow = Module.finrank K ↥S ∧
+                  Disjoint Prow (Submodule.map UploadBroadcast.ResidualTaskAssembly.embedV W) ∧
+                    Disjoint UploadBroadcast.ResidualRowShape.privateSpace
+                        (Prow ⊔ Submodule.map UploadBroadcast.ResidualTaskAssembly.embedV W) ∧
+                      Module.finrank K ↥Q =
+                        Module.finrank K P₁ + Module.finrank K P₂ + Module.finrank K P₃ + Module.finrank K ↥S +
+                          Module.finrank K ↥W
+'UploadBroadcast.ResidualRowShape.exists_exact_row_completion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualRowShape.row_completion_paper.{u_1, u_2, u_3, u_4, u_5, u_6} {K : Type u_1} {P₁ : Type u_2}
+  {P₂ : Type u_3} {P₃ : Type u_4} {D : Type u_5} {E : Type u_6} [Field K] [AddCommGroup P₁] [Module K P₁]
+  [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D] [AddCommGroup E]
+  [Module K E] [FiniteDimensional K P₁] [FiniteDimensional K P₂] [FiniteDimensional K P₃] [FiniteDimensional K D]
+  [Finite K] (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D)
+  (hz :
+    UploadBroadcast.ResidualTaskAssembly.pureRows₁ task ⊓ UploadBroadcast.ResidualTaskAssembly.pureRows₂ task ⊓
+        UploadBroadcast.ResidualTaskAssembly.pureRows₃ task =
+      ⊥)
+  (W : Submodule K D)
+  (hSW :
+    IsCompl
+      (UploadBroadcast.ResidualTaskAssembly.pureRows₁ task ⊔ UploadBroadcast.ResidualTaskAssembly.pureRows₂ task ⊔
+        UploadBroadcast.ResidualTaskAssembly.pureRows₃ task)
+      W) :
+  let S :=
+    UploadBroadcast.ResidualTaskAssembly.pureRows₁ task ⊔ UploadBroadcast.ResidualTaskAssembly.pureRows₂ task ⊔
+      UploadBroadcast.ResidualTaskAssembly.pureRows₃ task;
+  let n := Module.finrank K P₁ + Module.finrank K P₂ + Module.finrank K P₃ + Module.finrank K ↥S + Module.finrank K ↥W;
+  ∃ f Prow,
+    let Q :=
+      UploadBroadcast.ResidualRowShape.privateSpace ⊔ Prow ⊔
+        Submodule.map UploadBroadcast.ResidualTaskAssembly.embedV W;
+    (∀ (i : UploadBroadcast.Three), Submodule.map (↑f) (task.A i) = task.A i) ∧
+      (∀ (t : D × D), f (0, t) = (0, t)) ∧
+        (∀ (t : D × D) (z : E), (f.prodCongr (LinearEquiv.refl K E)) ((0, t), z) = ((0, t), z)) ∧
+          (∀ (i : UploadBroadcast.Three), Submodule.map (↑f) (task.U i) ≤ task.A i ⊔ Q) ∧
+            task.LocallyGenerated Q ∧
+              Prow ≤ ⊥.prod (S.prod S) ∧
+                Module.finrank K ↥Prow = Module.finrank K ↥S ∧
+                  (∃ b owner, ∀ (j : Fin (Module.finrank K ↥Prow)), ↑(b j) ∈ task.A (owner j)) ∧
+                    Disjoint Prow (Submodule.map UploadBroadcast.ResidualTaskAssembly.embedV W) ∧
+                      Disjoint UploadBroadcast.ResidualRowShape.privateSpace
+                          (Prow ⊔ Submodule.map UploadBroadcast.ResidualTaskAssembly.embedV W) ∧
+                        Module.finrank K ↥Q = n ∧
+                          ∃ r c, ∑ i, r i = n ∧ c.toCode.uploadCost ≤ ↑n ∧ c.toCode.broadcastCost ≤ ↑n
+'UploadBroadcast.ResidualRowShape.row_completion_paper' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.ResidualRowShape.canonicalReduction_scalar_upload_exact.{u_1, u_2, u_3, u_4, u_5} {K : Type u_1}
+  {P₁ : Type u_2} {P₂ : Type u_3} {P₃ : Type u_4} {D : Type u_5} [Field K] [Finite K] [AddCommGroup P₁] [Module K P₁]
+  [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D] [FiniteDimensional K P₁]
+  [FiniteDimensional K P₂] [FiniteDimensional K P₃] [FiniteDimensional K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D)
+  (hz :
+    UploadBroadcast.ResidualTaskAssembly.pureRows₁ task ⊓ UploadBroadcast.ResidualTaskAssembly.pureRows₂ task ⊓
+        UploadBroadcast.ResidualTaskAssembly.pureRows₃ task =
+      ⊥) :
+  let res := UploadBroadcast.ResidualTaskAssembly.canonicalReduction task h₀ h₁ h₂;
+  let d :=
+    Module.finrank K ↥(UploadBroadcast.ResidualTaskAssembly.used₁ task) +
+          Module.finrank K ↥(UploadBroadcast.ResidualTaskAssembly.used₂ task) +
+        Module.finrank K ↥(UploadBroadcast.ResidualTaskAssembly.used₃ task) +
+      Module.finrank K ↥(UploadBroadcast.ResidualTaskAssembly.selectedTrimData task h₀ h₁ h₂).activeRows;
+  ∃ r c, ∑ i, r i = d ∧ c.toCode.uploadCost = ↑d ∧ c.toCode.broadcastCost ≤ ↑d
+'UploadBroadcast.ResidualRowShape.canonicalReduction_scalar_upload_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.TaskDecomposition.Task.source_base_field_components.{u_1} {K V : Type} [Field K] [Finite K]
+  [AddCommGroup V] [Module K V] [FiniteDimensional K V] (T : UploadBroadcast.TaskDecomposition.Task K V)
+  (hi : UploadBroadcast.QuiverRepresentation.Indecomposable T.toRep) (hspan : T.A 0 ⊔ T.A 1 ⊔ T.A 2 = ⊤)
+  (hchi :
+    0 <
+      UploadBroadcast.Structural.excess T.dimensionVector.f T.dimensionVector.a₁ T.dimensionVector.a₂
+        T.dimensionVector.a₃)
+  (L : Type u_1) [Field L] [Algebra K L] :
+  UploadBroadcast.QuiverRepresentation.Indecomposable (T.tensorRep L) ∧
+    UploadBroadcast.E6RealRoots.IsRealRoot (UploadBroadcast.QuiverRepresentation.dimension T.toRep) ∧
+      UploadBroadcast.ReflectionReduction.tits T.dimensionVector = 1
+'UploadBroadcast.TaskDecomposition.Task.source_base_field_components' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.TaskDecomposition.Task.positive_excess_extend_indec.{u_1} {K V : Type} [Field K] [Finite K]
+  [AddCommGroup V] [Module K V] [FiniteDimensional K V] (T : UploadBroadcast.TaskDecomposition.Task K V)
+  (hi : UploadBroadcast.TaskDecomposition.Indecomposable T.spaces ⊤) (hspan : T.A 0 ⊔ T.A 1 ⊔ T.A 2 = ⊤)
+  (hpos : Module.finrank K V < Module.finrank K ↥(T.A 0) + Module.finrank K ↥(T.A 1) + Module.finrank K ↥(T.A 2))
+  (L : Type u_1) [Field L] [Algebra K L] : UploadBroadcast.TaskDecomposition.Indecomposable T.extend.spaces ⊤
+'UploadBroadcast.TaskDecomposition.Task.positive_excess_extend_indec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.TaskDecomposition.Task.positive_excess_real_root {K V : Type} [Field K] [Finite K] [AddCommGroup V]
+  [Module K V] [FiniteDimensional K V] (T : UploadBroadcast.TaskDecomposition.Task K V)
+  (hi : UploadBroadcast.TaskDecomposition.Indecomposable T.spaces ⊤) (hspan : T.A 0 ⊔ T.A 1 ⊔ T.A 2 = ⊤)
+  (hpos : Module.finrank K V < Module.finrank K ↥(T.A 0) + Module.finrank K ↥(T.A 1) + Module.finrank K ↥(T.A 2)) :
+  UploadBroadcast.E6RealRoots.IsRealRoot (UploadBroadcast.QuiverRepresentation.dimension T.toRep)
+'UploadBroadcast.TaskDecomposition.Task.positive_excess_real_root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.E6RealRoots.nonnegative_realRoot_iff_norm_one (d : UploadBroadcast.E6RealRoots.Vector)
+  (hd : ∀ (v : UploadBroadcast.QuiverRepresentation.E6Vertex), 0 ≤ d v) :
+  UploadBroadcast.E6RealRoots.IsRealRoot d ↔ UploadBroadcast.E6RealRoots.norm d = 1
+'UploadBroadcast.E6RealRoots.nonnegative_realRoot_iff_norm_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.TaskDecomposition.Task.tensorRep_indec_iff.{u_5} {K V : Type} [Field K] [AddCommGroup V] [Module K V]
+  (T : UploadBroadcast.TaskDecomposition.Task K V) (L : Type u_5) [Field L] [Algebra K L] :
+  UploadBroadcast.QuiverRepresentation.Indecomposable (T.tensorRep L) ↔
+    UploadBroadcast.QuiverRepresentation.Indecomposable T.extend.toRep
+'UploadBroadcast.TaskDecomposition.Task.tensorRep_indec_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.NonzeroSameChartOptimality.same_chart_full_and_optimal_relay {K F : Type} [Field K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] [Fintype K] (hq : 3 ≤ Fintype.card K) (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (g : UploadBroadcast.NonzeroDefectProfile.Family) (n : ℕ) (hn : 1 ≤ n)
+  (h : UploadBroadcast.NonzeroFamilyRanks.Dimensions T g n) :
+  (∀ (r : Fin 6),
+      UploadBroadcast.Profile.entry T (Sum.inl r) = ↑(UploadBroadcast.NonzeroDefectProfile.fullFirst g n r)) ∧
+    (∀ (i ell : UploadBroadcast.Three),
+        2 * UploadBroadcast.Profile.entry T (Sum.inr (i, ell)) =
+          ↑(UploadBroadcast.NonzeroDefectProfile.doubledSecond g n)) ∧
+      ∃ P,
+        ∃ (hg : T.LocallyGenerated P),
+          T.RelayFeasible P ∧
+            Module.finrank K ↥P =
+                UploadBroadcast.NonzeroDefectProfile.fullAmbient g n -
+                  UploadBroadcast.NonzeroDefectProfile.codimension g ∧
+              ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+                ∑ i, Module.finrank K ↥(P ⊓ T.A i) = Module.finrank K ↥P ∧
+                  (∀ (r : Fin 6),
+                      UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hg)
+                          (Sum.inl r) =
+                        ↑(UploadBroadcast.NonzeroDefectProfile.fullFirst g n r) +
+                          ↑(UploadBroadcast.NonzeroDefectProfile.firstIncrement g r)) ∧
+                    ∀ (i ell : UploadBroadcast.Three),
+                      2 *
+                          UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hg)
+                            (Sum.inr (i, ell)) =
+                        ↑(UploadBroadcast.NonzeroDefectProfile.doubledSecond g n)
+'UploadBroadcast.NonzeroSameChartOptimality.same_chart_full_and_optimal_relay' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.NonzeroSameChartMenus.same_chart_all_menu_choices {K F : Type} [Field K] [AddCommGroup F] [Module K F]
+  [FiniteDimensional K F] [Fintype K] (hq : 3 ≤ Fintype.card K) (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (g : UploadBroadcast.NonzeroDefectProfile.Family) (n : ℕ) (hn : 1 ≤ n)
+  (h : UploadBroadcast.NonzeroFamilyRanks.Dimensions T g n) (choice : UploadBroadcast.Three) :
+  ∃ P,
+    ∃ (hg : T.LocallyGenerated P),
+      T.RelayFeasible P ∧
+        Module.finrank K ↥P =
+            UploadBroadcast.NonzeroDefectProfile.fullAmbient g n - UploadBroadcast.NonzeroDefectProfile.codimension g ∧
+          ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+            ∑ i, Module.finrank K ↥(P ⊓ T.A i) = Module.finrank K ↥P ∧
+              (∀ (r : Fin 6),
+                  UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hg) (Sum.inl r) =
+                    ↑(UploadBroadcast.NonzeroDefectProfile.fullFirst g n r) +
+                      ↑(UploadBroadcast.NonzeroSameChartMenus.menuIncrement g choice r)) ∧
+                ∀ (i ell : UploadBroadcast.Three),
+                  2 *
+                      UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hg)
+                        (Sum.inr (i, ell)) =
+                    ↑(UploadBroadcast.NonzeroDefectProfile.doubledSecond g n)
+'UploadBroadcast.NonzeroSameChartMenus.same_chart_all_menu_choices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.NonzeroSameChartPermutations.same_chart_all_permuted_choices {K F : Type} [Field K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] [Fintype K] (hq : 3 ≤ Fintype.card K) (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (k : Fin 6) (g : UploadBroadcast.NonzeroDefectProfile.Family) (n : ℕ) (hn : 1 ≤ n)
+  (h :
+    UploadBroadcast.NonzeroFamilyRanks.Dimensions
+      (UploadBroadcast.Profile.reindexTask (UploadBroadcast.R2PermutedMenus.pathPerm k) T) g n)
+  (choice : UploadBroadcast.Three) :
+  (∀ (r : Fin 6),
+      UploadBroadcast.Profile.entry T (Sum.inl r) =
+        ↑(UploadBroadcast.NonzeroDefectProfile.fullFirst g n (UploadBroadcast.R2PermutedMenus.inverseFirst k r))) ∧
+    (∀ (i ell : UploadBroadcast.Three),
+        2 * UploadBroadcast.Profile.entry T (Sum.inr (i, ell)) =
+          ↑(UploadBroadcast.NonzeroDefectProfile.doubledSecond g n)) ∧
+      ∃ P,
+        ∃ (hg : T.LocallyGenerated P),
+          T.RelayFeasible P ∧
+            Module.finrank K ↥P =
+                UploadBroadcast.NonzeroDefectProfile.fullAmbient g n -
+                  UploadBroadcast.NonzeroDefectProfile.codimension g ∧
+              ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+                ∑ i, Module.finrank K ↥(P ⊓ T.A i) = Module.finrank K ↥P ∧
+                  (∀ (r : Fin 6),
+                      UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hg)
+                          (Sum.inl r) =
+                        ↑(UploadBroadcast.NonzeroDefectProfile.fullFirst g n
+                              (UploadBroadcast.R2PermutedMenus.inverseFirst k r)) +
+                          ↑(UploadBroadcast.NonzeroSameChartMenus.menuIncrement g choice
+                              (UploadBroadcast.R2PermutedMenus.inverseFirst k r))) ∧
+                    ∀ (i ell : UploadBroadcast.Three),
+                      2 *
+                          UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hg)
+                            (Sum.inr (i, ell)) =
+                        ↑(UploadBroadcast.NonzeroDefectProfile.doubledSecond g n)
+'UploadBroadcast.NonzeroSameChartPermutations.same_chart_all_permuted_choices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.NonzeroSameChartPermutations.indexed_menu_table (i choice : UploadBroadcast.Three) (r : Fin 6) :
+  UploadBroadcast.NonzeroSameChartMenus.menuIncrement UploadBroadcast.NonzeroDefectProfile.Family.T1 choice
+        (UploadBroadcast.R2PermutedMenus.inverseFirst
+          (UploadBroadcast.NonzeroSameChartPermutations.indexedT1Permutation i) r) =
+      UploadBroadcast.NonzeroSameChartPermutations.sourceT1Menu i choice r ∧
+    UploadBroadcast.NonzeroSameChartMenus.menuIncrement UploadBroadcast.NonzeroDefectProfile.Family.O choice
+        (UploadBroadcast.R2PermutedMenus.inverseFirst
+          (UploadBroadcast.NonzeroSameChartPermutations.indexedOPermutation i) r) =
+      UploadBroadcast.NonzeroSameChartPermutations.sourceOMenu i choice r
+'UploadBroadcast.NonzeroSameChartPermutations.indexed_menu_table' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.NonzeroSameChartPermutations.pathPerm_exhaustive :
+  Function.Surjective UploadBroadcast.R2PermutedMenus.pathPerm
+'UploadBroadcast.NonzeroSameChartPermutations.pathPerm_exhaustive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.OptimalRelaySeparation.optimal_block_residual_sides_ambient.{u_1, u_2} {K : Type u_1} {F : Type u_2}
+  [Field K] [AddCommGroup F] [Module K F] [Finite K] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) (L : ℕ)
+  (hL : 0 < L) (P : Submodule K (Fin L → F)) (hlocal : (T.blockPower L).LocallyGenerated P)
+  (hfeas : (T.blockPower L).RelayFeasible P) (hAB : Disjoint (T.A 0) (T.A 1)) (hAC : Disjoint (T.A 0) (T.A 2))
+  (hBC : Disjoint (T.A 1) (T.A 2)) (hmin : ↑(Module.finrank K ↥P) = ↑L * T.uploadOptimum) :
+  (iSupIndep fun i => P ⊓ UploadBroadcast.blockSubmodule L (T.A i)) ∧
+    P = ⨆ i, P ⊓ UploadBroadcast.blockSubmodule L (T.A i)
+'UploadBroadcast.OptimalRelaySeparation.optimal_block_residual_sides_ambient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.BinaryMenuPermutations.original_exact_optimal_permuted {K F : Type} [Field K] [Finite K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (p : Equiv.Perm UploadBroadcast.Three) (g : UploadBroadcast.NonzeroBinaryMenus.Kind)
+  (hg : g = UploadBroadcast.NonzeroBinaryMenus.Kind.T1 ∨ g = UploadBroadcast.NonzeroBinaryMenus.Kind.O) (n : ℕ)
+  (hn : 1 ≤ n)
+  (h :
+    UploadBroadcast.NonzeroFamilyRanks.Dimensions (UploadBroadcast.Profile.reindexTask p T)
+      (UploadBroadcast.NonzeroBinaryMenus.family g) n)
+  (k : Fin 6) :
+  ∃ P,
+    ∃ (hl : T.LocallyGenerated P),
+      T.RelayFeasible P ∧
+        ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+          (∀ (r : Fin 6),
+              UploadBroadcast.Profile.entry
+                  (UploadBroadcast.Profile.reindexTask p (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl))
+                  (Sum.inl r) =
+                UploadBroadcast.Profile.entry (UploadBroadcast.Profile.reindexTask p T) (Sum.inl r) +
+                  ↑(UploadBroadcast.NonzeroBinaryMenus.menu g k r)) ∧
+            ∀ (r : UploadBroadcast.Three × UploadBroadcast.Three),
+              UploadBroadcast.Profile.entry
+                  (UploadBroadcast.Profile.reindexTask p (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl))
+                  (Sum.inr r) =
+                UploadBroadcast.Profile.entry (UploadBroadcast.Profile.reindexTask p T) (Sum.inr r)
+'UploadBroadcast.BinaryMenuPermutations.original_exact_optimal_permuted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.BoundaryComponentMenus.T1_all_permuted_choices {K F : Type} [Field K] [AddCommGroup F] [Module K F]
+  [FiniteDimensional K F] [Finite K] (T : UploadBroadcast.Task K F)
+  (hi : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (k : Fin 6)
+  (hd :
+    UploadBroadcast.NonzeroFamilyRanks.Dimensions
+      (UploadBroadcast.Profile.reindexTask (UploadBroadcast.R2PermutedMenus.pathPerm k) T)
+      UploadBroadcast.NonzeroDefectProfile.Family.T1 0)
+  (choice : UploadBroadcast.Three) :
+  ∃ P,
+    ∃ (hl : T.LocallyGenerated P),
+      T.RelayFeasible P ∧
+        Module.finrank K ↥P = 1 ∧
+          ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+            (∀ (r : Fin 6),
+                UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl) (Sum.inl r) =
+                  UploadBroadcast.Profile.entry T (Sum.inl r) +
+                    ↑(UploadBroadcast.NonzeroSameChartMenus.menuIncrement UploadBroadcast.NonzeroDefectProfile.Family.T1
+                        choice (UploadBroadcast.R2PermutedMenus.inverseFirst k r))) ∧
+              ∀ (i ell : UploadBroadcast.Three),
+                UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl)
+                    (Sum.inr (i, ell)) =
+                  UploadBroadcast.Profile.entry T (Sum.inr (i, ell))
+'UploadBroadcast.BoundaryComponentMenus.T1_all_permuted_choices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.RegularExactMenus.from_actual_regular {K F : Type} [Field K] [Finite K] [AddCommGroup F] [Module K F]
+  [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (ha : UploadBroadcast.ResidualComponentAdditivity.ActiveResidual T)
+  (hi : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (hz : UploadBroadcast.ReflectionReduction.defect (UploadBroadcast.EdgeExtraction.configuration T).dimensionVector = 0)
+  (hpos : Module.finrank K F < Module.finrank K ↥(T.A 0) + Module.finrank K ↥(T.A 1) + Module.finrank K ↥(T.A 2)) :
+  ∃ n,
+    ∀ (m : UploadBroadcast.Three),
+      ∃ P,
+        ∃ (hl : T.LocallyGenerated P),
+          T.RelayFeasible P ∧
+            Module.finrank K ↥P = 3 * (n + 1) + 1 ∧
+              ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+                (∀ (r : Fin 6),
+                    UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl) (Sum.inl r) =
+                      UploadBroadcast.Profile.entry T (Sum.inl r) + UploadBroadcast.ResonantRelay.increment m r) ∧
+                  ∀ (i l : UploadBroadcast.Three),
+                    UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl)
+                        (Sum.inr (i, l)) =
+                      UploadBroadcast.Profile.entry T (Sum.inr (i, l))
+'UploadBroadcast.RegularExactMenus.from_actual_regular' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.BinaryMenuOptimality.additional_optimal_menu {K F : Type} [Field K] [Finite K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (g : UploadBroadcast.NonzeroBinaryMenus.Kind) (n : ℕ) (hn : 1 ≤ n)
+  (h : UploadBroadcast.NonzeroFamilyRanks.Dimensions T (UploadBroadcast.NonzeroBinaryMenus.family g) n) (k : Fin 6) :
+  ∃ P,
+    ∃ (hl : T.LocallyGenerated P),
+      T.RelayFeasible P ∧
+        ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+          (∀ (r : Fin 6),
+              UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl) (Sum.inl r) ≤
+                UploadBroadcast.Profile.entry T (Sum.inl r) + ↑(UploadBroadcast.NonzeroBinaryMenus.menu g k r)) ∧
+            ∀ (r : UploadBroadcast.Three × UploadBroadcast.Three),
+              UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl) (Sum.inr r) =
+                UploadBroadcast.Profile.entry T (Sum.inr r)
+'UploadBroadcast.BinaryMenuOptimality.additional_optimal_menu' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.BinaryMenuOptimality.r2_optimal_menu {K F : Type} [Field K] [Finite K] [AddCommGroup F] [Module K F]
+  [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (n : ℕ) (hn : 1 ≤ n)
+  (h : UploadBroadcast.NonzeroFamilyRanks.Dimensions T UploadBroadcast.NonzeroDefectProfile.Family.R2 n) (k : Fin 6) :
+  ∃ P,
+    ∃ (hl : T.LocallyGenerated P),
+      T.RelayFeasible P ∧
+        ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+          (∀ (r : Fin 6),
+              UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl) (Sum.inl r) ≤
+                UploadBroadcast.Profile.entry T (Sum.inl r) +
+                  ↑(UploadBroadcast.BinaryMenuAllocation.menu UploadBroadcast.BinaryMenuAllocation.Family.R2 k r)) ∧
+            ∀ (r : UploadBroadcast.Three × UploadBroadcast.Three),
+              UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl) (Sum.inr r) =
+                UploadBroadcast.Profile.entry T (Sum.inr r)
+'UploadBroadcast.BinaryMenuOptimality.r2_optimal_menu' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.BinaryMenuOptimality.charge_le_actual_margin {K F : Type} [Field K] [AddCommGroup F] [Module K F]
+  [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (g : UploadBroadcast.NonzeroBinaryMenus.Kind) (hT1 : g ≠ UploadBroadcast.NonzeroBinaryMenus.Kind.T1)
+  (hO : g ≠ UploadBroadcast.NonzeroBinaryMenus.Kind.O) (n : ℕ)
+  (hn : UploadBroadcast.BinaryMenuAllocation.minimumParameter (UploadBroadcast.NonzeroBinaryMenus.extraFamily g) ≤ n)
+  (h : UploadBroadcast.NonzeroFamilyRanks.Dimensions T (UploadBroadcast.NonzeroBinaryMenus.family g) n)
+  (p i ell : UploadBroadcast.Three) :
+  ↑(UploadBroadcast.BinaryMenuAllocation.charge (UploadBroadcast.NonzeroBinaryMenus.extraFamily g) p) ≤
+    2 * UploadBroadcast.Profile.entry T (Sum.inr (i, ell)) -
+      (UploadBroadcast.Profile.entry T (Sum.inl (UploadBroadcast.BinaryMenuAllocation.pairLeft p)) +
+        UploadBroadcast.Profile.entry T (Sum.inl (UploadBroadcast.BinaryMenuAllocation.pairRight p)))
+'UploadBroadcast.BinaryMenuOptimality.charge_le_actual_margin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.BinaryMenuOptimality.r2_charge_le_actual_margin {K F : Type} [Field K] [AddCommGroup F] [Module K F]
+  [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (n : ℕ) (hn : 2 ≤ n)
+  (h : UploadBroadcast.NonzeroFamilyRanks.Dimensions T UploadBroadcast.NonzeroDefectProfile.Family.R2 n)
+  (p i ell : UploadBroadcast.Three) :
+  1 ≤
+    2 * UploadBroadcast.Profile.entry T (Sum.inr (i, ell)) -
+      (UploadBroadcast.Profile.entry T (Sum.inl (UploadBroadcast.BinaryMenuAllocation.pairLeft p)) +
+        UploadBroadcast.Profile.entry T (Sum.inl (UploadBroadcast.BinaryMenuAllocation.pairRight p)))
+'UploadBroadcast.BinaryMenuOptimality.r2_charge_le_actual_margin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.BinaryMenuOptimality.additional_optimal_fits_capacity {K F : Type} [Field K] [Finite K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (g : UploadBroadcast.NonzeroBinaryMenus.Kind) (hT1 : g ≠ UploadBroadcast.NonzeroBinaryMenus.Kind.T1)
+  (hO : g ≠ UploadBroadcast.NonzeroBinaryMenus.Kind.O) (n : ℕ) (hn : 1 ≤ n)
+  (h : UploadBroadcast.NonzeroFamilyRanks.Dimensions T (UploadBroadcast.NonzeroBinaryMenus.family g) n) (c : Fin 6 → ℕ)
+  (hcap :
+    ∀ (p : Fin 3),
+      UploadBroadcast.BinaryMenuAllocation.charge (UploadBroadcast.NonzeroBinaryMenus.extraFamily g) p ≤
+        c (UploadBroadcast.BinaryMenuAllocation.pairLeft p) + c (UploadBroadcast.BinaryMenuAllocation.pairRight p)) :
+  ∃ P,
+    ∃ (hl : T.LocallyGenerated P),
+      T.RelayFeasible P ∧
+        ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+          (∀ (r : Fin 6),
+              UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl) (Sum.inl r) ≤
+                UploadBroadcast.Profile.entry T (Sum.inl r) + ↑(c r)) ∧
+            ∀ (r : UploadBroadcast.Three × UploadBroadcast.Three),
+              UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl) (Sum.inr r) =
+                UploadBroadcast.Profile.entry T (Sum.inr r)
+'UploadBroadcast.BinaryMenuOptimality.additional_optimal_fits_capacity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.BinaryMenuOptimality.r2_optimal_fits_capacity {K F : Type} [Field K] [Finite K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (n : ℕ) (hn : 2 ≤ n)
+  (h : UploadBroadcast.NonzeroFamilyRanks.Dimensions T UploadBroadcast.NonzeroDefectProfile.Family.R2 n) (c : Fin 6 → ℕ)
+  (hcap :
+    ∀ (p : UploadBroadcast.Three),
+      1 ≤ c (UploadBroadcast.BinaryMenuAllocation.pairLeft p) + c (UploadBroadcast.BinaryMenuAllocation.pairRight p)) :
+  ∃ P,
+    ∃ (hl : T.LocallyGenerated P),
+      T.RelayFeasible P ∧
+        ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+          (∀ (r : Fin 6),
+              UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl) (Sum.inl r) ≤
+                UploadBroadcast.Profile.entry T (Sum.inl r) + ↑(c r)) ∧
+            ∀ (r : UploadBroadcast.Three × UploadBroadcast.Three),
+              UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl) (Sum.inr r) =
+                UploadBroadcast.Profile.entry T (Sum.inr r)
+'UploadBroadcast.BinaryMenuOptimality.r2_optimal_fits_capacity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.BinaryAdditionalMenuPermutations.additional_optimal_permuted {K F : Type} [Field K] [Finite K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (p : Equiv.Perm UploadBroadcast.Three) (g : UploadBroadcast.NonzeroBinaryMenus.Kind) (n : ℕ) (hn : 1 ≤ n)
+  (h :
+    UploadBroadcast.NonzeroFamilyRanks.Dimensions (UploadBroadcast.Profile.reindexTask p T)
+      (UploadBroadcast.NonzeroBinaryMenus.family g) n)
+  (k : Fin 6) :
+  ∃ P,
+    ∃ (hl : T.LocallyGenerated P),
+      T.RelayFeasible P ∧
+        ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+          (∀ (r : Fin 6),
+              UploadBroadcast.Profile.entry
+                  (UploadBroadcast.Profile.reindexTask p (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl))
+                  (Sum.inl r) ≤
+                UploadBroadcast.Profile.entry (UploadBroadcast.Profile.reindexTask p T) (Sum.inl r) +
+                  ↑(UploadBroadcast.NonzeroBinaryMenus.menu g k r)) ∧
+            ∀ (r : UploadBroadcast.Three × UploadBroadcast.Three),
+              UploadBroadcast.Profile.entry
+                  (UploadBroadcast.Profile.reindexTask p (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl))
+                  (Sum.inr r) =
+                UploadBroadcast.Profile.entry (UploadBroadcast.Profile.reindexTask p T) (Sum.inr r)
+'UploadBroadcast.BinaryAdditionalMenuPermutations.additional_optimal_permuted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.BinaryAdditionalMenuPermutations.additional_fits_permuted {K F : Type} [Field K] [Finite K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (p : Equiv.Perm UploadBroadcast.Three) (g : UploadBroadcast.NonzeroBinaryMenus.Kind)
+  (hg1 : g ≠ UploadBroadcast.NonzeroBinaryMenus.Kind.T1) (hgO : g ≠ UploadBroadcast.NonzeroBinaryMenus.Kind.O) (n : ℕ)
+  (hn : 1 ≤ n)
+  (h :
+    UploadBroadcast.NonzeroFamilyRanks.Dimensions (UploadBroadcast.Profile.reindexTask p T)
+      (UploadBroadcast.NonzeroBinaryMenus.family g) n)
+  (c : Fin 6 → ℕ)
+  (hcap :
+    ∀ (a : UploadBroadcast.Three),
+      UploadBroadcast.BinaryMenuAllocation.charge (UploadBroadcast.NonzeroBinaryMenus.extraFamily g) a ≤
+        c (UploadBroadcast.BinaryMenuAllocation.pairLeft a) + c (UploadBroadcast.BinaryMenuAllocation.pairRight a)) :
+  ∃ P,
+    ∃ (hl : T.LocallyGenerated P),
+      T.RelayFeasible P ∧
+        ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+          (∀ (r : Fin 6),
+              UploadBroadcast.Profile.entry
+                  (UploadBroadcast.Profile.reindexTask p (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl))
+                  (Sum.inl r) ≤
+                UploadBroadcast.Profile.entry (UploadBroadcast.Profile.reindexTask p T) (Sum.inl r) + ↑(c r)) ∧
+            ∀ (r : UploadBroadcast.Three × UploadBroadcast.Three),
+              UploadBroadcast.Profile.entry
+                  (UploadBroadcast.Profile.reindexTask p (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl))
+                  (Sum.inr r) =
+                UploadBroadcast.Profile.entry (UploadBroadcast.Profile.reindexTask p T) (Sum.inr r)
+'UploadBroadcast.BinaryAdditionalMenuPermutations.additional_fits_permuted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.BinaryAdditionalMenuPermutations.r2_optimal_permuted {K F : Type} [Field K] [Finite K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (p : Equiv.Perm UploadBroadcast.Three) (n : ℕ) (hn : 1 ≤ n)
+  (h :
+    UploadBroadcast.NonzeroFamilyRanks.Dimensions (UploadBroadcast.Profile.reindexTask p T)
+      UploadBroadcast.NonzeroDefectProfile.Family.R2 n)
+  (k : Fin 6) :
+  ∃ P,
+    ∃ (hl : T.LocallyGenerated P),
+      T.RelayFeasible P ∧
+        ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+          (∀ (r : Fin 6),
+              UploadBroadcast.Profile.entry
+                  (UploadBroadcast.Profile.reindexTask p (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl))
+                  (Sum.inl r) ≤
+                UploadBroadcast.Profile.entry (UploadBroadcast.Profile.reindexTask p T) (Sum.inl r) +
+                  ↑(UploadBroadcast.BinaryMenuAllocation.menu UploadBroadcast.BinaryMenuAllocation.Family.R2 k r)) ∧
+            ∀ (r : UploadBroadcast.Three × UploadBroadcast.Three),
+              UploadBroadcast.Profile.entry
+                  (UploadBroadcast.Profile.reindexTask p (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl))
+                  (Sum.inr r) =
+                UploadBroadcast.Profile.entry (UploadBroadcast.Profile.reindexTask p T) (Sum.inr r)
+'UploadBroadcast.BinaryAdditionalMenuPermutations.r2_optimal_permuted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.BinaryAdditionalMenuPermutations.r2_fits_permuted {K F : Type} [Field K] [Finite K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (p : Equiv.Perm UploadBroadcast.Three) (n : ℕ) (hn : 2 ≤ n)
+  (h :
+    UploadBroadcast.NonzeroFamilyRanks.Dimensions (UploadBroadcast.Profile.reindexTask p T)
+      UploadBroadcast.NonzeroDefectProfile.Family.R2 n)
+  (c : Fin 6 → ℕ)
+  (hcap :
+    ∀ (a : UploadBroadcast.Three),
+      1 ≤ c (UploadBroadcast.BinaryMenuAllocation.pairLeft a) + c (UploadBroadcast.BinaryMenuAllocation.pairRight a)) :
+  ∃ P,
+    ∃ (hl : T.LocallyGenerated P),
+      T.RelayFeasible P ∧
+        ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+          (∀ (r : Fin 6),
+              UploadBroadcast.Profile.entry
+                  (UploadBroadcast.Profile.reindexTask p (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl))
+                  (Sum.inl r) ≤
+                UploadBroadcast.Profile.entry (UploadBroadcast.Profile.reindexTask p T) (Sum.inl r) + ↑(c r)) ∧
+            ∀ (r : UploadBroadcast.Three × UploadBroadcast.Three),
+              UploadBroadcast.Profile.entry
+                  (UploadBroadcast.Profile.reindexTask p (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl))
+                  (Sum.inr r) =
+                UploadBroadcast.Profile.entry (UploadBroadcast.Profile.reindexTask p T) (Sum.inr r)
+'UploadBroadcast.BinaryAdditionalMenuPermutations.r2_fits_permuted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.BinaryAdditionalMenuPermutations.exceptions_permuted {K F : Type} [Field K] [Finite K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (p : Equiv.Perm UploadBroadcast.Three) (g : UploadBroadcast.NonzeroDefectProfile.Family)
+  (hg :
+    g = UploadBroadcast.NonzeroDefectProfile.Family.T3 ∨
+      g = UploadBroadcast.NonzeroDefectProfile.Family.H ∨ g = UploadBroadcast.NonzeroDefectProfile.Family.R2)
+  (h : UploadBroadcast.NonzeroFamilyRanks.Dimensions (UploadBroadcast.Profile.reindexTask p T) g 1) :
+  ∃ P,
+    ∃ (hl : T.LocallyGenerated P),
+      T.RelayFeasible P ∧
+        ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+          ∀ (r : UploadBroadcast.Profile.Index),
+            UploadBroadcast.Profile.entry
+                (UploadBroadcast.Profile.reindexTask p (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl)) r ≤
+              UploadBroadcast.Profile.entry (UploadBroadcast.Profile.reindexTask p T) r
+'UploadBroadcast.BinaryAdditionalMenuPermutations.exceptions_permuted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.integer_allocation_at_operational_optimum.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K]
+  [AddCommGroup F] [Module K F] [Finite K] [FiniteDimensional K F] (A U : UploadBroadcast.Three → Submodule K F)
+  (hAU : ∀ (i : UploadBroadcast.Three), A i ≤ U i) :
+  ∃ s, s.r = UploadBroadcast.Allocation.commonRank A U ∧ ↑s.length = ⌈UploadBroadcast.broadcastOptimum A U⌉
+'UploadBroadcast.integer_allocation_at_operational_optimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.homogeneous_column_coordination_invertible.{u_1, u_2, u_3, u_4, u_5} {K : Type u_1} {G : Type u_2}
+  {I : Type u_3} [DecidableEq G] [Field K] [Fintype K] [Fintype G] [Fintype I] (V : G → Type u_4)
+  [(g : G) → AddCommGroup (V g)] [(g : G) → Module K (V g)] [(g : G) → Fintype (V g)]
+  [∀ (g : G), FiniteDimensional K (V g)] (N : I → Type u_5) [(i : I) → Fintype (N i)] [(i : I) → DecidableEq (N i)]
+  (C : (i : I) → ((g : G) → V g) → Matrix (N i) (N i) K) (hcolumns : UploadBroadcast.HomogeneousColumnGroups V N C)
+  (hwitness : ∀ (i : I), ∃ a, IsUnit (C i a)) (hcount : Fintype.card I ≤ Fintype.card K) :
+  ∃ a, ∀ (i : I), IsUnit (C i a)
+'UploadBroadcast.homogeneous_column_coordination_invertible' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.homogeneous_column_search.{u_1, u_2, u_3, u_4, u_5} {K : Type u_1} {G : Type u_2} {I : Type u_3}
+  [DecidableEq G] [Field K] [DecidableEq K] [Fintype K] [Fintype G] [Fintype I] (V : G → Type u_4)
+  [(g : G) → AddCommGroup (V g)] [(g : G) → Module K (V g)] [(g : G) → Fintype (V g)]
+  [∀ (g : G), FiniteDimensional K (V g)] (N : I → Type u_5) [(i : I) → Fintype (N i)] [(i : I) → DecidableEq (N i)]
+  (C : (i : I) → ((g : G) → V g) → Matrix (N i) (N i) K) (hcolumns : UploadBroadcast.HomogeneousColumnGroups V N C)
+  (hwitness : ∀ (i : I), ∃ a, (C i a).det ≠ 0) (hcount : Fintype.card I ≤ Fintype.card K) (xs : List ((g : G) → V g))
+  (hcomplete : ∀ (a : (g : G) → V g), a ∈ xs) :
+  (UploadBroadcast.firstSatisfying xs fun a => ∀ (i : I), (C i a).det ≠ 0).isSome = true ∧
+    ∀ (a : (g : G) → V g),
+      (UploadBroadcast.firstSatisfying xs fun a => ∀ (i : I), (C i a).det ≠ 0) = some a → ∀ (i : I), IsUnit (C i a)
+'UploadBroadcast.homogeneous_column_search' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.maximum_disjoint_subspace.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] (T₁ T₂ T₃ : Submodule K F) (hsep : T₁ ⊓ (T₂ ⊔ T₃) = ⊥) :
+  ∃ C,
+    Module.finrank K ↥C =
+        Module.finrank K F - max (Module.finrank K ↥T₁) (max (Module.finrank K ↥T₂) (Module.finrank K ↥T₃)) ∧
+      C ⊓ T₁ = ⊥ ∧ C ⊓ T₂ = ⊥ ∧ C ⊓ T₃ = ⊥
+'UploadBroadcast.maximum_disjoint_subspace' depends on axioms: [propext, Classical.choice, Quot.sound]

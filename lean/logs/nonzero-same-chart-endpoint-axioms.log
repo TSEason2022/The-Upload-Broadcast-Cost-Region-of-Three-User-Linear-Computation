@@ -1,0 +1,129 @@
+UploadBroadcast.NonzeroSameChartOptimality.family_code_lower {K F : Type} [Field K] [AddCommGroup F] [Module K F]
+  [FiniteDimensional K F] [Finite K] {L : ℕ} {m : UploadBroadcast.Three → ℕ} {s : ℕ} (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (g : UploadBroadcast.NonzeroDefectProfile.Family) (n : ℕ) (hn : 1 ≤ n)
+  (h : UploadBroadcast.NonzeroFamilyRanks.Dimensions T g n) (c : T.Code L (fun i => Fin (m i)) (Fin s)) (hL : 0 < L) :
+  ↑(UploadBroadcast.NonzeroDefectProfile.fullAmbient g n - UploadBroadcast.NonzeroDefectProfile.codimension g) ≤
+    c.uploadCost
+UploadBroadcast.NonzeroSameChartOptimality.same_chart_full_and_optimal_relay {K F : Type} [Field K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] [Fintype K] (hq : 3 ≤ Fintype.card K) (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (g : UploadBroadcast.NonzeroDefectProfile.Family) (n : ℕ) (hn : 1 ≤ n)
+  (h : UploadBroadcast.NonzeroFamilyRanks.Dimensions T g n) :
+  (∀ (r : Fin 6),
+      UploadBroadcast.Profile.entry T (Sum.inl r) = ↑(UploadBroadcast.NonzeroDefectProfile.fullFirst g n r)) ∧
+    (∀ (i ell : UploadBroadcast.Three),
+        2 * UploadBroadcast.Profile.entry T (Sum.inr (i, ell)) =
+          ↑(UploadBroadcast.NonzeroDefectProfile.doubledSecond g n)) ∧
+      ∃ P,
+        ∃ (hg : T.LocallyGenerated P),
+          T.RelayFeasible P ∧
+            Module.finrank K ↥P =
+                UploadBroadcast.NonzeroDefectProfile.fullAmbient g n -
+                  UploadBroadcast.NonzeroDefectProfile.codimension g ∧
+              ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+                ∑ i, Module.finrank K ↥(P ⊓ T.A i) = Module.finrank K ↥P ∧
+                  (∀ (r : Fin 6),
+                      UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hg)
+                          (Sum.inl r) =
+                        ↑(UploadBroadcast.NonzeroDefectProfile.fullFirst g n r) +
+                          ↑(UploadBroadcast.NonzeroDefectProfile.firstIncrement g r)) ∧
+                    ∀ (i ell : UploadBroadcast.Three),
+                      2 *
+                          UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hg)
+                            (Sum.inr (i, ell)) =
+                        ↑(UploadBroadcast.NonzeroDefectProfile.doubledSecond g n)
+UploadBroadcast.NonzeroSameChartMenus.same_chart_all_menu_choices {K F : Type} [Field K] [AddCommGroup F] [Module K F]
+  [FiniteDimensional K F] [Fintype K] (hq : 3 ≤ Fintype.card K) (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (g : UploadBroadcast.NonzeroDefectProfile.Family) (n : ℕ) (hn : 1 ≤ n)
+  (h : UploadBroadcast.NonzeroFamilyRanks.Dimensions T g n) (choice : UploadBroadcast.Three) :
+  ∃ P,
+    ∃ (hg : T.LocallyGenerated P),
+      T.RelayFeasible P ∧
+        Module.finrank K ↥P =
+            UploadBroadcast.NonzeroDefectProfile.fullAmbient g n - UploadBroadcast.NonzeroDefectProfile.codimension g ∧
+          ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+            ∑ i, Module.finrank K ↥(P ⊓ T.A i) = Module.finrank K ↥P ∧
+              (∀ (r : Fin 6),
+                  UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hg) (Sum.inl r) =
+                    ↑(UploadBroadcast.NonzeroDefectProfile.fullFirst g n r) +
+                      ↑(UploadBroadcast.NonzeroSameChartMenus.menuIncrement g choice r)) ∧
+                ∀ (i ell : UploadBroadcast.Three),
+                  2 *
+                      UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hg)
+                        (Sum.inr (i, ell)) =
+                    ↑(UploadBroadcast.NonzeroDefectProfile.doubledSecond g n)
+UploadBroadcast.NonzeroSameChartPermutations.same_chart_all_permuted_choices {K F : Type} [Field K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] [Fintype K] (hq : 3 ≤ Fintype.card K) (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (k : Fin 6) (g : UploadBroadcast.NonzeroDefectProfile.Family) (n : ℕ) (hn : 1 ≤ n)
+  (h :
+    UploadBroadcast.NonzeroFamilyRanks.Dimensions
+      (UploadBroadcast.Profile.reindexTask (UploadBroadcast.R2PermutedMenus.pathPerm k) T) g n)
+  (choice : UploadBroadcast.Three) :
+  (∀ (r : Fin 6),
+      UploadBroadcast.Profile.entry T (Sum.inl r) =
+        ↑(UploadBroadcast.NonzeroDefectProfile.fullFirst g n (UploadBroadcast.R2PermutedMenus.inverseFirst k r))) ∧
+    (∀ (i ell : UploadBroadcast.Three),
+        2 * UploadBroadcast.Profile.entry T (Sum.inr (i, ell)) =
+          ↑(UploadBroadcast.NonzeroDefectProfile.doubledSecond g n)) ∧
+      ∃ P,
+        ∃ (hg : T.LocallyGenerated P),
+          T.RelayFeasible P ∧
+            Module.finrank K ↥P =
+                UploadBroadcast.NonzeroDefectProfile.fullAmbient g n -
+                  UploadBroadcast.NonzeroDefectProfile.codimension g ∧
+              ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+                ∑ i, Module.finrank K ↥(P ⊓ T.A i) = Module.finrank K ↥P ∧
+                  (∀ (r : Fin 6),
+                      UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hg)
+                          (Sum.inl r) =
+                        ↑(UploadBroadcast.NonzeroDefectProfile.fullFirst g n
+                              (UploadBroadcast.R2PermutedMenus.inverseFirst k r)) +
+                          ↑(UploadBroadcast.NonzeroSameChartMenus.menuIncrement g choice
+                              (UploadBroadcast.R2PermutedMenus.inverseFirst k r))) ∧
+                    ∀ (i ell : UploadBroadcast.Three),
+                      2 *
+                          UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hg)
+                            (Sum.inr (i, ell)) =
+                        ↑(UploadBroadcast.NonzeroDefectProfile.doubledSecond g n)
+UploadBroadcast.NonzeroSameChartPermutations.other_families_profile_preserving {K F : Type} [Field K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] [Fintype K] (hq : 3 ≤ Fintype.card K) (T : UploadBroadcast.Task K F)
+  (hT : UploadBroadcast.TaskDecomposition.Indecomposable (UploadBroadcast.EdgeExtraction.configuration T).spaces ⊤)
+  (k : Fin 6) (g : UploadBroadcast.NonzeroDefectProfile.Family)
+  (hT1 : g ≠ UploadBroadcast.NonzeroDefectProfile.Family.T1) (hO : g ≠ UploadBroadcast.NonzeroDefectProfile.Family.O)
+  (n : ℕ) (hn : 1 ≤ n)
+  (h :
+    UploadBroadcast.NonzeroFamilyRanks.Dimensions
+      (UploadBroadcast.Profile.reindexTask (UploadBroadcast.R2PermutedMenus.pathPerm k) T) g n) :
+  ∃ P,
+    ∃ (hg : T.LocallyGenerated P),
+      T.RelayFeasible P ∧
+        Module.finrank K ↥P =
+            UploadBroadcast.NonzeroDefectProfile.fullAmbient g n - UploadBroadcast.NonzeroDefectProfile.codimension g ∧
+          ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+            ∀ (r : UploadBroadcast.Profile.Index),
+              UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hg) r =
+                UploadBroadcast.Profile.entry T r
+'UploadBroadcast.GeometricUploadConverse.code_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.NonzeroSameChartOptimality.same_chart_full_and_optimal_relay' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.NonzeroSameChartMenus.same_chart_all_menu_choices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.NonzeroSameChartPermutations.same_chart_all_permuted_choices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.NonzeroSameChartPermutations.indexed_menu_table' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.NonzeroSameChartPermutations.other_families_profile_preserving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.NonzeroSameChartPermutations.pathPerm_exhaustive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.NonzeroSameChartPermutations.indexed_arms' depends on axioms: [propext, Classical.choice, Quot.sound]
+All 44 same-chart endpoint theorems pass the axiom whitelist: [propext, Quot.sound, Classical.choice]

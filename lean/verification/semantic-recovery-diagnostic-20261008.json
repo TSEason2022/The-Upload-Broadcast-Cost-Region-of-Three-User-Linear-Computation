@@ -1,0 +1,224 @@
+{
+  "diagnostic_started_utc": "2026-10-08T14:04:00.820113+00:00",
+  "diagnostic_finished_utc": "2026-10-08T14:23:57.759802+00:00",
+  "diagnostic_only": true,
+  "diagnostic_gates_passed": true,
+  "diagnostic_source_unchanged": true,
+  "diagnostic_remaining_module_count": 39,
+  "changed_source_files": [
+    "UploadBroadcast/MatrixTaskFrontend.lean"
+  ],
+  "project_compiled_artifacts_reused": true,
+  "whole_paper_release_gate_passed": false,
+  "purpose": "Warning-recovery diagnostic before a new clean release build; this is not a clean build or release completion.",
+  "original_report_sha256": "8b001099bcdac06ab7c46bb60285aee17407b55da3faed67b4c428b6872cb5f4",
+  "safe_declarations_audited": 11018,
+  "safe_theorems_audited": 8398,
+  "project_modules_audited": 313,
+  "mapped_theorem_references_checked": 95,
+  "public_examples_checked": 12,
+  "module_results": [
+    {
+      "module": "UploadBroadcast.MatrixTaskFrontend",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.MatrixTaskEndpoints",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.BinaryAdditionalMenuPermutations",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.RegularExactMenus",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.ResidualProfiles",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.CitedBinaryFieldNecessity",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.CycleUploadGeometry",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.CycleUploadOptimality",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.CycleSourceEndpoint",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.BlockGraphDirectSum",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.ActualBlockGraph",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.IntrinsicUploadDirectSums",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.UploadParameterDirectSum",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.OppositeDemandExample",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.FiniteSubspaceCertificate",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.CitedEntropyData",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.CitedEntropyKernelCertificate",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.CitedEntropyShannon",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.CitedEntropyCertificates",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.CitedEntropyProfile",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.CitedEntropyModel",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.CitedEntropyCounterexample",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.ResonantUploadSpecializations",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.LiteralThetaBlocks",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.LiteralMatrixCertificates",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.LiteralPrimitiveT1_2",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.LiteralPrimitiveT1_3",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.LiteralPrimitiveT2_3",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.LiteralPrimitiveT3_2",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.LiteralPrimitiveR1_1",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.LiteralPrimitiveR2",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.LiteralPrimitiveO_1",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.LiteralPrimitiveO_2",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.LiteralPrimitiveO_3",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.LiteralPrimitiveH_1",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.LiteralPrimitiveTables",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.OmniscienceOperational",
+      "exit_code": 0
+    },
+    {
+      "module": "UploadBroadcast.ResonantSeedEmbedding",
+      "exit_code": 0
+    }
+  ],
+  "gate_results": [
+    {
+      "gate": "source-preflight",
+      "exit_code": 0
+    },
+    {
+      "gate": "DiagnosticAllModulesAxiomAudit.lean",
+      "exit_code": 0
+    },
+    {
+      "gate": "DiagnosticAllModulesDeclarationAudit.lean",
+      "exit_code": 0
+    },
+    {
+      "gate": "integrated-check",
+      "exit_code": 0
+    },
+    {
+      "gate": "coverage",
+      "exit_code": 0
+    }
+  ],
+  "evidence": [
+    {
+      "path": "verification/recovery-matrix-frontend-build-20261008.log",
+      "sha256": "ca4d2abe87c5e3c1fa16a9270be292556d2c6a43594cee8cc6369ea96707bb9b"
+    },
+    {
+      "path": "verification/recovery-all-module-theorem-axioms-20261008.log",
+      "sha256": "fb6c8b82804f934d99facccf58fbf4874deceea4359d68dc7bc7eb4f20cf87be"
+    },
+    {
+      "path": "verification/recovery-all-module-declaration-axioms-20261008.log",
+      "sha256": "f02a2cef805f4db8fa08182ae6328d90e30e623e572d7ee39dd02c7b16fe67dc"
+    },
+    {
+      "path": "verification/recovery-coverage-20261008.log",
+      "sha256": "e88952f577d48840ebdd66144e9ec7451f41e20f5de633a14834cf001922052a"
+    }
+  ],
+  "reachable_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "audit_trust_boundary": "Imported-object trust level 1025; module-origin axiom collection is not an independent object recheck. A new complete-source clean build remains required."
+}

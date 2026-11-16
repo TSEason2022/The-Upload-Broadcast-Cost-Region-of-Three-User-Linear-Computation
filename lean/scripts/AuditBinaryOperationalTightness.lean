@@ -1,0 +1,4 @@
+import UploadBroadcast.BinaryOperationalTightness
+#print axioms UploadBroadcast.BinaryOperationalTightness.scalar_broadcast_card
+#print axioms UploadBroadcast.BinaryOperationalTightness.broadcastOptimum_eq
+#print axioms UploadBroadcast.BinaryOperationalTightness.scalar_broadcast_cost_strict

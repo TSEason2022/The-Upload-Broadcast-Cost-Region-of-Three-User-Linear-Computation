@@ -1,0 +1,18 @@
+'UploadBroadcast.CitedBinaryFieldNecessity.signal_from_demands' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.CitedBinaryFieldNecessity.broadcastOptimum_eq_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.CitedBinaryFieldNecessity.broadcast_source_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.CitedBinaryFieldNecessity.scalar_broadcast_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.CitedBinaryFieldNecessity.scalar_cost_ge_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.CitedBinaryFieldNecessity.scalar_cost_gt_ceiling' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

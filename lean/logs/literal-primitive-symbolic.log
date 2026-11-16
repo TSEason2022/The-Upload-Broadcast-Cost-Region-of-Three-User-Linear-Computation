@@ -1,0 +1,21 @@
+T1/2 full (5, [2, 2, 2], [4, 3, 3], 0, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True})
+ induced (4, [1, 2, 1], [3, 3, 2], 0, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True}) local True feasible True
+T1/3 full (5, [2, 2, 2], [4, 3, 3], 0, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True})
+ induced (4, [1, 1, 2], [3, 2, 3], 0, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True}) local True feasible True
+T2/3 full (5, [2, 2, 2], [4, 4, 3], 1, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True})
+ induced (4, [1, 1, 2], [3, 3, 3], 1, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True}) local True feasible True
+T3/2 full (5, [2, 2, 2], [4, 4, 4], 2, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True})
+ induced (4, [1, 2, 1], [3, 4, 3], 2, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True}) local True feasible True
+R1/1 full (4, [1, 2, 2], [3, 3, 3], 1, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True})
+ induced (3, [1, 1, 1], [3, 2, 2], 1, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True}) local True feasible True
+R2 full (4, [2, 2, 2], [3, 3, 3], 1, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True})
+ induced (2, [1, 1, 0], [2, 2, 1], 1, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True}) local True feasible True
+O/1 full (3, [1, 1, 2], [2, 2, 2], 0, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True})
+ induced (2, [1, 0, 1], [2, 1, 1], 0, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True}) local True feasible True
+O/2 full (3, [1, 1, 2], [2, 2, 2], 0, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True})
+ induced (2, [0, 1, 1], [1, 2, 1], 0, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True}) local True feasible True
+O/3 full (3, [1, 1, 2], [2, 2, 2], 0, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True})
+ induced (2, [0, 0, 2], [1, 1, 2], 0, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True}) local True feasible True
+H/1 full (3, [1, 1, 2], [2, 2, 3], 1, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True})
+ induced (2, [1, 0, 1], [2, 1, 2], 1, {'side_span': True, 'disjoint': True, 'pair_span': True, 'triple_join': True, 'pair_crk': True, 'triple_crk': True, 't_bounds': True}) local True feasible True
+PASS: all seven flag rows and ten relay rows match the frozen source byte hash and parsed coordinates.

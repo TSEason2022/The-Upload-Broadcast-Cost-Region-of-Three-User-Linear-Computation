@@ -1,0 +1,14 @@
+import UploadBroadcast.OriginalUploadTheorem
+#print axioms UploadBroadcast.Task.minimum_upload
+#print axioms UploadBroadcast.Task.minimum_upload_source_formula
+#print axioms UploadBroadcast.Task.minimum_upload_scalar
+#print axioms UploadBroadcast.Task.minimum_upload_two_instance
+#print axioms UploadBroadcast.Task.minimum_upload_attainment
+#print axioms UploadBroadcast.Task.minimum_upload_closed_lower
+#print axioms UploadBroadcast.ResidualTaskAssembly.tripodDimension_eq_stacked_rank
+#print axioms UploadBroadcast.Task.preResidual_pairKnown_finrank
+#check UploadBroadcast.Task.minimum_upload
+#check UploadBroadcast.Task.minimum_upload_source_formula
+#check UploadBroadcast.Task.minimum_upload_attainment
+#print axioms UploadBroadcast.Task.uploadOmniscienceValue_integral_iff_nat
+#print axioms UploadBroadcast.Task.minimum_upload_scalar_of_integral

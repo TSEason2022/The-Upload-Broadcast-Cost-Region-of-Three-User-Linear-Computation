@@ -1,0 +1,240 @@
+{
+  "additional_final_identity_checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/verify_toolchain.py",
+        "--output",
+        "<RESULTS>/final-toolchain.json"
+      ],
+      "duration_seconds": 0.085,
+      "exit_code": 0,
+      "log": "final-toolchain.log",
+      "name": "final-toolchain"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/verify_dependency_pins.py",
+        "--output",
+        "<RESULTS>/final-dependency-pins.json"
+      ],
+      "duration_seconds": 1.497,
+      "exit_code": 0,
+      "log": "final-dependency-pins.log",
+      "name": "final-dependency-pins"
+    }
+  ],
+  "additional_targeted_smoke": "Four new current-source wrappers independently elaborated against already fresh same-campaign dependencies, exit0; no .olean output requested. At most one additional2-thread process, alongside the single2-thread main compiler.",
+  "allowed_standard_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "auxiliary_manuscript_metadata_note": "Final private-paper identities were updated after the recorded proof run for non-result manuscript edits. The verified mathematical-alignment snapshot and all formal proof inputs are unchanged; no additional Lean run was needed.",
+  "build_policy": {
+    "lean_threads_per_compiler": 2,
+    "project_modules": "topological sequential, one new project compiler at a time"
+  },
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/verify_toolchain.py",
+        "--output",
+        "<RESULTS>/toolchain.json"
+      ],
+      "dimensions": null,
+      "duration_seconds": 0.24,
+      "exit_code": 0,
+      "log": "toolchain.log",
+      "name": "toolchain",
+      "seed": null,
+      "solver": "Lean kernel / exact source checks; no numerical solver",
+      "tolerance": "N/A (exact formal/source checks)"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/verify_dependency_pins.py",
+        "--output",
+        "<RESULTS>/dependency-pins.json"
+      ],
+      "dimensions": null,
+      "duration_seconds": 2.158,
+      "exit_code": 0,
+      "log": "dependency-pins.log",
+      "name": "dependency-pins",
+      "seed": null,
+      "solver": "Lean kernel / exact source checks; no numerical solver",
+      "tolerance": "N/A (exact formal/source checks)"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/audit_source.py"
+      ],
+      "dimensions": null,
+      "duration_seconds": 0.798,
+      "exit_code": 0,
+      "log": "source-audit.log",
+      "name": "source-audit",
+      "seed": null,
+      "solver": "Lean kernel / exact source checks; no numerical solver",
+      "tolerance": "N/A (exact formal/source checks)"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/test_release_tools.py"
+      ],
+      "dimensions": null,
+      "duration_seconds": 0.101,
+      "exit_code": 0,
+      "log": "release-support-tests.log",
+      "name": "release-support-tests",
+      "seed": null,
+      "solver": "Lean kernel / exact source checks; no numerical solver",
+      "tolerance": "N/A (exact formal/source checks)"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/test_audit_source.py"
+      ],
+      "dimensions": null,
+      "duration_seconds": 0.276,
+      "exit_code": 0,
+      "log": "source-audit-tests.log",
+      "name": "source-audit-tests",
+      "seed": null,
+      "solver": "Lean kernel / exact source checks; no numerical solver",
+      "tolerance": "N/A (exact formal/source checks)"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/test_package_release.py"
+      ],
+      "dimensions": null,
+      "duration_seconds": 0.167,
+      "exit_code": 0,
+      "log": "historical-packager-tests.log",
+      "name": "historical-packager-tests",
+      "seed": null,
+      "solver": "Lean kernel / exact source checks; no numerical solver",
+      "tolerance": "N/A (exact formal/source checks)"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/generate_current_coverage_audit.py"
+      ],
+      "dimensions": null,
+      "duration_seconds": 0.019,
+      "exit_code": 0,
+      "log": "current-target-generation.log",
+      "name": "current-target-generation",
+      "seed": null,
+      "solver": "Lean kernel / exact source checks; no numerical solver",
+      "tolerance": "N/A (exact formal/source checks)"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_all_modules.py"
+      ],
+      "dimensions": null,
+      "duration_seconds": 1818.846,
+      "exit_code": 0,
+      "log": "all-library-modules-and-both-axiom-audits.log",
+      "name": "all-library-modules-and-both-axiom-audits",
+      "seed": null,
+      "solver": "Lean kernel / exact source checks; no numerical solver",
+      "tolerance": "N/A (exact formal/source checks)"
+    },
+    {
+      "command": [
+        "bash",
+        "scripts/check.sh"
+      ],
+      "dimensions": null,
+      "duration_seconds": 32.367,
+      "exit_code": 0,
+      "log": "integrated-build-reuse-and-coverage-check.log",
+      "name": "integrated-build-reuse-and-coverage-check",
+      "seed": null,
+      "solver": "Lean kernel / exact source checks; no numerical solver",
+      "tolerance": "N/A (exact formal/source checks)"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "verification/CurrentSourceDeclarations.lean"
+      ],
+      "dimensions": null,
+      "duration_seconds": 4.298,
+      "exit_code": 0,
+      "log": "current-source-declarations-and-axioms.log",
+      "name": "current-source-declarations-and-axioms",
+      "seed": null,
+      "solver": "Lean kernel / exact source checks; no numerical solver",
+      "tolerance": "N/A (exact formal/source checks)"
+    }
+  ],
+  "dependency_cache_method": "symlink to exact clean upstream source revisions and official compiled mathlib cache; PFR entropy dependency compiled locally in this preparation",
+  "dependency_compiled_cache_reused": true,
+  "duration_seconds": 1859.411,
+  "evidence_label": "certified for the compiled formal declarations and exact source checks",
+  "finished_utc": "2026-11-16T04:51:41.162973+00:00",
+  "formal_input_file_count": 450,
+  "formal_input_scope": "All project Lean sources, scripts, and exact toolchain/Lake pins; excluding generated caches/build reports",
+  "formal_input_sha256": "7ee8f58643fcad782e99373da67c0e7e06a571cbfea506725b3ab827b19ae486",
+  "formal_inputs_unchanged_during_checks": true,
+  "imported_object_trust_level": 1025,
+  "library_modules": 314,
+  "library_modules_outside_umbrella": 2,
+  "manuscript_identities": {
+    "final_local_manuscript_sha256": "26c429ce52b8cd6e09c48e77cbff1d205c0663be86fd2d71cbb778a6e5808f2e",
+    "final_local_pdf_pages": 25,
+    "final_local_pdf_sha256": "a7800dcf19ddbbcdf7d56e43011ffae69166208288d5aea00f8e64575f26e18c",
+    "local_edit_scope": "Private introduction wording and citations/bibliography updated, including the supplied Wireless reference details and visible DOI; acknowledgment availability wording/URL, URL-package support and author-biography removal retained. Mathematical statements, proofs, equations, tables, notation and verified code are unchanged.",
+    "local_manuscript_identity_status": "final private version compiled and visually checked",
+    "manuscript_published_in_repository": false,
+    "mathematical_alignment_source_sha256": "420218e9eb1b3c721a4270c39f505a057ad23b62a866ead698761bac476efdd5"
+  },
+  "mapped_named_results": 28,
+  "mapped_unique_theorem_targets": 103,
+  "namespaced_project_theorems_audited": 7987,
+  "observed_reachable_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "passed": true,
+  "path_normalization": "JSON key order/formatting is normalized; local interpreter, working/output and toolchain paths use python3 or descriptive placeholders. Private raw files are retained separately with hashes in evidence-normalization.json. Formal-source and pin hashes are unchanged.",
+  "platform": {
+    "machine": "arm64",
+    "python": "3.12.14",
+    "release": "25.3.0",
+    "system": "Darwin"
+  },
+  "private_or_out_of_namespace_declarations_included": 504,
+  "project_compiled_artifacts_reused": false,
+  "python_to_lean_refinement_proved": false,
+  "safe_project_declarations_audited": 11023,
+  "safe_project_theorems_audited": 8403,
+  "schema_version": 1,
+  "scope": "Current named source declarations and all library modules; separate semantic correspondence review required; no claim of checking every exposition sentence or unseen manuscript version",
+  "source_alignment_scope": "28 named results; private comparison of frozen125 displayed mathematical items,5 table data sets and32 proof blocks, with documented result/assumption review and alternative proof routes. Not an exhaustive word-for-word review of unnumbered free prose.",
+  "source_lexical_files_scanned": 416,
+  "source_revision_at_check": "Prepared local current Lean source before its initial GitHub publication; the per-file formal-input manifest identifies the exact checked revision.",
+  "source_unchanged_during_checks": true,
+  "started_utc": "2026-11-16T04:20:41.752036+00:00",
+  "status": "passed",
+  "unapproved_axioms_detected": false,
+  "unsafe_compiler_implementation_declarations_inventoried_separately": 19217
+}

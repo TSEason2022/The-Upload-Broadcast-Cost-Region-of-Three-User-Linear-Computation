@@ -1,0 +1,7 @@
+import UploadBroadcast.CitedBinaryFieldNecessity
+#print axioms UploadBroadcast.CitedBinaryFieldNecessity.signal_from_demands
+#print axioms UploadBroadcast.CitedBinaryFieldNecessity.broadcastOptimum_eq_one
+#print axioms UploadBroadcast.CitedBinaryFieldNecessity.broadcast_source_injective
+#print axioms UploadBroadcast.CitedBinaryFieldNecessity.scalar_broadcast_card
+#print axioms UploadBroadcast.CitedBinaryFieldNecessity.scalar_cost_ge_two
+#print axioms UploadBroadcast.CitedBinaryFieldNecessity.scalar_cost_gt_ceiling

@@ -1,0 +1,128 @@
+{
+  "dependencies": [
+    {
+      "name": "Cli",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "f7e95706807e931782b6efd9a9d2789508a52423ad67b56ee7e5e324362d4aac"
+        }
+      ],
+      "revision": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+      "url": "https://github.com/leanprover/lean4-cli"
+    },
+    {
+      "name": "LeanAPAP",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "revision": "61769c82c1a8e2efd65da4490925180c54a611a7",
+      "url": "https://github.com/YaelDillies/LeanAPAP.git"
+    },
+    {
+      "name": "LeanSearchClient",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "revision": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+      "url": "https://github.com/leanprover-community/LeanSearchClient"
+    },
+    {
+      "name": "PFR",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "revision": "859f6b23d5532de385cff18fc25381e715dba199",
+      "url": "https://github.com/teorth/pfr.git"
+    },
+    {
+      "name": "Qq",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "revision": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+      "url": "https://github.com/leanprover-community/quote4"
+    },
+    {
+      "name": "aesop",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "revision": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+      "url": "https://github.com/leanprover-community/aesop"
+    },
+    {
+      "name": "batteries",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "revision": "f5d04a9c4973d401c8c92500711518f7c656f034",
+      "url": "https://github.com/leanprover-community/batteries"
+    },
+    {
+      "name": "importGraph",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "revision": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+      "url": "https://github.com/leanprover-community/import-graph"
+    },
+    {
+      "name": "mathlib",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        }
+      ],
+      "revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+      "url": "https://github.com/leanprover-community/mathlib4.git"
+    },
+    {
+      "name": "plausible",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "revision": "77e08eddc486491d7b9e470926b3dbe50319451a",
+      "url": "https://github.com/leanprover-community/plausible"
+    },
+    {
+      "name": "proofwidgets",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "revision": "c4919189477c3221e6a204008998b0d724f49904",
+      "url": "https://github.com/leanprover-community/ProofWidgets4"
+    }
+  ],
+  "lean_toolchain": "leanprover/lean4:v4.19.0",
+  "lockfile_sha256": "20fb8ae5f9c53cbe94492ecb4619ce91b31a2966a207310ce84dba0f06d6b26c",
+  "schema_version": 1
+}

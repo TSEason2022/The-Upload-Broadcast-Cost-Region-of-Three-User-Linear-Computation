@@ -1,0 +1,47 @@
+def UploadBroadcast.CycleSourceEndpoint.Repair.{u_1, u_2} : {K : Type u_1} →
+  {F : Type u_2} →
+    [inst : Field K] →
+      [inst_1 : Finite K] →
+        [inst_2 : AddCommGroup F] →
+          [inst_3 : Module K F] → [inst_4 : FiniteDimensional K F] → UploadBroadcast.Task K F → ℕ → Fin 6 → Prop :=
+fun {K} {F} [Field K] [Finite K] [AddCommGroup F] [Module K F] [FiniteDimensional K F] T d target =>
+  ∃ P,
+    ∃ (hl : T.LocallyGenerated P),
+      T.RelayFeasible P ∧
+        Module.finrank K ↥P = d ∧
+          ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+            (∀ (r : Fin 6),
+                UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl) (Sum.inl r) =
+                  UploadBroadcast.Profile.entry T (Sum.inl r) + if r = target then 1 else 0) ∧
+              (∀ (i l : UploadBroadcast.Three),
+                  UploadBroadcast.Profile.entry (UploadBroadcast.NonzeroDefectRelays.inducedTask T P hl)
+                      (Sum.inr (i, l)) =
+                    UploadBroadcast.Profile.entry T (Sum.inr (i, l))) ∧
+                ∃ uploads c, ∑ i, uploads i = d ∧ c.toCode.uploadCost = ↑d
+UploadBroadcast.CycleUploadOptimality.canonical_active : ∀ (K : Type u_1) [inst : Field K] (n : ℕ),
+  UploadBroadcast.ResidualComponentAdditivity.ActiveResidual (UploadBroadcast.CycleRepair.canonicalTask K n)
+UploadBroadcast.CycleUploadOptimality.canonical_reverse_active : ∀ (K : Type u_1) [inst : Field K] (n : ℕ),
+  UploadBroadcast.ResidualComponentAdditivity.ActiveResidual (UploadBroadcast.CycleRepair.canonicalReverseTask K n)
+UploadBroadcast.CycleUploadOptimality.canonical_positive_optimal : ∀ (K : Type u_1) [inst : Field K] (n : ℕ)
+  [inst_1 : Finite K],
+  ↑(Module.finrank K ↥(LinearMap.range (UploadBroadcast.CycleRepair.relayMap K (n + 1)))) =
+    (UploadBroadcast.CycleRepair.canonicalTask K n).uploadOptimum
+UploadBroadcast.CycleUploadOptimality.canonical_reverse_optimal : ∀ (K : Type u_1) [inst : Field K] (n : ℕ)
+  [inst_1 : Finite K],
+  ↑(Module.finrank K ↥(LinearMap.range (UploadBroadcast.CycleRepair.reverseRelayMap K (n + 1)))) =
+    (UploadBroadcast.CycleRepair.canonicalReverseTask K n).uploadOptimum
+UploadBroadcast.CycleSourceEndpoint.positive_canonical : ∀ (K : Type u_1) [inst : Field K] [inst_1 : Finite K] (n : ℕ),
+  UploadBroadcast.CycleSourceEndpoint.Repair (UploadBroadcast.CycleRepair.canonicalTask K n) (3 * (n + 1) + 4) 1
+UploadBroadcast.CycleSourceEndpoint.negative_canonical : ∀ (K : Type u_1) [inst : Field K] [inst_1 : Finite K] (n : ℕ),
+  UploadBroadcast.CycleSourceEndpoint.Repair (UploadBroadcast.CycleRepair.canonicalReverseTask K n) (3 * (n + 1) + 4) 3
+UploadBroadcast.CycleSourceEndpoint.positive_directSum : ∀ (K : Type u_1) [inst : Field K] [inst_1 : Finite K] (n : ℕ),
+  UploadBroadcast.CycleSourceEndpoint.Repair
+    (UploadBroadcast.Profile.directSum (UploadBroadcast.ResonantRelay.jordanTask K n)
+      (UploadBroadcast.CycleDirectSumCoordinates.cycleTask K))
+    (3 * (n + 1) + 4) 1
+UploadBroadcast.CycleSourceEndpoint.negative_directSum : ∀ (K : Type u_1) [inst : Field K] [inst_1 : Finite K] (n : ℕ),
+  UploadBroadcast.CycleSourceEndpoint.Repair
+    (UploadBroadcast.Profile.directSum (UploadBroadcast.ResonantRelay.jordanTask K n)
+      (UploadBroadcast.CycleDirectSumCoordinates.reverseCycleTask K))
+    (3 * (n + 1) + 4) 3
+Independent cycle source audit passed for 8 roots; axioms [propext, Quot.sound, Classical.choice]

@@ -1,0 +1,5 @@
+import UploadBroadcast.RegularExactMenus
+#print axioms UploadBroadcast.RegularExactMenus.exact_profile_of_equiv
+#print axioms UploadBroadcast.RegularExactMenus.jordan_exact_profile
+#print axioms UploadBroadcast.RegularExactMenus.from_actual_chart
+#print axioms UploadBroadcast.RegularExactMenus.from_actual_regular

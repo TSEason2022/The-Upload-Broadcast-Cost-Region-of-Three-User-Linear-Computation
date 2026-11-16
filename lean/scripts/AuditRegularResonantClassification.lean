@@ -1,0 +1,6 @@
+import UploadBroadcast.RegularResonantClassification
+#print axioms UploadBroadcast.RegularPositiveCross.cross_disjoint
+#print axioms UploadBroadcast.RegularResonantClassification.dimensions
+#print axioms UploadBroadcast.RegularResonantClassification.tits_and_excess
+#print axioms UploadBroadcast.RegularResonantClassification.classification
+#print axioms UploadBroadcast.RegularResonantClassification.active_classification

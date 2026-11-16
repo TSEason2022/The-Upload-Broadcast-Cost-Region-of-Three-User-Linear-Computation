@@ -1,0 +1,6 @@
+import UploadBroadcast.ResidualIntrinsicGeometry
+#print axioms UploadBroadcast.ResidualIntrinsicGeometry.signal_pair_spanning
+#print axioms UploadBroadcast.ResidualIntrinsicGeometry.all_signal_pairs_spanning
+#print axioms UploadBroadcast.ResidualIntrinsicGeometry.tripod_side_core
+#print axioms UploadBroadcast.ResidualIntrinsicGeometry.commonSeed_eq_pure_image
+#print axioms UploadBroadcast.ResidualIntrinsicGeometry.commonSeed_eq_bot_iff

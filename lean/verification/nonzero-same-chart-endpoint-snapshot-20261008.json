@@ -1,0 +1,544 @@
+{
+  "source_sha256": "b1c77e1cf7f7245fc8781b362d69ca06ba9b42448bc6d90ad65ddf628d4b2682",
+  "endpoint": "UploadBroadcast.NonzeroSameChartPermutations.same_chart_all_permuted_choices",
+  "created_utc": "2026-10-08T10:22:47.816930+00:00",
+  "verification_sha256": "f6006d5c34d716503fab8e518db92adc3e0c06304efe67f602d9e8a1e1df5a75",
+  "project_import_closure": [
+    {
+      "module": "UploadBroadcast.ActiveReduction",
+      "source_sha256": "fb02e81e32e8625e1e4a32c9e02f2e39baecee8f08edc66c6c7cf84063d12111",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.ActiveTaskAssembly",
+      "source_sha256": "f9adde9cefc5ca2196b6b30e6d390fc279923a5314c49b1afec0ce7aa709ebb8",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.AlignedRelation",
+      "source_sha256": "dff2822160ed2e100e6cdba8e6cfc089fff7077a43bb7927c19fb563afd4f110",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.Allocation",
+      "source_sha256": "c97bd60ed81057f22cb134964dfdb525465c2a9e9566cc37d9ff34e4add76bd8",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.AllocationAggregate",
+      "source_sha256": "61a423ce0de5611f825b2401dab1c16d67c3255d5137e77099a04c03adacfbb1",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.BinaryCodimTwoProfiles",
+      "source_sha256": "e3a22b46e5123f40fbeef7b6001e7224b93afa43adbecfe70b693fc7dd5ce3c7",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.BinaryMenuAllocation",
+      "source_sha256": "16c84f81da7c650cb69942aae80c50617ab3b26bd2e87ce8294e8963a3722728",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.BinaryRelayMenus",
+      "source_sha256": "f1679aa863d0fc1cfe335de02d86d25413bf40c16c69898c33ae6438c1c8764c",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.BinaryRelayProfiles",
+      "source_sha256": "2874f0714d3174755915ecad8172ccd2f404e9b3c2ec13e24dd887d346c01a4a",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.CodeAlphabet",
+      "source_sha256": "022bf22d651959fdd06e97bcedada49bdb58a7845dfdef5fdbdaf57ae5e358fe",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.CommonFunction",
+      "source_sha256": "fb6d26d6b0a715d8108fc5dfdd879ec32fd619731701a3bf408ba70fc02dccea",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.Coordination",
+      "source_sha256": "0d0393bdaf6eb76b3ca7a0ee34a49ee5215d728788d26503ef69639b10120b7e",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.E6Reflection",
+      "source_sha256": "0d3cc8623d70ef70f7f24996bee9f52967b0cbed7142e08cb6d4ae7b203a7dbd",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.EdgeExtraction",
+      "source_sha256": "6de3030555d46518490dc57f60505d2b7b43418df9a312f921003a5dc2847ddf",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.Entropy",
+      "source_sha256": "db2ab3605dfc1a8ba89348ef98fae1357e06a6d71517d5bdd6478ae5a8b76956",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.EntropyCalculus",
+      "source_sha256": "8b87907c9ca2a1d45b623cb8f10b2a5c3952689a8da745e9e7040c8853e69d20",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.EntropyCoding",
+      "source_sha256": "22fc16cd3bc490af07ed1c3e45a8098d51a5788b88b6840598d84120a74c0fa5",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.FiniteAlphabetEncoding",
+      "source_sha256": "22e995a2b48f4d3fe6e39caf1be244783edb5b7e9822843d80039a3af7adcfbd",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.FiniteEntropyConverse",
+      "source_sha256": "ced25288b33bc0d5953838a90c863d414cc00e9e3d68295f03d3c966f6cf1fad",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.FiniteMonoidPower",
+      "source_sha256": "085c4974752cc0254573807cb054bfd4009df0e87b986f98c355262efbf2dee6",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.FullResidualAssembly",
+      "source_sha256": "ff17bbc331bf3d7734cf0d068c8d8c9309954808ac03db2ac9b11d74fc1abeff",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.GeneralEntropyConverse",
+      "source_sha256": "928933e6c7adec89ad4174c7c91fd2833a42f71ae5130e59f865dd0a1b2bdd8c",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.GeometricUploadConverse",
+      "source_sha256": "c52067a0f6e3f7f8afe4c3429d312120b246a107a8c8a82d568e84f04f2de99f",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.IntersectionProbes",
+      "source_sha256": "37440c5da0a2d8e4e90b3325fd6309df32399a384f7fb7e8a88456369fdf5a56",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.JointRealization",
+      "source_sha256": "3b0e8a09e6ae3401ad7aea6ff67c01371ff4e1bde4525cbce5d129c5f97f534e",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.JordanResonance",
+      "source_sha256": "ab8ebdcff79ab9e552bbae38803abd3b8af6b8759eb5f9c29ff8fd7a8d4ea72c",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.LinearAlgebra",
+      "source_sha256": "29cf7d9eb0e5e797aa70b2a9229bc8fcbb98a269b0d5f9df9490459318dfdf2c",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.LinearCode",
+      "source_sha256": "e456575ff172cfb27310819860f29fccf743422c1f0f9f2dd254af2ac3e6997f",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.LinearCosts",
+      "source_sha256": "3da712fc92606bcb49f7e9ca26730123c7c56305c1461e24a165475dac8f97f5",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.LinearEntropy",
+      "source_sha256": "51c5f6e8e34f4adb7a043f05d6e4081d2caf190c0f270a6a6ceb41697bc0d81a",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.MarkedNilpotent",
+      "source_sha256": "43ada2e514e2b3384785dd6249976ceb22ed34103b9580d00c67ea0615a85d06",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.Model",
+      "source_sha256": "33c2a7260abc99e2880eb2856e4873de1f0379bdb36b76859d14b3fb82680aab",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.NilpotentFiltration",
+      "source_sha256": "980a18f22b4fc059b4bd1a57cd22f05b4cbe1610cdbbff8fae6331709210b5a3",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.NonzeroDefectProfile",
+      "source_sha256": "631b39a79c87ae5086134ba354b7e10c5bc6f71a65aac783d3ea891b5f0f4977",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.NonzeroDefectRelays",
+      "source_sha256": "b36b66c3c14c7f7c7df72c5e1a73981de0c341f507f1538920f832b5d536eede",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": true,
+      "timestamp_anomaly_resolution": "Recompiled current source independently; temporary and shared .olean artifacts have identical SHA-256.",
+      "independently_recompiled_olean_sha256": "bfb5b74b5c972faae230f720a38eccd54d355cb58d539e40bbd78eb15a7e5005"
+    },
+    {
+      "module": "UploadBroadcast.NonzeroFamilyRanks",
+      "source_sha256": "33e721606394d6fc577bf698e62069b4919cb806a09be6495ee251b47fab94f6",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.NonzeroHyperplaneArithmetic",
+      "source_sha256": "ac36d1d037aaa9fd52ee7439a550e3ef75f4acf9c5688e2007fbf9496699124c",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.NonzeroHyperplaneProfiles",
+      "source_sha256": "0c39b7ef082fcd40b62f67dd4e348186d4f43f5e3d035de227d6537fa1ab6878",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.NonzeroHyperplaneUpload",
+      "source_sha256": "d79ecc97c6f4a01ef6ce782c4ebd3043284f00c994405e3adf3754150020fc6a",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.NonzeroR2Wedge",
+      "source_sha256": "be09ba13076dd15268340cb3fbd8e093c6096cfd8599f14ef5b4182ec199a052",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.NonzeroRelationRestrictions",
+      "source_sha256": "830595973e669ab9d3f94325e782f1d3ceb12399da4549a6e1c3da4b8f184783",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.NonzeroSameChart",
+      "source_sha256": "fa4b24dcaf6048f338b7b5eca7e5f7dd1a7ab31929a9ecb5118d85bea1ecba91",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.NonzeroSameChartMenus",
+      "source_sha256": "fd32be18a4bac97d0b57a74db3ec6687abb63fbe47913ebdb119b5af9b60207e",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.NonzeroSameChartOptimality",
+      "source_sha256": "0da6f2376fc6db0e80324a761d00cecedcb2a4bf91fae7c6a1bde6d4d94d71f9",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.NonzeroSameChartPermutations",
+      "source_sha256": "2d9967c88f83955236e372b63da7ce497ed147c11c6c0162d79a5a99e348ba2b",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.ObservationRank",
+      "source_sha256": "904a714652dafdd9c0e21340632c4813441bf1517e98b6e41f01c0cc39ac406e",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.OperationalBounds",
+      "source_sha256": "480c040e5a8f4bf72769c85c1386ce750c3048cc1a60e8f4569f0de177232eab",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.PairResidualAssembly",
+      "source_sha256": "c5610b48a2c334f10be4a2f2b7a34d8738fe0196f5893788173ec5e67c9993ea",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.PairSelection",
+      "source_sha256": "4f2bc04980dee9a475c6ac1bb67c903e9e5b905d9c09506e9f6aa3595d48df92",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.PassiveCode",
+      "source_sha256": "e5141d5abfefb16d3f3d71b79ba1c47a6d6111e3563875e99a89d1d021270949",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.Profile",
+      "source_sha256": "81e0bcb39b5497419b9841c04c81ef6f5a2eb451d1e388c79699680cbf3d54e4",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.ProfileTransport",
+      "source_sha256": "23a371393f92cc62a4f28db6a698225ac54826c89042ed3c4a2d983810532a13",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.ProjectionCriterion",
+      "source_sha256": "64f89299632b45fee15caddced229d6e1843b5bcda682000896c807777b5b214",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.QuiverEuler",
+      "source_sha256": "9fdf1047e87c4eadf3fee411ef80ae234ceb3af763e29ba4c31eaa09b22bf2f1",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.QuiverHomLinear",
+      "source_sha256": "42bc64a3bb58a81882b921db2839306fe5c32a4aaa93257ffa3cf00ffacf380f",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.QuiverHomTerminal",
+      "source_sha256": "3e9ac77b2b3c53f81326fac9f2f98059431812bf2d1cd7b9d53d1a26dd16b616",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.QuiverReindex",
+      "source_sha256": "313290e975765fc8fbd10d97562dd205261ac538c8b4b352b9fe07d6982c8f38",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.QuiverRepresentation",
+      "source_sha256": "424197cb3b6fa8e1c5d74da6106edc2eb5f365c9164a765a7d30978eba7a33b5",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.QuiverTits",
+      "source_sha256": "fd4beeda9bf414560fa3d64a59cc353a9314d095c5bbbd8ee9cafef445831e90",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.R2ExactProfile",
+      "source_sha256": "d935618f320d3ea67dcf0d00f91c17136f646190d5603ea0ce0dd50fa7ca0188",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.R2PermutedMenus",
+      "source_sha256": "22f5047399b2bbbb6d2b78c81fce8e361d7da2dc7c51da0ad637bb9ebff4e0dc",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.RankLoss",
+      "source_sha256": "71d7032a39c15d219bcf1983845d00007b7894b6e72fb730a2a7941b98d8c323",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.ReducedTask",
+      "source_sha256": "ce71d739ec0d7be7d3526b960ac3e06e0156eab066b0dda410b4861898d39a05",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.ReflectionEquivalence",
+      "source_sha256": "3111628ca20692fd7c9fcfc87a88ae4d17aeebe83e89f2a82b57a26ad012b331",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.ReflectionIteration",
+      "source_sha256": "9916d96dd8ee2409565ed03805a43a735a9061d81135cf41213998ae0bedd055",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.ReflectionReduction",
+      "source_sha256": "54eeaf8cc8170d09eabe487487ea6c86ed48e6e943c211c4f95471bfc6a0faed",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.Region",
+      "source_sha256": "edeaf6873ba2f3329ffca58c88ad783fe6162b87762ef485d115557e3b32ef1b",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.ResidualConverse",
+      "source_sha256": "6270168363a6a8b480790468aba9e3a00f54357fe206dd5b19fcf7559bb9eb9e",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.ResidualOperational",
+      "source_sha256": "94cde0f187a72a5313653b0da02f07b198cefe2052cf190f81f93e2f15b1acc9",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.ResidualPrivateSplit",
+      "source_sha256": "042431927635f584aed367ca5b1b3d03ede38fe38a3c20caa536b29a795f0b9b",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.ResidualTaskAssembly",
+      "source_sha256": "1a7e65a5443f05f284159d53fa2c15c44acb6d50453e51c61f99f0fb0ab2cf83",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.ResidualUpload",
+      "source_sha256": "0cfe17af5cee963b34305cc02c2bb66a4bac52853913b08390c1f03292cbc2b6",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.ResonantClassification",
+      "source_sha256": "25580e044cedf3d295b7aa6a58591d95a07417524b023eb37f08d562d9052bd0",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.ResonantEndomorphisms",
+      "source_sha256": "40726c63ea0b06f96d16246231ef458af78243477c375a47b4fe32e9a14e81e2",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.ResonantFlagNormalization",
+      "source_sha256": "2e7147ab3eb59bfc269cf6bac70d2080c69f21b2ed27a59da3b9e03e9db7a9a1",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.ResonantTripodTransversality",
+      "source_sha256": "509114b89bea630700b42f25073bcb8bc0af0ea0dcc31e47f65770ae29094cdd",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.Shannon",
+      "source_sha256": "502997c4250c56eefb1d8bc8fe0c7a078a06687578ad495f2457abe3c2deaebb",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.SignalBridge",
+      "source_sha256": "fedadd8284afaeabf5f8a53c0c2ecd7ca14367ddcf532bbd79e7e363de1a3c7a",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.SourceHomVanishing",
+      "source_sha256": "8db493ccbbc45506dae86f97c4c1a00be4872d3d951669c1de332e6d155dbe3b",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.StableEnd",
+      "source_sha256": "e5b182614fe1ceb7e832b7a46ab0d1f3c14d0685a51c62a2ed3cfdf152a9ede6",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.Structural",
+      "source_sha256": "45ade31e86f12fa048fbd1a08d92f442df68669c0e7b57f0b89be84918fcf76d",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.TaskDecomposition",
+      "source_sha256": "d0f718d4d0fe01b31d34ccd20b19fdb58ce2e47e8e78c25c8e1ecf5365c5b64d",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.TaskQuiverBridge",
+      "source_sha256": "5501fdc188f8eb92d7dbce0008f1459f55c26601e8ad72631cdcb3140d3239b0",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.TaskUserPermutation",
+      "source_sha256": "1bae24c6077f37b94cde6211e3d3fcb56450e7f9323f9734372bf0b563a69e73",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.ThreeSubspaceNormalForm",
+      "source_sha256": "bc4d4c8f57410c6677cd29d6fb171e99445b52cd6176422834a74c837544b4d5",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.ThreeSubspaceNormalFormCore",
+      "source_sha256": "1b88dcc9bdbae4abf4b7fffc44ae7d421908c0ffb2a55a28c7a4613b9c4f4487",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.TripodSubobjectExclusion",
+      "source_sha256": "d73cced65e57d08c5cccb50ec3a830f99d3b2687057d7d0c9d46b1318bf5ac62",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    },
+    {
+      "module": "UploadBroadcast.TwoDimensionalWedge",
+      "source_sha256": "2df71f16694a4ebdd3c2be255c0887c9ad4f625ecb9f652734bff4342ed77689",
+      "compiled_olean_exists": true,
+      "source_newer_than_olean": false
+    }
+  ],
+  "axiom_whitelist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "namespace_theorems_audited": 44
+}

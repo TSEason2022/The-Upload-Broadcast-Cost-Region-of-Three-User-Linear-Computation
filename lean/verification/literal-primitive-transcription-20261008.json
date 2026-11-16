@@ -1,0 +1,179 @@
+{
+  "description": "Exact integer transcription check against independently entered frozen tables, not a mathematical rank or Lean proof.",
+  "source_sha256": "b1c77e1cf7f7245fc8781b362d69ca06ba9b42448bc6d90ad65ddf628d4b2682",
+  "case_count": 10,
+  "matched_matrix_count": 100,
+  "passed": true,
+  "cases": [
+    {
+      "case": "T1_2",
+      "matched_matrices": [
+        "relayForms",
+        "side0Columns",
+        "demand0Columns",
+        "signal0Columns",
+        "side1Columns",
+        "demand1Columns",
+        "signal1Columns",
+        "side2Columns",
+        "demand2Columns",
+        "signal2Columns"
+      ],
+      "source": "UploadBroadcast/LiteralPrimitiveT1_2.lean",
+      "sha256": "3940351e455356af71aedfd8ab2f3d3137400f22fff95e7df488f03ca7ae40d1"
+    },
+    {
+      "case": "T1_3",
+      "matched_matrices": [
+        "relayForms",
+        "side0Columns",
+        "demand0Columns",
+        "signal0Columns",
+        "side1Columns",
+        "demand1Columns",
+        "signal1Columns",
+        "side2Columns",
+        "demand2Columns",
+        "signal2Columns"
+      ],
+      "source": "UploadBroadcast/LiteralPrimitiveT1_3.lean",
+      "sha256": "a0c0e51c2a64c6bc8e9cd1294dfb5dd831d695cb43abe61f19e45c750644c26b"
+    },
+    {
+      "case": "T2_3",
+      "matched_matrices": [
+        "relayForms",
+        "side0Columns",
+        "demand0Columns",
+        "signal0Columns",
+        "side1Columns",
+        "demand1Columns",
+        "signal1Columns",
+        "side2Columns",
+        "demand2Columns",
+        "signal2Columns"
+      ],
+      "source": "UploadBroadcast/LiteralPrimitiveT2_3.lean",
+      "sha256": "77cc30b43d6c212402e25b07b786ee10e2d6a5c895be3c36265e44b836fd4bd7"
+    },
+    {
+      "case": "T3_2",
+      "matched_matrices": [
+        "relayForms",
+        "side0Columns",
+        "demand0Columns",
+        "signal0Columns",
+        "side1Columns",
+        "demand1Columns",
+        "signal1Columns",
+        "side2Columns",
+        "demand2Columns",
+        "signal2Columns"
+      ],
+      "source": "UploadBroadcast/LiteralPrimitiveT3_2.lean",
+      "sha256": "95cdbfe3602a209bf7e547c9cfbfaf8b9ee295dd951eca114019c94e3e778d77"
+    },
+    {
+      "case": "R1_1",
+      "matched_matrices": [
+        "relayForms",
+        "side0Columns",
+        "demand0Columns",
+        "signal0Columns",
+        "side1Columns",
+        "demand1Columns",
+        "signal1Columns",
+        "side2Columns",
+        "demand2Columns",
+        "signal2Columns"
+      ],
+      "source": "UploadBroadcast/LiteralPrimitiveR1_1.lean",
+      "sha256": "770b39071bad8aafd208ecb8278fb6d2cf952be5c9dfcea5efea114c61089247"
+    },
+    {
+      "case": "R2",
+      "matched_matrices": [
+        "relayForms",
+        "side0Columns",
+        "demand0Columns",
+        "signal0Columns",
+        "side1Columns",
+        "demand1Columns",
+        "signal1Columns",
+        "side2Columns",
+        "demand2Columns",
+        "signal2Columns"
+      ],
+      "source": "UploadBroadcast/LiteralPrimitiveR2.lean",
+      "sha256": "e9a4d4570648c385802baa30c0271d2a74db8b5ac8110832e242ddf2984b6b3d"
+    },
+    {
+      "case": "O_1",
+      "matched_matrices": [
+        "relayForms",
+        "side0Columns",
+        "demand0Columns",
+        "signal0Columns",
+        "side1Columns",
+        "demand1Columns",
+        "signal1Columns",
+        "side2Columns",
+        "demand2Columns",
+        "signal2Columns"
+      ],
+      "source": "UploadBroadcast/LiteralPrimitiveO_1.lean",
+      "sha256": "52791e3e271a7399c5d790781b8b339dbf0065629adfc8e2e573c5461e986662"
+    },
+    {
+      "case": "O_2",
+      "matched_matrices": [
+        "relayForms",
+        "side0Columns",
+        "demand0Columns",
+        "signal0Columns",
+        "side1Columns",
+        "demand1Columns",
+        "signal1Columns",
+        "side2Columns",
+        "demand2Columns",
+        "signal2Columns"
+      ],
+      "source": "UploadBroadcast/LiteralPrimitiveO_2.lean",
+      "sha256": "28c2b2fcd05d1be76a7359c13b44f05b0095368cd81a70b4725fc8f46cc21917"
+    },
+    {
+      "case": "O_3",
+      "matched_matrices": [
+        "relayForms",
+        "side0Columns",
+        "demand0Columns",
+        "signal0Columns",
+        "side1Columns",
+        "demand1Columns",
+        "signal1Columns",
+        "side2Columns",
+        "demand2Columns",
+        "signal2Columns"
+      ],
+      "source": "UploadBroadcast/LiteralPrimitiveO_3.lean",
+      "sha256": "d509ea37086ec92ccae2cb2122a8a76d97d454ac66b65139fda5a7bba0414c13"
+    },
+    {
+      "case": "H_1",
+      "matched_matrices": [
+        "relayForms",
+        "side0Columns",
+        "demand0Columns",
+        "signal0Columns",
+        "side1Columns",
+        "demand1Columns",
+        "signal1Columns",
+        "side2Columns",
+        "demand2Columns",
+        "signal2Columns"
+      ],
+      "source": "UploadBroadcast/LiteralPrimitiveH_1.lean",
+      "sha256": "d0b128b4d0d08781bb80aa17d89adf38c42bd140703c817c2596cd2736dd955f"
+    }
+  ]
+}

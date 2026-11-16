@@ -1,0 +1,8 @@
+import UploadBroadcast.BinaryFieldTransport
+#print axioms UploadBroadcast.SemilinearTransport.code
+#print axioms UploadBroadcast.SemilinearTransport.code_cost
+#print axioms UploadBroadcast.SemilinearTransport.actualNumericLP_map
+#print axioms UploadBroadcast.BinaryFieldTransport.fieldEquiv
+#print axioms UploadBroadcast.card_two_scalar_lcbc_achievability
+#print axioms UploadBroadcast.card_two_scalar_lcbc_achievability_cost
+#print axioms UploadBroadcast.card_two_scalar_profile_achievability_cost

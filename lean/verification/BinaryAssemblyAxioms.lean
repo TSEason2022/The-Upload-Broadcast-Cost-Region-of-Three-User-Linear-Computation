@@ -1,0 +1,4 @@
+import UploadBroadcast.BinaryAssembly
+#print axioms UploadBroadcast.binary_incidence_coordination
+#print axioms UploadBroadcast.aligned_incidence_update
+#print axioms UploadBroadcast.pair_incidence_update

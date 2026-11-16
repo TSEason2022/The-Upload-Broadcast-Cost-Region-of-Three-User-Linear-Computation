@@ -1,0 +1,4 @@
+import UploadBroadcast.CommonTripodAssembly
+#print axioms UploadBroadcast.CommonTripodAssembly.exists_common_product
+#print axioms UploadBroadcast.CommonTripodAssembly.common_product_costRegion_eq
+#print axioms UploadBroadcast.CommonTripodAssembly.residual_commonRows_eq_bot

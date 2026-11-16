@@ -1,0 +1,1955 @@
+Checking 313 library modules; 2 outside umbrella import closure.
+[1/313] UploadBroadcast.Model
+Build completed successfully.
+[2/313] UploadBroadcast.LinearAlgebra
+Build completed successfully.
+[3/313] UploadBroadcast.Allocation
+Build completed successfully.
+[4/313] UploadBroadcast.Examples
+Build completed successfully.
+[5/313] UploadBroadcast.Coordination
+Build completed successfully.
+[6/313] UploadBroadcast.Region
+Build completed successfully.
+[7/313] UploadBroadcast.Structural
+Build completed successfully.
+[8/313] UploadBroadcast.Profile
+Build completed successfully.
+[9/313] UploadBroadcast.LinearCosts
+Build completed successfully.
+[10/313] UploadBroadcast.LinearCode
+Build completed successfully.
+[11/313] UploadBroadcast.ObservationRank
+Build completed successfully.
+[12/313] UploadBroadcast.AllocationAggregate
+Build completed successfully.
+[13/313] UploadBroadcast.AllocationWaterfill
+Build completed successfully.
+[14/313] UploadBroadcast.AllocationRanks
+Build completed successfully.
+[15/313] UploadBroadcast.RootClassification
+Build completed successfully.
+[16/313] UploadBroadcast.EntropyCalculus
+Build completed successfully.
+[17/313] UploadBroadcast.Shannon
+Build completed successfully.
+[18/313] UploadBroadcast.Entropy
+Build completed successfully.
+[19/313] UploadBroadcast.CommonFunction
+Build completed successfully.
+[20/313] UploadBroadcast.FiniteEntropyConverse
+Build completed successfully.
+[21/313] UploadBroadcast.JointRealization
+Build completed successfully.
+[22/313] UploadBroadcast.GeneralEntropyConverse
+Build completed successfully.
+[23/313] UploadBroadcast.OmniscienceEntropy
+Build completed successfully.
+[24/313] UploadBroadcast.AllocationOmniscience
+Build completed successfully.
+[25/313] UploadBroadcast.FiniteAlphabetEncoding
+Build completed successfully.
+[26/313] UploadBroadcast.CommonFunctionFiniteAlphabet
+Build completed successfully.
+[27/313] UploadBroadcast.GeneralOmniscienceEntropy
+Build completed successfully.
+[28/313] UploadBroadcast.OmniscienceFiniteAlphabet
+Build completed successfully.
+[29/313] UploadBroadcast.EntropyCoding
+Build completed successfully.
+[30/313] UploadBroadcast.LinearEntropy
+Build completed successfully.
+[31/313] UploadBroadcast.OmniscienceCode
+Build completed successfully.
+[32/313] UploadBroadcast.OmniscienceOptimal
+Build completed successfully.
+[33/313] UploadBroadcast.PassiveCode
+Build completed successfully.
+[34/313] UploadBroadcast.ActiveReduction
+Build completed successfully.
+[35/313] UploadBroadcast.JordanResonance
+Build completed successfully.
+[36/313] UploadBroadcast.CycleRepair
+Build completed successfully.
+[37/313] UploadBroadcast.RankLoss
+Build completed successfully.
+[38/313] UploadBroadcast.CycleProfile
+Build completed successfully.
+[39/313] UploadBroadcast.CycleTheorem
+Build completed successfully.
+[40/313] UploadBroadcast.ProfileTransport
+Build completed successfully.
+[41/313] UploadBroadcast.AlignedRelation
+Build completed successfully.
+[42/313] UploadBroadcast.BinaryCoordination
+Build completed successfully.
+[43/313] UploadBroadcast.LCBCConverse
+Build completed successfully.
+[44/313] UploadBroadcast.BroadcastShannon
+Build completed successfully.
+[45/313] UploadBroadcast.BroadcastOperational
+Build completed successfully.
+[46/313] UploadBroadcast.CycleReverseTransport
+Build completed successfully.
+[47/313] UploadBroadcast.CycleReverseTheorem
+Build completed successfully.
+[48/313] UploadBroadcast.TaskDecomposition
+Build completed successfully.
+[49/313] UploadBroadcast.ScalarBroadcast
+Build completed successfully.
+[50/313] UploadBroadcast.PairSelection
+Build completed successfully.
+[51/313] UploadBroadcast.AllocationNat
+Build completed successfully.
+[52/313] UploadBroadcast.ScalarIncidence
+Build completed successfully.
+[53/313] UploadBroadcast.BinaryRelationBridge
+Build completed successfully.
+[54/313] UploadBroadcast.ScalarAssembly
+Build completed successfully.
+[55/313] UploadBroadcast.ScalarAchievability
+Build completed successfully.
+[56/313] UploadBroadcast.FiniteMonoidPower
+Build completed successfully.
+[57/313] UploadBroadcast.StableEnd
+Build completed successfully.
+[58/313] UploadBroadcast.BlockBroadcast
+Build completed successfully.
+[59/313] UploadBroadcast.AllocationProfile
+Build completed successfully.
+[60/313] UploadBroadcast.BinaryCommon
+Build completed successfully.
+[61/313] UploadBroadcast.BinaryIncidence
+Build completed successfully.
+[62/313] UploadBroadcast.BinaryAssembly
+Build completed successfully.
+[63/313] UploadBroadcast.BinaryAchievability
+Build completed successfully.
+[64/313] UploadBroadcast.ScalarEndpoints
+Build completed successfully.
+[65/313] UploadBroadcast.RawProfileScaling
+Build completed successfully.
+[66/313] UploadBroadcast.SemilinearTaskTransport
+Build completed successfully.
+[67/313] UploadBroadcast.BinaryFieldTransport
+Build completed successfully.
+[68/313] UploadBroadcast.RawBroadcastConverse
+Build completed successfully.
+[69/313] UploadBroadcast.BroadcastOptimum
+Build completed successfully.
+[70/313] UploadBroadcast.ScalarExtensionConfiguration
+Build completed successfully.
+[71/313] UploadBroadcast.ExtensionBlockCode
+Build completed successfully.
+[72/313] UploadBroadcast.BaseChangeProfile
+Build completed successfully.
+[73/313] UploadBroadcast.GeneralBroadcastOptimum
+Build completed successfully.
+[74/313] UploadBroadcast.ScalarPaperEndpoints
+Build completed successfully.
+[75/313] UploadBroadcast.FiniteFieldDescent
+Build completed successfully.
+[76/313] UploadBroadcast.ThreeSubspaceNormalFormCore
+Build completed successfully.
+[77/313] UploadBroadcast.ThreeSubspaceNormalForm
+Build completed successfully.
+[78/313] UploadBroadcast.ReflectionReduction
+Build completed successfully.
+[79/313] UploadBroadcast.ActiveTaskAssembly
+Build completed successfully.
+[80/313] UploadBroadcast.ReducedTask
+Build completed successfully.
+[81/313] UploadBroadcast.NilpotentFiltration
+ℹ [1367/1367] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[82/313] UploadBroadcast.ProjectionCriterion
+Build completed successfully.
+[83/313] UploadBroadcast.ResonantEndomorphisms
+ℹ [1374/1376] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1376/1376] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[84/313] UploadBroadcast.ResonantBaseChange
+ℹ [1374/1386] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1376/1386] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1386/1386] Replayed UploadBroadcast.ResonantBaseChange
+info: ././././UploadBroadcast/ResonantBaseChange.lean:268:0: 'UploadBroadcast.ResonantBaseChange.spaces_baseChange' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantBaseChange.lean:269:0: 'UploadBroadcast.ResonantBaseChange.source_absolutely_indecomposable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantBaseChange.lean:270:0: 'UploadBroadcast.ResonantBaseChange.jordan_absolutely_indecomposable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully.
+[85/313] UploadBroadcast.ResonantRelay
+ℹ [1373/1385] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1375/1385] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[86/313] UploadBroadcast.ResonantProfile
+ℹ [1373/1511] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1375/1511] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[87/313] UploadBroadcast.QuiverRepresentation
+Build completed successfully.
+[88/313] UploadBroadcast.ReflectionEquivalence
+Build completed successfully.
+[89/313] UploadBroadcast.SignalBridge
+Build completed successfully.
+[90/313] UploadBroadcast.ResidualUpload
+Build completed successfully.
+[91/313] UploadBroadcast.ResidualRowCompletion
+Build completed successfully.
+[92/313] UploadBroadcast.ResidualConverse
+Build completed successfully.
+[93/313] UploadBroadcast.ResidualOperational
+Build completed successfully.
+[94/313] UploadBroadcast.BroadcastReindex
+Build completed successfully.
+[95/313] UploadBroadcast.EdgeExtraction
+Build completed successfully.
+[96/313] UploadBroadcast.EdgeProfile
+Build completed successfully.
+[97/313] UploadBroadcast.MarkedNilpotent
+ℹ [1460/1460] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[98/313] UploadBroadcast.ResonantClassification
+ℹ [1376/1467] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1377/1467] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1466/1467] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[99/313] UploadBroadcast.RelayLinearComposition
+Build completed successfully.
+[100/313] UploadBroadcast.BlockLinearCode
+Build completed successfully.
+[101/313] UploadBroadcast.PassiveLinearCode
+Build completed successfully.
+[102/313] UploadBroadcast.OmniscienceProfile
+Build completed successfully.
+[103/313] UploadBroadcast.EdgeDeficits
+ℹ [1892/1900] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1894/1900] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[104/313] UploadBroadcast.RelayTask
+Build completed successfully.
+[105/313] UploadBroadcast.CodeAlphabet
+Build completed successfully.
+[106/313] UploadBroadcast.OperationalBounds
+Build completed successfully.
+[107/313] UploadBroadcast.GlobalUploadConverse
+Build completed successfully.
+[108/313] UploadBroadcast.GlobalUploadGeometry
+Build completed successfully.
+[109/313] UploadBroadcast.ResidualTaskAssembly
+Build completed successfully.
+[110/313] UploadBroadcast.ResidualPrivateSplit
+Build completed successfully.
+[111/313] UploadBroadcast.GlobalUploadAssembly
+Build completed successfully.
+[112/313] UploadBroadcast.NonzeroDefectRelays
+Build completed successfully.
+[113/313] UploadBroadcast.NonzeroDefectProfile
+Build completed successfully.
+[114/313] UploadBroadcast.ResonantFlagNormalization
+ℹ [1373/1377] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1375/1377] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1465/1585] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[115/313] UploadBroadcast.BroadcastRegion
+Build completed successfully.
+[116/313] UploadBroadcast.LinearCodeSum
+Build completed successfully.
+[117/313] UploadBroadcast.TripodCompression
+Build completed successfully.
+[118/313] UploadBroadcast.OptimalRelaySeparation
+Build completed successfully.
+[119/313] UploadBroadcast.BlockFlatten
+Build completed successfully.
+[120/313] UploadBroadcast.BlockOptimalRelaySeparation
+Build completed successfully.
+[121/313] UploadBroadcast.MarkedSubspace
+ℹ [1460/1461] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[122/313] UploadBroadcast.ZeroCommonRowNormalForm
+Build completed successfully.
+[123/313] UploadBroadcast.OmniscienceTaskCode
+Build completed successfully.
+[124/313] UploadBroadcast.QuiverReindex
+Build completed successfully.
+[125/313] UploadBroadcast.ReflectionIteration
+Build completed successfully.
+[126/313] UploadBroadcast.E6Reflection
+Build completed successfully.
+[127/313] UploadBroadcast.QuiverTits
+Build completed successfully.
+[128/313] UploadBroadcast.TaskQuiverBridge
+Build completed successfully.
+[129/313] UploadBroadcast.PairResidualAssembly
+Build completed successfully.
+[130/313] UploadBroadcast.FullResidualAssembly
+Build completed successfully.
+[131/313] UploadBroadcast.ResidualPureTransport
+Build completed successfully.
+[132/313] UploadBroadcast.ResidualTaskRanks
+Build completed successfully.
+[133/313] UploadBroadcast.CommonTripodAssembly
+Build completed successfully.
+[134/313] UploadBroadcast.CommonTripodRanks
+Build completed successfully.
+[135/313] UploadBroadcast.ResidualRelayAssembly
+Build completed successfully.
+[136/313] UploadBroadcast.GlobalUploadOptimal
+Build completed successfully.
+[137/313] UploadBroadcast.PassiveProduct
+Build completed successfully.
+[138/313] UploadBroadcast.PassiveComposition
+Build completed successfully.
+[139/313] UploadBroadcast.UploadAttainment
+Build completed successfully.
+[140/313] UploadBroadcast.PairOmniscienceAdapter
+Build completed successfully.
+[141/313] UploadBroadcast.SourceHomVanishing
+Build completed successfully.
+[142/313] UploadBroadcast.ScalarEndReflection
+Build completed successfully.
+[143/313] UploadBroadcast.ScalarEndBaseChange
+Build completed successfully.
+[144/313] UploadBroadcast.TaskComponentBridge
+Build completed successfully.
+[145/313] UploadBroadcast.QuiverHomLinear
+Build completed successfully.
+[146/313] UploadBroadcast.QuiverHomTerminal
+Build completed successfully.
+[147/313] UploadBroadcast.QuiverEuler
+Build completed successfully.
+[148/313] UploadBroadcast.ResonantTripodTransversality
+Build completed successfully.
+[149/313] UploadBroadcast.RegularHomVanishing
+Build completed successfully.
+[150/313] UploadBroadcast.RegularSubobjectDefect
+Build completed successfully.
+[151/313] UploadBroadcast.IntersectionProbes
+Build completed successfully.
+[152/313] UploadBroadcast.NonzeroFamilyRanks
+Build completed successfully.
+[153/313] UploadBroadcast.TwoDimensionalWedge
+Build completed successfully.
+[154/313] UploadBroadcast.OriginalUploadOptimum
+Build completed successfully.
+[155/313] UploadBroadcast.OriginalUploadRanks
+Build completed successfully.
+[156/313] UploadBroadcast.OriginalUploadCanonical
+Build completed successfully.
+[157/313] UploadBroadcast.OriginalUploadChart
+Build completed successfully.
+[158/313] UploadBroadcast.OriginalUploadModel
+Build completed successfully.
+[159/313] UploadBroadcast.PairReductionRanks
+Build completed successfully.
+[160/313] UploadBroadcast.OriginalUploadFormula
+Build completed successfully.
+[161/313] UploadBroadcast.OriginalUploadTheorem
+Build completed successfully.
+[162/313] UploadBroadcast.TripodSubobjectExclusion
+ℹ [1376/1490] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1377/1490] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1465/1490] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[163/313] UploadBroadcast.NonzeroRelationRestrictions
+ℹ [1939/2007] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1940/2007] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1958/2007] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[164/313] UploadBroadcast.NonzeroHyperplaneArithmetic
+ℹ [1939/2008] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1940/2008] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1958/2008] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[165/313] UploadBroadcast.BinaryRelayMenus
+Build completed successfully.
+[166/313] UploadBroadcast.BinaryRelayProfiles
+Build completed successfully.
+[167/313] UploadBroadcast.NonzeroHyperplaneProfiles
+ℹ [1939/2013] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1940/2013] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1958/2013] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[168/313] UploadBroadcast.NonzeroHyperplaneUpload
+ℹ [1938/1994] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1939/1994] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1957/1994] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[169/313] UploadBroadcast.BinaryCodimTwoProfiles
+Build completed successfully.
+[170/313] UploadBroadcast.NonzeroR2Wedge
+ℹ [2004/2014] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2005/2014] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2006/2014] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[171/313] UploadBroadcast.R2ExactProfile
+ℹ [2004/2015] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2005/2015] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2006/2015] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[172/313] UploadBroadcast.NonzeroSameChart
+ℹ [1939/2019] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1940/2019] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1958/2019] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[173/313] UploadBroadcast.BinaryMenuAllocation
+Build completed successfully.
+[174/313] UploadBroadcast.TaskUserPermutation
+Build completed successfully.
+[175/313] UploadBroadcast.R2PermutedMenus
+ℹ [2004/2017] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2005/2017] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2006/2017] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[176/313] UploadBroadcast.NonzeroBinaryMenus
+ℹ [2004/2018] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2005/2018] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2006/2018] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[177/313] UploadBroadcast.BinaryExceptionalRelays
+Build completed successfully.
+[178/313] UploadBroadcast.NonzeroExceptionalRelays
+ℹ [2651/2660] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2652/2660] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2653/2660] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[179/313] UploadBroadcast.LinearUploadRelay
+Build completed successfully.
+[180/313] UploadBroadcast.ResidualRowShapeCore
+Build completed successfully.
+[181/313] UploadBroadcast.ResidualRowShape
+Build completed successfully.
+[182/313] UploadBroadcast.ConditionedResidualBridges
+Build completed successfully.
+[183/313] UploadBroadcast.CanonicalResidualScalar
+Build completed successfully.
+[184/313] UploadBroadcast.ResidualRowPaperEndpoint
+Build completed successfully.
+[185/313] UploadBroadcast.IntegerMenuRealization
+Build completed successfully.
+[186/313] UploadBroadcast.RelayProfileTransport
+Build completed successfully.
+[187/313] UploadBroadcast.QuiverExtensions
+Build completed successfully.
+[188/313] UploadBroadcast.QuiverExactSequence
+Build completed successfully.
+[189/313] UploadBroadcast.GradedRelationSplit
+Build completed successfully.
+[190/313] UploadBroadcast.TripodQuotient
+ℹ [1373/1470] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1375/1470] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1465/1470] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[191/313] UploadBroadcast.SemistableFiltration
+ℹ [1396/1528] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1398/1528] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1482/1528] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[192/313] UploadBroadcast.SemistableMorphisms
+ℹ [1396/1400] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1398/1400] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1482/1564] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[193/313] UploadBroadcast.TaskExactSequence
+ℹ [1396/1484] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1398/1484] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1482/1564] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[194/313] UploadBroadcast.CoboundaryExtensionClosure
+Build completed successfully.
+[195/313] UploadBroadcast.ExtensionGenerated
+Build completed successfully.
+[196/313] UploadBroadcast.ExtensionHomVanishing
+Build completed successfully.
+[197/313] UploadBroadcast.ExtensionBlockSeparation
+Build completed successfully.
+[198/313] UploadBroadcast.FiniteRelayAssembly
+Build completed successfully.
+[199/313] UploadBroadcast.BinaryAugmentedAllocation
+Build completed successfully.
+[200/313] UploadBroadcast.GlobalMenuAssembly
+Build completed successfully.
+[201/313] UploadBroadcast.ResonantFiniteAssembly
+ℹ [2654/2661] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2656/2661] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[202/313] UploadBroadcast.NonzeroFiniteAssembly
+ℹ [2674/2692] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2675/2692] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2676/2692] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[203/313] UploadBroadcast.AugmentedRelayAssembly
+ℹ [2654/2698] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2656/2698] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2681/2698] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[204/313] UploadBroadcast.OmniscienceRelayProfile
+Build completed successfully.
+[205/313] UploadBroadcast.RelayCoordinateTransport
+Build completed successfully.
+[206/313] UploadBroadcast.CycleFiniteAssembly
+Build completed successfully.
+[207/313] UploadBroadcast.RegularExtensionGeneration
+ℹ [1489/1625] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1491/1625] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1506/1625] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[208/313] UploadBroadcast.RegularTripodPair
+ℹ [1373/1460] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1375/1460] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1465/1572] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[209/313] UploadBroadcast.CrossIntersectionClosure
+Build completed successfully.
+[210/313] UploadBroadcast.RegularPositiveCross
+ℹ [1373/1420] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1375/1420] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1465/1558] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[211/313] UploadBroadcast.GeneralTransverseClassification
+ℹ [1373/1431] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1375/1431] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1465/1533] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[212/313] UploadBroadcast.RegularResonantClassification
+ℹ [1373/1501] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1375/1501] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1465/1501] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[213/313] UploadBroadcast.DoubleOperationalScaling
+Build completed successfully.
+[214/313] UploadBroadcast.EndpointArithmetic
+Build completed successfully.
+[215/313] UploadBroadcast.JointRegionEndpoints
+Build completed successfully.
+[216/313] UploadBroadcast.BroadcastFiniteEndpoints
+Build completed successfully.
+[217/313] UploadBroadcast.OmniscienceRelayConstruction
+Build completed successfully.
+[218/313] UploadBroadcast.FiniteComponentCoordinates
+Build completed successfully.
+[219/313] UploadBroadcast.BinaryOperationalTightness
+ℹ [1373/1431] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1375/1431] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[220/313] UploadBroadcast.E6RealRoots
+Build completed successfully.
+[221/313] UploadBroadcast.TensorTaskExtension
+Build completed successfully.
+[222/313] UploadBroadcast.BaseFieldComponents
+ℹ [1373/1490] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1375/1490] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1465/1490] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1984/1987] Replayed UploadBroadcast.ResonantBaseChange
+info: ././././UploadBroadcast/ResonantBaseChange.lean:268:0: 'UploadBroadcast.ResonantBaseChange.spaces_baseChange' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantBaseChange.lean:269:0: 'UploadBroadcast.ResonantBaseChange.source_absolutely_indecomposable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantBaseChange.lean:270:0: 'UploadBroadcast.ResonantBaseChange.jordan_absolutely_indecomposable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully.
+[223/313] UploadBroadcast.GeometricUploadConverse
+Build completed successfully.
+[224/313] UploadBroadcast.ResidualIntrinsicGeometry
+Build completed successfully.
+[225/313] UploadBroadcast.ResidualComponentAdditivity
+Build completed successfully.
+[226/313] UploadBroadcast.ResidualComponentFactors
+Build completed successfully.
+[227/313] UploadBroadcast.ActiveReductionEndpoint
+Build completed successfully.
+[228/313] UploadBroadcast.NonzeroSameChartOptimality
+ℹ [1938/2023] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1939/2023] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1957/2023] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[229/313] UploadBroadcast.NonzeroSameChartMenus
+ℹ [1938/1970] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1939/1970] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1957/1970] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[230/313] UploadBroadcast.NonzeroSameChartPermutations
+ℹ [1938/2059] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1939/2059] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1957/2059] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[231/313] UploadBroadcast.BinaryExactMenus
+ℹ [2004/2019] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2005/2019] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2006/2019] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[232/313] UploadBroadcast.BinaryExactFamilyMenus
+ℹ [2004/2020] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2005/2020] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2006/2020] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[233/313] UploadBroadcast.BinaryMenuOptimality
+ℹ [2003/2034] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2004/2034] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2005/2034] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[234/313] UploadBroadcast.BinaryMenuPermutations
+ℹ [2003/2117] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2004/2117] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2005/2117] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[235/313] UploadBroadcast.FiniteProductCoordinates
+Build completed successfully.
+[236/313] UploadBroadcast.SplitTaskCoordinates
+Build completed successfully.
+[237/313] UploadBroadcast.PassiveBroadcast
+Build completed successfully.
+[238/313] UploadBroadcast.PassiveRelayTransport
+Build completed successfully.
+[239/313] UploadBroadcast.ActiveComponentClassification
+ℹ [1940/2046] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1941/2046] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1959/2046] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[240/313] UploadBroadcast.BoundaryComponentMenus
+ℹ [1939/1953] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1940/1953] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1958/2119] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[241/313] UploadBroadcast.ResidualComponentClassification
+ℹ [1939/1971] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1940/1971] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1962/2100] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[242/313] UploadBroadcast.ResidualProfileCompleteness
+ℹ [1939/2046] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1940/2046] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1958/2046] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[243/313] UploadBroadcast.OriginalJointReduction
+Build completed successfully.
+[244/313] UploadBroadcast.ResidualBackgroundSelection
+Build completed successfully.
+[245/313] UploadBroadcast.PositiveExcessNoEdges
+Build completed successfully.
+[246/313] UploadBroadcast.ClassifiedRelayPartition
+ℹ [1939/2079] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1940/2079] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1958/2079] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[247/313] UploadBroadcast.ActualPairCapacities
+ℹ [2656/2692] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2658/2692] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2682/2692] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[248/313] UploadBroadcast.PermutedNonzeroAssembly
+ℹ [2674/2693] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2675/2693] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2676/2693] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[249/313] UploadBroadcast.OrientationRepairAllocation
+Build completed successfully.
+[250/313] UploadBroadcast.ActualComponentCapacities
+ℹ [2655/2666] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2657/2666] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2682/2742] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[251/313] UploadBroadcast.ClassifiedComponentMenus
+ℹ [2656/2745] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2658/2745] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2682/2745] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[252/313] UploadBroadcast.ClassifiedComponentRanks
+ℹ [2655/2675] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2657/2675] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2681/2742] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[253/313] UploadBroadcast.PhysicalCycleCoordinates
+ℹ [1891/1959] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1893/1959] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[254/313] UploadBroadcast.CycleDirectSumCoordinates
+ℹ [1891/1896] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1893/1896] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[255/313] UploadBroadcast.PhysicalScalarCycleChart
+ℹ [1891/1916] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1893/1916] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[256/313] UploadBroadcast.PhysicalCycleRelay
+ℹ [1891/2027] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1893/2027] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[257/313] UploadBroadcast.ResonantRelationReduction
+ℹ [1374/1468] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1376/1468] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1466/1468] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[258/313] UploadBroadcast.ResonantKernelSupport
+ℹ [1373/1468] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1375/1468] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1466/1486] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[259/313] UploadBroadcast.RegularRelayOptimality
+ℹ [2653/2677] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2655/2677] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2661/2677] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[260/313] UploadBroadcast.RelayCyclePairing
+ℹ [1939/1999] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1940/1999] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1958/1999] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[261/313] UploadBroadcast.OrientedRelayPairing
+ℹ [1934/1941] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1940/2079] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1958/2079] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[262/313] UploadBroadcast.FiniteCycleDeficits
+ℹ [1891/2022] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1893/2022] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[263/313] UploadBroadcast.OmniscienceCycleDeficits
+ℹ [1891/1903] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1893/1903] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[264/313] UploadBroadcast.OrientationSlackCounts
+ℹ [1891/1959] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1893/1959] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[265/313] UploadBroadcast.RepairedGlobalMenuAssembly
+ℹ [2654/2700] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2656/2700] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2681/2700] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[266/313] UploadBroadcast.ClassifiedResidualRelaySelection
+ℹ [2655/2742] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2657/2742] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2681/2742] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[267/313] UploadBroadcast.ResidualBackgroundSelectionTheorem
+ℹ [2729/2820] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2730/2820] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2731/2820] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[268/313] UploadBroadcast.OmniscienceResidualAdditivity
+Build completed successfully.
+[269/313] UploadBroadcast.CanonicalSelectionAssembly
+Build completed successfully.
+[270/313] UploadBroadcast.SourceMainTheorem
+ℹ [2728/2747] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2729/2747] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2730/2747] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[271/313] UploadBroadcast.IntrinsicUploadRanks
+Build completed successfully.
+[272/313] UploadBroadcast.IntrinsicUploadSelections
+Build completed successfully.
+[273/313] UploadBroadcast.IntrinsicUploadReduction
+Build completed successfully.
+[274/313] UploadBroadcast.IntrinsicUploadInvariance
+Build completed successfully.
+[275/313] UploadBroadcast.MatrixTaskFrontend
+Build completed successfully.
+[276/313] UploadBroadcast.MatrixTaskEndpoints
+Build completed successfully.
+[277/313] UploadBroadcast.BinaryAdditionalMenuPermutations
+ℹ [2003/2153] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2004/2153] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2005/2153] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[278/313] UploadBroadcast.RegularExactMenus
+ℹ [2653/2701] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2655/2701] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2661/2701] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[279/313] UploadBroadcast.ResidualProfiles
+ℹ [1939/1960] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1940/1960] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1958/2108] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[280/313] UploadBroadcast.CitedBinaryFieldNecessity
+Build completed successfully.
+[281/313] UploadBroadcast.CycleUploadGeometry
+ℹ [1890/1911] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1892/1911] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[282/313] UploadBroadcast.CycleUploadOptimality
+ℹ [1887/1896] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1892/2069] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[283/313] UploadBroadcast.CycleSourceEndpoint
+ℹ [1890/1921] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1892/1921] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2716/2766] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[284/313] UploadBroadcast.BlockGraphDirectSum
+Build completed successfully.
+[285/313] UploadBroadcast.ActualBlockGraph
+Build completed successfully.
+[286/313] UploadBroadcast.IntrinsicUploadDirectSums
+Build completed successfully.
+[287/313] UploadBroadcast.UploadParameterDirectSum
+Build completed successfully.
+[288/313] UploadBroadcast.OppositeDemandExample
+Build completed successfully.
+[289/313] UploadBroadcast.FiniteSubspaceCertificate
+Build completed successfully.
+[290/313] UploadBroadcast.CitedEntropyData
+Build completed successfully.
+[291/313] UploadBroadcast.CitedEntropyKernelCertificate
+Build completed successfully.
+[292/313] UploadBroadcast.CitedEntropyShannon
+Build completed successfully.
+[293/313] UploadBroadcast.CitedEntropyCertificates
+Build completed successfully.
+[294/313] UploadBroadcast.CitedEntropyProfile
+Build completed successfully.
+[295/313] UploadBroadcast.CitedEntropyModel
+Build completed successfully.
+[296/313] UploadBroadcast.CitedEntropyCounterexample
+Build completed successfully.
+[297/313] UploadBroadcast.ResonantUploadSpecializations
+ℹ [2728/2743] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2729/2743] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2730/2743] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[298/313] UploadBroadcast.LiteralThetaBlocks
+Build completed successfully.
+[299/313] UploadBroadcast.LiteralMatrixCertificates
+Build completed successfully.
+[300/313] UploadBroadcast.LiteralPrimitiveT1_2
+Build completed successfully.
+[301/313] UploadBroadcast.LiteralPrimitiveT1_3
+Build completed successfully.
+[302/313] UploadBroadcast.LiteralPrimitiveT2_3
+Build completed successfully.
+[303/313] UploadBroadcast.LiteralPrimitiveT3_2
+Build completed successfully.
+[304/313] UploadBroadcast.LiteralPrimitiveR1_1
+Build completed successfully.
+[305/313] UploadBroadcast.LiteralPrimitiveR2
+Build completed successfully.
+[306/313] UploadBroadcast.LiteralPrimitiveO_1
+Build completed successfully.
+[307/313] UploadBroadcast.LiteralPrimitiveO_2
+Build completed successfully.
+[308/313] UploadBroadcast.LiteralPrimitiveO_3
+Build completed successfully.
+[309/313] UploadBroadcast.LiteralPrimitiveH_1
+Build completed successfully.
+[310/313] UploadBroadcast.LiteralPrimitiveTables
+Build completed successfully.
+[311/313] UploadBroadcast
+ℹ [2659/2666] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2664/2892] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2665/2892] Replayed UploadBroadcast.ResonantBaseChange
+info: ././././UploadBroadcast/ResonantBaseChange.lean:268:0: 'UploadBroadcast.ResonantBaseChange.spaces_baseChange' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantBaseChange.lean:269:0: 'UploadBroadcast.ResonantBaseChange.source_absolutely_indecomposable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantBaseChange.lean:270:0: 'UploadBroadcast.ResonantBaseChange.jordan_absolutely_indecomposable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2678/2892] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[312/313] UploadBroadcast.OmniscienceOperational
+Build completed successfully.
+[313/313] UploadBroadcast.ResonantSeedEmbedding
+ℹ [1374/1487] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1376/1487] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1466/1487] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+Axiom audit passed for 7982 project theorems.
+Complete reachable axiom set: [propext, Quot.sound, Classical.choice]
+Axiom audit passed for 11018 safe declarations (8398 theorems) from 313 project modules.
+Included 504 private or out-of-namespace declarations.
+Inventoried 19217 unsafe compiler implementation declarations separately.
+Imported-object trust level: 1025; this audit is not an independent object recheck.
+Complete reachable axiom set: [propext, Quot.sound, Classical.choice]
+Every library module compiled; theorem and module-origin safe-declaration axiom audits passed.

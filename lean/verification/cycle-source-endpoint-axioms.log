@@ -1,0 +1,15 @@
+'UploadBroadcast.CycleUploadOptimality.task_active' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.CycleUploadOptimality.canonical_active' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.CycleUploadOptimality.canonical_reverse_active' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.CycleUploadOptimality.canonical_positive_optimal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.CycleUploadOptimality.canonical_reverse_optimal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.CycleSourceEndpoint.positive_directSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.CycleSourceEndpoint.negative_directSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Demand-cycle source audit passed for 4632 imported project theorems.
+Complete reachable axiom set: [propext, Quot.sound, Classical.choice]

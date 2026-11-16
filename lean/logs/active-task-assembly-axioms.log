@@ -1,0 +1,32 @@
+'UploadBroadcast.Task.exists_quotientRetraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.commonKnown_achievableAt_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.commonKnown_costRegion_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.coordinate_achievableAt_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.activePairRank_eq_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.exists_commonQuotient_normalForm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.task_active_pair_correction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.task_simultaneous_pair_signal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.task_simultaneous_pair_shear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.exists_commonQuotient_activePairSelection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.Task.ActivePairSelection.simultaneous_separation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.Task.ActivePairSelection.simultaneous_achievableAt_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.Task.ActivePairSelection.active_factor_finrank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.Task.idempotentPassiveRetraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.pureDemandGraph_characterization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.ActivePairSelection.pairReduced_achievableAt_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.Task.pairReduction_achievableAt_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.pairReduction_costRegion_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.selectedPairs_activeFactor_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.intrinsicActivePairRank_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.exists_unusedPrivateProjection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.exists_unusedPrivateReduction' depends on axioms: [propext, Classical.choice, Quot.sound]

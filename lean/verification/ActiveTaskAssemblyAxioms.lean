@@ -1,0 +1,23 @@
+import UploadBroadcast.ReducedTask
+#print axioms UploadBroadcast.Task.exists_quotientRetraction
+#print axioms UploadBroadcast.Task.commonKnown_achievableAt_eq
+#print axioms UploadBroadcast.Task.commonKnown_costRegion_eq
+#print axioms UploadBroadcast.Task.coordinate_achievableAt_eq
+#print axioms UploadBroadcast.Task.activePairRank_eq_quotient
+#print axioms UploadBroadcast.Task.exists_commonQuotient_normalForm
+#print axioms UploadBroadcast.task_active_pair_correction
+#print axioms UploadBroadcast.task_simultaneous_pair_signal
+#print axioms UploadBroadcast.task_simultaneous_pair_shear
+#print axioms UploadBroadcast.Task.exists_commonQuotient_activePairSelection
+#print axioms UploadBroadcast.Task.ActivePairSelection.simultaneous_separation
+#print axioms UploadBroadcast.Task.ActivePairSelection.simultaneous_achievableAt_eq
+#print axioms UploadBroadcast.Task.ActivePairSelection.active_factor_finrank
+#print axioms UploadBroadcast.Task.idempotentPassiveRetraction
+#print axioms UploadBroadcast.pureDemandGraph_characterization
+#print axioms UploadBroadcast.Task.ActivePairSelection.pairReduced_achievableAt_eq
+#print axioms UploadBroadcast.Task.pairReduction_achievableAt_eq
+#print axioms UploadBroadcast.Task.pairReduction_costRegion_eq
+#print axioms UploadBroadcast.Task.selectedPairs_activeFactor_finrank
+#print axioms UploadBroadcast.Task.intrinsicActivePairRank_quotient
+#print axioms UploadBroadcast.Task.exists_unusedPrivateProjection
+#print axioms UploadBroadcast.Task.exists_unusedPrivateReduction

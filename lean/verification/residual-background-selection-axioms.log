@@ -1,0 +1,6 @@
+'UploadBroadcast.ResidualBackgroundSelectionTheorem.exists_optimal_relay' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualBackgroundSelectionTheorem.residual_background_selection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

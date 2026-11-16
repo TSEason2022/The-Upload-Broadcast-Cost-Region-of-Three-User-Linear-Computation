@@ -1,0 +1,18 @@
+import UploadBroadcast.SignalBridge
+import UploadBroadcast.ResidualUpload
+import UploadBroadcast.ResidualRowCompletion
+import UploadBroadcast.ResidualConverse
+import UploadBroadcast.ResidualOperational
+#print axioms UploadBroadcast.SignalBridge.all_tripod_bridges
+#print axioms UploadBroadcast.SignalBridge.private_slice_inverse
+#print axioms UploadBroadcast.SignalBridge.exists_bridge_decoder
+#print axioms UploadBroadcast.ResidualUpload.gamma_entropy
+#print axioms UploadBroadcast.ResidualUpload.side_observations_pairwise_independent
+#print axioms UploadBroadcast.ResidualUpload.exists_local_linear_upload_code
+#print axioms UploadBroadcast.ResidualRowCompletion.generated_signals_row_completion
+#print axioms UploadBroadcast.ResidualConverse.common_retained_bound_finite
+#print axioms UploadBroadcast.ResidualConverse.code_retained_rank_bound_ordered
+#print axioms UploadBroadcast.ResidualConverse.explicit_residual_upload_lower_bound
+#print axioms UploadBroadcast.ResidualConverse.explicit_residual_retained_bound
+
+#print axioms UploadBroadcast.ResidualOperational.finiteCode_of_local_relay

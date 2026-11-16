@@ -1,0 +1,172 @@
+UploadBroadcast.ResidualComponentAdditivity.ActiveResidual.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K]
+  [AddCommGroup F] [Module K F] (T : UploadBroadcast.Task K F) : Prop
+UploadBroadcast.ResidualComponentAdditivity.canonical_rows_fully_active.{u_1, u_5, u_6, u_7, u_8} {K : Type u_1}
+  [Field K] {P₁ : Type u_5} {P₂ : Type u_6} {P₃ : Type u_7} {D : Type u_8} [AddCommGroup P₁] [Module K P₁]
+  [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D]
+  (T : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : T.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : T.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : T.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D)
+  (h : UploadBroadcast.ResidualComponentAdditivity.ActiveResidual T)
+  (g : UploadBroadcast.ResidualTaskAssembly.DemandData T) : g.activeRows = ⊤
+UploadBroadcast.ResidualComponentAdditivity.finalResidual_active.{u_1, u_5, u_6, u_7, u_8} {K : Type u_1} [Field K]
+  {P₁ : Type u_5} {P₂ : Type u_6} {P₃ : Type u_7} {D : Type u_8} [AddCommGroup P₁] [Module K P₁] [AddCommGroup P₂]
+  [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D]
+  (T : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : T.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : T.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : T.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D) :
+  UploadBroadcast.ResidualComponentAdditivity.ActiveResidual
+    (UploadBroadcast.ResidualTaskAssembly.finalResidual T h₀ h₁ h₂)
+UploadBroadcast.ResidualComponentAdditivity.finalResidual_uploadValue.{u_1, u_5, u_6, u_7, u_8} {K : Type u_1} [Field K]
+  {P₁ : Type u_5} {P₂ : Type u_6} {P₃ : Type u_7} {D : Type u_8} [AddCommGroup P₁] [Module K P₁] [AddCommGroup P₂]
+  [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D] [FiniteDimensional K P₁]
+  [FiniteDimensional K P₂] [FiniteDimensional K P₃] [FiniteDimensional K D]
+  (T : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : T.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : T.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : T.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D) :
+  UploadBroadcast.ResidualComponentAdditivity.uploadValue
+      (UploadBroadcast.ResidualTaskAssembly.finalResidual T h₀ h₁ h₂) =
+    ↑(UploadBroadcast.ResidualTaskAssembly.privateDimension T) +
+      ↑(UploadBroadcast.ResidualTaskAssembly.tripodDimension T h₀ h₁ h₂)
+UploadBroadcast.ResidualComponentAdditivity.residual_decomposition.{u_1, u_2, u_4, u_5} {K : Type u_1} {F : Type u_2}
+  {I : Type u_4} [Field K] [AddCommGroup F] [Module K F] [Finite K] [FiniteDimensional K F] {G : I → Type u_5}
+  [Fintype I] [(i : I) → AddCommGroup (G i)] [(i : I) → Module K (G i)] [∀ (i : I), FiniteDimensional K (G i)]
+  (T : UploadBroadcast.Task K F) (S : (i : I) → UploadBroadcast.Task K (G i)) (e : ((i : I) → G i) ≃ₗ[K] F)
+  (he : UploadBroadcast.Profile.mapTask e (UploadBroadcast.FiniteRelayAssembly.task S) = T)
+  (h : UploadBroadcast.ResidualComponentAdditivity.ActiveResidual T) :
+  (∀ (i : I), UploadBroadcast.ResidualComponentAdditivity.ActiveResidual (S i)) ∧
+    T.uploadOptimum = UploadBroadcast.ResidualComponentAdditivity.uploadValue T ∧
+      (∀ (i : I), (S i).uploadOptimum = UploadBroadcast.ResidualComponentAdditivity.uploadValue (S i)) ∧
+        T.uploadOptimum = ∑ i, (S i).uploadOptimum
+UploadBroadcast.ResidualComponentAdditivity.exists_indecomposable_residual_decomposition.{u_1, u_2} {K : Type u_1}
+  {F : Type u_2} [Field K] [AddCommGroup F] [Module K F] [Finite K] [FiniteDimensional K F]
+  (T : UploadBroadcast.Task K F) (h : UploadBroadcast.ResidualComponentAdditivity.ActiveResidual T) :
+  ∃ n P e,
+    UploadBroadcast.Profile.mapTask e
+          (UploadBroadcast.FiniteRelayAssembly.task (UploadBroadcast.FiniteComponentCoordinates.componentTask T P e)) =
+        T ∧
+      (∀ (i : Fin n),
+          UploadBroadcast.TaskDecomposition.Indecomposable
+            (UploadBroadcast.EdgeExtraction.configuration
+                (UploadBroadcast.FiniteComponentCoordinates.componentTask T P e i)).spaces
+            ⊤) ∧
+        (∀ (i : Fin n) (j : UploadBroadcast.Three),
+            (UploadBroadcast.FiniteComponentCoordinates.componentTask T P e i).A j =
+              Submodule.comap (P i).subtype (T.A j)) ∧
+          (∀ (i : Fin n) (j : UploadBroadcast.Three),
+              (UploadBroadcast.FiniteComponentCoordinates.componentTask T P e i).U j =
+                Submodule.comap (P i).subtype (T.U j)) ∧
+            (∀ (i : Fin n),
+                UploadBroadcast.ResidualComponentAdditivity.ActiveResidual
+                  (UploadBroadcast.FiniteComponentCoordinates.componentTask T P e i)) ∧
+              T.uploadOptimum = UploadBroadcast.ResidualComponentAdditivity.uploadValue T ∧
+                (∀ (i : Fin n),
+                    (UploadBroadcast.FiniteComponentCoordinates.componentTask T P e i).uploadOptimum =
+                      UploadBroadcast.ResidualComponentAdditivity.uploadValue
+                        (UploadBroadcast.FiniteComponentCoordinates.componentTask T P e i)) ∧
+                  T.uploadOptimum =
+                      ∑ i, (UploadBroadcast.FiniteComponentCoordinates.componentTask T P e i).uploadOptimum ∧
+                    ∑ i, Module.finrank K ↥(P i) = Module.finrank K F
+UploadBroadcast.ResidualComponentAdditivity.source_residual_decomposition.{u_1, u_2} {K : Type u_1} {F : Type u_2}
+  [Field K] [AddCommGroup F] [Module K F] [Finite K] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  ∃ n P e,
+    UploadBroadcast.Profile.mapTask e
+          (UploadBroadcast.FiniteRelayAssembly.task
+            (UploadBroadcast.FiniteComponentCoordinates.componentTask T.pairFreeChart.componentResidual P e)) =
+        T.pairFreeChart.componentResidual ∧
+      (∀ (i : Fin n),
+          UploadBroadcast.TaskDecomposition.Indecomposable
+            (UploadBroadcast.EdgeExtraction.configuration
+                (UploadBroadcast.FiniteComponentCoordinates.componentTask T.pairFreeChart.componentResidual P e
+                  i)).spaces
+            ⊤) ∧
+        (∀ (i : Fin n) (j : UploadBroadcast.Three),
+            (UploadBroadcast.FiniteComponentCoordinates.componentTask T.pairFreeChart.componentResidual P e i).A j =
+              Submodule.comap (P i).subtype (T.pairFreeChart.componentResidual.A j)) ∧
+          (∀ (i : Fin n) (j : UploadBroadcast.Three),
+              (UploadBroadcast.FiniteComponentCoordinates.componentTask T.pairFreeChart.componentResidual P e i).U j =
+                Submodule.comap (P i).subtype (T.pairFreeChart.componentResidual.U j)) ∧
+            (∀ (i : Fin n),
+                UploadBroadcast.ResidualComponentAdditivity.ActiveResidual
+                  (UploadBroadcast.FiniteComponentCoordinates.componentTask T.pairFreeChart.componentResidual P e i)) ∧
+              T.pairFreeChart.componentResidual.uploadOptimum =
+                  UploadBroadcast.ResidualComponentAdditivity.uploadValue T.pairFreeChart.componentResidual ∧
+                (∀ (i : Fin n),
+                    (UploadBroadcast.FiniteComponentCoordinates.componentTask T.pairFreeChart.componentResidual P e
+                          i).uploadOptimum =
+                      UploadBroadcast.ResidualComponentAdditivity.uploadValue
+                        (UploadBroadcast.FiniteComponentCoordinates.componentTask T.pairFreeChart.componentResidual P e
+                          i)) ∧
+                  T.pairFreeChart.componentResidual.uploadOptimum =
+                      ∑ i,
+                        (UploadBroadcast.FiniteComponentCoordinates.componentTask T.pairFreeChart.componentResidual P e
+                            i).uploadOptimum ∧
+                    ∑ i, Module.finrank K ↥(P i) =
+                      Module.finrank K
+                        (UploadBroadcast.ResidualUpload.Ambient
+                          ↥(UploadBroadcast.ResidualTaskAssembly.used₁ T.pairFreeChart.toTask)
+                          ↥(UploadBroadcast.ResidualTaskAssembly.used₂ T.pairFreeChart.toTask)
+                          ↥(UploadBroadcast.ResidualTaskAssembly.used₃ T.pairFreeChart.toTask)
+                          ↥(UploadBroadcast.ResidualTaskAssembly.finalDemandData T.pairFreeChart.toTask ⋯ ⋯
+                                ⋯).activeRows)
+UploadBroadcast.ResidualComponentAdditivity.source_residual_upload_formula.{u_1, u_2} {K : Type u_1} {F : Type u_2}
+  [Field K] [AddCommGroup F] [Module K F] [Finite K] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  T.pairFreeChart.componentResidual.uploadOptimum =
+    ↑(UploadBroadcast.ResidualTaskAssembly.privateDimension T.pairFreeChart.toTask) +
+      ↑(UploadBroadcast.ResidualTaskAssembly.tripodDimension T.pairFreeChart.toTask ⋯ ⋯ ⋯)
+UploadBroadcast.ResidualComponentAdditivity.zero_excess_full_relay.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] [Finite K] (T : UploadBroadcast.Task K F)
+  (h : UploadBroadcast.ResidualComponentAdditivity.ActiveResidual T)
+  (hz : Module.finrank K ↥(T.A 0) + Module.finrank K ↥(T.A 1) + Module.finrank K ↥(T.A 2) = Module.finrank K F) :
+  T.uploadOptimum = ↑(Module.finrank K F) ∧
+    T.LocallyGenerated ⊤ ∧
+      T.RelayFeasible ⊤ ∧
+        ∀ (r : UploadBroadcast.Profile.Index),
+          UploadBroadcast.Profile.entry (T.inducedRelay ⊤ ⋯) r = UploadBroadcast.Profile.entry T r
+'UploadBroadcast.ResidualComponentAdditivity.ActiveResidual.map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.ActiveResidual.component' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.canonical_rows_fully_active' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.finalResidual_active' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.code_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.exists_optimal_relay' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.minimum_upload' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.scalar_upload_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.minimum_upload_additive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.exists_indecomposable_residual_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.source_residual_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.source_residual_upload_formula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.zero_excess_full_relay' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.zero_excess_side_complement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.pair_ranks_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.exists_nontrivial_demand' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.exists_nonfull_signal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

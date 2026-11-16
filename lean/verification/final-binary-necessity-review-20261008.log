@@ -1,0 +1,30 @@
+UploadBroadcast.CitedBinaryFieldNecessity.signal_from_demands : ∀ (i : UploadBroadcast.Three),
+  UploadBroadcast.CitedBinaryFieldNecessity.task.A i ⊔
+      Submodule.span UploadBroadcast.CitedBinaryFieldNecessity.K {UploadBroadcast.CitedBinaryFieldNecessity.demand i} =
+    UploadBroadcast.CitedBinaryFieldNecessity.task.U i
+UploadBroadcast.CitedBinaryFieldNecessity.broadcastOptimum_eq_one : UploadBroadcast.broadcastOptimum
+    UploadBroadcast.CitedBinaryFieldNecessity.task.A UploadBroadcast.CitedBinaryFieldNecessity.task.U =
+  1
+UploadBroadcast.CitedBinaryFieldNecessity.broadcast_source_injective : ∀ {S : Type u_1}
+  (c :
+    UploadBroadcast.BlockBroadcastCode UploadBroadcast.CitedBinaryFieldNecessity.task.A
+      UploadBroadcast.CitedBinaryFieldNecessity.task.U 1 S),
+  Function.Injective fun a => c.encode (UploadBroadcast.CitedBinaryFieldNecessity.valueSource a)
+UploadBroadcast.CitedBinaryFieldNecessity.scalar_broadcast_card : ∀ {S : Type u_1} [inst : Finite S]
+  (c :
+    UploadBroadcast.BlockBroadcastCode UploadBroadcast.CitedBinaryFieldNecessity.task.A
+      UploadBroadcast.CitedBinaryFieldNecessity.task.U 1 S),
+  4 ≤ Nat.card ↑(Set.range c.encode)
+UploadBroadcast.CitedBinaryFieldNecessity.scalar_cost_ge_two : ∀ {S : Type u_1} [inst : Finite S]
+  (c :
+    UploadBroadcast.BlockBroadcastCode UploadBroadcast.CitedBinaryFieldNecessity.task.A
+      UploadBroadcast.CitedBinaryFieldNecessity.task.U 1 S),
+  2 ≤ c.cost
+UploadBroadcast.CitedBinaryFieldNecessity.scalar_cost_gt_ceiling : ∀ {S : Type u_1} [inst : Finite S]
+  (c :
+    UploadBroadcast.BlockBroadcastCode UploadBroadcast.CitedBinaryFieldNecessity.task.A
+      UploadBroadcast.CitedBinaryFieldNecessity.task.U 1 S),
+  ↑⌈UploadBroadcast.broadcastOptimum UploadBroadcast.CitedBinaryFieldNecessity.task.A
+          UploadBroadcast.CitedBinaryFieldNecessity.task.U⌉ <
+    c.cost
+Independent binary necessity audit passed for 6 roots; axioms [propext, Quot.sound, Classical.choice]

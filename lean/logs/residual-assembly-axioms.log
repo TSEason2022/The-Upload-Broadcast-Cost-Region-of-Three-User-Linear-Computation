@@ -1,0 +1,31 @@
+'UploadBroadcast.Task.pairReduction_pairKnown_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.ActivePairSelection.pairResidual_mapTask' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.Task.pair_canonical_factorization_achievableAt_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualTaskAssembly.canonicalReduction_achievableAt_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualTaskAssembly.canonicalReduction_fully_used' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualTaskAssembly.DemandData.signalBridge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualTaskAssembly.DemandData.activeRowReduction_tripod_bridge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualTaskAssembly.DemandData.activeRows_finrank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualTaskAssembly.DemandData.noncommon_activeRows_finrank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualTaskAssembly.DemandData.mixedRows_stacked_rank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualTaskAssembly.canonicalReduction_common_pure_eq_bot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

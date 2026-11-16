@@ -1,0 +1,31 @@
+'UploadBroadcast.BinaryMenuPermutations.original_exact_optimal_permuted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.BinaryMenuOptimality.charge_le_actual_margin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.BinaryMenuOptimality.r2_charge_le_actual_margin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.BinaryAdditionalMenuPermutations.additional_optimal_permuted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.BinaryAdditionalMenuPermutations.additional_fits_permuted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.BinaryAdditionalMenuPermutations.r2_optimal_permuted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.BinaryAdditionalMenuPermutations.r2_fits_permuted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.BinaryAdditionalMenuPermutations.exceptions_permuted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.BoundaryComponentMenus.T1_all_permuted_choices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.RegularExactMenus.from_actual_regular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.ResidualProfiles.profiles' depends on axioms: [propext, Classical.choice, Quot.sound]
+Local binary source audit passed for 4852 imported project theorems.
+Complete reachable axiom set: [propext, Quot.sound, Classical.choice]

@@ -1,0 +1,19 @@
+Final literal primitive build summary, 2026-10-08 UTC.
+Each mathematical module was freshly compiled by lake env lean with kernel checking enabled.
+PASS UploadBroadcast.LiteralMatrixCertificates
+PASS UploadBroadcast.LiteralPrimitiveT1_2
+PASS UploadBroadcast.LiteralPrimitiveT1_3
+PASS UploadBroadcast.LiteralPrimitiveT2_3
+PASS UploadBroadcast.LiteralPrimitiveT3_2
+PASS UploadBroadcast.LiteralPrimitiveR1_1
+PASS UploadBroadcast.LiteralPrimitiveR2 (final source includes both row annihilations and actual wedge determinant)
+PASS UploadBroadcast.LiteralPrimitiveO_1
+PASS UploadBroadcast.LiteralPrimitiveO_2
+PASS UploadBroadcast.LiteralPrimitiveO_3
+PASS UploadBroadcast.LiteralPrimitiveH_1
+All final module compilations exited 0, with no warnings or errors.
+PASS UploadBroadcast.LiteralPrimitiveTables umbrella
+PASS scripts/AuditLiteralPrimitiveTables.lean: 1807 safe declarations; only propext, Quot.sound, Classical.choice
+PASS scripts/generate_literal_primitive_certificates.py --check
+PASS scripts/audit_literal_primitive_tables.py
+Frozen TeX SHA-256 unchanged: b1c77e1cf7f7245fc8781b362d69ca06ba9b42448bc6d90ad65ddf628d4b2682

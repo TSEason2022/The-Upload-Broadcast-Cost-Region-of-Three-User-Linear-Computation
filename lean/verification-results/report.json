@@ -1,0 +1,94 @@
+{
+  "build_policy": {
+    "final_gate_lean_threads": 1,
+    "maximum_new_project_compilers": 2,
+    "pair_phase_lean_threads": 2,
+    "project_modules": "same-campaign dependency-ready pairs; final unchanged sequential validation"
+  },
+  "build_policy_history": [
+    {
+      "lean_threads": 1,
+      "project_modules": "topological-sequential"
+    },
+    {
+      "coordinators": 1,
+      "dependency_preflight": "lake --no-build --wfail build +A:deps +B:deps",
+      "final_validation": "All seven original gates, with the unchanged sequential all-module script and one Lean thread",
+      "lean_threads_per_compiler": 2,
+      "maximum_new_project_modules_per_batch": 2
+    }
+  ],
+  "checks": [
+    {
+      "command": "python3 scripts/verify_toolchain.py --output .verification-results/toolchain.json",
+      "duration_seconds": 0.46,
+      "exit_code": 0,
+      "log": "parallel-toolchain.log",
+      "name": "toolchain"
+    },
+    {
+      "command": "python3 scripts/verify_dependency_pins.py --output .verification-results/dependency-pins.json",
+      "duration_seconds": 4.787,
+      "exit_code": 0,
+      "log": "parallel-dependency-pins.log",
+      "name": "dependency-pins"
+    },
+    {
+      "command": "python3 scripts/test_release_tools.py && python3 scripts/test_audit_source.py && python3 scripts/test_package_release.py",
+      "duration_seconds": 3.372,
+      "exit_code": 0,
+      "log": "parallel-release-regressions.log",
+      "name": "release-regressions"
+    },
+    {
+      "command": "python3 scripts/audit_source.py && python3 scripts/check_coverage.py",
+      "duration_seconds": 2.794,
+      "exit_code": 0,
+      "log": "parallel-source-preflight.log",
+      "name": "source-preflight"
+    },
+    {
+      "command": "python3 scripts/check_all_modules.py",
+      "duration_seconds": 741.895,
+      "exit_code": 0,
+      "log": "parallel-all-modules.log",
+      "name": "all-modules"
+    },
+    {
+      "command": "bash scripts/check.sh",
+      "duration_seconds": 140.454,
+      "exit_code": 0,
+      "log": "parallel-integrated-check.log",
+      "name": "integrated-check"
+    },
+    {
+      "command": "python3 scripts/check_coverage.py",
+      "duration_seconds": 0.075,
+      "exit_code": 0,
+      "log": "parallel-complete-coverage.log",
+      "name": "complete-coverage"
+    }
+  ],
+  "continuation_provenance": "continuation-provenance.json",
+  "dependency_cache_copy_method": "cp-reflink-auto",
+  "dependency_compiled_cache_reused": true,
+  "externally_built_project_artifacts_imported": false,
+  "finished_utc": "2026-10-08T17:03:21.154390+00:00",
+  "fresh_campaign_artifacts_retained_on_continuation": 79,
+  "interrupted_campaign": true,
+  "passed": true,
+  "platform": {
+    "architecture": "x86_64",
+    "logical_cpus": 9,
+    "python": "3.12.14",
+    "system": "Linux"
+  },
+  "project_compiled_artifacts_reused": false,
+  "project_compiled_artifacts_reused_meaning": "No project artifacts from another build campaign were imported. Module dependencies and this recovery reuse only objects freshly built within this same unchanged-source campaign.",
+  "project_source_sha256": "6e7af788509fbf182f2830754a8d611c088140f273af1d8a7b16b031ff83a8cd",
+  "scheduling_change_provenance": "parallel-scheduling-provenance.json",
+  "schema_version": 1,
+  "source_unchanged_during_checks": true,
+  "started_utc": "2026-10-08T14:30:13.216619+00:00",
+  "whole_paper_release_gate_passed": true
+}

@@ -1,0 +1,18 @@
+import UploadBroadcast.ActiveReductionEndpoint
+
+#check UploadBroadcast.Task.active_pair_source_geometry
+#check UploadBroadcast.Task.active_reduction_source
+#check UploadBroadcast.Task.activeReduction_achievableAt_eq
+#check UploadBroadcast.Task.activeReduction_costRegion_eq
+#check UploadBroadcast.Task.PrivateTripodChart.activeResidual_signal_quotients
+#check UploadBroadcast.Task.PrivateTripodChart.activeResidual_rows_finrank
+#print axioms UploadBroadcast.Task.active_pair_source_geometry
+#print axioms UploadBroadcast.Task.active_reduction_source
+#print axioms UploadBroadcast.Task.activeReduction_achievableAt_eq
+#print axioms UploadBroadcast.Task.activeReduction_costRegion_eq
+#print axioms UploadBroadcast.Task.PrivateTripodChart.activeResidual_fully_used
+#print axioms UploadBroadcast.Task.PrivateTripodChart.activeResidual_sides
+#print axioms UploadBroadcast.Task.PrivateTripodChart.activeResidual_signal_quotients
+#print axioms UploadBroadcast.Task.PrivateTripodChart.activeResidual_rows_finrank
+#print axioms UploadBroadcast.Task.intrinsicActivePairRank_quotient
+#print axioms UploadBroadcast.Task.pairKnown_eq_pair

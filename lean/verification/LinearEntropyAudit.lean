@@ -1,0 +1,14 @@
+import UploadBroadcast.LinearEntropy
+#print axioms UploadBroadcast.linear_isUniform
+#print axioms UploadBroadcast.linear_entropy
+#print axioms UploadBroadcast.linear_condEntropy
+#print axioms UploadBroadcast.linear_condMutualInfo
+#print axioms UploadBroadcast.sourceColumns_observe
+#print axioms UploadBroadcast.LinearObservation.sourceColumns_map
+#print axioms UploadBroadcast.LinearObservation.observe_identDistrib
+#print axioms UploadBroadcast.LinearObservation.entropy_rank
+#print axioms UploadBroadcast.LinearObservation.condEntropy_rank
+#print axioms UploadBroadcast.LinearObservation.mutualInfo_rank
+#print axioms UploadBroadcast.LinearObservation.model_entropy_rank
+#print axioms UploadBroadcast.LinearObservation.model_condEntropy_rank
+#print axioms UploadBroadcast.LinearObservation.model_mutualInfo_rank

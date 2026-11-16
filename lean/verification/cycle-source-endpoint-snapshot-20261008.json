@@ -1,0 +1,26 @@
+{
+  "timestamp_utc": "2026-10-08T11:34:24.336380+00:00",
+  "source_sha256": "b1c77e1cf7f7245fc8781b362d69ca06ba9b42448bc6d90ad65ddf628d4b2682",
+  "claim": "thm:endpoint",
+  "status": "reviewed_complete",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "imported_project_theorem_roots": 4632,
+  "files": {
+    "UploadBroadcast/CycleUploadGeometry.lean": "fb8878eb9bc8b817ac96a36d7de0ed60a29e61730acc0cc8440fd8c30fb59f77",
+    "UploadBroadcast/CycleUploadOptimality.lean": "d16e5e5ad032068ae635c8722811ede909fc1c992eef0402693ac7ad7efcc895",
+    "UploadBroadcast/CycleSourceEndpoint.lean": "b5d403a6372122b817453ea471b37753e7c089d05305bc14b5c60ef443e56754",
+    "UploadBroadcast/CycleDirectSumCoordinates.lean": "30f8b5017150cbba15370a69607a237b45d7346ef0a86b98a8d2042b8048a97d",
+    "verification/CycleSourceEndpointAudit.lean": "1b07fb51a11424b9afa9a42a192cb8b2af630da5041dee94879681099690dd95"
+  },
+  "build_logs": [
+    "logs/cycle-upload-geometry-build.log",
+    "logs/cycle-upload-optimality-build.log",
+    "logs/cycle-source-endpoint-build.log"
+  ],
+  "axiom_audit": "verification/cycle-source-endpoint-axioms.log",
+  "independent_review": "verification/FinalCycleReview20261008.lean"
+}

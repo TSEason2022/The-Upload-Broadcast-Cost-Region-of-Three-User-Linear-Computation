@@ -1,0 +1,11 @@
+'UploadBroadcast.E6RealRoots.nonnegative_realRoot_iff_norm_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.TaskDecomposition.Task.tensorRepIso' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.TaskDecomposition.Task.source_base_field_components' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.TaskDecomposition.Task.component_base_field_components' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Original-field source endpoint strict axiom audit passed: [propext, Quot.sound, Classical.choice]

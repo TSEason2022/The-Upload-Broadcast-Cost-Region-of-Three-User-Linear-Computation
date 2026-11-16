@@ -1,0 +1,357 @@
+import UploadBroadcast
+import UploadBroadcast.ActiveComponentClassification
+import UploadBroadcast.ActiveReduction
+import UploadBroadcast.ActiveReductionEndpoint
+import UploadBroadcast.ActiveTaskAssembly
+import UploadBroadcast.ActualBlockGraph
+import UploadBroadcast.ActualComponentCapacities
+import UploadBroadcast.ActualPairCapacities
+import UploadBroadcast.AlignedRelation
+import UploadBroadcast.Allocation
+import UploadBroadcast.AllocationAggregate
+import UploadBroadcast.AllocationNat
+import UploadBroadcast.AllocationOmniscience
+import UploadBroadcast.AllocationProfile
+import UploadBroadcast.AllocationRanks
+import UploadBroadcast.AllocationWaterfill
+import UploadBroadcast.AugmentedRelayAssembly
+import UploadBroadcast.BaseChangeProfile
+import UploadBroadcast.BaseFieldComponents
+import UploadBroadcast.BinaryAchievability
+import UploadBroadcast.BinaryAdditionalMenuPermutations
+import UploadBroadcast.BinaryAssembly
+import UploadBroadcast.BinaryAugmentedAllocation
+import UploadBroadcast.BinaryCodimTwoProfiles
+import UploadBroadcast.BinaryCommon
+import UploadBroadcast.BinaryCoordination
+import UploadBroadcast.BinaryExactFamilyMenus
+import UploadBroadcast.BinaryExactMenus
+import UploadBroadcast.BinaryExceptionalRelays
+import UploadBroadcast.BinaryFieldTransport
+import UploadBroadcast.BinaryIncidence
+import UploadBroadcast.BinaryMenuAllocation
+import UploadBroadcast.BinaryMenuOptimality
+import UploadBroadcast.BinaryMenuPermutations
+import UploadBroadcast.BinaryOperationalTightness
+import UploadBroadcast.BinaryRelationBridge
+import UploadBroadcast.BinaryRelayMenus
+import UploadBroadcast.BinaryRelayProfiles
+import UploadBroadcast.BlockBroadcast
+import UploadBroadcast.BlockFlatten
+import UploadBroadcast.BlockGraphDirectSum
+import UploadBroadcast.BlockLinearCode
+import UploadBroadcast.BlockOptimalRelaySeparation
+import UploadBroadcast.BoundaryComponentMenus
+import UploadBroadcast.BroadcastFiniteEndpoints
+import UploadBroadcast.BroadcastOperational
+import UploadBroadcast.BroadcastOptimum
+import UploadBroadcast.BroadcastRegion
+import UploadBroadcast.BroadcastReindex
+import UploadBroadcast.BroadcastShannon
+import UploadBroadcast.CanonicalResidualScalar
+import UploadBroadcast.CanonicalSelectionAssembly
+import UploadBroadcast.CitedBinaryFieldNecessity
+import UploadBroadcast.CitedEntropyCertificates
+import UploadBroadcast.CitedEntropyCounterexample
+import UploadBroadcast.CitedEntropyData
+import UploadBroadcast.CitedEntropyKernelCertificate
+import UploadBroadcast.CitedEntropyModel
+import UploadBroadcast.CitedEntropyProfile
+import UploadBroadcast.CitedEntropyShannon
+import UploadBroadcast.ClassifiedComponentMenus
+import UploadBroadcast.ClassifiedComponentRanks
+import UploadBroadcast.ClassifiedRelayPartition
+import UploadBroadcast.ClassifiedResidualRelaySelection
+import UploadBroadcast.CoboundaryExtensionClosure
+import UploadBroadcast.CodeAlphabet
+import UploadBroadcast.CommonFunction
+import UploadBroadcast.CommonFunctionFiniteAlphabet
+import UploadBroadcast.CommonTripodAssembly
+import UploadBroadcast.CommonTripodRanks
+import UploadBroadcast.ConditionedResidualBridges
+import UploadBroadcast.Coordination
+import UploadBroadcast.CrossIntersectionClosure
+import UploadBroadcast.CycleDirectSumCoordinates
+import UploadBroadcast.CycleFiniteAssembly
+import UploadBroadcast.CycleProfile
+import UploadBroadcast.CycleRepair
+import UploadBroadcast.CycleReverseTheorem
+import UploadBroadcast.CycleReverseTransport
+import UploadBroadcast.CycleSourceEndpoint
+import UploadBroadcast.CycleTheorem
+import UploadBroadcast.CycleUploadGeometry
+import UploadBroadcast.CycleUploadOptimality
+import UploadBroadcast.DoubleOperationalScaling
+import UploadBroadcast.E6RealRoots
+import UploadBroadcast.E6Reflection
+import UploadBroadcast.EdgeDeficits
+import UploadBroadcast.EdgeExtraction
+import UploadBroadcast.EdgeProfile
+import UploadBroadcast.EndpointArithmetic
+import UploadBroadcast.Entropy
+import UploadBroadcast.EntropyCalculus
+import UploadBroadcast.EntropyCoding
+import UploadBroadcast.Examples
+import UploadBroadcast.ExtensionBlockCode
+import UploadBroadcast.ExtensionBlockSeparation
+import UploadBroadcast.ExtensionGenerated
+import UploadBroadcast.ExtensionHomVanishing
+import UploadBroadcast.FiniteAlphabetEncoding
+import UploadBroadcast.FiniteComponentCoordinates
+import UploadBroadcast.FiniteCycleDeficits
+import UploadBroadcast.FiniteEntropyConverse
+import UploadBroadcast.FiniteFieldDescent
+import UploadBroadcast.FiniteMonoidPower
+import UploadBroadcast.FiniteProductCoordinates
+import UploadBroadcast.FiniteRelayAssembly
+import UploadBroadcast.FiniteSubspaceCertificate
+import UploadBroadcast.FullResidualAssembly
+import UploadBroadcast.GeneralBroadcastOptimum
+import UploadBroadcast.GeneralEntropyConverse
+import UploadBroadcast.GeneralOmniscienceEntropy
+import UploadBroadcast.GeneralTransverseClassification
+import UploadBroadcast.GeometricUploadConverse
+import UploadBroadcast.GlobalMenuAssembly
+import UploadBroadcast.GlobalUploadAssembly
+import UploadBroadcast.GlobalUploadConverse
+import UploadBroadcast.GlobalUploadGeometry
+import UploadBroadcast.GlobalUploadOptimal
+import UploadBroadcast.GradedRelationSplit
+import UploadBroadcast.IntegerMenuRealization
+import UploadBroadcast.IntersectionProbes
+import UploadBroadcast.IntrinsicUploadDirectSums
+import UploadBroadcast.IntrinsicUploadInvariance
+import UploadBroadcast.IntrinsicUploadRanks
+import UploadBroadcast.IntrinsicUploadReduction
+import UploadBroadcast.IntrinsicUploadSelections
+import UploadBroadcast.JointRealization
+import UploadBroadcast.JointRegionEndpoints
+import UploadBroadcast.JordanResonance
+import UploadBroadcast.LCBCConverse
+import UploadBroadcast.LinearAlgebra
+import UploadBroadcast.LinearCode
+import UploadBroadcast.LinearCodeSum
+import UploadBroadcast.LinearCosts
+import UploadBroadcast.LinearEntropy
+import UploadBroadcast.LinearUploadRelay
+import UploadBroadcast.LiteralMatrixCertificates
+import UploadBroadcast.LiteralPrimitiveH_1
+import UploadBroadcast.LiteralPrimitiveO_1
+import UploadBroadcast.LiteralPrimitiveO_2
+import UploadBroadcast.LiteralPrimitiveO_3
+import UploadBroadcast.LiteralPrimitiveR1_1
+import UploadBroadcast.LiteralPrimitiveR2
+import UploadBroadcast.LiteralPrimitiveT1_2
+import UploadBroadcast.LiteralPrimitiveT1_3
+import UploadBroadcast.LiteralPrimitiveT2_3
+import UploadBroadcast.LiteralPrimitiveT3_2
+import UploadBroadcast.LiteralPrimitiveTables
+import UploadBroadcast.LiteralThetaBlocks
+import UploadBroadcast.MarkedNilpotent
+import UploadBroadcast.MarkedSubspace
+import UploadBroadcast.MatrixTaskEndpoints
+import UploadBroadcast.MatrixTaskFrontend
+import UploadBroadcast.Model
+import UploadBroadcast.NilpotentFiltration
+import UploadBroadcast.NonzeroBinaryMenus
+import UploadBroadcast.NonzeroDefectProfile
+import UploadBroadcast.NonzeroDefectRelays
+import UploadBroadcast.NonzeroExceptionalRelays
+import UploadBroadcast.NonzeroFamilyRanks
+import UploadBroadcast.NonzeroFiniteAssembly
+import UploadBroadcast.NonzeroHyperplaneArithmetic
+import UploadBroadcast.NonzeroHyperplaneProfiles
+import UploadBroadcast.NonzeroHyperplaneUpload
+import UploadBroadcast.NonzeroR2Wedge
+import UploadBroadcast.NonzeroRelationRestrictions
+import UploadBroadcast.NonzeroSameChart
+import UploadBroadcast.NonzeroSameChartMenus
+import UploadBroadcast.NonzeroSameChartOptimality
+import UploadBroadcast.NonzeroSameChartPermutations
+import UploadBroadcast.ObservationRank
+import UploadBroadcast.OmniscienceCode
+import UploadBroadcast.OmniscienceCycleDeficits
+import UploadBroadcast.OmniscienceEntropy
+import UploadBroadcast.OmniscienceFiniteAlphabet
+import UploadBroadcast.OmniscienceOperational
+import UploadBroadcast.OmniscienceOptimal
+import UploadBroadcast.OmniscienceProfile
+import UploadBroadcast.OmniscienceRelayConstruction
+import UploadBroadcast.OmniscienceRelayProfile
+import UploadBroadcast.OmniscienceResidualAdditivity
+import UploadBroadcast.OmniscienceTaskCode
+import UploadBroadcast.OperationalBounds
+import UploadBroadcast.OppositeDemandExample
+import UploadBroadcast.OptimalRelaySeparation
+import UploadBroadcast.OrientationRepairAllocation
+import UploadBroadcast.OrientationSlackCounts
+import UploadBroadcast.OrientedRelayPairing
+import UploadBroadcast.OriginalJointReduction
+import UploadBroadcast.OriginalUploadCanonical
+import UploadBroadcast.OriginalUploadChart
+import UploadBroadcast.OriginalUploadFormula
+import UploadBroadcast.OriginalUploadModel
+import UploadBroadcast.OriginalUploadOptimum
+import UploadBroadcast.OriginalUploadRanks
+import UploadBroadcast.OriginalUploadTheorem
+import UploadBroadcast.PairOmniscienceAdapter
+import UploadBroadcast.PairReductionRanks
+import UploadBroadcast.PairResidualAssembly
+import UploadBroadcast.PairSelection
+import UploadBroadcast.PassiveBroadcast
+import UploadBroadcast.PassiveCode
+import UploadBroadcast.PassiveComposition
+import UploadBroadcast.PassiveLinearCode
+import UploadBroadcast.PassiveProduct
+import UploadBroadcast.PassiveRelayTransport
+import UploadBroadcast.PermutedNonzeroAssembly
+import UploadBroadcast.PhysicalCycleCoordinates
+import UploadBroadcast.PhysicalCycleRelay
+import UploadBroadcast.PhysicalScalarCycleChart
+import UploadBroadcast.PositiveExcessNoEdges
+import UploadBroadcast.Profile
+import UploadBroadcast.ProfileTransport
+import UploadBroadcast.ProjectionCriterion
+import UploadBroadcast.QuiverEuler
+import UploadBroadcast.QuiverExactSequence
+import UploadBroadcast.QuiverExtensions
+import UploadBroadcast.QuiverHomLinear
+import UploadBroadcast.QuiverHomTerminal
+import UploadBroadcast.QuiverReindex
+import UploadBroadcast.QuiverRepresentation
+import UploadBroadcast.QuiverTits
+import UploadBroadcast.R2ExactProfile
+import UploadBroadcast.R2PermutedMenus
+import UploadBroadcast.RankLoss
+import UploadBroadcast.RawBroadcastConverse
+import UploadBroadcast.RawProfileScaling
+import UploadBroadcast.ReducedTask
+import UploadBroadcast.ReflectionEquivalence
+import UploadBroadcast.ReflectionIteration
+import UploadBroadcast.ReflectionReduction
+import UploadBroadcast.Region
+import UploadBroadcast.RegularExactMenus
+import UploadBroadcast.RegularExtensionGeneration
+import UploadBroadcast.RegularHomVanishing
+import UploadBroadcast.RegularPositiveCross
+import UploadBroadcast.RegularRelayOptimality
+import UploadBroadcast.RegularResonantClassification
+import UploadBroadcast.RegularSubobjectDefect
+import UploadBroadcast.RegularTripodPair
+import UploadBroadcast.RelayCoordinateTransport
+import UploadBroadcast.RelayCyclePairing
+import UploadBroadcast.RelayLinearComposition
+import UploadBroadcast.RelayProfileTransport
+import UploadBroadcast.RelayTask
+import UploadBroadcast.RepairedGlobalMenuAssembly
+import UploadBroadcast.ResidualBackgroundSelection
+import UploadBroadcast.ResidualBackgroundSelectionTheorem
+import UploadBroadcast.ResidualComponentAdditivity
+import UploadBroadcast.ResidualComponentClassification
+import UploadBroadcast.ResidualComponentFactors
+import UploadBroadcast.ResidualConverse
+import UploadBroadcast.ResidualIntrinsicGeometry
+import UploadBroadcast.ResidualOperational
+import UploadBroadcast.ResidualPrivateSplit
+import UploadBroadcast.ResidualProfileCompleteness
+import UploadBroadcast.ResidualProfiles
+import UploadBroadcast.ResidualPureTransport
+import UploadBroadcast.ResidualRelayAssembly
+import UploadBroadcast.ResidualRowCompletion
+import UploadBroadcast.ResidualRowPaperEndpoint
+import UploadBroadcast.ResidualRowShape
+import UploadBroadcast.ResidualRowShapeCore
+import UploadBroadcast.ResidualTaskAssembly
+import UploadBroadcast.ResidualTaskRanks
+import UploadBroadcast.ResidualUpload
+import UploadBroadcast.ResonantBaseChange
+import UploadBroadcast.ResonantClassification
+import UploadBroadcast.ResonantEndomorphisms
+import UploadBroadcast.ResonantFiniteAssembly
+import UploadBroadcast.ResonantFlagNormalization
+import UploadBroadcast.ResonantKernelSupport
+import UploadBroadcast.ResonantProfile
+import UploadBroadcast.ResonantRelationReduction
+import UploadBroadcast.ResonantRelay
+import UploadBroadcast.ResonantSeedEmbedding
+import UploadBroadcast.ResonantTripodTransversality
+import UploadBroadcast.ResonantUploadSpecializations
+import UploadBroadcast.RootClassification
+import UploadBroadcast.ScalarAchievability
+import UploadBroadcast.ScalarAssembly
+import UploadBroadcast.ScalarBroadcast
+import UploadBroadcast.ScalarEndBaseChange
+import UploadBroadcast.ScalarEndReflection
+import UploadBroadcast.ScalarEndpoints
+import UploadBroadcast.ScalarExtensionConfiguration
+import UploadBroadcast.ScalarIncidence
+import UploadBroadcast.ScalarPaperEndpoints
+import UploadBroadcast.SemilinearTaskTransport
+import UploadBroadcast.SemistableFiltration
+import UploadBroadcast.SemistableMorphisms
+import UploadBroadcast.Shannon
+import UploadBroadcast.SignalBridge
+import UploadBroadcast.SourceHomVanishing
+import UploadBroadcast.SourceMainTheorem
+import UploadBroadcast.SplitTaskCoordinates
+import UploadBroadcast.StableEnd
+import UploadBroadcast.Structural
+import UploadBroadcast.TaskComponentBridge
+import UploadBroadcast.TaskDecomposition
+import UploadBroadcast.TaskExactSequence
+import UploadBroadcast.TaskQuiverBridge
+import UploadBroadcast.TaskUserPermutation
+import UploadBroadcast.TensorTaskExtension
+import UploadBroadcast.ThreeSubspaceNormalForm
+import UploadBroadcast.ThreeSubspaceNormalFormCore
+import UploadBroadcast.TripodCompression
+import UploadBroadcast.TripodQuotient
+import UploadBroadcast.TripodSubobjectExclusion
+import UploadBroadcast.TwoDimensionalWedge
+import UploadBroadcast.UploadAttainment
+import UploadBroadcast.UploadParameterDirectSum
+import UploadBroadcast.ZeroCommonRowNormalForm
+import Lean
+
+/-! Inventory all declarations originating in imported project
+modules with Lean's own axiom collector, sharing its visited set across roots.
+Module provenance includes private and out-of-namespace names. All safe
+declaration kinds are roots, so proof-bearing definitions and unused logical
+declarations are also checked. Lean generates unsafe implementation-only
+specializations, including unsafe axiom stubs: these cannot be referenced by
+safe kernel proofs and are counted separately, not treated as logical roots.
+Source-level unsafe declarations remain disallowed by the lexical gate.
+This audit examines imported terms; it does not authenticate cached
+objects or independently re-run their kernel checks. -/
+open Lean Elab Command in
+run_cmd do
+  let env ← getEnv
+  if Lean.debug.skipKernelTC.get (← getOptions) then
+    throwError "Kernel checking is disabled in the audit environment"
+  let projectModules := env.allImportedModuleNames.filter (`UploadBroadcast).isPrefixOf
+  if projectModules.isEmpty then
+    throwError "No UploadBroadcast modules imported; refusing an empty audit"
+  let declarations := env.constants.toList.filter fun (name, _) =>
+    match env.getModuleIdxFor? name with
+    | some idx => (`UploadBroadcast).isPrefixOf env.allImportedModuleNames[idx]!
+    | none => false
+  let logicalDeclarations := declarations.filter fun (_, info) => !info.isUnsafe
+  let names := logicalDeclarations.map Prod.fst
+  if names.isEmpty then
+    throwError "No project declarations found; refusing an empty audit"
+  for (name, _) in logicalDeclarations do
+    if (env.checked.get.find? name).isNone then
+      throwError "Project declaration absent from checked environment: {name}"
+  let work : Lean.CollectAxioms.M Unit := names.forM Lean.CollectAxioms.collect
+  let (_, state) := (work.run env).run {}
+  for ax in state.axioms do
+    unless ax == ``propext || ax == ``Classical.choice || ax == ``Quot.sound do
+      throwError "Unapproved axiom {ax} reachable from safe project declarations"
+  let theoremCount := (logicalDeclarations.filter fun (_, info) => info.isTheorem).length
+  let outsideNamespace := (logicalDeclarations.filter fun (name, _) =>
+    !(`UploadBroadcast).isPrefixOf name).length
+  logInfo m!"Axiom audit passed for {names.length} safe declarations ({theoremCount} theorems) from {projectModules.size} project modules."
+  logInfo m!"Included {outsideNamespace} private or out-of-namespace declarations."
+  logInfo m!"Inventoried {declarations.length - names.length} unsafe compiler implementation declarations separately."
+  logInfo m!"Imported-object trust level: {env.header.trustLevel}; this audit is not an independent object recheck."
+  logInfo m!"Complete reachable axiom set: {state.axioms}"

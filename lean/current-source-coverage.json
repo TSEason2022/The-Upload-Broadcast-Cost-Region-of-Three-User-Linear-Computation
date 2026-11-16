@@ -1,0 +1,412 @@
+{
+  "source_sha256": "420218e9eb1b3c721a4270c39f505a057ad23b62a866ead698761bac476efdd5",
+  "previous_source_sha256": "b1c77e1cf7f7245fc8781b362d69ca06ba9b42448bc6d90ad65ddf628d4b2682",
+  "evidence_label": "certified: mapped Lean declarations compiled and axiom-audited; source correspondence reviewed separately",
+  "scope": "28 named mathematical claims; semantic correspondence reviewed separately from compilation. This file contains no manuscript text.",
+  "claims": [
+    {
+      "id": "thm:intro-main",
+      "current_source_line": 483,
+      "text_relation": "changed_text",
+      "lean_declarations": [
+        "UploadBroadcast.Task.main_region",
+        "UploadBroadcast.Task.joint_two",
+        "UploadBroadcast.Task.minimum_linear_blocklength",
+        "UploadBroadcast.Task.scalar_joint_iff_integral",
+        "UploadBroadcast.nonlinear_uniform_bound_tight",
+        "UploadBroadcast.CurrentSourceAlignment.binary_task_requires_two_instances",
+        "UploadBroadcast.BinaryOperationalTightness.two_le_blocklength_of_broadcast_optimal"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "The least linear length formula is unchanged. SourceMainTheorem proves IsLeast for all positive natural blocklengths. BinaryOperationalTightness gives an actual finite-field task and strict scalar nonlinear broadcast obstruction; the new wrapper states inability to attain the minimum explicitly."
+    },
+    {
+      "id": "prop:active-pair",
+      "current_source_line": 609,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.Task.active_pair_source_geometry",
+        "UploadBroadcast.Task.active_reduction_source",
+        "UploadBroadcast.Task.activeReduction_achievableAt_eq",
+        "UploadBroadcast.Task.activeReduction_costRegion_eq",
+        "UploadBroadcast.Task.PrivateTripodChart.activeResidual_signal_quotients",
+        "UploadBroadcast.Task.PrivateTripodChart.activeResidual_rows_finrank",
+        "UploadBroadcast.Task.preResidual_pairKnown_finrank"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "thm:upload",
+      "current_source_line": 717,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.Task.minimum_upload_source_formula",
+        "UploadBroadcast.Task.minimum_upload_attainment",
+        "UploadBroadcast.Task.minimum_upload_scalar_of_integral",
+        "UploadBroadcast.Task.minimum_upload_two_instance",
+        "UploadBroadcast.Task.minimum_upload_closed_lower",
+        "UploadBroadcast.Task.preResidual_pairKnown_finrank",
+        "UploadBroadcast.ResidualTaskAssembly.tripodDimension_eq_pure_mixed",
+        "UploadBroadcast.ResidualTaskAssembly.tripodDimension_eq_stacked_rank"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "lem:five-cmi",
+      "current_source_line": 856,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.FiniteAlphabet.commonFunction"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "lem:omni-lift",
+      "current_source_line": 923,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.FiniteAlphabet.omniscience_lift"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "lem:bridges",
+      "current_source_line": 1008,
+      "text_relation": "changed_text",
+      "lean_declarations": [
+        "UploadBroadcast.ConditionedResidualBridges.canonicalReduction_all_tripod_bridges",
+        "UploadBroadcast.ConditionedResidualBridges.canonicalReduction_conditioned_retained_bounds"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Only an equation identifier changes. canonicalReduction_all_tripod_bridges constructs the full three-line inclusion and cyclic versions; conditioned_retained_bounds uses arbitrary jointly encoded omniscience and residual observations, not separate encoders."
+    },
+    {
+      "id": "lem:ck-omniscience",
+      "current_source_line": 1065,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.Omniscience.exists_code",
+        "UploadBroadcast.Omniscience.nonempty_code_iff",
+        "UploadBroadcast.Omniscience.exists_scalar_optimal",
+        "UploadBroadcast.Omniscience.exists_two_instance_optimal",
+        "UploadBroadcast.Omniscience.block_cost_lower"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "lem:pis",
+      "current_source_line": 1123,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.relay_decoder_equivalence",
+        "UploadBroadcast.relay_attainable_range"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "prop:exhaustion",
+      "current_source_line": 1252,
+      "text_relation": "changed_text",
+      "lean_declarations": [
+        "UploadBroadcast.ResidualComponentAdditivity.source_residual_decomposition",
+        "UploadBroadcast.ResidualComponentAdditivity.source_residual_upload_formula",
+        "UploadBroadcast.ResidualComponentAdditivity.residual_decomposition",
+        "UploadBroadcast.ResidualComponentAdditivity.exists_indecomposable_residual_decomposition",
+        "UploadBroadcast.ResidualComponentAdditivity.finalResidual_active",
+        "UploadBroadcast.ResidualComponentAdditivity.canonical_rows_fully_active",
+        "UploadBroadcast.ResidualComponentAdditivity.minimum_upload",
+        "UploadBroadcast.ResidualComponentAdditivity.minimum_upload_additive",
+        "UploadBroadcast.ResidualComponentAdditivity.scalar_upload_exact",
+        "UploadBroadcast.ResidualComponentAdditivity.zero_excess_full_relay",
+        "UploadBroadcast.ResidualComponentAdditivity.zero_excess_side_complement",
+        "UploadBroadcast.ResidualComponentAdditivity.pair_ranks_zero"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Only insertion of the word task. Existing source_residual_decomposition and activity/additivity declarations have unchanged mathematical scope."
+    },
+    {
+      "id": "thm:profiles",
+      "current_source_line": 1389,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.ResidualProfiles.profiles",
+        "UploadBroadcast.ResidualProfileCompleteness.outside_table_profile_preserving",
+        "UploadBroadcast.RegularExactMenus.from_actual_regular"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "thm:packing",
+      "current_source_line": 1506,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.Allocation.aggregate_selection_paper_coordinates"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "lem:edge-identity",
+      "current_source_line": 1570,
+      "text_relation": "changed_text",
+      "lean_declarations": [
+        "UploadBroadcast.EdgeExtraction.simultaneous_maximal_extraction",
+        "UploadBroadcast.EdgeProfile.edge_price_identity",
+        "UploadBroadcast.EdgeProfile.edge_price_le_extractable",
+        "UploadBroadcast.EdgeDeficits.demand_cycles_from_decomposition"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Existing simultaneous_maximal_extraction quantifies a single family W over all six directed edges, proves iSupIndep W and equality of each dimension to the maximal multiplicity. edge_price_le_extractable and demand_cycles_from_decomposition supply the price and orientation lower bounds. The revised prose clarifies this same conjunction."
+    },
+    {
+      "id": "thm:endpoint",
+      "current_source_line": 1623,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.CycleSourceEndpoint.positive_directSum",
+        "UploadBroadcast.CycleSourceEndpoint.negative_directSum",
+        "UploadBroadcast.CycleUploadOptimality.canonical_positive_optimal",
+        "UploadBroadcast.CycleUploadOptimality.canonical_reverse_optimal"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "prop:stable",
+      "current_source_line": 1730,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.Task.stable_relay_source"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "prop:small-field-lcbc",
+      "current_source_line": 1810,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.scalar_at_operational_ceiling"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "prop:binary-lcbc",
+      "current_source_line": 1822,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.binary_at_operational_ceiling_permuted"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "cor:scalar-budget",
+      "current_source_line": 1834,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.Task.scalar_budget"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "lem:active-empty-row",
+      "current_source_line": 2024,
+      "text_relation": "changed_text",
+      "lean_declarations": [
+        "UploadBroadcast.ResidualTaskAssembly.DemandData.activeRowReduction_achievableAt_eq",
+        "UploadBroadcast.ResidualTaskAssembly.DemandData.exists_empty_cancellation",
+        "UploadBroadcast.ResidualTaskAssembly.DemandData.correctedTask_rows",
+        "UploadBroadcast.ResidualTaskAssembly.DemandData.activeRows_finrank",
+        "UploadBroadcast.ResidualTaskAssembly.privateGaugeShear_sides"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "The passive block is the complement of activeRows=pureRows+relationRows(ker incidence). exists_empty_cancellation factors the quotient relation through incidence. The corrected demands lie in activeRows; row trimming preserves achievableAt for every n. The full pure sum, not one pure row subspace, is used. This realizes a lift of the quotient complement and leaves the mixed-image dimension."
+    },
+    {
+      "id": "lem:zero-common-row-relay",
+      "current_source_line": 2179,
+      "text_relation": "changed_text",
+      "lean_declarations": [
+        "UploadBroadcast.ResidualRowShape.exists_exact_row_completion",
+        "UploadBroadcast.ResidualRowShape.row_completion_paper",
+        "UploadBroadcast.ResidualRowShape.canonicalReduction_scalar_upload_exact",
+        "UploadBroadcast.ResidualRowShape.shear_extension_fixes_pairwise"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "row_completion_paper already includes one side-preserving equivalence, pointwise identity on all three-line coordinates and on its product with arbitrary pairwise factor E, pure relay support, a Basis with a local owner for each vector, independence and exact total rank. canonicalReduction_scalar_upload_exact supplies attained cost equality for the active reduced task. A general untrimmed task only has the code upper bound; these statements must be used together."
+    },
+    {
+      "id": "lem:base-field-components",
+      "current_source_line": 2368,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.TaskDecomposition.Task.source_base_field_components",
+        "UploadBroadcast.TaskDecomposition.Task.positive_excess_extend_indec",
+        "UploadBroadcast.TaskDecomposition.Task.positive_excess_real_root",
+        "UploadBroadcast.E6RealRoots.nonnegative_realRoot_iff_norm_one",
+        "UploadBroadcast.TaskDecomposition.Task.tensorRep_indec_iff"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "lem:same-chart",
+      "current_source_line": 2501,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.NonzeroSameChartOptimality.same_chart_full_and_optimal_relay",
+        "UploadBroadcast.NonzeroSameChartMenus.same_chart_all_menu_choices",
+        "UploadBroadcast.NonzeroSameChartPermutations.same_chart_all_permuted_choices",
+        "UploadBroadcast.NonzeroSameChartPermutations.indexed_menu_table",
+        "UploadBroadcast.NonzeroSameChartPermutations.pathPerm_exhaustive"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "lem:optimal-residual-sides",
+      "current_source_line": 3165,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.OptimalRelaySeparation.optimal_block_residual_sides_ambient"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "lem:binary-menu",
+      "current_source_line": 3204,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.BinaryMenuPermutations.original_exact_optimal_permuted",
+        "UploadBroadcast.BoundaryComponentMenus.T1_all_permuted_choices",
+        "UploadBroadcast.RegularExactMenus.from_actual_regular"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "lem:binary-additional-menus",
+      "current_source_line": 3242,
+      "text_relation": "changed_text",
+      "lean_declarations": [
+        "UploadBroadcast.BinaryMenuOptimality.additional_optimal_menu",
+        "UploadBroadcast.BinaryMenuOptimality.r2_optimal_menu",
+        "UploadBroadcast.BinaryMenuOptimality.charge_le_actual_margin",
+        "UploadBroadcast.BinaryMenuOptimality.r2_charge_le_actual_margin",
+        "UploadBroadcast.BinaryMenuOptimality.additional_optimal_fits_capacity",
+        "UploadBroadcast.BinaryMenuOptimality.r2_optimal_fits_capacity",
+        "UploadBroadcast.BinaryAdditionalMenuPermutations.additional_optimal_permuted",
+        "UploadBroadcast.BinaryAdditionalMenuPermutations.additional_fits_permuted",
+        "UploadBroadcast.BinaryAdditionalMenuPermutations.r2_optimal_permuted",
+        "UploadBroadcast.BinaryAdditionalMenuPermutations.r2_fits_permuted",
+        "UploadBroadcast.BinaryAdditionalMenuPermutations.exceptions_permuted",
+        "UploadBroadcast.BinaryMenuAllocation.menu_fits",
+        "UploadBroadcast.BinaryMenuAllocation.menu_fits_int",
+        "UploadBroadcast.CurrentSourceAlignment.every_listed_additional_bound",
+        "UploadBroadcast.CurrentSourceAlignment.additional_bound_and_relay_fit",
+        "UploadBroadcast.CurrentSourceAlignment.r2_bound_and_relay_fit"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "The original optimal_menu endpoints quantify arbitrary menu index before constructing a relay; menu_fits returns a listed index, and charge_le_actual_margin connects to actual profile margins. New interfaces accept an arbitrary listed vector d and return the same selected index together with its relay under capacity constraints. R2 remains a separate codimension-two construction. Naturals model nonnegative integer capacities; menu_fits_int also supplies a signed integer interface. Exceptions and joint user/profile permutations remain covered by existing endpoints."
+    },
+    {
+      "id": "lem:binary-integer-relay",
+      "current_source_line": 3441,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.Task.binary_integer_relay"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "lem:integer-lcbc-allocation",
+      "current_source_line": 3584,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.integer_allocation_at_operational_optimum"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "lem:column-reconciliation",
+      "current_source_line": 3626,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.homogeneous_column_coordination_invertible",
+        "UploadBroadcast.homogeneous_column_search"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    },
+    {
+      "id": "lem:binary-common-complement",
+      "current_source_line": 3709,
+      "text_relation": "same_text_ignoring_whitespace",
+      "lean_declarations": [
+        "UploadBroadcast.maximum_disjoint_subspace"
+      ],
+      "semantic_status": "reviewed; matching current kernel verification passed",
+      "review": "Named statement is unchanged after comment/whitespace normalization. Existing declaration mapping and assumption review remain applicable; current rebuild is required independently."
+    }
+  ],
+  "trust_boundary": "Finite-field, finite-dimensional, zero-error model. Existing public endpoints construct the geometry; no numerical experiment is promoted to a theorem. No claim of correspondence for unconstrained arbitrary alphabets outside finite coding model.",
+  "unnumbered_review": {
+    "scope": "125 displayed items, five mathematical tables, 32 proof blocks and existing additional-obligation routes",
+    "text_evidence": "Private deterministic comparison: all 125 displayed mathematical contents unchanged (two labels renamed); all five table data sets unchanged. Eighteen proof blocks unchanged after whitespace/comments; fourteen revised.",
+    "semantic_findings": [
+      {
+        "proof_block": 15,
+        "review": "The clarified 2s coefficient dimension is represented by the product of two copies of the row factor. ZeroCommonRowNormalForm.exists_chart constructs one-dimensional and two-dimensional pure components; ResidualRowCompletion.rowUpload_rank and simultaneous_corrections establish rank and compatible corrections. ResidualRowShape and row_completion_paper give the exact supported relay and square-zero shear endpoint. No new assumption is introduced."
+      },
+      {
+        "proof_block": 18,
+        "review": "The corrected relation wording treats linear maps rather than scalar values. NonzeroRelationRestrictions derives injective relation projections and nonzero restrictions from actual indecomposable tasks. NonzeroFamilyRanks.full_rankConditions supplies pair spanning, triple joins and intersection ranks. Lean uses explicit algebraic Hom/rank arguments rather than formalizing the prose open-orbit/vector-bundle argument; this certifies its needed conclusions, not each sentence of that argument."
+      },
+      {
+        "proof_block": 24,
+        "review": "NonzeroBinaryMenus.full_hyperplane_menu branches on a single protected remote intersection or an unprotected remote pair. BinaryRelayProfiles.exists_protected_binary_profile and exists_double_binary_profile impose precisely two nonvanishing restrictions over the original field. R2PermutedMenus supplies codimension-two choices. Thus the revised two-subspace counting and original-field existence are already the actual formal mechanism; no scalar extension choice is assumed. The menu_fits theorem certifies all capacities exactly, without finite sample testing."
+      },
+      {
+        "proof_blocks": [
+          7,
+          8,
+          9,
+          13,
+          14,
+          16,
+          20,
+          22,
+          23,
+          25,
+          26
+        ],
+        "review": "Terminology, coordinate-dimension explanations, edge/capacity wording and rearranged arguments leave their displayed mathematical content and named endpoints unchanged. Their existing cycle, allocation, bridge, omniscience, separation and assembly routes apply."
+      },
+      {
+        "topic": "All three regular-family choices at every positive size",
+        "review": "RegularExactMenus.jordan_exact_profile quantifies every natural n, menu m and profile coordinate; jordan_menu_construction realizes each choice, and from_actual_chart/from_actual_regular transport it to the actual task with upload optimality. The Lean Jordan index n represents paper size n+1, so it covers every paper n>=1, including preservation of all nine second-family entries."
+      }
+    ],
+    "limit": "Result-and-assumption alignment, not a claim that every informal proof sentence follows the same route in Lean. The old full manuscript is unavailable: exact comparison covers its frozen 125-display inventory, 28 named statements and 32 proof-block ledger, not an exhaustive word-for-word diff of unnumbered free prose. Bibliographic labels and attribution are not Lean propositions. Current kernel verification passed for the complete library and mapped targets; see the matching report."
+  },
+  "alignment_snapshot_context": "the supplied manuscript snapshot used for mathematical alignment; subsequent private edits update introduction wording and citations/bibliography, acknowledgment availability wording/URL, URL-package support and author biographies without changing mathematical statements, proofs or verified code",
+  "local_manuscript_edit_scope": "Private introduction wording and citations/bibliography updated, including the supplied Wireless reference details and visible DOI; acknowledgment availability wording/URL, URL-package support and author-biography removal retained. Mathematical statements, proofs, equations, tables, notation and verified code are unchanged.",
+  "local_manuscript_identity_status": "final auxiliary identity; mathematical alignment snapshot unchanged",
+  "final_local_manuscript_sha256": "26c429ce52b8cd6e09c48e77cbff1d205c0663be86fd2d71cbb778a6e5808f2e",
+  "kernel_status": "passed_current_clean_build",
+  "verification_report": "verification-current/report.json",
+  "formal_input_sha256": "7ee8f58643fcad782e99373da67c0e7e06a571cbfea506725b3ab827b19ae486"
+}

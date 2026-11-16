@@ -1,0 +1,4408 @@
+{
+  "authorization": "Coordinator confirmed explicit user approval of bounded parallel execution and an owner-controlled interruption/handoff.",
+  "commands": [
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.OriginalUploadRanks:deps +UploadBroadcast.PairReductionRanks:deps",
+      "duration_seconds": 3.335,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-001-dependencies.log",
+      "name": "batch-001-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8745192,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T15:55:13.348835+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.OriginalUploadRanks +UploadBroadcast.PairReductionRanks",
+      "duration_seconds": 42.563,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-001-build.log",
+      "name": "batch-001-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8121968,
+        "peak_combined_project_rss_kib": 5049892
+      },
+      "started_utc": "2026-10-08T15:55:16.686771+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.OriginalUploadCanonical:deps +UploadBroadcast.TripodSubobjectExclusion:deps",
+      "duration_seconds": 2.004,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-002-dependencies.log",
+      "name": "batch-002-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8760492,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T15:55:59.255296+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.OriginalUploadCanonical +UploadBroadcast.TripodSubobjectExclusion",
+      "duration_seconds": 50.71,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-002-build.log",
+      "name": "batch-002-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8097936,
+        "peak_combined_project_rss_kib": 4828404
+      },
+      "started_utc": "2026-10-08T15:56:01.261284+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.OriginalUploadChart:deps +UploadBroadcast.NonzeroRelationRestrictions:deps",
+      "duration_seconds": 2.327,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-003-dependencies.log",
+      "name": "batch-003-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8772020,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T15:56:51.983596+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.OriginalUploadChart +UploadBroadcast.NonzeroRelationRestrictions",
+      "duration_seconds": 25.562,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-003-build.log",
+      "name": "batch-003-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8026748,
+        "peak_combined_project_rss_kib": 4946284
+      },
+      "started_utc": "2026-10-08T15:56:54.316048+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.OriginalUploadModel:deps +UploadBroadcast.OriginalUploadFormula:deps",
+      "duration_seconds": 1.854,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-004-dependencies.log",
+      "name": "batch-004-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8767740,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T15:57:19.889890+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.OriginalUploadModel +UploadBroadcast.OriginalUploadFormula",
+      "duration_seconds": 75.48,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-004-build.log",
+      "name": "batch-004-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8181524,
+        "peak_combined_project_rss_kib": 5206932
+      },
+      "started_utc": "2026-10-08T15:57:21.745905+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.OriginalUploadTheorem:deps +UploadBroadcast.NonzeroHyperplaneArithmetic:deps",
+      "duration_seconds": 2.416,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-005-dependencies.log",
+      "name": "batch-005-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8790632,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T15:58:37.233995+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.OriginalUploadTheorem +UploadBroadcast.NonzeroHyperplaneArithmetic",
+      "duration_seconds": 115.395,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-005-build.log",
+      "name": "batch-005-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 7885324,
+        "peak_combined_project_rss_kib": 5135280
+      },
+      "started_utc": "2026-10-08T15:58:39.653403+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.BinaryRelayMenus:deps +UploadBroadcast.BinaryMenuAllocation:deps",
+      "duration_seconds": 1.903,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-006-dependencies.log",
+      "name": "batch-006-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8805452,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:00:35.054721+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.BinaryRelayMenus +UploadBroadcast.BinaryMenuAllocation",
+      "duration_seconds": 18.914,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-006-build.log",
+      "name": "batch-006-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8170228,
+        "peak_combined_project_rss_kib": 4247552
+      },
+      "started_utc": "2026-10-08T16:00:36.959959+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.BinaryRelayProfiles:deps +UploadBroadcast.TaskUserPermutation:deps",
+      "duration_seconds": 1.545,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-007-dependencies.log",
+      "name": "batch-007-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8785308,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:00:55.883483+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.BinaryRelayProfiles +UploadBroadcast.TaskUserPermutation",
+      "duration_seconds": 7.55,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-007-build.log",
+      "name": "batch-007-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8320244,
+        "peak_combined_project_rss_kib": 4066692
+      },
+      "started_utc": "2026-10-08T16:00:57.430747+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.NonzeroHyperplaneProfiles:deps +UploadBroadcast.BinaryCodimTwoProfiles:deps",
+      "duration_seconds": 1.854,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-008-dependencies.log",
+      "name": "batch-008-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8728020,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:01:04.988917+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.NonzeroHyperplaneProfiles +UploadBroadcast.BinaryCodimTwoProfiles",
+      "duration_seconds": 21.761,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-008-build.log",
+      "name": "batch-008-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8174692,
+        "peak_combined_project_rss_kib": 4406872
+      },
+      "started_utc": "2026-10-08T16:01:06.846866+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.NonzeroHyperplaneUpload:deps +UploadBroadcast.NonzeroR2Wedge:deps",
+      "duration_seconds": 1.55,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-009-dependencies.log",
+      "name": "batch-009-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8786008,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:01:28.617686+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.NonzeroHyperplaneUpload +UploadBroadcast.NonzeroR2Wedge",
+      "duration_seconds": 9.172,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-009-build.log",
+      "name": "batch-009-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8209792,
+        "peak_combined_project_rss_kib": 4407288
+      },
+      "started_utc": "2026-10-08T16:01:30.169875+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.R2ExactProfile:deps +UploadBroadcast.R2PermutedMenus:deps",
+      "duration_seconds": 1.854,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-010-dependencies.log",
+      "name": "batch-010-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8762588,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:01:39.351150+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.R2ExactProfile +UploadBroadcast.R2PermutedMenus",
+      "duration_seconds": 15.366,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-010-build.log",
+      "name": "batch-010-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8131696,
+        "peak_combined_project_rss_kib": 4496132
+      },
+      "started_utc": "2026-10-08T16:01:41.209498+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.NonzeroSameChart:deps +UploadBroadcast.NonzeroBinaryMenus:deps",
+      "duration_seconds": 2.369,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-011-dependencies.log",
+      "name": "batch-011-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8777852,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:01:56.589590+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.NonzeroSameChart +UploadBroadcast.NonzeroBinaryMenus",
+      "duration_seconds": 21.756,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-011-build.log",
+      "name": "batch-011-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8285096,
+        "peak_combined_project_rss_kib": 4259080
+      },
+      "started_utc": "2026-10-08T16:01:58.963099+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.BinaryExceptionalRelays:deps +UploadBroadcast.LinearUploadRelay:deps",
+      "duration_seconds": 2.226,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-012-dependencies.log",
+      "name": "batch-012-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8796296,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:02:20.726797+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.BinaryExceptionalRelays +UploadBroadcast.LinearUploadRelay",
+      "duration_seconds": 12.181,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-012-build.log",
+      "name": "batch-012-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8159188,
+        "peak_combined_project_rss_kib": 5213140
+      },
+      "started_utc": "2026-10-08T16:02:22.954474+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.NonzeroExceptionalRelays:deps +UploadBroadcast.ResidualRowShapeCore:deps",
+      "duration_seconds": 2.122,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-013-dependencies.log",
+      "name": "batch-013-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8798148,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:02:35.140839+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.NonzeroExceptionalRelays +UploadBroadcast.ResidualRowShapeCore",
+      "duration_seconds": 48.962,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-013-build.log",
+      "name": "batch-013-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8136296,
+        "peak_combined_project_rss_kib": 5187540
+      },
+      "started_utc": "2026-10-08T16:02:37.275644+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.ResidualRowShape:deps +UploadBroadcast.ConditionedResidualBridges:deps",
+      "duration_seconds": 3.109,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-014-dependencies.log",
+      "name": "batch-014-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8764592,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:03:26.279148+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.ResidualRowShape +UploadBroadcast.ConditionedResidualBridges",
+      "duration_seconds": 85.941,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-014-build.log",
+      "name": "batch-014-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 7983256,
+        "peak_combined_project_rss_kib": 5278224
+      },
+      "started_utc": "2026-10-08T16:03:29.391995+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.CanonicalResidualScalar:deps +UploadBroadcast.IntegerMenuRealization:deps",
+      "duration_seconds": 2.167,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-015-dependencies.log",
+      "name": "batch-015-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8789324,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:04:55.343827+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.CanonicalResidualScalar +UploadBroadcast.IntegerMenuRealization",
+      "duration_seconds": 39.994,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-015-build.log",
+      "name": "batch-015-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8434404,
+        "peak_combined_project_rss_kib": 3768832
+      },
+      "started_utc": "2026-10-08T16:04:57.513447+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.ResidualRowPaperEndpoint:deps +UploadBroadcast.RelayProfileTransport:deps",
+      "duration_seconds": 3.118,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-016-dependencies.log",
+      "name": "batch-016-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8788888,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:05:37.515179+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.ResidualRowPaperEndpoint +UploadBroadcast.RelayProfileTransport",
+      "duration_seconds": 7.848,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-016-build.log",
+      "name": "batch-016-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8220124,
+        "peak_combined_project_rss_kib": 4730696
+      },
+      "started_utc": "2026-10-08T16:05:40.637293+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.QuiverExtensions:deps +UploadBroadcast.GradedRelationSplit:deps",
+      "duration_seconds": 2.097,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-017-dependencies.log",
+      "name": "batch-017-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8747652,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:05:48.499166+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.QuiverExtensions +UploadBroadcast.GradedRelationSplit",
+      "duration_seconds": 10.981,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-017-build.log",
+      "name": "batch-017-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8279156,
+        "peak_combined_project_rss_kib": 3540536
+      },
+      "started_utc": "2026-10-08T16:05:50.600102+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.QuiverExactSequence:deps +UploadBroadcast.TripodQuotient:deps",
+      "duration_seconds": 2.493,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-018-dependencies.log",
+      "name": "batch-018-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8777624,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:06:01.597398+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.QuiverExactSequence +UploadBroadcast.TripodQuotient",
+      "duration_seconds": 7.773,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-018-build.log",
+      "name": "batch-018-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8233680,
+        "peak_combined_project_rss_kib": 3930736
+      },
+      "started_utc": "2026-10-08T16:06:04.092956+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.SemistableFiltration:deps +UploadBroadcast.CoboundaryExtensionClosure:deps",
+      "duration_seconds": 1.828,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-019-dependencies.log",
+      "name": "batch-019-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8727960,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:06:11.872451+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.SemistableFiltration +UploadBroadcast.CoboundaryExtensionClosure",
+      "duration_seconds": 8.742,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-019-build.log",
+      "name": "batch-019-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8206236,
+        "peak_combined_project_rss_kib": 3944028
+      },
+      "started_utc": "2026-10-08T16:06:13.702393+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.SemistableMorphisms:deps +UploadBroadcast.ExtensionGenerated:deps",
+      "duration_seconds": 1.696,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-020-dependencies.log",
+      "name": "batch-020-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8726080,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:06:22.458314+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.SemistableMorphisms +UploadBroadcast.ExtensionGenerated",
+      "duration_seconds": 14.651,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-020-build.log",
+      "name": "batch-020-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8228124,
+        "peak_combined_project_rss_kib": 3913304
+      },
+      "started_utc": "2026-10-08T16:06:24.156002+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.TaskExactSequence:deps +UploadBroadcast.ExtensionHomVanishing:deps",
+      "duration_seconds": 1.962,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-021-dependencies.log",
+      "name": "batch-021-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8691320,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:06:38.815130+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.TaskExactSequence +UploadBroadcast.ExtensionHomVanishing",
+      "duration_seconds": 13.707,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-021-build.log",
+      "name": "batch-021-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8233868,
+        "peak_combined_project_rss_kib": 3940924
+      },
+      "started_utc": "2026-10-08T16:06:40.779715+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.ExtensionBlockSeparation:deps +UploadBroadcast.FiniteRelayAssembly:deps",
+      "duration_seconds": 2.43,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-022-dependencies.log",
+      "name": "batch-022-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8757072,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:06:54.492969+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.ExtensionBlockSeparation +UploadBroadcast.FiniteRelayAssembly",
+      "duration_seconds": 9.349,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-022-build.log",
+      "name": "batch-022-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8189208,
+        "peak_combined_project_rss_kib": 4411880
+      },
+      "started_utc": "2026-10-08T16:06:56.927063+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.BinaryAugmentedAllocation:deps +UploadBroadcast.OmniscienceRelayProfile:deps",
+      "duration_seconds": 2.023,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-023-dependencies.log",
+      "name": "batch-023-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8724656,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:07:06.282904+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.BinaryAugmentedAllocation +UploadBroadcast.OmniscienceRelayProfile",
+      "duration_seconds": 7.986,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-023-build.log",
+      "name": "batch-023-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8163420,
+        "peak_combined_project_rss_kib": 4666324
+      },
+      "started_utc": "2026-10-08T16:07:08.309235+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.GlobalMenuAssembly:deps +UploadBroadcast.RelayCoordinateTransport:deps",
+      "duration_seconds": 3.294,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-024-dependencies.log",
+      "name": "batch-024-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8693980,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:07:16.307379+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.GlobalMenuAssembly +UploadBroadcast.RelayCoordinateTransport",
+      "duration_seconds": 10.378,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-024-build.log",
+      "name": "batch-024-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8141104,
+        "peak_combined_project_rss_kib": 5223908
+      },
+      "started_utc": "2026-10-08T16:07:19.617780+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.ResonantFiniteAssembly:deps +UploadBroadcast.NonzeroFiniteAssembly:deps",
+      "duration_seconds": 1.976,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-025-dependencies.log",
+      "name": "batch-025-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8749904,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:07:30.003385+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.ResonantFiniteAssembly +UploadBroadcast.NonzeroFiniteAssembly",
+      "duration_seconds": 11.342,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-025-build.log",
+      "name": "batch-025-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8134728,
+        "peak_combined_project_rss_kib": 5312064
+      },
+      "started_utc": "2026-10-08T16:07:31.982746+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.AugmentedRelayAssembly:deps +UploadBroadcast.CycleFiniteAssembly:deps",
+      "duration_seconds": 1.975,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-026-dependencies.log",
+      "name": "batch-026-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8754732,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:07:43.333794+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.AugmentedRelayAssembly +UploadBroadcast.CycleFiniteAssembly",
+      "duration_seconds": 18.298,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-026-build.log",
+      "name": "batch-026-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8175820,
+        "peak_combined_project_rss_kib": 5222236
+      },
+      "started_utc": "2026-10-08T16:07:45.312207+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.RegularExtensionGeneration:deps +UploadBroadcast.RegularTripodPair:deps",
+      "duration_seconds": 1.759,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-027-dependencies.log",
+      "name": "batch-027-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8752452,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:08:03.617718+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.RegularExtensionGeneration +UploadBroadcast.RegularTripodPair",
+      "duration_seconds": 85.225,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-027-build.log",
+      "name": "batch-027-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8218552,
+        "peak_combined_project_rss_kib": 4228676
+      },
+      "started_utc": "2026-10-08T16:08:05.380518+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.CrossIntersectionClosure:deps +UploadBroadcast.GeneralTransverseClassification:deps",
+      "duration_seconds": 2.438,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-028-dependencies.log",
+      "name": "batch-028-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8703084,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:09:30.622184+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.CrossIntersectionClosure +UploadBroadcast.GeneralTransverseClassification",
+      "duration_seconds": 17.903,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-028-build.log",
+      "name": "batch-028-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8196372,
+        "peak_combined_project_rss_kib": 3941032
+      },
+      "started_utc": "2026-10-08T16:09:33.064101+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.RegularPositiveCross:deps +UploadBroadcast.DoubleOperationalScaling:deps",
+      "duration_seconds": 2.13,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-029-dependencies.log",
+      "name": "batch-029-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8741472,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:09:50.981793+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.RegularPositiveCross +UploadBroadcast.DoubleOperationalScaling",
+      "duration_seconds": 14.581,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-029-build.log",
+      "name": "batch-029-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8381148,
+        "peak_combined_project_rss_kib": 2712464
+      },
+      "started_utc": "2026-10-08T16:09:53.130205+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.RegularResonantClassification:deps +UploadBroadcast.EndpointArithmetic:deps",
+      "duration_seconds": 2.098,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-030-dependencies.log",
+      "name": "batch-030-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8732928,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:10:07.720061+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.RegularResonantClassification +UploadBroadcast.EndpointArithmetic",
+      "duration_seconds": 17.418,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-030-build.log",
+      "name": "batch-030-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8282184,
+        "peak_combined_project_rss_kib": 4604448
+      },
+      "started_utc": "2026-10-08T16:10:09.822052+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.JointRegionEndpoints:deps +UploadBroadcast.BroadcastFiniteEndpoints:deps",
+      "duration_seconds": 3.939,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-031-dependencies.log",
+      "name": "batch-031-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8758716,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:10:27.262863+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.JointRegionEndpoints +UploadBroadcast.BroadcastFiniteEndpoints",
+      "duration_seconds": 12.695,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-031-build.log",
+      "name": "batch-031-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8328196,
+        "peak_combined_project_rss_kib": 4517012
+      },
+      "started_utc": "2026-10-08T16:10:31.215299+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.OmniscienceRelayConstruction:deps +UploadBroadcast.FiniteComponentCoordinates:deps",
+      "duration_seconds": 2.583,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-032-dependencies.log",
+      "name": "batch-032-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8726296,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:10:43.922126+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.OmniscienceRelayConstruction +UploadBroadcast.FiniteComponentCoordinates",
+      "duration_seconds": 15.987,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-032-build.log",
+      "name": "batch-032-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8195276,
+        "peak_combined_project_rss_kib": 5204672
+      },
+      "started_utc": "2026-10-08T16:10:46.507470+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.BinaryOperationalTightness:deps +UploadBroadcast.E6RealRoots:deps",
+      "duration_seconds": 2.843,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-033-dependencies.log",
+      "name": "batch-033-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8762492,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:11:02.502738+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.BinaryOperationalTightness +UploadBroadcast.E6RealRoots",
+      "duration_seconds": 13.302,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-033-build.log",
+      "name": "batch-033-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8085032,
+        "peak_combined_project_rss_kib": 4482812
+      },
+      "started_utc": "2026-10-08T16:11:05.351944+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.TensorTaskExtension:deps +UploadBroadcast.GeometricUploadConverse:deps",
+      "duration_seconds": 3.521,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-034-dependencies.log",
+      "name": "batch-034-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8745484,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:11:18.663919+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.TensorTaskExtension +UploadBroadcast.GeometricUploadConverse",
+      "duration_seconds": 21.175,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-034-build.log",
+      "name": "batch-034-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8196276,
+        "peak_combined_project_rss_kib": 4311656
+      },
+      "started_utc": "2026-10-08T16:11:22.189184+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.BaseFieldComponents:deps +UploadBroadcast.ResidualIntrinsicGeometry:deps",
+      "duration_seconds": 1.942,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-035-dependencies.log",
+      "name": "batch-035-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8801632,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:11:43.372492+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.BaseFieldComponents +UploadBroadcast.ResidualIntrinsicGeometry",
+      "duration_seconds": 20.616,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-035-build.log",
+      "name": "batch-035-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8114464,
+        "peak_combined_project_rss_kib": 4731476
+      },
+      "started_utc": "2026-10-08T16:11:45.317130+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.ResidualComponentAdditivity:deps +UploadBroadcast.ActiveReductionEndpoint:deps",
+      "duration_seconds": 1.873,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-036-dependencies.log",
+      "name": "batch-036-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8781264,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:12:05.947075+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.ResidualComponentAdditivity +UploadBroadcast.ActiveReductionEndpoint",
+      "duration_seconds": 366.751,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-036-build.log",
+      "name": "batch-036-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 7027020,
+        "peak_combined_project_rss_kib": 5990016
+      },
+      "started_utc": "2026-10-08T16:12:07.823023+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.ResidualComponentFactors:deps +UploadBroadcast.NonzeroSameChartOptimality:deps",
+      "duration_seconds": 3.378,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-037-dependencies.log",
+      "name": "batch-037-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8793012,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:18:14.614488+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.ResidualComponentFactors +UploadBroadcast.NonzeroSameChartOptimality",
+      "duration_seconds": 11.87,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-037-build.log",
+      "name": "batch-037-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8137496,
+        "peak_combined_project_rss_kib": 5201736
+      },
+      "started_utc": "2026-10-08T16:18:17.996606+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.NonzeroSameChartMenus:deps +UploadBroadcast.BinaryExactMenus:deps",
+      "duration_seconds": 2.788,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-038-dependencies.log",
+      "name": "batch-038-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8773012,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:18:29.886438+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.NonzeroSameChartMenus +UploadBroadcast.BinaryExactMenus",
+      "duration_seconds": 78.266,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-038-build.log",
+      "name": "batch-038-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8188256,
+        "peak_combined_project_rss_kib": 4806100
+      },
+      "started_utc": "2026-10-08T16:18:32.689646+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.NonzeroSameChartPermutations:deps +UploadBroadcast.BinaryExactFamilyMenus:deps",
+      "duration_seconds": 3.12,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-039-dependencies.log",
+      "name": "batch-039-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8755252,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:19:50.966683+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.NonzeroSameChartPermutations +UploadBroadcast.BinaryExactFamilyMenus",
+      "duration_seconds": 17.373,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-039-build.log",
+      "name": "batch-039-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8311192,
+        "peak_combined_project_rss_kib": 4491912
+      },
+      "started_utc": "2026-10-08T16:19:54.091026+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.BinaryMenuOptimality:deps +UploadBroadcast.FiniteProductCoordinates:deps",
+      "duration_seconds": 2.981,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-040-dependencies.log",
+      "name": "batch-040-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8734888,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:20:11.476228+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.BinaryMenuOptimality +UploadBroadcast.FiniteProductCoordinates",
+      "duration_seconds": 17.304,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-040-build.log",
+      "name": "batch-040-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8086684,
+        "peak_combined_project_rss_kib": 5301960
+      },
+      "started_utc": "2026-10-08T16:20:14.460652+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.BinaryMenuPermutations:deps +UploadBroadcast.SplitTaskCoordinates:deps",
+      "duration_seconds": 4.26,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-041-dependencies.log",
+      "name": "batch-041-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8747416,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:20:31.775518+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.BinaryMenuPermutations +UploadBroadcast.SplitTaskCoordinates",
+      "duration_seconds": 8.647,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-041-build.log",
+      "name": "batch-041-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8173512,
+        "peak_combined_project_rss_kib": 5210152
+      },
+      "started_utc": "2026-10-08T16:20:36.048846+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.PassiveBroadcast:deps +UploadBroadcast.ActiveComponentClassification:deps",
+      "duration_seconds": 4.235,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-042-dependencies.log",
+      "name": "batch-042-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8716380,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:20:44.722904+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.PassiveBroadcast +UploadBroadcast.ActiveComponentClassification",
+      "duration_seconds": 23.445,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-042-build.log",
+      "name": "batch-042-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8072480,
+        "peak_combined_project_rss_kib": 4853008
+      },
+      "started_utc": "2026-10-08T16:20:48.960794+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.PassiveRelayTransport:deps +UploadBroadcast.BoundaryComponentMenus:deps",
+      "duration_seconds": 4.172,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-043-dependencies.log",
+      "name": "batch-043-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8756132,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:21:12.417120+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.PassiveRelayTransport +UploadBroadcast.BoundaryComponentMenus",
+      "duration_seconds": 100.898,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-043-build.log",
+      "name": "batch-043-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8074704,
+        "peak_combined_project_rss_kib": 5195744
+      },
+      "started_utc": "2026-10-08T16:21:16.593172+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.ResidualComponentClassification:deps +UploadBroadcast.OriginalJointReduction:deps",
+      "duration_seconds": 3.548,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-044-dependencies.log",
+      "name": "batch-044-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8753880,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:22:57.506032+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.ResidualComponentClassification +UploadBroadcast.OriginalJointReduction",
+      "duration_seconds": 98.093,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-044-build.log",
+      "name": "batch-044-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8168968,
+        "peak_combined_project_rss_kib": 5305392
+      },
+      "started_utc": "2026-10-08T16:23:01.057532+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.ResidualProfileCompleteness:deps +UploadBroadcast.ResidualBackgroundSelection:deps",
+      "duration_seconds": 2.669,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-045-dependencies.log",
+      "name": "batch-045-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8765840,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:24:39.168641+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.ResidualProfileCompleteness +UploadBroadcast.ResidualBackgroundSelection",
+      "duration_seconds": 7.816,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-045-build.log",
+      "name": "batch-045-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8321972,
+        "peak_combined_project_rss_kib": 5044000
+      },
+      "started_utc": "2026-10-08T16:24:41.842158+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.PositiveExcessNoEdges:deps +UploadBroadcast.ActualPairCapacities:deps",
+      "duration_seconds": 3.771,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-046-dependencies.log",
+      "name": "batch-046-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8712072,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:24:49.665856+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.PositiveExcessNoEdges +UploadBroadcast.ActualPairCapacities",
+      "duration_seconds": 10.723,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-046-build.log",
+      "name": "batch-046-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8170932,
+        "peak_combined_project_rss_kib": 5232584
+      },
+      "started_utc": "2026-10-08T16:24:53.444298+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.ClassifiedRelayPartition:deps +UploadBroadcast.PermutedNonzeroAssembly:deps",
+      "duration_seconds": 3.488,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-047-dependencies.log",
+      "name": "batch-047-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8770700,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:25:04.176573+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.ClassifiedRelayPartition +UploadBroadcast.PermutedNonzeroAssembly",
+      "duration_seconds": 14.588,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-047-build.log",
+      "name": "batch-047-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8114424,
+        "peak_combined_project_rss_kib": 5324880
+      },
+      "started_utc": "2026-10-08T16:25:07.669949+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.OrientationRepairAllocation:deps +UploadBroadcast.PhysicalCycleCoordinates:deps",
+      "duration_seconds": 2.169,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-048-dependencies.log",
+      "name": "batch-048-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8749572,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:25:22.267812+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.OrientationRepairAllocation +UploadBroadcast.PhysicalCycleCoordinates",
+      "duration_seconds": 6.901,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-048-build.log",
+      "name": "batch-048-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8194444,
+        "peak_combined_project_rss_kib": 4696176
+      },
+      "started_utc": "2026-10-08T16:25:24.442093+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.ActualComponentCapacities:deps +UploadBroadcast.CycleDirectSumCoordinates:deps",
+      "duration_seconds": 1.825,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-049-dependencies.log",
+      "name": "batch-049-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8733052,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:25:31.350745+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.ActualComponentCapacities +UploadBroadcast.CycleDirectSumCoordinates",
+      "duration_seconds": 43.034,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-049-build.log",
+      "name": "batch-049-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 7956056,
+        "peak_combined_project_rss_kib": 4990108
+      },
+      "started_utc": "2026-10-08T16:25:33.187451+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.ClassifiedComponentMenus:deps +UploadBroadcast.PhysicalScalarCycleChart:deps",
+      "duration_seconds": 3.456,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-050-dependencies.log",
+      "name": "batch-050-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8758168,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:26:16.237474+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.ClassifiedComponentMenus +UploadBroadcast.PhysicalScalarCycleChart",
+      "duration_seconds": 12.594,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-050-build.log",
+      "name": "batch-050-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8074712,
+        "peak_combined_project_rss_kib": 5303012
+      },
+      "started_utc": "2026-10-08T16:26:19.700292+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.ClassifiedComponentRanks:deps +UploadBroadcast.PhysicalCycleRelay:deps",
+      "duration_seconds": 3.544,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-051-dependencies.log",
+      "name": "batch-051-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8753012,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:26:32.313648+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.ClassifiedComponentRanks +UploadBroadcast.PhysicalCycleRelay",
+      "duration_seconds": 15.992,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-051-build.log",
+      "name": "batch-051-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8155724,
+        "peak_combined_project_rss_kib": 5350304
+      },
+      "started_utc": "2026-10-08T16:26:35.861694+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.ResonantRelationReduction:deps +UploadBroadcast.FiniteCycleDeficits:deps",
+      "duration_seconds": 4.522,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-052-dependencies.log",
+      "name": "batch-052-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8778740,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:26:51.864389+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.ResonantRelationReduction +UploadBroadcast.FiniteCycleDeficits",
+      "duration_seconds": 24.26,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-052-build.log",
+      "name": "batch-052-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8189256,
+        "peak_combined_project_rss_kib": 4467532
+      },
+      "started_utc": "2026-10-08T16:26:56.393255+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.ResonantKernelSupport:deps +UploadBroadcast.OmniscienceCycleDeficits:deps",
+      "duration_seconds": 2.264,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-053-dependencies.log",
+      "name": "batch-053-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8776456,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:27:20.668189+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.ResonantKernelSupport +UploadBroadcast.OmniscienceCycleDeficits",
+      "duration_seconds": 46.57,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-053-build.log",
+      "name": "batch-053-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8163596,
+        "peak_combined_project_rss_kib": 4530248
+      },
+      "started_utc": "2026-10-08T16:27:22.936818+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.RegularRelayOptimality:deps +UploadBroadcast.OrientationSlackCounts:deps",
+      "duration_seconds": 2.989,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-054-dependencies.log",
+      "name": "batch-054-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8787984,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:28:09.520771+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.RegularRelayOptimality +UploadBroadcast.OrientationSlackCounts",
+      "duration_seconds": 12.697,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-054-build.log",
+      "name": "batch-054-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8219748,
+        "peak_combined_project_rss_kib": 5206952
+      },
+      "started_utc": "2026-10-08T16:28:12.513134+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.RelayCyclePairing:deps +UploadBroadcast.RepairedGlobalMenuAssembly:deps",
+      "duration_seconds": 2.369,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-055-dependencies.log",
+      "name": "batch-055-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8750256,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:28:25.217141+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.RelayCyclePairing +UploadBroadcast.RepairedGlobalMenuAssembly",
+      "duration_seconds": 47.152,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-055-build.log",
+      "name": "batch-055-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 7838368,
+        "peak_combined_project_rss_kib": 5621440
+      },
+      "started_utc": "2026-10-08T16:28:27.590447+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.OrientedRelayPairing:deps +UploadBroadcast.OmniscienceResidualAdditivity:deps",
+      "duration_seconds": 4.921,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-056-dependencies.log",
+      "name": "batch-056-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8760944,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:29:14.926151+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.OrientedRelayPairing +UploadBroadcast.OmniscienceResidualAdditivity",
+      "duration_seconds": 65.792,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-056-build.log",
+      "name": "batch-056-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8091744,
+        "peak_combined_project_rss_kib": 5445296
+      },
+      "started_utc": "2026-10-08T16:29:19.851581+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.ClassifiedResidualRelaySelection:deps +UploadBroadcast.CanonicalSelectionAssembly:deps",
+      "duration_seconds": 2.536,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-057-dependencies.log",
+      "name": "batch-057-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8787004,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:30:25.661149+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.ClassifiedResidualRelaySelection +UploadBroadcast.CanonicalSelectionAssembly",
+      "duration_seconds": 32.904,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-057-build.log",
+      "name": "batch-057-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8130052,
+        "peak_combined_project_rss_kib": 5347624
+      },
+      "started_utc": "2026-10-08T16:30:28.200131+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.ResidualBackgroundSelectionTheorem:deps +UploadBroadcast.IntrinsicUploadRanks:deps",
+      "duration_seconds": 2.32,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-058-dependencies.log",
+      "name": "batch-058-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8770168,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:31:01.118871+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.ResidualBackgroundSelectionTheorem +UploadBroadcast.IntrinsicUploadRanks",
+      "duration_seconds": 66.179,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-058-build.log",
+      "name": "batch-058-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 7870600,
+        "peak_combined_project_rss_kib": 5643608
+      },
+      "started_utc": "2026-10-08T16:31:03.443776+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.SourceMainTheorem:deps +UploadBroadcast.IntrinsicUploadSelections:deps",
+      "duration_seconds": 2.314,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-059-dependencies.log",
+      "name": "batch-059-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8791600,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:32:09.633710+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.SourceMainTheorem +UploadBroadcast.IntrinsicUploadSelections",
+      "duration_seconds": 24.897,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-059-build.log",
+      "name": "batch-059-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8197136,
+        "peak_combined_project_rss_kib": 5274248
+      },
+      "started_utc": "2026-10-08T16:32:11.959205+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.IntrinsicUploadReduction:deps +UploadBroadcast.MatrixTaskFrontend:deps",
+      "duration_seconds": 2.46,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-060-dependencies.log",
+      "name": "batch-060-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8770448,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:32:36.866898+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.IntrinsicUploadReduction +UploadBroadcast.MatrixTaskFrontend",
+      "duration_seconds": 46.123,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-060-build.log",
+      "name": "batch-060-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8155740,
+        "peak_combined_project_rss_kib": 4728000
+      },
+      "started_utc": "2026-10-08T16:32:39.331055+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.IntrinsicUploadInvariance:deps +UploadBroadcast.MatrixTaskEndpoints:deps",
+      "duration_seconds": 4.795,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-061-dependencies.log",
+      "name": "batch-061-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8785272,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:33:25.506159+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.IntrinsicUploadInvariance +UploadBroadcast.MatrixTaskEndpoints",
+      "duration_seconds": 101.553,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-061-build.log",
+      "name": "batch-061-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8167096,
+        "peak_combined_project_rss_kib": 5119128
+      },
+      "started_utc": "2026-10-08T16:33:30.310527+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.BinaryAdditionalMenuPermutations:deps +UploadBroadcast.RegularExactMenus:deps",
+      "duration_seconds": 1.813,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-062-dependencies.log",
+      "name": "batch-062-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8777880,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:35:11.870927+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.BinaryAdditionalMenuPermutations +UploadBroadcast.RegularExactMenus",
+      "duration_seconds": 11.354,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-062-build.log",
+      "name": "batch-062-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8181608,
+        "peak_combined_project_rss_kib": 5315652
+      },
+      "started_utc": "2026-10-08T16:35:13.703493+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.ResidualProfiles:deps +UploadBroadcast.CitedBinaryFieldNecessity:deps",
+      "duration_seconds": 2.178,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-063-dependencies.log",
+      "name": "batch-063-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8718868,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:35:25.066862+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.ResidualProfiles +UploadBroadcast.CitedBinaryFieldNecessity",
+      "duration_seconds": 12.425,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-063-build.log",
+      "name": "batch-063-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8143744,
+        "peak_combined_project_rss_kib": 5239468
+      },
+      "started_utc": "2026-10-08T16:35:27.249487+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.CycleUploadGeometry:deps +UploadBroadcast.BlockGraphDirectSum:deps",
+      "duration_seconds": 1.784,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-064-dependencies.log",
+      "name": "batch-064-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8760140,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:35:39.685310+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.CycleUploadGeometry +UploadBroadcast.BlockGraphDirectSum",
+      "duration_seconds": 65.155,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-064-build.log",
+      "name": "batch-064-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8065540,
+        "peak_combined_project_rss_kib": 5326888
+      },
+      "started_utc": "2026-10-08T16:35:41.474922+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.CycleUploadOptimality:deps +UploadBroadcast.ActualBlockGraph:deps",
+      "duration_seconds": 2.207,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-065-dependencies.log",
+      "name": "batch-065-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8763972,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:36:46.650771+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.CycleUploadOptimality +UploadBroadcast.ActualBlockGraph",
+      "duration_seconds": 48.86,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-065-build.log",
+      "name": "batch-065-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8039060,
+        "peak_combined_project_rss_kib": 5283048
+      },
+      "started_utc": "2026-10-08T16:36:48.871596+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.CycleSourceEndpoint:deps +UploadBroadcast.IntrinsicUploadDirectSums:deps",
+      "duration_seconds": 1.944,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-066-dependencies.log",
+      "name": "batch-066-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8779372,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:37:37.780492+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.CycleSourceEndpoint +UploadBroadcast.IntrinsicUploadDirectSums",
+      "duration_seconds": 7.254,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-066-build.log",
+      "name": "batch-066-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8188736,
+        "peak_combined_project_rss_kib": 5286580
+      },
+      "started_utc": "2026-10-08T16:37:39.735500+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.UploadParameterDirectSum:deps +UploadBroadcast.OppositeDemandExample:deps",
+      "duration_seconds": 2.343,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-067-dependencies.log",
+      "name": "batch-067-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8752212,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:37:47.004883+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.UploadParameterDirectSum +UploadBroadcast.OppositeDemandExample",
+      "duration_seconds": 12.72,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-067-build.log",
+      "name": "batch-067-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 7994740,
+        "peak_combined_project_rss_kib": 5357368
+      },
+      "started_utc": "2026-10-08T16:37:49.353111+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.FiniteSubspaceCertificate:deps +UploadBroadcast.ResonantUploadSpecializations:deps",
+      "duration_seconds": 2.176,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-068-dependencies.log",
+      "name": "batch-068-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8750092,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:38:02.091386+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.FiniteSubspaceCertificate +UploadBroadcast.ResonantUploadSpecializations",
+      "duration_seconds": 18.144,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-068-build.log",
+      "name": "batch-068-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8202644,
+        "peak_combined_project_rss_kib": 5293948
+      },
+      "started_utc": "2026-10-08T16:38:04.276888+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.CitedEntropyData:deps +UploadBroadcast.LiteralThetaBlocks:deps",
+      "duration_seconds": 1.854,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-069-dependencies.log",
+      "name": "batch-069-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8763608,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:38:22.443701+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.CitedEntropyData +UploadBroadcast.LiteralThetaBlocks",
+      "duration_seconds": 38.925,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-069-build.log",
+      "name": "batch-069-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 7807176,
+        "peak_combined_project_rss_kib": 5104620
+      },
+      "started_utc": "2026-10-08T16:38:24.304003+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.CitedEntropyKernelCertificate:deps +UploadBroadcast.CitedEntropyCertificates:deps",
+      "duration_seconds": 1.724,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-070-dependencies.log",
+      "name": "batch-070-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8775856,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:39:03.256419+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.CitedEntropyKernelCertificate +UploadBroadcast.CitedEntropyCertificates",
+      "duration_seconds": 82.36,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-070-build.log",
+      "name": "batch-070-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 3444844,
+        "peak_combined_project_rss_kib": 8026496
+      },
+      "started_utc": "2026-10-08T16:39:04.987879+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.CitedEntropyShannon:deps +UploadBroadcast.CitedEntropyProfile:deps",
+      "duration_seconds": 4.217,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-071-dependencies.log",
+      "name": "batch-071-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8768304,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:40:27.361385+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.CitedEntropyShannon +UploadBroadcast.CitedEntropyProfile",
+      "duration_seconds": 80.656,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-071-build.log",
+      "name": "batch-071-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8154112,
+        "peak_combined_project_rss_kib": 5179668
+      },
+      "started_utc": "2026-10-08T16:40:31.594476+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.CitedEntropyModel:deps +UploadBroadcast.LiteralMatrixCertificates:deps",
+      "duration_seconds": 1.811,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-072-dependencies.log",
+      "name": "batch-072-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8790764,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:41:52.269899+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.CitedEntropyModel +UploadBroadcast.LiteralMatrixCertificates",
+      "duration_seconds": 19.405,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-072-build.log",
+      "name": "batch-072-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8129800,
+        "peak_combined_project_rss_kib": 4810236
+      },
+      "started_utc": "2026-10-08T16:41:54.100288+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.CitedEntropyCounterexample:deps +UploadBroadcast.LiteralPrimitiveT1_2:deps",
+      "duration_seconds": 2.132,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-073-dependencies.log",
+      "name": "batch-073-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8770712,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:42:13.529602+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.CitedEntropyCounterexample +UploadBroadcast.LiteralPrimitiveT1_2",
+      "duration_seconds": 60.692,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-073-build.log",
+      "name": "batch-073-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 6719268,
+        "peak_combined_project_rss_kib": 4730144
+      },
+      "started_utc": "2026-10-08T16:42:15.666445+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.LiteralPrimitiveT1_3:deps +UploadBroadcast.LiteralPrimitiveT2_3:deps",
+      "duration_seconds": 1.349,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-074-dependencies.log",
+      "name": "batch-074-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8708672,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:43:16.375004+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.LiteralPrimitiveT1_3 +UploadBroadcast.LiteralPrimitiveT2_3",
+      "duration_seconds": 48.462,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-074-build.log",
+      "name": "batch-074-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 4759488,
+        "peak_combined_project_rss_kib": 7479972
+      },
+      "started_utc": "2026-10-08T16:43:17.755608+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.LiteralPrimitiveT3_2:deps +UploadBroadcast.LiteralPrimitiveR1_1:deps",
+      "duration_seconds": 1.598,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-075-dependencies.log",
+      "name": "batch-075-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8680520,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:44:06.256627+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.LiteralPrimitiveT3_2 +UploadBroadcast.LiteralPrimitiveR1_1",
+      "duration_seconds": 44.109,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-075-build.log",
+      "name": "batch-075-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 5785896,
+        "peak_combined_project_rss_kib": 6478544
+      },
+      "started_utc": "2026-10-08T16:44:07.863596+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.LiteralPrimitiveR2:deps +UploadBroadcast.LiteralPrimitiveO_1:deps",
+      "duration_seconds": 4.628,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-076-dependencies.log",
+      "name": "batch-076-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8675380,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:44:52.004298+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.LiteralPrimitiveR2 +UploadBroadcast.LiteralPrimitiveO_1",
+      "duration_seconds": 57.152,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-076-build.log",
+      "name": "batch-076-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 6304832,
+        "peak_combined_project_rss_kib": 6002648
+      },
+      "started_utc": "2026-10-08T16:44:56.644454+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.LiteralPrimitiveO_2:deps +UploadBroadcast.LiteralPrimitiveO_3:deps",
+      "duration_seconds": 1.45,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-077-dependencies.log",
+      "name": "batch-077-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8689848,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:45:53.817196+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.LiteralPrimitiveO_2 +UploadBroadcast.LiteralPrimitiveO_3",
+      "duration_seconds": 22.773,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-077-build.log",
+      "name": "batch-077-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 6789448,
+        "peak_combined_project_rss_kib": 5602944
+      },
+      "started_utc": "2026-10-08T16:45:55.275483+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.LiteralPrimitiveH_1:deps +UploadBroadcast.OmniscienceOperational:deps",
+      "duration_seconds": 1.486,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-078-dependencies.log",
+      "name": "batch-078-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8718284,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:46:18.081167+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.LiteralPrimitiveH_1 +UploadBroadcast.OmniscienceOperational",
+      "duration_seconds": 15.864,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-078-build.log",
+      "name": "batch-078-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 7888764,
+        "peak_combined_project_rss_kib": 4051964
+      },
+      "started_utc": "2026-10-08T16:46:19.573269+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast.LiteralPrimitiveTables:deps +UploadBroadcast.ResonantSeedEmbedding:deps",
+      "duration_seconds": 1.706,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-079-dependencies.log",
+      "name": "batch-079-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8745196,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:46:35.457058+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast.LiteralPrimitiveTables +UploadBroadcast.ResonantSeedEmbedding",
+      "duration_seconds": 99.548,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-079-build.log",
+      "name": "batch-079-build",
+      "resource_observations": {
+        "max_project_lean_processes": 2,
+        "minimum_available_memory_kib": 8386544,
+        "peak_combined_project_rss_kib": 3753884
+      },
+      "started_utc": "2026-10-08T16:46:37.169178+00:00"
+    },
+    {
+      "command": "lake --no-build --wfail build +UploadBroadcast:deps",
+      "duration_seconds": 3.177,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-080-dependencies.log",
+      "name": "batch-080-dependencies",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8790504,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:48:16.958500+00:00"
+    },
+    {
+      "command": "lake --wfail build +UploadBroadcast",
+      "duration_seconds": 4.543,
+      "exit_code": 0,
+      "lean_num_threads": 2,
+      "log": "parallel-batch-080-build.log",
+      "name": "batch-080-build",
+      "resource_observations": {
+        "max_project_lean_processes": 1,
+        "minimum_available_memory_kib": 8504348,
+        "peak_combined_project_rss_kib": 2752456
+      },
+      "started_utc": "2026-10-08T16:48:20.140910+00:00"
+    },
+    {
+      "command": "python3 scripts/verify_toolchain.py --output .verification-results/toolchain.json",
+      "duration_seconds": 0.46,
+      "exit_code": 0,
+      "lean_num_threads": 1,
+      "log": "parallel-toolchain.log",
+      "name": "toolchain",
+      "started_utc": "2026-10-08T16:48:24.694617+00:00"
+    },
+    {
+      "command": "python3 scripts/verify_dependency_pins.py --output .verification-results/dependency-pins.json",
+      "duration_seconds": 4.787,
+      "exit_code": 0,
+      "lean_num_threads": 1,
+      "log": "parallel-dependency-pins.log",
+      "name": "dependency-pins",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8850868,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:48:25.159664+00:00"
+    },
+    {
+      "command": "python3 scripts/test_release_tools.py && python3 scripts/test_audit_source.py && python3 scripts/test_package_release.py",
+      "duration_seconds": 3.372,
+      "exit_code": 0,
+      "lean_num_threads": 1,
+      "log": "parallel-release-regressions.log",
+      "name": "release-regressions",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8827100,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:48:29.953477+00:00"
+    },
+    {
+      "command": "python3 scripts/audit_source.py && python3 scripts/check_coverage.py",
+      "duration_seconds": 2.794,
+      "exit_code": 0,
+      "lean_num_threads": 1,
+      "log": "parallel-source-preflight.log",
+      "name": "source-preflight",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8829396,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:48:33.330494+00:00"
+    },
+    {
+      "command": "python3 scripts/check_all_modules.py",
+      "duration_seconds": 741.895,
+      "exit_code": 0,
+      "lean_num_threads": 1,
+      "log": "parallel-all-modules.log",
+      "name": "all-modules",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8453040,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T16:48:36.130986+00:00"
+    },
+    {
+      "command": "bash scripts/check.sh",
+      "duration_seconds": 140.454,
+      "exit_code": 0,
+      "lean_num_threads": 1,
+      "log": "parallel-integrated-check.log",
+      "name": "integrated-check",
+      "resource_observations": {
+        "max_project_lean_processes": 0,
+        "minimum_available_memory_kib": 8454904,
+        "peak_combined_project_rss_kib": 0
+      },
+      "started_utc": "2026-10-08T17:00:58.042839+00:00"
+    },
+    {
+      "command": "python3 scripts/check_coverage.py",
+      "duration_seconds": 0.075,
+      "exit_code": 0,
+      "lean_num_threads": 1,
+      "log": "parallel-complete-coverage.log",
+      "name": "complete-coverage",
+      "started_utc": "2026-10-08T17:03:18.504125+00:00"
+    }
+  ],
+  "completed_batches": [
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.OriginalUploadRanks",
+          "sha256": "75e26d58fdd3b37bfecaafbc1b8c674403cb3462a8cc5351fc5d3907f32577ab"
+        },
+        {
+          "module": "UploadBroadcast.PairReductionRanks",
+          "sha256": "bc58f8fe81b3bc1e20665be7c33b30f43f132428725898a049e742c6b252c30b"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.OriginalUploadRanks",
+        "UploadBroadcast.PairReductionRanks"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.OriginalUploadCanonical",
+          "sha256": "375ca8d1b5a5cd891ef69656040b53e65fe1bc89db565f606f0cd361e93eec4b"
+        },
+        {
+          "module": "UploadBroadcast.TripodSubobjectExclusion",
+          "sha256": "58379d362a228a88512e0a88faa9d456e6fd380459a8a2c1290fcc2f23ffa776"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.OriginalUploadCanonical",
+        "UploadBroadcast.TripodSubobjectExclusion"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.OriginalUploadChart",
+          "sha256": "8ea535fda59bba35ec74f53fc130a3385a1ecc8b0df7e1e3540dd296f9c4d67c"
+        },
+        {
+          "module": "UploadBroadcast.NonzeroRelationRestrictions",
+          "sha256": "ff402cc0b3c16208207da43fe96506b7913aff37e15d5504e5d4d8acbd07b4c5"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.OriginalUploadChart",
+        "UploadBroadcast.NonzeroRelationRestrictions"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.OriginalUploadModel",
+          "sha256": "c15cd6bfbcc467789bce17a5b7ebbbd8cec04ae6505323d84fa246874842513a"
+        },
+        {
+          "module": "UploadBroadcast.OriginalUploadFormula",
+          "sha256": "04f24cea39becfb4432b74bce6573505f7c99abd87ff5b17ce77b5f49047098f"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.OriginalUploadModel",
+        "UploadBroadcast.OriginalUploadFormula"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.OriginalUploadTheorem",
+          "sha256": "5cb657bc2bd337075dda7096e151431c0e4314a7cc7e5221bd6e0f035a2d8fd9"
+        },
+        {
+          "module": "UploadBroadcast.NonzeroHyperplaneArithmetic",
+          "sha256": "21ea24a4115527e0fbf0cad04990889887cc766f34492e8fe780bba43cffa4eb"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.OriginalUploadTheorem",
+        "UploadBroadcast.NonzeroHyperplaneArithmetic"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.BinaryRelayMenus",
+          "sha256": "803a47b035d83a66570f8381dd9f36b14ada0acba21bf727d244009615411463"
+        },
+        {
+          "module": "UploadBroadcast.BinaryMenuAllocation",
+          "sha256": "29c7f444e61185da2fd521a93a134045c3585f0eb1974bd5a5204dbd36d4835a"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.BinaryRelayMenus",
+        "UploadBroadcast.BinaryMenuAllocation"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.BinaryRelayProfiles",
+          "sha256": "df95c8c1585f19f01c7b7a961348cc592ad14daa66a55dc76bb06ebe19e2b216"
+        },
+        {
+          "module": "UploadBroadcast.TaskUserPermutation",
+          "sha256": "473befa73a03b1e03735eec380231753140980890ec28fdb3c8181fa5ebd7156"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.BinaryRelayProfiles",
+        "UploadBroadcast.TaskUserPermutation"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.NonzeroHyperplaneProfiles",
+          "sha256": "ae53d4375bd625dfc3aaca19697c4f949abd3f34021390633bb98fd5856c18fb"
+        },
+        {
+          "module": "UploadBroadcast.BinaryCodimTwoProfiles",
+          "sha256": "6ba6b9355b37a801e36f9dea242c09b5ec73d69e46dfba487d8e246182dd1fe4"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.NonzeroHyperplaneProfiles",
+        "UploadBroadcast.BinaryCodimTwoProfiles"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.NonzeroHyperplaneUpload",
+          "sha256": "e9ff3c1d5f96ac4a97214701f2b0b4fb2fa119acb2a0535829ddf87a6fed1436"
+        },
+        {
+          "module": "UploadBroadcast.NonzeroR2Wedge",
+          "sha256": "0bb08e616731575e757048d75b2cac846fd46332faa92be3e5b32143193e2992"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.NonzeroHyperplaneUpload",
+        "UploadBroadcast.NonzeroR2Wedge"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.R2ExactProfile",
+          "sha256": "16d2a0096d0f718fa0251b0ac0ab70b37a87245d94bab30ad3afec8d6b22677d"
+        },
+        {
+          "module": "UploadBroadcast.R2PermutedMenus",
+          "sha256": "86ceabffd10fb94e76f74529c4563eb5d8a453c1b28e54d040546d98c89b3992"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.R2ExactProfile",
+        "UploadBroadcast.R2PermutedMenus"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.NonzeroSameChart",
+          "sha256": "16a127a2ce397e8d7991fd99c687b4d03757033e63c3f26d6048122b1131ac56"
+        },
+        {
+          "module": "UploadBroadcast.NonzeroBinaryMenus",
+          "sha256": "98ee9e15e742c5fe09b1ea81bce1fa4e14bf742f90c866f4b35dfda67865bef5"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.NonzeroSameChart",
+        "UploadBroadcast.NonzeroBinaryMenus"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.BinaryExceptionalRelays",
+          "sha256": "e3568a78eee4b3c714f512ce66dd0cb2ff186ed6e64398c08e105ac178cbcd73"
+        },
+        {
+          "module": "UploadBroadcast.LinearUploadRelay",
+          "sha256": "63a0bad24f5e5ed4cb4966b8790e9674ab4375e8e015358a73912d63ed8ae27e"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.BinaryExceptionalRelays",
+        "UploadBroadcast.LinearUploadRelay"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.NonzeroExceptionalRelays",
+          "sha256": "971d9f8ff93f15bff36b8b8e5dcbd393cff702c4534608b91c901bc70c6680fc"
+        },
+        {
+          "module": "UploadBroadcast.ResidualRowShapeCore",
+          "sha256": "876e7bf2b79491b198e207e144a3ec299bc0d31b61d07a17783b76068424f210"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.NonzeroExceptionalRelays",
+        "UploadBroadcast.ResidualRowShapeCore"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.ResidualRowShape",
+          "sha256": "5f16663de732b51113573e83dfd808418d8c048a97cad9978ebc05814f36350a"
+        },
+        {
+          "module": "UploadBroadcast.ConditionedResidualBridges",
+          "sha256": "0487b29016a2f1c2cb7670f732821f23fd32a18adb83d7001336d9184095af13"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.ResidualRowShape",
+        "UploadBroadcast.ConditionedResidualBridges"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.CanonicalResidualScalar",
+          "sha256": "f35f622c6347d6e4561148b3fbb3d8dfd33f5ba4f254d577514f7f07e9a9ce3c"
+        },
+        {
+          "module": "UploadBroadcast.IntegerMenuRealization",
+          "sha256": "5fe301530db0b41aa5bc3b9898dc4855661bc2ffb6653c20c8c67ed82cc55ad5"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.CanonicalResidualScalar",
+        "UploadBroadcast.IntegerMenuRealization"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.ResidualRowPaperEndpoint",
+          "sha256": "9b028d9ab627ec1cd76014b683cd2e1a7a36e378ab94492861b9afa865a2550f"
+        },
+        {
+          "module": "UploadBroadcast.RelayProfileTransport",
+          "sha256": "a5b49363de1d89e63876673bd3c0a26614673e3c98f8850088f192ef1395988f"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.ResidualRowPaperEndpoint",
+        "UploadBroadcast.RelayProfileTransport"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.QuiverExtensions",
+          "sha256": "778b9e8f5cb0cd8a11e70de5d7978e874bc69b2579e7db812c4e33fa7d6c51c4"
+        },
+        {
+          "module": "UploadBroadcast.GradedRelationSplit",
+          "sha256": "2392e74774447a0338e35a2629a3e7fc9fa5e355a0d8382ae919e6685bf9dd6e"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.QuiverExtensions",
+        "UploadBroadcast.GradedRelationSplit"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.QuiverExactSequence",
+          "sha256": "5641ad45716da6dcc165fbfd4ddc899890f519416ab1951cfcc1a54205dd8867"
+        },
+        {
+          "module": "UploadBroadcast.TripodQuotient",
+          "sha256": "d13d68e0ed7e5fba444323964d8b90dbc2b1121c69b69df23d5f4b0e76dcb2ee"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.QuiverExactSequence",
+        "UploadBroadcast.TripodQuotient"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.SemistableFiltration",
+          "sha256": "474310d36edb5ebc6483674b9064ac4e8fd62d6b3ca0424e7438fd1bd7f5817c"
+        },
+        {
+          "module": "UploadBroadcast.CoboundaryExtensionClosure",
+          "sha256": "846f2f4f15b2e2cf588f61facf7c329b13107b44b5e0da1983d3caaec97bd545"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.SemistableFiltration",
+        "UploadBroadcast.CoboundaryExtensionClosure"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.SemistableMorphisms",
+          "sha256": "a830b65a7c345cd08af0520b960f7bf70b8f624f41f57224ac6f6e3634268ee5"
+        },
+        {
+          "module": "UploadBroadcast.ExtensionGenerated",
+          "sha256": "9b30055bc7e3b0fd1915063b4a5af8f07d5503c2ed0603ce5c5710f2a34fb9da"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.SemistableMorphisms",
+        "UploadBroadcast.ExtensionGenerated"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.TaskExactSequence",
+          "sha256": "a172b580ded0771da0e75805f04ccd94f2f5e6ea5b77f06c6c48fa8619652f31"
+        },
+        {
+          "module": "UploadBroadcast.ExtensionHomVanishing",
+          "sha256": "b79723c7fe385fc674e5899babaf396f13c43073da12af7ceec723577d6c1eb3"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.TaskExactSequence",
+        "UploadBroadcast.ExtensionHomVanishing"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.ExtensionBlockSeparation",
+          "sha256": "37b90ff4a2f831aafbbea4a55f7ab76d1421bffb7b04caf7342e7cfbc3b21ced"
+        },
+        {
+          "module": "UploadBroadcast.FiniteRelayAssembly",
+          "sha256": "5c48049805362b5182fdaa3e738e4489b4a411f2c8383f9dfec6f1e9b9cae410"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.ExtensionBlockSeparation",
+        "UploadBroadcast.FiniteRelayAssembly"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.BinaryAugmentedAllocation",
+          "sha256": "2e5a4b0a0c5f6a1120d84937ebd1f08b4cd48013f18f493f971ba96adc9937ef"
+        },
+        {
+          "module": "UploadBroadcast.OmniscienceRelayProfile",
+          "sha256": "8e463948451389de049dbb2456e175de0f7c45d6dada8f3f2e9ae12f2b8d03d6"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.BinaryAugmentedAllocation",
+        "UploadBroadcast.OmniscienceRelayProfile"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.GlobalMenuAssembly",
+          "sha256": "a7a719595269b2724cc046b480389b1b8a0148fb893ed326ce5941b78b3a58df"
+        },
+        {
+          "module": "UploadBroadcast.RelayCoordinateTransport",
+          "sha256": "33a2f7998eb7faf818660b11c29fbdd242de1ab66173575e93f9479ef0567fc7"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.GlobalMenuAssembly",
+        "UploadBroadcast.RelayCoordinateTransport"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.ResonantFiniteAssembly",
+          "sha256": "93bda3858a082f7a13776dabecc75f4d0ed5b727836cfae66fe65d04c341ba10"
+        },
+        {
+          "module": "UploadBroadcast.NonzeroFiniteAssembly",
+          "sha256": "eeabd251e4874fdb859af35d650a6f3ab359d83686a4d7920d5305e1a1f48941"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.ResonantFiniteAssembly",
+        "UploadBroadcast.NonzeroFiniteAssembly"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.AugmentedRelayAssembly",
+          "sha256": "95860fdaa7899b07efd8f9a5948a70e5a54f2d09a73f2b22eb6a9d7b7e27a988"
+        },
+        {
+          "module": "UploadBroadcast.CycleFiniteAssembly",
+          "sha256": "b14ae39987373b039d9bd538589f2d645a72ddc85bbb3b68cd8cad5910d57e04"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.AugmentedRelayAssembly",
+        "UploadBroadcast.CycleFiniteAssembly"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.RegularExtensionGeneration",
+          "sha256": "2bd23402d543e12a34281660470443add67fad0507bf0ee4e558c29d7a940aa1"
+        },
+        {
+          "module": "UploadBroadcast.RegularTripodPair",
+          "sha256": "b2952bfc1e56f02e28623aa69cbb9ca991f4f056d08dfec7de7147dc1654a25d"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.RegularExtensionGeneration",
+        "UploadBroadcast.RegularTripodPair"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.CrossIntersectionClosure",
+          "sha256": "02738bad223790cd1c74683bbfcd51cb51ecd163fa276adbc6c5ac564276b6d7"
+        },
+        {
+          "module": "UploadBroadcast.GeneralTransverseClassification",
+          "sha256": "b73fe14c6a374154155ec745eff58beebd47bb8f950205832bedf556b49b2d0b"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.CrossIntersectionClosure",
+        "UploadBroadcast.GeneralTransverseClassification"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.RegularPositiveCross",
+          "sha256": "138ae1819a7f8b63801966d7a1a440c0f7117abb4f1a7a8e3d06dc4eaa85609a"
+        },
+        {
+          "module": "UploadBroadcast.DoubleOperationalScaling",
+          "sha256": "eb45d6db7b9dda00059aef3c80e806b81cb6f0b4b35c5e6938b056251f55a2e1"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.RegularPositiveCross",
+        "UploadBroadcast.DoubleOperationalScaling"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.RegularResonantClassification",
+          "sha256": "e1ff7b906104351d383fdb2bcc6d5197f09c41e365b3d1664d89a149dce3d009"
+        },
+        {
+          "module": "UploadBroadcast.EndpointArithmetic",
+          "sha256": "ced80c0e470f287ae3c0534d4886c41db512b7f4cec64d7d0132f41fd643e6d0"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.RegularResonantClassification",
+        "UploadBroadcast.EndpointArithmetic"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.JointRegionEndpoints",
+          "sha256": "8545911e905e32f76421218b75af217b1da7163461f97fe430139fdbaa5856e7"
+        },
+        {
+          "module": "UploadBroadcast.BroadcastFiniteEndpoints",
+          "sha256": "55a433459a2a2abad328226e9998f3541dfdabd52577c863250d9fdfee14ddfd"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.JointRegionEndpoints",
+        "UploadBroadcast.BroadcastFiniteEndpoints"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.OmniscienceRelayConstruction",
+          "sha256": "089cb863f717339f5fff7657efdd7db16cf610f58873bdf9cd81d3aab7bf348a"
+        },
+        {
+          "module": "UploadBroadcast.FiniteComponentCoordinates",
+          "sha256": "5942be078f6310f04800cf0409f0a2e3b08258c19b9fe338dab137363222b081"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.OmniscienceRelayConstruction",
+        "UploadBroadcast.FiniteComponentCoordinates"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.BinaryOperationalTightness",
+          "sha256": "45064cb18748a8a6870d0c9421a8e56b9167d202d7cc2420779691178b2cdfd8"
+        },
+        {
+          "module": "UploadBroadcast.E6RealRoots",
+          "sha256": "0ff620e828cf74a203d2281c7ec8dfd2532ded3d0b4d979723c417363e41787a"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.BinaryOperationalTightness",
+        "UploadBroadcast.E6RealRoots"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.TensorTaskExtension",
+          "sha256": "a416d00c2bce9c257853552749842c39d9a2028e3d13cae6a0209d6506792a58"
+        },
+        {
+          "module": "UploadBroadcast.GeometricUploadConverse",
+          "sha256": "a6b6bbb33b420ffca77bf80e5a35cd76bf23fb1271b2933a334453e7001d71d1"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.TensorTaskExtension",
+        "UploadBroadcast.GeometricUploadConverse"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.BaseFieldComponents",
+          "sha256": "09c96dcf648f7922b7fda4b804917bc628bd78731c6161a16c387e23ebbb49d5"
+        },
+        {
+          "module": "UploadBroadcast.ResidualIntrinsicGeometry",
+          "sha256": "af12c6e45744d68ab0ff3cd03230dd9937db88ef14e74a29a1980bfbbdca29ed"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.BaseFieldComponents",
+        "UploadBroadcast.ResidualIntrinsicGeometry"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.ResidualComponentAdditivity",
+          "sha256": "d57be736467fd91fe38c6cead3b86b776e1a13b3e7d0b293bd35d6f385b74ea0"
+        },
+        {
+          "module": "UploadBroadcast.ActiveReductionEndpoint",
+          "sha256": "7a340cef7ae5003ad2a3eef924b490a5cbae8a4b58ec9bf8282eb9e09a2faaea"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.ResidualComponentAdditivity",
+        "UploadBroadcast.ActiveReductionEndpoint"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.ResidualComponentFactors",
+          "sha256": "c10e9c46ed2e27a367db29fbcdcc0d7d7d6ec548267393c559123c02821efb4e"
+        },
+        {
+          "module": "UploadBroadcast.NonzeroSameChartOptimality",
+          "sha256": "c4c60058d0f3f84bf40ea7ecec89b38c727066e1e3872049f312b6e4eb042b1a"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.ResidualComponentFactors",
+        "UploadBroadcast.NonzeroSameChartOptimality"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.NonzeroSameChartMenus",
+          "sha256": "3c6a86c7d9f5907a556f5480157e83315164cee691c877373a58f84e975913bf"
+        },
+        {
+          "module": "UploadBroadcast.BinaryExactMenus",
+          "sha256": "143f9b98850e58714b2af87b0ef5bdefe8eeb768c789ee68e21c80f0ee369e56"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.NonzeroSameChartMenus",
+        "UploadBroadcast.BinaryExactMenus"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.NonzeroSameChartPermutations",
+          "sha256": "ac1f8f425c475abe9c986d8ca608059d45c35eefa1b8a88d2e8c1f4ea76e31fd"
+        },
+        {
+          "module": "UploadBroadcast.BinaryExactFamilyMenus",
+          "sha256": "643a4e4be3ac059fb8c60367172cf1530fdfeadfa1fca45bee6029581d3df802"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.NonzeroSameChartPermutations",
+        "UploadBroadcast.BinaryExactFamilyMenus"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.BinaryMenuOptimality",
+          "sha256": "6de84084a7bc3b700c2db26d657d60eac2c2932dcd282d105dc49b7b36293485"
+        },
+        {
+          "module": "UploadBroadcast.FiniteProductCoordinates",
+          "sha256": "2d28bc627060a20fe80f1a7bff4d935ec290d71cd566e21cef531395edf7aafe"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.BinaryMenuOptimality",
+        "UploadBroadcast.FiniteProductCoordinates"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.BinaryMenuPermutations",
+          "sha256": "ccf9748b3baeb22f9836f67db64479a6e0135acabab6e767e62099af4e3b44e0"
+        },
+        {
+          "module": "UploadBroadcast.SplitTaskCoordinates",
+          "sha256": "752720b56c714729b67a03ccf0a083699314886b15c93aaf798a0feb524d1300"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.BinaryMenuPermutations",
+        "UploadBroadcast.SplitTaskCoordinates"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.PassiveBroadcast",
+          "sha256": "609171c95ff9afb91e0c7d599808f90fb506d29af76d1d7c8f3bfb471d92e7de"
+        },
+        {
+          "module": "UploadBroadcast.ActiveComponentClassification",
+          "sha256": "fdc69ad821c2a6df7d4f2f4c84d8d0bd6a8e535eda7d0251d4ea589ef1832b41"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.PassiveBroadcast",
+        "UploadBroadcast.ActiveComponentClassification"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.PassiveRelayTransport",
+          "sha256": "286c19b36fb3116e193d5e484efb5b280f50886d6ed3916a279f14c77c86b5d7"
+        },
+        {
+          "module": "UploadBroadcast.BoundaryComponentMenus",
+          "sha256": "73180104d738bf7f30ea9b18efeb81f08098d238fd40c07015eb9714291d626c"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.PassiveRelayTransport",
+        "UploadBroadcast.BoundaryComponentMenus"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.ResidualComponentClassification",
+          "sha256": "40b5f08e33e7215730fcca0e05dd547ada33efac2ad0e21f8c36c99e7a4f66de"
+        },
+        {
+          "module": "UploadBroadcast.OriginalJointReduction",
+          "sha256": "4447396aba361e30d04473fcdbb38815c085f1ee62a5495656949a1ac5795ee4"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.ResidualComponentClassification",
+        "UploadBroadcast.OriginalJointReduction"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.ResidualProfileCompleteness",
+          "sha256": "a2339c91b8b03692d7e7425f62dacbc46c2a9b67c5bbebf5f979e3ce9a3f68e2"
+        },
+        {
+          "module": "UploadBroadcast.ResidualBackgroundSelection",
+          "sha256": "c7f2056f455abc90c2e39ffc8527f9aad77080d3bd6a8820c334d824acb43adf"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.ResidualProfileCompleteness",
+        "UploadBroadcast.ResidualBackgroundSelection"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.PositiveExcessNoEdges",
+          "sha256": "e361f757e2511e568d81eb937280827e691194854a6de4bcbf4bf7faabb07dc8"
+        },
+        {
+          "module": "UploadBroadcast.ActualPairCapacities",
+          "sha256": "7ce7f8c44488ae93529b9a8dc461664d7301e8b3ef7ecd75ff8bc5f852a4a1e4"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.PositiveExcessNoEdges",
+        "UploadBroadcast.ActualPairCapacities"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.ClassifiedRelayPartition",
+          "sha256": "a2c35bcd5bfae6b5bd8398c286fa9eb8a16ee3017412eb60aaaf48bfa4ee92f5"
+        },
+        {
+          "module": "UploadBroadcast.PermutedNonzeroAssembly",
+          "sha256": "104bf7a89a3ba8baa95ad7f1d28b0145706f572af7ed3c83f29c95987ce2c9ef"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.ClassifiedRelayPartition",
+        "UploadBroadcast.PermutedNonzeroAssembly"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.OrientationRepairAllocation",
+          "sha256": "1075b3908bf791567804d6eb5de6e6bed2751d9037b0a1a81ca6d3373c1ae66d"
+        },
+        {
+          "module": "UploadBroadcast.PhysicalCycleCoordinates",
+          "sha256": "b7f6a3c6c39173ecbdec1c6a2bbb2c61bbf2c85a1fa07308fdf63847369eeeb2"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.OrientationRepairAllocation",
+        "UploadBroadcast.PhysicalCycleCoordinates"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.ActualComponentCapacities",
+          "sha256": "c51e66ad2eccbf14b89ec16b9665448a92cd3a8d4b031e16e2ed3d3f0762aefc"
+        },
+        {
+          "module": "UploadBroadcast.CycleDirectSumCoordinates",
+          "sha256": "d1b3d14942c69a3115f2ec105d169020729de7744fca59b418be4b0432041679"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.ActualComponentCapacities",
+        "UploadBroadcast.CycleDirectSumCoordinates"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.ClassifiedComponentMenus",
+          "sha256": "c46ecacd8379fba7b2694959b07eec05774371ddc2ffdf9a06a86ea1cb704b46"
+        },
+        {
+          "module": "UploadBroadcast.PhysicalScalarCycleChart",
+          "sha256": "c952a647b884556de5e5729280546b41c92b2ae7e0d854962ca5c406ebdabb41"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.ClassifiedComponentMenus",
+        "UploadBroadcast.PhysicalScalarCycleChart"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.ClassifiedComponentRanks",
+          "sha256": "cca8137265aea19995d33928d7abeb3996c3d9a4fc573bd4933496f901b9faa7"
+        },
+        {
+          "module": "UploadBroadcast.PhysicalCycleRelay",
+          "sha256": "381d3e38891cabf9c5fc95af1bc12fac9a81f7ca494df0d1608de9f51ce82cf3"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.ClassifiedComponentRanks",
+        "UploadBroadcast.PhysicalCycleRelay"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.ResonantRelationReduction",
+          "sha256": "f6e774a21f3d4000b6815992c2c761069bc5642c3e6eeddb6026e227b54f9be7"
+        },
+        {
+          "module": "UploadBroadcast.FiniteCycleDeficits",
+          "sha256": "6f817b16f217c4efbea4b5166ab6f8d3399857f88b15b096894444c82df3a9a7"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.ResonantRelationReduction",
+        "UploadBroadcast.FiniteCycleDeficits"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.ResonantKernelSupport",
+          "sha256": "45b66595c86e4c68772ce89985db559f570e9d2997989973023bb8eedc211b21"
+        },
+        {
+          "module": "UploadBroadcast.OmniscienceCycleDeficits",
+          "sha256": "61529ad18922b87a5fab0e4c9a26036405271c6b296fcf71a68cd67e7b85cac4"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.ResonantKernelSupport",
+        "UploadBroadcast.OmniscienceCycleDeficits"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.RegularRelayOptimality",
+          "sha256": "6805f7b62cd6791d1b8cbe7d5e25b33ed00a0d4b4508f0eabd39ac755bb9df40"
+        },
+        {
+          "module": "UploadBroadcast.OrientationSlackCounts",
+          "sha256": "63683dabced54cccb08655d8cb85fb30061845457a54b8445a51a2fdde3231bc"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.RegularRelayOptimality",
+        "UploadBroadcast.OrientationSlackCounts"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.RelayCyclePairing",
+          "sha256": "bd2a0f8aed707c847a2f98adc2d75bd911ea6db9df55616e5b0740f0068dcf91"
+        },
+        {
+          "module": "UploadBroadcast.RepairedGlobalMenuAssembly",
+          "sha256": "158c65a01e9fe6a874a946bebd2e144f26d02ed5e084227a019df5afda1cdcea"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.RelayCyclePairing",
+        "UploadBroadcast.RepairedGlobalMenuAssembly"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.OrientedRelayPairing",
+          "sha256": "df2543fb521dfb4f5c008c444441e7d4b798d3e7f7d238faa9a29362ba7f6d5b"
+        },
+        {
+          "module": "UploadBroadcast.OmniscienceResidualAdditivity",
+          "sha256": "07fafc6bf61acbacf65c741feceb419e6929f62fbb5a9a20ee159219a7978987"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.OrientedRelayPairing",
+        "UploadBroadcast.OmniscienceResidualAdditivity"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.ClassifiedResidualRelaySelection",
+          "sha256": "67f9a14c12a043a54d210582e9d1c0223e60291602e0371f24932f2f437b178f"
+        },
+        {
+          "module": "UploadBroadcast.CanonicalSelectionAssembly",
+          "sha256": "2bb88fc856195f539df816aae14f31979bf92ea729dde26a8fe8384ee0702525"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.ClassifiedResidualRelaySelection",
+        "UploadBroadcast.CanonicalSelectionAssembly"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.ResidualBackgroundSelectionTheorem",
+          "sha256": "0c814d6b35715f16253f5cd25c620f9d7abd5bc58f867b8d68a615d8e1633dfe"
+        },
+        {
+          "module": "UploadBroadcast.IntrinsicUploadRanks",
+          "sha256": "53380bcd88c16924610ff1a9b0570d5199964a38de0a637310b02c25bb811ff0"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.ResidualBackgroundSelectionTheorem",
+        "UploadBroadcast.IntrinsicUploadRanks"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.SourceMainTheorem",
+          "sha256": "8874d9ce232bba7185229a2fbf3e91d1fde1b222af50d26881e64ffd05ac3d0b"
+        },
+        {
+          "module": "UploadBroadcast.IntrinsicUploadSelections",
+          "sha256": "a732ec39c05f6516bcaa5e6ff4161419b00f1c45536efe8f16e22fa4180d5a0e"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.SourceMainTheorem",
+        "UploadBroadcast.IntrinsicUploadSelections"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.IntrinsicUploadReduction",
+          "sha256": "684469758e22dc54a1aef816885618585dfb53f024c9d28c54560229f62f36d6"
+        },
+        {
+          "module": "UploadBroadcast.MatrixTaskFrontend",
+          "sha256": "f750f7bd3c1f769e9ca9af6d907f54e381befb1c5a58f93f52e5fefb1178b530"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.IntrinsicUploadReduction",
+        "UploadBroadcast.MatrixTaskFrontend"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.IntrinsicUploadInvariance",
+          "sha256": "7f279b6ce528fc6affd5f844773763683beb35b52bddd624982aa9698829f3a1"
+        },
+        {
+          "module": "UploadBroadcast.MatrixTaskEndpoints",
+          "sha256": "6cbce6cc6c584555fe7c7bc12d3adfc31799b1cc32949bb4482f90dcbc99e508"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.IntrinsicUploadInvariance",
+        "UploadBroadcast.MatrixTaskEndpoints"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.BinaryAdditionalMenuPermutations",
+          "sha256": "5896bffa1e10effa6ffb4511381380069a11ece32966e2fa838ad7f4e81f6673"
+        },
+        {
+          "module": "UploadBroadcast.RegularExactMenus",
+          "sha256": "35daf222878e94303243f91ba2de536ccac39f0f55f1f562fd3b023c14f0324c"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.BinaryAdditionalMenuPermutations",
+        "UploadBroadcast.RegularExactMenus"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.ResidualProfiles",
+          "sha256": "23f9f6ff64d46b60cc2fe7f380b660385488804f77170a6104a34a35c00d5e5f"
+        },
+        {
+          "module": "UploadBroadcast.CitedBinaryFieldNecessity",
+          "sha256": "efe6a51ec8b31473e1ff0a4f741c07c1e8b02c576794041e9a3c5f384b5e62c3"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.ResidualProfiles",
+        "UploadBroadcast.CitedBinaryFieldNecessity"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.CycleUploadGeometry",
+          "sha256": "905634f26ef729153d85fa358d98d0e35d2e4cf2fbe98dc9f627e99c624f93e9"
+        },
+        {
+          "module": "UploadBroadcast.BlockGraphDirectSum",
+          "sha256": "934f7857f6d35fc44094d99489195e06d47bc5f6bcc34f2013a25bb636b386d5"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.CycleUploadGeometry",
+        "UploadBroadcast.BlockGraphDirectSum"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.CycleUploadOptimality",
+          "sha256": "8e403018843434bf1bece1baf28035a3375ebbf990fe0a151297eece5688df35"
+        },
+        {
+          "module": "UploadBroadcast.ActualBlockGraph",
+          "sha256": "98afb362572600a620fab8c767be3877b789389fdde2caf5c8448e480a4f50d8"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.CycleUploadOptimality",
+        "UploadBroadcast.ActualBlockGraph"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.CycleSourceEndpoint",
+          "sha256": "5932fcd49d2f159285ce7f9783a71f698f042089dfa7f7b08b86a4a03698216e"
+        },
+        {
+          "module": "UploadBroadcast.IntrinsicUploadDirectSums",
+          "sha256": "4e1036248dc97962c0b9f0e1f3732a809242ca34f4d79c78fe4d8ef7e814eb4c"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.CycleSourceEndpoint",
+        "UploadBroadcast.IntrinsicUploadDirectSums"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.UploadParameterDirectSum",
+          "sha256": "7e141034f5ff4c9dccfa28c48f5eac4dc4790856a4317804ccbb40755d7ec646"
+        },
+        {
+          "module": "UploadBroadcast.OppositeDemandExample",
+          "sha256": "8a5280823f273b983e71cc18c0a9d27d9ba630c531bf70944ed350f04413d089"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.UploadParameterDirectSum",
+        "UploadBroadcast.OppositeDemandExample"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.FiniteSubspaceCertificate",
+          "sha256": "abd606be7aa6dc96b255c8b8daa3d20a945f6312c125f7e16fe2de5fbac1f17a"
+        },
+        {
+          "module": "UploadBroadcast.ResonantUploadSpecializations",
+          "sha256": "84c30f3a38148428219797ef731d2a5ed8e4261aec2ef95dccc420464015a78b"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.FiniteSubspaceCertificate",
+        "UploadBroadcast.ResonantUploadSpecializations"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.CitedEntropyData",
+          "sha256": "dfed58da8880617dcaff369c1abe565c817410d55d3e8d1cfd1140e290abd6fb"
+        },
+        {
+          "module": "UploadBroadcast.LiteralThetaBlocks",
+          "sha256": "f318f084e0355dad400ede2bbd36c9d483a4c70971610a7c4bb1e779f754ccf2"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.CitedEntropyData",
+        "UploadBroadcast.LiteralThetaBlocks"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.CitedEntropyKernelCertificate",
+          "sha256": "e0d55ca0e645f20e8673749c66dfa3315611567d52480334187d9198e088e3f8"
+        },
+        {
+          "module": "UploadBroadcast.CitedEntropyCertificates",
+          "sha256": "ce7929ac5117a603108e5d56ccd8ffd1e48f2c11f6345300db44f7b74766a83d"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.CitedEntropyKernelCertificate",
+        "UploadBroadcast.CitedEntropyCertificates"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.CitedEntropyShannon",
+          "sha256": "31e0e60bc130373d6376eb6270edca70ef8286edfb07507dc064a451fc87a7e8"
+        },
+        {
+          "module": "UploadBroadcast.CitedEntropyProfile",
+          "sha256": "9ed5b9379923773c64b81f04f1746a4d62c0090f2783bd6e3a6370278c3f4652"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.CitedEntropyShannon",
+        "UploadBroadcast.CitedEntropyProfile"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.CitedEntropyModel",
+          "sha256": "a89c75833c9fdb6b038021fa21425701a6d2db06603e496fbd610f04497b170b"
+        },
+        {
+          "module": "UploadBroadcast.LiteralMatrixCertificates",
+          "sha256": "deb9663ba052168670d42afe13fbdfdaaca02bb4be9322e1692465b0cf3d46e8"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.CitedEntropyModel",
+        "UploadBroadcast.LiteralMatrixCertificates"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.CitedEntropyCounterexample",
+          "sha256": "efd9dbaaf7466b7abbb12e96c9c3ee924845c77bb4516053e376f21a5ba37c23"
+        },
+        {
+          "module": "UploadBroadcast.LiteralPrimitiveT1_2",
+          "sha256": "911814b6db8690a3a9aa7fe939ed0d1e4b5a136b4efd7bdb1bc0a71420b6a62f"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.CitedEntropyCounterexample",
+        "UploadBroadcast.LiteralPrimitiveT1_2"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.LiteralPrimitiveT1_3",
+          "sha256": "4739684c9182faff1240b631308c4c75b3e88e78c1ae78efb3acd204c83159cb"
+        },
+        {
+          "module": "UploadBroadcast.LiteralPrimitiveT2_3",
+          "sha256": "c83fbc20326d9ffd4b169c54a9a559a52533c6780cb309bfd08cbcf2f619a110"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.LiteralPrimitiveT1_3",
+        "UploadBroadcast.LiteralPrimitiveT2_3"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.LiteralPrimitiveT3_2",
+          "sha256": "4ea6aaf4924a2f37224fa2162f9928d772fdf8644c374ea35855d066af432329"
+        },
+        {
+          "module": "UploadBroadcast.LiteralPrimitiveR1_1",
+          "sha256": "635440c08a5ed909a944c743767bcaf0de0f8f954e81ce0c202bc18b5cccae79"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.LiteralPrimitiveT3_2",
+        "UploadBroadcast.LiteralPrimitiveR1_1"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.LiteralPrimitiveR2",
+          "sha256": "afefb2040d7079d71416c3defd811734d1db0991ec0a94123f8c6b72aa96b359"
+        },
+        {
+          "module": "UploadBroadcast.LiteralPrimitiveO_1",
+          "sha256": "c6696aa0ce0d57552d07cf299b95c6e92ffcfa17d8ebc7ce6369e86af3789927"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.LiteralPrimitiveR2",
+        "UploadBroadcast.LiteralPrimitiveO_1"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.LiteralPrimitiveO_2",
+          "sha256": "02a28e941dbc104e381ae7ef9a317c6449b1895a7209069b373ec9721ac90ea7"
+        },
+        {
+          "module": "UploadBroadcast.LiteralPrimitiveO_3",
+          "sha256": "bb46aed07493480fdc878224b79c799c1ba72f14f1112443c7c70d5a26229f75"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.LiteralPrimitiveO_2",
+        "UploadBroadcast.LiteralPrimitiveO_3"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.LiteralPrimitiveH_1",
+          "sha256": "03975b470709233cc1a4c6055e7d349cc0b8bb46d82126179ed39795b5a3592e"
+        },
+        {
+          "module": "UploadBroadcast.OmniscienceOperational",
+          "sha256": "4d9e1331fd46945b8f8de5b4edeada47267941b86ccf3636a2a970ec6fa76fce"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.LiteralPrimitiveH_1",
+        "UploadBroadcast.OmniscienceOperational"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast.LiteralPrimitiveTables",
+          "sha256": "0dc3fff37e9211e5d1b3b3602730dc85b925617da195479476b1c7f6bd2dac6a"
+        },
+        {
+          "module": "UploadBroadcast.ResonantSeedEmbedding",
+          "sha256": "8a975b9233ff24fec7d366046844cc51ac2619e8e8eb27789cf92e4001744680"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast.LiteralPrimitiveTables",
+        "UploadBroadcast.ResonantSeedEmbedding"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "module": "UploadBroadcast",
+          "sha256": "a85af5640fa98b122179010665f810c1615d57b5fc2f42df7676367eb3feb461"
+        }
+      ],
+      "batch": [
+        "UploadBroadcast"
+      ]
+    }
+  ],
+  "completed_project_module_count": 313,
+  "event": "user-approved-bounded-scheduling-change",
+  "exclusive_owner_lock_acquired": true,
+  "externally_built_project_artifacts_imported": false,
+  "finished_utc": "2026-10-08T17:03:21.154390+00:00",
+  "new_policy": {
+    "coordinators": 1,
+    "dependency_preflight": "lake --no-build --wfail build +A:deps +B:deps",
+    "final_validation": "All seven original gates, with the unchanged sequential all-module script and one Lean thread",
+    "lean_threads_per_compiler": 2,
+    "maximum_new_project_modules_per_batch": 2
+  },
+  "old_policy": {
+    "lean_threads": 1,
+    "project_modules": "topological-sequential"
+  },
+  "previous_owner_session_terminal_confirmed": true,
+  "quarantined_unconfirmed_outputs": [],
+  "retained_same_campaign_artifacts": [
+    {
+      "module": "UploadBroadcast.Model",
+      "path": ".lake/build/lib/lean/UploadBroadcast/Model.olean",
+      "sha256": "c98a99e5ced87ed99bbc850bfc08f8be1e067fb9b4bdc91f66bd44608262f550"
+    },
+    {
+      "module": "UploadBroadcast.LinearAlgebra",
+      "path": ".lake/build/lib/lean/UploadBroadcast/LinearAlgebra.olean",
+      "sha256": "3a963e0b34e83c330191dd76cb961b7694487bf250c85d387262bce199fb5abb"
+    },
+    {
+      "module": "UploadBroadcast.Allocation",
+      "path": ".lake/build/lib/lean/UploadBroadcast/Allocation.olean",
+      "sha256": "52b5a7272a76b2a4a23f8c2d688ef43b483adc39d44f5c3927835658c37b4dee"
+    },
+    {
+      "module": "UploadBroadcast.Examples",
+      "path": ".lake/build/lib/lean/UploadBroadcast/Examples.olean",
+      "sha256": "7f3ecc8d2bc905c44f8a7d7a5f24963a8a865743010362ed26c5cade3ff681ab"
+    },
+    {
+      "module": "UploadBroadcast.Coordination",
+      "path": ".lake/build/lib/lean/UploadBroadcast/Coordination.olean",
+      "sha256": "cb7e1716696f148802f285e1ec79e630343c97d5d649867ff8b372ae87832057"
+    },
+    {
+      "module": "UploadBroadcast.Region",
+      "path": ".lake/build/lib/lean/UploadBroadcast/Region.olean",
+      "sha256": "07ecbed563ebcbdb1282f6e62b11b45800d2ac6e9d12316576905a8d86679dfc"
+    },
+    {
+      "module": "UploadBroadcast.Structural",
+      "path": ".lake/build/lib/lean/UploadBroadcast/Structural.olean",
+      "sha256": "fd73da60753e6c9f31e5578409bd7c4b25900755d10c9907c162de2d37cf66e5"
+    },
+    {
+      "module": "UploadBroadcast.Profile",
+      "path": ".lake/build/lib/lean/UploadBroadcast/Profile.olean",
+      "sha256": "14043658337e3321951542453b4d936dccd9ba69fa00141770bd7f40548bc680"
+    },
+    {
+      "module": "UploadBroadcast.LinearCosts",
+      "path": ".lake/build/lib/lean/UploadBroadcast/LinearCosts.olean",
+      "sha256": "52b3e006f4a4fb25da681492f0c91aa3751c6cb8fadf90c5661e857417f60903"
+    },
+    {
+      "module": "UploadBroadcast.LinearCode",
+      "path": ".lake/build/lib/lean/UploadBroadcast/LinearCode.olean",
+      "sha256": "9ce2846d3775d71c9888dd42ccf45d455e823e8cdb1f2c409f01ffd9d0f765ef"
+    },
+    {
+      "module": "UploadBroadcast.ObservationRank",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ObservationRank.olean",
+      "sha256": "2b72f31fed0fc76b095aab627e545c0f51603a2bff6ac342a27df30fb1bb31bb"
+    },
+    {
+      "module": "UploadBroadcast.AllocationAggregate",
+      "path": ".lake/build/lib/lean/UploadBroadcast/AllocationAggregate.olean",
+      "sha256": "4942dd54095711eb545d92eca888012d3dbd08a5cc04c8099ded57ebb159140e"
+    },
+    {
+      "module": "UploadBroadcast.AllocationWaterfill",
+      "path": ".lake/build/lib/lean/UploadBroadcast/AllocationWaterfill.olean",
+      "sha256": "382401609a71a0f3cfa3cc5f394450fd8b265eb24c181394ba2967b4e6ecb5c1"
+    },
+    {
+      "module": "UploadBroadcast.AllocationRanks",
+      "path": ".lake/build/lib/lean/UploadBroadcast/AllocationRanks.olean",
+      "sha256": "16a333e4eeca536c1d240c7900386b0254fb82f0511154419d151769417ebc17"
+    },
+    {
+      "module": "UploadBroadcast.RootClassification",
+      "path": ".lake/build/lib/lean/UploadBroadcast/RootClassification.olean",
+      "sha256": "e741dc23db4f585af195e9a1db37e2876331233bca5fa93fb722c5ffb33e9bb6"
+    },
+    {
+      "module": "UploadBroadcast.EntropyCalculus",
+      "path": ".lake/build/lib/lean/UploadBroadcast/EntropyCalculus.olean",
+      "sha256": "90b9164707c01bd54fde949a8135d5ca0c08b03f95086cabe9b3448dbc3539f3"
+    },
+    {
+      "module": "UploadBroadcast.Shannon",
+      "path": ".lake/build/lib/lean/UploadBroadcast/Shannon.olean",
+      "sha256": "2e2e58eb97c54f797572bd7792a2c401c19c0524306202f77a27d1daac43a8ed"
+    },
+    {
+      "module": "UploadBroadcast.Entropy",
+      "path": ".lake/build/lib/lean/UploadBroadcast/Entropy.olean",
+      "sha256": "03f35d147b1a1587df9534066ca9f17070a6f9a174d4da77d40e6f896e07cebf"
+    },
+    {
+      "module": "UploadBroadcast.CommonFunction",
+      "path": ".lake/build/lib/lean/UploadBroadcast/CommonFunction.olean",
+      "sha256": "aa9d2662ac66a85f18b524e8be11a87e0ad52afe5a544b4710db74ecd8833f83"
+    },
+    {
+      "module": "UploadBroadcast.FiniteEntropyConverse",
+      "path": ".lake/build/lib/lean/UploadBroadcast/FiniteEntropyConverse.olean",
+      "sha256": "ac13dabf57b6b80dc965fd38c91f395943a908d866cfb58db24558c0d85ea5f7"
+    },
+    {
+      "module": "UploadBroadcast.JointRealization",
+      "path": ".lake/build/lib/lean/UploadBroadcast/JointRealization.olean",
+      "sha256": "b64ae7b3ad32fa1fdd0fd82de2c5381be24b1877b8f986eef81b28b85f85c820"
+    },
+    {
+      "module": "UploadBroadcast.GeneralEntropyConverse",
+      "path": ".lake/build/lib/lean/UploadBroadcast/GeneralEntropyConverse.olean",
+      "sha256": "8e4c35809428172323d69aa4934422c9c2012f91a61f11404ca4dfa3e17b7424"
+    },
+    {
+      "module": "UploadBroadcast.OmniscienceEntropy",
+      "path": ".lake/build/lib/lean/UploadBroadcast/OmniscienceEntropy.olean",
+      "sha256": "4080fd3e271fb585f49203c32d520c5c5635f44451fc90341154ea70b97da55f"
+    },
+    {
+      "module": "UploadBroadcast.AllocationOmniscience",
+      "path": ".lake/build/lib/lean/UploadBroadcast/AllocationOmniscience.olean",
+      "sha256": "ed275b64534e5eb729f81df9aa5bbe4343bc71221b075123abe789558a65550d"
+    },
+    {
+      "module": "UploadBroadcast.FiniteAlphabetEncoding",
+      "path": ".lake/build/lib/lean/UploadBroadcast/FiniteAlphabetEncoding.olean",
+      "sha256": "a245e6db4c7dd4604fabc077e652fdb63cea120d5daacbc630b10b1f936c439f"
+    },
+    {
+      "module": "UploadBroadcast.CommonFunctionFiniteAlphabet",
+      "path": ".lake/build/lib/lean/UploadBroadcast/CommonFunctionFiniteAlphabet.olean",
+      "sha256": "971dc52ab12621d889d50ade67307fccc0ba800f707a4363864d181c2d773c0b"
+    },
+    {
+      "module": "UploadBroadcast.GeneralOmniscienceEntropy",
+      "path": ".lake/build/lib/lean/UploadBroadcast/GeneralOmniscienceEntropy.olean",
+      "sha256": "86f5b7c37c707f4e0b6c2dad4d52b93fd5cbda27e937c399eb5464f802bf3120"
+    },
+    {
+      "module": "UploadBroadcast.OmniscienceFiniteAlphabet",
+      "path": ".lake/build/lib/lean/UploadBroadcast/OmniscienceFiniteAlphabet.olean",
+      "sha256": "9702ff1081cac44381881a71f9c2b255b2b3344db1106187b0dd0432fb368d88"
+    },
+    {
+      "module": "UploadBroadcast.EntropyCoding",
+      "path": ".lake/build/lib/lean/UploadBroadcast/EntropyCoding.olean",
+      "sha256": "64d3be8cc08f30c8cdace4b0b163d4fefec843905f86ed40a2598168a7d6382e"
+    },
+    {
+      "module": "UploadBroadcast.LinearEntropy",
+      "path": ".lake/build/lib/lean/UploadBroadcast/LinearEntropy.olean",
+      "sha256": "fefac66d8a3e396cdcf9722e4fead80c1e07d8f953d9a884d9537d7a5b5b1579"
+    },
+    {
+      "module": "UploadBroadcast.OmniscienceCode",
+      "path": ".lake/build/lib/lean/UploadBroadcast/OmniscienceCode.olean",
+      "sha256": "579a466cfa7d85ccb4e31c61d2dbacd073487655f72d41ad1dbe064ca9a2ee29"
+    },
+    {
+      "module": "UploadBroadcast.OmniscienceOptimal",
+      "path": ".lake/build/lib/lean/UploadBroadcast/OmniscienceOptimal.olean",
+      "sha256": "f227effe2cc2c3bc48124453a73d974b7990bff17b44b7b4f4c02a3062885a8b"
+    },
+    {
+      "module": "UploadBroadcast.PassiveCode",
+      "path": ".lake/build/lib/lean/UploadBroadcast/PassiveCode.olean",
+      "sha256": "84797818ab9f808304829b678dd7c9c96d4c6eccdf0088a8908825b186c2fc43"
+    },
+    {
+      "module": "UploadBroadcast.ActiveReduction",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ActiveReduction.olean",
+      "sha256": "7dc7e8ae30dbaa4dba9ae118b4a87324dad46a2b2059d52684aada8347a5fa3e"
+    },
+    {
+      "module": "UploadBroadcast.JordanResonance",
+      "path": ".lake/build/lib/lean/UploadBroadcast/JordanResonance.olean",
+      "sha256": "6dbc4bca0d66067c676dfe70f68d3e45e2f40c97b6cbe173e3565bf6856a456f"
+    },
+    {
+      "module": "UploadBroadcast.CycleRepair",
+      "path": ".lake/build/lib/lean/UploadBroadcast/CycleRepair.olean",
+      "sha256": "9891a82545969c991cd9215b37701898617d9df81f8651d4f1230af16cf7e8a6"
+    },
+    {
+      "module": "UploadBroadcast.RankLoss",
+      "path": ".lake/build/lib/lean/UploadBroadcast/RankLoss.olean",
+      "sha256": "b63eb5c5eb485b5e57b0ab0d7fc948fe5d75f52e151d79c6615530fac2c5e783"
+    },
+    {
+      "module": "UploadBroadcast.CycleProfile",
+      "path": ".lake/build/lib/lean/UploadBroadcast/CycleProfile.olean",
+      "sha256": "a2c6177b9a91a7a2f6e4aa715fd10f4feb0ee4dcd45ed5af88d8ebdd88669b66"
+    },
+    {
+      "module": "UploadBroadcast.CycleTheorem",
+      "path": ".lake/build/lib/lean/UploadBroadcast/CycleTheorem.olean",
+      "sha256": "50fe9e0d3324387cc462b591462f6ce7cf73fea031fe1b24b0b46c8570a678d4"
+    },
+    {
+      "module": "UploadBroadcast.ProfileTransport",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ProfileTransport.olean",
+      "sha256": "1596ccf03cc816cb646da5e778a770bb1ad74f02d13dcb5a8695cbc29fe36a55"
+    },
+    {
+      "module": "UploadBroadcast.AlignedRelation",
+      "path": ".lake/build/lib/lean/UploadBroadcast/AlignedRelation.olean",
+      "sha256": "517262cb4087ee6f8d479c537172b07aa80d564b31c3ffeb0443f115d78386b9"
+    },
+    {
+      "module": "UploadBroadcast.BinaryCoordination",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BinaryCoordination.olean",
+      "sha256": "40b8db7d9342e21ab804e9a44eff207327444f7dcf6058a00c025a1a1146c2af"
+    },
+    {
+      "module": "UploadBroadcast.LCBCConverse",
+      "path": ".lake/build/lib/lean/UploadBroadcast/LCBCConverse.olean",
+      "sha256": "2b36a04f18dbbb07e389ad6367087891d4962557dcdd951cd1d0c6be6b06f82f"
+    },
+    {
+      "module": "UploadBroadcast.BroadcastShannon",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BroadcastShannon.olean",
+      "sha256": "0b749c30d7b84de9d7186d05d5c7f0e66b1d2fb1651bfb686a4006cabda79506"
+    },
+    {
+      "module": "UploadBroadcast.BroadcastOperational",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BroadcastOperational.olean",
+      "sha256": "742b81a2fca5acd661e4c3cd21cb79bd7315c0bc47360203f258cced5d12d7d2"
+    },
+    {
+      "module": "UploadBroadcast.CycleReverseTransport",
+      "path": ".lake/build/lib/lean/UploadBroadcast/CycleReverseTransport.olean",
+      "sha256": "96e11a04ce4da85d30ce01863e83a791eb80c59c50fee5c8605370a843cb60b5"
+    },
+    {
+      "module": "UploadBroadcast.CycleReverseTheorem",
+      "path": ".lake/build/lib/lean/UploadBroadcast/CycleReverseTheorem.olean",
+      "sha256": "0a580d325eabbf2695c7c5a87cbd123868c8baac146ed2214459b0b362850dd8"
+    },
+    {
+      "module": "UploadBroadcast.TaskDecomposition",
+      "path": ".lake/build/lib/lean/UploadBroadcast/TaskDecomposition.olean",
+      "sha256": "56994c1313902b5bca7b4eb796bef583450c317e5999947674e536a61624b270"
+    },
+    {
+      "module": "UploadBroadcast.ScalarBroadcast",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ScalarBroadcast.olean",
+      "sha256": "398d0d5200c6604a3cfc927bac060eb4a02e850e224b9fb8af134d43b742956f"
+    },
+    {
+      "module": "UploadBroadcast.PairSelection",
+      "path": ".lake/build/lib/lean/UploadBroadcast/PairSelection.olean",
+      "sha256": "3bdb643450839adb26e28e6a0472c60859a8e3a3e69cb27a93920e2cd55dc4ec"
+    },
+    {
+      "module": "UploadBroadcast.AllocationNat",
+      "path": ".lake/build/lib/lean/UploadBroadcast/AllocationNat.olean",
+      "sha256": "50a5828d5592067124ea2e124606185f220edad567584cfc5e555294df38ca5f"
+    },
+    {
+      "module": "UploadBroadcast.ScalarIncidence",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ScalarIncidence.olean",
+      "sha256": "e24cb6127172118afb7d0163489625d05c72278982417a204f826bd1c2c820d7"
+    },
+    {
+      "module": "UploadBroadcast.BinaryRelationBridge",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BinaryRelationBridge.olean",
+      "sha256": "bf53203cacde35558e9e72736471eed2def2d79f3c0fe6daf560874ec4d514ab"
+    },
+    {
+      "module": "UploadBroadcast.ScalarAssembly",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ScalarAssembly.olean",
+      "sha256": "1ceda5ee4670fa0f10b5b72bf9fb165167ed2f5f450291296478ff8891fc4ca7"
+    },
+    {
+      "module": "UploadBroadcast.ScalarAchievability",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ScalarAchievability.olean",
+      "sha256": "45a45100d76f25d58a969d6046278c3fd1ac058723b435265cbd1ebc12f47721"
+    },
+    {
+      "module": "UploadBroadcast.FiniteMonoidPower",
+      "path": ".lake/build/lib/lean/UploadBroadcast/FiniteMonoidPower.olean",
+      "sha256": "a4d6c6848c013ebac05e14111a42cd8f7023dd304deaa26eea3e0e245d912c5d"
+    },
+    {
+      "module": "UploadBroadcast.StableEnd",
+      "path": ".lake/build/lib/lean/UploadBroadcast/StableEnd.olean",
+      "sha256": "a41ca454c652f58c2a26ccc7e94f549f9735ae9e9fdc3cb4766648c48e0bd39e"
+    },
+    {
+      "module": "UploadBroadcast.BlockBroadcast",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BlockBroadcast.olean",
+      "sha256": "b32d1b40beee37c57000fc09938441f38d1d934957b5552ba257c0e6a2ef7592"
+    },
+    {
+      "module": "UploadBroadcast.AllocationProfile",
+      "path": ".lake/build/lib/lean/UploadBroadcast/AllocationProfile.olean",
+      "sha256": "c9d42632b392e38307e1305a6eb1060efcd9fe34f6d870e2914d1e4e73c96cf8"
+    },
+    {
+      "module": "UploadBroadcast.BinaryCommon",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BinaryCommon.olean",
+      "sha256": "a7a14ab2601d81e03955c4134426fbb3aa206cf712271e22cf1d909bd2634fa8"
+    },
+    {
+      "module": "UploadBroadcast.BinaryIncidence",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BinaryIncidence.olean",
+      "sha256": "6f3a61672d96581f0f745b93d54f50eb82ccfeaff7d08a8b4d898552588a2970"
+    },
+    {
+      "module": "UploadBroadcast.BinaryAssembly",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BinaryAssembly.olean",
+      "sha256": "d2555c8822320c25eba1d0f979f46a17657adf7667a2fe5a73471c68759cf950"
+    },
+    {
+      "module": "UploadBroadcast.BinaryAchievability",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BinaryAchievability.olean",
+      "sha256": "25b2e1b7062efac2a911e765f3f509391b9e755b927b054016901cd1d31e775a"
+    },
+    {
+      "module": "UploadBroadcast.ScalarEndpoints",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ScalarEndpoints.olean",
+      "sha256": "309045dc32e4bf2a8bd3a5c23d34680f948b7b3fe15ac6133c659827e66fef27"
+    },
+    {
+      "module": "UploadBroadcast.RawProfileScaling",
+      "path": ".lake/build/lib/lean/UploadBroadcast/RawProfileScaling.olean",
+      "sha256": "210c2a0fd2731fc0609619b1a511f24860bd633824d9cd9154d278ffa4ac0559"
+    },
+    {
+      "module": "UploadBroadcast.SemilinearTaskTransport",
+      "path": ".lake/build/lib/lean/UploadBroadcast/SemilinearTaskTransport.olean",
+      "sha256": "6f69a78a8c4cf131507044e290c1cf6a4342924dfae0459c326d751bb58fa760"
+    },
+    {
+      "module": "UploadBroadcast.BinaryFieldTransport",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BinaryFieldTransport.olean",
+      "sha256": "76d6adf75375448e1cea30d3fb1a4291355c67b022fec5761c9325df61970fbe"
+    },
+    {
+      "module": "UploadBroadcast.RawBroadcastConverse",
+      "path": ".lake/build/lib/lean/UploadBroadcast/RawBroadcastConverse.olean",
+      "sha256": "b78f66c60be5e6fd468d53521af30ab2c4e282814acefbf00a736f85ba644e8a"
+    },
+    {
+      "module": "UploadBroadcast.BroadcastOptimum",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BroadcastOptimum.olean",
+      "sha256": "06073c7fb5af6ec233ac6724210706a636e4f1eed202807be188f59f489fee30"
+    },
+    {
+      "module": "UploadBroadcast.ScalarExtensionConfiguration",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ScalarExtensionConfiguration.olean",
+      "sha256": "5b89cc2f049afd48ae324043f241d251376effb7cf8428606607b708fab2fdbb"
+    },
+    {
+      "module": "UploadBroadcast.ExtensionBlockCode",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ExtensionBlockCode.olean",
+      "sha256": "c12a06ee52c3e8ab6179f9a20d7a219995d7c4576e8b2a675d8ac18b9ae093e5"
+    },
+    {
+      "module": "UploadBroadcast.BaseChangeProfile",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BaseChangeProfile.olean",
+      "sha256": "47048020691410287a48fec7cbcd2448f8d09f276f665b87a277fa50f1029593"
+    },
+    {
+      "module": "UploadBroadcast.GeneralBroadcastOptimum",
+      "path": ".lake/build/lib/lean/UploadBroadcast/GeneralBroadcastOptimum.olean",
+      "sha256": "1e15ef2576ca84f40f9ecc2039bafe3f4c1d2c03bc61eceb027f63aa43490a50"
+    },
+    {
+      "module": "UploadBroadcast.ScalarPaperEndpoints",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ScalarPaperEndpoints.olean",
+      "sha256": "dbedf23a4bc81bb97b875952617e9fdc4a75e7998123f8f901440c1c5839d3cf"
+    },
+    {
+      "module": "UploadBroadcast.FiniteFieldDescent",
+      "path": ".lake/build/lib/lean/UploadBroadcast/FiniteFieldDescent.olean",
+      "sha256": "c39477cd1388eb1c9eac17c0f47d6d9b7e6badb4d6c5062fb239cef08a519a7c"
+    },
+    {
+      "module": "UploadBroadcast.ThreeSubspaceNormalFormCore",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ThreeSubspaceNormalFormCore.olean",
+      "sha256": "6cfbaed77921c3df30ab96a5bb7514ef3205aeb6b6f8084a7c26a801700db4e3"
+    },
+    {
+      "module": "UploadBroadcast.ThreeSubspaceNormalForm",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ThreeSubspaceNormalForm.olean",
+      "sha256": "a127968d11dc4a07122877d558d5aa9e889088691fdf3a03fcba53f51558ee53"
+    },
+    {
+      "module": "UploadBroadcast.ReflectionReduction",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ReflectionReduction.olean",
+      "sha256": "0cf403b5288f319bdaf5160ce41683911913107eeafba4e031f57aa9366bb896"
+    },
+    {
+      "module": "UploadBroadcast.ActiveTaskAssembly",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ActiveTaskAssembly.olean",
+      "sha256": "07fe47155b6007726d883c295f6ca8204c7b2c076417877cd29c58491f67bf97"
+    },
+    {
+      "module": "UploadBroadcast.ReducedTask",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ReducedTask.olean",
+      "sha256": "8db59a064d182b100f8979e893442a2e217ec48ac39be1ec6280636b685f6a2b"
+    },
+    {
+      "module": "UploadBroadcast.NilpotentFiltration",
+      "path": ".lake/build/lib/lean/UploadBroadcast/NilpotentFiltration.olean",
+      "sha256": "59d55e3e403011f0ba730dba2df1a7b3a31370c954d49acb72d9489800134fb2"
+    },
+    {
+      "module": "UploadBroadcast.ProjectionCriterion",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ProjectionCriterion.olean",
+      "sha256": "8de67983789b8850594dd31155da01177a9b2206fa6a8f4499e29c96e4c13aae"
+    },
+    {
+      "module": "UploadBroadcast.ResonantEndomorphisms",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ResonantEndomorphisms.olean",
+      "sha256": "6275b1f9da1a7ee6639a429489aaa147d63cdfd992166bb6b252b05face3ef2b"
+    },
+    {
+      "module": "UploadBroadcast.ResonantBaseChange",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ResonantBaseChange.olean",
+      "sha256": "48e3d58612734b6e305fd6615accfd37eb1fc9561afe4242ecc48446c7a917d0"
+    },
+    {
+      "module": "UploadBroadcast.ResonantRelay",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ResonantRelay.olean",
+      "sha256": "2c40fbe37af8ec9673d0ff8e86a7ea996b8dad95f68f01bcb87500456d9ff215"
+    },
+    {
+      "module": "UploadBroadcast.ResonantProfile",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ResonantProfile.olean",
+      "sha256": "a8220b8decf2faa016c365480b7986055fc7497a9aba8d2d71e730303d4ffd1e"
+    },
+    {
+      "module": "UploadBroadcast.QuiverRepresentation",
+      "path": ".lake/build/lib/lean/UploadBroadcast/QuiverRepresentation.olean",
+      "sha256": "a37ed2ff5c2c1880a7d543c33c970443128349b71ba7318eab2b52955be1e5c2"
+    },
+    {
+      "module": "UploadBroadcast.ReflectionEquivalence",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ReflectionEquivalence.olean",
+      "sha256": "7e3f0ed96268c95bced494020b4d4f5a4fcb6a03b84113e7fe62e58b0b225e2d"
+    },
+    {
+      "module": "UploadBroadcast.SignalBridge",
+      "path": ".lake/build/lib/lean/UploadBroadcast/SignalBridge.olean",
+      "sha256": "5699d865c79542e0ae6440379097a40c86101adc300305aeb173d4de213a76c6"
+    },
+    {
+      "module": "UploadBroadcast.ResidualUpload",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ResidualUpload.olean",
+      "sha256": "690ea461bbf23dd063d85322a3d8a1b8e60820ec9c523d757459341b4603de32"
+    },
+    {
+      "module": "UploadBroadcast.ResidualRowCompletion",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ResidualRowCompletion.olean",
+      "sha256": "0d4169f1cb854f299fc608136776c72d9613a4c9c92d2d4afd2f636cb2c33fb1"
+    },
+    {
+      "module": "UploadBroadcast.ResidualConverse",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ResidualConverse.olean",
+      "sha256": "bfb0b724d886914b4049f2f776d925f11acbff002110cbe2479a926752a9155b"
+    },
+    {
+      "module": "UploadBroadcast.ResidualOperational",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ResidualOperational.olean",
+      "sha256": "30a41c8c91f7c34c6cb27016bfbd15ec111c4cf91c7ffb48d79d743733b6f6e2"
+    },
+    {
+      "module": "UploadBroadcast.BroadcastReindex",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BroadcastReindex.olean",
+      "sha256": "e4b13500db49c2d65fd5e01c3f79faa6112f1cdd1ed16bf7b5df0ae2e756572c"
+    },
+    {
+      "module": "UploadBroadcast.EdgeExtraction",
+      "path": ".lake/build/lib/lean/UploadBroadcast/EdgeExtraction.olean",
+      "sha256": "b0dd775e9e4f3659a78a02c6656b2e0ad17aa351e4cb9b5143752ec98ca0fc47"
+    },
+    {
+      "module": "UploadBroadcast.EdgeProfile",
+      "path": ".lake/build/lib/lean/UploadBroadcast/EdgeProfile.olean",
+      "sha256": "83c887d24e2b81497d4a45e5ea0a3b5f20a5cd4dff55570274bcc1d4393640fe"
+    },
+    {
+      "module": "UploadBroadcast.MarkedNilpotent",
+      "path": ".lake/build/lib/lean/UploadBroadcast/MarkedNilpotent.olean",
+      "sha256": "9fec4035a363257d431387b1263717a6baac4120cefc8049c9026a4bff590691"
+    },
+    {
+      "module": "UploadBroadcast.ResonantClassification",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ResonantClassification.olean",
+      "sha256": "34dc18261f5aaedf356a51ae69d347cd6689f7ff4f7fedf3b6448412a2a0f9bc"
+    },
+    {
+      "module": "UploadBroadcast.RelayLinearComposition",
+      "path": ".lake/build/lib/lean/UploadBroadcast/RelayLinearComposition.olean",
+      "sha256": "60988fd4d40af5bf7a661a72b110f8717cd423d0a0c1e03cdb71681c8126bf93"
+    },
+    {
+      "module": "UploadBroadcast.BlockLinearCode",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BlockLinearCode.olean",
+      "sha256": "e2654b4c96b3aae693f387a3429f15ab5c22a3488b94202bffc6b85ad7902cb1"
+    },
+    {
+      "module": "UploadBroadcast.PassiveLinearCode",
+      "path": ".lake/build/lib/lean/UploadBroadcast/PassiveLinearCode.olean",
+      "sha256": "d8cccce32c4494498ed54d97d46961a654ceb44370931a9401d0e8d5fe68476b"
+    },
+    {
+      "module": "UploadBroadcast.OmniscienceProfile",
+      "path": ".lake/build/lib/lean/UploadBroadcast/OmniscienceProfile.olean",
+      "sha256": "7d5a9a3332aea3250214db0fd11381ea2e4166d5f42bbaf27069661f1b8a8e24"
+    },
+    {
+      "module": "UploadBroadcast.EdgeDeficits",
+      "path": ".lake/build/lib/lean/UploadBroadcast/EdgeDeficits.olean",
+      "sha256": "a31bcd4b0447c128d62056b199dec1f22a70140a1171e6c72d9239cc94f6091d"
+    },
+    {
+      "module": "UploadBroadcast.RelayTask",
+      "path": ".lake/build/lib/lean/UploadBroadcast/RelayTask.olean",
+      "sha256": "2766658e93ba6bd63fbe56686ab26d9215b12957fe53c45d57302eebe501138e"
+    },
+    {
+      "module": "UploadBroadcast.CodeAlphabet",
+      "path": ".lake/build/lib/lean/UploadBroadcast/CodeAlphabet.olean",
+      "sha256": "cbe18116f25753503d08ba7f2c54e75db80d94da8d16178eb397954aabbb0b95"
+    },
+    {
+      "module": "UploadBroadcast.OperationalBounds",
+      "path": ".lake/build/lib/lean/UploadBroadcast/OperationalBounds.olean",
+      "sha256": "219bdc0e1ecb997ee1ba59d7b675c0488380c98ec245a5f5910078d7c0c5e692"
+    },
+    {
+      "module": "UploadBroadcast.GlobalUploadConverse",
+      "path": ".lake/build/lib/lean/UploadBroadcast/GlobalUploadConverse.olean",
+      "sha256": "97b9cb1176fb41a29eb79ea581a43f1aae282ad6702d6a3ece05991497dab8c8"
+    },
+    {
+      "module": "UploadBroadcast.GlobalUploadGeometry",
+      "path": ".lake/build/lib/lean/UploadBroadcast/GlobalUploadGeometry.olean",
+      "sha256": "4defce98af4cf0fa246694c472f6987a15f5201e64f4cbfb72e378b68e61e4c7"
+    },
+    {
+      "module": "UploadBroadcast.ResidualTaskAssembly",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ResidualTaskAssembly.olean",
+      "sha256": "b494f1f3e26a21e2a83e7a6f55269c054d44e5cd132a5b5f7b230f349c13b136"
+    },
+    {
+      "module": "UploadBroadcast.ResidualPrivateSplit",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ResidualPrivateSplit.olean",
+      "sha256": "7a3217371450c2b85a6c10fa755689c12fb24f6879d97dd27e902f9e2357ce53"
+    },
+    {
+      "module": "UploadBroadcast.GlobalUploadAssembly",
+      "path": ".lake/build/lib/lean/UploadBroadcast/GlobalUploadAssembly.olean",
+      "sha256": "585e53cb242490ed1148d889820d66b0c57c575fbb53114e05e6079ea33b52eb"
+    },
+    {
+      "module": "UploadBroadcast.NonzeroDefectRelays",
+      "path": ".lake/build/lib/lean/UploadBroadcast/NonzeroDefectRelays.olean",
+      "sha256": "bfb5b74b5c972faae230f720a38eccd54d355cb58d539e40bbd78eb15a7e5005"
+    },
+    {
+      "module": "UploadBroadcast.NonzeroDefectProfile",
+      "path": ".lake/build/lib/lean/UploadBroadcast/NonzeroDefectProfile.olean",
+      "sha256": "ba6835daea28dd7776178df373b7fe1785391b0e07172bd2dd874aa9778b263c"
+    },
+    {
+      "module": "UploadBroadcast.ResonantFlagNormalization",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ResonantFlagNormalization.olean",
+      "sha256": "9cfb3f64324fac6cfba26f31e55f0705c15d7130cb8beaf3805b63543229c951"
+    },
+    {
+      "module": "UploadBroadcast.BroadcastRegion",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BroadcastRegion.olean",
+      "sha256": "06905021588fed712342eb9fac0e31b0ac1e4664091b05191ed6caf25a946314"
+    },
+    {
+      "module": "UploadBroadcast.LinearCodeSum",
+      "path": ".lake/build/lib/lean/UploadBroadcast/LinearCodeSum.olean",
+      "sha256": "86ba775ac69f8c9a33dfb39aa778cf5fe7ccdc06a6a4849653dc23a0e6de0cdf"
+    },
+    {
+      "module": "UploadBroadcast.TripodCompression",
+      "path": ".lake/build/lib/lean/UploadBroadcast/TripodCompression.olean",
+      "sha256": "898a758a2519e29732ebffa5d705b97b467f271695d7a5d78041f6211f3ec65f"
+    },
+    {
+      "module": "UploadBroadcast.OptimalRelaySeparation",
+      "path": ".lake/build/lib/lean/UploadBroadcast/OptimalRelaySeparation.olean",
+      "sha256": "3f6dab6e6a9c9be85df9e7c2dcc4bfbc6c66c5d94c18c763c259b43d6d528ffc"
+    },
+    {
+      "module": "UploadBroadcast.BlockFlatten",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BlockFlatten.olean",
+      "sha256": "ea57e36fc791872d762dad741d0f53c99d90f515c012fc9ade402be0ff347131"
+    },
+    {
+      "module": "UploadBroadcast.BlockOptimalRelaySeparation",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BlockOptimalRelaySeparation.olean",
+      "sha256": "925bacf5285d77dedabf97518f6a5c5700452aeec92a271a6b7366f97f251ad1"
+    },
+    {
+      "module": "UploadBroadcast.MarkedSubspace",
+      "path": ".lake/build/lib/lean/UploadBroadcast/MarkedSubspace.olean",
+      "sha256": "3f637bd4f2aef67a2914585ec8b5eada1d8b21b05639d5704ca5d194e11fce56"
+    },
+    {
+      "module": "UploadBroadcast.ZeroCommonRowNormalForm",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ZeroCommonRowNormalForm.olean",
+      "sha256": "b6d6771b22bef6b2dccc8cbdc5a51ee616985ff505e858a9d1f80e45c8b80832"
+    },
+    {
+      "module": "UploadBroadcast.OmniscienceTaskCode",
+      "path": ".lake/build/lib/lean/UploadBroadcast/OmniscienceTaskCode.olean",
+      "sha256": "8eeee86d53b01b9383b9890240aa0e0a27c075f6c70e4dd6d8eadbca8b8a5b0f"
+    },
+    {
+      "module": "UploadBroadcast.QuiverReindex",
+      "path": ".lake/build/lib/lean/UploadBroadcast/QuiverReindex.olean",
+      "sha256": "7f4424615e508e40dd9650693b128c51487160872d0ba3bbe7306572bb98dd22"
+    },
+    {
+      "module": "UploadBroadcast.ReflectionIteration",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ReflectionIteration.olean",
+      "sha256": "4199baf7bf08ff6fed6867ba32d8ced430821832ad4081e9e0d06cf4a5b6e2ad"
+    },
+    {
+      "module": "UploadBroadcast.E6Reflection",
+      "path": ".lake/build/lib/lean/UploadBroadcast/E6Reflection.olean",
+      "sha256": "0075ec9abd0a40b445154abb2cdd6ea1a50c8c8303edec835445eac4d157e376"
+    },
+    {
+      "module": "UploadBroadcast.QuiverTits",
+      "path": ".lake/build/lib/lean/UploadBroadcast/QuiverTits.olean",
+      "sha256": "e902759c906d67f5101821c6343163ea1641beb91e77a47c38c6a7ff3a91ce0d"
+    },
+    {
+      "module": "UploadBroadcast.TaskQuiverBridge",
+      "path": ".lake/build/lib/lean/UploadBroadcast/TaskQuiverBridge.olean",
+      "sha256": "07d476bc81f1e2073663fb0b09c92d18ebd8706a4012662626ed373601b3a7cc"
+    },
+    {
+      "module": "UploadBroadcast.PairResidualAssembly",
+      "path": ".lake/build/lib/lean/UploadBroadcast/PairResidualAssembly.olean",
+      "sha256": "0e7ec7fac642f9bfb6adb02f41d8d300237e6e610bc96be1c17763234c40de60"
+    },
+    {
+      "module": "UploadBroadcast.FullResidualAssembly",
+      "path": ".lake/build/lib/lean/UploadBroadcast/FullResidualAssembly.olean",
+      "sha256": "431c98cfd70254d4a9408e0815d7fd0d41e7c7dbd620edf4fba31ded181e24bc"
+    },
+    {
+      "module": "UploadBroadcast.ResidualPureTransport",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ResidualPureTransport.olean",
+      "sha256": "21541b9d5dc92c42315dd3b244de4d7095ca2a77a90ff808bfdf4c631dbc6b53"
+    },
+    {
+      "module": "UploadBroadcast.ResidualTaskRanks",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ResidualTaskRanks.olean",
+      "sha256": "caf5ce6610478fb924bc4c57a69a34ea29eec8717c183bb8aae591d3fa9cf1e9"
+    },
+    {
+      "module": "UploadBroadcast.CommonTripodAssembly",
+      "path": ".lake/build/lib/lean/UploadBroadcast/CommonTripodAssembly.olean",
+      "sha256": "eece2fe269fb9eaee57171f5b78070c70f9d20ca78161b645e59d53ac6874725"
+    },
+    {
+      "module": "UploadBroadcast.CommonTripodRanks",
+      "path": ".lake/build/lib/lean/UploadBroadcast/CommonTripodRanks.olean",
+      "sha256": "834d657c727086e941ef8ebb263e53cfb87210d6da89f75fee65515f3caa8cdd"
+    },
+    {
+      "module": "UploadBroadcast.ResidualRelayAssembly",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ResidualRelayAssembly.olean",
+      "sha256": "e618283fdc08e3614b362fabfe31e4f9083376fc3767a9bc8c45e73aa45b382c"
+    },
+    {
+      "module": "UploadBroadcast.GlobalUploadOptimal",
+      "path": ".lake/build/lib/lean/UploadBroadcast/GlobalUploadOptimal.olean",
+      "sha256": "40b4e118f7da461f5fe5345e92752edc190cf9af57b1c08e1355dcd6fde8140b"
+    },
+    {
+      "module": "UploadBroadcast.PassiveProduct",
+      "path": ".lake/build/lib/lean/UploadBroadcast/PassiveProduct.olean",
+      "sha256": "1670f26edf7f38e1b2b81d018022e863a49460b000cc645d7ba33281ec3c4cea"
+    },
+    {
+      "module": "UploadBroadcast.PassiveComposition",
+      "path": ".lake/build/lib/lean/UploadBroadcast/PassiveComposition.olean",
+      "sha256": "0274957ef91f40544a18deda7ee1e0ed0fa909b5cd381be63bd6b459211fa5d5"
+    },
+    {
+      "module": "UploadBroadcast.UploadAttainment",
+      "path": ".lake/build/lib/lean/UploadBroadcast/UploadAttainment.olean",
+      "sha256": "5e71809bc05dae45895de63ec8821b7d569c670d3737bc69979c7568023a1c02"
+    },
+    {
+      "module": "UploadBroadcast.PairOmniscienceAdapter",
+      "path": ".lake/build/lib/lean/UploadBroadcast/PairOmniscienceAdapter.olean",
+      "sha256": "afd6d6e96c387ceda615c82a918649fd3f6759b174f852ee57416893d0075430"
+    },
+    {
+      "module": "UploadBroadcast.SourceHomVanishing",
+      "path": ".lake/build/lib/lean/UploadBroadcast/SourceHomVanishing.olean",
+      "sha256": "b9ffb9ae53085bd6fd9d6e6f8db8f568d089bc9b1bc49e56b5c094c0cefcefa5"
+    },
+    {
+      "module": "UploadBroadcast.ScalarEndReflection",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ScalarEndReflection.olean",
+      "sha256": "38cc71bfbec831f9c8bd6d5103122407ab2e9d10fd80cb05ccbd7a4fba0ccb4f"
+    },
+    {
+      "module": "UploadBroadcast.ScalarEndBaseChange",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ScalarEndBaseChange.olean",
+      "sha256": "de3592bc4827e6518aa1e223c445271f5209608b658d75daba9a5509f162cf03"
+    },
+    {
+      "module": "UploadBroadcast.TaskComponentBridge",
+      "path": ".lake/build/lib/lean/UploadBroadcast/TaskComponentBridge.olean",
+      "sha256": "52c032186a875d37bc20e8e617a07ea13dfb1c6389d353a62eac77d444a8b3d2"
+    },
+    {
+      "module": "UploadBroadcast.QuiverHomLinear",
+      "path": ".lake/build/lib/lean/UploadBroadcast/QuiverHomLinear.olean",
+      "sha256": "5a320e3f04ae279c8941ab31d1740361f51203942ab3062c41a319eb76adfb98"
+    },
+    {
+      "module": "UploadBroadcast.QuiverHomTerminal",
+      "path": ".lake/build/lib/lean/UploadBroadcast/QuiverHomTerminal.olean",
+      "sha256": "29de0e10df4a90d09ef9d529df3b315e7501509990ffe988647ed5ce6c760e69"
+    },
+    {
+      "module": "UploadBroadcast.QuiverEuler",
+      "path": ".lake/build/lib/lean/UploadBroadcast/QuiverEuler.olean",
+      "sha256": "152cac83de323afc9ca4273d72fd3502b0c2089472d882e2f507f5a2c3f9e89c"
+    },
+    {
+      "module": "UploadBroadcast.ResonantTripodTransversality",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ResonantTripodTransversality.olean",
+      "sha256": "134374611a3eecf9679b9b53278537f0794dbd666f7efd20002456917144d6b9"
+    },
+    {
+      "module": "UploadBroadcast.RegularHomVanishing",
+      "path": ".lake/build/lib/lean/UploadBroadcast/RegularHomVanishing.olean",
+      "sha256": "e8cfb0a73f2d58f880e3ff56124d16393919d8eedd8da3f86fb62887af2181c8"
+    },
+    {
+      "module": "UploadBroadcast.RegularSubobjectDefect",
+      "path": ".lake/build/lib/lean/UploadBroadcast/RegularSubobjectDefect.olean",
+      "sha256": "90a86ac02d4ed2c2b718b51b2248c80bde747a9f7dc34d192ae9a1a6d75f6ab5"
+    },
+    {
+      "module": "UploadBroadcast.IntersectionProbes",
+      "path": ".lake/build/lib/lean/UploadBroadcast/IntersectionProbes.olean",
+      "sha256": "edcb3a030775619d57b54caf2ab802295ca5c06af737b2460870ad143d751e6e"
+    },
+    {
+      "module": "UploadBroadcast.NonzeroFamilyRanks",
+      "path": ".lake/build/lib/lean/UploadBroadcast/NonzeroFamilyRanks.olean",
+      "sha256": "0709eec12dc2b6ef5add30a3e1453d5d29b776ecca116b44f4ad5ddf5592ef37"
+    },
+    {
+      "module": "UploadBroadcast.TwoDimensionalWedge",
+      "path": ".lake/build/lib/lean/UploadBroadcast/TwoDimensionalWedge.olean",
+      "sha256": "b1a6d4365290b6b9642146fdedd7102afecd12c3f047918fbf7fe83a73003477"
+    },
+    {
+      "module": "UploadBroadcast.OriginalUploadOptimum",
+      "path": ".lake/build/lib/lean/UploadBroadcast/OriginalUploadOptimum.olean",
+      "sha256": "be1547ba28f503580e3bcc546869d6557f5ea81ee2c11178278eaa2d9e7500ce"
+    }
+  ],
+  "runner_source_sha256": "d49df2c035e84eb12e072baa4cbf86eabbc7f6c91a92078e6823ce80928abcd7",
+  "runner_source_utf8": "#!/usr/bin/env python3\n\"\"\"User-approved same-campaign paired compilation; frozen source is never edited.\"\"\"\nfrom pathlib import Path\nimport argparse,datetime,fcntl,json,os,shutil,subprocess,sys,threading,time\np=argparse.ArgumentParser();p.add_argument('project',type=Path);p.add_argument('--expected-source-sha256',required=True);a=p.parse_args()\nroot=a.project.resolve();sys.path.insert(0,str(root/'scripts'))\nfrom release_support import source_manifest,module_inventory,imports,sha256,dump_json\nout=root/'.verification-results';lock=(out/'campaign-continuation.lock').open('a+')\ntry:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)\nexcept BlockingIOError:raise SystemExit('Previous owner still holds campaign lock; refusing overlap.')\nfrozen=json.loads((out/'source-manifest.json').read_text())\nassert frozen['project_source_sha256']==a.expected_source_sha256 and source_manifest(root)==frozen\nreport=json.loads((out/'report.json').read_text());assert not report['passed']\nprior=json.loads((out/'module-build-timings.json').read_text());inv=module_inventory(root)\ncompleted=[]\nfor record in prior:\n    if record['exit_code']:break\n    completed.append(record['module'])\nassert completed==inv['topological_modules'][:len(completed)]\nfor name in ('report.json','module-build-timings.json','all-modules.log','continuation-provenance.json'):\n    target=out/('pre-parallel-'+name)\n    assert not target.exists(),'Existing parallel checkpoint requires inspection'\n    shutil.copy2(out/name,target)\nobjects=root/'.lake/build/lib/lean';retained=[]\nfor module in completed:\n    file=objects/Path(*module.split('.')).with_suffix('.olean')\n    assert file.is_file() and not file.is_symlink() and file.resolve().is_relative_to(root)\n    retained.append({'module':module,'path':file.relative_to(root).as_posix(),'sha256':sha256(file.read_bytes())})\ndone=set(completed);remaining=set(inv['modules'])-done;quarantined=[]\n# An interrupted compiler may have left outputs without a successful checkpoint.\nfor module in sorted(remaining):\n    rel=Path(*module.split('.'))\n    for base in (root/'.lake/build/lib/lean',root/'.lake/build/ir'):\n        path=base/rel\n        if not path.parent.exists():continue\n        for file in sorted(path.parent.glob(path.name+'.*')):\n            if not file.is_file():continue\n            target=out/'unconfirmed-output-quarantine'/file.relative_to(root/'.lake/build')\n            target.parent.mkdir(parents=True,exist_ok=True)\n            quarantined.append({'path':file.relative_to(root).as_posix(),'sha256':sha256(file.read_bytes())})\n            shutil.move(file,target)\nrunner=Path(__file__).read_bytes()\nproof={'schema_version':1,'event':'user-approved-bounded-scheduling-change',\n       'started_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),\n       'source_sha256':frozen['project_source_sha256'],'source_matches_before':True,\n       'exclusive_owner_lock_acquired':True,'previous_owner_session_terminal_confirmed':True,\n       'authorization':'Coordinator confirmed explicit user approval of bounded parallel execution and an owner-controlled interruption/handoff.',\n       'old_policy':report['build_policy'],\n       'new_policy':{'coordinators':1,'maximum_new_project_modules_per_batch':2,'lean_threads_per_compiler':2,\n                     'dependency_preflight':'lake --no-build --wfail build +A:deps +B:deps',\n                     'final_validation':'All seven original gates, with the unchanged sequential all-module script and one Lean thread'},\n       'retained_same_campaign_artifacts':retained,'quarantined_unconfirmed_outputs':quarantined,\n       'externally_built_project_artifacts_imported':False,\n       'runner_source_utf8':runner.decode(),'runner_source_sha256':sha256(runner),\n       'commands':[],'status':'running'}\nreport['scheduling_change_provenance']='parallel-scheduling-provenance.json'\nreport['build_policy_history']=[report['build_policy'],proof['new_policy']]\nreport['build_policy']={'project_modules':'same-campaign dependency-ready pairs; final unchanged sequential validation',\n                      'maximum_new_project_compilers':2,'pair_phase_lean_threads':2,'final_gate_lean_threads':1}\nreport['checks']=[];report['passed']=False;report['whole_paper_release_gate_passed']=False\ndump_json(out/'report.json',report);dump_json(out/'parallel-scheduling-provenance.json',proof)\n\ndef run(name,command,threads=2,gate=False):\n    print(f'[{name}] {command}',flush=True);begin=time.monotonic()\n    item={'name':name,'command':command,'lean_num_threads':threads,'started_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()}\n    proof['commands'].append(item);dump_json(out/'parallel-scheduling-provenance.json',proof)\n    samples=[];stop=threading.Event()\n    def monitor():\n        while not stop.wait(1):\n            rows=subprocess.check_output(['ps','-eo','comm=,rss=,args='],text=True).splitlines()\n            lean=[]\n            for row in rows:\n                cols=row.strip().split(None,2)\n                if len(cols)==3 and cols[0]=='lean' and 'UploadBroadcast' in cols[2]:lean.append(int(cols[1]))\n            mem={s.split(':')[0]:s.split(':')[1].strip() for s in Path('/proc/meminfo').read_text().splitlines() if ':' in s}\n            samples.append({'project_lean_processes':len(lean),'combined_rss_kib':sum(lean),'available_memory_kib':int(mem['MemAvailable'].split()[0])})\n    path=out/('parallel-'+name+'.log')\n    with path.open('w') as log:\n        proc=subprocess.Popen(['bash','-c','set -euo pipefail; source scripts/env.sh; '+command],cwd=root,\n             env=dict(os.environ,LEAN_NUM_THREADS=str(threads),PAPER_RELEASE_THREADS=str(threads)),\n             stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,pass_fds=(lock.fileno(),))\n        watcher=threading.Thread(target=monitor,daemon=True);watcher.start()\n        try:\n            for line in proc.stdout:print(line,end='',flush=True);log.write(line);log.flush()\n            code=proc.wait()\n        except KeyboardInterrupt:\n            proc.terminate();proc.wait();code=130\n        finally:stop.set();watcher.join(timeout=3)\n    item.update({'exit_code':code,'duration_seconds':round(time.monotonic()-begin,3),'log':path.name})\n    if samples:\n        item['resource_observations']={'max_project_lean_processes':max(s['project_lean_processes'] for s in samples),\n           'peak_combined_project_rss_kib':max(s['combined_rss_kib'] for s in samples),\n           'minimum_available_memory_kib':min(s['available_memory_kib'] for s in samples)}\n        assert item['resource_observations']['max_project_lean_processes']<=2,'Unexpected additional project compiler'\n    if gate:report['checks'].append({'name':name,'command':command,'exit_code':code,'duration_seconds':item['duration_seconds'],'log':path.name})\n    dump_json(out/'parallel-scheduling-provenance.json',proof);dump_json(out/'report.json',report)\n    if code:\n        proof['status']='failed';dump_json(out/'parallel-scheduling-provenance.json',proof)\n        raise SystemExit(code)\n\nall_modules=set(inv['modules']);deps={m:set(imports(root/Path(*m.split('.')).with_suffix('.lean')))&all_modules for m in all_modules}\nindex=0\nwhile remaining:\n    ready=[m for m in inv['topological_modules'] if m in remaining and deps[m]<=done]\n    assert ready,'No dependency-ready module in remaining graph'\n    batch=ready[:2];index+=1\n    print(f'PAIRED BATCH {index}: {len(done)}/{len(all_modules)} complete; {batch}',flush=True)\n    run(f'batch-{index:03d}-dependencies','lake --no-build --wfail build '+' '.join('+'+m+':deps' for m in batch))\n    run(f'batch-{index:03d}-build','lake --wfail build '+' '.join('+'+m for m in batch))\n    artifacts=[]\n    for module in batch:\n        file=objects/Path(*module.split('.')).with_suffix('.olean');assert file.is_file()\n        artifacts.append({'module':module,'sha256':sha256(file.read_bytes())})\n    done.update(batch);remaining.difference_update(batch)\n    proof['completed_project_module_count']=len(done)\n    proof.setdefault('completed_batches',[]).append({'batch':batch,'artifacts':artifacts})\n    dump_json(out/'parallel-scheduling-provenance.json',proof)\nchecks=[('toolchain','python3 scripts/verify_toolchain.py --output .verification-results/toolchain.json'),\n ('dependency-pins','python3 scripts/verify_dependency_pins.py --output .verification-results/dependency-pins.json'),\n ('release-regressions','python3 scripts/test_release_tools.py && python3 scripts/test_audit_source.py && python3 scripts/test_package_release.py'),\n ('source-preflight','python3 scripts/audit_source.py && python3 scripts/check_coverage.py'),\n ('all-modules','python3 scripts/check_all_modules.py'),('integrated-check','bash scripts/check.sh'),\n ('complete-coverage','python3 scripts/check_coverage.py')]\nfor name,command in checks:run(name,command,threads=1,gate=True)\nunchanged=source_manifest(root)==frozen\nreport['source_unchanged_during_checks']=unchanged;report['finished_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat()\nreport['passed']=unchanged;report['whole_paper_release_gate_passed']=unchanged\nproof['source_matches_after']=unchanged;proof['status']='passed' if unchanged else 'source-changed';proof['finished_utc']=report['finished_utc']\ndump_json(out/'parallel-scheduling-provenance.json',proof);dump_json(out/'report.json',report)\nif not unchanged:raise SystemExit('Frozen source changed; refusing release')\nprint('Same frozen clean-start campaign completed; every original gate passed after bounded parallel prebuilds.',flush=True)\n",
+  "schema_version": 1,
+  "source_matches_after": true,
+  "source_matches_before": true,
+  "source_sha256": "6e7af788509fbf182f2830754a8d611c088140f273af1d8a7b16b031ff83a8cd",
+  "started_utc": "2026-10-08T15:55:12.131237+00:00",
+  "status": "passed"
+}

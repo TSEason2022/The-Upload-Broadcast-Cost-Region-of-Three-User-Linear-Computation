@@ -1,0 +1,621 @@
+{
+  "artifact_provenance": "All 79 retained project objects were freshly generated inside this same v2 campaign after its empty-build-directory initialization. None were copied from development, the earlier failed snapshot, or the diagnostic tree.",
+  "artifacts_retained": [
+    {
+      "module": "UploadBroadcast.ActiveReduction",
+      "mtime_utc": "2026-10-08T14:37:27.519315+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ActiveReduction.olean",
+      "sha256": "7dc7e8ae30dbaa4dba9ae118b4a87324dad46a2b2059d52684aada8347a5fa3e",
+      "size": 938496
+    },
+    {
+      "module": "UploadBroadcast.ActiveTaskAssembly",
+      "mtime_utc": "2026-10-08T14:50:55.864251+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ActiveTaskAssembly.olean",
+      "sha256": "07fe47155b6007726d883c295f6ca8204c7b2c076417877cd29c58491f67bf97",
+      "size": 1133128
+    },
+    {
+      "module": "UploadBroadcast.AlignedRelation",
+      "mtime_utc": "2026-10-08T14:40:46.814689+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/AlignedRelation.olean",
+      "sha256": "517262cb4087ee6f8d479c537172b07aa80d564b31c3ffeb0443f115d78386b9",
+      "size": 553720
+    },
+    {
+      "module": "UploadBroadcast.Allocation",
+      "mtime_utc": "2026-10-08T14:31:21.823105+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/Allocation.olean",
+      "sha256": "52b5a7272a76b2a4a23f8c2d688ef43b483adc39d44f5c3927835658c37b4dee",
+      "size": 2078920
+    },
+    {
+      "module": "UploadBroadcast.AllocationAggregate",
+      "mtime_utc": "2026-10-08T14:33:20.949915+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/AllocationAggregate.olean",
+      "sha256": "4942dd54095711eb545d92eca888012d3dbd08a5cc04c8099ded57ebb159140e",
+      "size": 5346680
+    },
+    {
+      "module": "UploadBroadcast.AllocationNat",
+      "mtime_utc": "2026-10-08T14:43:07.552573+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/AllocationNat.olean",
+      "sha256": "50a5828d5592067124ea2e124606185f220edad567584cfc5e555294df38ca5f",
+      "size": 993032
+    },
+    {
+      "module": "UploadBroadcast.AllocationOmniscience",
+      "mtime_utc": "2026-10-08T14:35:10.585186+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/AllocationOmniscience.olean",
+      "sha256": "ed275b64534e5eb729f81df9aa5bbe4343bc71221b075123abe789558a65550d",
+      "size": 371944
+    },
+    {
+      "module": "UploadBroadcast.AllocationProfile",
+      "mtime_utc": "2026-10-08T14:44:46.804277+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/AllocationProfile.olean",
+      "sha256": "c9d42632b392e38307e1305a6eb1060efcd9fe34f6d870e2914d1e4e73c96cf8",
+      "size": 1893480
+    },
+    {
+      "module": "UploadBroadcast.AllocationRanks",
+      "mtime_utc": "2026-10-08T14:33:35.597283+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/AllocationRanks.olean",
+      "sha256": "16a333e4eeca536c1d240c7900386b0254fb82f0511154419d151769417ebc17",
+      "size": 335224
+    },
+    {
+      "module": "UploadBroadcast.AllocationWaterfill",
+      "mtime_utc": "2026-10-08T14:33:29.421549+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/AllocationWaterfill.olean",
+      "sha256": "382401609a71a0f3cfa3cc5f394450fd8b265eb24c181394ba2967b4e6ecb5c1",
+      "size": 1492256
+    },
+    {
+      "module": "UploadBroadcast.BaseChangeProfile",
+      "mtime_utc": "2026-10-08T14:47:30.969164+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BaseChangeProfile.olean",
+      "sha256": "47048020691410287a48fec7cbcd2448f8d09f276f665b87a277fa50f1029593",
+      "size": 182040
+    },
+    {
+      "module": "UploadBroadcast.BinaryAchievability",
+      "mtime_utc": "2026-10-08T14:45:27.550511+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BinaryAchievability.olean",
+      "sha256": "25b2e1b7062efac2a911e765f3f509391b9e755b927b054016901cd1d31e775a",
+      "size": 775552
+    },
+    {
+      "module": "UploadBroadcast.BinaryAssembly",
+      "mtime_utc": "2026-10-08T14:45:20.430819+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BinaryAssembly.olean",
+      "sha256": "d2555c8822320c25eba1d0f979f46a17657adf7667a2fe5a73471c68759cf950",
+      "size": 617856
+    },
+    {
+      "module": "UploadBroadcast.BinaryCommon",
+      "mtime_utc": "2026-10-08T14:44:57.235825+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BinaryCommon.olean",
+      "sha256": "a7a14ab2601d81e03955c4134426fbb3aa206cf712271e22cf1d909bd2634fa8",
+      "size": 1032336
+    },
+    {
+      "module": "UploadBroadcast.BinaryCoordination",
+      "mtime_utc": "2026-10-08T14:41:01.506052+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BinaryCoordination.olean",
+      "sha256": "40b8db7d9342e21ab804e9a44eff207327444f7dcf6058a00c025a1a1146c2af",
+      "size": 465184
+    },
+    {
+      "module": "UploadBroadcast.BinaryFieldTransport",
+      "mtime_utc": "2026-10-08T14:46:35.375574+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BinaryFieldTransport.olean",
+      "sha256": "76d6adf75375448e1cea30d3fb1a4291355c67b022fec5761c9325df61970fbe",
+      "size": 433600
+    },
+    {
+      "module": "UploadBroadcast.BinaryIncidence",
+      "mtime_utc": "2026-10-08T14:45:10.751239+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BinaryIncidence.olean",
+      "sha256": "6f3a61672d96581f0f745b93d54f50eb82ccfeaff7d08a8b4d898552588a2970",
+      "size": 1492088
+    },
+    {
+      "module": "UploadBroadcast.BinaryRelationBridge",
+      "mtime_utc": "2026-10-08T14:43:50.398712+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BinaryRelationBridge.olean",
+      "sha256": "bf53203cacde35558e9e72736471eed2def2d79f3c0fe6daf560874ec4d514ab",
+      "size": 1377600
+    },
+    {
+      "module": "UploadBroadcast.BlockBroadcast",
+      "mtime_utc": "2026-10-08T14:44:29.633019+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BlockBroadcast.olean",
+      "sha256": "b32d1b40beee37c57000fc09938441f38d1d934957b5552ba257c0e6a2ef7592",
+      "size": 1544104
+    },
+    {
+      "module": "UploadBroadcast.BroadcastOperational",
+      "mtime_utc": "2026-10-08T14:41:38.872430+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BroadcastOperational.olean",
+      "sha256": "742b81a2fca5acd661e4c3cd21cb79bd7315c0bc47360203f258cced5d12d7d2",
+      "size": 183256
+    },
+    {
+      "module": "UploadBroadcast.BroadcastOptimum",
+      "mtime_utc": "2026-10-08T14:46:58.470573+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BroadcastOptimum.olean",
+      "sha256": "06073c7fb5af6ec233ac6724210706a636e4f1eed202807be188f59f489fee30",
+      "size": 323472
+    },
+    {
+      "module": "UploadBroadcast.BroadcastShannon",
+      "mtime_utc": "2026-10-08T14:41:28.984860+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/BroadcastShannon.olean",
+      "sha256": "0b749c30d7b84de9d7186d05d5c7f0e66b1d2fb1651bfb686a4006cabda79506",
+      "size": 530440
+    },
+    {
+      "module": "UploadBroadcast.CommonFunction",
+      "mtime_utc": "2026-10-08T14:34:23.355224+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/CommonFunction.olean",
+      "sha256": "aa9d2662ac66a85f18b524e8be11a87e0ad52afe5a544b4710db74ecd8833f83",
+      "size": 368848
+    },
+    {
+      "module": "UploadBroadcast.CommonFunctionFiniteAlphabet",
+      "mtime_utc": "2026-10-08T14:35:31.844314+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/CommonFunctionFiniteAlphabet.olean",
+      "sha256": "971dc52ab12621d889d50ade67307fccc0ba800f707a4363864d181c2d773c0b",
+      "size": 125832
+    },
+    {
+      "module": "UploadBroadcast.Coordination",
+      "mtime_utc": "2026-10-08T14:31:41.098265+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/Coordination.olean",
+      "sha256": "cb7e1716696f148802f285e1ec79e630343c97d5d649867ff8b372ae87832057",
+      "size": 630824
+    },
+    {
+      "module": "UploadBroadcast.CycleProfile",
+      "mtime_utc": "2026-10-08T14:40:20.747818+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/CycleProfile.olean",
+      "sha256": "a2c6177b9a91a7a2f6e4aa715fd10f4feb0ee4dcd45ed5af88d8ebdd88669b66",
+      "size": 7724952
+    },
+    {
+      "module": "UploadBroadcast.CycleRepair",
+      "mtime_utc": "2026-10-08T14:38:36.968311+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/CycleRepair.olean",
+      "sha256": "9891a82545969c991cd9215b37701898617d9df81f8651d4f1230af16cf7e8a6",
+      "size": 6495600
+    },
+    {
+      "module": "UploadBroadcast.CycleReverseTheorem",
+      "mtime_utc": "2026-10-08T14:42:19.610655+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/CycleReverseTheorem.olean",
+      "sha256": "0a580d325eabbf2695c7c5a87cbd123868c8baac146ed2214459b0b362850dd8",
+      "size": 1120008
+    },
+    {
+      "module": "UploadBroadcast.CycleReverseTransport",
+      "mtime_utc": "2026-10-08T14:42:06.755217+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/CycleReverseTransport.olean",
+      "sha256": "96e11a04ce4da85d30ce01863e83a791eb80c59c50fee5c8605370a843cb60b5",
+      "size": 3201976
+    },
+    {
+      "module": "UploadBroadcast.CycleTheorem",
+      "mtime_utc": "2026-10-08T14:40:27.227537+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/CycleTheorem.olean",
+      "sha256": "50fe9e0d3324387cc462b591462f6ce7cf73fea031fe1b24b0b46c8570a678d4",
+      "size": 322360
+    },
+    {
+      "module": "UploadBroadcast.Entropy",
+      "mtime_utc": "2026-10-08T14:34:11.699726+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/Entropy.olean",
+      "sha256": "03f35d147b1a1587df9534066ca9f17070a6f9a174d4da77d40e6f896e07cebf",
+      "size": 313320
+    },
+    {
+      "module": "UploadBroadcast.EntropyCalculus",
+      "mtime_utc": "2026-10-08T14:33:57.432342+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/EntropyCalculus.olean",
+      "sha256": "90b9164707c01bd54fde949a8135d5ca0c08b03f95086cabe9b3448dbc3539f3",
+      "size": 408792
+    },
+    {
+      "module": "UploadBroadcast.EntropyCoding",
+      "mtime_utc": "2026-10-08T14:36:08.898715+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/EntropyCoding.olean",
+      "sha256": "64d3be8cc08f30c8cdace4b0b163d4fefec843905f86ed40a2598168a7d6382e",
+      "size": 107592
+    },
+    {
+      "module": "UploadBroadcast.Examples",
+      "mtime_utc": "2026-10-08T14:31:28.094832+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/Examples.olean",
+      "sha256": "7f3ecc8d2bc905c44f8a7d7a5f24963a8a865743010362ed26c5cade3ff681ab",
+      "size": 653736
+    },
+    {
+      "module": "UploadBroadcast.ExtensionBlockCode",
+      "mtime_utc": "2026-10-08T14:47:24.693436+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ExtensionBlockCode.olean",
+      "sha256": "c12a06ee52c3e8ab6179f9a20d7a219995d7c4576e8b2a675d8ac18b9ae093e5",
+      "size": 522320
+    },
+    {
+      "module": "UploadBroadcast.FiniteAlphabetEncoding",
+      "mtime_utc": "2026-10-08T14:35:19.284821+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/FiniteAlphabetEncoding.olean",
+      "sha256": "a245e6db4c7dd4604fabc077e652fdb63cea120d5daacbc630b10b1f936c439f",
+      "size": 272648
+    },
+    {
+      "module": "UploadBroadcast.FiniteEntropyConverse",
+      "mtime_utc": "2026-10-08T14:34:30.234927+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/FiniteEntropyConverse.olean",
+      "sha256": "ac13dabf57b6b80dc965fd38c91f395943a908d866cfb58db24558c0d85ea5f7",
+      "size": 105832
+    },
+    {
+      "module": "UploadBroadcast.FiniteFieldDescent",
+      "mtime_utc": "2026-10-08T14:47:59.451928+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/FiniteFieldDescent.olean",
+      "sha256": "c39477cd1388eb1c9eac17c0f47d6d9b7e6badb4d6c5062fb239cef08a519a7c",
+      "size": 420160
+    },
+    {
+      "module": "UploadBroadcast.FiniteMonoidPower",
+      "mtime_utc": "2026-10-08T14:44:15.033650+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/FiniteMonoidPower.olean",
+      "sha256": "a4d6c6848c013ebac05e14111a42cd8f7023dd304deaa26eea3e0e245d912c5d",
+      "size": 216184
+    },
+    {
+      "module": "UploadBroadcast.GeneralBroadcastOptimum",
+      "mtime_utc": "2026-10-08T14:47:41.224719+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/GeneralBroadcastOptimum.olean",
+      "sha256": "1e15ef2576ca84f40f9ecc2039bafe3f4c1d2c03bc61eceb027f63aa43490a50",
+      "size": 175456
+    },
+    {
+      "module": "UploadBroadcast.GeneralEntropyConverse",
+      "mtime_utc": "2026-10-08T14:34:45.526267+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/GeneralEntropyConverse.olean",
+      "sha256": "8e4c35809428172323d69aa4934422c9c2012f91a61f11404ca4dfa3e17b7424",
+      "size": 101416
+    },
+    {
+      "module": "UploadBroadcast.GeneralOmniscienceEntropy",
+      "mtime_utc": "2026-10-08T14:35:43.871796+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/GeneralOmniscienceEntropy.olean",
+      "sha256": "86f5b7c37c707f4e0b6c2dad4d52b93fd5cbda27e937c399eb5464f802bf3120",
+      "size": 130752
+    },
+    {
+      "module": "UploadBroadcast.JointRealization",
+      "mtime_utc": "2026-10-08T14:34:38.050590+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/JointRealization.olean",
+      "sha256": "b64ae7b3ad32fa1fdd0fd82de2c5381be24b1877b8f986eef81b28b85f85c820",
+      "size": 169096
+    },
+    {
+      "module": "UploadBroadcast.JordanResonance",
+      "mtime_utc": "2026-10-08T14:37:33.351063+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/JordanResonance.olean",
+      "sha256": "6dbc4bca0d66067c676dfe70f68d3e45e2f40c97b6cbe173e3565bf6856a456f",
+      "size": 387312
+    },
+    {
+      "module": "UploadBroadcast.LCBCConverse",
+      "mtime_utc": "2026-10-08T14:41:13.053552+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/LCBCConverse.olean",
+      "sha256": "2b36a04f18dbbb07e389ad6367087891d4962557dcdd951cd1d0c6be6b06f82f",
+      "size": 2167208
+    },
+    {
+      "module": "UploadBroadcast.LinearAlgebra",
+      "mtime_utc": "2026-10-08T14:31:05.531815+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/LinearAlgebra.olean",
+      "sha256": "3a963e0b34e83c330191dd76cb961b7694487bf250c85d387262bce199fb5abb",
+      "size": 1684896
+    },
+    {
+      "module": "UploadBroadcast.LinearCode",
+      "mtime_utc": "2026-10-08T14:32:50.023253+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/LinearCode.olean",
+      "sha256": "9ce2846d3775d71c9888dd42ccf45d455e823e8cdb1f2c409f01ffd9d0f765ef",
+      "size": 813296
+    },
+    {
+      "module": "UploadBroadcast.LinearCosts",
+      "mtime_utc": "2026-10-08T14:32:42.651577+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/LinearCosts.olean",
+      "sha256": "52b3e006f4a4fb25da681492f0c91aa3751c6cb8fadf90c5661e857417f60903",
+      "size": 87672
+    },
+    {
+      "module": "UploadBroadcast.LinearEntropy",
+      "mtime_utc": "2026-10-08T14:36:35.549564+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/LinearEntropy.olean",
+      "sha256": "fefac66d8a3e396cdcf9722e4fead80c1e07d8f953d9a884d9537d7a5b5b1579",
+      "size": 1613416
+    },
+    {
+      "module": "UploadBroadcast.Model",
+      "mtime_utc": "2026-10-08T14:30:51.084443+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/Model.olean",
+      "sha256": "c98a99e5ced87ed99bbc850bfc08f8be1e067fb9b4bdc91f66bd44608262f550",
+      "size": 520760
+    },
+    {
+      "module": "UploadBroadcast.ObservationRank",
+      "mtime_utc": "2026-10-08T14:32:56.742959+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ObservationRank.olean",
+      "sha256": "2b72f31fed0fc76b095aab627e545c0f51603a2bff6ac342a27df30fb1bb31bb",
+      "size": 493528
+    },
+    {
+      "module": "UploadBroadcast.OmniscienceCode",
+      "mtime_utc": "2026-10-08T14:36:55.380703+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/OmniscienceCode.olean",
+      "sha256": "579a466cfa7d85ccb4e31c61d2dbacd073487655f72d41ad1dbe064ca9a2ee29",
+      "size": 2819304
+    },
+    {
+      "module": "UploadBroadcast.OmniscienceEntropy",
+      "mtime_utc": "2026-10-08T14:35:00.621616+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/OmniscienceEntropy.olean",
+      "sha256": "4080fd3e271fb585f49203c32d520c5c5635f44451fc90341154ea70b97da55f",
+      "size": 425424
+    },
+    {
+      "module": "UploadBroadcast.OmniscienceFiniteAlphabet",
+      "mtime_utc": "2026-10-08T14:36:02.886975+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/OmniscienceFiniteAlphabet.olean",
+      "sha256": "9702ff1081cac44381881a71f9c2b255b2b3344db1106187b0dd0432fb368d88",
+      "size": 198040
+    },
+    {
+      "module": "UploadBroadcast.OmniscienceOptimal",
+      "mtime_utc": "2026-10-08T14:37:06.860208+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/OmniscienceOptimal.olean",
+      "sha256": "f227effe2cc2c3bc48124453a73d974b7990bff17b44b7b4f4c02a3062885a8b",
+      "size": 893144
+    },
+    {
+      "module": "UploadBroadcast.PairSelection",
+      "mtime_utc": "2026-10-08T14:42:56.773042+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/PairSelection.olean",
+      "sha256": "3bdb643450839adb26e28e6a0472c60859a8e3a3e69cb27a93920e2cd55dc4ec",
+      "size": 2684088
+    },
+    {
+      "module": "UploadBroadcast.PassiveCode",
+      "mtime_utc": "2026-10-08T14:37:16.119809+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/PassiveCode.olean",
+      "sha256": "84797818ab9f808304829b678dd7c9c96d4c6eccdf0088a8908825b186c2fc43",
+      "size": 1837712
+    },
+    {
+      "module": "UploadBroadcast.Profile",
+      "mtime_utc": "2026-10-08T14:32:38.291769+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/Profile.olean",
+      "sha256": "14043658337e3321951542453b4d936dccd9ba69fa00141770bd7f40548bc680",
+      "size": 926448
+    },
+    {
+      "module": "UploadBroadcast.ProfileTransport",
+      "mtime_utc": "2026-10-08T14:40:33.059284+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ProfileTransport.olean",
+      "sha256": "1596ccf03cc816cb646da5e778a770bb1ad74f02d13dcb5a8695cbc29fe36a55",
+      "size": 330272
+    },
+    {
+      "module": "UploadBroadcast.RankLoss",
+      "mtime_utc": "2026-10-08T14:38:44.415989+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/RankLoss.olean",
+      "sha256": "b63eb5c5eb485b5e57b0ab0d7fc948fe5d75f52e151d79c6615530fac2c5e783",
+      "size": 312168
+    },
+    {
+      "module": "UploadBroadcast.RawBroadcastConverse",
+      "mtime_utc": "2026-10-08T14:46:50.462920+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/RawBroadcastConverse.olean",
+      "sha256": "b78f66c60be5e6fd468d53521af30ab2c4e282814acefbf00a736f85ba644e8a",
+      "size": 1042528
+    },
+    {
+      "module": "UploadBroadcast.RawProfileScaling",
+      "mtime_utc": "2026-10-08T14:45:44.445779+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/RawProfileScaling.olean",
+      "sha256": "210c2a0fd2731fc0609619b1a511f24860bd633824d9cd9154d278ffa4ac0559",
+      "size": 369736
+    },
+    {
+      "module": "UploadBroadcast.ReflectionReduction",
+      "mtime_utc": "2026-10-08T14:50:48.068597+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ReflectionReduction.olean",
+      "sha256": "0cf403b5288f319bdaf5160ce41683911913107eeafba4e031f57aa9366bb896",
+      "size": 1438072
+    },
+    {
+      "module": "UploadBroadcast.Region",
+      "mtime_utc": "2026-10-08T14:31:58.765496+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/Region.olean",
+      "sha256": "07ecbed563ebcbdb1282f6e62b11b45800d2ac6e9d12316576905a8d86679dfc",
+      "size": 59632
+    },
+    {
+      "module": "UploadBroadcast.RootClassification",
+      "mtime_utc": "2026-10-08T14:33:50.228653+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/RootClassification.olean",
+      "sha256": "e741dc23db4f585af195e9a1db37e2876331233bca5fa93fb722c5ffb33e9bb6",
+      "size": 3632056
+    },
+    {
+      "module": "UploadBroadcast.ScalarAchievability",
+      "mtime_utc": "2026-10-08T14:44:11.777792+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ScalarAchievability.olean",
+      "sha256": "45a45100d76f25d58a969d6046278c3fd1ac058723b435265cbd1ebc12f47721",
+      "size": 1088968
+    },
+    {
+      "module": "UploadBroadcast.ScalarAssembly",
+      "mtime_utc": "2026-10-08T14:44:05.558059+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ScalarAssembly.olean",
+      "sha256": "1ceda5ee4670fa0f10b5b72bf9fb165167ed2f5f450291296478ff8891fc4ca7",
+      "size": 388656
+    },
+    {
+      "module": "UploadBroadcast.ScalarBroadcast",
+      "mtime_utc": "2026-10-08T14:42:38.805822+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ScalarBroadcast.olean",
+      "sha256": "398d0d5200c6604a3cfc927bac060eb4a02e850e224b9fb8af134d43b742956f",
+      "size": 858640
+    },
+    {
+      "module": "UploadBroadcast.ScalarEndpoints",
+      "mtime_utc": "2026-10-08T14:45:34.218222+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ScalarEndpoints.olean",
+      "sha256": "309045dc32e4bf2a8bd3a5c23d34680f948b7b3fe15ac6133c659827e66fef27",
+      "size": 115776
+    },
+    {
+      "module": "UploadBroadcast.ScalarExtensionConfiguration",
+      "mtime_utc": "2026-10-08T14:47:11.042028+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ScalarExtensionConfiguration.olean",
+      "sha256": "5b89cc2f049afd48ae324043f241d251376effb7cf8428606607b708fab2fdbb",
+      "size": 1007168
+    },
+    {
+      "module": "UploadBroadcast.ScalarIncidence",
+      "mtime_utc": "2026-10-08T14:43:23.279890+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ScalarIncidence.olean",
+      "sha256": "e24cb6127172118afb7d0163489625d05c72278982417a204f826bd1c2c820d7",
+      "size": 1926896
+    },
+    {
+      "module": "UploadBroadcast.ScalarPaperEndpoints",
+      "mtime_utc": "2026-10-08T14:47:51.280283+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ScalarPaperEndpoints.olean",
+      "sha256": "dbedf23a4bc81bb97b875952617e9fdc4a75e7998123f8f901440c1c5839d3cf",
+      "size": 831576
+    },
+    {
+      "module": "UploadBroadcast.SemilinearTaskTransport",
+      "mtime_utc": "2026-10-08T14:46:24.720035+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/SemilinearTaskTransport.olean",
+      "sha256": "6f69a78a8c4cf131507044e290c1cf6a4342924dfae0459c326d751bb58fa760",
+      "size": 3517808
+    },
+    {
+      "module": "UploadBroadcast.Shannon",
+      "mtime_utc": "2026-10-08T14:34:08.511864+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/Shannon.olean",
+      "sha256": "2e2e58eb97c54f797572bd7792a2c401c19c0524306202f77a27d1daac43a8ed",
+      "size": 343768
+    },
+    {
+      "module": "UploadBroadcast.StableEnd",
+      "mtime_utc": "2026-10-08T14:44:20.985393+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/StableEnd.olean",
+      "sha256": "a41ca454c652f58c2a26ccc7e94f549f9735ae9e9fdc3cb4766648c48e0bd39e",
+      "size": 462264
+    },
+    {
+      "module": "UploadBroadcast.Structural",
+      "mtime_utc": "2026-10-08T14:32:28.260210+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/Structural.olean",
+      "sha256": "fd73da60753e6c9f31e5578409bd7c4b25900755d10c9907c162de2d37cf66e5",
+      "size": 1745296
+    },
+    {
+      "module": "UploadBroadcast.TaskDecomposition",
+      "mtime_utc": "2026-10-08T14:42:28.018289+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/TaskDecomposition.olean",
+      "sha256": "56994c1313902b5bca7b4eb796bef583450c317e5999947674e536a61624b270",
+      "size": 789304
+    },
+    {
+      "module": "UploadBroadcast.ThreeSubspaceNormalForm",
+      "mtime_utc": "2026-10-08T14:49:41.267504+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ThreeSubspaceNormalForm.olean",
+      "sha256": "a127968d11dc4a07122877d558d5aa9e889088691fdf3a03fcba53f51558ee53",
+      "size": 92120
+    },
+    {
+      "module": "UploadBroadcast.ThreeSubspaceNormalFormCore",
+      "mtime_utc": "2026-10-08T14:49:34.383803+00:00",
+      "path": ".lake/build/lib/lean/UploadBroadcast/ThreeSubspaceNormalFormCore.olean",
+      "sha256": "6cfbaed77921c3df30ab96a5bb7514ef3205aeb6b6f8084a7c26a801700db4e3",
+      "size": 2910376
+    }
+  ],
+  "build_policy": {
+    "lean_threads": 1,
+    "project_modules": "topological-sequential"
+  },
+  "commands": [
+    {
+      "command": "python3 scripts/verify_toolchain.py --output .verification-results/toolchain.json",
+      "duration_seconds": 0.322,
+      "exit_code": 0,
+      "name": "toolchain",
+      "started_utc": "2026-10-08T15:22:31.711666+00:00"
+    },
+    {
+      "command": "python3 scripts/verify_dependency_pins.py --output .verification-results/dependency-pins.json",
+      "duration_seconds": 2.241,
+      "exit_code": 0,
+      "name": "dependency-pins",
+      "started_utc": "2026-10-08T15:22:32.034839+00:00"
+    },
+    {
+      "command": "python3 scripts/test_release_tools.py && python3 scripts/test_audit_source.py && python3 scripts/test_package_release.py",
+      "duration_seconds": 1.561,
+      "exit_code": 0,
+      "name": "release-regressions",
+      "started_utc": "2026-10-08T15:22:34.277457+00:00"
+    },
+    {
+      "command": "python3 scripts/audit_source.py && python3 scripts/check_coverage.py",
+      "duration_seconds": 2.667,
+      "exit_code": 0,
+      "name": "source-preflight",
+      "started_utc": "2026-10-08T15:22:35.843819+00:00"
+    },
+    {
+      "command": "python3 scripts/check_all_modules.py",
+      "name": "all-modules",
+      "started_utc": "2026-10-08T15:22:38.512944+00:00"
+    }
+  ],
+  "event": "executor-interruption-and-continuation",
+  "interruption_observation": {
+    "coordinator_confirmed_executor_recovery_loss": true,
+    "last_successful_module_count": 79,
+    "next_module": "UploadBroadcast.ReducedTask",
+    "next_module_completed_object_present": false,
+    "original_execution_session": "unavailable after recovery",
+    "progress_stopped_for_more_than_20_minutes": true,
+    "visible_matching_build_processes_in_current_executor_namespace": 0
+  },
+  "original_campaign_started_utc": "2026-10-08T14:30:13.216619+00:00",
+  "platform_at_continuation": {
+    "architecture": "x86_64",
+    "logical_cpus": 9,
+    "python": "3.12.14",
+    "system": "Linux"
+  },
+  "project_source_sha256": "6e7af788509fbf182f2830754a8d611c088140f273af1d8a7b16b031ff83a8cd",
+  "recorded_utc": "2026-10-08T15:22:31.703958+00:00",
+  "runner_source_sha256": "bc4fc9e4fb9cec25fb81132e7dc3f2793037fd271bcff9b33909bdca4eac71c0",
+  "runner_source_utf8": "#!/usr/bin/env python3\n\"\"\"Resume one unchanged, fresh-start proof-build campaign after executor loss.\n\nNo proof source is changed, and no project artifact is copied into the campaign.\nAll original gates are rerun. Existing campaign-generated objects are retained.\n\"\"\"\nfrom pathlib import Path\nimport argparse, datetime, fcntl, json, os, platform, shutil, subprocess, sys, time\n\nparser=argparse.ArgumentParser()\nparser.add_argument('project',type=Path)\nparser.add_argument('--expected-source-sha256',required=True)\nargs=parser.parse_args()\nroot=args.project.resolve()\nsys.path.insert(0,str(root/'scripts'))\nfrom release_support import source_manifest,sha256,dump_json,module_inventory\nresults=root/'.verification-results'\nlock=(results/'campaign-continuation.lock').open('a+')\ntry:\n    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)\nexcept BlockingIOError:\n    raise SystemExit('Another continuation process still holds the campaign lock; refusing overlap.')\nmanifest=json.loads((results/'source-manifest.json').read_text())\nassert manifest['project_source_sha256']==args.expected_source_sha256\nassert source_manifest(root)==manifest,'Frozen source manifest changed before continuation'\nreport=json.loads((results/'report.json').read_text())\nassert not report['passed'] and not report['whole_paper_release_gate_passed']\nassert report['project_compiled_artifacts_reused'] is False\nprior=json.loads((results/'module-build-timings.json').read_text())\ninventory=module_inventory(root)\nassert len(prior)==79 and all(x['exit_code']==0 for x in prior)\nassert [x['module'] for x in prior]==inventory['topological_modules'][:79]\nexpected={'.'.join(Path(p).with_suffix('').parts) for p in []}\nexpected={x['module'] for x in prior}\nobjects=root/'.lake/build/lib/lean'\nfound={'.'.join(p.relative_to(objects).with_suffix('').parts):p for p in objects.rglob('*.olean')}\nassert set(found)==expected, 'Unexpected or missing project objects at recovery boundary'\nartifacts=[]\nfor module in sorted(found):\n    p=found[module]\n    assert not p.is_symlink() and p.resolve().is_relative_to(root)\n    artifacts.append({'module':module,'path':p.relative_to(root).as_posix(),\n                      'sha256':sha256(p.read_bytes()),'size':p.stat().st_size,\n                      'mtime_utc':datetime.datetime.fromtimestamp(p.stat().st_mtime,datetime.timezone.utc).isoformat()})\nfor source,target in [('report.json','pre-continuation-report.json'),\n                      ('module-build-timings.json','pre-continuation-module-build-timings.json'),\n                      ('all-modules.log','pre-continuation-all-modules.log')]:\n    assert not (results/target).exists(), 'Prior continuation evidence already exists; inspect before retrying'\n    shutil.copy2(results/source,results/target)\nrunner=Path(__file__).read_bytes()\nprovenance={'schema_version':1,'event':'executor-interruption-and-continuation',\n    'recorded_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),\n    'original_campaign_started_utc':report['started_utc'],\n    'project_source_sha256':manifest['project_source_sha256'],\n    'source_manifest_matches_before_continuation':True,\n    'interruption_observation':{'original_execution_session':'unavailable after recovery',\n        'last_successful_module_count':79,'next_module':'UploadBroadcast.ReducedTask',\n        'next_module_completed_object_present':False,\n        'visible_matching_build_processes_in_current_executor_namespace':0,\n        'progress_stopped_for_more_than_20_minutes':True,\n        'coordinator_confirmed_executor_recovery_loss':True},\n    'artifacts_retained':artifacts,\n    'artifact_provenance':'All 79 retained project objects were freshly generated inside this same v2 campaign after its empty-build-directory initialization. None were copied from development, the earlier failed snapshot, or the diagnostic tree.',\n    'build_policy':report['build_policy'],\n    'platform_at_continuation':{'system':platform.system(),'architecture':platform.machine(),'python':platform.python_version(),'logical_cpus':os.cpu_count()},\n    'runner_source_utf8':runner.decode(),'runner_source_sha256':sha256(runner),\n    'commands':[],'status':'running'}\ndump_json(results/'continuation-provenance.json',provenance)\nreport['continuation_provenance']='continuation-provenance.json'\nreport['interrupted_campaign']=True\nreport['fresh_campaign_artifacts_retained_on_continuation']=79\nreport['externally_built_project_artifacts_imported']=False\nreport['project_compiled_artifacts_reused_meaning']='No project artifacts from another build campaign were imported. Module dependencies and this recovery reuse only objects freshly built within this same unchanged-source campaign.'\nreport['checks']=[]\nreport['passed']=False\nreport['whole_paper_release_gate_passed']=False\ndump_json(results/'report.json',report)\nchecks=[('toolchain','python3 scripts/verify_toolchain.py --output .verification-results/toolchain.json'),\n ('dependency-pins','python3 scripts/verify_dependency_pins.py --output .verification-results/dependency-pins.json'),\n ('release-regressions','python3 scripts/test_release_tools.py && python3 scripts/test_audit_source.py && python3 scripts/test_package_release.py'),\n ('source-preflight','python3 scripts/audit_source.py && python3 scripts/check_coverage.py'),\n ('all-modules','python3 scripts/check_all_modules.py'),\n ('integrated-check','bash scripts/check.sh'),\n ('complete-coverage','python3 scripts/check_coverage.py')]\nfor name,command in checks:\n    print(f'[CONTINUATION {name}] {command}',flush=True)\n    start=time.monotonic()\n    provenance['commands'].append({'name':name,'command':command,'started_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()})\n    dump_json(results/'continuation-provenance.json',provenance)\n    with (results/(name+'.log')).open('a') as output:\n        output.write('\\n=== Unchanged-source campaign continuation after executor recovery ===\\n')\n        output.flush()\n        process=subprocess.Popen(['bash','-c','set -euo pipefail; source scripts/env.sh; '+command],cwd=root,\n             env=dict(os.environ,LEAN_NUM_THREADS='1',PAPER_RELEASE_THREADS='1'),\n             stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,pass_fds=(lock.fileno(),))\n        try:\n            for line in process.stdout:\n                print(line,end='',flush=True);output.write(line);output.flush()\n            code=process.wait()\n        except KeyboardInterrupt:\n            process.terminate()\n            try:process.wait(timeout=10)\n            except subprocess.TimeoutExpired:process.kill();process.wait()\n            code=130\n    item={'name':name,'command':command,'exit_code':code,\n          'duration_seconds':round(time.monotonic()-start,3),'log':name+'.log'}\n    report['checks'].append(item)\n    provenance['commands'][-1].update({'exit_code':code,'duration_seconds':item['duration_seconds']})\n    dump_json(results/'report.json',report)\n    dump_json(results/'continuation-provenance.json',provenance)\n    if code:\n        provenance['status']='failed'\n        provenance['finished_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat()\n        dump_json(results/'continuation-provenance.json',provenance)\n        print('Continuation gate failed; campaign remains unverified.',flush=True)\n        raise SystemExit(code)\nunchanged=source_manifest(root)==manifest\nreport['source_unchanged_during_checks']=unchanged\nreport['finished_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat()\nreport['passed']=unchanged\nreport['whole_paper_release_gate_passed']=unchanged\nprovenance['source_manifest_matches_after_continuation']=unchanged\nprovenance['status']='passed' if unchanged else 'source-changed'\nprovenance['finished_utc']=report['finished_utc']\ndump_json(results/'continuation-provenance.json',provenance)\ndump_json(results/'report.json',report)\nif not unchanged:raise SystemExit('Frozen source changed; refusing completed release status')\nprint('Interrupted fresh-start campaign completed with all gates passed; source identity '+manifest['project_source_sha256'],flush=True)\n",
+  "schema_version": 1,
+  "source_manifest_matches_before_continuation": true,
+  "status": "running"
+}

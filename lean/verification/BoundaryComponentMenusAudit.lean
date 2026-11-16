@@ -1,0 +1,7 @@
+import UploadBroadcast.BoundaryComponentMenus
+#print axioms UploadBroadcast.BoundaryComponentMenus.geometry
+#print axioms UploadBroadcast.BoundaryComponentMenus.T1_exact_profile
+#print axioms UploadBroadcast.BoundaryComponentMenus.T2_preserves_profile
+#print axioms UploadBroadcast.BoundaryComponentMenus.boundary_code_lower_permuted
+#print axioms UploadBroadcast.BoundaryComponentMenus.T1_all_permuted_choices
+#print axioms UploadBroadcast.BoundaryComponentMenus.T2_permuted_preserving

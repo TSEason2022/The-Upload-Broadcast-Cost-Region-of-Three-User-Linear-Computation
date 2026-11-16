@@ -1,0 +1,9 @@
+import UploadBroadcast.BroadcastOptimum
+#print axioms UploadBroadcast.ScalarBroadcastCode.toBlockDouble
+#print axioms UploadBroadcast.BlockBroadcastCode.finite_relabel
+#print axioms UploadBroadcast.block_profile_exact
+#print axioms UploadBroadcast.broadcastOptimum_eq_rankBound
+#print axioms UploadBroadcast.card_two_broadcastOptimum_eq_rankBound
+#print axioms UploadBroadcast.separated_broadcastOptimum_eq_rankBound
+#print axioms UploadBroadcast.binary_broadcastOptimum_eq_rankBound
+#print axioms UploadBroadcast.task_broadcastOptimum_eq_rankBound

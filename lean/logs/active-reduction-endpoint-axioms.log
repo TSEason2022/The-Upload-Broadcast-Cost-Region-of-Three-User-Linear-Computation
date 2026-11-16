@@ -1,0 +1,71 @@
+UploadBroadcast.Task.active_pair_source_geometry.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  let Q := T.quotientTask T.commonKnown;
+  let s := T.selectedPairs;
+  (∀ (i : UploadBroadcast.Three), IsCompl (s.passive i) (s.activeFactor i)) ∧
+    (∀ (i : UploadBroadcast.Three), Module.finrank K ↥(s.activeFactor i) = T.intrinsicActivePairRank i) ∧
+      (∀ (i : UploadBroadcast.Three), Submodule.map (↑s.simultaneous) (Q.A i) = Q.A i) ∧
+        ∀ (i : UploadBroadcast.Three),
+          Submodule.map (↑(s.chart i).symm) (Submodule.map (↑s.simultaneous) (Q.U i)) =
+            (s.activeFactor i).prod
+              (Submodule.map (LinearMap.snd K ↥(Q.pairKnown i) ↥(s.residual i))
+                (Submodule.map (↑(s.chart i).symm) (Q.U i)))
+UploadBroadcast.Task.active_reduction_source.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] [Finite K] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  (∀ (i : UploadBroadcast.Three), Module.finrank K ↥(T.preResidual.pairKnown i) = T.intrinsicActivePairRank i) ∧
+    (∀ (i : UploadBroadcast.Three), T.pairOmniscienceFactor.U i = ⊤) ∧
+      (UploadBroadcast.ResidualTaskAssembly.used₁ T.pairFreeChart.activeResidual = ⊤ ∧
+          UploadBroadcast.ResidualTaskAssembly.used₂ T.pairFreeChart.activeResidual = ⊤ ∧
+            UploadBroadcast.ResidualTaskAssembly.used₃ T.pairFreeChart.activeResidual = ⊤) ∧
+        (∀ (L : ℕ), T.achievableAt L = (T.pairFreeChart.withActivePairs T.pairOmniscienceFactor).achievableAt L) ∧
+          T.costRegion = (T.pairFreeChart.withActivePairs T.pairOmniscienceFactor).costRegion
+UploadBroadcast.Task.activeReduction_achievableAt_eq.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] [Finite K] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) (L : ℕ) :
+  T.achievableAt L = (T.pairFreeChart.withActivePairs T.pairOmniscienceFactor).achievableAt L
+UploadBroadcast.Task.activeReduction_costRegion_eq.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] [Finite K] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  T.costRegion = (T.pairFreeChart.withActivePairs T.pairOmniscienceFactor).costRegion
+UploadBroadcast.Task.PrivateTripodChart.activeResidual_signal_quotients.{u_1, u_2} {K : Type u_1} {F : Type u_2}
+  [Field K] [AddCommGroup F] [Module K F] {S : UploadBroadcast.Task K F} (c : S.PrivateTripodChart) :
+  c.activeResidual.U 0 =
+      c.activeResidual.A 0 ⊔
+        Submodule.map UploadBroadcast.ResidualTaskAssembly.demandLift₁
+          (Submodule.map UploadBroadcast.ResidualTaskAssembly.demandQuotient₁ (c.activeResidual.U 0)) ∧
+    c.activeResidual.U 1 =
+        c.activeResidual.A 1 ⊔
+          Submodule.map UploadBroadcast.ResidualTaskAssembly.demandLift₂
+            (Submodule.map UploadBroadcast.ResidualTaskAssembly.demandQuotient₂ (c.activeResidual.U 1)) ∧
+      c.activeResidual.U 2 =
+        c.activeResidual.A 2 ⊔
+          Submodule.map UploadBroadcast.ResidualTaskAssembly.demandLift₃
+            (Submodule.map UploadBroadcast.ResidualTaskAssembly.demandQuotient₃ (c.activeResidual.U 2))
+UploadBroadcast.Task.PrivateTripodChart.activeResidual_rows_finrank.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K]
+  [AddCommGroup F] [Module K F] {S : UploadBroadcast.Task K F} (c : S.PrivateTripodChart) [FiniteDimensional K F] :
+  let t := UploadBroadcast.ResidualTaskAssembly.privateTrim c.toTask;
+  let g := UploadBroadcast.ResidualTaskAssembly.selectedTrimData c.toTask ⋯ ⋯ ⋯;
+  let P :=
+    UploadBroadcast.ResidualTaskAssembly.pureRows₁ t ⊔ UploadBroadcast.ResidualTaskAssembly.pureRows₂ t ⊔
+      UploadBroadcast.ResidualTaskAssembly.pureRows₃ t;
+  Module.finrank K ↥g.activeRows =
+    Module.finrank K ↥P +
+      Module.finrank K
+        ↥(Submodule.map (P.mkQ ∘ₗ g.relationRows)
+            (LinearMap.ker UploadBroadcast.ResidualTaskAssembly.DemandData.incidence))
+'UploadBroadcast.Task.active_pair_source_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.active_reduction_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.activeReduction_achievableAt_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.activeReduction_costRegion_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.PrivateTripodChart.activeResidual_fully_used' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.Task.PrivateTripodChart.activeResidual_sides' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.Task.PrivateTripodChart.activeResidual_signal_quotients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.Task.PrivateTripodChart.activeResidual_rows_finrank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.Task.intrinsicActivePairRank_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.pairKnown_eq_pair' depends on axioms: [propext, Classical.choice, Quot.sound]

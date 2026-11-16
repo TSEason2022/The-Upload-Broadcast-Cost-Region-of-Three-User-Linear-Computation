@@ -1,0 +1,220 @@
+UploadBroadcast.LiteralThetaBlocks.R0.rank_conditions : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      UploadBroadcast.NonzeroDefectProfile.RankConditions (UploadBroadcast.LiteralThetaBlocks.R0.task θ) ⊤ ![1, 2, 2]
+        ![2, 3, 3]
+UploadBroadcast.LiteralThetaBlocks.R0.full_profile : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      (∀ (r : Fin 6), UploadBroadcast.Profile.entry (UploadBroadcast.LiteralThetaBlocks.R0.task θ) (Sum.inl r) = 1) ∧
+        ∀ (i ell : UploadBroadcast.Three),
+          2 * UploadBroadcast.Profile.entry (UploadBroadcast.LiteralThetaBlocks.R0.task θ) (Sum.inr (i, ell)) = 3
+UploadBroadcast.LiteralThetaBlocks.R0.relation_certificate : ∀ {K : Type} [inst : Field K],
+  ![1, 0, 0, 0] ∈ UploadBroadcast.LiteralThetaBlocks.R0.A 0 ∧
+    ![0, 0, 0, 1] ∈ UploadBroadcast.LiteralThetaBlocks.R0.A 1 ∧
+      ![-1, 0, 0, -1] ∈ UploadBroadcast.LiteralThetaBlocks.R0.A 2 ∧
+        ![1, 0, 0, 0] + ![0, 0, 0, 1] + ![-1, 0, 0, -1] = 0 ∧
+          UploadBroadcast.LiteralThetaBlocks.R0.wform ![1, 0, 0, 0] = 0 ∧
+            UploadBroadcast.LiteralThetaBlocks.R0.wform ![0, 0, 0, 1] = 1 ∧
+              UploadBroadcast.LiteralThetaBlocks.R0.wform ![-1, 0, 0, -1] = -1
+UploadBroadcast.LiteralThetaBlocks.R0.relay : ∀ {K : Type} [inst : Field K] (θ : K),
+  (UploadBroadcast.LiteralThetaBlocks.R0.task θ).LocallyGenerated UploadBroadcast.LiteralThetaBlocks.R0.P ∧
+    (UploadBroadcast.LiteralThetaBlocks.R0.task θ).RelayFeasible UploadBroadcast.LiteralThetaBlocks.R0.P
+UploadBroadcast.LiteralThetaBlocks.R0.P_eq_kernel : ∀ {K : Type} [inst : Field K],
+  UploadBroadcast.LiteralThetaBlocks.R0.P = LinearMap.ker UploadBroadcast.LiteralThetaBlocks.R0.wform
+UploadBroadcast.LiteralThetaBlocks.R0.pair01 : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.LiteralThetaBlocks.R0.U θ 0 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.U θ 1 =
+    UploadBroadcast.LiteralThetaBlocks.vspan ![![1, 1, 1, 0]]
+UploadBroadcast.LiteralThetaBlocks.R0.pair02 : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.LiteralThetaBlocks.R0.U θ 0 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.U θ 2 =
+    UploadBroadcast.LiteralThetaBlocks.vspan ![![1, θ, θ, 0]]
+UploadBroadcast.LiteralThetaBlocks.R0.pair12 : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.LiteralThetaBlocks.R0.U θ 1 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.U θ 2 =
+    UploadBroadcast.LiteralThetaBlocks.vspan ![![1, θ, 1, 0], ![0, -θ, 0, 1]]
+UploadBroadcast.LiteralThetaBlocks.R0.pair_dimension : ∀ {K : Type} [inst : Field K] (θ : K)
+  (i j : UploadBroadcast.Three),
+  i ≠ j →
+    Module.finrank K ↥(UploadBroadcast.LiteralThetaBlocks.R0.U θ i ⊓ UploadBroadcast.LiteralThetaBlocks.R0.U θ j) + 4 =
+      ![2, 3, 3] i + ![2, 3, 3] j
+UploadBroadcast.LiteralThetaBlocks.R0.triple_zero : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 1 →
+    UploadBroadcast.LiteralThetaBlocks.R0.U θ 0 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.U θ 1 ⊓
+        UploadBroadcast.LiteralThetaBlocks.R0.U θ 2 =
+      ⊥
+UploadBroadcast.LiteralThetaBlocks.R0.pair_conditional_rank : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      ∀ (i j : UploadBroadcast.Three),
+        i ≠ j →
+          UploadBroadcast.condRank
+              (UploadBroadcast.LiteralThetaBlocks.R0.U θ i ⊓ UploadBroadcast.LiteralThetaBlocks.R0.U θ j)
+              (UploadBroadcast.LiteralThetaBlocks.R0.A j) =
+            1
+UploadBroadcast.LiteralThetaBlocks.R0.pairs_span : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      ∀ (i j : UploadBroadcast.Three),
+        i ≠ j → UploadBroadcast.LiteralThetaBlocks.R0.U θ i ⊔ UploadBroadcast.LiteralThetaBlocks.R0.U θ j = ⊤
+UploadBroadcast.LiteralThetaBlocks.R0.relay_side_dimension : ∀ {K : Type} [inst : Field K] (i : UploadBroadcast.Three),
+  Module.finrank K ↥(UploadBroadcast.LiteralThetaBlocks.R0.P ⊓ UploadBroadcast.LiteralThetaBlocks.R0.A i) = 1
+UploadBroadcast.LiteralThetaBlocks.R0.relay_signal_dimension : ∀ {K : Type} [inst : Field K] (θ : K)
+  (i : UploadBroadcast.Three),
+  Module.finrank K ↥(UploadBroadcast.LiteralThetaBlocks.R0.P ⊓ UploadBroadcast.LiteralThetaBlocks.R0.U θ i) = 2
+UploadBroadcast.LiteralThetaBlocks.R0.relay_local_upload_dimension : ∀ {K : Type} [inst : Field K],
+  ∑ i, Module.finrank K ↥(UploadBroadcast.LiteralThetaBlocks.R0.P ⊓ UploadBroadcast.LiteralThetaBlocks.R0.A i) =
+    Module.finrank K ↥UploadBroadcast.LiteralThetaBlocks.R0.P
+UploadBroadcast.LiteralThetaBlocks.R0.relay_pair_dimension : ∀ {K : Type} [inst : Field K] (θ : K)
+  (i j : UploadBroadcast.Three),
+  i ≠ j →
+    Module.finrank K
+        ↥(UploadBroadcast.LiteralThetaBlocks.R0.U θ i ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P ⊓
+            (UploadBroadcast.LiteralThetaBlocks.R0.U θ j ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P)) =
+      1
+UploadBroadcast.LiteralThetaBlocks.R0.relay_pair_conditional_rank : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      ∀ (i j : UploadBroadcast.Three),
+        i ≠ j →
+          UploadBroadcast.condRank
+              (UploadBroadcast.LiteralThetaBlocks.R0.U θ i ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P ⊓
+                (UploadBroadcast.LiteralThetaBlocks.R0.U θ j ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P))
+              (UploadBroadcast.LiteralThetaBlocks.R0.A j ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P) =
+            1
+UploadBroadcast.LiteralThetaBlocks.R0.relay_triple_zero : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 1 →
+    UploadBroadcast.LiteralThetaBlocks.R0.U θ 0 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P ⊓
+          (UploadBroadcast.LiteralThetaBlocks.R0.U θ 1 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P) ⊓
+        (UploadBroadcast.LiteralThetaBlocks.R0.U θ 2 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P) =
+      ⊥
+UploadBroadcast.LiteralThetaBlocks.R0.relay_pair01 : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.LiteralThetaBlocks.R0.U θ 0 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P ⊓
+      (UploadBroadcast.LiteralThetaBlocks.R0.U θ 1 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P) =
+    UploadBroadcast.LiteralThetaBlocks.vspan ![![1, 1, 1, 0]]
+UploadBroadcast.LiteralThetaBlocks.R0.relay_pair02 : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.LiteralThetaBlocks.R0.U θ 0 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P ⊓
+      (UploadBroadcast.LiteralThetaBlocks.R0.U θ 2 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P) =
+    UploadBroadcast.LiteralThetaBlocks.vspan ![![1, θ, θ, 0]]
+UploadBroadcast.LiteralThetaBlocks.R0.relay_pair12 : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.LiteralThetaBlocks.R0.U θ 1 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P ⊓
+      (UploadBroadcast.LiteralThetaBlocks.R0.U θ 2 ⊓ UploadBroadcast.LiteralThetaBlocks.R0.P) =
+    UploadBroadcast.LiteralThetaBlocks.vspan ![![1, θ, 1, 0]]
+UploadBroadcast.LiteralThetaBlocks.D.rank_conditions : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      UploadBroadcast.NonzeroDefectProfile.RankConditions (UploadBroadcast.LiteralThetaBlocks.D.task θ) ⊤ (fun x => 1)
+        fun x => 2
+UploadBroadcast.LiteralThetaBlocks.D.profile : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      (∀ (r : Fin 6), UploadBroadcast.Profile.entry (UploadBroadcast.LiteralThetaBlocks.D.task θ) (Sum.inl r) = 1) ∧
+        ∀ (i ell : UploadBroadcast.Three),
+          2 * UploadBroadcast.Profile.entry (UploadBroadcast.LiteralThetaBlocks.D.task θ) (Sum.inr (i, ell)) = 3
+UploadBroadcast.LiteralThetaBlocks.D.pair01 : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.LiteralThetaBlocks.D.U θ 0 ⊓ UploadBroadcast.LiteralThetaBlocks.D.U θ 1 =
+    UploadBroadcast.LiteralThetaBlocks.vspan ![![1, 1, 1]]
+UploadBroadcast.LiteralThetaBlocks.D.pair02 : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.LiteralThetaBlocks.D.U θ 0 ⊓ UploadBroadcast.LiteralThetaBlocks.D.U θ 2 =
+    UploadBroadcast.LiteralThetaBlocks.vspan ![![1, θ, θ]]
+UploadBroadcast.LiteralThetaBlocks.D.pair12 : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.LiteralThetaBlocks.D.U θ 1 ⊓ UploadBroadcast.LiteralThetaBlocks.D.U θ 2 =
+    UploadBroadcast.LiteralThetaBlocks.vspan ![![1, θ, 1]]
+UploadBroadcast.LiteralThetaBlocks.D.triple_zero : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 1 →
+    UploadBroadcast.LiteralThetaBlocks.D.U θ 0 ⊓ UploadBroadcast.LiteralThetaBlocks.D.U θ 1 ⊓
+        UploadBroadcast.LiteralThetaBlocks.D.U θ 2 =
+      ⊥
+UploadBroadcast.LiteralThetaBlocks.D.pair_conditional_rank : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      ∀ (i j : UploadBroadcast.Three),
+        i ≠ j →
+          UploadBroadcast.condRank
+              (UploadBroadcast.LiteralThetaBlocks.D.U θ i ⊓ UploadBroadcast.LiteralThetaBlocks.D.U θ j)
+              (UploadBroadcast.LiteralThetaBlocks.D.A j) =
+            1
+UploadBroadcast.LiteralThetaBlocks.D.pairs_span : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      ∀ (i j : UploadBroadcast.Three),
+        i ≠ j → UploadBroadcast.LiteralThetaBlocks.D.U θ i ⊔ UploadBroadcast.LiteralThetaBlocks.D.U θ j = ⊤
+UploadBroadcast.LiteralThetaBlocks.D.relay : ∀ {K : Type} [inst : Field K] (θ : K),
+  (UploadBroadcast.LiteralThetaBlocks.D.task θ).LocallyGenerated ⊤ ∧
+    (UploadBroadcast.LiteralThetaBlocks.D.task θ).RelayFeasible ⊤
+UploadBroadcast.LiteralThetaBlocks.D.append_profile : ∀ {K : Type} [inst : Field K] {F : Type} [inst_1 : AddCommGroup F]
+  [inst_2 : _root_.Module K F] [inst_3 : FiniteDimensional K F] (T : UploadBroadcast.Task K F) (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      (∀ (r : Fin 6),
+          UploadBroadcast.Profile.entry
+              (UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)) (Sum.inl r) =
+            UploadBroadcast.Profile.entry T (Sum.inl r) + 1) ∧
+        ∀ (i ell : UploadBroadcast.Three),
+          2 *
+              UploadBroadcast.Profile.entry
+                (UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)) (Sum.inr (i, ell)) =
+            2 * UploadBroadcast.Profile.entry T (Sum.inr (i, ell)) + 3
+UploadBroadcast.LiteralThetaBlocks.D.append_dimensions : ∀ {K : Type} [inst : Field K] {F : Type}
+  [inst_1 : AddCommGroup F] [inst_2 : _root_.Module K F] [inst_3 : FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (θ : K),
+  θ ≠ 1 →
+    Module.finrank K (F × UploadBroadcast.LiteralThetaBlocks.D.V K) = Module.finrank K F + 3 ∧
+      (∀ (i : UploadBroadcast.Three),
+          Module.finrank K ↥((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).A i) =
+            Module.finrank K ↥(T.A i) + 1) ∧
+        (∀ (i : UploadBroadcast.Three),
+            Module.finrank K
+                ↥((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U i) =
+              Module.finrank K ↥(T.U i) + 2) ∧
+          (∀ (i j : UploadBroadcast.Three),
+              i ≠ j →
+                Module.finrank K
+                    ↥((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U i ⊓
+                        (UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U j) =
+                  Module.finrank K ↥(T.U i ⊓ T.U j) + 1) ∧
+            Module.finrank K
+                  ↥((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U 0 ⊓
+                        (UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U 1 ⊓
+                      (UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U 2) =
+                Module.finrank K ↥(T.U 0 ⊓ T.U 1 ⊓ T.U 2) ∧
+              ∀ (i : UploadBroadcast.Three),
+                UploadBroadcast.condRank
+                    ((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U i)
+                    ((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).A i) =
+                  UploadBroadcast.condRank (T.U i) (T.A i) + 1
+UploadBroadcast.LiteralThetaBlocks.D.append_conditional_ranks : ∀ {K : Type} [inst : Field K] {F : Type}
+  [inst_1 : AddCommGroup F] [inst_2 : _root_.Module K F] [inst_3 : FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      (∀ (i j : UploadBroadcast.Three),
+          i ≠ j →
+            UploadBroadcast.condRank
+                ((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U i ⊓
+                  (UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U j)
+                ((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).A j) =
+              UploadBroadcast.condRank (T.U i ⊓ T.U j) (T.A j) + 1) ∧
+        ∀ (ell : UploadBroadcast.Three),
+          UploadBroadcast.condRank
+              ((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U 0 ⊓
+                  (UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U 1 ⊓
+                (UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).U 2)
+              ((UploadBroadcast.Profile.directSum T (UploadBroadcast.LiteralThetaBlocks.D.task θ)).A ell) =
+            UploadBroadcast.condRank (T.U 0 ⊓ T.U 1 ⊓ T.U 2) (T.A ell)
+UploadBroadcast.LiteralThetaBlocks.embed_injective : ∀ {K : Type} [inst : Field K],
+  Function.Injective ⇑UploadBroadcast.LiteralThetaBlocks.embed
+UploadBroadcast.LiteralThetaBlocks.induced_eq_image_D : ∀ {K : Type} [inst : Field K] (θ : K),
+  UploadBroadcast.NonzeroDefectRelays.inducedTask (UploadBroadcast.LiteralThetaBlocks.R0.task θ)
+      UploadBroadcast.LiteralThetaBlocks.R0.P ⋯ =
+    (UploadBroadcast.LiteralThetaBlocks.D.task θ).imageTask UploadBroadcast.LiteralThetaBlocks.embed
+UploadBroadcast.LiteralThetaBlocks.R0_same_chart_profile : ∀ {K : Type} [inst : Field K] (θ : K),
+  θ ≠ 0 →
+    θ ≠ 1 →
+      let S :=
+        UploadBroadcast.NonzeroDefectRelays.inducedTask (UploadBroadcast.LiteralThetaBlocks.R0.task θ)
+          UploadBroadcast.LiteralThetaBlocks.R0.P ⋯;
+      (∀ (r : Fin 6), UploadBroadcast.Profile.entry S (Sum.inl r) = 1) ∧
+        (∀ (i ell : UploadBroadcast.Three), 2 * UploadBroadcast.Profile.entry S (Sum.inr (i, ell)) = 3) ∧
+          ∀ (r : UploadBroadcast.Profile.Index),
+            UploadBroadcast.Profile.entry S r =
+              UploadBroadcast.Profile.entry (UploadBroadcast.LiteralThetaBlocks.R0.task θ) r
+Independent literal-construction audit passed for 36 roots; axioms [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,536 @@
+[CONTINUATION toolchain] python3 scripts/verify_toolchain.py --output .verification-results/toolchain.json
+Actual toolchain verified: Lean 4.19.0, commit 6caaee842e9495688c1567e78c0e68dbb96942aa; Lake version 5.0.0-6caaee8 (Lean version 4.19.0).
+[CONTINUATION dependency-pins] python3 scripts/verify_dependency_pins.py --output .verification-results/dependency-pins.json
+Verified exact revisions and clean tracked sources for 11 dependencies; no unexpected untracked Lean/Lake inputs.
+[CONTINUATION release-regressions] python3 scripts/test_release_tools.py && python3 scripts/test_audit_source.py && python3 scripts/test_package_release.py
+.............
+----------------------------------------------------------------------
+Ran 13 tests in 0.115s
+
+OK
+............
+----------------------------------------------------------------------
+Ran 12 tests in 0.561s
+
+OK
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.325s
+
+OK
+[CONTINUATION source-preflight] python3 scripts/audit_source.py && python3 scripts/check_coverage.py
+Source audit passed (414 Lean files). This is a lexical check, not semantic equivalence.
+Coverage manifest has no recorded gaps. This must accompany the kernel and semantic audits.
+[CONTINUATION all-modules] python3 scripts/check_all_modules.py
+Checking 313 library modules; 2 outside umbrella import closure.
+[1/313] UploadBroadcast.Model
+Build completed successfully.
+[2/313] UploadBroadcast.LinearAlgebra
+Build completed successfully.
+[3/313] UploadBroadcast.Allocation
+Build completed successfully.
+[4/313] UploadBroadcast.Examples
+Build completed successfully.
+[5/313] UploadBroadcast.Coordination
+Build completed successfully.
+[6/313] UploadBroadcast.Region
+Build completed successfully.
+[7/313] UploadBroadcast.Structural
+Build completed successfully.
+[8/313] UploadBroadcast.Profile
+Build completed successfully.
+[9/313] UploadBroadcast.LinearCosts
+Build completed successfully.
+[10/313] UploadBroadcast.LinearCode
+Build completed successfully.
+[11/313] UploadBroadcast.ObservationRank
+Build completed successfully.
+[12/313] UploadBroadcast.AllocationAggregate
+Build completed successfully.
+[13/313] UploadBroadcast.AllocationWaterfill
+Build completed successfully.
+[14/313] UploadBroadcast.AllocationRanks
+Build completed successfully.
+[15/313] UploadBroadcast.RootClassification
+Build completed successfully.
+[16/313] UploadBroadcast.EntropyCalculus
+Build completed successfully.
+[17/313] UploadBroadcast.Shannon
+Build completed successfully.
+[18/313] UploadBroadcast.Entropy
+Build completed successfully.
+[19/313] UploadBroadcast.CommonFunction
+Build completed successfully.
+[20/313] UploadBroadcast.FiniteEntropyConverse
+Build completed successfully.
+[21/313] UploadBroadcast.JointRealization
+Build completed successfully.
+[22/313] UploadBroadcast.GeneralEntropyConverse
+Build completed successfully.
+[23/313] UploadBroadcast.OmniscienceEntropy
+Build completed successfully.
+[24/313] UploadBroadcast.AllocationOmniscience
+Build completed successfully.
+[25/313] UploadBroadcast.FiniteAlphabetEncoding
+Build completed successfully.
+[26/313] UploadBroadcast.CommonFunctionFiniteAlphabet
+Build completed successfully.
+[27/313] UploadBroadcast.GeneralOmniscienceEntropy
+Build completed successfully.
+[28/313] UploadBroadcast.OmniscienceFiniteAlphabet
+Build completed successfully.
+[29/313] UploadBroadcast.EntropyCoding
+Build completed successfully.
+[30/313] UploadBroadcast.LinearEntropy
+Build completed successfully.
+[31/313] UploadBroadcast.OmniscienceCode
+Build completed successfully.
+[32/313] UploadBroadcast.OmniscienceOptimal
+Build completed successfully.
+[33/313] UploadBroadcast.PassiveCode
+Build completed successfully.
+[34/313] UploadBroadcast.ActiveReduction
+Build completed successfully.
+[35/313] UploadBroadcast.JordanResonance
+Build completed successfully.
+[36/313] UploadBroadcast.CycleRepair
+Build completed successfully.
+[37/313] UploadBroadcast.RankLoss
+Build completed successfully.
+[38/313] UploadBroadcast.CycleProfile
+Build completed successfully.
+[39/313] UploadBroadcast.CycleTheorem
+Build completed successfully.
+[40/313] UploadBroadcast.ProfileTransport
+Build completed successfully.
+[41/313] UploadBroadcast.AlignedRelation
+Build completed successfully.
+[42/313] UploadBroadcast.BinaryCoordination
+Build completed successfully.
+[43/313] UploadBroadcast.LCBCConverse
+Build completed successfully.
+[44/313] UploadBroadcast.BroadcastShannon
+Build completed successfully.
+[45/313] UploadBroadcast.BroadcastOperational
+Build completed successfully.
+[46/313] UploadBroadcast.CycleReverseTransport
+Build completed successfully.
+[47/313] UploadBroadcast.CycleReverseTheorem
+Build completed successfully.
+[48/313] UploadBroadcast.TaskDecomposition
+Build completed successfully.
+[49/313] UploadBroadcast.ScalarBroadcast
+Build completed successfully.
+[50/313] UploadBroadcast.PairSelection
+Build completed successfully.
+[51/313] UploadBroadcast.AllocationNat
+Build completed successfully.
+[52/313] UploadBroadcast.ScalarIncidence
+Build completed successfully.
+[53/313] UploadBroadcast.BinaryRelationBridge
+Build completed successfully.
+[54/313] UploadBroadcast.ScalarAssembly
+Build completed successfully.
+[55/313] UploadBroadcast.ScalarAchievability
+Build completed successfully.
+[56/313] UploadBroadcast.FiniteMonoidPower
+Build completed successfully.
+[57/313] UploadBroadcast.StableEnd
+Build completed successfully.
+[58/313] UploadBroadcast.BlockBroadcast
+Build completed successfully.
+[59/313] UploadBroadcast.AllocationProfile
+Build completed successfully.
+[60/313] UploadBroadcast.BinaryCommon
+Build completed successfully.
+[61/313] UploadBroadcast.BinaryIncidence
+Build completed successfully.
+[62/313] UploadBroadcast.BinaryAssembly
+Build completed successfully.
+[63/313] UploadBroadcast.BinaryAchievability
+Build completed successfully.
+[64/313] UploadBroadcast.ScalarEndpoints
+Build completed successfully.
+[65/313] UploadBroadcast.RawProfileScaling
+Build completed successfully.
+[66/313] UploadBroadcast.SemilinearTaskTransport
+Build completed successfully.
+[67/313] UploadBroadcast.BinaryFieldTransport
+Build completed successfully.
+[68/313] UploadBroadcast.RawBroadcastConverse
+Build completed successfully.
+[69/313] UploadBroadcast.BroadcastOptimum
+Build completed successfully.
+[70/313] UploadBroadcast.ScalarExtensionConfiguration
+Build completed successfully.
+[71/313] UploadBroadcast.ExtensionBlockCode
+Build completed successfully.
+[72/313] UploadBroadcast.BaseChangeProfile
+Build completed successfully.
+[73/313] UploadBroadcast.GeneralBroadcastOptimum
+Build completed successfully.
+[74/313] UploadBroadcast.ScalarPaperEndpoints
+Build completed successfully.
+[75/313] UploadBroadcast.FiniteFieldDescent
+Build completed successfully.
+[76/313] UploadBroadcast.ThreeSubspaceNormalFormCore
+Build completed successfully.
+[77/313] UploadBroadcast.ThreeSubspaceNormalForm
+Build completed successfully.
+[78/313] UploadBroadcast.ReflectionReduction
+Build completed successfully.
+[79/313] UploadBroadcast.ActiveTaskAssembly
+Build completed successfully.
+[80/313] UploadBroadcast.ReducedTask
+✔ [1883/1883] Built UploadBroadcast.ReducedTask
+Build completed successfully.
+[81/313] UploadBroadcast.NilpotentFiltration
+ℹ [1367/1367] Built UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[82/313] UploadBroadcast.ProjectionCriterion
+✔ [1357/1357] Built UploadBroadcast.ProjectionCriterion
+Build completed successfully.
+[83/313] UploadBroadcast.ResonantEndomorphisms
+ℹ [1374/1376] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1376/1376] Built UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[84/313] UploadBroadcast.ResonantBaseChange
+ℹ [1374/1386] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1376/1386] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1386/1386] Built UploadBroadcast.ResonantBaseChange
+info: ././././UploadBroadcast/ResonantBaseChange.lean:268:0: 'UploadBroadcast.ResonantBaseChange.spaces_baseChange' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantBaseChange.lean:269:0: 'UploadBroadcast.ResonantBaseChange.source_absolutely_indecomposable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantBaseChange.lean:270:0: 'UploadBroadcast.ResonantBaseChange.jordan_absolutely_indecomposable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully.
+[85/313] UploadBroadcast.ResonantRelay
+ℹ [1373/1542] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1375/1542] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [1885/1885] Built UploadBroadcast.ResonantRelay
+Build completed successfully.
+[86/313] UploadBroadcast.ResonantProfile
+ℹ [1373/1519] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1375/1519] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [1891/1891] Built UploadBroadcast.ResonantProfile
+Build completed successfully.
+[87/313] UploadBroadcast.QuiverRepresentation
+✔ [1356/1356] Built UploadBroadcast.QuiverRepresentation
+Build completed successfully.
+[88/313] UploadBroadcast.ReflectionEquivalence
+✔ [1357/1357] Built UploadBroadcast.ReflectionEquivalence
+Build completed successfully.
+[89/313] UploadBroadcast.SignalBridge
+✔ [1928/1928] Built UploadBroadcast.SignalBridge
+Build completed successfully.
+[90/313] UploadBroadcast.ResidualUpload
+✔ [2457/2457] Built UploadBroadcast.ResidualUpload
+Build completed successfully.
+[91/313] UploadBroadcast.ResidualRowCompletion
+✔ [2458/2458] Built UploadBroadcast.ResidualRowCompletion
+Build completed successfully.
+[92/313] UploadBroadcast.ResidualConverse
+✔ [2467/2467] Built UploadBroadcast.ResidualConverse
+Build completed successfully.
+[93/313] UploadBroadcast.ResidualOperational
+✔ [2458/2458] Built UploadBroadcast.ResidualOperational
+Build completed successfully.
+[94/313] UploadBroadcast.BroadcastReindex
+✔ [2627/2627] Built UploadBroadcast.BroadcastReindex
+Build completed successfully.
+[95/313] UploadBroadcast.EdgeExtraction
+✔ [1876/1876] Built UploadBroadcast.EdgeExtraction
+Build completed successfully.
+[96/313] UploadBroadcast.EdgeProfile
+✔ [1884/1884] Built UploadBroadcast.EdgeProfile
+Build completed successfully.
+[97/313] UploadBroadcast.MarkedNilpotent
+ℹ [1460/1460] Built UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
+[98/313] UploadBroadcast.ResonantClassification
+ℹ [1373/1379] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1375/1379] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1466/1467] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [1467/1467] Built UploadBroadcast.ResonantClassification
+Build completed successfully.
+[99/313] UploadBroadcast.RelayLinearComposition
+✔ [2634/2634] Built UploadBroadcast.RelayLinearComposition
+Build completed successfully.
+[100/313] UploadBroadcast.BlockLinearCode
+✔ [2628/2628] Built UploadBroadcast.BlockLinearCode
+Build completed successfully.
+[101/313] UploadBroadcast.PassiveLinearCode
+✔ [1880/1880] Built UploadBroadcast.PassiveLinearCode
+Build completed successfully.
+[102/313] UploadBroadcast.OmniscienceProfile
+✔ [1882/1882] Built UploadBroadcast.OmniscienceProfile
+Build completed successfully.
+[103/313] UploadBroadcast.EdgeDeficits
+ℹ [1892/1900] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1894/1900] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [1900/1900] Built UploadBroadcast.EdgeDeficits
+Build completed successfully.
+[104/313] UploadBroadcast.RelayTask
+✔ [1877/1877] Built UploadBroadcast.RelayTask
+Build completed successfully.
+[105/313] UploadBroadcast.CodeAlphabet
+✔ [1877/1877] Built UploadBroadcast.CodeAlphabet
+Build completed successfully.
+[106/313] UploadBroadcast.OperationalBounds
+✔ [1879/1879] Built UploadBroadcast.OperationalBounds
+Build completed successfully.
+[107/313] UploadBroadcast.GlobalUploadConverse
+✔ [2469/2469] Built UploadBroadcast.GlobalUploadConverse
+Build completed successfully.
+[108/313] UploadBroadcast.GlobalUploadGeometry
+✔ [2470/2470] Built UploadBroadcast.GlobalUploadGeometry
+Build completed successfully.
+[109/313] UploadBroadcast.ResidualTaskAssembly
+✔ [2464/2464] Built UploadBroadcast.ResidualTaskAssembly
+Build completed successfully.
+[110/313] UploadBroadcast.ResidualPrivateSplit
+✔ [2475/2475] Built UploadBroadcast.ResidualPrivateSplit
+Build completed successfully.
+[111/313] UploadBroadcast.GlobalUploadAssembly
+✔ [2483/2483] Built UploadBroadcast.GlobalUploadAssembly
+Build completed successfully.
+[112/313] UploadBroadcast.NonzeroDefectRelays
+✔ [1972/1972] Built UploadBroadcast.NonzeroDefectRelays
+Build completed successfully.
+[113/313] UploadBroadcast.NonzeroDefectProfile
+✔ [1877/1877] Built UploadBroadcast.NonzeroDefectProfile
+Build completed successfully.
+[114/313] UploadBroadcast.ResonantFlagNormalization
+ℹ [1373/1474] Replayed UploadBroadcast.NilpotentFiltration
+info: ././././UploadBroadcast/NilpotentFiltration.lean:56:0: 'UploadBroadcast.NilpotentFiltration.idempotent_eq_zero_or_one_of_sub_smul_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:57:0: 'UploadBroadcast.NilpotentFiltration.ker_pow_le_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/NilpotentFiltration.lean:58:0: 'UploadBroadcast.NilpotentFiltration.pow_eq_zero_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1375/1474] Replayed UploadBroadcast.ResonantEndomorphisms
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:551:0: 'UploadBroadcast.ResonantEndomorphisms.scalar_plus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:552:0: 'UploadBroadcast.ResonantEndomorphisms.jordan_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:553:0: 'UploadBroadcast.ResonantEndomorphisms.source_idempotent_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././UploadBroadcast/ResonantEndomorphisms.lean:554:0: 'UploadBroadcast.ResonantEndomorphisms.source_indecomposable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1465/1474] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [1940/1940] Built UploadBroadcast.ResonantFlagNormalization
+Build completed successfully.
+[115/313] UploadBroadcast.BroadcastRegion
+✔ [2630/2630] Built UploadBroadcast.BroadcastRegion
+Build completed successfully.
+[116/313] UploadBroadcast.LinearCodeSum
+✔ [2632/2632] Built UploadBroadcast.LinearCodeSum
+Build completed successfully.
+[117/313] UploadBroadcast.TripodCompression
+✔ [1931/1931] Built UploadBroadcast.TripodCompression
+Build completed successfully.
+[118/313] UploadBroadcast.OptimalRelaySeparation
+✔ [2642/2642] Built UploadBroadcast.OptimalRelaySeparation
+Build completed successfully.
+[119/313] UploadBroadcast.BlockFlatten
+✔ [1880/1880] Built UploadBroadcast.BlockFlatten
+Build completed successfully.
+[120/313] UploadBroadcast.BlockOptimalRelaySeparation
+✔ [2644/2644] Built UploadBroadcast.BlockOptimalRelaySeparation
+Build completed successfully.
+[121/313] UploadBroadcast.MarkedSubspace
+ℹ [1460/1461] Replayed UploadBroadcast.MarkedNilpotent
+info: ././././UploadBroadcast/MarkedNilpotent.lean:284:0: 'UploadBroadcast.MarkedNilpotent.single_chain_and_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././UploadBroadcast/MarkedNilpotent.lean:285:0: 'UploadBroadcast.MarkedNilpotent.exists_jordan_chain_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [1461/1461] Built UploadBroadcast.MarkedSubspace
+Build completed successfully.
+[122/313] UploadBroadcast.ZeroCommonRowNormalForm
+✔ [2460/2460] Built UploadBroadcast.ZeroCommonRowNormalForm
+Build completed successfully.
+[123/313] UploadBroadcast.OmniscienceTaskCode
+✔ [1918/1918] Built UploadBroadcast.OmniscienceTaskCode
+Build completed successfully.
+[124/313] UploadBroadcast.QuiverReindex
+✔ [1358/1358] Built UploadBroadcast.QuiverReindex
+Build completed successfully.
+[125/313] UploadBroadcast.ReflectionIteration
+✔ [1361/1361] Built UploadBroadcast.ReflectionIteration
+Build completed successfully.
+[126/313] UploadBroadcast.E6Reflection
+✔ [1362/1362] Built UploadBroadcast.E6Reflection
+Build completed successfully.
+[127/313] UploadBroadcast.QuiverTits
+✔ [1363/1363] Built UploadBroadcast.QuiverTits
+Build completed successfully.
+[128/313] UploadBroadcast.TaskQuiverBridge
+✔ [1381/1381] Built UploadBroadcast.TaskQuiverBridge
+Build completed successfully.
+[129/313] UploadBroadcast.PairResidualAssembly
+✔ [1884/1884] Built UploadBroadcast.PairResidualAssembly
+Build completed successfully.
+[130/313] UploadBroadcast.FullResidualAssembly
+✔ [2466/2466] Built UploadBroadcast.FullResidualAssembly
+Build completed successfully.
+[131/313] UploadBroadcast.ResidualPureTransport
+✔ [2465/2465] Built UploadBroadcast.ResidualPureTransport
+Build completed successfully.
+[132/313] UploadBroadcast.ResidualTaskRanks
+✔ [2465/2465] Built UploadBroadcast.ResidualTaskRanks
+Build completed successfully.
+[133/313] UploadBroadcast.CommonTripodAssembly
+✔ [2476/2476] Built UploadBroadcast.CommonTripodAssembly
+Build completed successfully.
+[134/313] UploadBroadcast.CommonTripodRanks
+✔ [2478/2478] Built UploadBroadcast.CommonTripodRanks
+Build completed successfully.
+[135/313] UploadBroadcast.ResidualRelayAssembly
+✔ [2652/2652] Built UploadBroadcast.ResidualRelayAssembly
+Build completed successfully.
+[136/313] UploadBroadcast.GlobalUploadOptimal
+✔ [2667/2667] Built UploadBroadcast.GlobalUploadOptimal
+Build completed successfully.
+[137/313] UploadBroadcast.PassiveProduct
+✔ [1881/1881] Built UploadBroadcast.PassiveProduct
+Build completed successfully.
+[138/313] UploadBroadcast.PassiveComposition
+✔ [1882/1882] Built UploadBroadcast.PassiveComposition
+Build completed successfully.
+[139/313] UploadBroadcast.UploadAttainment
+✔ [2643/2643] Built UploadBroadcast.UploadAttainment
+Build completed successfully.
+[140/313] UploadBroadcast.PairOmniscienceAdapter
+✔ [2484/2484] Built UploadBroadcast.PairOmniscienceAdapter
+Build completed successfully.
+[141/313] UploadBroadcast.SourceHomVanishing
+✔ [1363/1363] Built UploadBroadcast.SourceHomVanishing
+Build completed successfully.
+[142/313] UploadBroadcast.ScalarEndReflection
+✔ [1383/1383] Built UploadBroadcast.ScalarEndReflection
+Build completed successfully.
+[143/313] UploadBroadcast.ScalarEndBaseChange
+✔ [1391/1391] Built UploadBroadcast.ScalarEndBaseChange
+Build completed successfully.
+[144/313] UploadBroadcast.TaskComponentBridge
+✔ [1392/1392] Built UploadBroadcast.TaskComponentBridge
+Build completed successfully.
+[145/313] UploadBroadcast.QuiverHomLinear
+✔ [1364/1364] Built UploadBroadcast.QuiverHomLinear
+Build completed successfully.
+[146/313] UploadBroadcast.QuiverHomTerminal
+✔ [1463/1463] Built UploadBroadcast.QuiverHomTerminal
+Build completed successfully.
+[147/313] UploadBroadcast.QuiverEuler
+✔ [1465/1465] Built UploadBroadcast.QuiverEuler
+Build completed successfully.
+[148/313] UploadBroadcast.ResonantTripodTransversality
+✔ [1365/1365] Built UploadBroadcast.ResonantTripodTransversality
+Build completed successfully.
+[149/313] UploadBroadcast.RegularHomVanishing
+✔ [1366/1366] Built UploadBroadcast.RegularHomVanishing
+Build completed successfully.
+[150/313] UploadBroadcast.RegularSubobjectDefect
+✔ [1395/1395] Built UploadBroadcast.RegularSubobjectDefect
+Build completed successfully.
+[151/313] UploadBroadcast.IntersectionProbes
+✔ [1385/1385] Built UploadBroadcast.IntersectionProbes
+Build completed successfully.
+[152/313] UploadBroadcast.NonzeroFamilyRanks
+✔ [1937/1937] Built UploadBroadcast.NonzeroFamilyRanks
+Build completed successfully.
+[153/313] UploadBroadcast.TwoDimensionalWedge
+✔ [1356/1356] Built UploadBroadcast.TwoDimensionalWedge
+Build completed successfully.
+[154/313] UploadBroadcast.OriginalUploadOptimum
+✔ [2492/2492] Built UploadBroadcast.OriginalUploadOptimum
+Build completed successfully.
+[155/313] UploadBroadcast.OriginalUploadRanks

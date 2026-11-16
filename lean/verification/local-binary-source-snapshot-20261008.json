@@ -1,0 +1,28 @@
+{
+  "timestamp_utc": "2026-10-08T10:55:03.094598+00:00",
+  "source_sha256": "b1c77e1cf7f7245fc8781b362d69ca06ba9b42448bc6d90ad65ddf628d4b2682",
+  "claims": [
+    "lem:binary-menu",
+    "lem:binary-additional-menus",
+    "thm:profiles"
+  ],
+  "verdict": "reviewed_complete",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "imported_project_theorem_roots": 4852,
+  "files": {
+    "UploadBroadcast/BinaryExactMenus.lean": "13079ec19febab772af5d9216784d940cd7be89017123c813c7902c74b9d72b2",
+    "UploadBroadcast/BinaryExactFamilyMenus.lean": "81f1c7e1044c4b0a66bd7d4fb8e3629622f3ec78460b39a1a56bce0b26dfdc30",
+    "UploadBroadcast/BinaryMenuOptimality.lean": "c61623b80d59bc387ed385d143000a0f99dec9607232e8783f73a36aee8ffac4",
+    "UploadBroadcast/BinaryMenuPermutations.lean": "ce0f1960bc9aaa2a8129332a03834081365363c9e5658657ab79a2964f8a40f3",
+    "UploadBroadcast/BinaryAdditionalMenuPermutations.lean": "d13a33b10a5a824c60216ba1adf232ece86394711c99f6972d576956ce9e2854",
+    "UploadBroadcast/BoundaryComponentMenus.lean": "b7107a828c5d8b94b4095130ea2c6c892bc6646a95a3380382c74d4581f8176e",
+    "UploadBroadcast/RegularExactMenus.lean": "3361da4f191a2a8281e4b4e0c1e7db1be24ec4af4198039fe8b434c5b3b5215c",
+    "UploadBroadcast/ResidualProfiles.lean": "1aba0ef33b27b215f86c2414664037cf8403f375a380051f046975ad8fcb451e",
+    "UploadBroadcast/ResidualProfileCompleteness.lean": "dc2719b78ebae26a25806e98285dc2535bd94f4285f64e3d4b9987796a84f148",
+    "verification/LocalBinarySourceAudit.lean": "cc07623eda46b73421fb974a6f3acf6fc10f4f45fe054f924b46e55b3fd17e1a"
+  }
+}

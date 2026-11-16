@@ -1,0 +1,21 @@
+'UploadBroadcast.PassiveRetraction.trans' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.pairCanonicalRetraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.ResidualTaskAssembly.splitActiveRetraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.ResidualTaskAssembly.finalResidual_zero_common' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualTaskAssembly.finalResidual_fully_used' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualTaskAssembly.finalRows_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.ResidualTaskAssembly.tripodDimension_eq_stacked_rank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualTaskAssembly.finalCanonical_uploadOptimum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualTaskAssembly.finalCanonical_two_instance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualTaskAssembly.finalCanonical_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.preResidual_pairKnown_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]

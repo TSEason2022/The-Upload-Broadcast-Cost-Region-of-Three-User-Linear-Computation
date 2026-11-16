@@ -1,0 +1,36 @@
+{
+  "source_sha256": "b1c77e1cf7f7245fc8781b362d69ca06ba9b42448bc6d90ad65ddf628d4b2682",
+  "source_lines": [
+    2021,
+    2028
+  ],
+  "obligation": "OPEN-G0-DIRECT-SUM",
+  "status": "focused_build_and_axiom_audit_passed",
+  "actual_task_endpoint": "UploadBroadcast.ActualBlockGraph.combinedTask",
+  "actual_demand_data_endpoint": "UploadBroadcast.ActualBlockGraph.combinedData",
+  "literal_map_identity": "UploadBroadcast.ActualBlockGraph.G0_direct_sum",
+  "individual_rank_endpoints": [
+    "UploadBroadcast.ActualBlockGraph.mixed_rank_additive",
+    "UploadBroadcast.ActualBlockGraph.common_rank_additive",
+    "UploadBroadcast.ActualBlockGraph.pure_rank_additive",
+    "UploadBroadcast.ActualBlockGraph.tripod_rank_additive",
+    "UploadBroadcast.UploadParameterDirectSum.private_dimension_additive",
+    "UploadBroadcast.IntrinsicUploadDirectSums.activePairRank_additive"
+  ],
+  "standard_axiom_audit": {
+    "imported_project_theorems": 2540,
+    "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ]
+  },
+  "global_unnumbered_flag_changed": false,
+  "files": {
+    "UploadBroadcast/IntrinsicUploadDirectSums.lean": "69fb1b632b3139e64afe514429580abaca79cf14ae897e75e2de870c3a42b305",
+    "UploadBroadcast/BlockGraphDirectSum.lean": "f8d812f06642b2a9b06b91e643b4d8e6260289899c7d8ca36c3d508e4b35b0c0",
+    "UploadBroadcast/ActualBlockGraph.lean": "2d9e33c7da695957e28c712dc137ad48f717b22176256ed5fb72f0ac75b7a504",
+    "UploadBroadcast/UploadParameterDirectSum.lean": "9b819adb693699b7b49182bb16dd85cbfa645da35f06e31cae70f7b4f01f5cf9",
+    "verification/UploadDirectSumAudit.lean": "d33b7f8561530bf19bc5c28e00f2e191402a7439f6492db73a0b91d36b1df1be"
+  }
+}

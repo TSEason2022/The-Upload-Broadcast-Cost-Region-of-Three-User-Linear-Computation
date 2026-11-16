@@ -1,0 +1,4 @@
+import UploadBroadcast.BroadcastOperational
+#print axioms UploadBroadcast.BroadcastOperational.first_family
+#print axioms UploadBroadcast.BroadcastOperational.second_family
+#print axioms UploadBroadcast.BroadcastOperational.rankBound_le_broadcastCost

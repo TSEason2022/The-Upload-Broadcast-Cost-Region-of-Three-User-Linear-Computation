@@ -1,0 +1,1567 @@
+[
+  {
+    "duration_seconds": 3.167,
+    "exit_code": 0,
+    "module": "UploadBroadcast.Model"
+  },
+  {
+    "duration_seconds": 1.775,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LinearAlgebra"
+  },
+  {
+    "duration_seconds": 1.393,
+    "exit_code": 0,
+    "module": "UploadBroadcast.Allocation"
+  },
+  {
+    "duration_seconds": 1.89,
+    "exit_code": 0,
+    "module": "UploadBroadcast.Examples"
+  },
+  {
+    "duration_seconds": 1.375,
+    "exit_code": 0,
+    "module": "UploadBroadcast.Coordination"
+  },
+  {
+    "duration_seconds": 2.051,
+    "exit_code": 0,
+    "module": "UploadBroadcast.Region"
+  },
+  {
+    "duration_seconds": 1.254,
+    "exit_code": 0,
+    "module": "UploadBroadcast.Structural"
+  },
+  {
+    "duration_seconds": 1.716,
+    "exit_code": 0,
+    "module": "UploadBroadcast.Profile"
+  },
+  {
+    "duration_seconds": 1.653,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LinearCosts"
+  },
+  {
+    "duration_seconds": 1.545,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LinearCode"
+  },
+  {
+    "duration_seconds": 1.719,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ObservationRank"
+  },
+  {
+    "duration_seconds": 1.216,
+    "exit_code": 0,
+    "module": "UploadBroadcast.AllocationAggregate"
+  },
+  {
+    "duration_seconds": 1.3,
+    "exit_code": 0,
+    "module": "UploadBroadcast.AllocationWaterfill"
+  },
+  {
+    "duration_seconds": 2.601,
+    "exit_code": 0,
+    "module": "UploadBroadcast.AllocationRanks"
+  },
+  {
+    "duration_seconds": 1.18,
+    "exit_code": 0,
+    "module": "UploadBroadcast.RootClassification"
+  },
+  {
+    "duration_seconds": 1.236,
+    "exit_code": 0,
+    "module": "UploadBroadcast.EntropyCalculus"
+  },
+  {
+    "duration_seconds": 2.371,
+    "exit_code": 0,
+    "module": "UploadBroadcast.Shannon"
+  },
+  {
+    "duration_seconds": 1.023,
+    "exit_code": 0,
+    "module": "UploadBroadcast.Entropy"
+  },
+  {
+    "duration_seconds": 1.751,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CommonFunction"
+  },
+  {
+    "duration_seconds": 2.897,
+    "exit_code": 0,
+    "module": "UploadBroadcast.FiniteEntropyConverse"
+  },
+  {
+    "duration_seconds": 2.576,
+    "exit_code": 0,
+    "module": "UploadBroadcast.JointRealization"
+  },
+  {
+    "duration_seconds": 1.908,
+    "exit_code": 0,
+    "module": "UploadBroadcast.GeneralEntropyConverse"
+  },
+  {
+    "duration_seconds": 2.242,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OmniscienceEntropy"
+  },
+  {
+    "duration_seconds": 1.057,
+    "exit_code": 0,
+    "module": "UploadBroadcast.AllocationOmniscience"
+  },
+  {
+    "duration_seconds": 2.029,
+    "exit_code": 0,
+    "module": "UploadBroadcast.FiniteAlphabetEncoding"
+  },
+  {
+    "duration_seconds": 1.767,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CommonFunctionFiniteAlphabet"
+  },
+  {
+    "duration_seconds": 2.11,
+    "exit_code": 0,
+    "module": "UploadBroadcast.GeneralOmniscienceEntropy"
+  },
+  {
+    "duration_seconds": 3.082,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OmniscienceFiniteAlphabet"
+  },
+  {
+    "duration_seconds": 2.043,
+    "exit_code": 0,
+    "module": "UploadBroadcast.EntropyCoding"
+  },
+  {
+    "duration_seconds": 2.224,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LinearEntropy"
+  },
+  {
+    "duration_seconds": 1.98,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OmniscienceCode"
+  },
+  {
+    "duration_seconds": 3.258,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OmniscienceOptimal"
+  },
+  {
+    "duration_seconds": 3.66,
+    "exit_code": 0,
+    "module": "UploadBroadcast.PassiveCode"
+  },
+  {
+    "duration_seconds": 2.041,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ActiveReduction"
+  },
+  {
+    "duration_seconds": 1.546,
+    "exit_code": 0,
+    "module": "UploadBroadcast.JordanResonance"
+  },
+  {
+    "duration_seconds": 1.653,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CycleRepair"
+  },
+  {
+    "duration_seconds": 1.624,
+    "exit_code": 0,
+    "module": "UploadBroadcast.RankLoss"
+  },
+  {
+    "duration_seconds": 1.854,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CycleProfile"
+  },
+  {
+    "duration_seconds": 1.574,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CycleTheorem"
+  },
+  {
+    "duration_seconds": 2.055,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ProfileTransport"
+  },
+  {
+    "duration_seconds": 1.883,
+    "exit_code": 0,
+    "module": "UploadBroadcast.AlignedRelation"
+  },
+  {
+    "duration_seconds": 1.804,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BinaryCoordination"
+  },
+  {
+    "duration_seconds": 1.601,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LCBCConverse"
+  },
+  {
+    "duration_seconds": 1.989,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BroadcastShannon"
+  },
+  {
+    "duration_seconds": 2.599,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BroadcastOperational"
+  },
+  {
+    "duration_seconds": 1.789,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CycleReverseTransport"
+  },
+  {
+    "duration_seconds": 1.586,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CycleReverseTheorem"
+  },
+  {
+    "duration_seconds": 1.393,
+    "exit_code": 0,
+    "module": "UploadBroadcast.TaskDecomposition"
+  },
+  {
+    "duration_seconds": 1.574,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ScalarBroadcast"
+  },
+  {
+    "duration_seconds": 1.659,
+    "exit_code": 0,
+    "module": "UploadBroadcast.PairSelection"
+  },
+  {
+    "duration_seconds": 1.541,
+    "exit_code": 0,
+    "module": "UploadBroadcast.AllocationNat"
+  },
+  {
+    "duration_seconds": 1.667,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ScalarIncidence"
+  },
+  {
+    "duration_seconds": 1.878,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BinaryRelationBridge"
+  },
+  {
+    "duration_seconds": 1.766,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ScalarAssembly"
+  },
+  {
+    "duration_seconds": 1.671,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ScalarAchievability"
+  },
+  {
+    "duration_seconds": 1.341,
+    "exit_code": 0,
+    "module": "UploadBroadcast.FiniteMonoidPower"
+  },
+  {
+    "duration_seconds": 1.607,
+    "exit_code": 0,
+    "module": "UploadBroadcast.StableEnd"
+  },
+  {
+    "duration_seconds": 2.556,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BlockBroadcast"
+  },
+  {
+    "duration_seconds": 2.193,
+    "exit_code": 0,
+    "module": "UploadBroadcast.AllocationProfile"
+  },
+  {
+    "duration_seconds": 2.162,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BinaryCommon"
+  },
+  {
+    "duration_seconds": 2.461,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BinaryIncidence"
+  },
+  {
+    "duration_seconds": 2.104,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BinaryAssembly"
+  },
+  {
+    "duration_seconds": 1.904,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BinaryAchievability"
+  },
+  {
+    "duration_seconds": 1.949,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ScalarEndpoints"
+  },
+  {
+    "duration_seconds": 1.652,
+    "exit_code": 0,
+    "module": "UploadBroadcast.RawProfileScaling"
+  },
+  {
+    "duration_seconds": 2.049,
+    "exit_code": 0,
+    "module": "UploadBroadcast.SemilinearTaskTransport"
+  },
+  {
+    "duration_seconds": 1.846,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BinaryFieldTransport"
+  },
+  {
+    "duration_seconds": 2.022,
+    "exit_code": 0,
+    "module": "UploadBroadcast.RawBroadcastConverse"
+  },
+  {
+    "duration_seconds": 2.095,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BroadcastOptimum"
+  },
+  {
+    "duration_seconds": 1.475,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ScalarExtensionConfiguration"
+  },
+  {
+    "duration_seconds": 1.933,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ExtensionBlockCode"
+  },
+  {
+    "duration_seconds": 1.71,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BaseChangeProfile"
+  },
+  {
+    "duration_seconds": 1.868,
+    "exit_code": 0,
+    "module": "UploadBroadcast.GeneralBroadcastOptimum"
+  },
+  {
+    "duration_seconds": 2.031,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ScalarPaperEndpoints"
+  },
+  {
+    "duration_seconds": 1.196,
+    "exit_code": 0,
+    "module": "UploadBroadcast.FiniteFieldDescent"
+  },
+  {
+    "duration_seconds": 1.33,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ThreeSubspaceNormalFormCore"
+  },
+  {
+    "duration_seconds": 1.544,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ThreeSubspaceNormalForm"
+  },
+  {
+    "duration_seconds": 1.015,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ReflectionReduction"
+  },
+  {
+    "duration_seconds": 1.724,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ActiveTaskAssembly"
+  },
+  {
+    "duration_seconds": 1.774,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ReducedTask"
+  },
+  {
+    "duration_seconds": 1.273,
+    "exit_code": 0,
+    "module": "UploadBroadcast.NilpotentFiltration"
+  },
+  {
+    "duration_seconds": 1.657,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ProjectionCriterion"
+  },
+  {
+    "duration_seconds": 1.944,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResonantEndomorphisms"
+  },
+  {
+    "duration_seconds": 1.345,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResonantBaseChange"
+  },
+  {
+    "duration_seconds": 2.029,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResonantRelay"
+  },
+  {
+    "duration_seconds": 1.694,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResonantProfile"
+  },
+  {
+    "duration_seconds": 1.28,
+    "exit_code": 0,
+    "module": "UploadBroadcast.QuiverRepresentation"
+  },
+  {
+    "duration_seconds": 1.417,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ReflectionEquivalence"
+  },
+  {
+    "duration_seconds": 1.764,
+    "exit_code": 0,
+    "module": "UploadBroadcast.SignalBridge"
+  },
+  {
+    "duration_seconds": 2.031,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualUpload"
+  },
+  {
+    "duration_seconds": 1.983,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualRowCompletion"
+  },
+  {
+    "duration_seconds": 2.333,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualConverse"
+  },
+  {
+    "duration_seconds": 2.006,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualOperational"
+  },
+  {
+    "duration_seconds": 2.237,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BroadcastReindex"
+  },
+  {
+    "duration_seconds": 2.179,
+    "exit_code": 0,
+    "module": "UploadBroadcast.EdgeExtraction"
+  },
+  {
+    "duration_seconds": 2.156,
+    "exit_code": 0,
+    "module": "UploadBroadcast.EdgeProfile"
+  },
+  {
+    "duration_seconds": 1.438,
+    "exit_code": 0,
+    "module": "UploadBroadcast.MarkedNilpotent"
+  },
+  {
+    "duration_seconds": 1.562,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResonantClassification"
+  },
+  {
+    "duration_seconds": 5.065,
+    "exit_code": 0,
+    "module": "UploadBroadcast.RelayLinearComposition"
+  },
+  {
+    "duration_seconds": 3.562,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BlockLinearCode"
+  },
+  {
+    "duration_seconds": 1.954,
+    "exit_code": 0,
+    "module": "UploadBroadcast.PassiveLinearCode"
+  },
+  {
+    "duration_seconds": 1.776,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OmniscienceProfile"
+  },
+  {
+    "duration_seconds": 1.774,
+    "exit_code": 0,
+    "module": "UploadBroadcast.EdgeDeficits"
+  },
+  {
+    "duration_seconds": 1.907,
+    "exit_code": 0,
+    "module": "UploadBroadcast.RelayTask"
+  },
+  {
+    "duration_seconds": 1.706,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CodeAlphabet"
+  },
+  {
+    "duration_seconds": 1.969,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OperationalBounds"
+  },
+  {
+    "duration_seconds": 2.197,
+    "exit_code": 0,
+    "module": "UploadBroadcast.GlobalUploadConverse"
+  },
+  {
+    "duration_seconds": 1.879,
+    "exit_code": 0,
+    "module": "UploadBroadcast.GlobalUploadGeometry"
+  },
+  {
+    "duration_seconds": 2.035,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualTaskAssembly"
+  },
+  {
+    "duration_seconds": 2.011,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualPrivateSplit"
+  },
+  {
+    "duration_seconds": 1.831,
+    "exit_code": 0,
+    "module": "UploadBroadcast.GlobalUploadAssembly"
+  },
+  {
+    "duration_seconds": 1.499,
+    "exit_code": 0,
+    "module": "UploadBroadcast.NonzeroDefectRelays"
+  },
+  {
+    "duration_seconds": 1.693,
+    "exit_code": 0,
+    "module": "UploadBroadcast.NonzeroDefectProfile"
+  },
+  {
+    "duration_seconds": 1.745,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResonantFlagNormalization"
+  },
+  {
+    "duration_seconds": 1.904,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BroadcastRegion"
+  },
+  {
+    "duration_seconds": 2.319,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LinearCodeSum"
+  },
+  {
+    "duration_seconds": 1.712,
+    "exit_code": 0,
+    "module": "UploadBroadcast.TripodCompression"
+  },
+  {
+    "duration_seconds": 2.248,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OptimalRelaySeparation"
+  },
+  {
+    "duration_seconds": 1.536,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BlockFlatten"
+  },
+  {
+    "duration_seconds": 2.795,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BlockOptimalRelaySeparation"
+  },
+  {
+    "duration_seconds": 1.587,
+    "exit_code": 0,
+    "module": "UploadBroadcast.MarkedSubspace"
+  },
+  {
+    "duration_seconds": 1.943,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ZeroCommonRowNormalForm"
+  },
+  {
+    "duration_seconds": 1.813,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OmniscienceTaskCode"
+  },
+  {
+    "duration_seconds": 1.361,
+    "exit_code": 0,
+    "module": "UploadBroadcast.QuiverReindex"
+  },
+  {
+    "duration_seconds": 1.405,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ReflectionIteration"
+  },
+  {
+    "duration_seconds": 1.425,
+    "exit_code": 0,
+    "module": "UploadBroadcast.E6Reflection"
+  },
+  {
+    "duration_seconds": 1.388,
+    "exit_code": 0,
+    "module": "UploadBroadcast.QuiverTits"
+  },
+  {
+    "duration_seconds": 1.623,
+    "exit_code": 0,
+    "module": "UploadBroadcast.TaskQuiverBridge"
+  },
+  {
+    "duration_seconds": 2.137,
+    "exit_code": 0,
+    "module": "UploadBroadcast.PairResidualAssembly"
+  },
+  {
+    "duration_seconds": 1.868,
+    "exit_code": 0,
+    "module": "UploadBroadcast.FullResidualAssembly"
+  },
+  {
+    "duration_seconds": 2.576,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualPureTransport"
+  },
+  {
+    "duration_seconds": 4.159,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualTaskRanks"
+  },
+  {
+    "duration_seconds": 3.131,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CommonTripodAssembly"
+  },
+  {
+    "duration_seconds": 3.576,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CommonTripodRanks"
+  },
+  {
+    "duration_seconds": 3.961,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualRelayAssembly"
+  },
+  {
+    "duration_seconds": 2.406,
+    "exit_code": 0,
+    "module": "UploadBroadcast.GlobalUploadOptimal"
+  },
+  {
+    "duration_seconds": 2.348,
+    "exit_code": 0,
+    "module": "UploadBroadcast.PassiveProduct"
+  },
+  {
+    "duration_seconds": 1.603,
+    "exit_code": 0,
+    "module": "UploadBroadcast.PassiveComposition"
+  },
+  {
+    "duration_seconds": 2.047,
+    "exit_code": 0,
+    "module": "UploadBroadcast.UploadAttainment"
+  },
+  {
+    "duration_seconds": 2.079,
+    "exit_code": 0,
+    "module": "UploadBroadcast.PairOmniscienceAdapter"
+  },
+  {
+    "duration_seconds": 1.91,
+    "exit_code": 0,
+    "module": "UploadBroadcast.SourceHomVanishing"
+  },
+  {
+    "duration_seconds": 1.824,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ScalarEndReflection"
+  },
+  {
+    "duration_seconds": 1.547,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ScalarEndBaseChange"
+  },
+  {
+    "duration_seconds": 1.247,
+    "exit_code": 0,
+    "module": "UploadBroadcast.TaskComponentBridge"
+  },
+  {
+    "duration_seconds": 1.229,
+    "exit_code": 0,
+    "module": "UploadBroadcast.QuiverHomLinear"
+  },
+  {
+    "duration_seconds": 1.291,
+    "exit_code": 0,
+    "module": "UploadBroadcast.QuiverHomTerminal"
+  },
+  {
+    "duration_seconds": 1.128,
+    "exit_code": 0,
+    "module": "UploadBroadcast.QuiverEuler"
+  },
+  {
+    "duration_seconds": 1.238,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResonantTripodTransversality"
+  },
+  {
+    "duration_seconds": 1.544,
+    "exit_code": 0,
+    "module": "UploadBroadcast.RegularHomVanishing"
+  },
+  {
+    "duration_seconds": 1.902,
+    "exit_code": 0,
+    "module": "UploadBroadcast.RegularSubobjectDefect"
+  },
+  {
+    "duration_seconds": 2.003,
+    "exit_code": 0,
+    "module": "UploadBroadcast.IntersectionProbes"
+  },
+  {
+    "duration_seconds": 1.956,
+    "exit_code": 0,
+    "module": "UploadBroadcast.NonzeroFamilyRanks"
+  },
+  {
+    "duration_seconds": 1.49,
+    "exit_code": 0,
+    "module": "UploadBroadcast.TwoDimensionalWedge"
+  },
+  {
+    "duration_seconds": 2.469,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OriginalUploadOptimum"
+  },
+  {
+    "duration_seconds": 2.807,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OriginalUploadRanks"
+  },
+  {
+    "duration_seconds": 1.954,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OriginalUploadCanonical"
+  },
+  {
+    "duration_seconds": 2.29,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OriginalUploadChart"
+  },
+  {
+    "duration_seconds": 3.07,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OriginalUploadModel"
+  },
+  {
+    "duration_seconds": 2.271,
+    "exit_code": 0,
+    "module": "UploadBroadcast.PairReductionRanks"
+  },
+  {
+    "duration_seconds": 2.032,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OriginalUploadFormula"
+  },
+  {
+    "duration_seconds": 2.244,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OriginalUploadTheorem"
+  },
+  {
+    "duration_seconds": 2.141,
+    "exit_code": 0,
+    "module": "UploadBroadcast.TripodSubobjectExclusion"
+  },
+  {
+    "duration_seconds": 2.376,
+    "exit_code": 0,
+    "module": "UploadBroadcast.NonzeroRelationRestrictions"
+  },
+  {
+    "duration_seconds": 2.02,
+    "exit_code": 0,
+    "module": "UploadBroadcast.NonzeroHyperplaneArithmetic"
+  },
+  {
+    "duration_seconds": 2.235,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BinaryRelayMenus"
+  },
+  {
+    "duration_seconds": 2.221,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BinaryRelayProfiles"
+  },
+  {
+    "duration_seconds": 2.372,
+    "exit_code": 0,
+    "module": "UploadBroadcast.NonzeroHyperplaneProfiles"
+  },
+  {
+    "duration_seconds": 2.386,
+    "exit_code": 0,
+    "module": "UploadBroadcast.NonzeroHyperplaneUpload"
+  },
+  {
+    "duration_seconds": 2.843,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BinaryCodimTwoProfiles"
+  },
+  {
+    "duration_seconds": 2.504,
+    "exit_code": 0,
+    "module": "UploadBroadcast.NonzeroR2Wedge"
+  },
+  {
+    "duration_seconds": 2.448,
+    "exit_code": 0,
+    "module": "UploadBroadcast.R2ExactProfile"
+  },
+  {
+    "duration_seconds": 2.102,
+    "exit_code": 0,
+    "module": "UploadBroadcast.NonzeroSameChart"
+  },
+  {
+    "duration_seconds": 1.62,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BinaryMenuAllocation"
+  },
+  {
+    "duration_seconds": 1.818,
+    "exit_code": 0,
+    "module": "UploadBroadcast.TaskUserPermutation"
+  },
+  {
+    "duration_seconds": 1.953,
+    "exit_code": 0,
+    "module": "UploadBroadcast.R2PermutedMenus"
+  },
+  {
+    "duration_seconds": 2.076,
+    "exit_code": 0,
+    "module": "UploadBroadcast.NonzeroBinaryMenus"
+  },
+  {
+    "duration_seconds": 2.623,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BinaryExceptionalRelays"
+  },
+  {
+    "duration_seconds": 5.002,
+    "exit_code": 0,
+    "module": "UploadBroadcast.NonzeroExceptionalRelays"
+  },
+  {
+    "duration_seconds": 3.316,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LinearUploadRelay"
+  },
+  {
+    "duration_seconds": 2.344,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualRowShapeCore"
+  },
+  {
+    "duration_seconds": 2.033,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualRowShape"
+  },
+  {
+    "duration_seconds": 2.043,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ConditionedResidualBridges"
+  },
+  {
+    "duration_seconds": 2.116,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CanonicalResidualScalar"
+  },
+  {
+    "duration_seconds": 2.438,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualRowPaperEndpoint"
+  },
+  {
+    "duration_seconds": 1.343,
+    "exit_code": 0,
+    "module": "UploadBroadcast.IntegerMenuRealization"
+  },
+  {
+    "duration_seconds": 1.806,
+    "exit_code": 0,
+    "module": "UploadBroadcast.RelayProfileTransport"
+  },
+  {
+    "duration_seconds": 1.412,
+    "exit_code": 0,
+    "module": "UploadBroadcast.QuiverExtensions"
+  },
+  {
+    "duration_seconds": 1.346,
+    "exit_code": 0,
+    "module": "UploadBroadcast.QuiverExactSequence"
+  },
+  {
+    "duration_seconds": 2.287,
+    "exit_code": 0,
+    "module": "UploadBroadcast.GradedRelationSplit"
+  },
+  {
+    "duration_seconds": 2.161,
+    "exit_code": 0,
+    "module": "UploadBroadcast.TripodQuotient"
+  },
+  {
+    "duration_seconds": 2.381,
+    "exit_code": 0,
+    "module": "UploadBroadcast.SemistableFiltration"
+  },
+  {
+    "duration_seconds": 2.238,
+    "exit_code": 0,
+    "module": "UploadBroadcast.SemistableMorphisms"
+  },
+  {
+    "duration_seconds": 2.784,
+    "exit_code": 0,
+    "module": "UploadBroadcast.TaskExactSequence"
+  },
+  {
+    "duration_seconds": 1.389,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CoboundaryExtensionClosure"
+  },
+  {
+    "duration_seconds": 2.538,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ExtensionGenerated"
+  },
+  {
+    "duration_seconds": 2.43,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ExtensionHomVanishing"
+  },
+  {
+    "duration_seconds": 2.67,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ExtensionBlockSeparation"
+  },
+  {
+    "duration_seconds": 3.811,
+    "exit_code": 0,
+    "module": "UploadBroadcast.FiniteRelayAssembly"
+  },
+  {
+    "duration_seconds": 1.648,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BinaryAugmentedAllocation"
+  },
+  {
+    "duration_seconds": 2.038,
+    "exit_code": 0,
+    "module": "UploadBroadcast.GlobalMenuAssembly"
+  },
+  {
+    "duration_seconds": 2.199,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResonantFiniteAssembly"
+  },
+  {
+    "duration_seconds": 2.121,
+    "exit_code": 0,
+    "module": "UploadBroadcast.NonzeroFiniteAssembly"
+  },
+  {
+    "duration_seconds": 2.118,
+    "exit_code": 0,
+    "module": "UploadBroadcast.AugmentedRelayAssembly"
+  },
+  {
+    "duration_seconds": 2.822,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OmniscienceRelayProfile"
+  },
+  {
+    "duration_seconds": 3.008,
+    "exit_code": 0,
+    "module": "UploadBroadcast.RelayCoordinateTransport"
+  },
+  {
+    "duration_seconds": 3.011,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CycleFiniteAssembly"
+  },
+  {
+    "duration_seconds": 2.143,
+    "exit_code": 0,
+    "module": "UploadBroadcast.RegularExtensionGeneration"
+  },
+  {
+    "duration_seconds": 3.017,
+    "exit_code": 0,
+    "module": "UploadBroadcast.RegularTripodPair"
+  },
+  {
+    "duration_seconds": 2.354,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CrossIntersectionClosure"
+  },
+  {
+    "duration_seconds": 2.824,
+    "exit_code": 0,
+    "module": "UploadBroadcast.RegularPositiveCross"
+  },
+  {
+    "duration_seconds": 2.155,
+    "exit_code": 0,
+    "module": "UploadBroadcast.GeneralTransverseClassification"
+  },
+  {
+    "duration_seconds": 2.04,
+    "exit_code": 0,
+    "module": "UploadBroadcast.RegularResonantClassification"
+  },
+  {
+    "duration_seconds": 2.161,
+    "exit_code": 0,
+    "module": "UploadBroadcast.DoubleOperationalScaling"
+  },
+  {
+    "duration_seconds": 2.721,
+    "exit_code": 0,
+    "module": "UploadBroadcast.EndpointArithmetic"
+  },
+  {
+    "duration_seconds": 2.611,
+    "exit_code": 0,
+    "module": "UploadBroadcast.JointRegionEndpoints"
+  },
+  {
+    "duration_seconds": 2.465,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BroadcastFiniteEndpoints"
+  },
+  {
+    "duration_seconds": 2.826,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OmniscienceRelayConstruction"
+  },
+  {
+    "duration_seconds": 2.838,
+    "exit_code": 0,
+    "module": "UploadBroadcast.FiniteComponentCoordinates"
+  },
+  {
+    "duration_seconds": 3.979,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BinaryOperationalTightness"
+  },
+  {
+    "duration_seconds": 1.908,
+    "exit_code": 0,
+    "module": "UploadBroadcast.E6RealRoots"
+  },
+  {
+    "duration_seconds": 1.498,
+    "exit_code": 0,
+    "module": "UploadBroadcast.TensorTaskExtension"
+  },
+  {
+    "duration_seconds": 1.507,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BaseFieldComponents"
+  },
+  {
+    "duration_seconds": 1.913,
+    "exit_code": 0,
+    "module": "UploadBroadcast.GeometricUploadConverse"
+  },
+  {
+    "duration_seconds": 2.928,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualIntrinsicGeometry"
+  },
+  {
+    "duration_seconds": 2.018,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualComponentAdditivity"
+  },
+  {
+    "duration_seconds": 2.111,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualComponentFactors"
+  },
+  {
+    "duration_seconds": 2.155,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ActiveReductionEndpoint"
+  },
+  {
+    "duration_seconds": 2.425,
+    "exit_code": 0,
+    "module": "UploadBroadcast.NonzeroSameChartOptimality"
+  },
+  {
+    "duration_seconds": 2.57,
+    "exit_code": 0,
+    "module": "UploadBroadcast.NonzeroSameChartMenus"
+  },
+  {
+    "duration_seconds": 2.303,
+    "exit_code": 0,
+    "module": "UploadBroadcast.NonzeroSameChartPermutations"
+  },
+  {
+    "duration_seconds": 2.302,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BinaryExactMenus"
+  },
+  {
+    "duration_seconds": 2.693,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BinaryExactFamilyMenus"
+  },
+  {
+    "duration_seconds": 2.572,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BinaryMenuOptimality"
+  },
+  {
+    "duration_seconds": 2.517,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BinaryMenuPermutations"
+  },
+  {
+    "duration_seconds": 2.137,
+    "exit_code": 0,
+    "module": "UploadBroadcast.FiniteProductCoordinates"
+  },
+  {
+    "duration_seconds": 2.585,
+    "exit_code": 0,
+    "module": "UploadBroadcast.SplitTaskCoordinates"
+  },
+  {
+    "duration_seconds": 2.154,
+    "exit_code": 0,
+    "module": "UploadBroadcast.PassiveBroadcast"
+  },
+  {
+    "duration_seconds": 1.92,
+    "exit_code": 0,
+    "module": "UploadBroadcast.PassiveRelayTransport"
+  },
+  {
+    "duration_seconds": 1.797,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ActiveComponentClassification"
+  },
+  {
+    "duration_seconds": 2.215,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BoundaryComponentMenus"
+  },
+  {
+    "duration_seconds": 2.506,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualComponentClassification"
+  },
+  {
+    "duration_seconds": 2.535,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualProfileCompleteness"
+  },
+  {
+    "duration_seconds": 2.056,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OriginalJointReduction"
+  },
+  {
+    "duration_seconds": 3.957,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualBackgroundSelection"
+  },
+  {
+    "duration_seconds": 3.928,
+    "exit_code": 0,
+    "module": "UploadBroadcast.PositiveExcessNoEdges"
+  },
+  {
+    "duration_seconds": 2.539,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ClassifiedRelayPartition"
+  },
+  {
+    "duration_seconds": 2.487,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ActualPairCapacities"
+  },
+  {
+    "duration_seconds": 2.379,
+    "exit_code": 0,
+    "module": "UploadBroadcast.PermutedNonzeroAssembly"
+  },
+  {
+    "duration_seconds": 1.542,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OrientationRepairAllocation"
+  },
+  {
+    "duration_seconds": 2.174,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ActualComponentCapacities"
+  },
+  {
+    "duration_seconds": 2.864,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ClassifiedComponentMenus"
+  },
+  {
+    "duration_seconds": 3.05,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ClassifiedComponentRanks"
+  },
+  {
+    "duration_seconds": 3.408,
+    "exit_code": 0,
+    "module": "UploadBroadcast.PhysicalCycleCoordinates"
+  },
+  {
+    "duration_seconds": 1.828,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CycleDirectSumCoordinates"
+  },
+  {
+    "duration_seconds": 2.048,
+    "exit_code": 0,
+    "module": "UploadBroadcast.PhysicalScalarCycleChart"
+  },
+  {
+    "duration_seconds": 2.721,
+    "exit_code": 0,
+    "module": "UploadBroadcast.PhysicalCycleRelay"
+  },
+  {
+    "duration_seconds": 1.393,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResonantRelationReduction"
+  },
+  {
+    "duration_seconds": 1.421,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResonantKernelSupport"
+  },
+  {
+    "duration_seconds": 3.526,
+    "exit_code": 0,
+    "module": "UploadBroadcast.RegularRelayOptimality"
+  },
+  {
+    "duration_seconds": 4.702,
+    "exit_code": 0,
+    "module": "UploadBroadcast.RelayCyclePairing"
+  },
+  {
+    "duration_seconds": 4.384,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OrientedRelayPairing"
+  },
+  {
+    "duration_seconds": 3.425,
+    "exit_code": 0,
+    "module": "UploadBroadcast.FiniteCycleDeficits"
+  },
+  {
+    "duration_seconds": 3.787,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OmniscienceCycleDeficits"
+  },
+  {
+    "duration_seconds": 4.027,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OrientationSlackCounts"
+  },
+  {
+    "duration_seconds": 3.421,
+    "exit_code": 0,
+    "module": "UploadBroadcast.RepairedGlobalMenuAssembly"
+  },
+  {
+    "duration_seconds": 3.628,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ClassifiedResidualRelaySelection"
+  },
+  {
+    "duration_seconds": 3.389,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualBackgroundSelectionTheorem"
+  },
+  {
+    "duration_seconds": 2.513,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OmniscienceResidualAdditivity"
+  },
+  {
+    "duration_seconds": 4.617,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CanonicalSelectionAssembly"
+  },
+  {
+    "duration_seconds": 3.657,
+    "exit_code": 0,
+    "module": "UploadBroadcast.SourceMainTheorem"
+  },
+  {
+    "duration_seconds": 2.632,
+    "exit_code": 0,
+    "module": "UploadBroadcast.IntrinsicUploadRanks"
+  },
+  {
+    "duration_seconds": 2.437,
+    "exit_code": 0,
+    "module": "UploadBroadcast.IntrinsicUploadSelections"
+  },
+  {
+    "duration_seconds": 1.87,
+    "exit_code": 0,
+    "module": "UploadBroadcast.IntrinsicUploadReduction"
+  },
+  {
+    "duration_seconds": 2.235,
+    "exit_code": 0,
+    "module": "UploadBroadcast.IntrinsicUploadInvariance"
+  },
+  {
+    "duration_seconds": 2.132,
+    "exit_code": 0,
+    "module": "UploadBroadcast.MatrixTaskFrontend"
+  },
+  {
+    "duration_seconds": 2.322,
+    "exit_code": 0,
+    "module": "UploadBroadcast.MatrixTaskEndpoints"
+  },
+  {
+    "duration_seconds": 2.383,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BinaryAdditionalMenuPermutations"
+  },
+  {
+    "duration_seconds": 2.677,
+    "exit_code": 0,
+    "module": "UploadBroadcast.RegularExactMenus"
+  },
+  {
+    "duration_seconds": 2.709,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResidualProfiles"
+  },
+  {
+    "duration_seconds": 2.577,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CitedBinaryFieldNecessity"
+  },
+  {
+    "duration_seconds": 2.567,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CycleUploadGeometry"
+  },
+  {
+    "duration_seconds": 2.322,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CycleUploadOptimality"
+  },
+  {
+    "duration_seconds": 2.688,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CycleSourceEndpoint"
+  },
+  {
+    "duration_seconds": 2.384,
+    "exit_code": 0,
+    "module": "UploadBroadcast.BlockGraphDirectSum"
+  },
+  {
+    "duration_seconds": 2.941,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ActualBlockGraph"
+  },
+  {
+    "duration_seconds": 2.534,
+    "exit_code": 0,
+    "module": "UploadBroadcast.IntrinsicUploadDirectSums"
+  },
+  {
+    "duration_seconds": 3.539,
+    "exit_code": 0,
+    "module": "UploadBroadcast.UploadParameterDirectSum"
+  },
+  {
+    "duration_seconds": 3.511,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OppositeDemandExample"
+  },
+  {
+    "duration_seconds": 2.754,
+    "exit_code": 0,
+    "module": "UploadBroadcast.FiniteSubspaceCertificate"
+  },
+  {
+    "duration_seconds": 2.178,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CitedEntropyData"
+  },
+  {
+    "duration_seconds": 2.746,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CitedEntropyKernelCertificate"
+  },
+  {
+    "duration_seconds": 2.549,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CitedEntropyShannon"
+  },
+  {
+    "duration_seconds": 2.973,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CitedEntropyCertificates"
+  },
+  {
+    "duration_seconds": 2.599,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CitedEntropyProfile"
+  },
+  {
+    "duration_seconds": 2.321,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CitedEntropyModel"
+  },
+  {
+    "duration_seconds": 2.402,
+    "exit_code": 0,
+    "module": "UploadBroadcast.CitedEntropyCounterexample"
+  },
+  {
+    "duration_seconds": 3.488,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResonantUploadSpecializations"
+  },
+  {
+    "duration_seconds": 2.836,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LiteralThetaBlocks"
+  },
+  {
+    "duration_seconds": 1.969,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LiteralMatrixCertificates"
+  },
+  {
+    "duration_seconds": 2.222,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LiteralPrimitiveT1_2"
+  },
+  {
+    "duration_seconds": 1.941,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LiteralPrimitiveT1_3"
+  },
+  {
+    "duration_seconds": 1.725,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LiteralPrimitiveT2_3"
+  },
+  {
+    "duration_seconds": 2.074,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LiteralPrimitiveT3_2"
+  },
+  {
+    "duration_seconds": 2.017,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LiteralPrimitiveR1_1"
+  },
+  {
+    "duration_seconds": 2.931,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LiteralPrimitiveR2"
+  },
+  {
+    "duration_seconds": 1.718,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LiteralPrimitiveO_1"
+  },
+  {
+    "duration_seconds": 2.028,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LiteralPrimitiveO_2"
+  },
+  {
+    "duration_seconds": 1.632,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LiteralPrimitiveO_3"
+  },
+  {
+    "duration_seconds": 2.404,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LiteralPrimitiveH_1"
+  },
+  {
+    "duration_seconds": 1.64,
+    "exit_code": 0,
+    "module": "UploadBroadcast.LiteralPrimitiveTables"
+  },
+  {
+    "duration_seconds": 2.801,
+    "exit_code": 0,
+    "module": "UploadBroadcast"
+  },
+  {
+    "duration_seconds": 2.725,
+    "exit_code": 0,
+    "module": "UploadBroadcast.OmniscienceOperational"
+  },
+  {
+    "duration_seconds": 1.416,
+    "exit_code": 0,
+    "module": "UploadBroadcast.ResonantSeedEmbedding"
+  }
+]

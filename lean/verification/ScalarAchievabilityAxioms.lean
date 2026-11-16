@@ -1,0 +1,4 @@
+import UploadBroadcast.ScalarAchievability
+#print axioms UploadBroadcast.scalarBroadcastCode_of_allocation
+#print axioms UploadBroadcast.scalar_lcbc_achievability
+#print axioms UploadBroadcast.scalar_lcbc_achievability_cost

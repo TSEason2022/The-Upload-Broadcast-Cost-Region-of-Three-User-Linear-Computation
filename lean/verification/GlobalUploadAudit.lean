@@ -1,0 +1,4 @@
+import UploadBroadcast.GlobalUploadOptimal
+#print axioms UploadBroadcast.GlobalUploadConverse.code_upload_lower_bound
+#print axioms UploadBroadcast.GlobalUploadAssembly.fully_used_active_directSum_lower_bound
+#print axioms UploadBroadcast.GlobalUploadOptimal.canonical_uploadOptimum

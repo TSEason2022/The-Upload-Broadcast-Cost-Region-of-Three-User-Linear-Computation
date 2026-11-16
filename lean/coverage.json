@@ -1,0 +1,401 @@
+{
+  "paper_title": "The Upload--Broadcast Cost Region of Three-User Linear Computation",
+  "source_sha256": "420218e9eb1b3c721a4270c39f505a057ad23b62a866ead698761bac476efdd5",
+  "coverage_policy": "reviewed_complete records semantic statement alignment only. Current clean compilation and transitive axiom audit must be recorded separately before calling a release verified.",
+  "claims": [
+    {
+      "id": "thm:intro-main",
+      "title": "Optimal region and finite-blocklength achievability",
+      "source_line": 483,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.Task.main_region",
+        "UploadBroadcast.Task.joint_two",
+        "UploadBroadcast.Task.minimum_linear_blocklength",
+        "UploadBroadcast.Task.scalar_joint_iff_integral",
+        "UploadBroadcast.nonlinear_uniform_bound_tight",
+        "UploadBroadcast.CurrentSourceAlignment.binary_task_requires_two_instances",
+        "UploadBroadcast.BinaryOperationalTightness.two_le_blocklength_of_broadcast_optimal"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "prop:active-pair",
+      "title": "Active reduction",
+      "source_line": 609,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.Task.active_pair_source_geometry",
+        "UploadBroadcast.Task.active_reduction_source",
+        "UploadBroadcast.Task.activeReduction_achievableAt_eq",
+        "UploadBroadcast.Task.activeReduction_costRegion_eq",
+        "UploadBroadcast.Task.PrivateTripodChart.activeResidual_signal_quotients",
+        "UploadBroadcast.Task.PrivateTripodChart.activeResidual_rows_finrank",
+        "UploadBroadcast.Task.preResidual_pairKnown_finrank"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "thm:upload",
+      "title": "Minimum upload",
+      "source_line": 717,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.Task.minimum_upload_source_formula",
+        "UploadBroadcast.Task.minimum_upload_attainment",
+        "UploadBroadcast.Task.minimum_upload_scalar_of_integral",
+        "UploadBroadcast.Task.minimum_upload_two_instance",
+        "UploadBroadcast.Task.minimum_upload_closed_lower",
+        "UploadBroadcast.Task.preResidual_pairKnown_finrank",
+        "UploadBroadcast.ResidualTaskAssembly.tripodDimension_eq_pure_mixed",
+        "UploadBroadcast.ResidualTaskAssembly.tripodDimension_eq_stacked_rank"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "lem:five-cmi",
+      "title": "Common-function entropy bound",
+      "source_line": 856,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.FiniteAlphabet.commonFunction"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "lem:omni-lift",
+      "title": "Upload lower bound with an omniscience component",
+      "source_line": 923,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.FiniteAlphabet.omniscience_lift"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "lem:bridges",
+      "title": "Common functions from signal-space intersections",
+      "source_line": 1008,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.ConditionedResidualBridges.canonicalReduction_all_tripod_bridges",
+        "UploadBroadcast.ConditionedResidualBridges.canonicalReduction_conditioned_retained_bounds"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "lem:ck-omniscience",
+      "title": "Noninteractive omniscience upload",
+      "source_line": 1065,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.Omniscience.exists_code",
+        "UploadBroadcast.Omniscience.nonempty_code_iff",
+        "UploadBroadcast.Omniscience.exists_scalar_optimal",
+        "UploadBroadcast.Omniscience.exists_two_instance_optimal",
+        "UploadBroadcast.Omniscience.block_cost_lower"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "lem:pis",
+      "title": "Reduction to the relay space",
+      "source_line": 1123,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.relay_decoder_equivalence",
+        "UploadBroadcast.relay_attainable_range"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "prop:exhaustion",
+      "title": "Residual decomposition",
+      "source_line": 1252,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.ResidualComponentAdditivity.source_residual_decomposition",
+        "UploadBroadcast.ResidualComponentAdditivity.source_residual_upload_formula",
+        "UploadBroadcast.ResidualComponentAdditivity.residual_decomposition",
+        "UploadBroadcast.ResidualComponentAdditivity.exists_indecomposable_residual_decomposition",
+        "UploadBroadcast.ResidualComponentAdditivity.finalResidual_active",
+        "UploadBroadcast.ResidualComponentAdditivity.canonical_rows_fully_active",
+        "UploadBroadcast.ResidualComponentAdditivity.minimum_upload",
+        "UploadBroadcast.ResidualComponentAdditivity.minimum_upload_additive",
+        "UploadBroadcast.ResidualComponentAdditivity.scalar_upload_exact",
+        "UploadBroadcast.ResidualComponentAdditivity.zero_excess_full_relay",
+        "UploadBroadcast.ResidualComponentAdditivity.zero_excess_side_complement",
+        "UploadBroadcast.ResidualComponentAdditivity.pair_ranks_zero"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "thm:profiles",
+      "title": "Sufficient residual relay choices",
+      "source_line": 1389,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.ResidualProfiles.profiles",
+        "UploadBroadcast.ResidualProfileCompleteness.outside_table_profile_preserving",
+        "UploadBroadcast.RegularExactMenus.from_actual_regular"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "thm:packing",
+      "title": "Aggregate selection criterion",
+      "source_line": 1506,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.Allocation.aggregate_selection_paper_coordinates"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "lem:edge-identity",
+      "title": "Demand cycles from orientation deficits",
+      "source_line": 1570,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.EdgeExtraction.simultaneous_maximal_extraction",
+        "UploadBroadcast.EdgeProfile.edge_price_identity",
+        "UploadBroadcast.EdgeProfile.edge_price_le_extractable",
+        "UploadBroadcast.EdgeDeficits.demand_cycles_from_decomposition"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "thm:endpoint",
+      "title": "Demand-cycle repair",
+      "source_line": 1623,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.CycleSourceEndpoint.positive_directSum",
+        "UploadBroadcast.CycleSourceEndpoint.negative_directSum",
+        "UploadBroadcast.CycleUploadOptimality.canonical_positive_optimal",
+        "UploadBroadcast.CycleUploadOptimality.canonical_reverse_optimal"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "prop:stable",
+      "title": "Scalar relay selection at an integer budget",
+      "source_line": 1730,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.Task.stable_relay_source"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "prop:small-field-lcbc",
+      "title": "Scalar LCBC over fields of size at least three",
+      "source_line": 1810,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.scalar_at_operational_ceiling"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "prop:binary-lcbc",
+      "title": "Binary scalar LCBC with separated side-information spaces",
+      "source_line": 1822,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.binary_at_operational_ceiling_permuted"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "cor:scalar-budget",
+      "title": "Scalar coding at integral minimum upload",
+      "source_line": 1834,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.Task.scalar_budget"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "lem:active-empty-row",
+      "title": "Removal of passive three-line blocks",
+      "source_line": 2024,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.ResidualTaskAssembly.DemandData.activeRowReduction_achievableAt_eq",
+        "UploadBroadcast.ResidualTaskAssembly.DemandData.exists_empty_cancellation",
+        "UploadBroadcast.ResidualTaskAssembly.DemandData.correctedTask_rows",
+        "UploadBroadcast.ResidualTaskAssembly.DemandData.activeRows_finrank",
+        "UploadBroadcast.ResidualTaskAssembly.privateGaugeShear_sides"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "lem:zero-common-row-relay",
+      "title": "Completion of residual uploads",
+      "source_line": 2179,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.ResidualRowShape.exists_exact_row_completion",
+        "UploadBroadcast.ResidualRowShape.row_completion_paper",
+        "UploadBroadcast.ResidualRowShape.canonicalReduction_scalar_upload_exact",
+        "UploadBroadcast.ResidualRowShape.shear_extension_fixes_pairwise"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "lem:base-field-components",
+      "title": "Positive-excess components over the original field",
+      "source_line": 2368,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.TaskDecomposition.Task.source_base_field_components",
+        "UploadBroadcast.TaskDecomposition.Task.positive_excess_extend_indec",
+        "UploadBroadcast.TaskDecomposition.Task.positive_excess_real_root",
+        "UploadBroadcast.E6RealRoots.nonnegative_realRoot_iff_norm_one",
+        "UploadBroadcast.TaskDecomposition.Task.tensorRep_indec_iff"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "lem:same-chart",
+      "title": "Relays for the nonzero-defect families",
+      "source_line": 2501,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.NonzeroSameChartOptimality.same_chart_full_and_optimal_relay",
+        "UploadBroadcast.NonzeroSameChartMenus.same_chart_all_menu_choices",
+        "UploadBroadcast.NonzeroSameChartPermutations.same_chart_all_permuted_choices",
+        "UploadBroadcast.NonzeroSameChartPermutations.indexed_menu_table",
+        "UploadBroadcast.NonzeroSameChartPermutations.pathPerm_exhaustive"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "lem:optimal-residual-sides",
+      "title": "Direct-sum structure at minimum upload",
+      "source_line": 3165,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.OptimalRelaySeparation.optimal_block_residual_sides_ambient"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "lem:binary-menu",
+      "title": "Binary relay choices",
+      "source_line": 3204,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.BinaryMenuPermutations.original_exact_optimal_permuted",
+        "UploadBroadcast.BoundaryComponentMenus.T1_all_permuted_choices",
+        "UploadBroadcast.RegularExactMenus.from_actual_regular"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "lem:binary-additional-menus",
+      "title": "Additional binary relay choices",
+      "source_line": 3242,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.BinaryMenuOptimality.additional_optimal_menu",
+        "UploadBroadcast.BinaryMenuOptimality.r2_optimal_menu",
+        "UploadBroadcast.BinaryMenuOptimality.charge_le_actual_margin",
+        "UploadBroadcast.BinaryMenuOptimality.r2_charge_le_actual_margin",
+        "UploadBroadcast.BinaryMenuOptimality.additional_optimal_fits_capacity",
+        "UploadBroadcast.BinaryMenuOptimality.r2_optimal_fits_capacity",
+        "UploadBroadcast.BinaryAdditionalMenuPermutations.additional_optimal_permuted",
+        "UploadBroadcast.BinaryAdditionalMenuPermutations.additional_fits_permuted",
+        "UploadBroadcast.BinaryAdditionalMenuPermutations.r2_optimal_permuted",
+        "UploadBroadcast.BinaryAdditionalMenuPermutations.r2_fits_permuted",
+        "UploadBroadcast.BinaryAdditionalMenuPermutations.exceptions_permuted",
+        "UploadBroadcast.BinaryMenuAllocation.menu_fits",
+        "UploadBroadcast.BinaryMenuAllocation.menu_fits_int",
+        "UploadBroadcast.CurrentSourceAlignment.every_listed_additional_bound",
+        "UploadBroadcast.CurrentSourceAlignment.additional_bound_and_relay_fit",
+        "UploadBroadcast.CurrentSourceAlignment.r2_bound_and_relay_fit"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "lem:binary-integer-relay",
+      "title": "Scalar binary relay at integral upload",
+      "source_line": 3441,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.Task.binary_integer_relay"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "lem:integer-lcbc-allocation",
+      "title": "Integer LCBC allocation",
+      "source_line": 3584,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.integer_allocation_at_operational_optimum"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "lem:column-reconciliation",
+      "title": "Homogeneous column coordination",
+      "source_line": 3626,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.homogeneous_column_coordination_invertible",
+        "UploadBroadcast.homogeneous_column_search"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    },
+    {
+      "id": "lem:binary-common-complement",
+      "title": "A maximum disjoint subspace",
+      "source_line": 3709,
+      "status": "reviewed_complete",
+      "lean_declarations": [
+        "UploadBroadcast.maximum_disjoint_subspace"
+      ],
+      "remaining_obligations": [],
+      "semantic_review": "current-source-coverage.json"
+    }
+  ],
+  "unnumbered_and_external_dependencies_reviewed": true,
+  "previous_source_sha256": "b1c77e1cf7f7245fc8781b362d69ca06ba9b42448bc6d90ad65ddf628d4b2682",
+  "kernel_status": "passed_current_clean_build",
+  "alignment_snapshot_context": "the supplied manuscript snapshot used for mathematical alignment; subsequent private edits update introduction wording and citations/bibliography, acknowledgment availability wording/URL, URL-package support and author biographies without changing mathematical statements, proofs or verified code",
+  "local_manuscript_edit_scope": "Private introduction wording and citations/bibliography updated, including the supplied Wireless reference details and visible DOI; acknowledgment availability wording/URL, URL-package support and author-biography removal retained. Mathematical statements, proofs, equations, tables, notation and verified code are unchanged.",
+  "local_manuscript_identity_status": "final auxiliary identity; mathematical alignment snapshot unchanged",
+  "final_local_manuscript_sha256": "26c429ce52b8cd6e09c48e77cbff1d205c0663be86fd2d71cbb778a6e5808f2e",
+  "verification_report": "verification-current/report.json",
+  "formal_input_sha256": "7ee8f58643fcad782e99373da67c0e7e06a571cbfea506725b3ab827b19ae486"
+}

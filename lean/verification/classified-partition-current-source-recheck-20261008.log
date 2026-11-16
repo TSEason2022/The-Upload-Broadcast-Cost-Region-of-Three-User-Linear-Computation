@@ -1,0 +1,10 @@
+UploadBroadcast/ClassifiedRelayPartition.lean:70:0: warning: automatically included section variable(s) unused in theorem 'UploadBroadcast.ClassifiedRelayPartition.menu_assignments':
+  [Finite K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite K] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+UploadBroadcast/ClassifiedRelayPartition.lean:105:0: warning: automatically included section variable(s) unused in theorem 'UploadBroadcast.ClassifiedRelayPartition.menu_task_has_no_edges':
+  [Finite K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite K] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`

@@ -1,0 +1,3 @@
+import UploadBroadcast.ProjectionCriterion
+#print axioms UploadBroadcast.TaskDecomposition.indecomposable_of_projection_eq_zero_or_id
+#print axioms UploadBroadcast.TaskDecomposition.indecomposable_iff_projection_eq_zero_or_id

@@ -1,0 +1,8 @@
+import UploadBroadcast.NonzeroFamilyRanks
+#print axioms UploadBroadcast.QuiverRepresentation.hom_finrank_sourceSimpleTarget
+#print axioms UploadBroadcast.IntersectionProbes.Probe.homLinearEquiv
+#print axioms UploadBroadcast.NonzeroFamilyRanks.full_rankConditions
+#print axioms UploadBroadcast.NonzeroFamilyRanks.full_first_profile
+#print axioms UploadBroadcast.NonzeroFamilyRanks.full_second_profile
+#print axioms UploadBroadcast.NonzeroFamilyRanks.full_side_pair_eq_bot
+#print axioms UploadBroadcast.NonzeroFamilyRanks.full_spanning

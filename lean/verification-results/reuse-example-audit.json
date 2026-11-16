@@ -1,0 +1,73 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "declaration_count": 12,
+  "declarations": {
+    "UploadBroadcast.ReusableAPI.closed_and_two_region": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UploadBroadcast.ReusableAPI.joint_two_code": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UploadBroadcast.ReusableAPI.matrixData": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UploadBroadcast.ReusableAPI.matrix_ambient_region": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UploadBroadcast.ReusableAPI.matrix_joint_two_code": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UploadBroadcast.ReusableAPI.matrix_linear_costs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UploadBroadcast.ReusableAPI.matrix_region": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UploadBroadcast.ReusableAPI.matrix_zero_error": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UploadBroadcast.ReusableAPI.minimum_blocklength": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UploadBroadcast.ReusableAPI.scalar_ceiling": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UploadBroadcast.ReusableAPI.scalar_criterion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UploadBroadcast.ReusableAPI.upload_formula": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "scope": "Every declaration explicitly named by a #print axioms command in the public example; project library declarations have separate all-module audits.",
+  "source": "examples/ReusableAPI.lean",
+  "source_sha256": "9d948339f0ef3e70f380b5cc847edbd94b3f84203572c915f5851f125b6ae15d"
+}

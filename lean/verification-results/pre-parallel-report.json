@@ -1,0 +1,55 @@
+{
+  "build_policy": {
+    "lean_threads": 1,
+    "project_modules": "topological-sequential"
+  },
+  "checks": [
+    {
+      "command": "python3 scripts/verify_toolchain.py --output .verification-results/toolchain.json",
+      "duration_seconds": 0.322,
+      "exit_code": 0,
+      "log": "toolchain.log",
+      "name": "toolchain"
+    },
+    {
+      "command": "python3 scripts/verify_dependency_pins.py --output .verification-results/dependency-pins.json",
+      "duration_seconds": 2.241,
+      "exit_code": 0,
+      "log": "dependency-pins.log",
+      "name": "dependency-pins"
+    },
+    {
+      "command": "python3 scripts/test_release_tools.py && python3 scripts/test_audit_source.py && python3 scripts/test_package_release.py",
+      "duration_seconds": 1.561,
+      "exit_code": 0,
+      "log": "release-regressions.log",
+      "name": "release-regressions"
+    },
+    {
+      "command": "python3 scripts/audit_source.py && python3 scripts/check_coverage.py",
+      "duration_seconds": 2.667,
+      "exit_code": 0,
+      "log": "source-preflight.log",
+      "name": "source-preflight"
+    }
+  ],
+  "continuation_provenance": "continuation-provenance.json",
+  "dependency_cache_copy_method": "cp-reflink-auto",
+  "dependency_compiled_cache_reused": true,
+  "externally_built_project_artifacts_imported": false,
+  "fresh_campaign_artifacts_retained_on_continuation": 79,
+  "interrupted_campaign": true,
+  "passed": false,
+  "platform": {
+    "architecture": "x86_64",
+    "logical_cpus": 9,
+    "python": "3.12.14",
+    "system": "Linux"
+  },
+  "project_compiled_artifacts_reused": false,
+  "project_compiled_artifacts_reused_meaning": "No project artifacts from another build campaign were imported. Module dependencies and this recovery reuse only objects freshly built within this same unchanged-source campaign.",
+  "project_source_sha256": "6e7af788509fbf182f2830754a8d611c088140f273af1d8a7b16b031ff83a8cd",
+  "schema_version": 1,
+  "started_utc": "2026-10-08T14:30:13.216619+00:00",
+  "whole_paper_release_gate_passed": false
+}

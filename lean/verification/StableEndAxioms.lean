@@ -1,0 +1,4 @@
+import UploadBroadcast.StableEnd
+#print axioms UploadBroadcast.TaskDecomposition.stableEnd.isLocalRing
+#print axioms UploadBroadcast.TaskDecomposition.iso_of_sum_factorizations
+#print axioms UploadBroadcast.TaskDecomposition.iso_of_retract_copies

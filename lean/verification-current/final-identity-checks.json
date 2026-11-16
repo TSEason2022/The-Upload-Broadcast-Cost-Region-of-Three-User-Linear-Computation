@@ -1,0 +1,26 @@
+[
+  {
+    "command": [
+      "python3",
+      "scripts/verify_toolchain.py",
+      "--output",
+      "<RESULTS>/final-toolchain.json"
+    ],
+    "duration_seconds": 0.085,
+    "exit_code": 0,
+    "log": "final-toolchain.log",
+    "name": "final-toolchain"
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/verify_dependency_pins.py",
+      "--output",
+      "<RESULTS>/final-dependency-pins.json"
+    ],
+    "duration_seconds": 1.497,
+    "exit_code": 0,
+    "log": "final-dependency-pins.log",
+    "name": "final-dependency-pins"
+  }
+]

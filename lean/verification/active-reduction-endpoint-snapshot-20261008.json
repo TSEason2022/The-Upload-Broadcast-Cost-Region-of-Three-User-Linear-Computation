@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-10-08T10:13:18.892458+00:00",
+  "source_sha256": "b1c77e1cf7f7245fc8781b362d69ca06ba9b42448bc6d90ad65ddf628d4b2682",
+  "promoted_claim": "prop:active-pair",
+  "reachable_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "files": {
+    "UploadBroadcast/ActiveReductionEndpoint.lean": "1022b48560bdd202fac80e1026ef4e49231b73485a22ea10b67d3a1dca8307ed",
+    "UploadBroadcast/ResidualIntrinsicGeometry.lean": "1fba317daa16c98ff3e132824a7772a45fb433e9de66ccf684d9e34057f8e463",
+    "verification/ActiveReductionEndpointAudit.lean": "a6f8654f724533f16b56092ffb1a44c936b847aeaec0c007f3d0dba7d5194f4c",
+    "verification/ResidualIntrinsicGeometryAudit.lean": "aa348ef40fa43c8843626fec8fc51a902cc975a1d11454001ff7a170b699078f",
+    "docs/active-reduction-source-audit-20261008.md": "95520eaf2b4c70c479a4617f3073976150d99f84264d0aad2452efa962e22be8"
+  }
+}

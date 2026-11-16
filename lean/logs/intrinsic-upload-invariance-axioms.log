@@ -1,0 +1,86 @@
+UploadBroadcast.Task.intrinsic_upload_parameters.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] [Finite K] [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (s u : (T.quotientTask T.commonKnown).ActivePairSelection) (t : s.pairReducedTask.ActivePairSelection)
+  (v : u.pairReducedTask.ActivePairSelection) (c : t.pairResidualTask.PrivateTripodChart)
+  (d : v.pairResidualTask.PrivateTripodChart) :
+  (∀ (i : UploadBroadcast.Three),
+      Module.finrank K ↥(s.pairReducedTask.pairKnown i) = T.intrinsicActivePairRank i ∧
+        Module.finrank K ↥(u.pairReducedTask.pairKnown i) = T.intrinsicActivePairRank i) ∧
+    c.privateDimension = d.privateDimension ∧
+      c.commonDimension = d.commonDimension ∧
+        c.pureDimension = d.pureDimension ∧
+          c.mixedDimension = d.mixedDimension ∧
+            c.tripodDimension = d.tripodDimension ∧
+              c.uploadFormula (T.intrinsicActivePairRank 0) (T.intrinsicActivePairRank 1)
+                  (T.intrinsicActivePairRank 2) =
+                T.minimumUploadFormula
+UploadBroadcast.Task.minimum_upload_all_choices.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] [Finite K] [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (s : (T.quotientTask T.commonKnown).ActivePairSelection) (t : s.pairReducedTask.ActivePairSelection)
+  (c : t.pairResidualTask.PrivateTripodChart) :
+  T.uploadOptimum =
+    c.uploadFormula (T.intrinsicActivePairRank 0) (T.intrinsicActivePairRank 1) (T.intrinsicActivePairRank 2)
+UploadBroadcast.Task.pairRank_all_choices.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (s : (T.quotientTask T.commonKnown).ActivePairSelection) (i : UploadBroadcast.Three) :
+  Module.finrank K ↥(s.pairReducedTask.pairKnown i) = T.intrinsicActivePairRank i
+UploadBroadcast.Task.ActivePairSelection.postResidualQuotient_mapTask.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K]
+  [AddCommGroup F] [Module K F] {T : UploadBroadcast.Task K F} (s : T.ActivePairSelection)
+  (t : s.pairReducedTask.ActivePairSelection) :
+  UploadBroadcast.Profile.mapTask (s.postResidualQuotientEquiv t) t.pairResidualTask = T.quotientTask T.pairOmniscience
+UploadBroadcast.Task.ActivePairSelection.all_rank_choices_independent.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K]
+  [AddCommGroup F] [Module K F] {T : UploadBroadcast.Task K F} (s u : T.ActivePairSelection)
+  (t : s.pairReducedTask.ActivePairSelection) (v : u.pairReducedTask.ActivePairSelection) [Finite K]
+  [FiniteDimensional K F] (c : t.pairResidualTask.PrivateTripodChart) (d : v.pairResidualTask.PrivateTripodChart) :
+  (∀ (i : UploadBroadcast.Three),
+      Module.finrank K ↥(s.pairReducedTask.pairKnown i) = Module.finrank K ↥(u.pairReducedTask.pairKnown i)) ∧
+    c.privateDimension = d.privateDimension ∧
+      c.commonDimension = d.commonDimension ∧
+        c.pureDimension = d.pureDimension ∧ c.mixedDimension = d.mixedDimension ∧ c.tripodDimension = d.tripodDimension
+UploadBroadcast.Task.PrivateTripodChart.dimensions_eq_intrinsic.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] {S : UploadBroadcast.Task K F} (c : S.PrivateTripodChart) :
+  c.privateDimension = UploadBroadcast.IntrinsicUploadRanks.privateRank S ∧
+    c.commonDimension = UploadBroadcast.IntrinsicUploadRanks.commonRank S ∧
+      c.pureDimension = UploadBroadcast.IntrinsicUploadRanks.pureRank S
+UploadBroadcast.Task.PrivateTripodChart.dimensions_equiv.{u_1, u_2, u_3} {K : Type u_1} {F : Type u_2} {V : Type u_3}
+  [Field K] [Finite K] [AddCommGroup F] [Module K F] [FiniteDimensional K F] [AddCommGroup V] [Module K V]
+  [FiniteDimensional K V] {T : UploadBroadcast.Task K F} {S : UploadBroadcast.Task K V} (c : T.PrivateTripodChart)
+  (d : S.PrivateTripodChart) (e : F ≃ₗ[K] V) (he : UploadBroadcast.Profile.mapTask e T = S) :
+  c.privateDimension = d.privateDimension ∧
+    c.commonDimension = d.commonDimension ∧
+      c.pureDimension = d.pureDimension ∧ c.mixedDimension = d.mixedDimension ∧ c.tripodDimension = d.tripodDimension
+UploadBroadcast.Task.PrivateTripodChart.mixedDimension_eq_any_lifts.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K]
+  [AddCommGroup F] [Module K F] {T : UploadBroadcast.Task K F} (c : T.PrivateTripodChart)
+  (g : UploadBroadcast.ResidualTaskAssembly.DemandData (UploadBroadcast.ResidualTaskAssembly.privateTrim c.toTask)) :
+  c.mixedDimension =
+    let S :=
+      UploadBroadcast.ResidualTaskAssembly.pureRows₁ (UploadBroadcast.ResidualTaskAssembly.privateTrim c.toTask) ⊔
+          UploadBroadcast.ResidualTaskAssembly.pureRows₂ (UploadBroadcast.ResidualTaskAssembly.privateTrim c.toTask) ⊔
+        UploadBroadcast.ResidualTaskAssembly.pureRows₃ (UploadBroadcast.ResidualTaskAssembly.privateTrim c.toTask);
+    Module.finrank K
+      ↥(Submodule.map (S.mkQ ∘ₗ g.relationRows)
+          (LinearMap.ker UploadBroadcast.ResidualTaskAssembly.DemandData.incidence))
+UploadBroadcast.IntrinsicUploadRanks.quotient_relationRows_eq.{u_1, u_4, u_5, u_6, u_7} {K : Type u_1} {P₁ : Type u_4}
+  {P₂ : Type u_5} {P₃ : Type u_6} {D : Type u_7} [Field K] [AddCommGroup P₁] [Module K P₁] [AddCommGroup P₂]
+  [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (g h : UploadBroadcast.ResidualTaskAssembly.DemandData task) :
+  (UploadBroadcast.ResidualTaskAssembly.pureRows₁ task ⊔ UploadBroadcast.ResidualTaskAssembly.pureRows₂ task ⊔
+          UploadBroadcast.ResidualTaskAssembly.pureRows₃ task).mkQ ∘ₗ
+      g.relationRows =
+    (UploadBroadcast.ResidualTaskAssembly.pureRows₁ task ⊔ UploadBroadcast.ResidualTaskAssembly.pureRows₂ task ⊔
+          UploadBroadcast.ResidualTaskAssembly.pureRows₃ task).mkQ ∘ₗ
+      h.relationRows
+'UploadBroadcast.Task.intrinsic_upload_parameters' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.minimum_upload_all_choices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.ActivePairSelection.postResidualQuotient_mapTask' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.Task.PrivateTripodChart.dimensions_eq_intrinsic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.IntrinsicUploadRanks.quotient_relationRows_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Axiom audit passed for 2273 imported project theorems.
+Complete reachable axiom set: [propext, Quot.sound, Classical.choice]

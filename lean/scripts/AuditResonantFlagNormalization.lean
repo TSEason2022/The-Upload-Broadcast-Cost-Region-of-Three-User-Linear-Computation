@@ -1,0 +1,3 @@
+import UploadBroadcast.ResonantFlagNormalization
+#print axioms UploadBroadcast.ResonantFlagNormalization.normalize_transverse_flags
+#print axioms UploadBroadcast.ResonantFlagNormalization.classify_transverse_resonant_flags

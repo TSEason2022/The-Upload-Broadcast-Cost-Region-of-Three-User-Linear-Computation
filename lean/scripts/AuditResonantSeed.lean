@@ -1,0 +1,3 @@
+import UploadBroadcast.ResonantSeedEmbedding
+#print axioms UploadBroadcast.ResonantKernelSupport.detected_mode_full_support
+#print axioms UploadBroadcast.ResonantSeedEmbedding.exists_resonant_seed

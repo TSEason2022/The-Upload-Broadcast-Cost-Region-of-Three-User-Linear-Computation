@@ -1,0 +1,5 @@
+import UploadBroadcast.ResonantClassification
+#print axioms UploadBroadcast.ResonantClassification.graph_model_classification
+#print axioms UploadBroadcast.ResonantClassification.coupling_detects_kernel
+#print axioms UploadBroadcast.ResonantClassification.nilpotent_of_graph_indecomposable
+#print axioms UploadBroadcast.ResonantClassification.marked_projection_trivial

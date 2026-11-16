@@ -1,0 +1,69 @@
+UploadBroadcast.MatrixFrontend.Data.Code.toTask_upload_range : ∀ {K : Type u_1} [inst : Field K] {d : ℕ}
+  {D : UploadBroadcast.MatrixFrontend.Data d} {L : ℕ} {M : UploadBroadcast.Three → Type u_2} {S : Type u_3}
+  (c : D.Code L M S) (i : UploadBroadcast.Three),
+  Set.range (c.toTask.encode i) = Set.range fun X => c.encode i (D.sideObs i X)
+UploadBroadcast.MatrixFrontend.Data.Code.toTask_broadcast_range : ∀ {K : Type u_1} [inst : Field K] {d : ℕ}
+  {D : UploadBroadcast.MatrixFrontend.Data d} {L : ℕ} {M : UploadBroadcast.Three → Type u_2} {S : Type u_3}
+  (c : D.Code L M S), Set.range c.toTask.transmitted = Set.range c.transmitted
+UploadBroadcast.MatrixFrontend.Data.Code.ofTask_uploadCost : ∀ {K : Type u_1} [inst : Field K] {d : ℕ}
+  {D : UploadBroadcast.MatrixFrontend.Data d} {L : ℕ} {M : UploadBroadcast.Three → Type u_2} {S : Type u_3}
+  [inst_1 : Finite K] (c : D.task.Code L M S),
+  (UploadBroadcast.MatrixFrontend.Data.Code.ofTask c).uploadCost = c.uploadCost
+UploadBroadcast.MatrixFrontend.Data.Code.ofTask_broadcastCost : ∀ {K : Type u_1} [inst : Field K] {d : ℕ}
+  {D : UploadBroadcast.MatrixFrontend.Data d} {L : ℕ} {M : UploadBroadcast.Three → Type u_2} {S : Type u_3}
+  [inst_1 : Finite K] (c : D.task.Code L M S),
+  (UploadBroadcast.MatrixFrontend.Data.Code.ofTask c).broadcastCost = c.broadcastCost
+UploadBroadcast.MatrixFrontend.Data.achievableAt_eq : ∀ {K : Type u_1} [inst : Field K] {d : ℕ}
+  (D : UploadBroadcast.MatrixFrontend.Data d) [inst_1 : Finite K] (L : ℕ), D.achievableAt L = D.task.achievableAt L
+UploadBroadcast.MatrixFrontend.Data.code_costs_of_task_eq : ∀ {K : Type u_1} [inst : Field K] {d : ℕ}
+  (D : UploadBroadcast.MatrixFrontend.Data d) [inst_1 : Finite K] (E : UploadBroadcast.MatrixFrontend.Data d),
+  D.task = E.task →
+    ∀ {L : ℕ} {M : UploadBroadcast.Three → Type u_2} {S : Type u_3} (c : D.Code L M S),
+      ∃ c', c'.uploadCost = c.uploadCost ∧ c'.broadcastCost = c.broadcastCost
+UploadBroadcast.MatrixFrontend.Data.linearCode_costs_of_task_eq : ∀ {K : Type u_1} [inst : Field K] {d : ℕ}
+  (D : UploadBroadcast.MatrixFrontend.Data d) [inst_1 : Finite K] (E : UploadBroadcast.MatrixFrontend.Data d),
+  D.task = E.task →
+    ∀ {L : ℕ} {r : UploadBroadcast.Three → ℕ} {s : ℕ} (c : D.LinearCode L r s),
+      ∃ c', c'.toCode.uploadCost = c.toCode.uploadCost ∧ c'.toCode.broadcastCost = c.toCode.broadcastCost
+UploadBroadcast.MatrixFrontend.Data.normalized_dimensions : ∀ {K : Type u_1} [inst : Field K] {d : ℕ}
+  (D : UploadBroadcast.MatrixFrontend.Data d) (i : UploadBroadcast.Three),
+  D.normalized.sideWidth i = Module.finrank K ↥(D.task.A i) ∧
+    D.normalized.demandWidth i = Module.finrank K ↥(D.task.U i) - Module.finrank K ↥(D.task.A i) ∧
+      LinearIndependent K (Sum.elim (D.normalized.side i).col (D.normalized.demand i).col)
+UploadBroadcast.MatrixFrontend.Data.normalized_joint_rank : ∀ {K : Type u_1} [inst : Field K] {d : ℕ}
+  (D : UploadBroadcast.MatrixFrontend.Data d) (i : UploadBroadcast.Three),
+  Module.finrank K ↥(Submodule.span K (Set.range (Sum.elim (D.normalized.side i).col (D.normalized.demand i).col))) =
+    D.normalized.sideWidth i + D.normalized.demandWidth i
+UploadBroadcast.MatrixFrontend.Data.normalized_achievableAt_eq : ∀ {K : Type u_1} [inst : Field K] {d : ℕ}
+  (D : UploadBroadcast.MatrixFrontend.Data d) [inst_1 : Finite K] (L : ℕ),
+  D.achievableAt L = D.normalized.achievableAt L
+UploadBroadcast.MatrixFrontend.Data.normalize_code : ∀ {K : Type u_1} [inst : Field K] {d : ℕ}
+  (D : UploadBroadcast.MatrixFrontend.Data d) [inst_1 : Finite K] {L : ℕ} {M : UploadBroadcast.Three → Type u_2}
+  {S : Type u_3} (c : D.Code L M S), ∃ c', c'.uploadCost = c.uploadCost ∧ c'.broadcastCost = c.broadcastCost
+UploadBroadcast.MatrixFrontend.Data.denormalize_code : ∀ {K : Type u_1} [inst : Field K] {d : ℕ}
+  (D : UploadBroadcast.MatrixFrontend.Data d) [inst_1 : Finite K] {L : ℕ} {M : UploadBroadcast.Three → Type u_2}
+  {S : Type u_3} (c : D.normalized.Code L M S), ∃ c', c'.uploadCost = c.uploadCost ∧ c'.broadcastCost = c.broadcastCost
+UploadBroadcast.MatrixFrontend.Data.normalize_linearCode : ∀ {K : Type u_1} [inst : Field K] {d : ℕ}
+  (D : UploadBroadcast.MatrixFrontend.Data d) [inst_1 : Finite K] {L : ℕ} {r : UploadBroadcast.Three → ℕ} {s : ℕ}
+  (c : D.LinearCode L r s),
+  ∃ c', c'.toCode.uploadCost = c.toCode.uploadCost ∧ c'.toCode.broadcastCost = c.toCode.broadcastCost
+UploadBroadcast.MatrixFrontend.Data.denormalize_linearCode : ∀ {K : Type u_1} [inst : Field K] {d : ℕ}
+  (D : UploadBroadcast.MatrixFrontend.Data d) [inst_1 : Finite K] {L : ℕ} {r : UploadBroadcast.Three → ℕ} {s : ℕ}
+  (c : D.normalized.LinearCode L r s),
+  ∃ c', c'.toCode.uploadCost = c.toCode.uploadCost ∧ c'.toCode.broadcastCost = c.toCode.broadcastCost
+UploadBroadcast.MatrixFrontend.Data.exists_retained_normalization : ∀ {K : Type u_1} [inst : Field K] {d : ℕ}
+  (D : UploadBroadcast.MatrixFrontend.Data d) [inst_1 : Finite K],
+  ∃ E,
+    E.task = D.task ∧
+      (∀ (i : UploadBroadcast.Three),
+          Set.range (E.side i).col ⊆ Set.range (D.side i).col ∧
+            Set.range (E.demand i).col ⊆ Set.range (D.demand i).col ∧
+              LinearIndependent K (Sum.elim (E.side i).col (E.demand i).col)) ∧
+        ∀ (L : ℕ), E.achievableAt L = D.achievableAt L
+UploadBroadcast.MatrixFrontend.Data.ambient_achievableAt_eq : ∀ {K : Type u_1} [inst : Field K] {d : ℕ}
+  (D : UploadBroadcast.MatrixFrontend.Data d) [inst_1 : Finite K] (L : ℕ),
+  D.achievableAt L = D.task.normalized.achievableAt L
+UploadBroadcast.MatrixFrontend.Data.ambient_linearCode_nonempty_iff : ∀ {K : Type u_1} [inst : Field K] {d : ℕ}
+  (D : UploadBroadcast.MatrixFrontend.Data d) (L : ℕ) (r : UploadBroadcast.Three → ℕ) (s : ℕ),
+  Nonempty (D.LinearCode L r s) ↔ Nonempty (D.task.normalized.LinearCode L r s)
+Independent matrix audit passed for 17 roots; axioms [propext, Quot.sound, Classical.choice]

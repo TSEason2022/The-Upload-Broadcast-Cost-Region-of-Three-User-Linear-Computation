@@ -1,0 +1,4 @@
+import UploadBroadcast.ResidualRelayAssembly
+#print axioms UploadBroadcast.ResidualRelayAssembly.signal_graphs
+#print axioms UploadBroadcast.ResidualRelayAssembly.exists_relay_of_zero_common
+#print axioms UploadBroadcast.ResidualRelayAssembly.exists_scalar_linear_upload

@@ -1,0 +1,5 @@
+import UploadBroadcast.TaskDecomposition
+#print axioms UploadBroadcast.TaskDecomposition.exists_decomposition
+#print axioms UploadBroadcast.TaskDecomposition.Task.exists_finite_components
+#print axioms UploadBroadcast.TaskDecomposition.stable_projection_split
+#print axioms UploadBroadcast.TaskDecomposition.Indecomposable.projection_eq_zero_or_id

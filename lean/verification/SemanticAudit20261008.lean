@@ -1,0 +1,83 @@
+import UploadBroadcast
+import UploadBroadcast.ResidualTaskAssembly
+import UploadBroadcast.ResidualTaskRanks
+import UploadBroadcast.GlobalUploadAssembly
+import UploadBroadcast.ResidualRelayAssembly
+import UploadBroadcast.ZeroCommonRowNormalForm
+
+-- lem:five-cmi
+#check UploadBroadcast.FiniteAlphabet.commonFunction
+#print axioms UploadBroadcast.FiniteAlphabet.commonFunction
+-- lem:omni-lift
+#check UploadBroadcast.FiniteAlphabet.omniscience_lift
+#print axioms UploadBroadcast.FiniteAlphabet.omniscience_lift
+-- lem:ck-omniscience
+#check UploadBroadcast.Omniscience.exists_code
+#print axioms UploadBroadcast.Omniscience.exists_code
+#check UploadBroadcast.Omniscience.nonempty_code_iff
+#print axioms UploadBroadcast.Omniscience.nonempty_code_iff
+#check UploadBroadcast.Omniscience.exists_scalar_optimal
+#print axioms UploadBroadcast.Omniscience.exists_scalar_optimal
+#check UploadBroadcast.Omniscience.exists_two_instance_optimal
+#print axioms UploadBroadcast.Omniscience.exists_two_instance_optimal
+#check UploadBroadcast.Omniscience.block_cost_lower
+#print axioms UploadBroadcast.Omniscience.block_cost_lower
+-- lem:pis
+#check UploadBroadcast.relay_decoder_equivalence
+#print axioms UploadBroadcast.relay_decoder_equivalence
+#check UploadBroadcast.relay_attainable_range
+#print axioms UploadBroadcast.relay_attainable_range
+-- thm:packing
+#check UploadBroadcast.Allocation.aggregate_selection_paper_coordinates
+#print axioms UploadBroadcast.Allocation.aggregate_selection_paper_coordinates
+-- lem:edge-identity
+#check UploadBroadcast.EdgeExtraction.simultaneous_maximal_extraction
+#print axioms UploadBroadcast.EdgeExtraction.simultaneous_maximal_extraction
+#check UploadBroadcast.EdgeProfile.edge_price_identity
+#print axioms UploadBroadcast.EdgeProfile.edge_price_identity
+#check UploadBroadcast.EdgeProfile.edge_price_le_extractable
+#print axioms UploadBroadcast.EdgeProfile.edge_price_le_extractable
+#check UploadBroadcast.EdgeDeficits.demand_cycles_from_decomposition
+#print axioms UploadBroadcast.EdgeDeficits.demand_cycles_from_decomposition
+-- prop:small-field-lcbc
+#check UploadBroadcast.scalar_at_operational_ceiling
+#print axioms UploadBroadcast.scalar_at_operational_ceiling
+-- prop:binary-lcbc
+#check UploadBroadcast.binary_at_operational_ceiling_permuted
+#print axioms UploadBroadcast.binary_at_operational_ceiling_permuted
+-- lem:optimal-residual-sides
+#check UploadBroadcast.OptimalRelaySeparation.optimal_block_residual_sides_ambient
+#print axioms UploadBroadcast.OptimalRelaySeparation.optimal_block_residual_sides_ambient
+-- lem:integer-lcbc-allocation
+#check UploadBroadcast.integer_allocation_at_operational_optimum
+#print axioms UploadBroadcast.integer_allocation_at_operational_optimum
+-- lem:column-reconciliation
+#check UploadBroadcast.homogeneous_column_coordination_invertible
+#print axioms UploadBroadcast.homogeneous_column_coordination_invertible
+#check UploadBroadcast.homogeneous_column_search
+#print axioms UploadBroadcast.homogeneous_column_search
+-- lem:binary-common-complement
+#check UploadBroadcast.maximum_disjoint_subspace
+#print axioms UploadBroadcast.maximum_disjoint_subspace
+
+-- Additional candidates: declarations inspected without automatic coverage promotion.
+#check UploadBroadcast.ResidualTaskAssembly.exists_demandData
+#check UploadBroadcast.ResidualTaskAssembly.DemandData.exists_empty_cancellation
+#check UploadBroadcast.ResidualTaskAssembly.privateGaugeShear_sides
+#check UploadBroadcast.ResidualTaskAssembly.DemandData.correctedTask_rows
+#check UploadBroadcast.ResidualTaskAssembly.DemandData.activeRowReduction_achievableAt_eq
+#check UploadBroadcast.ResidualTaskAssembly.DemandData.activeRows_finrank
+#check UploadBroadcast.ResidualTaskAssembly.DemandData.mixedRows_stacked_rank
+#check UploadBroadcast.ResidualTaskAssembly.DemandData.activeRowReduction_tripod_bridge
+#check UploadBroadcast.SignalBridge.all_tripod_bridges
+#check UploadBroadcast.ResidualConverse.explicit_residual_retained_bound
+#check UploadBroadcast.GlobalUploadConverse.code_omniscience_entropy_bound
+#check UploadBroadcast.GlobalUploadAssembly.fully_used_active_directSum_lower_bound
+#check UploadBroadcast.ZeroCommonRowNormalForm.exists_chart
+#check UploadBroadcast.ResidualRelayAssembly.exists_relay_of_zero_common
+#check UploadBroadcast.ResidualRowCompletion.exists_simultaneous_row_completion
+#print axioms UploadBroadcast.ResidualTaskAssembly.DemandData.activeRowReduction_achievableAt_eq
+#print axioms UploadBroadcast.ResidualTaskAssembly.DemandData.activeRows_finrank
+#print axioms UploadBroadcast.ResidualTaskAssembly.DemandData.activeRowReduction_tripod_bridge
+#print axioms UploadBroadcast.GlobalUploadAssembly.fully_used_active_directSum_lower_bound
+#print axioms UploadBroadcast.ResidualRelayAssembly.exists_relay_of_zero_common

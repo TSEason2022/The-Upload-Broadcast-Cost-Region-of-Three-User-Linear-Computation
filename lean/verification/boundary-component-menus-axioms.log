@@ -1,0 +1,12 @@
+'UploadBroadcast.BoundaryComponentMenus.geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.BoundaryComponentMenus.T1_exact_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.BoundaryComponentMenus.T2_preserves_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.BoundaryComponentMenus.boundary_code_lower_permuted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.BoundaryComponentMenus.T1_all_permuted_choices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.BoundaryComponentMenus.T2_permuted_preserving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

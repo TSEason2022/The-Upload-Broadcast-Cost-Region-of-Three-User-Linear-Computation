@@ -1,0 +1,197 @@
+Checking 313 library modules; 2 outside umbrella import closure.
+[1/313] UploadBroadcast.Model
+✔ [1873/1873] Built UploadBroadcast.Model
+Build completed successfully.
+[2/313] UploadBroadcast.LinearAlgebra
+✔ [1874/1874] Built UploadBroadcast.LinearAlgebra
+Build completed successfully.
+[3/313] UploadBroadcast.Allocation
+✔ [879/879] Built UploadBroadcast.Allocation
+Build completed successfully.
+[4/313] UploadBroadcast.Examples
+✔ [1803/1803] Built UploadBroadcast.Examples
+Build completed successfully.
+[5/313] UploadBroadcast.Coordination
+✔ [1540/1540] Built UploadBroadcast.Coordination
+Build completed successfully.
+[6/313] UploadBroadcast.Region
+✔ [1874/1874] Built UploadBroadcast.Region
+Build completed successfully.
+[7/313] UploadBroadcast.Structural
+✔ [720/720] Built UploadBroadcast.Structural
+Build completed successfully.
+[8/313] UploadBroadcast.Profile
+✔ [1874/1874] Built UploadBroadcast.Profile
+Build completed successfully.
+[9/313] UploadBroadcast.LinearCosts
+✔ [1874/1874] Built UploadBroadcast.LinearCosts
+Build completed successfully.
+[10/313] UploadBroadcast.LinearCode
+✔ [1876/1876] Built UploadBroadcast.LinearCode
+Build completed successfully.
+[11/313] UploadBroadcast.ObservationRank
+✔ [1456/1456] Built UploadBroadcast.ObservationRank
+Build completed successfully.
+[12/313] UploadBroadcast.AllocationAggregate
+✔ [940/940] Built UploadBroadcast.AllocationAggregate
+Build completed successfully.
+[13/313] UploadBroadcast.AllocationWaterfill
+✔ [880/880] Built UploadBroadcast.AllocationWaterfill
+Build completed successfully.
+[14/313] UploadBroadcast.AllocationRanks
+✔ [1876/1876] Built UploadBroadcast.AllocationRanks
+Build completed successfully.
+[15/313] UploadBroadcast.RootClassification
+✔ [721/721] Built UploadBroadcast.RootClassification
+Build completed successfully.
+[16/313] UploadBroadcast.EntropyCalculus
+✔ [784/784] Built UploadBroadcast.EntropyCalculus
+Build completed successfully.
+[17/313] UploadBroadcast.Shannon
+✔ [2446/2446] Built UploadBroadcast.Shannon
+Build completed successfully.
+[18/313] UploadBroadcast.Entropy
+✔ [744/744] Built UploadBroadcast.Entropy
+Build completed successfully.
+[19/313] UploadBroadcast.CommonFunction
+✔ [793/793] Built UploadBroadcast.CommonFunction
+Build completed successfully.
+[20/313] UploadBroadcast.FiniteEntropyConverse
+✔ [2449/2449] Built UploadBroadcast.FiniteEntropyConverse
+Build completed successfully.
+[21/313] UploadBroadcast.JointRealization
+✔ [2450/2450] Built UploadBroadcast.JointRealization
+Build completed successfully.
+[22/313] UploadBroadcast.GeneralEntropyConverse
+✔ [2451/2451] Built UploadBroadcast.GeneralEntropyConverse
+Build completed successfully.
+[23/313] UploadBroadcast.OmniscienceEntropy
+✔ [2448/2448] Built UploadBroadcast.OmniscienceEntropy
+Build completed successfully.
+[24/313] UploadBroadcast.AllocationOmniscience
+✔ [880/880] Built UploadBroadcast.AllocationOmniscience
+Build completed successfully.
+[25/313] UploadBroadcast.FiniteAlphabetEncoding
+✔ [2452/2452] Built UploadBroadcast.FiniteAlphabetEncoding
+Build completed successfully.
+[26/313] UploadBroadcast.CommonFunctionFiniteAlphabet
+✔ [2453/2453] Built UploadBroadcast.CommonFunctionFiniteAlphabet
+Build completed successfully.
+[27/313] UploadBroadcast.GeneralOmniscienceEntropy
+✔ [2452/2452] Built UploadBroadcast.GeneralOmniscienceEntropy
+Build completed successfully.
+[28/313] UploadBroadcast.OmniscienceFiniteAlphabet
+✔ [2455/2455] Built UploadBroadcast.OmniscienceFiniteAlphabet
+Build completed successfully.
+[29/313] UploadBroadcast.EntropyCoding
+✔ [2447/2447] Built UploadBroadcast.EntropyCoding
+Build completed successfully.
+[30/313] UploadBroadcast.LinearEntropy
+✔ [2451/2451] Built UploadBroadcast.LinearEntropy
+Build completed successfully.
+[31/313] UploadBroadcast.OmniscienceCode
+✔ [1875/1875] Built UploadBroadcast.OmniscienceCode
+Build completed successfully.
+[32/313] UploadBroadcast.OmniscienceOptimal
+✔ [1879/1879] Built UploadBroadcast.OmniscienceOptimal
+Build completed successfully.
+[33/313] UploadBroadcast.PassiveCode
+✔ [1876/1876] Built UploadBroadcast.PassiveCode
+Build completed successfully.
+[34/313] UploadBroadcast.ActiveReduction
+✔ [1877/1877] Built UploadBroadcast.ActiveReduction
+Build completed successfully.
+[35/313] UploadBroadcast.JordanResonance
+✔ [1356/1356] Built UploadBroadcast.JordanResonance
+Build completed successfully.
+[36/313] UploadBroadcast.CycleRepair
+✔ [1874/1874] Built UploadBroadcast.CycleRepair
+Build completed successfully.
+[37/313] UploadBroadcast.RankLoss
+✔ [1874/1874] Built UploadBroadcast.RankLoss
+Build completed successfully.
+[38/313] UploadBroadcast.CycleProfile
+✔ [1878/1878] Built UploadBroadcast.CycleProfile
+Build completed successfully.
+[39/313] UploadBroadcast.CycleTheorem
+✔ [1880/1880] Built UploadBroadcast.CycleTheorem
+Build completed successfully.
+[40/313] UploadBroadcast.ProfileTransport
+✔ [1875/1875] Built UploadBroadcast.ProfileTransport
+Build completed successfully.
+[41/313] UploadBroadcast.AlignedRelation
+✔ [1875/1875] Built UploadBroadcast.AlignedRelation
+Build completed successfully.
+[42/313] UploadBroadcast.BinaryCoordination
+✔ [1930/1930] Built UploadBroadcast.BinaryCoordination
+Build completed successfully.
+[43/313] UploadBroadcast.LCBCConverse
+✔ [1876/1876] Built UploadBroadcast.LCBCConverse
+Build completed successfully.
+[44/313] UploadBroadcast.BroadcastShannon
+✔ [2458/2458] Built UploadBroadcast.BroadcastShannon
+Build completed successfully.
+[45/313] UploadBroadcast.BroadcastOperational
+✔ [2459/2459] Built UploadBroadcast.BroadcastOperational
+Build completed successfully.
+[46/313] UploadBroadcast.CycleReverseTransport
+✔ [1880/1880] Built UploadBroadcast.CycleReverseTransport
+Build completed successfully.
+[47/313] UploadBroadcast.CycleReverseTheorem
+✔ [1882/1882] Built UploadBroadcast.CycleReverseTheorem
+Build completed successfully.
+[48/313] UploadBroadcast.TaskDecomposition
+✔ [1356/1356] Built UploadBroadcast.TaskDecomposition
+Build completed successfully.
+[49/313] UploadBroadcast.ScalarBroadcast
+✔ [1970/1970] Built UploadBroadcast.ScalarBroadcast
+Build completed successfully.
+[50/313] UploadBroadcast.PairSelection
+✔ [1875/1875] Built UploadBroadcast.PairSelection
+Build completed successfully.
+[51/313] UploadBroadcast.AllocationNat
+✔ [1877/1877] Built UploadBroadcast.AllocationNat
+Build completed successfully.
+[52/313] UploadBroadcast.ScalarIncidence
+✔ [1976/1976] Built UploadBroadcast.ScalarIncidence
+Build completed successfully.
+[53/313] UploadBroadcast.BinaryRelationBridge
+✔ [1980/1980] Built UploadBroadcast.BinaryRelationBridge
+Build completed successfully.
+[54/313] UploadBroadcast.ScalarAssembly
+✔ [1972/1972] Built UploadBroadcast.ScalarAssembly
+Build completed successfully.
+[55/313] UploadBroadcast.ScalarAchievability
+✔ [1978/1978] Built UploadBroadcast.ScalarAchievability
+Build completed successfully.
+[56/313] UploadBroadcast.FiniteMonoidPower
+✔ [804/804] Built UploadBroadcast.FiniteMonoidPower
+Build completed successfully.
+[57/313] UploadBroadcast.StableEnd
+✔ [1372/1372] Built UploadBroadcast.StableEnd
+Build completed successfully.
+[58/313] UploadBroadcast.BlockBroadcast
+✔ [1972/1972] Built UploadBroadcast.BlockBroadcast
+Build completed successfully.
+[59/313] UploadBroadcast.AllocationProfile
+✔ [1879/1879] Built UploadBroadcast.AllocationProfile
+Build completed successfully.
+[60/313] UploadBroadcast.BinaryCommon
+✔ [1879/1879] Built UploadBroadcast.BinaryCommon
+Build completed successfully.
+[61/313] UploadBroadcast.BinaryIncidence
+✔ [1978/1978] Built UploadBroadcast.BinaryIncidence
+Build completed successfully.
+[62/313] UploadBroadcast.BinaryAssembly
+✔ [1984/1984] Built UploadBroadcast.BinaryAssembly
+Build completed successfully.
+[63/313] UploadBroadcast.BinaryAchievability
+✔ [1986/1986] Built UploadBroadcast.BinaryAchievability
+Build completed successfully.
+[64/313] UploadBroadcast.ScalarEndpoints
+✔ [1989/1989] Built UploadBroadcast.ScalarEndpoints
+Build completed successfully.
+[65/313] UploadBroadcast.RawProfileScaling
+✔ [1880/1880] Built UploadBroadcast.RawProfileScaling
+Build completed successfully.
+[66/313] UploadBroadcast.SemilinearTaskTransport

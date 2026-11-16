@@ -1,0 +1,4 @@
+'UploadBroadcast.ResidualProfiles.positive_index_menu' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.ResidualProfiles.boundary_menu' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.ResidualProfiles.regular_menu' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.ResidualProfiles.profiles' depends on axioms: [propext, Classical.choice, Quot.sound]

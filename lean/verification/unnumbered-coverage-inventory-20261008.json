@@ -1,0 +1,1554 @@
+{
+  "source_sha256": "b1c77e1cf7f7245fc8781b362d69ca06ba9b42448bc6d90ad65ddf628d4b2682",
+  "source_identity": "TIT_LCBC_optimized.tex",
+  "scope": "All 125 displayed-equation inventory items; all 32 proof blocks; all five numbered mathematical tables; all 13 additional-obligation groups; the separately asserted counterexamples and model correspondence.",
+  "semantic_review": "docs/final-semantic-coverage-review-20261008.md",
+  "full_unnumbered_review_complete": true,
+  "release_build_verification_is_separate": true,
+  "definitions_are_not_claims": true,
+  "proof_steps_in_named_proofs_are_routed_not_independently_promoted": true,
+  "all_display_inventory_items_routed": true,
+  "all_proof_inventory_items_routed": true,
+  "all_numbered_tables_routed": true,
+  "numbered_coverage_snapshot": {
+    "thm:intro-main": "reviewed_complete",
+    "prop:active-pair": "reviewed_complete",
+    "thm:upload": "reviewed_complete",
+    "lem:five-cmi": "reviewed_complete",
+    "lem:omni-lift": "reviewed_complete",
+    "lem:bridges": "reviewed_complete",
+    "lem:ck-omniscience": "reviewed_complete",
+    "lem:pis": "reviewed_complete",
+    "prop:exhaustion": "reviewed_complete",
+    "thm:profiles": "reviewed_complete",
+    "thm:packing": "reviewed_complete",
+    "lem:edge-identity": "reviewed_complete",
+    "thm:endpoint": "reviewed_complete",
+    "prop:stable": "reviewed_complete",
+    "prop:small-field-lcbc": "reviewed_complete",
+    "prop:binary-lcbc": "reviewed_complete",
+    "cor:scalar-budget": "reviewed_complete",
+    "lem:active-empty-row": "reviewed_complete",
+    "lem:zero-common-row-relay": "reviewed_complete",
+    "lem:base-field-components": "reviewed_complete",
+    "lem:same-chart": "reviewed_complete",
+    "lem:optimal-residual-sides": "reviewed_complete",
+    "lem:binary-menu": "reviewed_complete",
+    "lem:binary-additional-menus": "reviewed_complete",
+    "lem:binary-integer-relay": "reviewed_complete",
+    "lem:integer-lcbc-allocation": "reviewed_complete",
+    "lem:column-reconciliation": "reviewed_complete",
+    "lem:binary-common-complement": "reviewed_complete"
+  },
+  "display_items": [
+    {
+      "line": 193,
+      "labels": [
+        "eq:intro-binary-task"
+      ],
+      "display_sha256": "7baf2783ac9b5bc04d3552b74719a9faa676e614a52caaf9be8be484bc6cb23f",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 214,
+      "labels": [
+        "eq:binary-two-user-cut"
+      ],
+      "display_sha256": "446b5b0491650ed9a4048f20430024b17340eff6bd9d705cfc327786c9221d0b",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U12",
+      "formal_route": "Examples.fixed_relay_broadcast_cost_lower",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 229,
+      "labels": [
+        "eq:intro-binary-broadcast"
+      ],
+      "display_sha256": "367d72eed89a0bd738cf3cc6190831be8166ec0082bbd4ec3dff6d51b791122a",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 324,
+      "labels": [
+        "eq:task-spaces"
+      ],
+      "display_sha256": "119b761d70b4ce55b2c4c0cd2f15077e23b8027e3ae551c83c1670c4ae0b8b6a",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 367,
+      "labels": [
+        "eq:model-code"
+      ],
+      "display_sha256": "bcaa5eb37017aba58d027cefa583d03517129e7e48b41c9efada948f764690d5",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 384,
+      "labels": [
+        "eq:costs"
+      ],
+      "display_sha256": "5f5b485af913d456c2731336edeaa95301d51c0e4c947e60e0b73bb21dfba0af",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 392,
+      "labels": [
+        "eq:regularized-region"
+      ],
+      "display_sha256": "2f877d230def47d714864ca7bec4bd51c7f4249507557497b61433e8d24c23c9",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 397,
+      "labels": [
+        "eq:ustar-definition"
+      ],
+      "display_sha256": "19be9269f5532d9766e9d28efbbfdb47cd361728888815c26c63037de3838f96",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 403,
+      "labels": [
+        "eq:upload-only-feasibility"
+      ],
+      "display_sha256": "4c679fe132ac2c6000e15beb281eb4640a829fba22e7d4f9322946492578d2ce",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U02",
+      "formal_route": "Task.Code.exists_upload_only_decoder; Task.codeOfUploadOnly",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 411,
+      "labels": [
+        "eq:information-flow"
+      ],
+      "display_sha256": "8a140b71979637430c8d0035a3cdfcdb978c2d871e64aa89bf7b1225de135c8d",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U02",
+      "formal_route": "deterministic_condEntropy_zero; condEntropy_zero_of_factor",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 418,
+      "labels": [
+        "eq:entropy-cost-bounds"
+      ],
+      "display_sha256": "abf0a86213dd5c49be8e03be743d2be16aca4a44bbde236e9efb68f64b05d687",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U02",
+      "formal_route": "entropy_div_log_le_logb_attainable; BroadcastOperational.entropy_le_cost",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 427,
+      "labels": [
+        "eq:rank-entropy-dictionary"
+      ],
+      "display_sha256": "5fd52cfc964197fdc06afd8fdb2a1d6be97ad9dac8365af5ab86d0dd9d30dd10",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U02",
+      "formal_route": "LinearObservation.model_entropy_rank; model_condEntropy_rank; model_mutualInfo_rank",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 442,
+      "labels": [],
+      "display_sha256": "7f8ef369257fc1fec5eea50b646212901f8b9891936497e30b005ec9c1b19190",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 455,
+      "labels": [
+        "eq:yj-first"
+      ],
+      "display_sha256": "dc572e4c0abe4b39265823dafe338866ef43083892f9e100dfe1eacd70dd5e40",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 460,
+      "labels": [
+        "eq:Q-cell"
+      ],
+      "display_sha256": "aadc39df2d94d6ce6b86ef494f1029223f4f3dc2006c11359f140ad31332a6cd",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 471,
+      "labels": [
+        "eq:dstar"
+      ],
+      "display_sha256": "edee366162fece2a7b58405f69490e080a8e3ce9f32f095128dfe57d77c5de88",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U03",
+      "formal_route": "general_broadcastOptimum_eq_rankBound; general_block_profile_attained",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 489,
+      "labels": [
+        "eq:intro-region"
+      ],
+      "display_sha256": "0e1144258ce8a760d1e50df1f452ce4bf6a1702471d7f70b6d0683a909b1eac7",
+      "category": "named_statement",
+      "owner": "thm:intro-main",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 497,
+      "labels": [
+        "eq:minimum-linear-blocklength"
+      ],
+      "display_sha256": "791db1b0a1d7ae2904dd5e917ceddfa9535c8f8333c38027f3344e8e1fb5af21",
+      "category": "named_statement",
+      "owner": "thm:intro-main",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 563,
+      "labels": [
+        "eq:active-key-rank"
+      ],
+      "display_sha256": "3e1138e91d9c6287435072914b6acc644dfdfc2fcb57f6a114bdddd8097483d7",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 575,
+      "labels": [
+        "eq:side-normal",
+        "eq:side-normal-ai"
+      ],
+      "display_sha256": "da2521cddb947ae43efc38408d3ead3f2f856cabf0c347bd7653d0d5a831e54e",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U04",
+      "formal_route": "Task.exists_pairKnown_charts; ResidualTaskAssembly.exists_canonical_chart",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 622,
+      "labels": [
+        "eq:graph-data"
+      ],
+      "display_sha256": "d72d506aa0da7f74894102b05d5d312acbf0d5c5c2df1e74b3d6b40c517ed88f",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 638,
+      "labels": [
+        "eq:rho"
+      ],
+      "display_sha256": "d4b18fc21c7d0444a3051c5a37ce2649de45a5787d19833448aa0b6b84dd6b38",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U04",
+      "formal_route": "ResidualTaskAssembly.privateTrim_fully_used",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 643,
+      "labels": [
+        "eq:c-r0",
+        "eq:row-quotients"
+      ],
+      "display_sha256": "536f66ff1a7300e961fc6034891585df8b662665441b10f47ed1a3d0a51f9334",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 667,
+      "labels": [
+        "eq:upload-matrices"
+      ],
+      "display_sha256": "f722931d224421646bd6444605ea42a77c5957c4c94bd0de74338b761539e21c",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 693,
+      "labels": [
+        "eq:b"
+      ],
+      "display_sha256": "50c9e6ba9e37cb142ced8f40f411078c81086a94e3d8b044cc9008d73ee3ea6f",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U04",
+      "formal_route": "ResidualTaskAssembly.tripodDimension_eq_stacked_rank",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 711,
+      "labels": [
+        "eq:intro-upload"
+      ],
+      "display_sha256": "d889fbaacfbd8dcd75ca1d68c82f3d2f601ebaf8f38928ee86602e034ee6b741",
+      "category": "named_statement",
+      "owner": "thm:upload",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 716,
+      "labels": [
+        "eq:omega"
+      ],
+      "display_sha256": "631d72d5370e43e0702b1895a47bd69e5a6b8df64b3bb7dda951afce7bbd14a3",
+      "category": "named_statement",
+      "owner": "thm:upload",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 756,
+      "labels": [
+        "eq:ck-space"
+      ],
+      "display_sha256": "ee5507596f8f878d0c37d96c9b92fa811ea4cb43cd46e88f122ebc7810abc59b",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U04",
+      "formal_route": "CommonTripodAssembly.common_product_mapTask; PairOmniscienceAdapter.mapTask_combined",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 764,
+      "labels": [
+        "eq:ck-side"
+      ],
+      "display_sha256": "005820466fc6244870fc4b75c40006fc86c24f38980e197f5cc2eb0731a89914",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U04",
+      "formal_route": "CommonTripodAssembly.common_product_mapTask; PairOmniscienceAdapter.mapTask_combined",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 796,
+      "labels": [
+        "eq:component-observations"
+      ],
+      "display_sha256": "f284185c9605492d2d062dcb53f79c5a7e045b7282f773670e32061e6b27cf95",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 810,
+      "labels": [
+        "eq:tripod-observation-blocks"
+      ],
+      "display_sha256": "7950b744ca45427a3aad4c8d5aea85af8dd720104c33c7dcf97347354e3beada",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 816,
+      "labels": [
+        "eq:omega-source"
+      ],
+      "display_sha256": "4cc15b8b095f654c889577c5afaecf43a2167fcb2e7b2d1117433cc0a431fc25",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 824,
+      "labels": [
+        "eq:residual-sources"
+      ],
+      "display_sha256": "3590209d5e84537ef3a98fda3ebdcc3a39f6c1247e7127cc9a30f49122ca01e5",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 849,
+      "labels": [],
+      "display_sha256": "79a223e2479a4e1275ea6ee7aac131b0fd49e1f95e84fceaf72b59148903ec3f",
+      "category": "named_statement",
+      "owner": "lem:five-cmi",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 854,
+      "labels": [],
+      "display_sha256": "2d491135cc77ec4d0fcee69d89ba6c62c9b351ce5d73bc154e7cf8997ffa8d4d",
+      "category": "named_statement",
+      "owner": "lem:five-cmi",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 866,
+      "labels": [
+        "eq:five-cmi-retained"
+      ],
+      "display_sha256": "22417289faca5bdc5c3ca90a77905a5af3204c2c6e3d074d9ab8fafce5fab303",
+      "category": "named_statement",
+      "owner": "lem:five-cmi",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 885,
+      "labels": [
+        "eq:common-bridge-submodularity"
+      ],
+      "display_sha256": "33980658211598f5bc51456f74ed72086c42a7e72ac7b2d9456d9dac7724396e",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:five-cmi",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 919,
+      "labels": [
+        "eq:ol-recovery"
+      ],
+      "display_sha256": "3b5bb459e75bc8372bd2d0c4ec1f9e9f26cac471b9845147d57ea3dd04a51f95",
+      "category": "named_statement",
+      "owner": "lem:omni-lift",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 926,
+      "labels": [
+        "eq:ol-three"
+      ],
+      "display_sha256": "bcd09f169b76adad99908f6872a4747f480147d8c15045c93981e86994e72766",
+      "category": "named_statement",
+      "owner": "lem:omni-lift",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 931,
+      "labels": [
+        "eq:ol-result"
+      ],
+      "display_sha256": "c6731863aae5172d6fd4266948bf17ea58f02215d81d422dbcb518e943ecb627",
+      "category": "named_statement",
+      "owner": "lem:omni-lift",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 941,
+      "labels": [],
+      "display_sha256": "0d787bb39e216544d32882898bac017c6e0f4728334fbbc56ff91865f45cf079",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:omni-lift",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 947,
+      "labels": [
+        "eq:ol-interaction"
+      ],
+      "display_sha256": "922af3195a7f54f40dc3ed0b3c94c8bf07dd24ae00fd703a6a48df0a6970db1a",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:omni-lift",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 976,
+      "labels": [
+        "eq:main-omniscience-deficits",
+        "eq:gamma-rank"
+      ],
+      "display_sha256": "eb088325608762f8cde120968497c181bb56f6c9aec8785ba7b960ba577ac41f",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U02",
+      "formal_route": "ResidualUpload.gamma_rank; GlobalUploadConverse.code_omniscience_entropy_bound",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 986,
+      "labels": [
+        "eq:slice-inverse"
+      ],
+      "display_sha256": "0db0feb7d16c70f9cbc9cf94481f11ee816417bfba86ec86bc4edd6082368735",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U02",
+      "formal_route": "SignalBridge.private_slice_inverse",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 999,
+      "labels": [
+        "eq:tripod-intersection-bridge"
+      ],
+      "display_sha256": "2234f1dfbd3ea0f36ba0a0a670757c2df175ace020f0c6f1bc6e0618a731c2d6",
+      "category": "named_statement",
+      "owner": "lem:bridges",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 1008,
+      "labels": [
+        "eq:residual-three"
+      ],
+      "display_sha256": "91af91662d5a12be1d45cd412a54c9c72cc0d4902340a17a3466e7d750247dac",
+      "category": "named_statement",
+      "owner": "lem:bridges",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 1059,
+      "labels": [
+        "eq:ck-omniscience-lp"
+      ],
+      "display_sha256": "c45b5815d6cba81c92ba62500a4839e267b23f68f98e3d6ddb7523062c4a700b",
+      "category": "named_statement",
+      "owner": "lem:ck-omniscience",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 1102,
+      "labels": [
+        "eq:relay-feasible"
+      ],
+      "display_sha256": "2764e3ac15d8e5dde8ff8707f59a687304a610570ebdcdb3620930dfe4d747ae",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 1117,
+      "labels": [
+        "eq:pis"
+      ],
+      "display_sha256": "6051dfee2fae79058aff738d7e17b7edbee39836c4420201b0e788de61a7418e",
+      "category": "named_statement",
+      "owner": "lem:pis",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 1155,
+      "labels": [
+        "eq:F-order"
+      ],
+      "display_sha256": "577ba007f137c77d133cdcd0aae811faa60c69addb26b39677d73ec2c3cb9c98",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 1170,
+      "labels": [
+        "eq:profile-additivity"
+      ],
+      "display_sha256": "75a3e8ffdaa32282f92c31af44474c26a9ed2586f4fdb3676826e6ee8ff28f18",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U05",
+      "formal_route": "Profile.entry_directSum; FiniteRelayAssembly.entry_task",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 1176,
+      "labels": [
+        "eq:branch-max-aggregation"
+      ],
+      "display_sha256": "630e2076d2113bc2bc80568f220a56a272e4f84b0d617ea8016899ae7f2feace",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U05",
+      "formal_route": "Profile.rankBound_directSum_le; task_general_broadcastOptimum_eq_rankBound",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 1194,
+      "labels": [
+        "eq:branch-excess"
+      ],
+      "display_sha256": "deef52717412fa7ffc52c3fac834f2d740017e5c2b3ab9dba2534905aafba559",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 1202,
+      "labels": [
+        "eq:induced-profile-aggregation"
+      ],
+      "display_sha256": "465f1670849ca212667e48427c336df9370f4f5ba695ec43baa2d48e423a4785",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U05",
+      "formal_route": "FiniteRelayAssembly.inducedRelay_entry",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 1214,
+      "labels": [
+        "eq:joint-relay-target"
+      ],
+      "display_sha256": "9b414e97d8c0cb4a7914aa22b383215640039924cd362690efcf286791386300",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 1247,
+      "labels": [
+        "eq:upload-additive"
+      ],
+      "display_sha256": "c77e3388d0829e879f902d607d5f7687d47b37c77b547f931c62cfc82a624a07",
+      "category": "named_statement",
+      "owner": "prop:exhaustion",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 1311,
+      "labels": [
+        "eq:margins-component"
+      ],
+      "display_sha256": "b6d4731ba059a5767198f5a156daff8284b6193665baec47adff70e39a93d933",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 1321,
+      "labels": [
+        "eq:pair-margin-general"
+      ],
+      "display_sha256": "e2a69edaa47ffd4f96e53e2925b56714cfa59fb6f46f7ba84dacd45a68838702",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U05",
+      "formal_route": "ActualPairCapacities.margin_nonneg",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 1340,
+      "labels": [
+        "eq:reduced-margins"
+      ],
+      "display_sha256": "3e2c2a123388571447894794ec7f72755aed753f03874ab2878fe6451eb6de71",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U06",
+      "formal_route": "ActualPairCapacities; NonzeroSameChartOptimality; ResonantProfile",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 1394,
+      "labels": [
+        "eq:ck-profile"
+      ],
+      "display_sha256": "b49c5d6ab9d1b1a30333305fd6e6b9ef047bb8c6d300d4e5a235e3a0cf5a9246",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U07",
+      "formal_route": "OmniscienceProfile.first_entry; OmniscienceProfile.second_entry; OmniscienceRelayProfile.entry_preserved",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 1421,
+      "labels": [
+        "eq:total-slack"
+      ],
+      "display_sha256": "71c409a9ce3b295811a7659badc197141b8687f1d6e3f92019f4c98a59153284",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 1435,
+      "labels": [
+        "eq:edge-cycle-map"
+      ],
+      "display_sha256": "2e602f71413965ad41d73b19446c5edf191c797143dd872b52d4dfbd59839e45",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 1463,
+      "labels": [
+        "eq:menu-body"
+      ],
+      "display_sha256": "0de03e136e0c48a2c1f945e7723cb9051be0e210b145dadb7bf2a10e00324d5d",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 1484,
+      "labels": [
+        "eq:pair-cap"
+      ],
+      "display_sha256": "03deed5b2bb8cdccd85cce4b6a928dc347fab3be6f2711077eb1c8db3bd2636d",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U08",
+      "formal_route": "ActualPairCapacities",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 1497,
+      "labels": [
+        "eq:parity-cap"
+      ],
+      "display_sha256": "c318a825dafbe978c5d7440fdd206c14428f5d440b21bc4c3b79a43c95e988ac",
+      "category": "named_statement",
+      "owner": "thm:packing",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 1522,
+      "labels": [
+        "eq:physical-edge-flag"
+      ],
+      "display_sha256": "57f8368e7f853ed4aba1ff82d31304c4cfb0257dc7df292e2038cb32f5f92f57",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 1529,
+      "labels": [
+        "eq:prices-plus"
+      ],
+      "display_sha256": "7ac1a963bf367f4d8c27b5032f7f1ee64de89bc0bc3349163ecb76c4b437678d",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 1537,
+      "labels": [
+        "eq:prices-minus"
+      ],
+      "display_sha256": "380ce53935a6eed203bde78cfc8efc99216ce2190f1d6464be3bdbdbafce693a",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 1546,
+      "labels": [
+        "eq:resonant-complement"
+      ],
+      "display_sha256": "41e72a5bd5005a5464bb0009e6bcac57a08ee2db7942bd670bc8a9b111b32409",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 1552,
+      "labels": [
+        "eq:parity-deficit"
+      ],
+      "display_sha256": "4244270f37cfa0f6eb6c8ed0d4f42c9caf104eaadeaeaaa7068426a7481cfaff",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 1560,
+      "labels": [
+        "eq:edge-extraction-bound"
+      ],
+      "display_sha256": "5cc3ae76bf0e4e2135b7578039a0dfe753f86a2a417a83fc6930fb2c60253948",
+      "category": "named_statement",
+      "owner": "lem:edge-identity",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 1566,
+      "labels": [
+        "eq:physical-cycle"
+      ],
+      "display_sha256": "eac2745354374b3b9e0a03a1db46fe4c663b146d20112a7b0bc362cd9a2b7682",
+      "category": "named_statement",
+      "owner": "lem:edge-identity",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 1589,
+      "labels": [
+        "eq:total-edge-bound"
+      ],
+      "display_sha256": "ac819564fee8228efe69b9ce17525914109059037fe6f6b290225b05aa64ad2d",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:edge-identity",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 1615,
+      "labels": [
+        "eq:endpoint-excess"
+      ],
+      "display_sha256": "003d9ee3bff59437bbd3e3f77d284dfa21c6a61d87387133b7e47d25b0536b9f",
+      "category": "named_statement",
+      "owner": "thm:endpoint",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 1636,
+      "labels": [
+        "eq:endpoint-upload"
+      ],
+      "display_sha256": "34740d6f353ec5b1b5bce0293121d87bac7487e3070e0712ac93e6f6c29634c0",
+      "category": "proof_step_of_named_claim",
+      "owner": "thm:endpoint",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 1664,
+      "labels": [
+        "eq:endpoint-intersections"
+      ],
+      "display_sha256": "8073d7bbb47f3edb8ebd8dc475591c61f6056c3baed94744d7fd1a693b269807",
+      "category": "proof_step_of_named_claim",
+      "owner": "thm:endpoint",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 1672,
+      "labels": [
+        "eq:endpoint-common-ranks"
+      ],
+      "display_sha256": "1117cba8f7752bf08e518805976c3fb7e5c64963bb906513dbe100e1849d8531",
+      "category": "proof_step_of_named_claim",
+      "owner": "thm:endpoint",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 1680,
+      "labels": [
+        "eq:hyperplane-rank-loss"
+      ],
+      "display_sha256": "ec5017f5c5589e28e5e8b657377c7f78fb3a424cfbdac6f14ada576f1d2caffd",
+      "category": "proof_step_of_named_claim",
+      "owner": "thm:endpoint",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 1694,
+      "labels": [
+        "eq:endpoint-profiles"
+      ],
+      "display_sha256": "1424ae952406ff2e119c2cc0c73ec138a05c279e490532ae23244406355426b1",
+      "category": "proof_step_of_named_claim",
+      "owner": "thm:endpoint",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 1712,
+      "labels": [
+        "eq:sum-slack"
+      ],
+      "display_sha256": "77272bc4c7e71cb04436e1a1228867d3854263856e4f49ce30cfb7d6eb0ae33e",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U08",
+      "formal_route": "EdgeDeficits; OrientationRepairAllocation",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 1722,
+      "labels": [
+        "eq:binary-relay-sides"
+      ],
+      "display_sha256": "8965128f2b3006954bdd20fcc5eb4a13bed79511f1b99d6104321709568f43f1",
+      "category": "named_statement",
+      "owner": "prop:stable",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 1745,
+      "labels": [
+        "eq:remainder"
+      ],
+      "display_sha256": "d2ad6ff73231ab68242d34eb9950272b70ce2cdaeee1e0a83a3c85e7534848c1",
+      "category": "proof_step_of_named_claim",
+      "owner": "prop:stable",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 1750,
+      "labels": [
+        "eq:other-slack"
+      ],
+      "display_sha256": "1af66c8b24961ca1321d64cf89ee6f062a56f8c4cc533dfada9c4fe5df58826a",
+      "category": "proof_step_of_named_claim",
+      "owner": "prop:stable",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 1758,
+      "labels": [
+        "eq:remainder-parity"
+      ],
+      "display_sha256": "6e04ad49705ba263ab2fa830540557eb419a5d70f3d6d972f3b8234b61f5c754",
+      "category": "proof_step_of_named_claim",
+      "owner": "prop:stable",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 2023,
+      "labels": [
+        "eq:xi-block"
+      ],
+      "display_sha256": "4b7208401005d9f33e1bb13bbda3b52e42f62132e06f14d926a21e04455789e8",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U04",
+      "formal_route": "ActualBlockGraph.G0_direct_sum; mixed_rank_additive; tripod_rank_additive; UploadParameterDirectSum.private_dimension_additive; IntrinsicUploadDirectSums.activePairRank_additive",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 2052,
+      "labels": [
+        "eq:row-active-split"
+      ],
+      "display_sha256": "d8bd49701e3ae13da730255be2844cb93744ac6c175d457d3281019622eab0c1",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U04",
+      "formal_route": "CommonTripodRanks; ResidualRowPaperEndpoint",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 2099,
+      "labels": [],
+      "display_sha256": "0c467ec618163149fd97042bb2c62a5dda26452f397b77c28df8ab7bc4415aee",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:bridges",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 2108,
+      "labels": [
+        "eq:bridge-cancellation"
+      ],
+      "display_sha256": "68fb501f6bc973a73a09d70706cab736b72a2f62c7d87d06a63366b671c632f7",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:bridges",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 2118,
+      "labels": [
+        "eq:bridge-variable"
+      ],
+      "display_sha256": "27b1155e80defa62a6596d53465c7ae9ebe4045fe0174b622d37094189aa91bf",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:bridges",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 2126,
+      "labels": [
+        "eq:bridge-two-recoveries"
+      ],
+      "display_sha256": "869b004174d6cef81e9b66abb6476803c8b91d819813a5e3a3e0c1203b4e310f",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:bridges",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 2132,
+      "labels": [
+        "eq:bridge-third-recovery"
+      ],
+      "display_sha256": "6b160ab9f07c35c9c154acc2862bbdda92be862f9f1689fc88e1ca4b7943f0f7",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:bridges",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 2151,
+      "labels": [
+        "eq:row-completion-relay"
+      ],
+      "display_sha256": "3bba5687b6b37cb965a1e3253b77b35937c984dbc1525ddf71fc43137c85a592",
+      "category": "named_statement",
+      "owner": "lem:zero-common-row-relay",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 2174,
+      "labels": [
+        "eq:row-completion-shear"
+      ],
+      "display_sha256": "901bbd5f8861d6e4e2c3513a7bf2cd658b3bfdbfa958edc75ec9f524e463a15b",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:zero-common-row-relay",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 2253,
+      "labels": [],
+      "display_sha256": "a649ae64f57de6db360a4f6868a672221d948f2f8f4636d037456a555e7d1c23",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:ck-omniscience",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 2311,
+      "labels": [
+        "eq:tits",
+        "eq:delta"
+      ],
+      "display_sha256": "1fb327280234df1406aa570fdb207f1b157ea160777f978657b2656241da9182",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 2317,
+      "labels": [
+        "eq:tits-squares"
+      ],
+      "display_sha256": "d2919cf858bd7affc501e4906332ac97a4c5030a28f074c2a92e0ff803d6aea9",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U09",
+      "formal_route": "Structural.tits_squares",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 2400,
+      "labels": [
+        "eq:legal-translate"
+      ],
+      "display_sha256": "50f2c5d56df79dc2bf3e576ba28929f97938583d48da8c9fbc4790c058939d2c",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U09",
+      "formal_route": "RootClassification.legal_translate; RootClassification.table_legal_thresholds",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 2424,
+      "labels": [
+        "eq:t0-positive-family"
+      ],
+      "display_sha256": "42c90bcbf93b89f9852b58f099ef640205718938053a7a52665a4c299c3c2c02",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 2441,
+      "labels": [
+        "eq:defects"
+      ],
+      "display_sha256": "8b5f0f1543f53cd1654f4124565bca3ae4add6deb8c71f6ad837d8b9b1ac1a13",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U09",
+      "formal_route": "Structural; NonzeroDefectProfile",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 2454,
+      "labels": [],
+      "display_sha256": "0943a5e880c05765efb303542c2322ae08c39988f81769ec5191a6845659f7ca",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 2524,
+      "labels": [
+        "eq:same-chart-r2-wedge"
+      ],
+      "display_sha256": "9aa12d92a07dcf6df47a293741d2f10177707548dfe54d5a3f2c0f3faf4fdbf1",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:same-chart",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 2547,
+      "labels": [],
+      "display_sha256": "45da4d0bbdb363578d088e46e4159953249c010e351d683c3d00a0dcefbe7621",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:same-chart",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 2553,
+      "labels": [],
+      "display_sha256": "57d8a2ab87e8e21dc10c559b13004b1e3b8bed72dcebf556472a00d73c46f95e",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:same-chart",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 2558,
+      "labels": [
+        "eq:same-chart-first-dimension-formula",
+        "eq:same-chart-second-dimension-formula"
+      ],
+      "display_sha256": "676e7d1871de5336552bfaa118a35e2e6d1734649b507a2fec3248abd366f4d3",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:same-chart",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 2633,
+      "labels": [],
+      "display_sha256": "370d361ef25832e6c4d2ede70b071b71f97eb69823e0a6d8755b6a0e4d6de9bb",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:same-chart",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 2653,
+      "labels": [],
+      "display_sha256": "657f0f69fb7dbcbb2556b76b2a39bb4d7b222d8d9f4b059ce74e34281bf41c53",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:same-chart",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 2714,
+      "labels": [
+        "eq:normal-transverse"
+      ],
+      "display_sha256": "c7df0ba586d961191fafd7d55a036150cef8061db516336a9b4bbdfaa594789f",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:same-chart",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 2788,
+      "labels": [],
+      "display_sha256": "1620f61cbcca895c9033532294c1d735e82e802842eb257eab18f665c1ef99fa",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U10",
+      "formal_route": "BoundaryComponentMenus.T1_all_permuted_choices; T2_permuted_preserving",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 2817,
+      "labels": [
+        "eq:lambda"
+      ],
+      "display_sha256": "3e013559ea5f43b4eeeb08d58a8cf2908c52b981967a1f68d463e728d8512365",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 2852,
+      "labels": [
+        "eq:resonant-endomorphism"
+      ],
+      "display_sha256": "5e6899264b4558f598bfb609ad5623cb9aa7be1740a747e50929bdeee6cbd6e2",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U10",
+      "formal_route": "ResonantEndomorphisms",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 2861,
+      "labels": [
+        "eq:resonant-commutant"
+      ],
+      "display_sha256": "4a0d4bc3329a652f7a4fa59d8510cc328ad69dd16a002ce86ce5866e2bc57391",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U10",
+      "formal_route": "ResonantEndomorphisms.scalar_plus_nilpotent; ResonantBaseChange.source_absolutely_indecomposable",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 2889,
+      "labels": [
+        "eq:t0-stars"
+      ],
+      "display_sha256": "4272ccfe51470847ba2a4ec259747b50899348bc5c0a1a6154662eafe529ea2a",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 2907,
+      "labels": [
+        "eq:t0-star-profiles"
+      ],
+      "display_sha256": "07775337c5edc5d6f75bdc6c508c051babd17210336798e0ac65b116261c5742",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U10",
+      "formal_route": "ResonantProfile.jordan_full_firstProfile; jordan_full_secondProfile; ResonantRelay",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 2923,
+      "labels": [
+        "eq:common-profile-ranks"
+      ],
+      "display_sha256": "3157f379952c2e09a2d1e457abcfe7404cc0494036c463f4fc018fe521bbd4c8",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U10",
+      "formal_route": "ResonantProfile.full_firstProfile; ResonantProfile.full_secondProfile; CycleProfile",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 2931,
+      "labels": [
+        "eq:resonant-pair-spaces"
+      ],
+      "display_sha256": "2730395c5131e18a5510d306efbc1734236ab02c5c769131f78cf425714bdc7d",
+      "category": "reviewed_standalone_conclusion",
+      "owner": "U10",
+      "formal_route": "ResonantProfile pair-space and conditional-rank theorems",
+      "semantic_review": "docs/final-semantic-coverage-review-20261008.md"
+    },
+    {
+      "line": 3032,
+      "labels": [
+        "eq:edge-quotients"
+      ],
+      "display_sha256": "7679665a13e4babc1651855d2b9a75da0d9173a37de5abe02c552823aab52948",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:edge-identity",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 3048,
+      "labels": [
+        "eq:edge-identity"
+      ],
+      "display_sha256": "98724135594e6114956d2389bdf498996ca83be0ad9fdddb31201fd129c5cf69",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:edge-identity",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 3251,
+      "labels": [
+        "eq:binary-hyperplane-dims"
+      ],
+      "display_sha256": "38b091806737b07e740e7b2529f574956bd03764520525da2a3c2e3b7523c0d5",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:binary-additional-menus",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 3287,
+      "labels": [
+        "eq:binary-pair-spans"
+      ],
+      "display_sha256": "93f3ad4420126db2dc6128da683a58854e9a83eede8af8e18be6a1e77893a148",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:binary-additional-menus",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 3419,
+      "labels": [
+        "eq:binary-augmented-pair-cap"
+      ],
+      "display_sha256": "7fb7dcb9bbcddcbb3f7cb7213fb690ebc3682837186faaad8b046109a991221c",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:binary-integer-relay",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 3468,
+      "labels": [
+        "eq:binary-residual-independent"
+      ],
+      "display_sha256": "d894300d101533f89ba85735fc4681312b20ef0ce0ef03e6535fa4d2d1bc2187",
+      "category": "proof_step_of_named_claim",
+      "owner": "prop:stable",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 3513,
+      "labels": [
+        "eq:lcbc-allocation-constraints"
+      ],
+      "display_sha256": "80e09e54090100c1c05ee9f6b32f317af3f923069443fc93e48e565050bcb06f",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 3527,
+      "labels": [
+        "eq:lcbc-allocation-objective"
+      ],
+      "display_sha256": "c0f46458bb3969fa2a5f10652f6713f278f49efe17e7b5165b0b51d88643c43b",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    },
+    {
+      "line": 3547,
+      "labels": [
+        "eq:integer-waterfill"
+      ],
+      "display_sha256": "6da23a3bd6ff5822d3059a7e1d84dcee3b2fc6ff52399097d46f26039f735f8a",
+      "category": "proof_step_of_named_claim",
+      "owner": "lem:integer-lcbc-allocation",
+      "owner_review_status": "reviewed_complete"
+    },
+    {
+      "line": 3604,
+      "labels": [
+        "eq:binary-relation-space"
+      ],
+      "display_sha256": "1fb6ed044998aec6e61d38d19a4a3fc10e6da3c4390c4d6c51a8f3d8a88c1089",
+      "category": "definition_or_construction_data",
+      "owner": "not an independent correctness claim"
+    }
+  ],
+  "standalone_open_conclusions": [],
+  "standalone_closed_conclusions": [
+    {
+      "id": "OPEN-G0-DIRECT-SUM",
+      "source_lines": [
+        2021,
+        2028
+      ],
+      "claim": "Literal componentwise B/G/G0 maps and each individual upload-rank sum.",
+      "status": "reviewed_complete",
+      "formal_route": "ActualBlockGraph.incidence_conjugacy; graph_conjugacy; G0_direct_sum; mixed_rank_additive; common_rank_additive; pure_rank_additive; tripod_rank_additive; UploadParameterDirectSum.private_dimension_additive; IntrinsicUploadDirectSums.activePairRank_additive",
+      "audit": "verification/FinalDirectSumReview20261008.lean"
+    },
+    {
+      "id": "OPEN-OPPOSITE-DEMAND-EXAMPLE",
+      "source_lines": [
+        1182,
+        1189
+      ],
+      "claim": "Each opposite one-symbol task has D*=1; its actual direct sum has D*=1 with scalar x+y.",
+      "status": "reviewed_complete",
+      "formal_route": "OppositeDemandExample.strict_subadditivity_example",
+      "audit": "verification/FinalStandaloneReview20261008.lean"
+    },
+    {
+      "id": "CITED-ENTROPY-INSUFFICIENCY",
+      "source_lines": [
+        434,
+        436
+      ],
+      "claim": "All original-observation subset entropies need not determine D*.",
+      "status": "reviewed_complete_corrected_F5_witness",
+      "formal_route": "CitedEntropyCounterexample.corrected_entropy_counterexample; equal_subset_entropies_distinct_operational_optima; joint_original_coefficients; original_side; original_demand; scalarSource_uniform",
+      "audit": "verification/FinalEntropyWitnessReview20261008.lean",
+      "source_correction": "The cited F3 pair has demand-triple ranks 3 versus 2 and is not entropy-identical. The frozen manuscript states an existential claim; the project proves it with the corrected F5 pair and leaves the source unchanged."
+    },
+    {
+      "id": "CITED-BINARY-FIELD-SIZE-NECESSITY",
+      "source_lines": [
+        1804,
+        1806
+      ],
+      "claim": "The general scalar LCBC ceiling guarantee cannot be extended to every binary task.",
+      "status": "reviewed_complete",
+      "formal_route": "CitedBinaryFieldNecessity.signal_from_demands; broadcastOptimum_eq_one; scalar_broadcast_card; scalar_cost_ge_two; scalar_cost_gt_ceiling",
+      "audit": "verification/FinalBinaryNecessityReview20261008.lean"
+    },
+    {
+      "id": "OPEN-RESONANT-UPLOAD-SPECIALIZATION",
+      "source_lines": [
+        1277,
+        2887
+      ],
+      "claim": "U*(R_n)=3n+1 for every source n>=1; the literal five-bit task has U*=4 and an actual L=2 code at (4,3/2).",
+      "status": "reviewed_complete",
+      "formal_route": "ResonantUploadSpecializations.source_uploadOptimum; jordan_active; map_scalarCoordinates; binary_uploadOptimum; binary_joint_two",
+      "audit": "verification/FinalResonantSpecializationReview20261008.lean"
+    }
+  ],
+  "model_correspondence_not_exposed": [],
+  "model_correspondence_reviewed": [
+    {
+      "id": "MODEL-COLUMN-REDUNDANCY",
+      "source_lines": [
+        315,
+        343
+      ],
+      "claim": "Arbitrary original matrices, literal redundant-column removal, complement normalization and ambient restriction preserve every original blocklength region.",
+      "status": "reviewed_complete",
+      "formal_route": "MatrixFrontend.Data.achievableAt_eq; Code.toTask_upload_range; Code.toTask_broadcast_range; normalize_code; denormalize_code; normalize_linearCode; denormalize_linearCode; exists_retained_normalization; ambient_achievableAt_eq; ambient_linearCode_nonempty_iff",
+      "audit": "verification/FinalMatrixFrontendReview20261008.lean"
+    }
+  ],
+  "external_proof_replacement_boundary": {
+    "policy": "The project proves each needed paper-specific endpoint without new mathematical axioms. General cited theories and historical/bibliographic claims are not advertised as entire project theorems. Alternative proofs may replace internal proof routes; stronger standalone conclusions are tracked separately.",
+    "additional_trusted_mathematical_axioms": [],
+    "accepted_standard_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "literal_primitive_and_theta_constructions": {
+      "status": "independently_reviewed_kernel_checked",
+      "source_lines": [
+        2569,
+        2667
+      ],
+      "formal_route": "LiteralPrimitiveTables; LiteralThetaBlocks.R0_same_chart_profile; D.append_dimensions; D.append_conditional_ranks; D.append_profile",
+      "audit": "verification/FinalLiteralConstructionReview20261008.lean",
+      "scope": "Exact primitive matrices and theta blocks, including the actual one-copy append operation; no claim to formalize the external geometric transfer theory."
+    }
+  },
+  "external_assertions_not_independent_project_theorems": [
+    {
+      "source_lines": [
+        2300,
+        2328
+      ],
+      "claim": "General Kac positive-root and affine Tits assertions.",
+      "status": "needed_consequences_independently_proved; entire_external_theory_not_claimed",
+      "formal_replacement": "TaskDecomposition.Task.source_base_field_components; E6RealRoots.nonnegative_realRoot_iff_norm_one; ActiveComponentClassification; ResidualComponentClassification"
+    },
+    {
+      "source_lines": [
+        2340,
+        2356
+      ],
+      "claim": "Splitting fields, finite-field real-root uniqueness and Krull\u2013Schmidt proof route.",
+      "status": "replaced_by_constructive_actual_field_extension_and_component_proofs",
+      "formal_replacement": "TaskDecomposition.Task.source_base_field_components; tensorRep_indec_iff; FiniteComponentCoordinates.exists_operational_component_coordinates"
+    },
+    {
+      "source_lines": [
+        2444,
+        2448
+      ],
+      "claim": "Preinjectivity, self-extension vanishing and open/dense representation orbits.",
+      "status": "entire_geometric_theory_not_claimed; needed_family_endpoints_proved_without_it",
+      "formal_replacement": "NonzeroSameChartOptimality.same_chart_full_and_optimal_relay; NonzeroSameChartPermutations.same_chart_all_permuted_choices"
+    },
+    {
+      "source_lines": [
+        2807,
+        2810
+      ],
+      "claim": "Cited original-field resonant normal-form identification.",
+      "status": "needed_identification_independently_constructed",
+      "formal_replacement": "RegularResonantClassification.classification; ActiveComponentClassification.regular_assignment; ResonantEndomorphisms; ResonantBaseChange"
+    }
+  ],
+  "numbered_tables": [
+    {
+      "label": "tab:menus",
+      "source_lines": [
+        1347,
+        1375
+      ],
+      "table_sha256": "26a98f397ed2837945bcc2c6e6c0b3b94462650a17ebebbe9de8645db6b3e631",
+      "category": "named_conclusion_table",
+      "owner": "thm:profiles; thm:packing",
+      "formal_route": "ResidualProfiles.profiles; NonzeroSameChartPermutations.indexed_menu_table; Allocation.aggregate_selection_paper_coordinates",
+      "status": "reviewed_conclusion_table"
+    },
+    {
+      "label": "tab:residues",
+      "source_lines": [
+        2372,
+        2395
+      ],
+      "table_sha256": "4fa1e2cd3c44494fe9bb87aa19fab74fec46aa63187ff78a9f2820a2186b0567",
+      "category": "standalone_classification_table",
+      "owner": "U09; lem:base-field-components",
+      "formal_route": "RootClassification.classification_iff; tableRow_sound; table_legal_thresholds; ActiveComponentClassification.active_residual_assignment",
+      "status": "reviewed_conclusion_table"
+    },
+    {
+      "label": "tab:primitive-flags",
+      "source_lines": [
+        2569,
+        2596
+      ],
+      "table_sha256": "bd6ad4fe26a5642da3510003de054e59deecbbad3ac2d99a9ba48d1cf4e7e05d",
+      "category": "kernel_checked_literal_proof_construction",
+      "owner": "lem:same-chart",
+      "formal_route": "LiteralPrimitiveTables: all seven literal A/B flag rows; actual signal_from_demands, side/signal column-span identities, full_rankConditions and full profiles over every field. Independent source/signature/axiom review in FinalLiteralConstructionReview20261008.",
+      "status": "reviewed_literal_construction"
+    },
+    {
+      "label": "tab:primitive-relays",
+      "source_lines": [
+        2598,
+        2621
+      ],
+      "table_sha256": "0b3300fbbd27110ebaf3c16f3418fc7780d7c6a30c3c1102807e245225e5f58d",
+      "category": "kernel_checked_literal_proof_construction",
+      "owner": "lem:same-chart",
+      "formal_route": "LiteralPrimitiveTables: all ten exact common kernels, dimensions, local generation, relay feasibility, induced RankConditions/profiles, genuine side-relation values, designated-form annihilation and actual R2 wedge determinant. The external open-orbit theory is not claimed.",
+      "status": "reviewed_literal_construction"
+    },
+    {
+      "label": "tab:binary-extra-menus",
+      "source_lines": [
+        3215,
+        3242
+      ],
+      "table_sha256": "0a5512f2d6f208eed022fa1bc4ae43998ad2df90a6b1a4f629b1e9f44188e0b8",
+      "category": "named_conclusion_table",
+      "owner": "lem:binary-additional-menus",
+      "formal_route": "BinaryMenuOptimality.additional_optimal_menu; r2_optimal_menu; charge_le_actual_margin; r2_charge_le_actual_margin; BinaryAdditionalMenuPermutations",
+      "status": "reviewed_conclusion_table"
+    }
+  ],
+  "additional_groups": [
+    {
+      "id": "U01",
+      "inventory_item": 1,
+      "scope": "Arbitrary matrix frontend, column redundancy and ambient normalization",
+      "route": "MatrixTaskFrontend; MatrixTaskEndpoints; Model; Task.normalizationRetraction",
+      "status": "reviewed_complete"
+    },
+    {
+      "id": "U02",
+      "inventory_item": 2,
+      "scope": "Upload-only equivalence, genuine entropy/alphabet inequalities and linear rank identities",
+      "route": "Model; EntropyCoding; LinearEntropy; GlobalUploadConverse",
+      "status": "reviewed_complete"
+    },
+    {
+      "id": "U03",
+      "inventory_item": 3,
+      "scope": "Fully informed simulation, closure, operational LCBC formula and attaining code",
+      "route": "BroadcastRegion; GeneralBroadcastOptimum",
+      "status": "reviewed_complete"
+    },
+    {
+      "id": "U04",
+      "inventory_item": 4,
+      "scope": "Actual normal forms, arbitrary-choice invariance, nonlinear passive/common reductions, individual rank direct sums and component costs",
+      "route": "ActiveReductionEndpoint; IntrinsicUploadInvariance; ActualBlockGraph; UploadParameterDirectSum; PassiveBroadcast; OriginalUploadTheorem; ResidualComponentAdditivity",
+      "status": "reviewed_complete"
+    },
+    {
+      "id": "U05",
+      "inventory_item": 5,
+      "scope": "Profile additivity, strict/non-strict subadditivity and pair margins",
+      "route": "Profile; FiniteRelayAssembly; OppositeDemandExample; ActualPairCapacities",
+      "status": "reviewed_complete"
+    },
+    {
+      "id": "U06",
+      "inventory_item": 6,
+      "scope": "Complete local menus, root/profile tables, binary choices and charges",
+      "route": "ResidualProfiles; NonzeroSameChartPermutations; BinaryMenuPermutations; BinaryAdditionalMenuPermutations; RootClassification; Task.binary_integer_relay (SourceMainTheorem)",
+      "status": "reviewed_complete; literal primitive proof tables separately kernel_checked"
+    },
+    {
+      "id": "U07",
+      "inventory_item": 7,
+      "scope": "Omniscience profiles, arbitrary feasible-relay profile preservation and zero margins",
+      "route": "OmniscienceProfile; OmniscienceRelayProfile; ActualPairCapacities.omniscience_margin",
+      "status": "reviewed_complete"
+    },
+    {
+      "id": "U08",
+      "inventory_item": 8,
+      "scope": "Orientation prices, maximal simultaneous physical edges, both optimal scalar cycle repairs",
+      "route": "EdgeProfile; EdgeExtraction; EdgeDeficits; CycleSourceEndpoint; ActualComponentCapacities; OrientationSlackCounts",
+      "status": "reviewed_complete"
+    },
+    {
+      "id": "U09",
+      "inventory_item": 9,
+      "scope": "Tits identities, actual real-root membership, exhaustive family classification and legal thresholds",
+      "route": "Structural; RootClassification; E6RealRoots; BaseFieldComponents; ActiveComponentClassification; ResidualComponentClassification",
+      "status": "reviewed_complete; no general Kac axiom"
+    },
+    {
+      "id": "U10",
+      "inventory_item": 10,
+      "scope": "Original-field coordinate families, actual ranks, resonant models and arbitrary extension indecomposability",
+      "route": "NonzeroSameChart; NonzeroFamilyRanks; BoundaryComponentMenus; ResonantEndomorphisms; ResonantBaseChange; ResonantProfile; LiteralPrimitiveTables; LiteralThetaBlocks; exact source endpoint audits",
+      "status": "reviewed_complete including literal primitive/theta constructions; external geometric transfer replaced by independent family proof"
+    },
+    {
+      "id": "U11",
+      "inventory_item": 11,
+      "scope": "Waterfilling optimum/rounding, relation projections and deterministic coefficient coordination",
+      "route": "AllocationWaterfill; AllocationProfile; AllocationNat; ScalarIncidence; Coordination; BinaryRelationBridge; ScalarPaperEndpoints",
+      "status": "reviewed_complete"
+    },
+    {
+      "id": "U12",
+      "inventory_item": 12,
+      "scope": "Literal five-bit example, U*=4, D*=3/2, exact two-instance code, all-block fixed-relay lower bound and nonlinear scalar obstruction",
+      "route": "Examples; BinaryOperationalTightness; ResonantUploadSpecializations.binary_uploadOptimum; ResonantUploadSpecializations.binary_joint_two",
+      "status": "reviewed_complete"
+    },
+    {
+      "id": "U13",
+      "inventory_item": 13,
+      "scope": "Operational half-integrality, doubling, closure, exact least linear blocklength and nonlinear tightness",
+      "route": "EndpointArithmetic; DoubleOperationalScaling; SourceMainTheorem; BinaryOperationalTightness",
+      "status": "reviewed_complete"
+    }
+  ]
+}

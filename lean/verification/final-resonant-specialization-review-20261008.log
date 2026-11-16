@@ -1,0 +1,17 @@
+UploadBroadcast.ResonantUploadSpecializations.jordan_active : ∀ (K : Type u_1) [inst : Field K] (n : ℕ),
+  UploadBroadcast.ResidualComponentAdditivity.ActiveResidual (UploadBroadcast.ResonantRelay.jordanTask K n)
+UploadBroadcast.ResonantUploadSpecializations.jordan_uploadOptimum : ∀ (K : Type u_1) [inst : Field K]
+  [inst_1 : Finite K] (n : ℕ), (UploadBroadcast.ResonantRelay.jordanTask K n).uploadOptimum = ↑(3 * (n + 1) + 1)
+UploadBroadcast.ResonantUploadSpecializations.source_uploadOptimum : ∀ (K : Type u_1) [inst : Field K]
+  [inst_1 : Finite K] (n : ℕ), 1 ≤ n → (UploadBroadcast.ResonantRelay.jordanTask K (n - 1)).uploadOptimum = ↑(3 * n + 1)
+UploadBroadcast.ResonantUploadSpecializations.map_scalarCoordinates : ∀ (K : Type u_2) [inst : Field K],
+  UploadBroadcast.Profile.mapTask (UploadBroadcast.ResonantUploadSpecializations.scalarCoordinates K)
+      (UploadBroadcast.ResonantRelay.jordanTask K 0) =
+    UploadBroadcast.ResonantRelay.task K K 0 LinearMap.id
+UploadBroadcast.ResonantUploadSpecializations.binary_active : UploadBroadcast.ResidualComponentAdditivity.ActiveResidual
+  UploadBroadcast.BinaryOperationalTightness.task
+UploadBroadcast.ResonantUploadSpecializations.binary_uploadOptimum : UploadBroadcast.BinaryOperationalTightness.task.uploadOptimum =
+  4
+UploadBroadcast.ResonantUploadSpecializations.binary_joint_two : ∃ r b c,
+  c.toCode.uploadCost = 4 ∧ c.toCode.broadcastCost = 3 / 2
+Independent resonant specialization audit passed for 7 roots; axioms [propext, Quot.sound, Classical.choice]

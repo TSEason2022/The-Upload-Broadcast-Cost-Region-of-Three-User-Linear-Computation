@@ -1,0 +1,8 @@
+'UploadBroadcast.ConditionedResidualBridges.canonicalReduction_all_tripod_bridges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ConditionedResidualBridges.canonicalReduction_conditioned_retained_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Conditioned-bridge axiom audit passed for 92 theorems.
+Complete reachable axiom set: [propext, Quot.sound, Classical.choice]

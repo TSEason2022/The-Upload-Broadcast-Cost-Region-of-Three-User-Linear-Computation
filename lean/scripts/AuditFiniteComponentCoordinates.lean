@@ -1,0 +1,7 @@
+import UploadBroadcast.FiniteComponentCoordinates
+import UploadBroadcast.QuiverExactSequence
+#print axioms UploadBroadcast.TaskDecomposition.componentSumEquiv
+#print axioms UploadBroadcast.TaskDecomposition.Task.exists_finite_component_coordinates
+#print axioms UploadBroadcast.FiniteComponentCoordinates.map_product_componentTask
+#print axioms UploadBroadcast.FiniteComponentCoordinates.exists_operational_component_coordinates
+#print axioms UploadBroadcast.QuiverRepresentation.exists_extension_presentation

@@ -1,0 +1,12 @@
+import UploadBroadcast.ActiveReduction
+#print axioms UploadBroadcast.active_pair_graph
+#print axioms UploadBroadcast.active_pair_separation
+#print axioms UploadBroadcast.simultaneous_shear_preserves
+#print axioms UploadBroadcast.cancel_idempotent_projection
+#print axioms UploadBroadcast.graph_data_map
+#print axioms UploadBroadcast.tripod_coordinate_rigidity
+#print axioms UploadBroadcast.PassiveRetraction.achievableAt_eq
+#print axioms UploadBroadcast.PassiveRetraction.costRegion_eq
+#print axioms UploadBroadcast.sideOnly_achievableAt_eq
+#print axioms UploadBroadcast.mixed_rank_gauge_invariant
+#print axioms UploadBroadcast.common_rank_basis_invariant

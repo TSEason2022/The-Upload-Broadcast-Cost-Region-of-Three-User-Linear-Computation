@@ -1,0 +1,18 @@
+.lake/
+.tooling/
+.venv/
+__pycache__/
+*.olean
+*.ilean
+.verification-results/
+# Generated local run logs; retained historical audit logs remain versioned.
+/logs/toolchain-identity.log
+/logs/source-audit.log
+/logs/lean-version.log
+/logs/build.log
+/logs/smoke.log
+/logs/reusable-api-check.log
+/logs/coverage-declarations.log
+/logs/axioms.log
+/logs/all-declarations.log
+/logs/current-source-declarations.log

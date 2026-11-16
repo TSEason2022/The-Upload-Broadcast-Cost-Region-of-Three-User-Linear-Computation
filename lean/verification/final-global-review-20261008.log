@@ -1,0 +1,70 @@
+UploadBroadcast.canonical_scalar_selection : ∀ (K : Type) [inst : Field K] [inst_1 : Finite K],
+  UploadBroadcast.CanonicalScalarSelection K
+UploadBroadcast.ResidualBackgroundSelectionTheorem.exists_optimal_relay : ∀ {K V W : Type} [inst : Field K]
+  [inst_1 : Finite K] [inst_2 : AddCommGroup V] [inst_3 : _root_.Module K V] [inst_4 : FiniteDimensional K V]
+  [inst_5 : AddCommGroup W] [inst_6 : _root_.Module K W] [inst_7 : FiniteDimensional K W]
+  (S : UploadBroadcast.Task K V),
+  UploadBroadcast.ResidualComponentAdditivity.ActiveResidual S →
+    ∀ (O : UploadBroadcast.Task K W),
+      (∀ (i : UploadBroadcast.Three), O.U i = ⊤) →
+        ∀ (D : ℤ),
+          UploadBroadcast.Profile.rankBound (UploadBroadcast.Profile.directSum S O) ≤ ↑D →
+            ∃ P,
+              ∃ (hg : S.LocallyGenerated P),
+                S.RelayFeasible P ∧
+                  ↑(Module.finrank K ↥P) = S.uploadOptimum ∧
+                    ∀ (r : UploadBroadcast.Profile.Index),
+                      UploadBroadcast.Profile.entry (S.inducedRelay P hg) r + UploadBroadcast.Profile.entry O r ≤ ↑D
+UploadBroadcast.ResidualBackgroundSelectionTheorem.residual_background_selection : ∀ (K : Type) [inst : Field K]
+  [inst_1 : Finite K], UploadBroadcast.ResidualBackgroundSelection K
+UploadBroadcast.Task.scalar_relay_selection : ∀ {K F : Type} [inst : Field K] [inst_1 : Finite K]
+  [inst_2 : AddCommGroup F] [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F]
+  (T : UploadBroadcast.Task K F), T.ScalarRelaySelection
+UploadBroadcast.Task.stable_relay_source : ∀ {K F : Type} [inst : Field K] [inst_1 : Finite K] [inst_2 : AddCommGroup F]
+  [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F] (T : UploadBroadcast.Task K F) (D : ℤ),
+  UploadBroadcast.broadcastOptimum T.A T.U ≤ ↑D →
+    (∃ z, T.uploadOptimum = ↑z) →
+      ∃ P,
+        ∃ (hg : T.LocallyGenerated P),
+          T.RelayFeasible P ∧
+            ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+              (∀ (r : UploadBroadcast.Profile.Index), UploadBroadcast.Profile.entry (T.inducedRelay P hg) r ≤ ↑D) ∧
+                (Nat.card K = 2 → ∃ p, P ⊓ T.A (p 0) ⊓ (P ⊓ T.A (p 1) ⊔ P ⊓ T.A (p 2)) = ⊥)
+UploadBroadcast.Task.binary_integer_relay : ∀ {K F : Type} [inst : Field K] [inst_1 : Finite K]
+  [inst_2 : AddCommGroup F] [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F]
+  (T : UploadBroadcast.Task K F),
+  Nat.card K = 2 →
+    ∀ (D : ℤ),
+      UploadBroadcast.broadcastOptimum T.A T.U ≤ ↑D →
+        (∃ z, T.uploadOptimum = ↑z) →
+          ∃ P,
+            ∃ (hg : T.LocallyGenerated P),
+              T.RelayFeasible P ∧
+                ↑(Module.finrank K ↥P) = T.uploadOptimum ∧
+                  (∀ (r : UploadBroadcast.Profile.Index), UploadBroadcast.Profile.entry (T.inducedRelay P hg) r ≤ ↑D) ∧
+                    ∃ p, P ⊓ T.A (p 0) ⊓ (P ⊓ T.A (p 1) ⊔ P ⊓ T.A (p 2)) = ⊥
+UploadBroadcast.Task.scalar_budget : ∀ {K F : Type} [inst : Field K] [inst_1 : Finite K] [inst_2 : AddCommGroup F]
+  [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F] (T : UploadBroadcast.Task K F),
+  (∃ z, T.uploadOptimum = ↑z) →
+    ∃ r b c,
+      c.toCode.uploadCost = T.uploadOptimum ∧ c.toCode.broadcastCost = ↑⌈UploadBroadcast.broadcastOptimum T.A T.U⌉
+UploadBroadcast.Task.joint_two : ∀ {K F : Type} [inst : Field K] [inst_1 : Finite K] [inst_2 : AddCommGroup F]
+  [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F] (T : UploadBroadcast.Task K F), T.LinearJointAt 2
+UploadBroadcast.Task.main_region : ∀ {K F : Type} [inst : Field K] [inst_1 : Finite K] [inst_2 : AddCommGroup F]
+  [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F] (T : UploadBroadcast.Task K F),
+  T.achievableAt 2 = UploadBroadcast.Task.budgetRectangle T.minimumUploadFormula (UploadBroadcast.Profile.rankBound T) ∧
+    T.costRegion = UploadBroadcast.Task.budgetRectangle T.minimumUploadFormula (UploadBroadcast.Profile.rankBound T)
+UploadBroadcast.Task.minimum_linear_blocklength : ∀ {K F : Type} [inst : Field K] [inst_1 : Finite K]
+  [inst_2 : AddCommGroup F] [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F]
+  (T : UploadBroadcast.Task K F), IsLeast {L | 0 < L ∧ T.LinearJointAt L} T.linearJointLengthFormula
+UploadBroadcast.Task.scalar_joint_iff_integral : ∀ {K F : Type} [inst : Field K] [inst_1 : Finite K]
+  [inst_2 : AddCommGroup F] [inst_3 : _root_.Module K F] [inst_4 : FiniteDimensional K F]
+  (T : UploadBroadcast.Task K F),
+  T.LinearJointAt 1 ↔ (∃ z, T.uploadOptimum = ↑z) ∧ ∃ z, UploadBroadcast.broadcastOptimum T.A T.U = ↑z
+UploadBroadcast.nonlinear_uniform_bound_tight : UploadBroadcast.BinaryOperationalTightness.task.LinearJointAt 2 ∧
+  ∀ (m : UploadBroadcast.Three → ℕ) (s : ℕ)
+    (c : UploadBroadcast.BinaryOperationalTightness.task.Code 1 (fun i => Fin (m i)) (Fin s)),
+    UploadBroadcast.broadcastOptimum UploadBroadcast.BinaryOperationalTightness.task.A
+        UploadBroadcast.BinaryOperationalTightness.task.U <
+      c.broadcastCost
+Independent global source audit passed for 12 roots; axioms [propext, Quot.sound, Classical.choice]

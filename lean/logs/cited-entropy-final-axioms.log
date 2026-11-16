@@ -1,0 +1,41 @@
+'UploadBroadcast.FiniteSubspaceCertificate.Space.submodule_join' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.FiniteSubspaceCertificate.Space.submodule_meet' depends on axioms: [propext, Quot.sound]
+'UploadBroadcast.FiniteSubspaceCertificate.Space.finrank_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.CitedEntropyCounterexample.side_spanning' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.CitedEntropyCounterexample.side_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.CitedEntropyCounterexample.signal_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.CitedEntropyCounterexample.all_subset_kernel_cards' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.CitedEntropyCounterexample.all_subset_ranks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.CitedEntropyCounterexample.all_subset_entropies' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.CitedEntropyCounterexample.all_block_subset_entropies' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.CitedEntropyCounterexample.scalarSource_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.CitedEntropyCounterexample.scalarSource_surjective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.CitedEntropyCounterexample.scalarSource_uniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.CitedEntropyCounterexample.joint_original_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.CitedEntropyCounterexample.original_side' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.CitedEntropyCounterexample.original_demand' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.CitedEntropyCounterexample.broadcastOptima' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.CitedEntropyCounterexample.corrected_entropy_counterexample' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.CitedEntropyCounterexample.equal_subset_entropies_distinct_operational_optima' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Strict cited-entropy audit passed for 888 project theorems.
+Complete reachable axiom set: [propext, Quot.sound, Classical.choice]

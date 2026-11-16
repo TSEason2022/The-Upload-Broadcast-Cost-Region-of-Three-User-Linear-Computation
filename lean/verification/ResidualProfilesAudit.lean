@@ -1,0 +1,5 @@
+import UploadBroadcast.ResidualProfiles
+#print axioms UploadBroadcast.ResidualProfiles.positive_index_menu
+#print axioms UploadBroadcast.ResidualProfiles.boundary_menu
+#print axioms UploadBroadcast.ResidualProfiles.regular_menu
+#print axioms UploadBroadcast.ResidualProfiles.profiles

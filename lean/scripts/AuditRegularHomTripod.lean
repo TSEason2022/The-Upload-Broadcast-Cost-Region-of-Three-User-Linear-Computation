@@ -1,0 +1,6 @@
+import UploadBroadcast.RegularHomVanishing
+import UploadBroadcast.TripodSubobjectExclusion
+#print axioms UploadBroadcast.ResonantTripodTransversality.source_zero_defect_nonsimple
+#print axioms UploadBroadcast.ResonantTripodTransversality.tripodEnlargementAt_hom_zero_of_zero_defect
+#print axioms UploadBroadcast.RegularHomVanishing.positive_to_zero_hom_zero
+#print axioms UploadBroadcast.TripodSubobjectExclusion.tripod_plane_vectors_zero_of_zero_defect

@@ -1,0 +1,6 @@
+Source audit passed (414 Lean files). This is a lexical check, not semantic equivalence.
+Coverage manifest has no recorded gaps. This must accompany the kernel and semantic audits.
+
+=== Unchanged-source campaign continuation after executor recovery ===
+Source audit passed (414 Lean files). This is a lexical check, not semantic equivalence.
+Coverage manifest has no recorded gaps. This must accompany the kernel and semantic audits.

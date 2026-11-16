@@ -1,0 +1,43 @@
+UploadBroadcast.Task.pair_canonical_factorization_achievableAt_eq.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K]
+  [AddCommGroup F] [Module K F] [Finite K] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) (n : ℕ) :
+  T.achievableAt n = (UploadBroadcast.Profile.directSum T.pairOmniscienceFactor T.pairFreeChart.toTask).achievableAt n
+UploadBroadcast.Task.pair_canonical_factorization_costRegion_eq.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K]
+  [AddCommGroup F] [Module K F] [Finite K] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  closure (⋃ i, T.achievableAt i) =
+    closure (⋃ i, (UploadBroadcast.Profile.directSum T.pairOmniscienceFactor T.pairFreeChart.toTask).achievableAt i)
+UploadBroadcast.Task.canonicalPairFreeResidual_sides.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] (T : UploadBroadcast.Task K F) :
+  T.pairFreeChart.toTask.A 0 =
+      UploadBroadcast.ResidualUpload.A₁ K ↥T.pairFreeChart.P₁ ↥T.pairFreeChart.P₂ ↥T.pairFreeChart.P₃
+        ↥(T.pairFreeResidual.A 2 ⊓ (T.pairFreeResidual.A 0 ⊔ T.pairFreeResidual.A 1)) ∧
+    T.pairFreeChart.toTask.A 1 =
+        UploadBroadcast.ResidualUpload.A₂ K ↥T.pairFreeChart.P₁ ↥T.pairFreeChart.P₂ ↥T.pairFreeChart.P₃
+          ↥(T.pairFreeResidual.A 2 ⊓ (T.pairFreeResidual.A 0 ⊔ T.pairFreeResidual.A 1)) ∧
+      T.pairFreeChart.toTask.A 2 =
+        UploadBroadcast.ResidualUpload.A₃ K ↥T.pairFreeChart.P₁ ↥T.pairFreeChart.P₂ ↥T.pairFreeChart.P₃
+          ↥(T.pairFreeResidual.A 2 ⊓ (T.pairFreeResidual.A 0 ⊔ T.pairFreeResidual.A 1))
+UploadBroadcast.ResidualTaskAssembly.canonicalReductionBridge.{u_1, u_2, u_3, u_4, u_5} {K : Type u_1} {P₁ : Type u_2}
+  {P₂ : Type u_3} {P₃ : Type u_4} {D : Type u_5} [Field K] [AddCommGroup P₁] [Module K P₁] [AddCommGroup P₂]
+  [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₁ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₂ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₃ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D) : UploadBroadcast.SignalBridge.Data
+UploadBroadcast.ResidualTaskAssembly.canonicalReduction_common_pure_eq_bot.{u_1, u_4, u_5, u_6, u_7} {K : Type u_1}
+  [Field K] {P₁ : Type u_4} {P₂ : Type u_5} {P₃ : Type u_6} {D : Type u_7} [AddCommGroup P₁] [Module K P₁]
+  [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₁ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₂ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₃ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D)
+  (hzero :
+    UploadBroadcast.ResidualTaskAssembly.pureRows₁ task ⊓ UploadBroadcast.ResidualTaskAssembly.pureRows₂ task ⊓
+        UploadBroadcast.ResidualTaskAssembly.pureRows₃ task =
+      ⊥) :
+  UploadBroadcast.ResidualTaskAssembly.pureRows₁
+          (UploadBroadcast.ResidualTaskAssembly.canonicalReduction task h₁ h₂ h₃) ⊓
+        UploadBroadcast.ResidualTaskAssembly.pureRows₂
+          (UploadBroadcast.ResidualTaskAssembly.canonicalReduction task h₁ h₂ h₃) ⊓
+      UploadBroadcast.ResidualTaskAssembly.pureRows₃
+        (UploadBroadcast.ResidualTaskAssembly.canonicalReduction task h₁ h₂ h₃) =
+    ⊥

@@ -1,0 +1,44 @@
+{
+  "events": [
+    {
+      "evidence": "pre-continuation-report.json",
+      "phase": "fresh initialization",
+      "project_artifacts_imported": false
+    },
+    {
+      "evidence": "continuation-provenance.json",
+      "phase": "executor interruption",
+      "preserved_evidence": [
+        "pre-continuation-report.json",
+        "pre-continuation-module-build-timings.json",
+        "pre-continuation-all-modules.log",
+        "pre-continuation-external-console.log"
+      ],
+      "successful_module_count": 79
+    },
+    {
+      "evidence": "pre-parallel-module-build-timings.json",
+      "phase": "same-campaign sequential continuation",
+      "retained_artifacts": "Only artifacts freshly built in this same campaign; none imported from development or diagnostic trees.",
+      "successful_module_count_at_handoff": 154
+    },
+    {
+      "evidence": "parallel-handoff-observation.json",
+      "historical_status_note": "continuation-provenance.json and pre-parallel-continuation-provenance.json retain their interrupted running status. The terminal handoff observation supersedes that historical status; exit 130 was an intentional scheduling handoff, not a Lean proof failure.",
+      "phase": "user-approved bounded-parallel handoff",
+      "previous_owner_exit_code": 130,
+      "shared_lock_acquired_after_owner_exit": true
+    },
+    {
+      "evidence": "parallel-scheduling-provenance.json",
+      "final_requirements": "All seven original gates and unchanged-source manifest equality; consult report.json for actual terminal success.",
+      "lean_threads_per_compiler": 2,
+      "maximum_new_project_compilers": 2,
+      "phase": "bounded-pair continuation"
+    }
+  ],
+  "interpretation": "One unchanged-source campaign initialized with no project compiled artifacts. The campaign was interrupted and continued; it was not an uninterrupted or wholly sequential execution.",
+  "project_source_sha256": "6e7af788509fbf182f2830754a8d611c088140f273af1d8a7b16b031ff83a8cd",
+  "recorded_utc": "2026-10-08T16:01:29.468927+00:00",
+  "schema_version": 1
+}

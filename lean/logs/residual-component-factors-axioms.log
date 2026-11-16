@@ -1,0 +1,21 @@
+'UploadBroadcast.ResidualComponentAdditivity.ActiveResidual.directSum_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.ActiveResidual.directSum_right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.zero_excess_directSum_factors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.ActiveResidual.product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.zero_excess_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.spanning_side_dimension_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualComponentAdditivity.spanning_zero_excess_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

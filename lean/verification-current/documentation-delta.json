@@ -1,0 +1,47 @@
+{
+  "changes": [
+    {
+      "after_sha256": "365418863a35dc80ab45241a485758c8bcad7fe1b90c95c006a225bd3a9820ba",
+      "before_sha256": "221c46162e46a85278135d8bab14600db04a92fca431d6b29c77072e6acb18b1",
+      "category": "documentation_or_nonproof_evidence_only",
+      "path": "README.md"
+    },
+    {
+      "after_sha256": "e507a0cd8de673612646c566f27f6a5567d30c3813409b466c5c604f19dc12dd",
+      "before_sha256": "3869f12eea4606de5a29d90ca4d2dbfc582744c1f852b0554e52525148871013",
+      "category": "documentation_or_nonproof_evidence_only",
+      "path": ".gitignore"
+    },
+    {
+      "after_sha256": "fbd5b63d75bb81e559313941d1d9ab5a3dbb7efb68fd86b709cbbcc8496c0ae3",
+      "before_sha256": "5ff764db25c1a7ab61d054b183986b1fbe6794dc0d9fd06af6e4d9b6d9c71488",
+      "category": "documentation_or_nonproof_evidence_only",
+      "path": "docs/QUICKSTART.md"
+    },
+    {
+      "after_sha256": "36cd59ea8c3c48362866802438563079c52c992947f24ff2fc2aae840eb9e765",
+      "before_sha256": "16150769271d43cbb29911cc9d89220f47751eb1441c1d0b45e2a0938f68daa8",
+      "category": "documentation_or_nonproof_evidence_only",
+      "path": "docs/REPRODUCIBILITY.md"
+    },
+    {
+      "after_sha256": "6e071eb986387db45d3c599230aad7b434d2de738106a0a952743e93241763f2",
+      "before_sha256": "2122c0cc6693e5ed2d645fbc72ff896d41ae7f8ac141f6431a9896a42e5aa0cb",
+      "category": "documentation_or_nonproof_evidence_only",
+      "path": "verification/cited-entropy-evidence-20261008.json"
+    },
+    {
+      "after_sha256": "a918835b5a8986a7259709e23237f4bc32c79bcc5564c72ccdccc98f03a18636",
+      "before_sha256": null,
+      "category": "documentation_or_nonproof_evidence_only",
+      "path": "verification-results/historical-coverage-20261008.json"
+    },
+    {
+      "after_sha256": "1ce841cd281849da40d4cd1ae9ed59bceffba803fb288a6feac4402bdf1492de",
+      "before_sha256": "36cd59ea8c3c48362866802438563079c52c992947f24ff2fc2aae840eb9e765",
+      "category": "documentation_only_private_gate_scope_clarification",
+      "path": "docs/REPRODUCIBILITY.md"
+    }
+  ],
+  "formal_inputs_unchanged": true
+}

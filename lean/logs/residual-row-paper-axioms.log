@@ -1,0 +1,9 @@
+'UploadBroadcast.ResidualRowShape.exists_exact_row_completion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.ResidualRowShape.row_completion_paper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.ResidualRowShape.canonicalReduction_scalar_upload_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Row-shape axiom audit passed for 38 theorems.
+Complete reachable axiom set: [propext, Quot.sound, Classical.choice]

@@ -1,0 +1,2 @@
+import UploadBroadcast.ResonantRelationReduction
+#print axioms UploadBroadcast.ResonantRelationReduction.boundary_coupling_obstruction

@@ -1,0 +1,152 @@
+UploadBroadcast.ActualBlockGraph.combinedTask.{u_1, u_2, u_3, u_4, u_5, u_6} {K : Type u_1} {I : Type u_2} [Field K]
+  {P₁ : I → Type u_3} {P₂ : I → Type u_4} {P₃ : I → Type u_5} {D : I → Type u_6} [(a : I) → AddCommGroup (P₁ a)]
+  [(a : I) → Module K (P₁ a)] [(a : I) → AddCommGroup (P₂ a)] [(a : I) → Module K (P₂ a)]
+  [(a : I) → AddCommGroup (P₃ a)] [(a : I) → Module K (P₃ a)] [(a : I) → AddCommGroup (D a)] [(a : I) → Module K (D a)]
+  (T : (a : I) → UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient (P₁ a) (P₂ a) (P₃ a) (D a))) :
+  UploadBroadcast.Task K
+    (UploadBroadcast.ResidualUpload.Ambient ((a : I) → P₁ a) ((a : I) → P₂ a) ((a : I) → P₃ a) ((a : I) → D a))
+UploadBroadcast.ActualBlockGraph.combinedData.{u_1, u_2, u_3, u_4, u_5, u_6} {K : Type u_1} {I : Type u_2} [Field K]
+  {P₁ : I → Type u_3} {P₂ : I → Type u_4} {P₃ : I → Type u_5} {D : I → Type u_6} [(a : I) → AddCommGroup (P₁ a)]
+  [(a : I) → Module K (P₁ a)] [(a : I) → AddCommGroup (P₂ a)] [(a : I) → Module K (P₂ a)]
+  [(a : I) → AddCommGroup (P₃ a)] [(a : I) → Module K (P₃ a)] [(a : I) → AddCommGroup (D a)] [(a : I) → Module K (D a)]
+  (T : (a : I) → UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient (P₁ a) (P₂ a) (P₃ a) (D a)))
+  (g : (a : I) → UploadBroadcast.ResidualTaskAssembly.DemandData (T a)) :
+  UploadBroadcast.ResidualTaskAssembly.DemandData (UploadBroadcast.ActualBlockGraph.combinedTask T)
+UploadBroadcast.ActualBlockGraph.incidence_conjugacy.{u_1, u_2, u_3, u_4, u_5, u_6} {K : Type u_1} {I : Type u_2}
+  [Field K] {P₁ : I → Type u_3} {P₂ : I → Type u_4} {P₃ : I → Type u_5} {D : I → Type u_6}
+  [(a : I) → AddCommGroup (P₁ a)] [(a : I) → Module K (P₁ a)] [(a : I) → AddCommGroup (P₂ a)]
+  [(a : I) → Module K (P₂ a)] [(a : I) → AddCommGroup (P₃ a)] [(a : I) → Module K (P₃ a)] [(a : I) → AddCommGroup (D a)]
+  [(a : I) → Module K (D a)]
+  (T : (a : I) → UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient (P₁ a) (P₂ a) (P₃ a) (D a))) :
+  ↑UploadBroadcast.ActualBlockGraph.tripleChart ∘ₗ UploadBroadcast.ActualBlockGraph.actualB T =
+    UploadBroadcast.BlockGraphDirectSum.blocks (UploadBroadcast.BlockGraphDirectSum.componentB T) ∘ₗ
+      ↑(UploadBroadcast.ActualBlockGraph.relationChart T)
+UploadBroadcast.ActualBlockGraph.graph_conjugacy.{u_1, u_2, u_3, u_4, u_5, u_6} {K : Type u_1} {I : Type u_2} [Field K]
+  {P₁ : I → Type u_3} {P₂ : I → Type u_4} {P₃ : I → Type u_5} {D : I → Type u_6} [(a : I) → AddCommGroup (P₁ a)]
+  [(a : I) → Module K (P₁ a)] [(a : I) → AddCommGroup (P₂ a)] [(a : I) → Module K (P₂ a)]
+  [(a : I) → AddCommGroup (P₃ a)] [(a : I) → Module K (P₃ a)] [(a : I) → AddCommGroup (D a)] [(a : I) → Module K (D a)]
+  (T : (a : I) → UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient (P₁ a) (P₂ a) (P₃ a) (D a)))
+  (g : (a : I) → UploadBroadcast.ResidualTaskAssembly.DemandData (T a)) :
+  ↑(UploadBroadcast.ActualBlockGraph.actualQuotientChart T) ∘ₗ UploadBroadcast.ActualBlockGraph.actualG T g =
+    UploadBroadcast.BlockGraphDirectSum.blocks (UploadBroadcast.BlockGraphDirectSum.componentG T g) ∘ₗ
+      ↑(UploadBroadcast.ActualBlockGraph.relationChart T)
+UploadBroadcast.ActualBlockGraph.G0_direct_sum.{u_1, u_2, u_3, u_4, u_5, u_6} {K : Type u_1} {I : Type u_2} [Field K]
+  {P₁ : I → Type u_3} {P₂ : I → Type u_4} {P₃ : I → Type u_5} {D : I → Type u_6} [(a : I) → AddCommGroup (P₁ a)]
+  [(a : I) → Module K (P₁ a)] [(a : I) → AddCommGroup (P₂ a)] [(a : I) → Module K (P₂ a)]
+  [(a : I) → AddCommGroup (P₃ a)] [(a : I) → Module K (P₃ a)] [(a : I) → AddCommGroup (D a)] [(a : I) → Module K (D a)]
+  (T : (a : I) → UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient (P₁ a) (P₂ a) (P₃ a) (D a)))
+  (g : (a : I) → UploadBroadcast.ResidualTaskAssembly.DemandData (T a)) :
+  ↑(UploadBroadcast.ActualBlockGraph.actualQuotientChart T) ∘ₗ UploadBroadcast.ActualBlockGraph.actualG0 T g =
+    UploadBroadcast.BlockGraphDirectSum.blocks (UploadBroadcast.BlockGraphDirectSum.componentG0 T g) ∘ₗ
+      ↑(UploadBroadcast.ActualBlockGraph.actualKernelChart T)
+UploadBroadcast.ActualBlockGraph.mixed_rank_additive.{u_1, u_2, u_3, u_4, u_5, u_6} {K : Type u_1} {I : Type u_2}
+  [Field K] {P₁ : I → Type u_3} {P₂ : I → Type u_4} {P₃ : I → Type u_5} {D : I → Type u_6}
+  [(a : I) → AddCommGroup (P₁ a)] [(a : I) → Module K (P₁ a)] [(a : I) → AddCommGroup (P₂ a)]
+  [(a : I) → Module K (P₂ a)] [(a : I) → AddCommGroup (P₃ a)] [(a : I) → Module K (P₃ a)] [(a : I) → AddCommGroup (D a)]
+  [(a : I) → Module K (D a)]
+  (T : (a : I) → UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient (P₁ a) (P₂ a) (P₃ a) (D a)))
+  (g : (a : I) → UploadBroadcast.ResidualTaskAssembly.DemandData (T a)) [Fintype I]
+  [∀ (a : I), FiniteDimensional K (D a)] :
+  Module.finrank K
+      ↥(Submodule.map
+          ((UploadBroadcast.ActualBlockGraph.actualPureSum T).mkQ ∘ₗ
+            (UploadBroadcast.ActualBlockGraph.combinedData T g).relationRows)
+          (LinearMap.ker UploadBroadcast.ResidualTaskAssembly.DemandData.incidence)) =
+    ∑ a,
+      Module.finrank K
+        ↥(Submodule.map ((UploadBroadcast.BlockGraphDirectSum.pureSum T a).mkQ ∘ₗ (g a).relationRows)
+            (LinearMap.ker UploadBroadcast.ResidualTaskAssembly.DemandData.incidence))
+UploadBroadcast.ActualBlockGraph.common_rank_additive.{u_1, u_2, u_3, u_4, u_5, u_6} {K : Type u_1} {I : Type u_2}
+  [Field K] {P₁ : I → Type u_3} {P₂ : I → Type u_4} {P₃ : I → Type u_5} {D : I → Type u_6}
+  [(a : I) → AddCommGroup (P₁ a)] [(a : I) → Module K (P₁ a)] [(a : I) → AddCommGroup (P₂ a)]
+  [(a : I) → Module K (P₂ a)] [(a : I) → AddCommGroup (P₃ a)] [(a : I) → Module K (P₃ a)] [(a : I) → AddCommGroup (D a)]
+  [(a : I) → Module K (D a)]
+  (T : (a : I) → UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient (P₁ a) (P₂ a) (P₃ a) (D a))) [Fintype I]
+  [∀ (a : I), FiniteDimensional K (D a)] :
+  Module.finrank K
+      ↥(UploadBroadcast.ResidualTaskAssembly.pureRows₁ (UploadBroadcast.ActualBlockGraph.combinedTask T) ⊓
+            UploadBroadcast.ResidualTaskAssembly.pureRows₂ (UploadBroadcast.ActualBlockGraph.combinedTask T) ⊓
+          UploadBroadcast.ResidualTaskAssembly.pureRows₃ (UploadBroadcast.ActualBlockGraph.combinedTask T)) =
+    ∑ a,
+      Module.finrank K
+        ↥(UploadBroadcast.ResidualTaskAssembly.pureRows₁ (T a) ⊓ UploadBroadcast.ResidualTaskAssembly.pureRows₂ (T a) ⊓
+            UploadBroadcast.ResidualTaskAssembly.pureRows₃ (T a))
+UploadBroadcast.ActualBlockGraph.pure_rank_additive.{u_1, u_2, u_3, u_4, u_5, u_6} {K : Type u_1} {I : Type u_2}
+  [Field K] {P₁ : I → Type u_3} {P₂ : I → Type u_4} {P₃ : I → Type u_5} {D : I → Type u_6}
+  [(a : I) → AddCommGroup (P₁ a)] [(a : I) → Module K (P₁ a)] [(a : I) → AddCommGroup (P₂ a)]
+  [(a : I) → Module K (P₂ a)] [(a : I) → AddCommGroup (P₃ a)] [(a : I) → Module K (P₃ a)] [(a : I) → AddCommGroup (D a)]
+  [(a : I) → Module K (D a)]
+  (T : (a : I) → UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient (P₁ a) (P₂ a) (P₃ a) (D a))) [Fintype I]
+  [∀ (a : I), FiniteDimensional K (D a)] :
+  Module.finrank K ↥(UploadBroadcast.ActualBlockGraph.actualPureSum T) -
+      Module.finrank K
+        ↥(UploadBroadcast.ResidualTaskAssembly.pureRows₁ (UploadBroadcast.ActualBlockGraph.combinedTask T) ⊓
+              UploadBroadcast.ResidualTaskAssembly.pureRows₂ (UploadBroadcast.ActualBlockGraph.combinedTask T) ⊓
+            UploadBroadcast.ResidualTaskAssembly.pureRows₃ (UploadBroadcast.ActualBlockGraph.combinedTask T)) =
+    ∑ a,
+      (Module.finrank K ↥(UploadBroadcast.BlockGraphDirectSum.pureSum T a) -
+        Module.finrank K
+          ↥(UploadBroadcast.ResidualTaskAssembly.pureRows₁ (T a) ⊓
+                UploadBroadcast.ResidualTaskAssembly.pureRows₂ (T a) ⊓
+              UploadBroadcast.ResidualTaskAssembly.pureRows₃ (T a)))
+UploadBroadcast.ActualBlockGraph.tripod_rank_additive.{u_1, u_2, u_3, u_4, u_5, u_6} {K : Type u_1} {I : Type u_2}
+  [Field K] {P₁ : I → Type u_3} {P₂ : I → Type u_4} {P₃ : I → Type u_5} {D : I → Type u_6}
+  [(a : I) → AddCommGroup (P₁ a)] [(a : I) → Module K (P₁ a)] [(a : I) → AddCommGroup (P₂ a)]
+  [(a : I) → Module K (P₂ a)] [(a : I) → AddCommGroup (P₃ a)] [(a : I) → Module K (P₃ a)] [(a : I) → AddCommGroup (D a)]
+  [(a : I) → Module K (D a)]
+  (T : (a : I) → UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient (P₁ a) (P₂ a) (P₃ a) (D a)))
+  (g : (a : I) → UploadBroadcast.ResidualTaskAssembly.DemandData (T a)) [Fintype I]
+  [∀ (a : I), FiniteDimensional K (D a)] :
+  Module.finrank K ↥(UploadBroadcast.ActualBlockGraph.actualPureSum T) -
+        Module.finrank K
+          ↥(UploadBroadcast.ResidualTaskAssembly.pureRows₁ (UploadBroadcast.ActualBlockGraph.combinedTask T) ⊓
+                UploadBroadcast.ResidualTaskAssembly.pureRows₂ (UploadBroadcast.ActualBlockGraph.combinedTask T) ⊓
+              UploadBroadcast.ResidualTaskAssembly.pureRows₃ (UploadBroadcast.ActualBlockGraph.combinedTask T)) +
+      Module.finrank K
+        ↥(Submodule.map (UploadBroadcast.ActualBlockGraph.actualG T g)
+            (LinearMap.ker (UploadBroadcast.ActualBlockGraph.actualB T))) =
+    ∑ a,
+      (Module.finrank K ↥(UploadBroadcast.BlockGraphDirectSum.pureSum T a) -
+          Module.finrank K
+            ↥(UploadBroadcast.ResidualTaskAssembly.pureRows₁ (T a) ⊓
+                  UploadBroadcast.ResidualTaskAssembly.pureRows₂ (T a) ⊓
+                UploadBroadcast.ResidualTaskAssembly.pureRows₃ (T a)) +
+        Module.finrank K
+          ↥(Submodule.map (UploadBroadcast.BlockGraphDirectSum.componentG T g a)
+              (LinearMap.ker (UploadBroadcast.BlockGraphDirectSum.componentB T a))))
+UploadBroadcast.UploadParameterDirectSum.private_dimension_additive.{u_1, u_2, u_3, u_4, u_5, u_6} {K : Type u_1}
+  {I : Type u_2} [Field K] {P₁ : I → Type u_3} {P₂ : I → Type u_4} {P₃ : I → Type u_5} {D : I → Type u_6}
+  [(a : I) → AddCommGroup (P₁ a)] [(a : I) → Module K (P₁ a)] [(a : I) → AddCommGroup (P₂ a)]
+  [(a : I) → Module K (P₂ a)] [(a : I) → AddCommGroup (P₃ a)] [(a : I) → Module K (P₃ a)] [(a : I) → AddCommGroup (D a)]
+  [(a : I) → Module K (D a)]
+  (T : (a : I) → UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient (P₁ a) (P₂ a) (P₃ a) (D a))) [Fintype I]
+  [∀ (a : I), FiniteDimensional K (P₁ a)] [∀ (a : I), FiniteDimensional K (P₂ a)]
+  [∀ (a : I), FiniteDimensional K (P₃ a)] :
+  UploadBroadcast.ResidualTaskAssembly.privateDimension (UploadBroadcast.ActualBlockGraph.combinedTask T) =
+    ∑ a, UploadBroadcast.ResidualTaskAssembly.privateDimension (T a)
+UploadBroadcast.UploadParameterDirectSum.arbitrary_chart_ranks.{u_1, u_2, u_3, u_4, u_5, u_6} {K : Type u_1}
+  {I : Type u_2} [Field K] {P₁ : I → Type u_3} {P₂ : I → Type u_4} {P₃ : I → Type u_5} {D : I → Type u_6}
+  [(a : I) → AddCommGroup (P₁ a)] [(a : I) → Module K (P₁ a)] [(a : I) → AddCommGroup (P₂ a)]
+  [(a : I) → Module K (P₂ a)] [(a : I) → AddCommGroup (P₃ a)] [(a : I) → Module K (P₃ a)] [(a : I) → AddCommGroup (D a)]
+  [(a : I) → Module K (D a)]
+  (T : (a : I) → UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient (P₁ a) (P₂ a) (P₃ a) (D a))) [Fintype I]
+  [∀ (a : I), FiniteDimensional K (P₁ a)] [∀ (a : I), FiniteDimensional K (P₂ a)]
+  [∀ (a : I), FiniteDimensional K (P₃ a)] [∀ (a : I), FiniteDimensional K (D a)]
+  (c : (UploadBroadcast.ActualBlockGraph.combinedTask T).PrivateTripodChart) (d : (a : I) → (T a).PrivateTripodChart) :
+  c.privateDimension = ∑ a, (d a).privateDimension ∧
+    c.commonDimension = ∑ a, (d a).commonDimension ∧ c.pureDimension = ∑ a, (d a).pureDimension
+UploadBroadcast.IntrinsicUploadDirectSums.activePairRank_additive.{u_1, u_2, u_3} {K : Type u_1} {I : Type u_2}
+  {F : I → Type u_3} [Field K] [Fintype I] [(a : I) → AddCommGroup (F a)] [(a : I) → Module K (F a)]
+  [∀ (a : I), FiniteDimensional K (F a)] (T : (a : I) → UploadBroadcast.Task K (F a)) (i : UploadBroadcast.Three) :
+  (UploadBroadcast.FiniteRelayAssembly.task T).intrinsicActivePairRank i = ∑ a, (T a).intrinsicActivePairRank i
+'UploadBroadcast.ActualBlockGraph.G0_direct_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.ActualBlockGraph.mixed_rank_additive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.ActualBlockGraph.tripod_rank_additive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.UploadParameterDirectSum.private_dimension_additive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.IntrinsicUploadDirectSums.activePairRank_additive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Axiom audit passed for 2540 imported project theorems.
+Complete reachable axiom set: [propext, Quot.sound, Classical.choice]

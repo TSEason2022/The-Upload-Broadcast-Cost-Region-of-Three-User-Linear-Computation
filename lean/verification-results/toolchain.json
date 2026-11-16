@@ -1,0 +1,13 @@
+{
+  "executable_sha256": {
+    "lake": "5111aee5c9434ab05d4265606475ef22e8bda69aaf3a0657b61a7eec6e550bed",
+    "lean": "92c3d35b5bfaa5e0fea413a775d504cf46cd95e1345df61c2274f76779e7e023"
+  },
+  "inherited_import_path_overrides": false,
+  "lake_version": "Lake version 5.0.0-6caaee8 (Lean version 4.19.0)",
+  "lean_githash": "6caaee842e9495688c1567e78c0e68dbb96942aa",
+  "lean_toolchain": "leanprover/lean4:v4.19.0",
+  "lean_version": "4.19.0",
+  "note": "Executable hashes identify launcher binaries, not every linked runtime/library byte. Compiler and dependency provenance remain part of the trust boundary.",
+  "schema_version": 1
+}

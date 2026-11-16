@@ -1,0 +1,13 @@
+import UploadBroadcast.OriginalUploadCanonical
+import UploadBroadcast.PairReductionRanks
+#print axioms UploadBroadcast.PassiveRetraction.trans
+#print axioms UploadBroadcast.Task.pairCanonicalRetraction
+#print axioms UploadBroadcast.ResidualTaskAssembly.splitActiveRetraction
+#print axioms UploadBroadcast.ResidualTaskAssembly.finalResidual_zero_common
+#print axioms UploadBroadcast.ResidualTaskAssembly.finalResidual_fully_used
+#print axioms UploadBroadcast.ResidualTaskAssembly.finalRows_finrank
+#print axioms UploadBroadcast.ResidualTaskAssembly.tripodDimension_eq_stacked_rank
+#print axioms UploadBroadcast.ResidualTaskAssembly.finalCanonical_uploadOptimum
+#print axioms UploadBroadcast.ResidualTaskAssembly.finalCanonical_two_instance
+#print axioms UploadBroadcast.ResidualTaskAssembly.finalCanonical_scalar
+#print axioms UploadBroadcast.Task.preResidual_pairKnown_finrank

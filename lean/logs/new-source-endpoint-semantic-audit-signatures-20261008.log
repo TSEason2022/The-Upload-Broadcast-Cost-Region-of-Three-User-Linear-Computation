@@ -1,0 +1,353 @@
+UploadBroadcast.Task.minimum_upload.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [Finite K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) : T.uploadOptimum = T.minimumUploadFormula
+'UploadBroadcast.Task.minimum_upload' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Task.minimum_upload_source_formula.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [Finite K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  let d₀ := ↑T.pairFreeChart.commonDimension + ↑(T.intrinsicActivePairRank 0);
+  let d₁ := ↑T.pairFreeChart.commonDimension + ↑(T.intrinsicActivePairRank 1);
+  let d₂ := ↑T.pairFreeChart.commonDimension + ↑(T.intrinsicActivePairRank 2);
+  T.uploadOptimum =
+    ↑T.pairFreeChart.privateDimension + ↑T.pairFreeChart.tripodDimension + max (max d₀ (max d₁ d₂)) ((d₀ + d₁ + d₂) / 2)
+'UploadBroadcast.Task.minimum_upload_source_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Task.minimum_upload_attainment.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [Finite K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  ∃ L r b c,
+    (L = 1 ∨ L = 2) ∧
+      ((∃ n, ↑n = T.uploadOmniscienceValue) ↔ L = 1) ∧
+        ↑(∑ i, r i) / ↑L = T.minimumUploadFormula ∧ c.toCode.uploadCost = T.minimumUploadFormula
+'UploadBroadcast.Task.minimum_upload_attainment' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Task.minimum_upload_scalar_of_integral.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [Finite K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F)
+  (h : ∃ z, ↑z = T.uploadOmniscienceValue) :
+  ∃ r b c, ↑(∑ i, r i) = T.minimumUploadFormula ∧ c.toCode.uploadCost = T.minimumUploadFormula
+'UploadBroadcast.Task.minimum_upload_scalar_of_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Task.minimum_upload_two_instance.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [Finite K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  ∃ r b c, ↑(∑ i, r i) / 2 = T.minimumUploadFormula ∧ c.toCode.uploadCost = T.minimumUploadFormula
+'UploadBroadcast.Task.minimum_upload_two_instance' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Task.minimum_upload_closed_lower.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [Finite K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) {b : ℝ × ℝ}
+  (hb : b ∈ T.costRegion) : T.minimumUploadFormula ≤ b.1
+'UploadBroadcast.Task.minimum_upload_closed_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Task.uploadOmniscienceValue_eq.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  let d₀ := ↑T.pairFreeChart.commonDimension + ↑(T.intrinsicActivePairRank 0);
+  let d₁ := ↑T.pairFreeChart.commonDimension + ↑(T.intrinsicActivePairRank 1);
+  let d₂ := ↑T.pairFreeChart.commonDimension + ↑(T.intrinsicActivePairRank 2);
+  T.uploadOmniscienceValue = max (max d₀ (max d₁ d₂)) ((d₀ + d₁ + d₂) / 2)
+'UploadBroadcast.Task.uploadOmniscienceValue_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Task.preResidual_pairKnown_finrank.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) (i : UploadBroadcast.Three) :
+  Module.finrank K ↥(T.preResidual.pairKnown i) = T.intrinsicActivePairRank i
+'UploadBroadcast.Task.preResidual_pairKnown_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.ResidualTaskAssembly.tripodDimension_eq_pure_mixed.{u_1, u_2, u_3, u_4, u_5} {K : Type u_1}
+  {P₁ : Type u_2} {P₂ : Type u_3} {P₃ : Type u_4} {D : Type u_5} [Field K] [AddCommGroup P₁] [Module K P₁]
+  [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D] [FiniteDimensional K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D) :
+  let t := UploadBroadcast.ResidualTaskAssembly.privateTrim task;
+  let g := UploadBroadcast.ResidualTaskAssembly.selectedTrimData task h₀ h₁ h₂;
+  let S :=
+    UploadBroadcast.ResidualTaskAssembly.pureRows₁ t ⊔ UploadBroadcast.ResidualTaskAssembly.pureRows₂ t ⊔
+      UploadBroadcast.ResidualTaskAssembly.pureRows₃ t;
+  UploadBroadcast.ResidualTaskAssembly.tripodDimension task h₀ h₁ h₂ =
+    Module.finrank K ↥S - UploadBroadcast.ResidualTaskAssembly.commonDimension task +
+      Module.finrank K
+        ↥(Submodule.map (S.mkQ ∘ₗ g.relationRows)
+            (LinearMap.ker UploadBroadcast.ResidualTaskAssembly.DemandData.incidence))
+'UploadBroadcast.ResidualTaskAssembly.tripodDimension_eq_pure_mixed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualTaskAssembly.tripodDimension_eq_stacked_rank.{u_1, u_2, u_3, u_4, u_5} {K : Type u_1}
+  {P₁ : Type u_2} {P₂ : Type u_3} {P₃ : Type u_4} {D : Type u_5} [Field K] [AddCommGroup P₁] [Module K P₁]
+  [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D] [FiniteDimensional K P₁]
+  [FiniteDimensional K P₂] [FiniteDimensional K P₃] [FiniteDimensional K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D) :
+  let t := UploadBroadcast.ResidualTaskAssembly.privateTrim task;
+  let g := UploadBroadcast.ResidualTaskAssembly.selectedTrimData task h₀ h₁ h₂;
+  let S :=
+    UploadBroadcast.ResidualTaskAssembly.pureRows₁ t ⊔ UploadBroadcast.ResidualTaskAssembly.pureRows₂ t ⊔
+      UploadBroadcast.ResidualTaskAssembly.pureRows₃ t;
+  UploadBroadcast.ResidualTaskAssembly.tripodDimension task h₀ h₁ h₂ =
+    Module.finrank K ↥S - UploadBroadcast.ResidualTaskAssembly.commonDimension task +
+      (Module.finrank K
+          ↥(LinearMap.range
+              (UploadBroadcast.ResidualTaskAssembly.DemandData.incidence.prod (S.mkQ ∘ₗ g.relationRows))) -
+        Module.finrank K ↥(LinearMap.range UploadBroadcast.ResidualTaskAssembly.DemandData.incidence))
+'UploadBroadcast.ResidualTaskAssembly.tripodDimension_eq_stacked_rank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualTaskAssembly.finalRows_finrank.{u_1, u_2, u_3, u_4, u_5} {K : Type u_1} {P₁ : Type u_2}
+  {P₂ : Type u_3} {P₃ : Type u_4} {D : Type u_5} [Field K] [AddCommGroup P₁] [Module K P₁] [AddCommGroup P₂]
+  [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D] [FiniteDimensional K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D) :
+  Module.finrank K ↥(UploadBroadcast.ResidualTaskAssembly.finalDemandData task h₀ h₁ h₂).activeRows =
+    UploadBroadcast.ResidualTaskAssembly.tripodDimension task h₀ h₁ h₂
+'UploadBroadcast.ResidualTaskAssembly.finalRows_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Task.pairCanonicalRetraction.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [AddCommGroup F]
+  [Module K F] (T : UploadBroadcast.Task K F) :
+  UploadBroadcast.PassiveRetraction T (UploadBroadcast.Profile.directSum T.pairOmniscienceFactor T.pairFreeChart.toTask)
+'UploadBroadcast.Task.pairCanonicalRetraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.OriginalUpload.reduction.{u_1, u_2, u_3, u_4, u_5, u_6} {K : Type u_1} {F : Type u_2} {P₁ : Type u_3}
+  {P₂ : Type u_4} {P₃ : Type u_5} {D : Type u_6} [Field K] [AddCommGroup F] [Module K F] [AddCommGroup P₁] [Module K P₁]
+  [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D]
+  {pair : UploadBroadcast.Task K F} (s : pair.ActivePairSelection)
+  (hactive : ∀ (i : UploadBroadcast.Three), pair.pairKnown i ≤ pair.U i)
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D) :
+  UploadBroadcast.PassiveRetraction (UploadBroadcast.Profile.directSum s.pairOmniscienceTask task)
+    (UploadBroadcast.Profile.directSum UploadBroadcast.OmniscienceOperational.task
+      (UploadBroadcast.ResidualTaskAssembly.finalResidual task h₀ h₁ h₂))
+'UploadBroadcast.OriginalUpload.reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.ConditionedResidualBridges.canonicalResidualGeometry.{u_1, u_4, u_5, u_6, u_7} {K : Type u_1}
+  {P₁ : Type u_4} {P₂ : Type u_5} {P₃ : Type u_6} {D : Type u_7} [Field K] [AddCommGroup P₁] [Module K P₁]
+  [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D) :
+  UploadBroadcast.GlobalUploadGeometry.ResidualGeometry
+    (UploadBroadcast.ResidualTaskAssembly.canonicalReduction task h₀ h₁ h₂)
+'UploadBroadcast.ConditionedResidualBridges.canonicalResidualGeometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ConditionedResidualBridges.canonicalReduction_all_tripod_bridges.{u_1, u_4, u_5, u_6, u_7}
+  {K : Type u_1} {P₁ : Type u_4} {P₂ : Type u_5} {P₃ : Type u_6} {D : Type u_7} [Field K] [AddCommGroup P₁]
+  [Module K P₁] [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D) :
+  let res := UploadBroadcast.ResidualTaskAssembly.canonicalReduction task h₀ h₁ h₂;
+  let a := UploadBroadcast.ResidualTaskAssembly.canonicalReductionBridge task h₀ h₁ h₂;
+  LinearMap.range a.v ⊔ LinearMap.range a.r ≤ res.U 2 ⊔ res.U 0 ⊓ res.U 1 ∧
+    LinearMap.range a.v ⊔ LinearMap.range a.r ≤ res.U 1 ⊔ res.U 2 ⊓ res.U 0 ∧
+      LinearMap.range a.v ⊔ LinearMap.range a.r ≤ res.U 0 ⊔ res.U 1 ⊓ res.U 2
+'UploadBroadcast.ConditionedResidualBridges.canonicalReduction_all_tripod_bridges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ConditionedResidualBridges.canonicalReduction_conditioned_retained_bounds.{u_1, u_2, u_4, u_5, u_6, u_7,
+    u_8, u_9}
+  {K : Type u_1} {E : Type u_2} {P₁ : Type u_4} {P₂ : Type u_5} {P₃ : Type u_6} {D : Type u_7} [Field K]
+  [AddCommGroup E] [Module K E] [AddCommGroup P₁] [Module K P₁] [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃]
+  [Module K P₃] [AddCommGroup D] [Module K D] [Finite K] [FiniteDimensional K E] [FiniteDimensional K P₁]
+  [FiniteDimensional K P₂] [FiniteDimensional K P₃] [FiniteDimensional K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D) {n : ℕ} {M : UploadBroadcast.Three → Type u_8}
+  {B : Type u_9} [(i : UploadBroadcast.Three) → Fintype (M i)] [(i : UploadBroadcast.Three) → MeasurableSpace (M i)]
+  [∀ (i : UploadBroadcast.Three), DiscreteMeasurableSpace (M i)] (om : UploadBroadcast.Task K E)
+  (hom : ∀ (i : UploadBroadcast.Three), om.U i = ⊤)
+  (code :
+    (UploadBroadcast.Profile.directSum om (UploadBroadcast.ResidualTaskAssembly.canonicalReduction task h₀ h₁ h₂)).Code
+      n M B) :
+  let res := UploadBroadcast.ResidualTaskAssembly.canonicalReduction task h₀ h₁ h₂;
+  let μ := ProbabilityTheory.uniformOn Set.univ;
+  let obs := fun A =>
+    UploadBroadcast.observe K (E × UploadBroadcast.ConditionedResidualBridges.CanonicalAmbient task h₀ h₁ h₂) A;
+  let Ω := obs (⊤.prod ⊥);
+  let W := fun i => obs (⊥.prod (res.A i));
+  let msg := fun i x => code.encode i (obs ((om.A i).prod (res.A i)) x);
+  let q := Real.log ↑(Nat.card K);
+  let Γ :=
+    ↑n *
+      (↑(Module.finrank K ↥(UploadBroadcast.ResidualTaskAssembly.used₁ task)) +
+            ↑(Module.finrank K ↥(UploadBroadcast.ResidualTaskAssembly.used₂ task)) +
+          ↑(Module.finrank K ↥(UploadBroadcast.ResidualTaskAssembly.used₃ task)) +
+        ↑(Module.finrank K ↥(UploadBroadcast.ResidualTaskAssembly.selectedTrimData task h₀ h₁ h₂).activeRows));
+  let J :=
+    ![I[msg 1 : msg 2|fun x => (W 0 x, Ω x);μ] / q, I[msg 0 : msg 2|fun x => (W 1 x, Ω x);μ] / q,
+      I[msg 0 : msg 1|fun x => (W 2 x, Ω x);μ] / q];
+  ∀ (i j : UploadBroadcast.Three),
+    i ≠ j → Γ + J i + J j ≤ H[msg 0 | Ω ; μ] / q + H[msg 1 | Ω ; μ] / q + H[msg 2 | Ω ; μ] / q
+'UploadBroadcast.ConditionedResidualBridges.canonicalReduction_conditioned_retained_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.GlobalUploadConverse.code_conditioned_retained_rank_bounds.{u_1, u_2, u_3, u_4} {K : Type u_1}
+  {F : Type u_2} [Field K] [AddCommGroup F] [Module K F] [Finite K] [FiniteDimensional K F] {n : ℕ}
+  {M : UploadBroadcast.Three → Type u_3} {B : Type u_4} [(i : UploadBroadcast.Three) → Fintype (M i)]
+  [(i : UploadBroadcast.Three) → MeasurableSpace (M i)] [∀ (i : UploadBroadcast.Three), DiscreteMeasurableSpace (M i)]
+  (task : UploadBroadcast.Task K F) (g : UploadBroadcast.GlobalUploadConverse.Geometry task) (code : task.Code n M B) :
+  let μ := ProbabilityTheory.uniformOn Set.univ;
+  let obs := fun A => UploadBroadcast.observe K F A;
+  let msg := fun i x => code.encode i (obs (task.A i) x);
+  let q := Real.log ↑(Nat.card K);
+  let Γ :=
+    ↑n *
+      (2 * ↑(Module.finrank K ↥(g.R 0 ⊔ g.R 1 ⊔ g.R 2)) -
+        (↑(Module.finrank K ↥(g.R 0)) + ↑(Module.finrank K ↥(g.R 1)) + ↑(Module.finrank K ↥(g.R 2))));
+  let J :=
+    ![I[msg 1 : msg 2|fun x => (obs (g.R 0) x, obs g.O x);μ] / q,
+      I[msg 0 : msg 2|fun x => (obs (g.R 1) x, obs g.O x);μ] / q,
+      I[msg 0 : msg 1|fun x => (obs (g.R 2) x, obs g.O x);μ] / q];
+  ∀ (i j : UploadBroadcast.Three),
+    i ≠ j → Γ + J i + J j ≤ H[msg 0 | obs g.O ; μ] / q + H[msg 1 | obs g.O ; μ] / q + H[msg 2 | obs g.O ; μ] / q
+'UploadBroadcast.GlobalUploadConverse.code_conditioned_retained_rank_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualRowShape.exists_exact_row_completion.{u_1, u_2, u_3, u_4, u_9} {K : Type u_1} {P₁ : Type u_2}
+  {P₂ : Type u_3} {P₃ : Type u_4} [Field K] [AddCommGroup P₁] [Module K P₁] [AddCommGroup P₂] [Module K P₂]
+  [AddCommGroup P₃] [Module K P₃] {D : Type u_9} [AddCommGroup D] [Module K D] [FiniteDimensional K P₁]
+  [FiniteDimensional K P₂] [FiniteDimensional K P₃] [FiniteDimensional K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D)
+  (hz :
+    UploadBroadcast.ResidualTaskAssembly.pureRows₁ task ⊓ UploadBroadcast.ResidualTaskAssembly.pureRows₂ task ⊓
+        UploadBroadcast.ResidualTaskAssembly.pureRows₃ task =
+      ⊥)
+  (W : Submodule K D)
+  (hSW :
+    IsCompl
+      (UploadBroadcast.ResidualTaskAssembly.pureRows₁ task ⊔ UploadBroadcast.ResidualTaskAssembly.pureRows₂ task ⊔
+        UploadBroadcast.ResidualTaskAssembly.pureRows₃ task)
+      W) :
+  let S :=
+    UploadBroadcast.ResidualTaskAssembly.pureRows₁ task ⊔ UploadBroadcast.ResidualTaskAssembly.pureRows₂ task ⊔
+      UploadBroadcast.ResidualTaskAssembly.pureRows₃ task;
+  ∃ f Prow,
+    let Q :=
+      UploadBroadcast.ResidualRowShape.privateSpace ⊔ Prow ⊔
+        Submodule.map UploadBroadcast.ResidualTaskAssembly.embedV W;
+    (∀ (i : UploadBroadcast.Three), Submodule.map (↑f) (task.A i) = task.A i) ∧
+      (∀ (t : D × D), f (0, t) = (0, t)) ∧
+        (∀ (i : UploadBroadcast.Three), Submodule.map (↑f) (task.U i) ≤ task.A i ⊔ Q) ∧
+          task.LocallyGenerated Q ∧
+            Prow ≤ ⊥.prod (S.prod S) ∧
+              task.LocallyGenerated Prow ∧
+                Module.finrank K ↥Prow = Module.finrank K ↥S ∧
+                  Disjoint Prow (Submodule.map UploadBroadcast.ResidualTaskAssembly.embedV W) ∧
+                    Disjoint UploadBroadcast.ResidualRowShape.privateSpace
+                        (Prow ⊔ Submodule.map UploadBroadcast.ResidualTaskAssembly.embedV W) ∧
+                      Module.finrank K ↥Q =
+                        Module.finrank K P₁ + Module.finrank K P₂ + Module.finrank K P₃ + Module.finrank K ↥S +
+                          Module.finrank K ↥W
+'UploadBroadcast.ResidualRowShape.exists_exact_row_completion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualRowShape.row_completion_paper.{u_1, u_2, u_3, u_4, u_5, u_6} {K : Type u_1} {P₁ : Type u_2}
+  {P₂ : Type u_3} {P₃ : Type u_4} {D : Type u_5} {E : Type u_6} [Field K] [AddCommGroup P₁] [Module K P₁]
+  [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D] [AddCommGroup E]
+  [Module K E] [FiniteDimensional K P₁] [FiniteDimensional K P₂] [FiniteDimensional K P₃] [FiniteDimensional K D]
+  [Finite K] (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D)
+  (hz :
+    UploadBroadcast.ResidualTaskAssembly.pureRows₁ task ⊓ UploadBroadcast.ResidualTaskAssembly.pureRows₂ task ⊓
+        UploadBroadcast.ResidualTaskAssembly.pureRows₃ task =
+      ⊥)
+  (W : Submodule K D)
+  (hSW :
+    IsCompl
+      (UploadBroadcast.ResidualTaskAssembly.pureRows₁ task ⊔ UploadBroadcast.ResidualTaskAssembly.pureRows₂ task ⊔
+        UploadBroadcast.ResidualTaskAssembly.pureRows₃ task)
+      W) :
+  let S :=
+    UploadBroadcast.ResidualTaskAssembly.pureRows₁ task ⊔ UploadBroadcast.ResidualTaskAssembly.pureRows₂ task ⊔
+      UploadBroadcast.ResidualTaskAssembly.pureRows₃ task;
+  let n := Module.finrank K P₁ + Module.finrank K P₂ + Module.finrank K P₃ + Module.finrank K ↥S + Module.finrank K ↥W;
+  ∃ f Prow,
+    let Q :=
+      UploadBroadcast.ResidualRowShape.privateSpace ⊔ Prow ⊔
+        Submodule.map UploadBroadcast.ResidualTaskAssembly.embedV W;
+    (∀ (i : UploadBroadcast.Three), Submodule.map (↑f) (task.A i) = task.A i) ∧
+      (∀ (t : D × D), f (0, t) = (0, t)) ∧
+        (∀ (t : D × D) (z : E), (f.prodCongr (LinearEquiv.refl K E)) ((0, t), z) = ((0, t), z)) ∧
+          (∀ (i : UploadBroadcast.Three), Submodule.map (↑f) (task.U i) ≤ task.A i ⊔ Q) ∧
+            task.LocallyGenerated Q ∧
+              Prow ≤ ⊥.prod (S.prod S) ∧
+                Module.finrank K ↥Prow = Module.finrank K ↥S ∧
+                  (∃ b owner, ∀ (j : Fin (Module.finrank K ↥Prow)), ↑(b j) ∈ task.A (owner j)) ∧
+                    Disjoint Prow (Submodule.map UploadBroadcast.ResidualTaskAssembly.embedV W) ∧
+                      Disjoint UploadBroadcast.ResidualRowShape.privateSpace
+                          (Prow ⊔ Submodule.map UploadBroadcast.ResidualTaskAssembly.embedV W) ∧
+                        Module.finrank K ↥Q = n ∧
+                          ∃ r c, ∑ i, r i = n ∧ c.toCode.uploadCost ≤ ↑n ∧ c.toCode.broadcastCost ≤ ↑n
+'UploadBroadcast.ResidualRowShape.row_completion_paper' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.ResidualRowShape.canonicalReduction_scalar_upload_exact.{u_1, u_2, u_3, u_4, u_5} {K : Type u_1}
+  {P₁ : Type u_2} {P₂ : Type u_3} {P₃ : Type u_4} {D : Type u_5} [Field K] [Finite K] [AddCommGroup P₁] [Module K P₁]
+  [AddCommGroup P₂] [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D] [FiniteDimensional K P₁]
+  [FiniteDimensional K P₂] [FiniteDimensional K P₃] [FiniteDimensional K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D)
+  (hz :
+    UploadBroadcast.ResidualTaskAssembly.pureRows₁ task ⊓ UploadBroadcast.ResidualTaskAssembly.pureRows₂ task ⊓
+        UploadBroadcast.ResidualTaskAssembly.pureRows₃ task =
+      ⊥) :
+  let res := UploadBroadcast.ResidualTaskAssembly.canonicalReduction task h₀ h₁ h₂;
+  let d :=
+    Module.finrank K ↥(UploadBroadcast.ResidualTaskAssembly.used₁ task) +
+          Module.finrank K ↥(UploadBroadcast.ResidualTaskAssembly.used₂ task) +
+        Module.finrank K ↥(UploadBroadcast.ResidualTaskAssembly.used₃ task) +
+      Module.finrank K ↥(UploadBroadcast.ResidualTaskAssembly.selectedTrimData task h₀ h₁ h₂).activeRows;
+  ∃ r c, ∑ i, r i = d ∧ c.toCode.uploadCost = ↑d ∧ c.toCode.broadcastCost ≤ ↑d
+'UploadBroadcast.ResidualRowShape.canonicalReduction_scalar_upload_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualTaskAssembly.finalResidual_zero_common.{u_1, u_5, u_6, u_7, u_8} {K : Type u_1} [Field K]
+  {P₁ : Type u_5} {P₂ : Type u_6} {P₃ : Type u_7} {D : Type u_8} [AddCommGroup P₁] [Module K P₁] [AddCommGroup P₂]
+  [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D) :
+  UploadBroadcast.ResidualTaskAssembly.pureRows₁ (UploadBroadcast.ResidualTaskAssembly.finalResidual task h₀ h₁ h₂) ⊓
+        UploadBroadcast.ResidualTaskAssembly.pureRows₂
+          (UploadBroadcast.ResidualTaskAssembly.finalResidual task h₀ h₁ h₂) ⊓
+      UploadBroadcast.ResidualTaskAssembly.pureRows₃
+        (UploadBroadcast.ResidualTaskAssembly.finalResidual task h₀ h₁ h₂) =
+    ⊥
+'UploadBroadcast.ResidualTaskAssembly.finalResidual_zero_common' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualTaskAssembly.finalResidual_fully_used.{u_1, u_5, u_6, u_7, u_8} {K : Type u_1} [Field K]
+  {P₁ : Type u_5} {P₂ : Type u_6} {P₃ : Type u_7} {D : Type u_8} [AddCommGroup P₁] [Module K P₁] [AddCommGroup P₂]
+  [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D) :
+  UploadBroadcast.ResidualTaskAssembly.used₁ (UploadBroadcast.ResidualTaskAssembly.finalResidual task h₀ h₁ h₂) = ⊤ ∧
+    UploadBroadcast.ResidualTaskAssembly.used₂ (UploadBroadcast.ResidualTaskAssembly.finalResidual task h₀ h₁ h₂) = ⊤ ∧
+      UploadBroadcast.ResidualTaskAssembly.used₃ (UploadBroadcast.ResidualTaskAssembly.finalResidual task h₀ h₁ h₂) = ⊤
+'UploadBroadcast.ResidualTaskAssembly.finalResidual_fully_used' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UploadBroadcast.ResidualTaskAssembly.canonicalRetraction.{u_1, u_5, u_6, u_7, u_8} {K : Type u_1} [Field K]
+  {P₁ : Type u_5} {P₂ : Type u_6} {P₃ : Type u_7} {D : Type u_8} [AddCommGroup P₁] [Module K P₁] [AddCommGroup P₂]
+  [Module K P₂] [AddCommGroup P₃] [Module K P₃] [AddCommGroup D] [Module K D]
+  (task : UploadBroadcast.Task K (UploadBroadcast.ResidualUpload.Ambient P₁ P₂ P₃ D))
+  (h₀ : task.A 0 = UploadBroadcast.ResidualUpload.A₁ K P₁ P₂ P₃ D)
+  (h₁ : task.A 1 = UploadBroadcast.ResidualUpload.A₂ K P₁ P₂ P₃ D)
+  (h₂ : task.A 2 = UploadBroadcast.ResidualUpload.A₃ K P₁ P₂ P₃ D) :
+  UploadBroadcast.PassiveRetraction task (UploadBroadcast.ResidualTaskAssembly.canonicalReduction task h₀ h₁ h₂)
+'UploadBroadcast.ResidualTaskAssembly.canonicalRetraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.PassiveRetraction.restoreLinear.{u_1, u_2, u_3} {K : Type u_1} {F : Type u_2} {V : Type u_3} [Field K]
+  [AddCommGroup F] [Module K F] [AddCommGroup V] [Module K V] {T : UploadBroadcast.Task K F}
+  {R : UploadBroadcast.Task K V} (r : UploadBroadcast.PassiveRetraction T R) {L : ℕ} {a : UploadBroadcast.Three → ℕ}
+  {b : ℕ} (c : R.LinearCode L a b) : T.LinearCode L a b
+'UploadBroadcast.PassiveRetraction.restoreLinear' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.PassiveRetraction.restoreLinear_costs.{u_1, u_2, u_3} {K : Type u_1} {F : Type u_2} {V : Type u_3}
+  [Field K] [AddCommGroup F] [Module K F] [AddCommGroup V] [Module K V] {T : UploadBroadcast.Task K F}
+  {R : UploadBroadcast.Task K V} (r : UploadBroadcast.PassiveRetraction T R) {L : ℕ} {a : UploadBroadcast.Three → ℕ}
+  {b : ℕ} [Finite K] [FiniteDimensional K F] [FiniteDimensional K V] (c : R.LinearCode L a b) :
+  (r.restoreLinear c).toCode.uploadCost ≤ c.toCode.uploadCost ∧
+    (r.restoreLinear c).toCode.broadcastCost ≤ c.toCode.broadcastCost
+'UploadBroadcast.PassiveRetraction.restoreLinear_costs' depends on axioms: [propext, Classical.choice, Quot.sound]
+Independent new-source-endpoint audit passed for 25 roots.
+Complete reachable axiom set: [propext, Quot.sound, Classical.choice]

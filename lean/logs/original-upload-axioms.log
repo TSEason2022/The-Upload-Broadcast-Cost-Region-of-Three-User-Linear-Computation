@@ -1,0 +1,29 @@
+'UploadBroadcast.Task.minimum_upload' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.minimum_upload_source_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.minimum_upload_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.minimum_upload_two_instance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.minimum_upload_attainment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.Task.minimum_upload_closed_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UploadBroadcast.ResidualTaskAssembly.tripodDimension_eq_stacked_rank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.Task.preResidual_pairKnown_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+UploadBroadcast.Task.minimum_upload.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [Finite K] [AddCommGroup F]
+  [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) : T.uploadOptimum = T.minimumUploadFormula
+UploadBroadcast.Task.minimum_upload_source_formula.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [Finite K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  let d₀ := ↑T.pairFreeChart.commonDimension + ↑(T.intrinsicActivePairRank 0);
+  let d₁ := ↑T.pairFreeChart.commonDimension + ↑(T.intrinsicActivePairRank 1);
+  let d₂ := ↑T.pairFreeChart.commonDimension + ↑(T.intrinsicActivePairRank 2);
+  T.uploadOptimum =
+    ↑T.pairFreeChart.privateDimension + ↑T.pairFreeChart.tripodDimension + max (max d₀ (max d₁ d₂)) ((d₀ + d₁ + d₂) / 2)
+UploadBroadcast.Task.minimum_upload_attainment.{u_1, u_2} {K : Type u_1} {F : Type u_2} [Field K] [Finite K]
+  [AddCommGroup F] [Module K F] [FiniteDimensional K F] (T : UploadBroadcast.Task K F) :
+  ∃ L r b c,
+    (L = 1 ∨ L = 2) ∧
+      ((∃ n, ↑n = T.uploadOmniscienceValue) ↔ L = 1) ∧
+        ↑(∑ i, r i) / ↑L = T.minimumUploadFormula ∧ c.toCode.uploadCost = T.minimumUploadFormula
+'UploadBroadcast.Task.uploadOmniscienceValue_integral_iff_nat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UploadBroadcast.Task.minimum_upload_scalar_of_integral' depends on axioms: [propext, Classical.choice, Quot.sound]

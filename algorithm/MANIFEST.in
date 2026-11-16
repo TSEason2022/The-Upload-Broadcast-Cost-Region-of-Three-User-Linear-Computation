@@ -1,4 +1,4 @@
-include README.md LICENSING.md SECURITY.md
+include README.md LICENSE LICENSING.md SECURITY.md
 include pyproject.toml build_release.py .gitignore
 recursive-include three_user_codes *.py py.typed
 recursive-include tests *.py

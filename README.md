@@ -10,9 +10,9 @@ Research code and formal proofs accompanying *The Upload–Broadcast Cost Region
 
 For a source $x\in\mathbb F_q^n$, user $i\in\{1,2,3\}$ observes $A_i x$ and requests $W_i x$. The matrices are prescribed and known when the code is designed. A task is feasible precisely when every demand lies in the users' joint observation span:
 
-$$
-\operatorname{row}(W_i)\subseteq\sum_{j=1}^3\operatorname{row}(A_j),\qquad i=1,2,3.
-$$
+```math
+\mathrm{row}(W_i)\subseteq\sum_{j=1}^3\mathrm{row}(A_j),\qquad i=1,2,3.
+```
 
 Each user sends one noninteractive upload computed solely from its own observation. An initially uninformed relay receives the three uploads individually over noiseless links, then sends one common broadcast. Each user decodes from that broadcast and its own observation, with zero error for every source realization.
 
@@ -29,30 +29,30 @@ The two resources are **total upload across the three users** and **common broad
 
 ## Optimal region and blocklength
 
-Let $U^*$ be the minimum total upload when broadcast cost is unconstrained, and let $D^*$ be the minimum broadcast cost when the server knows the entire source. Let $\mathcal R_L$ contain the pairs of **cost budgets** that a length-$L$ code can meet; a code need only use costs at most those budgets.
+Let $U^{\star}$ be the minimum total upload when broadcast cost is unconstrained, and let $D^{\star}$ be the minimum broadcast cost when the server knows the entire source. Let $\mathcal R_L$ contain the pairs of **cost budgets** that a code of blocklength $L$ can meet; a code need only use costs at most those budgets.
 
 **Proven in the accompanying research:** for every feasible task over every finite field,
 
-$$
+```math
 \mathcal R_2=\overline{\bigcup_{L\ge1}\mathcal R_L}
-=[U^*,\infty)\times[D^*,\infty).
-$$
+=[U^{\star},\infty)\times[D^{\star},\infty).
+```
 
 Thus one code attains both minima simultaneously, and **two instances already suffice for the entire budget region**. The converse covers deterministic, possibly nonlinear, fixed-length zero-error codes of arbitrary blocklength.
 
 The optimal corner has a linear realization over the **original field**, including $\mathbb F_2$. Its minimum **linear** blocklength is
 
-$$
+```math
 L_{\min}^{\mathrm{lin}}=
 \begin{cases}
-1,& U^*,D^*\in\mathbb Z,\\
+1,& U^{\star},D^{\star}\in\mathbb Z,\\
 2,& \text{otherwise}.
 \end{cases}
-$$
+```
 
 Here scalar means one computation instance, not one transmitted symbol. The integrality criterion concerns linear codes; a separate binary example shows that two instances can also be necessary for nonlinear codes.
 
-Joint design is essential: an arbitrary upload-optimal relay observation can require more than $D^*$ broadcast cost. The construction selects among upload-optimal observations while preserving the broadcast bound. For decomposed tasks, it combines corresponding entries of the 15-entry LCBC broadcast profiles before taking their maximum; independently optimizing component broadcast costs can lose this benefit. See the [technical overview](docs/TECHNICAL_OVERVIEW.md#why-the-construction-is-joint).
+Joint design is essential: an arbitrary upload-optimal relay observation can require more than $D^{\star}$ broadcast cost. The construction selects among upload-optimal observations while preserving the broadcast bound. For decomposed tasks, it combines corresponding entries of the 15-entry LCBC broadcast profiles before taking their maximum; independently optimizing component broadcast costs can lose this benefit. See the [technical overview](docs/TECHNICAL_OVERVIEW.md#why-the-construction-is-joint).
 
 ## Two complementary components
 

@@ -16,7 +16,7 @@ from pathlib import Path
 
 
 ROOT_FILES = {
-    'README.md','LICENSING.md','SECURITY.md',
+    'README.md','LICENSE','LICENSING.md','SECURITY.md',
     'pyproject.toml','build_release.py','MANIFEST.in','.gitignore',
 }
 ROOT_DIRS = {'three_user_codes','tests','examples','benchmarks','docs','validation','tools','.github','typing_examples'}
@@ -59,7 +59,7 @@ def main():
         _write_entry(archive,'__main__.py',b'from three_user_codes.cli import main\nraise SystemExit(main())\n')
         for path in files:
             relative=path.relative_to(root)
-            if relative.parts[0]=='three_user_codes' and path.suffix=='.py':
+            if relative.as_posix()=='LICENSE' or (relative.parts[0]=='three_user_codes' and path.suffix=='.py'):
                 _write_entry(archive,relative.as_posix(),path.read_bytes())
     executable.with_suffix('.tmp').write_bytes(executable_data.getvalue())
     executable.with_suffix('.tmp').replace(executable)

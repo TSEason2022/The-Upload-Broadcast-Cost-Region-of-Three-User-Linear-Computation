@@ -31,7 +31,7 @@
     "Quot.sound",
     "propext"
   ],
-  "auxiliary_manuscript_metadata_note": "Final private-paper identities were updated after the recorded proof run for non-result manuscript edits. The verified mathematical-alignment snapshot and all formal proof inputs are unchanged; no additional Lean run was needed.",
+  "auxiliary_manuscript_metadata_note": "Current-main auxiliary private-paper identities were updated after publication. This update does not modify the immutable published release/tag or any code, formal proof input or verification result.",
   "build_policy": {
     "lean_threads_per_compiler": 2,
     "project_modules": "topological sequential, one new project compiler at a time"
@@ -200,8 +200,8 @@
   "manuscript_identities": {
     "final_local_manuscript_sha256": "26c429ce52b8cd6e09c48e77cbff1d205c0663be86fd2d71cbb778a6e5808f2e",
     "final_local_pdf_pages": 25,
-    "final_local_pdf_sha256": "a7800dcf19ddbbcdf7d56e43011ffae69166208288d5aea00f8e64575f26e18c",
-    "local_edit_scope": "Private introduction wording and citations/bibliography updated, including the supplied Wireless reference details and visible DOI; acknowledgment availability wording/URL, URL-package support and author-biography removal retained. Mathematical statements, proofs, equations, tables, notation and verified code are unchanged.",
+    "final_local_pdf_sha256": "5f7621827975172ae580e2cf7522a8a703230ebd02e9d69c4221d631e8d4061d",
+    "local_edit_scope": "Private introduction wording and citations/bibliography updated, including supplied Wireless reference volume/pages/year/DOI metadata; the DOI remains in BibTeX and is omitted from the printed reference. Acknowledgment availability wording/URL, URL-package support and author-biography removal are retained. Mathematical statements, proofs, equations, tables, notation and verified code are unchanged.",
     "local_manuscript_identity_status": "final private version compiled and visually checked",
     "manuscript_published_in_repository": false,
     "mathematical_alignment_source_sha256": "420218e9eb1b3c721a4270c39f505a057ad23b62a866ead698761bac476efdd5"
@@ -221,6 +221,11 @@
     "python": "3.12.14",
     "release": "25.3.0",
     "system": "Darwin"
+  },
+  "preserved_publication_snapshot": {
+    "commit": "adb732e44512311bc4be5d198760544200e8177f",
+    "followup_scope": "Current-main auxiliary manuscript metadata only; published release/tag preserved.",
+    "release_tag": "v2026.11.15"
   },
   "private_or_out_of_namespace_declarations_included": 504,
   "project_compiled_artifacts_reused": false,

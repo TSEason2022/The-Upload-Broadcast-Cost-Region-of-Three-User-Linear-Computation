@@ -393,7 +393,7 @@
   "previous_source_sha256": "b1c77e1cf7f7245fc8781b362d69ca06ba9b42448bc6d90ad65ddf628d4b2682",
   "kernel_status": "passed_current_clean_build",
   "alignment_snapshot_context": "the supplied manuscript snapshot used for mathematical alignment; subsequent private edits update introduction wording and citations/bibliography, acknowledgment availability wording/URL, URL-package support and author biographies without changing mathematical statements, proofs or verified code",
-  "local_manuscript_edit_scope": "Private introduction wording and citations/bibliography updated, including the supplied Wireless reference details and visible DOI; acknowledgment availability wording/URL, URL-package support and author-biography removal retained. Mathematical statements, proofs, equations, tables, notation and verified code are unchanged.",
+  "local_manuscript_edit_scope": "Private introduction wording and citations/bibliography updated, including supplied Wireless reference volume/pages/year/DOI metadata; the DOI remains in BibTeX and is omitted from the printed reference. Acknowledgment availability wording/URL, URL-package support and author-biography removal are retained. Mathematical statements, proofs, equations, tables, notation and verified code are unchanged.",
   "local_manuscript_identity_status": "final auxiliary identity; mathematical alignment snapshot unchanged",
   "final_local_manuscript_sha256": "26c429ce52b8cd6e09c48e77cbff1d205c0663be86fd2d71cbb778a6e5808f2e",
   "verification_report": "verification-current/report.json",

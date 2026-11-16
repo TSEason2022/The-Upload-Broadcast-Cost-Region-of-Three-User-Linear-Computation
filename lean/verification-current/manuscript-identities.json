@@ -1,8 +1,8 @@
 {
   "final_local_manuscript_sha256": "26c429ce52b8cd6e09c48e77cbff1d205c0663be86fd2d71cbb778a6e5808f2e",
   "final_local_pdf_pages": 25,
-  "final_local_pdf_sha256": "a7800dcf19ddbbcdf7d56e43011ffae69166208288d5aea00f8e64575f26e18c",
-  "local_edit_scope": "Private introduction wording and citations/bibliography updated, including the supplied Wireless reference details and visible DOI; acknowledgment availability wording/URL, URL-package support and author-biography removal retained. Mathematical statements, proofs, equations, tables, notation and verified code are unchanged.",
+  "final_local_pdf_sha256": "5f7621827975172ae580e2cf7522a8a703230ebd02e9d69c4221d631e8d4061d",
+  "local_edit_scope": "Private introduction wording and citations/bibliography updated, including supplied Wireless reference volume/pages/year/DOI metadata; the DOI remains in BibTeX and is omitted from the printed reference. Acknowledgment availability wording/URL, URL-package support and author-biography removal are retained. Mathematical statements, proofs, equations, tables, notation and verified code are unchanged.",
   "local_manuscript_identity_status": "final private version compiled and visually checked",
   "manuscript_published_in_repository": false,
   "mathematical_alignment_source_sha256": "420218e9eb1b3c721a4270c39f505a057ad23b62a866ead698761bac476efdd5"

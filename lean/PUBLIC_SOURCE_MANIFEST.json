@@ -1,4 +1,5 @@
 {
+  "auxiliary_metadata_note": "Current-main private-paper derivative identities updated after release v2026.11.15; the published release/tag and all verified formal inputs remain unchanged.",
   "current_kernel_build_completed": true,
   "file_count": 868,
   "files": [
@@ -1604,13 +1605,13 @@
     },
     {
       "path": "coverage.json",
-      "sha256": "bd7778ae9f4a1ab335aa403d9b535af858c1e81fe283a55fdb2ffb4042441570",
-      "size": 17265
+      "sha256": "a5072cf0cb94558a4fc284338319400a1e97524bc575838ba71f3c98d02643e7",
+      "size": 17341
     },
     {
       "path": "current-source-coverage.json",
-      "sha256": "db5992fa804440160cd701796ce3314a15e4cb024ea8bb3d865b5ba42d9a9231",
-      "size": 26770
+      "sha256": "ef9630dfa74ddf1e979857d78a4fcf48c73a4ec2d92b31a260450eaaae28fd03",
+      "size": 26846
     },
     {
       "path": "docs/ACTUAL_COMPONENT_CAPACITIES.md",
@@ -3259,7 +3260,7 @@
     },
     {
       "path": "verification-current/evidence-normalization.json",
-      "sha256": "a288f9d5a21d225a69995d47aa683e8e1e05aeb7f910a2ead5c88ceedf97e5d9",
+      "sha256": "fc8fc107ed5f35365ff2e2839e0cfd92f62f9bdc1ce1b1820809eadf0651f7a2",
       "size": 6131
     },
     {
@@ -3304,8 +3305,8 @@
     },
     {
       "path": "verification-current/manuscript-identities.json",
-      "sha256": "dca4655e413eeb7a8dda7ff1583c451aac37abe05955ec30102edc7bb8beea39",
-      "size": 834
+      "sha256": "bf8d7875f8c5096a5de4d6b04eeee278538051d0effa7ef8e10ca55643f3ae34",
+      "size": 910
     },
     {
       "path": "verification-current/module-build-timings.json",
@@ -3324,8 +3325,8 @@
     },
     {
       "path": "verification-current/report.json",
-      "sha256": "869f6c04dc08e86a6c56f3820a6ded9a1d72d8d76fb6b71e09df2fd491814eec",
-      "size": 9319
+      "sha256": "1192078763988fc7721088375bedb7afbf05c677c00830177c795260337fc1b0",
+      "size": 9607
     },
     {
       "path": "verification-current/source-audit-tests.log",
@@ -4350,7 +4351,7 @@
   "library_module_count": 314,
   "manifest_scope": "All selected public lean/ files except this manifest; excludes dependency/cache/build outputs and manuscript material",
   "manuscript_included": false,
-  "payload_identity_sha256": "7310c77012ed057677a02e50e67e3c7255763d8c6c550287dae3d9ce07560972",
+  "payload_identity_sha256": "26b9786732f9f54c9255a3dc9e3b260328dd2158e66da27404a37a075021158f",
   "public_derivative_changes": "Current-source theorem interfaces and declaration maps; public-only gate; macOS cache transport repair; documentation/evidence updates; manuscript ledgers and old full-payload manifests withheld; one historical raw source-statement field redacted. Historical reports remain separately scoped.",
   "schema_version": 1,
   "status": "current_source_kernel_verified",

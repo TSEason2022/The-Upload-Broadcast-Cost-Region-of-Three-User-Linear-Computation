@@ -7,6 +7,8 @@ name = "three-user-codes"
 dynamic = ["version"]
 description = "Exact finite-field algebra and certified three-user upload/broadcast coding"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.10"
 dependencies = []
 keywords = ["finite-fields", "linear-coding", "information-theory", "network-coding", "certificates"]

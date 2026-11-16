@@ -1,8 +1,9 @@
 # three-user-codes 1.5.0
 
-Three-user upload/broadcast coding over finite fields, with exact code-certificate checks.
-The compiler produces executable local upload encoders, one relay encoder and
-three decoders, together with all-source matrix certificates.
+Exact finite-field construction of three-user upload–broadcast codes.
+The compiler returns local upload encoders, one relay broadcast encoder and
+three decoders. Matrix certificates verify local implementability and zero-error
+decoding for every source block, and check costs against the implemented analytical formulas.
 
 **Original-field blocklength:** the default is **L=1 when both exact optimal
 rates are integers, and L=2 otherwise**, including GF(2). A budget stop never
@@ -37,7 +38,7 @@ This repository contains source, tests, fixtures and documentation. To generate
 a standalone zipapp locally, run `python build_release.py --output ../build/algorithm`.
 Generated archives and PDFs are not checked into this repository.
 
-## Handover documents
+## Documentation
 
 - [Algorithm and engineering manual](docs/ALGORITHM_MANUAL.md): notation,
   formulas, construction/search, certificate checks, operational examples and
@@ -48,7 +49,7 @@ Generated archives and PDFs are not checked into this repository.
   to that original run. See [the current recheck](validation/CURRENT_RECHECK.md) for the reproduced checks.
 - [Security and resource boundaries](SECURITY.md).
 
-## Refine the manual
+## Build the manual
 
 Edit `tools/build_manual.py`, the authoritative manual authoring source, then:
 
@@ -85,8 +86,9 @@ execution. See the manual for a complete simulation.
 
 - Every returned code is checked using exact finite-field identities and the
   target upload/broadcast counts and ranks.
-- Automatic structural routes accelerate supported families; unsuccessful
-  recognition continues to exact primal/dual search at the same L.
+- The compiler first attempts explicit constructions for recognized task
+  structures. If no candidate is accepted, it continues with exact primal/dual
+  subspace search at the same blocklength.
 - `SearchBudgetExceeded` means resource exhaustion, not infeasibility.
   `max_seconds` is cooperative; use a supervising process for hard deadlines.
 - An integer standalone binary LCBC profile is not by itself a scalar-code

@@ -4,11 +4,17 @@
 
 [Algorithm code](algorithm/) · [Lean proofs](lean/) · [Reproduction](docs/REPRODUCING.md)
 
-This repository accompanies the research *The Upload–Broadcast Cost Region of Three-User Linear Computation* by Shuo Tan and Syed A. Jafar. It provides executable code constructions, exact code certificates, and a separate Lean development. The manuscript is maintained separately.
+Research code and formal proofs accompanying *The Upload–Broadcast Cost Region of Three-User Linear Computation* by Shuo Tan and Syed A. Jafar. The Python package constructs upload encoders, a relay broadcast encoder, and user decoders. The Lean development formalizes the optimal cost region and the minimum linear blocklength. The manuscript is maintained separately.
 
 ## The problem
 
-Three users observe different linear measurements of the same finite-field source. Each user wants another linear function of that source. The users upload separately to a relay, which initially knows none of the source. The relay sends one common broadcast, and every user recovers its demand using that broadcast and its own observation.
+For a source $x\in\mathbb F_q^n$, user $i\in\{1,2,3\}$ observes $A_i x$ and requests $W_i x$. The matrices are prescribed and known when the code is designed. A task is feasible precisely when every demand lies in the users' joint observation span:
+
+$$
+\operatorname{row}(W_i)\subseteq\sum_{j=1}^3\operatorname{row}(A_j),\qquad i=1,2,3.
+$$
+
+Each user sends one noninteractive upload computed solely from its own observation. An initially uninformed relay receives the three uploads individually over noiseless links, then sends one common broadcast. Each user decodes from that broadcast and its own observation, with zero error for every source realization.
 
 ```mermaid
 flowchart LR
@@ -19,26 +25,45 @@ flowchart LR
     B --> D["Each user recovers its own demand"]
 ```
 
-The design question is whether minimizing total upload prevents the relay from attaining the broadcast cost of a fully informed server.
+The two resources are **total upload across the three users** and **common broadcast**. Costs are logarithms to base $q$ of attainable message-alphabet sizes, normalized by the number $L$ of computation instances. For linear messages, total upload is the sum of the three upload-matrix ranks divided by $L$; broadcast cost is the source-to-broadcast matrix rank divided by $L$. See the [model and cost definitions](docs/TECHNICAL_OVERVIEW.md#model-and-costs).
 
-## Main result and construction
+## Optimal region and blocklength
 
-**Proven in the accompanying research:** for every feasible three-user linear task, the closed upload–broadcast cost region is rectangular: the minimum total upload and fully informed minimum broadcast can be attained simultaneously. The region statement allows nonlinear, fixed-length, zero-error codes of arbitrary blocklength.
+Let $U^*$ be the minimum total upload when broadcast cost is unconstrained, and let $D^*$ be the minimum broadcast cost when the server knows the entire source. Let $\mathcal R_L$ contain the pairs of **cost budgets** that a length-$L$ code can meet; a code need only use costs at most those budgets.
 
-The optimal corner has a linear realization over the task's original finite field, including GF(2). Its minimum linear blocklength is **one when both optimal normalized costs are integers, and two otherwise**. These statements concern this three-user model and its stated feasibility assumptions.
+**Proven in the accompanying research:** for every feasible task over every finite field,
 
-The construction first finds the freedom in upload-optimal schemes, coordinates choices across components through their linear computation broadcast profiles, and repairs directed demand cycles when needed. An arbitrary upload-optimal choice need not preserve the broadcast optimum.
+$$
+\mathcal R_2=\overline{\bigcup_{L\ge1}\mathcal R_L}
+=[U^*,\infty)\times[D^*,\infty).
+$$
+
+Thus one code attains both minima simultaneously, and **two instances already suffice for the entire budget region**. The converse covers deterministic, possibly nonlinear, fixed-length zero-error codes of arbitrary blocklength.
+
+The optimal corner has a linear realization over the **original field**, including $\mathbb F_2$. Its minimum **linear** blocklength is
+
+$$
+L_{\min}^{\mathrm{lin}}=
+\begin{cases}
+1,& U^*,D^*\in\mathbb Z,\\
+2,& \text{otherwise}.
+\end{cases}
+$$
+
+Here scalar means one computation instance, not one transmitted symbol. The integrality criterion concerns linear codes; a separate binary example shows that two instances can also be necessary for nonlinear codes.
+
+Joint design is essential: an arbitrary upload-optimal relay observation can require more than $D^*$ broadcast cost. The construction selects among upload-optimal observations while preserving the broadcast bound. For decomposed tasks, it combines corresponding entries of the 15-entry LCBC broadcast profiles before taking their maximum; independently optimizing component broadcast costs can lose this benefit. See the [technical overview](docs/TECHNICAL_OVERVIEW.md#why-the-construction-is-joint).
 
 ## Two complementary components
 
 | Component | What it provides | Entry point |
 | --- | --- | --- |
-| [Python algorithm](algorithm/) | Finite-field task analysis; local upload encoders, a relay encoder and three decoders; exact all-source code certificates | [Algorithm guide](algorithm/README.md) |
-| [Lean formalization](lean/) | Formal mathematical declarations, pinned dependencies, source checks and axiom audits | [Lean guide](lean/README.md) |
+| [Python algorithm](algorithm/) | Exact target costs; executable upload, broadcast and decoder matrices; matrix certificates of decoding for every source block | [Algorithm guide](algorithm/README.md) |
+| [Lean formalization](lean/) | Proofs of the budget region, simultaneous optimal-code existence, and minimum linear blocklength over the original finite field | [Lean guide](lean/README.md) |
 
-The Python compiler uses structural constructions and exact search. Unrestricted fallback search can take exponential time; a search-budget stop means resource exhaustion. It is not an infeasibility certificate.
+The compiler first attempts explicit constructions for recognized task structures, then falls back to exhaustive finite-field subspace search. By default it uses the minimum linear blocklength above. Search can take exponential time; the default limits are 100,000 visited search states and a 60-second cooperative time budget. `SearchBudgetExceeded` reports resource exhaustion and makes no infeasibility claim.
 
-The Python implementation and the Lean development are separate artifacts. A checked Python code certificate verifies that concrete construction. A Lean kernel check verifies formal declarations under their hypotheses. No formal refinement proof connecting the Python executable to the Lean development is claimed.
+The implementation supports prime-power field orders $2\le q<2^{64}$, including extension fields represented in a polynomial basis. Its exact matrix certificates establish local encodability and zero-error decoding and check costs against the implemented analytical formulas. Lean checks the corresponding mathematical declarations. **No refinement theorem connects the Python implementation to the Lean formalization.**
 
 ## Run an example
 
@@ -57,13 +82,13 @@ python -m three_user_codes simulate code.json
 
 This binary example uses two source instances, eight upload symbols and three broadcast symbols: normalized costs U = 4 and D = 3/2. See the [manual](algorithm/docs/ALGORITHM_MANUAL.md) for the model, input format, construction and execution details.
 
-## Evidence and reproducibility
+## Recorded verification
 
-**Computed, with exact finite-field arithmetic:** the current algorithm recheck passed all **256 regression tests**, **171 benchmark trials** (57 frozen tasks repeated three times), eight command/API checks, and an isolated package-installation check. The benchmark covers GF(2), GF(3), GF(4), GF(5) and GF(9), with source dimensions 3–30. Commands, seeds, budgets, statuses and source digests are recorded in the [algorithm recheck](algorithm/validation/CURRENT_RECHECK.md).
+**Computed — algorithm recheck, 15 November 2026:** all **256 regression tests**, **171 benchmark trials** (57 frozen tasks repeated three times), eight command/API checks, and an isolated package-installation check passed. The benchmark covers GF(2), GF(3), GF(4), GF(5) and GF(9), with source dimensions 3–30. A separate arithmetic implementation checked each returned code on every original source basis vector. Commands, seeds, limits and source digests are in the [algorithm recheck](algorithm/validation/CURRENT_RECHECK.md).
 
-**Certified for the recorded Lean source snapshot:** all **314 library modules** compiled, both comprehensive axiom audits passed, and all **103 mapped theorem targets** passed the current-source type and axiom checks. The run began without project compiled artifacts and confirmed that its formal inputs remained unchanged.
+**Certified — recorded Lean 4.19.0 source snapshot:** all **314 library modules** compiled and both full-library axiom audits passed. The coverage map links **28 named manuscript results** to **103 distinct theorem declarations**, each checked for its type and transitive axiom dependencies. The run reused pinned upstream dependency objects, began without compiled project modules, and confirmed that the formal inputs remained unchanged. The audits permit only `propext`, `Classical.choice`, and `Quot.sound`.
 
-For Lean, consult the [current verification report](lean/docs/PUBLIC_RECHECK.md), [coverage mapping](lean/coverage.json), [current manuscript alignment](lean/current-source-coverage.json), and pinned [toolchain](lean/lean-toolchain). Reports identify their source snapshot and distinguish kernel checking, axiom checking, and correspondence with manuscript statements. Historical reports retain their original version scope.
+The main Lean statements are in [SourceMainTheorem.lean](lean/UploadBroadcast/SourceMainTheorem.lean). The [verification report](lean/docs/PUBLIC_RECHECK.md), [coverage mapping](lean/coverage.json), and [manuscript correspondence record](lean/current-source-coverage.json) distinguish compiled declarations from review of their correspondence with informal statements. Historical reports identify their own source snapshots.
 
 See [reproduction instructions](docs/REPRODUCING.md) and the [technical overview](docs/TECHNICAL_OVERVIEW.md).
 

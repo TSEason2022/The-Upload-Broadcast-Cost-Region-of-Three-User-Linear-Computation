@@ -1,0 +1,7 @@
+{
+  "command": "python -m unittest discover -s tests -v",
+  "tests_run": 256,
+  "elapsed_seconds": 17.924,
+  "status": "passed",
+  "runtime_source_sha256": "70a562a3b68b5814325b4ea9a77595ea521173b5e2b9cc68c85749de529e76cd"
+}

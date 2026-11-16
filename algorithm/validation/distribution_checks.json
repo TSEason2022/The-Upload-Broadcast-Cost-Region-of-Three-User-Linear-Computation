@@ -1,0 +1,41 @@
+{
+  "installed_wheel": {
+    "wheel": "three_user_codes-1.5.0-py3-none-any.whl",
+    "installation": "fresh virtual environment; offline, no dependencies",
+    "outside_source_tree": true,
+    "isolated_interpreter": true,
+    "version": "1.5.0",
+    "cases": [
+      {
+        "name": "binary",
+        "field": 2,
+        "blocklength": 2,
+        "verified": true,
+        "simulation": true
+      },
+      {
+        "name": "integer",
+        "field": 2,
+        "blocklength": 1,
+        "verified": true,
+        "simulation": true
+      },
+      {
+        "name": "extension",
+        "field": 4,
+        "blocklength": 2,
+        "verified": true,
+        "simulation": true
+      }
+    ],
+    "quickstart_passed": true
+  },
+  "zip_application": {
+    "version": "1.5.0",
+    "isolated_outside_source": true,
+    "structural_compile_verify_simulate": true,
+    "field_order": 3,
+    "blocklength": 1,
+    "sha256": "c8a92fe966b78547b9fc9acc6cd1953e63b75159fad76a0ae8cf661e2e46a2cc"
+  }
+}

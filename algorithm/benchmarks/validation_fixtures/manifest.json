@@ -1,0 +1,1261 @@
+{
+  "schema": "three-user-frozen-validation-fixtures-v1",
+  "rate_target_note": "Frozen exact targets from the pre-optimization implementation; independent polynomial verification checks code identities, not the universal rate theorem.",
+  "cases": [
+    {
+      "name": "two_R1_q2_dense",
+      "suite": "adversarial",
+      "file": "adversarial/two_R1_q2_dense.json",
+      "options": {},
+      "provenance": {
+        "seed": 2026100600,
+        "components": {
+          "Rn": [
+            1,
+            1
+          ],
+          "extra": [],
+          "dense": true
+        },
+        "generator": "direct sums of manuscript resonant components, directed cycles and omniscience components; optional seeded invertible upper-times-lower source transform"
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 10,
+        "upload": "8",
+        "broadcast": "3",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "2623f7a7fbc2f12ba1fb1b8b24cb2156fd07482360b3bc5b83aa20a482f55cbc"
+      }
+    },
+    {
+      "name": "R1_R2_q3_dense",
+      "suite": "adversarial",
+      "file": "adversarial/R1_R2_q3_dense.json",
+      "options": {},
+      "provenance": {
+        "seed": 2026100601,
+        "components": {
+          "Rn": [
+            1,
+            2
+          ],
+          "extra": [],
+          "dense": true
+        },
+        "generator": "direct sums of manuscript resonant components, directed cycles and omniscience components; optional seeded invertible upper-times-lower source transform"
+      },
+      "expected": {
+        "field_order": 3,
+        "source_dimension": 13,
+        "upload": "11",
+        "broadcast": "9/2",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "b7e5260227cb94475adb127e5b8f77cb619354424b6bb251cf15ef3776e77d90"
+      }
+    },
+    {
+      "name": "two_R2_q2_plain",
+      "suite": "adversarial",
+      "file": "adversarial/two_R2_q2_plain.json",
+      "options": {},
+      "provenance": {
+        "seed": 2026100602,
+        "components": {
+          "Rn": [
+            2,
+            2
+          ],
+          "extra": [],
+          "dense": false
+        },
+        "generator": "direct sums of manuscript resonant components, directed cycles and omniscience components; optional seeded invertible upper-times-lower source transform"
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 16,
+        "upload": "14",
+        "broadcast": "6",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "735f10a9be22f83c9ed230bc704442ac18d34af4673d34a94159ac7a63fe8d3c"
+      }
+    },
+    {
+      "name": "two_R2_q2_dense",
+      "suite": "adversarial",
+      "file": "adversarial/two_R2_q2_dense.json",
+      "options": {},
+      "provenance": {
+        "seed": 2026100603,
+        "components": {
+          "Rn": [
+            2,
+            2
+          ],
+          "extra": [],
+          "dense": true
+        },
+        "generator": "direct sums of manuscript resonant components, directed cycles and omniscience components; optional seeded invertible upper-times-lower source transform"
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 16,
+        "upload": "14",
+        "broadcast": "6",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "1ee71998530a8ea40006fec1b3e51ade158c3c3b3f1086c7a1070b6b28711322"
+      }
+    },
+    {
+      "name": "two_R3_q3_dense",
+      "suite": "adversarial",
+      "file": "adversarial/two_R3_q3_dense.json",
+      "options": {},
+      "provenance": {
+        "seed": 2026100604,
+        "components": {
+          "Rn": [
+            3,
+            3
+          ],
+          "extra": [],
+          "dense": true
+        },
+        "generator": "direct sums of manuscript resonant components, directed cycles and omniscience components; optional seeded invertible upper-times-lower source transform"
+      },
+      "expected": {
+        "field_order": 3,
+        "source_dimension": 22,
+        "upload": "20",
+        "broadcast": "9",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "5f28c382576935aae55d9128e4d1f0f6b37ad91282d51beb06915cc62e51557f"
+      }
+    },
+    {
+      "name": "R1_both_cycles_q2_dense",
+      "suite": "adversarial",
+      "file": "adversarial/R1_both_cycles_q2_dense.json",
+      "options": {},
+      "provenance": {
+        "seed": 2026100605,
+        "components": {
+          "Rn": [
+            1
+          ],
+          "extra": [
+            "cycle+",
+            "cycle-"
+          ],
+          "dense": true
+        },
+        "generator": "direct sums of manuscript resonant components, directed cycles and omniscience components; optional seeded invertible upper-times-lower source transform"
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 11,
+        "upload": "10",
+        "broadcast": "9/2",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "a21ddc0e4c4fffff1945219d09ab386cc69592021a342efe5e905ce1a4c1696b"
+      }
+    },
+    {
+      "name": "two_R1_cycle_q2_dense",
+      "suite": "adversarial",
+      "file": "adversarial/two_R1_cycle_q2_dense.json",
+      "options": {},
+      "provenance": {
+        "seed": 2026100606,
+        "components": {
+          "Rn": [
+            1,
+            1
+          ],
+          "extra": [
+            "cycle+"
+          ],
+          "dense": true
+        },
+        "generator": "direct sums of manuscript resonant components, directed cycles and omniscience components; optional seeded invertible upper-times-lower source transform"
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 13,
+        "upload": "11",
+        "broadcast": "9/2",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "185eee5e368a42ec84fa93dd63297561097ecca711655e7d36fe99f067385e3d"
+      }
+    },
+    {
+      "name": "R2_R1_both_cycles_q3_dense",
+      "suite": "adversarial",
+      "file": "adversarial/R2_R1_both_cycles_q3_dense.json",
+      "options": {},
+      "provenance": {
+        "seed": 2026100607,
+        "components": {
+          "Rn": [
+            2,
+            1
+          ],
+          "extra": [
+            "cycle+",
+            "cycle-"
+          ],
+          "dense": true
+        },
+        "generator": "direct sums of manuscript resonant components, directed cycles and omniscience components; optional seeded invertible upper-times-lower source transform"
+      },
+      "expected": {
+        "field_order": 3,
+        "source_dimension": 19,
+        "upload": "17",
+        "broadcast": "15/2",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "eaa22068d19f65072139af6c4ae28ff43d4757b3a56e45c0c3d82e495d3b4b34"
+      }
+    },
+    {
+      "name": "two_R1_tripod_om_q4_dense",
+      "suite": "adversarial",
+      "file": "adversarial/two_R1_tripod_om_q4_dense.json",
+      "options": {},
+      "provenance": {
+        "seed": 2026100608,
+        "components": {
+          "Rn": [
+            1,
+            1
+          ],
+          "extra": [
+            "tripod"
+          ],
+          "dense": true
+        },
+        "generator": "direct sums of manuscript resonant components, directed cycles and omniscience components; optional seeded invertible upper-times-lower source transform"
+      },
+      "expected": {
+        "field_order": 4,
+        "source_dimension": 12,
+        "upload": "19/2",
+        "broadcast": "4",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "563a6bf4118bde2bb9c7657073fe801610895058c715cec29953510b01f657f7"
+      }
+    },
+    {
+      "name": "R2_R1_pair_om_q9_dense",
+      "suite": "adversarial",
+      "file": "adversarial/R2_R1_pair_om_q9_dense.json",
+      "options": {},
+      "provenance": {
+        "seed": 2026100609,
+        "components": {
+          "Rn": [
+            2,
+            1
+          ],
+          "extra": [
+            "pair_om"
+          ],
+          "dense": true
+        },
+        "generator": "direct sums of manuscript resonant components, directed cycles and omniscience components; optional seeded invertible upper-times-lower source transform"
+      },
+      "expected": {
+        "field_order": 9,
+        "source_dimension": 16,
+        "upload": "25/2",
+        "broadcast": "11/2",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "7b5f9216bcdb6dfe0d009b52db5d1e5bd0e1ce8961b8b07436936cb8efccfccf"
+      }
+    },
+    {
+      "name": "three_R1_q2_dense",
+      "suite": "adversarial",
+      "file": "adversarial/three_R1_q2_dense.json",
+      "options": {},
+      "provenance": {
+        "seed": 2026100610,
+        "components": {
+          "Rn": [
+            1,
+            1,
+            1
+          ],
+          "extra": [],
+          "dense": true
+        },
+        "generator": "direct sums of manuscript resonant components, directed cycles and omniscience components; optional seeded invertible upper-times-lower source transform"
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 15,
+        "upload": "12",
+        "broadcast": "9/2",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "3ba688f62ea74f0263d2f0f6e761c4815fa2fd30c1a589d2fb94ccb129810005"
+      }
+    },
+    {
+      "name": "R5_q4_dense",
+      "suite": "adversarial",
+      "file": "adversarial/R5_q4_dense.json",
+      "options": {},
+      "provenance": {
+        "seed": 2026100611,
+        "components": {
+          "Rn": [
+            5
+          ],
+          "extra": [],
+          "dense": true
+        },
+        "generator": "direct sums of manuscript resonant components, directed cycles and omniscience components; optional seeded invertible upper-times-lower source transform"
+      },
+      "expected": {
+        "field_order": 4,
+        "source_dimension": 17,
+        "upload": "16",
+        "broadcast": "15/2",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "0050c610cc9f4c0c293c118f2ab12a4837b73959ad34d33077d10aa920eda472"
+      }
+    },
+    {
+      "name": "two_R1_positive_cycle_bundles_q3_plain",
+      "suite": "adversarial",
+      "file": "adversarial/two_R1_positive_cycle_bundles_q3_plain.json",
+      "options": {},
+      "provenance": {
+        "generator": "transparent direct sum R1, positive directed cycle, R1, positive directed cycle over GF(3)"
+      },
+      "expected": {
+        "field_order": 3,
+        "source_dimension": 16,
+        "upload": "14",
+        "broadcast": "6",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "0b40b32323e8dcbebce4fc2a6229cba1c19f91ed70584a084f285c2eabd92b71"
+      }
+    },
+    {
+      "name": "cycle_no_fast_q2",
+      "suite": "regression",
+      "file": "regression/cycle_no_fast_q2.json",
+      "options": {
+        "fast_paths": false
+      },
+      "provenance": {
+        "name": "cycle_no_fast_q2",
+        "kind": "cycle",
+        "q": 2,
+        "options": {
+          "fast_paths": false
+        }
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 3,
+        "upload": "3",
+        "broadcast": "2",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "011928589eaba21fb7fadbaac5644a0e83c0ca1dd477fb81ec9e3dd8133f68df"
+      }
+    },
+    {
+      "name": "cycle_no_fast_q3",
+      "suite": "regression",
+      "file": "regression/cycle_no_fast_q3.json",
+      "options": {
+        "fast_paths": false
+      },
+      "provenance": {
+        "name": "cycle_no_fast_q3",
+        "kind": "cycle",
+        "q": 3,
+        "options": {
+          "fast_paths": false
+        }
+      },
+      "expected": {
+        "field_order": 3,
+        "source_dimension": 3,
+        "upload": "3",
+        "broadcast": "2",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "063f2ab8171baba70d61a824dd5abd77a6d20412fac10184075c701eebb84d6b"
+      }
+    },
+    {
+      "name": "cycle_no_fast_q5",
+      "suite": "regression",
+      "file": "regression/cycle_no_fast_q5.json",
+      "options": {
+        "fast_paths": false
+      },
+      "provenance": {
+        "name": "cycle_no_fast_q5",
+        "kind": "cycle",
+        "q": 5,
+        "options": {
+          "fast_paths": false
+        }
+      },
+      "expected": {
+        "field_order": 5,
+        "source_dimension": 3,
+        "upload": "3",
+        "broadcast": "2",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "e8b31e09688a42f5daee18450f71720bf8d5ddbe2673a77569524311e2cfe741"
+      }
+    },
+    {
+      "name": "resonant_cycle_q2_r1",
+      "suite": "regression",
+      "file": "regression/resonant_cycle_q2_r1.json",
+      "options": {},
+      "provenance": {
+        "name": "resonant_cycle_q2_r1",
+        "kind": "resonant_cycle",
+        "q": 2,
+        "n": 1,
+        "changed": false
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 8,
+        "upload": "7",
+        "broadcast": "3",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "a65315b7f8d70f6d764ad5bd0a44276547656c4b5f3283b708e7ec83fe7fa53d"
+      }
+    },
+    {
+      "name": "resonant_cycle_q2_r1_mixed",
+      "suite": "regression",
+      "file": "regression/resonant_cycle_q2_r1_mixed.json",
+      "options": {},
+      "provenance": {
+        "name": "resonant_cycle_q2_r1_mixed",
+        "kind": "resonant_cycle",
+        "q": 2,
+        "n": 1,
+        "changed": true
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 8,
+        "upload": "7",
+        "broadcast": "3",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "0e616fefcdea291c2d53b64269f70daf41896f824107622a9b0a9ca5e1feb67e"
+      }
+    },
+    {
+      "name": "resonant_cycle_q2_r3",
+      "suite": "regression",
+      "file": "regression/resonant_cycle_q2_r3.json",
+      "options": {},
+      "provenance": {
+        "name": "resonant_cycle_q2_r3",
+        "kind": "resonant_cycle",
+        "q": 2,
+        "n": 3,
+        "changed": false
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 14,
+        "upload": "13",
+        "broadcast": "6",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "cf851982bad143ca0b5ac4b2c2a06d8cca47b1bb9f9689c744e5744204ccdfe5"
+      }
+    },
+    {
+      "name": "resonant_cycle_q2_r3_mixed",
+      "suite": "regression",
+      "file": "regression/resonant_cycle_q2_r3_mixed.json",
+      "options": {},
+      "provenance": {
+        "name": "resonant_cycle_q2_r3_mixed",
+        "kind": "resonant_cycle",
+        "q": 2,
+        "n": 3,
+        "changed": true
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 14,
+        "upload": "13",
+        "broadcast": "6",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "b77b341cfca0c7e435b1ba0084b88694b6448f71d8d0a9fe88f784eb8221c1d8"
+      }
+    },
+    {
+      "name": "resonant_cycle_q2_r5",
+      "suite": "regression",
+      "file": "regression/resonant_cycle_q2_r5.json",
+      "options": {},
+      "provenance": {
+        "name": "resonant_cycle_q2_r5",
+        "kind": "resonant_cycle",
+        "q": 2,
+        "n": 5,
+        "changed": false
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 20,
+        "upload": "19",
+        "broadcast": "9",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "6b244537393481627f27feb8ced82a616687f5967861d051e8094bebfb2173c4"
+      }
+    },
+    {
+      "name": "resonant_cycle_q2_r5_mixed",
+      "suite": "regression",
+      "file": "regression/resonant_cycle_q2_r5_mixed.json",
+      "options": {},
+      "provenance": {
+        "name": "resonant_cycle_q2_r5_mixed",
+        "kind": "resonant_cycle",
+        "q": 2,
+        "n": 5,
+        "changed": true
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 20,
+        "upload": "19",
+        "broadcast": "9",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "505d333901d0b9db86ded1622fb76aa000e839345ca9cecf33c729b1ead09d62"
+      }
+    },
+    {
+      "name": "dense_q5_original_scalar_probe",
+      "suite": "regression",
+      "file": "regression/dense_q5_original_scalar_probe.json",
+      "options": {},
+      "provenance": {
+        "name": "dense_q5_original_scalar_probe",
+        "kind": "original_probe",
+        "q": 5
+      },
+      "expected": {
+        "field_order": 5,
+        "source_dimension": 4,
+        "upload": "3",
+        "broadcast": "3",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "be2299d67f7dc3c94ca75eea4c4aa84841d352702112f0c84b979c01b9f97d75"
+      }
+    },
+    {
+      "name": "large_side_q2_n12",
+      "suite": "regression",
+      "file": "regression/large_side_q2_n12.json",
+      "options": {},
+      "provenance": {
+        "name": "large_side_q2_n12",
+        "kind": "large_side",
+        "q": 2,
+        "n": 12
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 12,
+        "upload": "3/2",
+        "broadcast": "1",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "001cb942ca581bdc73c57b9cff4897a8600942d7929f99a536bf660b2239e147"
+      }
+    },
+    {
+      "name": "large_side_q2_n30",
+      "suite": "regression",
+      "file": "regression/large_side_q2_n30.json",
+      "options": {},
+      "provenance": {
+        "name": "large_side_q2_n30",
+        "kind": "large_side",
+        "q": 2,
+        "n": 30
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 30,
+        "upload": "3/2",
+        "broadcast": "1",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "7bd7566e9fb571168e932dd4da62b41484b5479d41749b6818fb0a1f975d445c"
+      }
+    },
+    {
+      "name": "large_side_q3_n12",
+      "suite": "regression",
+      "file": "regression/large_side_q3_n12.json",
+      "options": {},
+      "provenance": {
+        "name": "large_side_q3_n12",
+        "kind": "large_side",
+        "q": 3,
+        "n": 12
+      },
+      "expected": {
+        "field_order": 3,
+        "source_dimension": 12,
+        "upload": "3/2",
+        "broadcast": "1",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "e5a1155620e4e7a25c0fd0a47e244dcf5683bf52d295f5416ed11a4613425c47"
+      }
+    },
+    {
+      "name": "large_side_q3_n30",
+      "suite": "regression",
+      "file": "regression/large_side_q3_n30.json",
+      "options": {},
+      "provenance": {
+        "name": "large_side_q3_n30",
+        "kind": "large_side",
+        "q": 3,
+        "n": 30
+      },
+      "expected": {
+        "field_order": 3,
+        "source_dimension": 30,
+        "upload": "3/2",
+        "broadcast": "1",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "ff61c1273dbb0d44bc96b3eaf24f05c3d31eb85db1c622a5be8a3c1713771d0f"
+      }
+    },
+    {
+      "name": "large_side_q5_n12",
+      "suite": "regression",
+      "file": "regression/large_side_q5_n12.json",
+      "options": {},
+      "provenance": {
+        "name": "large_side_q5_n12",
+        "kind": "large_side",
+        "q": 5,
+        "n": 12
+      },
+      "expected": {
+        "field_order": 5,
+        "source_dimension": 12,
+        "upload": "3/2",
+        "broadcast": "1",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "63f14e745a0d2cee00689390f1bc346f9ad5356c4cf245ffdc76ffdc5f3283bd"
+      }
+    },
+    {
+      "name": "large_side_q5_n30",
+      "suite": "regression",
+      "file": "regression/large_side_q5_n30.json",
+      "options": {},
+      "provenance": {
+        "name": "large_side_q5_n30",
+        "kind": "large_side",
+        "q": 5,
+        "n": 30
+      },
+      "expected": {
+        "field_order": 5,
+        "source_dimension": 30,
+        "upload": "3/2",
+        "broadcast": "1",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "1480f82e5d4841c29f144c893f83ea6223dee694b557c06b60272fbe8b1a9e0b"
+      }
+    },
+    {
+      "name": "tripod_q2_t2",
+      "suite": "regression",
+      "file": "regression/tripod_q2_t2.json",
+      "options": {},
+      "provenance": {
+        "name": "tripod_q2_t2",
+        "kind": "tripod",
+        "q": 2,
+        "t": 2
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 4,
+        "upload": "3",
+        "broadcast": "2",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "7385bf930519949b846aaa86e696cf5c0177cd4c6ae5ea2d5b4c1d4cf629ccc5"
+      }
+    },
+    {
+      "name": "tripod_q2_t6",
+      "suite": "regression",
+      "file": "regression/tripod_q2_t6.json",
+      "options": {},
+      "provenance": {
+        "name": "tripod_q2_t6",
+        "kind": "tripod",
+        "q": 2,
+        "t": 6
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 12,
+        "upload": "9",
+        "broadcast": "6",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "4a59feb2bc8ed973e29eb4c6eddd87cef24308eb8ae1d8cac55a99aada93fecc"
+      }
+    },
+    {
+      "name": "tripod_q3_t2",
+      "suite": "regression",
+      "file": "regression/tripod_q3_t2.json",
+      "options": {},
+      "provenance": {
+        "name": "tripod_q3_t2",
+        "kind": "tripod",
+        "q": 3,
+        "t": 2
+      },
+      "expected": {
+        "field_order": 3,
+        "source_dimension": 4,
+        "upload": "3",
+        "broadcast": "2",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "bde66a3d3e911661de3236d99ea104dca34cd6df720d28233f135378b74cfec3"
+      }
+    },
+    {
+      "name": "tripod_q3_t6",
+      "suite": "regression",
+      "file": "regression/tripod_q3_t6.json",
+      "options": {},
+      "provenance": {
+        "name": "tripod_q3_t6",
+        "kind": "tripod",
+        "q": 3,
+        "t": 6
+      },
+      "expected": {
+        "field_order": 3,
+        "source_dimension": 12,
+        "upload": "9",
+        "broadcast": "6",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "7025bcce8de99b39d11064d221ace046d1fbc65ecef667de99c51f9957f2e539"
+      }
+    },
+    {
+      "name": "tripod_q4_t2",
+      "suite": "regression",
+      "file": "regression/tripod_q4_t2.json",
+      "options": {},
+      "provenance": {
+        "name": "tripod_q4_t2",
+        "kind": "tripod",
+        "q": 4,
+        "t": 2
+      },
+      "expected": {
+        "field_order": 4,
+        "source_dimension": 4,
+        "upload": "3",
+        "broadcast": "2",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "c8d16e87bb1b0f6126c2648815116aa58c042f4e490622ff75b48bd263a4e4df"
+      }
+    },
+    {
+      "name": "tripod_q4_t6",
+      "suite": "regression",
+      "file": "regression/tripod_q4_t6.json",
+      "options": {},
+      "provenance": {
+        "name": "tripod_q4_t6",
+        "kind": "tripod",
+        "q": 4,
+        "t": 6
+      },
+      "expected": {
+        "field_order": 4,
+        "source_dimension": 12,
+        "upload": "9",
+        "broadcast": "6",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "41069ca6dae9fbe8f68b5b28154ea381d0e0bbe25c99ee489d56c7f027396746"
+      }
+    },
+    {
+      "name": "resonant_q2_r2",
+      "suite": "regression",
+      "file": "regression/resonant_q2_r2.json",
+      "options": {},
+      "provenance": {
+        "name": "resonant_q2_r2",
+        "kind": "resonant",
+        "q": 2,
+        "n": 2
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 8,
+        "upload": "7",
+        "broadcast": "3",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "284bc305c7c2f758942616261f9c387a35a4ab34fad2a176e91b270b327353f8"
+      }
+    },
+    {
+      "name": "resonant_q2_r4",
+      "suite": "regression",
+      "file": "regression/resonant_q2_r4.json",
+      "options": {},
+      "provenance": {
+        "name": "resonant_q2_r4",
+        "kind": "resonant",
+        "q": 2,
+        "n": 4
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 14,
+        "upload": "13",
+        "broadcast": "6",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "18f67aa74b957a94d945d2850202e0dc6f0830ee1ec4e8fe3a65610a5709417a"
+      }
+    },
+    {
+      "name": "resonant_q3_r2",
+      "suite": "regression",
+      "file": "regression/resonant_q3_r2.json",
+      "options": {},
+      "provenance": {
+        "name": "resonant_q3_r2",
+        "kind": "resonant",
+        "q": 3,
+        "n": 2
+      },
+      "expected": {
+        "field_order": 3,
+        "source_dimension": 8,
+        "upload": "7",
+        "broadcast": "3",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "08d96024c6cdadc161d873051e9ef014ed203d1763f220c1099c6e3e2042e4fd"
+      }
+    },
+    {
+      "name": "resonant_q3_r4",
+      "suite": "regression",
+      "file": "regression/resonant_q3_r4.json",
+      "options": {},
+      "provenance": {
+        "name": "resonant_q3_r4",
+        "kind": "resonant",
+        "q": 3,
+        "n": 4
+      },
+      "expected": {
+        "field_order": 3,
+        "source_dimension": 14,
+        "upload": "13",
+        "broadcast": "6",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "81ce2947f7cfacebf9158751970a3e7e88bde7ec0fed3e97eaae53054f4bd300"
+      }
+    },
+    {
+      "name": "dense_q2_n5_seed20261005",
+      "suite": "regression",
+      "file": "regression/dense_q2_n5_seed20261005.json",
+      "options": {},
+      "provenance": {
+        "name": "dense_q2_n5_seed20261005",
+        "kind": "dense",
+        "q": 2,
+        "n": 5,
+        "seed": 20261005
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 5,
+        "upload": "3",
+        "broadcast": "2",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "c0e75c07713459d1e8fdaaea3dfe31341169fb8fa74c60140d47882ef3248024"
+      }
+    },
+    {
+      "name": "dense_q3_n5_seed20261006",
+      "suite": "regression",
+      "file": "regression/dense_q3_n5_seed20261006.json",
+      "options": {},
+      "provenance": {
+        "name": "dense_q3_n5_seed20261006",
+        "kind": "dense",
+        "q": 3,
+        "n": 5,
+        "seed": 20261006
+      },
+      "expected": {
+        "field_order": 3,
+        "source_dimension": 5,
+        "upload": "2",
+        "broadcast": "2",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "e7dc143838d89093fe771686391d51a381a26f9a64495abb3d35478a71472d72"
+      }
+    },
+    {
+      "name": "dense_q5_n5_seed20261007",
+      "suite": "regression",
+      "file": "regression/dense_q5_n5_seed20261007.json",
+      "options": {},
+      "provenance": {
+        "name": "dense_q5_n5_seed20261007",
+        "kind": "dense",
+        "q": 5,
+        "n": 5,
+        "seed": 20261007
+      },
+      "expected": {
+        "field_order": 5,
+        "source_dimension": 5,
+        "upload": "3",
+        "broadcast": "2",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "379f991759b029fde43a1baa69f5e36afdfdba5b0e725d2d8bbee116696d135f"
+      }
+    },
+    {
+      "name": "dense_q2_n7_seed20261008",
+      "suite": "regression",
+      "file": "regression/dense_q2_n7_seed20261008.json",
+      "options": {},
+      "provenance": {
+        "name": "dense_q2_n7_seed20261008",
+        "kind": "dense",
+        "q": 2,
+        "n": 7,
+        "seed": 20261008
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 7,
+        "upload": "2",
+        "broadcast": "1",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "be984c8dbe4aa0660bb79a222afc4761f1cb6e6a69fd3c61050590a25b42d4e6"
+      }
+    },
+    {
+      "name": "dense_q3_n7_seed20261009",
+      "suite": "regression",
+      "file": "regression/dense_q3_n7_seed20261009.json",
+      "options": {},
+      "provenance": {
+        "name": "dense_q3_n7_seed20261009",
+        "kind": "dense",
+        "q": 3,
+        "n": 7,
+        "seed": 20261009
+      },
+      "expected": {
+        "field_order": 3,
+        "source_dimension": 7,
+        "upload": "2",
+        "broadcast": "2",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "43c68ce264416abe8c5bc61071688226199b0940c7ba0456b08f48dc12b247e1"
+      }
+    },
+    {
+      "name": "dense_q5_n7_seed20261010",
+      "suite": "regression",
+      "file": "regression/dense_q5_n7_seed20261010.json",
+      "options": {},
+      "provenance": {
+        "name": "dense_q5_n7_seed20261010",
+        "kind": "dense",
+        "q": 5,
+        "n": 7,
+        "seed": 20261010
+      },
+      "expected": {
+        "field_order": 5,
+        "source_dimension": 7,
+        "upload": "3",
+        "broadcast": "2",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "01a0de7239af0c332f7b9e215e4e867180b3c75ffac69c8e461654c3c57faf2a"
+      }
+    },
+    {
+      "name": "dense_q2_n9_seed20261011",
+      "suite": "regression",
+      "file": "regression/dense_q2_n9_seed20261011.json",
+      "options": {},
+      "provenance": {
+        "name": "dense_q2_n9_seed20261011",
+        "kind": "dense",
+        "q": 2,
+        "n": 9,
+        "seed": 20261011
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 9,
+        "upload": "6",
+        "broadcast": "4",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "cded92483faafb930da59ead767c607973ee07fc6dd7b8416368aaba45a3d30a"
+      }
+    },
+    {
+      "name": "dense_q3_n9_seed20261012",
+      "suite": "regression",
+      "file": "regression/dense_q3_n9_seed20261012.json",
+      "options": {},
+      "provenance": {
+        "name": "dense_q3_n9_seed20261012",
+        "kind": "dense",
+        "q": 3,
+        "n": 9,
+        "seed": 20261012
+      },
+      "expected": {
+        "field_order": 3,
+        "source_dimension": 9,
+        "upload": "4",
+        "broadcast": "3",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "65b586b0d7ed61fada514f8fdfd036f1fecb2bd09b387c427cda8e6ae7bac6ac"
+      }
+    },
+    {
+      "name": "dense_q5_n9_seed20261013",
+      "suite": "regression",
+      "file": "regression/dense_q5_n9_seed20261013.json",
+      "options": {},
+      "provenance": {
+        "name": "dense_q5_n9_seed20261013",
+        "kind": "dense",
+        "q": 5,
+        "n": 9,
+        "seed": 20261013
+      },
+      "expected": {
+        "field_order": 5,
+        "source_dimension": 9,
+        "upload": "9/2",
+        "broadcast": "3",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "4e86cb2cdc84f1062fc0676f506e4aea4132412b5d89e7ca14bb7cb0932dfb7e"
+      }
+    },
+    {
+      "name": "dense_q2_n5_seed20261014",
+      "suite": "regression",
+      "file": "regression/dense_q2_n5_seed20261014.json",
+      "options": {},
+      "provenance": {
+        "name": "dense_q2_n5_seed20261014",
+        "kind": "dense",
+        "q": 2,
+        "n": 5,
+        "seed": 20261014
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 5,
+        "upload": "2",
+        "broadcast": "2",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "4d23fa517aebcda63d2fd3939e3d45ed652312ab69e8acd91553aa92fac6c582"
+      }
+    },
+    {
+      "name": "dense_q3_n5_seed20261015",
+      "suite": "regression",
+      "file": "regression/dense_q3_n5_seed20261015.json",
+      "options": {},
+      "provenance": {
+        "name": "dense_q3_n5_seed20261015",
+        "kind": "dense",
+        "q": 3,
+        "n": 5,
+        "seed": 20261015
+      },
+      "expected": {
+        "field_order": 3,
+        "source_dimension": 5,
+        "upload": "3",
+        "broadcast": "2",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "be6efba344fd04bb506b10eb75e95b436bdfeae09a6c4c7dbac2e6dec7238495"
+      }
+    },
+    {
+      "name": "dense_q5_n5_seed20261016",
+      "suite": "regression",
+      "file": "regression/dense_q5_n5_seed20261016.json",
+      "options": {},
+      "provenance": {
+        "name": "dense_q5_n5_seed20261016",
+        "kind": "dense",
+        "q": 5,
+        "n": 5,
+        "seed": 20261016
+      },
+      "expected": {
+        "field_order": 5,
+        "source_dimension": 5,
+        "upload": "5/2",
+        "broadcast": "2",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "7b9c75bc1ee9f07ca0850ae4a1331ed7db3a53725c118b8c08d176b605fd5577"
+      }
+    },
+    {
+      "name": "dense_q2_n7_seed20261017",
+      "suite": "regression",
+      "file": "regression/dense_q2_n7_seed20261017.json",
+      "options": {},
+      "provenance": {
+        "name": "dense_q2_n7_seed20261017",
+        "kind": "dense",
+        "q": 2,
+        "n": 7,
+        "seed": 20261017
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 7,
+        "upload": "3",
+        "broadcast": "2",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "2c307aa110e00574469fd51c8615473102989395dc392b643ff621ecf97047a5"
+      }
+    },
+    {
+      "name": "dense_q3_n7_seed20261018",
+      "suite": "regression",
+      "file": "regression/dense_q3_n7_seed20261018.json",
+      "options": {},
+      "provenance": {
+        "name": "dense_q3_n7_seed20261018",
+        "kind": "dense",
+        "q": 3,
+        "n": 7,
+        "seed": 20261018
+      },
+      "expected": {
+        "field_order": 3,
+        "source_dimension": 7,
+        "upload": "7/2",
+        "broadcast": "3",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "e0e5caf208934c910f9017b63301aee0b28a4e89cacc85a9e4d4c79b99b63f45"
+      }
+    },
+    {
+      "name": "dense_q5_n7_seed20261019",
+      "suite": "regression",
+      "file": "regression/dense_q5_n7_seed20261019.json",
+      "options": {},
+      "provenance": {
+        "name": "dense_q5_n7_seed20261019",
+        "kind": "dense",
+        "q": 5,
+        "n": 7,
+        "seed": 20261019
+      },
+      "expected": {
+        "field_order": 5,
+        "source_dimension": 7,
+        "upload": "3",
+        "broadcast": "2",
+        "minimum_blocklength": 1,
+        "task_fingerprint": "82016d7d978e12b24b9f8d8722c79e9d70bc24eda6971c674fc45cbe2f573910"
+      }
+    },
+    {
+      "name": "dense_q2_n9_seed20261020",
+      "suite": "regression",
+      "file": "regression/dense_q2_n9_seed20261020.json",
+      "options": {},
+      "provenance": {
+        "name": "dense_q2_n9_seed20261020",
+        "kind": "dense",
+        "q": 2,
+        "n": 9,
+        "seed": 20261020
+      },
+      "expected": {
+        "field_order": 2,
+        "source_dimension": 9,
+        "upload": "9/2",
+        "broadcast": "3",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "0304dc3afdcdb5998aa44b1108b68366304fa09c8c3965d20b8e9cd580eb23dc"
+      }
+    },
+    {
+      "name": "dense_q3_n9_seed20261021",
+      "suite": "regression",
+      "file": "regression/dense_q3_n9_seed20261021.json",
+      "options": {},
+      "provenance": {
+        "name": "dense_q3_n9_seed20261021",
+        "kind": "dense",
+        "q": 3,
+        "n": 9,
+        "seed": 20261021
+      },
+      "expected": {
+        "field_order": 3,
+        "source_dimension": 9,
+        "upload": "9/2",
+        "broadcast": "3",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "08401f4c8583bb21d3cbe2ad543787ac98416105cfa7cd1b86c5a3663f1cb719"
+      }
+    },
+    {
+      "name": "dense_q5_n9_seed20261022",
+      "suite": "regression",
+      "file": "regression/dense_q5_n9_seed20261022.json",
+      "options": {},
+      "provenance": {
+        "name": "dense_q5_n9_seed20261022",
+        "kind": "dense",
+        "q": 5,
+        "n": 9,
+        "seed": 20261022
+      },
+      "expected": {
+        "field_order": 5,
+        "source_dimension": 9,
+        "upload": "9/2",
+        "broadcast": "3",
+        "minimum_blocklength": 2,
+        "task_fingerprint": "43ab76c2b776b1fa371f7cfd65ea62e04c55b582c2a87673acaa1c6ce98ecedd"
+      }
+    }
+  ]
+}

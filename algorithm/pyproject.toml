@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=77.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "three-user-codes"
+dynamic = ["version"]
+description = "Exact finite-field algebra and certified three-user upload/broadcast coding"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+keywords = ["finite-fields", "linear-coding", "information-theory", "network-coding", "certificates"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[project.optional-dependencies]
+dev = ["coverage>=7,<8", "pytest>=8,<10", "ruff>=0.9,<1", "mypy>=1.14,<2", "build>=1.2,<2"]
+docs = ["reportlab>=4,<5"]
+
+[project.scripts]
+three-user-codes = "three_user_codes.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "three_user_codes._version.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["three_user_codes*"]
+
+[tool.setuptools.package-data]
+three_user_codes = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.coverage.run]
+branch = true
+source = ["three_user_codes"]
+
+[tool.coverage.report]
+show_missing = true
+exclude_also = ["if TYPE_CHECKING:", "if __name__ == [\"']__main__[\"']:"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+extend-exclude = ["build", "dist", "reports"]
+
+[tool.ruff.lint]
+# Correctness checks first. Legacy mathematical notation/formatting is retained;
+# a full-style rewrite is deliberately not mixed into the arithmetic changes.
+select = ["E9", "F63", "F7", "F82"]
+
+[tool.mypy]
+python_version = "3.10"
+files = ["typing_examples/public_api.py"]
+follow_imports = "silent"
+strict = true
+# This is a downstream public-API smoke check, not a claim of strict typing
+# throughout every legacy constructive-algorithm implementation.

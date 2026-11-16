@@ -94,4 +94,4 @@ See [reproduction instructions](docs/REPRODUCING.md) and the [technical overview
 
 ## Attribution and rights
 
-The research authors are Shuo Tan and Syed A. Jafar. Existing attribution and dependency notices are preserved. No new software license is granted by this repository preparation; consult [rights information](RIGHTS.md), [algorithm licensing](algorithm/LICENSING.md), and [Lean rights](lean/RIGHTS.md).
+The research authors are Shuo Tan and Syed A. Jafar. The algorithm code and its accompanying software documentation in `algorithm/` are available under the [MIT License](algorithm/LICENSE), copyright (c) 2026 Shuo Tan. This license does not apply to the research papers, Lean formalization, or other repository materials. Existing attribution and dependency notices are preserved; consult [rights information](RIGHTS.md), [algorithm licensing](algorithm/LICENSING.md), and [Lean rights](lean/RIGHTS.md).

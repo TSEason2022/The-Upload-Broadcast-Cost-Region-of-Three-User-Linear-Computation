@@ -99,5 +99,12 @@ execution. See the manual for a complete simulation.
 Run the regression suite with `python -m unittest discover -s tests -v`.
 `build_release.py` creates a clean source delivery. The retained original
 validation reports are historical evidence; the current reproduction is recorded
-separately in [CURRENT_RECHECK.md](validation/CURRENT_RECHECK.md). Ownership and
-license information is recorded in [LICENSING.md](LICENSING.md).
+separately in [CURRENT_RECHECK.md](validation/CURRENT_RECHECK.md).
+
+## License
+
+The algorithm code and its accompanying software documentation are available
+under the [MIT License](LICENSE), copyright (c) 2026 Shuo Tan. This license does
+not apply to the research papers, the sibling Lean formalization, or other
+repository materials. Existing attribution and third-party licenses are
+preserved. See [LICENSING.md](LICENSING.md) for the scope.
